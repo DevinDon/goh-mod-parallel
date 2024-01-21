@@ -1,0 +1,18 @@
+{game_entity ; 1945-01
+
+  (include "m36_gmc.inc")
+
+  {Extender "inventory"
+    {Box
+      {Size 12 8}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo usa-90x600 apcbche" 29}
+      {Item "ammo usa-90x600 he" 14}
+      {Item "ammo usa-90x600 hvap" 3}
+      {Item "ammo usa-hmgun" 900}
+    }
+  }
+
+}

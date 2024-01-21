@@ -1,0 +1,53 @@
+msgid   ""
+msgstr ""
+"Project-Id-Version: Parallel World - Vehicle\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+# 非装甲车辆
+
+# 步兵战车
+msgctxt "desc/entity/m8_greyhound_early"
+msgid   "M8 Greyhound (Early)"
+msgstr  "M8 \"灰狗\" 早期型"
+
+msgctxt "desc/entity/m8_greyhound"
+msgid   "M8 Greyhound"
+msgstr  "M8 \"灰狗\""
+
+# 轻型坦克
+msgctxt "desc/entity/m24_chaffee"
+msgid   "M24 Chaffee"
+msgstr  "M24 \"霞飞\""
+
+# 中型坦克
+
+# 重型坦克
+msgctxt "desc/entity/t26e4"
+msgid   "T26E4 'Super Pershing'"
+msgstr  "T26E4 \"超级潘兴\""
+
+# 坦克歼击车
+msgctxt "desc/entity/m36_gmc"
+msgid   "90mm GMC M36"
+msgstr  "M36 \"杰克逊\""
+
+msgctxt "desc/entity/m36_gmc_late"
+msgid   "90mm GMC M36"
+msgstr  "M36 \"杰克逊\""
+
+msgctxt "desc/entity/m36_gmc_t33"
+msgid   "90mm GMC M36"
+msgstr  "M36 \"杰克逊\""
+
+# 自行榴弹炮
+msgctxt "desc/entity/m8_hmc"
+msgid   "75mm HMC M8"
+msgstr  "M8 \"斯科特\""

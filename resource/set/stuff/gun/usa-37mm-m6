@@ -1,0 +1,86 @@
+{from "pattern gun"
+
+  (include "/properties/standard/gun/define.ext")
+
+  {FireSound "gun/gun_37_57"}
+  {FireSoundclose "gun/gun_interior/size2"}
+  {ReloadSound "interior/large/small_reload_interior"}
+
+  {Filling "usa-37" 5} ; 弹种及弹链内炮弹数量
+  {Calibre 37} ; 口径
+
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
+  {SpreadTolerance 0.75} ; 瞄准到 75% 就可以开火
+  {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
+
+  {RechargeTime 7} ; 装填时间（秒）
+  {RecoveryTime 1} ; 短射间隔（秒），适用于弹链
+
+  {Automatic} ; 自动武器
+
+  {Parameters "ap" ; AP 穿甲弹
+    {Range 300 300} ; 射程
+    {Speed 884} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {0 89} {300 27} {1000 0}} ; 穿深
+    {MinimumDamageModifier 100} ; 伤害
+    {Spreading
+      {RadiusTable {0 0.0} {300 3.0} {1000 10}} ; 散布
+      {SpreadXYRatio 0.4} ; 后坐力
+    }
+    {OvermatchCalibre ; 倾斜入射修正
+      {0  1.0000  0.0000}
+      {20 1.1740 -0.0050}
+      {30 1.3010 -0.0380}
+      {40 1.5030 -0.0380}
+      {50 1.9460 -0.0290}
+      {55 2.2210 -0.0390}
+      {60 2.5750 -0.0530}
+      {65 3.0620 -0.0530}
+      {70 3.7830 -0.0530}
+      {75 4.9650 -0.0530}
+      {80 7.2900 -0.0530}
+      {85 14.050 -0.0530}
+      {90 99.000  0.0000}
+    }
+  }
+
+  {Parameters "apcbc" ; APCBC 被帽风帽穿甲弹
+    {Range 300 300} ; 射程
+    {Speed 619} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {0 78} {300 43} {1000 0}} ; 穿深
+    {MinimumDamageModifier 100} ; 伤害
+    {Spreading
+      {RadiusTable {0 0.0} {300 2.5} {1000 10}} ; 散布
+      {SpreadXYRatio 0.4} ; 后坐力
+    }
+    {OvermatchCalibre ; 倾斜入射修正
+      {0  1.0000  0.0000}
+      {20 1.1590 -0.1200}
+      {30 1.3740 -0.2220}
+      {40 1.5960 -0.2540}
+      {45 1.9100 -0.2000}
+      {50 2.4850  0.1110}
+      {55 3.1720  0.3180}
+      {60 3.8750  0.3760}
+      {65 9.7500  1.2500}
+      {70 9.9600  1.1100}
+      {75 20.300  1.2100}
+      {80 49.000  1.2000}
+      {85 232.50  1.2150}
+      {90 99.000  0.0000}
+    }
+  }
+
+  {Parameters "he" ; HE 高爆弹
+    {Range 300 300} ; 射程
+    {Speed 792} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {Spreading
+      {RadiusTable {0 0.0} {300 4.0} {1000 10}} ; 散布
+      {SpreadXYRatio 0.4} ; 后坐力
+    }
+  }
+
+}

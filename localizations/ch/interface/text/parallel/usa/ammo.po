@@ -1,0 +1,85 @@
+msgid   ""
+msgstr  ""
+"Project-Id-Version: Parallel World - Ammo\n"
+"Language: zh-CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+# 子弹
+msgctxt "desc/ammo/usa-hmgun"
+msgid   ".50 cal AP M2 Rounds"
+msgstr  ".50 口径 M2 穿甲弹"
+
+msgctxt "desc/ammo/usa-hmgun api"
+msgid   ".50 cal API M8 Rounds"
+msgstr  ".50 口径 M8 穿甲燃烧弹"
+
+# 炮弹
+# 37mm
+msgctxt "desc/ammo/usa-37 apcbc"
+msgid   "37mm APC-T, Shot M51 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/53</c>"
+msgstr  "37mm M51 被帽穿甲曳光弹 [<c(ff6a00)>被帽风帽穿甲弹</c>] <c(65696d)>L/53</c>"
+
+msgctxt "desc/ammo/usa-37 he"
+msgid   "37mm HE, Shell M63 [<c(ff1200)>HE</c>] <c(65696d)>L/53</c>"
+msgstr  "37mm M63 高爆弹 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/53</c>"
+
+# 75mm
+msgctxt "desc/ammo/usa-75x272 he"
+msgid   "75mm HE, Shell M48 [<c(ff1200)>HE</c>] <c(65696d)>L/15.9</c>"
+msgstr  "75mm M48 高爆弹 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/15.9</c>"
+
+msgctxt "desc/ammo/usa-75x272 heat"
+msgid   "75mm HEAT-T, Shell M66 [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/15.9</c>"
+msgstr  "75mm M66 破甲曳光弹 [<c(c9a6ff)>破甲弹</c>] <c(65696d)>L/15.9</c>"
+
+msgctxt "desc/ammo/usa-75x272 wp"
+msgid   "75mm Smoke WP, Shell M64 [<c(FFFFFF)>WP</c>] <c(65696d)>L/15.9</c>"
+msgstr  "75mm M64 白磷烟雾弹 [白磷] <c(65696d)>L/15.9</c>"
+
+msgctxt "desc/ammo/usa-75x350 apcbche"
+msgid   "75mm APC-T, Projectile M61 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/31 L/39 L/40</c>"
+msgstr  "75mm M61 被帽穿甲曳光弹 [<c(ff6a00)>被帽风帽穿甲榴弹</c>] <c(65696d)>L/31 L/39 L/40</c>"
+
+msgctxt "desc/ammo/usa-75x350 he"
+msgid   "75mm HE, Shell M48 [<c(ff1200)>HE</c>] <c(65696d)>L/31 L/39 L/40</c>"
+msgstr  "75mm M48 高爆弹 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/31 L/39 L/40</c>"
+
+msgctxt "desc/ammo/usa-75x350 wp"
+msgid   "75mm Smoke WP, Shell M64 [White Phosphorus] <c(65696d)>L/31 L/39 L/40</c>"
+msgstr  "75mm M64 白磷烟雾弹 [白磷弹] <c(65696d)>L/31 L/39 L/40</c>"
+
+# 90mm
+msgctxt "desc/ammo/usa-90x600 apbc"
+msgid   "90mm AP-T, Shot T33 [<c(ff6a00)>APBC</c>] <c(65696d)>L/53</c>"
+msgstr  "90mm T33 穿甲曳光弹 [<c(ff6a00)>风帽穿甲弹</c>] <c(65696d)>L/53</c>"
+
+msgctxt "desc/ammo/usa-90x600 apcbche"
+msgid   "90mm APC-T, Projectile M82 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/53</c>"
+msgstr  "90mm M82 被帽穿甲曳光弹 [<c(ff6a00)>被帽风帽穿甲榴弹</c>] <c(65696d)>L/53</c>"
+
+msgctxt "desc/ammo/usa-90x600 he"
+msgid   "90mm HE, Shell M71 [<c(ff1200)>HE</c>] <c(65696d)>L/53</c>"
+msgstr  "90mm M71 高爆弹 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/53</c>"
+
+msgctxt "desc/ammo/usa-90x600 hvap"
+msgid   "90mm HVAP-T, Shot T30E16 [<c(48c445)>HVAP</c>] <c(65696d)>L/53</c>"
+msgstr  "90mm T30E16 高速穿甲曳光弹 [<c(48c445)>高速穿甲弹</c>] <c(65696d)>L/53</c>"
+
+msgctxt "desc/ammo/usa-90x1270 apcbche"
+msgid   "90mm APC-T, Projectile T41 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/73</c>"
+msgstr  "90mm T41 被帽穿甲曳光弹 [<c(ff6a00)>被帽风帽穿甲榴弹</c>] <c(65696d)>L/73</c>"
+
+msgctxt "desc/ammo/usa-90x1270 he"
+msgid   "90mm HE, Shell T42 [<c(ff1200)>HE</c>] <c(65696d)>L/73</c>"
+msgstr  "90mm T42 高爆弹 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/73</c>"
+
+msgctxt "desc/ammo/usa-90x1270 hvap"
+msgid   "90mm HVAP-T, Shot T44 [<c(48c445)>HVAP</c>] <c(65696d)>L/73</c>"
+msgstr  "90mm T44 高速穿甲曳光弹 [<c(48c445)>高速穿甲弹</c>] <c(65696d)>L/73</c>"

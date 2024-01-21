@@ -1,0 +1,165 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(1.0))
+
+  {Extension "m24_chaffee.mdl"}
+  (include   "m24_chaffee.ext")
+  (include   "crew-and-seat.ext")
+
+  {Props "light" "vision_lev03" "muzzle_75mm_76mm" "shield" "detect_tank_light" "tractor" "tractor_light" "smoke" "2in_wp" "muzzle_hmg_m2hb"}
+
+  {PatherId "panzer38"}
+  {Targetclass "tank_light"}
+  {TargetSelector "tank_light"}
+  {Collider "tank.light"}
+
+  {Extender "shield" {on}}
+
+  {Extender "enumerator"
+    {digit_folder "us1"}
+  }
+
+  {Boarder
+    {anm "driver"
+      {forward {begin "board_tank_left"} {end "seat_commander_hatch"} {base "open_driver"}}
+      {reverse {end "emit_tank_1_hold"} {base "open_driver"}}
+    }
+    {anm "co_driver"
+      {forward {begin "board_tank_right"} {end "seat_commander_hatch"} {base "open_co_driver"}}
+      {reverse {end "emit_tank_1_hold"} {base "open_co_driver"}}
+    }
+    {anm "left"
+      {forward {begin "board_tank_left"} {end "seat_commander_hatch"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "right"
+      {forward {begin "board_tank_right"} {end "seat_commander_hatch"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "gunner2"
+      {forward {begin "board_MiddleArmor"} {end "pose_m24_gunner"}}
+      {reverse {end "emit_tank_1"}}
+    }
+    {anm "armor"
+      {forward {begin "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+      {reverse {end "emit_tank_1"}}
+    }
+    {anm "armor1"
+      {forward {begin "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+      {reverse {end "emit_tank_1"}}
+    }
+  }
+
+  {Extender "smokescreen"
+    {cooldown 3}
+    {itemTags "mortareng_50 sm"}
+  }
+
+  {Extender "inventory"
+    {Box
+      {Size 12 7}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo usa-hmgun" 2000}
+      {Item "usa-75x350 apcbche" 20}
+      {Item "usa-75x350 he" 40}
+      {Item "usa-75x350 wp" 20}
+      {Item "mortareng_50 sm" 20}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 5}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "usa-75mm-m6" filling "usa-75x350 apcbche" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.00} ; s
+      }
+    }
+    {Place "mgun2"
+      {Type "coaxial"}
+      {Weapon "usa-browning-m2" filled}
+      {Foresight "foresight5"}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {Basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun1"
+      {Type "hull"}
+      {Weapon "usa-browning-m2-x2" filled}
+      {Foresight "foresight4"}
+      {Gunner "gunner3"}
+      {Charger "gunner3"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "aa"}
+      {Weapon "usa-browning-m2-x2" filled}
+      {Gunner "gunner2"}
+      {Charger "gunner2"}
+      {LinkBone "mgun"}
+      {LinkAnimation "off"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 18400}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_sm") step(0.32) length(0.58) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(72) power(400) mass(18400) performance(1.35))
+    ("set-fuel-tank" volume(600) power(400))
+  }
+
+  {Bone "gun_rot"
+    {limits -10 15}
+    {speed2 6}
+  }
+  {Bone "turret"
+    {speed2 24}
+  }
+  {Bone "mgun_a_rot1"
+    {limits -45 15}
+    {speed2 60}
+  }
+  {Bone "mgun_a_rot2"
+    {limits -15 55}
+    {speed2 60}
+  }
+
+}

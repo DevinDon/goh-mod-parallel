@@ -1,0 +1,160 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(1.2))
+
+  {Extension "t26e4.mdl"}
+  (include   "t26e4.ext")
+  (include   "crew-and-seat.ext")
+
+  {Props "m26_pershing" "heavy" "vision_lev05" "muzzle_85mm_93mm_sides" "detect_tank_heavy" "muzzle_hmg_m2hb"}
+
+  {PatherId "pershing"}
+  {Targetclass "tank_heavy"}
+  {TargetSelector "tank_heavy"}
+  {Collider "tank.heavy"}
+
+  {Boarder
+    {anm "driver"
+      {forward {begin "board_m4_driver"} {end "seat_m4_gunner"} {base "open_driver"}}
+      {reverse {end "emit_tank_1_hold"} {base "open_driver"}}
+    }
+    {anm "co_driver"
+      {forward {begin "board_tank_right"} {end "seat_m4_gunner"} {base "open_co_driver"}}
+      {reverse {end "emit_tank_1_hold"} {base "open_co_driver"}}
+    }
+    {anm "left"
+      {forward {begin "board_Kv"} {end "seat_m4_gunner"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "right"
+      {forward {begin "board_tank_right"} {end "seat_m4_gunner"}}
+      {reverse {end "emit_tank_2_hold"}}
+    }
+    {anm "armor1"
+      {forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+      {reverse {end "emit_tank_2"}}
+    }
+  }
+
+  {Extender "detail"
+    {random 0}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail1}
+    {detail7}
+    {detail8}
+    {detail6}
+  }
+
+  {Extender "inventory"
+    {Box
+      {Size 12 12}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo usa-hmgun" 5000}
+      {Item "ammo usa-90x1270 apcbche" 15}
+      {Item "ammo usa-90x1270 hvap" 7}
+      {Item "ammo usa-90x1270 he" 20}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 3}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "usa-90mm-t15e1" filling "ammo usa-90x1270 apcbche" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.00} ; s
+      }
+    }
+    {Place "mgun2"
+      {Type "coaxial"}
+      {Weapon "usa-browning-m2" filled}
+      {Foresight "foresight5"}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {Basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun1"
+      {Type "hull"}
+      {Weapon "usa-browning-m2-x2" filled}
+      {Foresight "foresight4"}
+      {Gunner "gunner3"}
+      {Charger "gunner3"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "aa"}
+      {Weapon "usa-browning-m2-x2" filled}
+      {Gunner "commander"}
+      {Charger "commander"}
+      {LinkBone "mgun"}
+      {LinkAnimation "off"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 50550}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_big") step(0.52) length(-0.92) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(40) power(720) mass(50550) performance(1.2))
+    ("set-fuel-tank" volume(700) power(720))
+  }
+
+  {Bone "gun_rot"
+    {limits -10 20}
+    {speed2 5}
+  }
+  {Bone "turret"
+    {speed2 18}
+  }
+  {Bone "hmgun_cupola"
+    {speed2 60}
+  }
+  {Bone "mgun_a_rot1"
+    {limits -10 10}
+    {speed2 60}
+  }
+  {Bone "mgun_a_rot2"
+    {limits -10 65}
+    {speed2 60}
+  }
+
+}

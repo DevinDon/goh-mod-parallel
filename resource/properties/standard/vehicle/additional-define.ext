@@ -1,0 +1,62 @@
+; standard additional define
+
+; args = number
+(define "set-wood-shield"
+  {volume "shieldw%number"
+    {material "wood"}
+    {tags "wood"}
+  }
+)
+
+; args = number
+(define "set-hole"
+  {volume "hole%number"
+    {able clear {hole}}
+  }
+)
+
+; args = name
+(define "set-glass"
+  {volume %name
+    {thickness 0.1}
+    {material "glass"}
+    {tags "glass"}
+    {component %name}
+    {able {visible 0}{obstacle 0}{window}}
+  }
+  {component %name
+    {tags "glass"}
+    {RepairOrder 13}
+  }
+)
+
+; args = name
+(define "set-lamp"
+  {volume %name
+    {thickness 0.1}
+    {material "glass"}
+    {tags "lamp"}
+    {component %name}
+    {able {visible 0}{obstacle 0}}
+  }
+  {component %name
+    {tags "lamp"}
+    {RepairOrder 13}
+  }
+)
+
+; args = number
+(define "set-sandbag"
+  {volume "sandbag%number"
+    {thickness 10}
+    {material "sand"}
+    {able {NoWoundDecal}}
+  }
+)
+
+; args = name
+(define "set-tag-of-armor"
+  {volume %name
+    {tags "armor"}
+  }
+)

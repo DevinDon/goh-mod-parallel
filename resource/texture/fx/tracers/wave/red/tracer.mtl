@@ -1,0 +1,6 @@
+{material simple
+  {diffuse "tracer"}
+  {blend add}
+  {glow 10.0}
+  {emitsheat}
+}

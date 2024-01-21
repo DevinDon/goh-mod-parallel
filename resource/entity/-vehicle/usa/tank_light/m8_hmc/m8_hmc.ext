@@ -1,0 +1,121 @@
+; armor notes
+; tracks and wheels 15mm
+; gun 20mm
+
+
+
+
+
+
+("set-basic-durability" body(250) engine(175) turret(175) mantlet(150) gun(175) track(175) ammo(125))
+("set-basic-armor"      ammo(15))
+
+("set-turret" repair(15))
+("set-mantlet" repair(10))
+("set-gun" thickness(15) repair(10))
+
+("set-body" repair(15))
+("set-engine" repair(10))
+("set-tracks" thickness(15) repair(10))
+
+("set-tear-shield" name("shieldl1") thickness(5))
+("set-tear-shield" name("shieldl2") thickness(5))
+("set-tear-shield" name("shieldl3") thickness(5))
+("set-tear-shield" name("shieldr1") thickness(5))
+("set-tear-shield" name("shieldr2") thickness(5))
+("set-tear-shield" name("shieldr3") thickness(5))
+
+("set-shield-track" name("shield1") thickness(15))
+("set-shield-track" name("shield2") thickness(15))
+("set-shield-track" name("shield3") thickness(15))
+("set-shield-track" name("shield4") thickness(15))
+("set-shield-track" name("shield5") thickness(15))
+("set-shield-track" name("shield6") thickness(15))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("fuel1") type("fuel") repair(3))
+("set-internal-components" name("fuel2") type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+; armor thickness define
+{volume "body1"      ; Hull
+  {thickness 28.5
+    {top 28.5}      ;front upper
+    {front 63.5}      ;front lower
+    {rear 10}
+    {bottom 12.7}
+  }
+}
+{volume "body2"      ; hull upper
+  {thickness 28.5
+    {top 12.7}
+    {front 28.5}
+    {rear 10}
+  }
+}
+{volume "body3"      ; turret ring
+  {thickness 28.5
+    {top 12.7}
+  }
+}
+{volume "engine1"
+  {thickness 28.5
+    {front 10}
+    {bottom 12.7}
+    {rear 25.4}
+  }
+}
+{volume "engine2"
+  {thickness 28.5
+    {bottom 12.7}
+    {top 12.7}
+  }
+}
+{volume "engine3"
+  {thickness 28.5
+    {bottom 12.7}
+  }
+}
+{volume "turret1"    ; Turret main
+  {thickness 25.4
+    {top 12.7}
+    {front 38.1}
+  }
+  {able {holed}}
+}
+{volume "turret2"    ; Turret ring
+  {thickness 25.4}
+}
+{volume "turret3"    ; top_front
+  {thickness 38.1
+    {top 12.7}
+  }
+  {able {holed}}
+}
+{volume "turret4"    ;back part
+  {thickness 25.4
+    {top 12.7}
+  }
+  {able {holed}}
+}
+{volume "turret5"    ; front
+  {thickness 38.1}
+}
+{volume "turret6"    ; front
+  {thickness 38.1}
+}
+{volume "mantlet"
+  {tags "turret"}
+  {component "turret"}
+  {thickness 38.1}
+}
+{volume "basket"
+  {thickness 5}
+  {tags "armor"}
+  {tags "no_target"}
+}
+{volume "grill"
+  {thickness 5}
+  {tags "armor"}
+}

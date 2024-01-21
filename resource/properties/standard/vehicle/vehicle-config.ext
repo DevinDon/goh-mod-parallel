@@ -1,0 +1,139 @@
+; standard vehicle config
+
+(include "additional-define.ext")
+(include "component-define.ext")
+(include "crew-define.ext")
+(include "maneuverability-define.ext")
+(include "seat-define.ext")
+(include "trace-define.ext")
+
+{PatherID  "vehicle.large"}
+{obstacleID "tank"}
+{Simulation {able 1}}
+{props "steel" "vehicle" "obstacle_ignore_height" "emit_on_sink"}
+{able "emit_passangers_on_enemy" "repaired" "minimap" "ally_crew"}
+{lodclass "vehicle"}
+{collider "vehicle"}
+{NoGroupMesh 1}
+
+{sensor
+  {Visor "hearing"
+    {vision "noise_detection"}
+    {bone "hearing_bone"}
+  }
+  {RecognizeTime 0.01}
+  {InformRange 50 75}    ; first = AI , second = USER
+}
+
+{Weaponry
+  {ManualAccuracy 1.00}
+  {ManualAccuracyZoom 1.25}
+}
+
+{RimLight}
+
+{extender "inventory"
+  {weapon "mgun"
+    {mask "mountable"}
+  }
+  {box
+    {Size 9 15}
+  }
+}
+
+{boarder}
+{placer {crew}}
+
+{## extender "detail"
+  {random}
+}
+
+{volume "select"
+  {able clear {select} {touch}}
+  {density 0}
+}
+
+{volume "ram"
+  {able clear}
+  {density 0}
+}
+
+{volume "breach" {able {NoWoundDecal}}}
+{volume "breech" {able {NoWoundDecal}}}
+
+("set-wood-shield" number())
+("set-wood-shield" number(1))
+("set-wood-shield" number(2))
+("set-wood-shield" number(3))
+("set-wood-shield" number(4))
+("set-wood-shield" number(5))
+("set-wood-shield" number(6))
+
+("set-hole" number())
+("set-hole" number(1))
+("set-hole" number(2))
+("set-hole" number(3))
+("set-hole" number(4))
+("set-hole" number(5))
+("set-hole" number(6))
+("set-hole" number(7))
+("set-hole" number(8))
+("set-hole" number(9))
+("set-hole" number(10))
+("set-hole" number(11))
+("set-hole" number(12))
+("set-hole" number(13))
+("set-hole" number(14))
+("set-hole" number(15))
+("set-hole" number(16))
+("set-hole" number(17))
+("set-hole" number(18))
+("set-hole" number(19))
+("set-hole" number(20))
+("set-hole" number(21))
+("set-hole" number(22))
+("set-hole" number(23))
+("set-hole" number(24))
+("set-hole" number(25))
+
+("set-sandbag" number())
+("set-sandbag" number(1))
+("set-sandbag" number(2))
+("set-sandbag" number(3))
+("set-sandbag" number(4))
+("set-sandbag" number(5))
+
+("set-tag-of-armor" name("armor_plate"))
+("set-tag-of-armor" name("armor_engine"))
+("set-tag-of-armor" name("armor_visor1"))
+("set-tag-of-armor" name("armor_visor2"))
+("set-tag-of-armor" name("armor_visor3"))
+("set-tag-of-armor" name("armor"))
+("set-tag-of-armor" name("armor1"))
+("set-tag-of-armor" name("armorL1"))
+("set-tag-of-armor" name("armorR1"))
+("set-tag-of-armor" name("armor2"))
+("set-tag-of-armor" name("armorL2"))
+("set-tag-of-armor" name("armorR2"))
+("set-tag-of-armor" name("armor3"))
+("set-tag-of-armor" name("armorL3"))
+("set-tag-of-armor" name("armorR3"))
+("set-tag-of-armor" name("armor4"))
+("set-tag-of-armor" name("armor5"))
+("set-tag-of-armor" name("armor6"))
+("set-tag-of-armor" name("armor7"))
+("set-tag-of-armor" name("armor8"))
+("set-tag-of-armor" name("armor9"))
+("set-tag-of-armor" name("armor10"))
+("set-tag-of-armor" name("armor11"))
+("set-tag-of-armor" name("armor12"))
+("set-tag-of-armor" name("armor13"))
+("set-tag-of-armor" name("armor14"))
+("set-tag-of-armor" name("armor_mg_port"))
+("set-tag-of-armor" name("armor_driver"))
+("set-tag-of-armor" name("armor_mantlet"))
+("set-tag-of-armor" name("armor_hull"))
+("set-tag-of-armor" name("armor_front1"))
+("set-tag-of-armor" name("armor_front2"))
+("set-tag-of-armor" name("armor_front3"))
+("set-tag-of-armor" name("armor_front4"))

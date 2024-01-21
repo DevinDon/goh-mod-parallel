@@ -1,0 +1,519 @@
+; standard component define
+
+; args = body engine turret mantlet gun track ammo
+(define "set-basic-durability"
+  {perks
+    {component "body"
+      {health
+        {hp %body}
+        {hp_broken (+ 1500 (* %body 5))}  ; destroys component and cannot be repaired
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "bodyback"
+      {health
+        {hp %body}
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "cabin"
+      {health
+        {hp %body}
+        {hp_broken %body}  ; destroys component and cannot be repaired
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "engine"
+      {health
+        {hp %engine}
+        {hp_broken (* %engine 1.5)}  ; destroys component and cannot be repaired
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "mantlet"
+      {health
+        {hp %mantlet}
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "turret"
+      {health
+        {hp %turret}
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "aux_turret1"
+      {health
+        {hp %turret}
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "aux_turret2"
+      {health
+        {hp %turret}
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "gun"
+      {health
+        {hp %gun}
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "trackleft"
+      {health
+        {hp %track}
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "trackright"
+      {health
+        {hp %track}
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component "shield_cover"
+      {health
+        {hp 400}
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component tag "wheel"
+      {health
+        {hp 125}
+      }
+      {armor_damage_modifier 5}
+    }
+    {component tag "glass"
+      {health
+        {hp 60}
+        {hp_broken 1}  ; destroys component and cannot be repaired
+      }
+    }
+    {component tag "lamp"
+      {health
+        {hp 60}
+        {hp_broken 1}  ; destroys component and cannot be repaired
+      }
+    }
+    {component tag "shield"
+      {health
+        {hp 100}
+        {hp_broken 1}  ; destroys component and cannot be repaired
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component tag "cut_part"
+      {health
+        {hp 100}
+        {hp_broken 1}  ; destroys component and cannot be repaired
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component tag "fuel"
+      {health
+        {hp %ammo}
+        {hp_broken 1}  ; destroys component and cannot be repaired
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component tag "ammo"
+      {health
+        {hp %ammo}
+        {hp_broken 1}  ; destroys component and cannot be repaired
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component tag "rocket"
+      {health
+        {hp 100}
+        {hp_broken 1}  ; destroys component and cannot be repaired
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+    {component tag "transmission"
+      {health
+        {hp %engine}
+      }
+      {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
+    }
+  }
+)
+
+; args = name
+(define "private-set-armor"         ; basic structure for the rest of the armor setting defines. (saves copying same code multiple times)
+  {setting "%name"
+    {threshold
+      {blast  {koef 0.5}}    ; koef = coefficient. Threshold = koef value x volume effective thickness
+      {pierce {koef 0.8}}    ; Minimum penetration necessary to leave a ricochet/pen mark on the armour
+    }
+    {volumes "%name*"}
+  }
+)
+
+; args = ammo
+(define "set-basic-armor"
+  {armor
+    ; Common
+    ("private-set-armor" name(body))
+    ("private-set-armor" name(turret))
+    ("private-set-armor" name(aux_turret1))
+    ("private-set-armor" name(aux_turret2))
+    ("private-set-armor" name(aux_turret3))
+    ("private-set-armor" name(aux_turret4))
+    ("private-set-armor" name(gun))
+    ("private-set-armor" name(barrel))
+    ("private-set-armor" name(mantlet))
+    ("private-set-armor" name(cupola))
+    ("private-set-armor" name(hatch))
+    ("private-set-armor" name(engine))
+    ("private-set-armor" name(track))
+    ("private-set-armor" name(wheel))
+    ("private-set-armor" name(transmission))
+    ("private-set-armor" name(fuel))
+    ("private-set-armor" name(breach))
+    ("private-set-armor" name(breech))
+    ("private-set-armor" name(shield))
+    ("private-set-armor" name(tshield))
+    ("private-set-armor" name(armor))
+    ("private-set-armor" name(glass))
+    ("private-set-armor" name(window))
+    ("private-set-armor" name(lamp))
+    ("private-set-armor" name(sandbag))
+    ("private-set-armor" name(detail))
+    ("private-set-armor" name(grill))
+    ("private-set-armor" name(roller))
+    ("private-set-armor" name(swingarm))
+
+    ; Car
+    ("private-set-armor" name(cabin))
+    ("private-set-armor" name(bodyback))
+    ("private-set-armor" name(door))
+
+    ; Cannon
+    ("private-set-armor" name(stand))
+    ("private-set-armor" name(box))       ; MG ammo box
+    ("private-set-armor" name(magazine))  ; MG ammo box
+
+    ; Airborne
+    ("private-set-armor" name(stabilizer))
+    ("private-set-armor" name(wingl))
+    ("private-set-armor" name(wingr))
+    ("private-set-armor" name(blade))
+    ("private-set-armor" name(spin))
+    ("private-set-armor" name(canopy))
+    ("private-set-armor" name(elevator))
+    ("private-set-armor" name(rudder))
+    ("private-set-armor" name(aileron))
+    ("private-set-armor" name(gear_))
+
+    ; Ammo
+    {setting "ammo"
+      {threshold
+        {blast  {koef (* %ammo 2.00)}}          ; koef = coefficient. Threshold = koef value x volume effective thickness
+        {pierce {koef 1}}
+      }
+      {volumes "ammo*"}
+    }
+    {setting "rocket"
+      {threshold
+        {blast  {koef (* %ammo 0.25)}} ; koef = coefficient. Threshold = koef value x volume effective thickness
+        {pierce {koef 1}}
+      }
+      {volumes "rocket*"}
+    }
+  }
+)
+
+; args = name type repair
+(define "set-internal-components"
+  {volume %name
+    {tags %type "no_target"}
+    {able {Contact 0} {NoWoundDecal}}
+    {thickness 2}
+    {component %name}
+  }
+  {component %name
+    {RepairTime %repair}
+    {tags %type}
+    {RepairOrder 5}
+  }
+)
+
+;args = name thickness repair
+(define "set-bulletproof-wheel"
+  {volume %name
+    {thickness %thickness}
+    {tags "wheel"}
+    {component %name}
+    {able {NoWoundDecal}}
+  }
+  {component %name
+    {RepairTime %repair}
+    {tags "wheel"}
+    {RepairOrder 10}
+  }
+)
+
+;args = name thickness repair
+(define "set-bulletproof-shield"
+  {volume %name
+    {thickness %thickness}
+    {tags "shield"}
+    {component %name}
+  }
+  {component %name
+    {RepairTime %repair}
+    {tags "shield"}
+    {RepairOrder 11}
+  }
+)
+
+; args = name type
+(define "private-set-compoent"
+  {volume %name
+    {component %type}
+    {tags %type}
+  }
+)
+
+; args = repair
+(define "set-body"
+  ("private-set-compoent" name("body")    type("body"))
+  ("private-set-compoent" name("body1")   type("body"))
+  ("private-set-compoent" name("body2")   type("body"))
+  ("private-set-compoent" name("body3")   type("body"))
+  ("private-set-compoent" name("body4")   type("body"))
+  ("private-set-compoent" name("body5")   type("body"))
+  ("private-set-compoent" name("body6")   type("body"))
+  ("private-set-compoent" name("body7")   type("body"))
+  ("private-set-compoent" name("body8")   type("body"))
+  ("private-set-compoent" name("body9")   type("body"))
+  ("private-set-compoent" name("body10")  type("body"))
+  ("private-set-compoent" name("body11")  type("body"))
+  ("private-set-compoent" name("body12")  type("body"))
+  ("private-set-compoent" name("body13")  type("body"))
+  ("private-set-compoent" name("body14")  type("body"))
+  ("private-set-compoent" name("body15")  type("body"))
+  ("private-set-compoent" name("body16")  type("body"))
+  ("private-set-compoent" name("body17")  type("body"))
+  ("private-set-compoent" name("body18")  type("body"))
+  ("private-set-compoent" name("body19")  type("body"))
+  ("private-set-compoent" name("body20")  type("body"))
+
+  ("private-set-compoent" name("standc")  type("body"))
+  ("private-set-compoent" name("standl")  type("body"))
+  ("private-set-compoent" name("standl1") type("body"))
+  ("private-set-compoent" name("standl2") type("body"))
+  ("private-set-compoent" name("standr")  type("body"))
+  ("private-set-compoent" name("standr1") type("body"))
+  ("private-set-compoent" name("standr2") type("body"))
+
+  {component "body"
+    {RepairTime %repair}
+    {RepairOrder 0}
+  }
+)
+
+; args = repair
+(define "set-engine"
+  ("private-set-compoent" name("engine")  type("engine"))
+  ("private-set-compoent" name("engine1") type("engine"))
+  ("private-set-compoent" name("engine2") type("engine"))
+  ("private-set-compoent" name("engine3") type("engine"))
+  ("private-set-compoent" name("engine4") type("engine"))
+  ("private-set-compoent" name("engine5") type("engine"))
+
+  {component "engine"
+    {RepairTime %repair}
+    {RepairOrder 3}
+  }
+)
+
+; args = repair
+(define "set-turret"
+  ("private-set-compoent" name("turret")  type("turret"))
+  ("private-set-compoent" name("turret1") type("turret"))
+  ("private-set-compoent" name("turret2") type("turret"))
+  ("private-set-compoent" name("turret3") type("turret"))
+  ("private-set-compoent" name("turret4") type("turret"))
+  ("private-set-compoent" name("turret5") type("turret"))
+
+  {component "turret"
+    {RepairTime %repair}
+    {RepairOrder 2}
+  }
+)
+
+; args = repair
+(define "set-mantlet"
+  ("private-set-compoent" name("mantlet")  type("mantlet"))
+  ("private-set-compoent" name("mantlet1") type("mantlet"))
+  ("private-set-compoent" name("mantlet2") type("mantlet"))
+  ("private-set-compoent" name("mantlet3") type("mantlet"))
+  ("private-set-compoent" name("mantlet4") type("mantlet"))
+  ("private-set-compoent" name("mantlet5") type("mantlet"))
+
+  {component "mantlet"
+    {RepairTime %repair}
+    {RepairOrder 3}
+  }
+)
+
+; args = name thickness type
+(define "private-set-main-weapon"
+  {volume %name
+    {component %type}
+    {tags "no_target" %type}
+    {thickness %thickness}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+)
+
+; args = repair thickness
+(define "set-gun"
+  ("private-set-main-weapon" name("gun") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("gun1") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("gun2") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("gun3") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("gun4") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("gun5") thickness(%thickness) type("gun"))
+
+  ("private-set-main-weapon" name("barrel") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("barrel1") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("barrel2") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("barrel3") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("barrel4") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("barrel5") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("barrel6") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("barrel7") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("barrel8") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("barrel9") thickness(%thickness) type("gun"))
+  ("private-set-main-weapon" name("barrel10") thickness(%thickness) type("gun"))
+
+  ("private-set-main-weapon" name("breach") thickness(2) type("gun"))
+  ("private-set-main-weapon" name("breech") thickness(2) type("gun"))
+
+  {component "gun"
+    {RepairTime %repair}
+    {RepairOrder 1}
+  }
+)
+
+; args = name thickness
+(define "set-shield"
+  {volume %name
+    {thickness %thickness}
+    {tags "shield"}
+    {component %name}
+  }
+  {component %name
+    {RepairTime 10}
+    {tags "shield"}
+    {RepairOrder 11}
+  }
+)
+
+; define shield_track
+; args = name thickness
+(define "set-shield-track"
+  {volume %name
+    {thickness %thickness}
+    {tags "shield"}
+    {component %name}
+    {CastSteel 1}
+  }
+  {component %name
+    {RepairTime 10}
+    {tags "shield"}
+    {RepairOrder 11}
+  }
+)
+
+; args = position index thickness
+(define "private-set-track-wheel"
+  {volume "track%position%index"
+    {tags "mover" "track"}
+    ;{able {NoWoundDecal}}
+    {thickness %thickness}
+    {component "track%position"}
+  }
+)
+
+; args = thickness repair
+(define "set-tracks"
+  {volume "trackleft"
+    {thickness %thickness}
+    {tags "mover" "track"}
+    {able {NoWoundDecal} {holed} {contact_ground 0}}
+  }
+  {volume "trackright"
+    {thickness %thickness}
+    {tags "mover" "track"}
+    {able {NoWoundDecal} {holed} {contact_ground 0}}
+  }
+
+  ("private-set-track-wheel" position(left) index(1)  thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(2)  thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(3)  thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(4)  thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(5)  thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(6)  thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(7)  thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(8)  thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(9)  thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(10) thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(11) thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(12) thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(13) thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(14) thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(15) thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(16) thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(17) thickness(%thickness))
+  ("private-set-track-wheel" position(left) index(18) thickness(%thickness))
+
+  ("private-set-track-wheel" position(right) index(1)  thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(2)  thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(3)  thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(4)  thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(5)  thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(6)  thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(7)  thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(8)  thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(9)  thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(10) thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(11) thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(12) thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(13) thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(14) thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(15) thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(16) thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(17) thickness(%thickness))
+  ("private-set-track-wheel" position(right) index(18) thickness(%thickness))
+
+  {component "trackleft"
+    {RepairTime %repair}
+    {tags "mover" "track"}
+    {RepairOrder 4}
+  }
+  {component "trackright"
+    {RepairTime %repair}
+    {tags "mover" "track"}
+    {RepairOrder 4}
+  }
+)
+
+; define shield_tear
+; args = name thickness
+(define "set-tear-shield"
+  {volume %name
+    {thickness %thickness}
+    {tags "cut_part" "shield"}
+    {component %name}
+  }
+  {component %name
+    {RepairTime 1}
+    {tags "cut_part" "shield"}
+    {RepairOrder 11}
+  }
+)

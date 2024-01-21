@@ -1,0 +1,8 @@
+{from "usa-browning-m2"
+
+  {filling "usa-hmgun" 400}
+
+  ("fire rate" rpm(2400))
+  ("reload time" seconds(20))
+
+}

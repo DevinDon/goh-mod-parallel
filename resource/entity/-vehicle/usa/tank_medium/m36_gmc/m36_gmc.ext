@@ -1,0 +1,102 @@
+; armor notes
+; tracks and wheels 20mm
+; gun 20mm
+; spare tracks 40mm
+
+
+
+
+
+("set-basic-durability" body(350) engine(200) turret(225) mantlet(175) gun(200) track(200) ammo(175))
+("set-basic-armor"      ammo(30))
+
+("set-shield-track" name("detail7a") thickness(40))
+("set-shield-track" name("detail7b") thickness(40))
+("set-shield-track" name("detail8a") thickness(40))
+("set-shield-track" name("detail8b") thickness(40))
+("set-shield-track" name("detail9a") thickness(40))
+("set-shield-track" name("detail9b") thickness(40))
+("set-shield-track" name("detail10a") thickness(40))
+("set-shield-track" name("detail10b") thickness(40))
+
+("set-turret" repair(15))
+("set-mantlet" repair(10))
+("set-gun" thickness(20) repair(10))
+
+("set-body" repair(15))
+("set-engine" repair(10))
+("set-tracks" thickness(20) repair(10))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("ammo4") type("ammo") repair(3))
+("set-internal-components" name("fuel1") type("fuel") repair(3))
+("set-internal-components" name("fuel2") type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+{volume "body1"      ;upper
+  {thickness 19.5
+    {top 19.5}
+    {front 38}
+    {rear 5}
+  }
+}
+{volume "body2"      ;lower
+  {thickness 25.4
+    {front 107.8}
+    {rear 5}
+    {top 50.8}    ;front
+  }
+}
+{volume "body3"      ;ring
+  {thickness 19.5}
+}
+{volume "engine1"    ; upper
+  {thickness 19.5
+    {front 5}
+    {top 10}
+  }
+}
+{volume "engine2"    ; lower
+  {thickness 25.4
+    {rear 19.5}
+    {front 10}
+  }
+}
+{volume "turret1"    ; main part
+  {thickness 31.7}
+  {able {holed}}
+}
+{volume "turret2"    ; rear part
+  {thickness 25.4}
+}
+{volume "turret3"    ;
+  {thickness 31.7
+    {left 50.8}    ;side
+  }
+}
+{volume "turret4"
+  {thickness 31.7
+    {left 50.8}    ;side
+  }
+}
+{volume "mantlet"
+  {thickness 76.2}
+  {tags "turret"}
+  {component "turret"}
+}
+{volume "armor1"    ; sideskirt
+  {thickness 5}
+}
+{volume "armor2"    ; sideskirt
+  {thickness 5}
+}
+{volume "armor3"    ; sideskirt
+  {thickness 5}
+}
+{volume "armor4"    ; wood
+  {thickness 15}
+  {material "wood"}
+  {tags "wood"}
+}

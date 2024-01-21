@@ -1,0 +1,14 @@
+{from "pattern apcbc"
+
+  {Tag "shell size1 37to47"}
+  {Inventory {Size 3 1}}
+  {Entity "37mm_usa_apc"}
+  {Mass 1.58}
+
+  {View "howitzer_shell_37-50"
+    {Tail "shell_tracer_usa_37_m3" "tail"}
+  }
+
+  ("ap_blast" args 0.27)
+
+}

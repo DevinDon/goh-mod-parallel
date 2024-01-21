@@ -1,0 +1,59 @@
+; standard armored car config
+
+actor
+
+(include "vehicle-config.ext");
+
+{brain "vehicle"
+  {state "vehicle"}
+  {const "crush/min_danger_zone_time"   1}
+  {const "crush/min_danger_zone_length" 1}
+}
+
+{PatherID "armored"}
+{collider "armored"}
+{props "armored_car" "engine" "hatch" "detect_tank_light"}
+
+{targetClass    "armoredcar" "bullet"}
+{targetSelector "tank_zenite"}
+
+{hearingBias 0} ; reduces units ability to hear sound signals. value = meters
+
+{sensor
+  {visor "main"
+    {vision "tank_range_200"}
+    {bone "foresight1"}
+  }
+  {Visor "driver"
+    {vision "tank_driver"}
+    {bone "visor2"}
+  }
+  {visor "around"
+    {vision "vehicle_around"}
+    {bone "visor1"}
+  }
+  {visor "human"
+    {vision "human"}
+    {bone "visor3"}
+  }
+  {visor "none"
+    {vision "none"}
+  }
+  {Visor "hearing"
+    {vision "noise_detection"}
+    {bone "hearing_bone"}
+  }
+}
+
+{Skeleton
+  {bone "hearing_bone"
+    {Position 0 0 50}
+  }
+}
+
+{extender "talk"
+  {talker "tank"}
+}
+{able "talk"}
+
+{perks {blastwave_modifier 100}}

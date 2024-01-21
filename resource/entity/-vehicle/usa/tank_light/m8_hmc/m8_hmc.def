@@ -1,0 +1,139 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(0.9))
+
+  {Extension "m8_hmc.mdl"}
+  (include   "m8_hmc.ext")
+  (include   "crew-and-seat.ext")
+
+  {Props "light" "vision_lev03" "shell_eject" "muzzle_75mm_76mm" "detect_tank_light" "tractor" "tractor_light" "no_cook" "muzzle_hmg_m2hb"}
+
+  {PatherId "stuart"}
+  {Targetclass "tank_light"}
+  {TargetSelector "tank_light"}
+  {Collider "tank.light"}
+
+  {Boarder
+    {anm "driver"
+      {forward {begin "board_tank_left"} {end "seat_m8_scott_driver"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "left"
+      {forward {begin "board_tank_left"} {end "seat_m8_scott_charger"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "right"
+      {forward {begin "board_tank_right"} {end "seat_m8_scott_gunner"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "charger_l"
+      {forward {begin "board_tank_left"} {end "seat_m8_scott_charger"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "charger_r"
+      {forward {begin "board_tank_right"} {end "seat_m8_scott_charger"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "gunner_l"
+      {forward {begin "board_tank_left"} {end "seat_m8_scott_gunner"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "gunner_r"
+      {forward {begin "board_tank_right"} {end "seat_m8_scott_gunner"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "commander_l"
+      {forward {begin "board_tank_left"} {end "seat_m18_commander"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "commander_r"
+      {forward {begin "board_tank_right"} {end "seat_m18_commander"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "armor1"
+      {forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+      {reverse {end "emit_tank_1"}}
+    }
+  }
+
+  {Sensor
+    {Visor "around"
+      {Vision "vehicle_around"}
+    }
+  }
+
+  {Extender "shield" {on}}
+
+  {Extender "inventory"
+    {Box
+      {Size 12 6}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo usa-hmgun" 1000}
+      {Item "ammo usa-75x272 he" 30}
+      {Item "ammo usa-75x272 heat" 8}
+      {Item "ammo usa-75x272 wp" 8}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 5}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "usa-75mm-m2-how" filling "usa-75x272 he" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.35} ; s
+        {OrderTime       4.00} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "aa"}
+      {Weapon "usa-browning-m2-x2" filled}
+      {Gunner "commander"}
+      {Charger "commander"}
+      {LinkBone "mgun"}
+      {LinkAnimation "off"}
+      {ai_in_manual}
+      {Basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 14970}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_sm2") step(0.32) length(0.59) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(58) power(350) mass(14970) performance(1.05))
+    ("set-fuel-tank" volume(400) power(350))
+  }
+
+  {Bone "gun_rot"
+    {limits -20 45}
+    {speed2 8}
+  }
+  {Bone "turret"
+    {speed2 24}
+  }
+  {Bone "mgun_a_rot1"
+    {speed2 30}
+  }
+  {Bone "mgun_a_rot2"
+    {limits -13 85}
+    {speed2 60}
+  }
+
+}

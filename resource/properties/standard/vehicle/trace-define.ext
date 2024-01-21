@@ -1,0 +1,45 @@
+; standard trace define
+
+; args = fx step wheelleft wheelright boneleft boneright
+(define "set-car-trace"
+  {Track %wheelleft
+    {Tracer
+      {View %fx}
+      {Bone %boneleft}
+      {Step %step}
+    }
+  }
+  {Track %wheelright
+    {Tracer
+      {View %fx}
+      {Bone %boneright}
+      {Step %step}
+    }
+  }
+)
+
+; args = fx step length boneleft boneright
+(define "set-tank-trace"
+  {Track "left"
+    {Tracer
+      {View %fx}         ; "tracks"
+      {Bone %boneleft}   ; "FXtraceL1"
+      {Step %step}       ; 0.7 meters
+    }
+    {TextureScroller
+      {Bone "TrackL"}
+      {Length %length}   ; 0.6 meters per animation
+    }
+  }
+  {Track "right"
+    {Tracer
+      {View %fx}
+      {Bone %boneright}  ; "FXtraceR1"
+      {Step %step}       ; in meters
+    }
+    {TextureScroller
+      {Bone "TrackR"}
+      {Length %length}   ; meters per animation
+    }
+  }
+)

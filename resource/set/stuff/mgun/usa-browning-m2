@@ -1,0 +1,38 @@
+{From "pattern hmgun"
+
+  {Tag "aa" "gun"}
+
+  {Entity "browning_m2"}
+  {FireSound "smallarms/s4/d1/USA/M2HB/"}
+  {FireSoundclose "smallarms/s4/d1/USA/M2HB/"}
+  {ReloadSound "dt"}
+
+  {Mass 38}
+  {Inventory {size 7 3}}
+
+  {Calibre 12.7}
+  {Filling "usa-hmgun" 100}
+
+  {TraceFreq 3}
+  {Range 300 300}
+  {SpreadTolerance 0.1}
+
+  ("velocity" mps(894))
+  ("fire rate" rpm(600))
+  ("reload time" seconds(5))
+  ("human health" damage(200))
+
+  {ProjectileDamageTable {10 30} {300 5}}
+
+  {Burst
+    {Short 10 3}
+    {Long  20 3}
+    {RangeKoef 0.75}
+  }
+
+  {Spreading
+    {BurstAccuracy 100 99 98 97 96 95 94 93 92}
+    {RadiusTable {0 0.01} {300 3}}
+  }
+
+}

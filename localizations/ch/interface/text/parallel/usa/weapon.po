@@ -1,0 +1,50 @@
+msgid   ""
+msgstr  ""
+"Project-Id-Version: Parallel World - Weapon\n"
+"Language: zh-CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+# 重机枪
+msgctxt "desc/weapon/usa-browning-m2"
+msgid   "Browning .50 cal M2HB"
+msgstr  "勃朗宁 .50 口径 M2HB 重机枪"
+
+msgctxt "desc/weapon/usa-browning-m2-x2"
+msgid   "Dual Browning .50 cal M2HB"
+msgstr  "双联勃朗宁 .50 口径 M2HB 重机枪"
+
+msgctxt "desc/weapon/usa-browning-m2-x4"
+msgid   "Quad Browning .50 cal M2HB"
+msgstr  "四联装勃朗宁 .50 口径 M2HB 重机枪"
+
+msgctxt "desc/weapon/usa-browning-m2-x8"
+msgid   "AN/M2 Browning .50 cal"
+msgstr  "AN/M2 勃朗宁 .50 口径 M2HB 重机枪"
+
+# 火炮
+msgctxt "desc/weapon/usa-37mm-m6"
+msgid   "37mm Gun M3 L/53.5"
+msgstr  "37mm M3 L/53.5 坦克炮"
+
+msgctxt "desc/weapon/usa-75mm-m2-how"
+msgid   "75mm Howitzer M2 L/15.9"
+msgstr  "75mm M2 L/15.9 榴弹炮"
+
+msgctxt "desc/weapon/usa-75mm-m6"
+msgid   "75mm Gun M6 L/39"
+msgstr  "75mm M6 L/39 坦克炮"
+
+msgctxt "desc/weapon/usa-90mm-m3"
+msgid   "90mm Gun M3 L/53"
+msgstr  "90mm M3 L/53 坦克炮"
+
+msgctxt "desc/weapon/usa-90mm-t15e1"
+msgid   "90mm Gun T15E1 L/73"
+msgstr  "90mm T15E1 L/73 坦克炮"

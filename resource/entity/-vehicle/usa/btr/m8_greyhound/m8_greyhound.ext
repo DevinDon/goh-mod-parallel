@@ -1,0 +1,124 @@
+; armor notes
+; wheels 0.5mm
+; gun 20mm
+; shields 2-8mm
+
+
+
+
+
+("set-basic-durability" body(175) engine(150) turret(150) mantlet(100) gun(150) track(150) ammo(120))
+("set-basic-armor"      ammo(15))
+
+("set-turret" repair(10))
+("set-mantlet" repair(5))
+("set-gun" repair(10) thickness(20))
+
+("set-body" repair(15))
+("set-engine" repair(10))
+
+("set-bulletproof-wheel" name("wheelleft1") thickness(20) repair(5))
+("set-bulletproof-wheel" name("wheelleft2") thickness(20) repair(5))
+("set-bulletproof-wheel" name("wheelleft3") thickness(20) repair(5))
+("set-bulletproof-wheel" name("wheelright1") thickness(20) repair(5))
+("set-bulletproof-wheel" name("wheelright2") thickness(20) repair(5))
+("set-bulletproof-wheel" name("wheelright3") thickness(20) repair(5))
+
+("set-bulletproof-shield" name("shieldl1") thickness(30) repair(5))
+("set-bulletproof-shield" name("shieldl2") thickness(30) repair(5))
+("set-bulletproof-shield" name("shieldl3") thickness(30) repair(5))
+("set-bulletproof-shield" name("shieldr1") thickness(30) repair(5))
+("set-bulletproof-shield" name("shieldr2") thickness(30) repair(5))
+("set-bulletproof-shield" name("shieldr3") thickness(30) repair(5))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("ammo4") type("ammo") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+; armor thickness define
+{volume "body1"
+  {thickness 9.5
+    {front 16}
+    {top 12.7}
+    {bottom 6.4}
+  }
+}
+{volume "body2"
+  {thickness 9.5
+    {front 16}
+    {top 12.7}
+    {bottom 6.4}
+  }
+}
+{volume "body3"
+  {thickness 9.5
+    {top 6.4}
+    {bottom 6.4}
+  }
+}
+{volume "body4"
+  {thickness 9.5
+    {top 6.4}
+    {bottom 6.4}
+  }
+}
+{volume "body5"
+  {thickness 9.5
+    {top 6.4}
+    {front 19.1}
+  }
+}
+{volume "turret1"
+  {thickness 19.1
+  {top 6.4}
+  }
+  {able {holed}}
+}
+{volume "turret2"
+  {thickness 19.1}
+}
+{volume "mantlet"
+  {thickness 25.4}
+}
+{volume "engine"
+  {thickness 9.5
+    {top 6.4}
+    {bottom 6.4}
+  }
+}
+{volume "armor1"
+  {thickness 16}
+}
+{volume "armor2"
+  {thickness 16}
+}
+{volume "armor3"
+  {thickness 6.4}
+}
+{volume "armor4"
+  {thickness 6.4}
+}
+{volume "armor5"
+  {thickness 6.4}
+}
+{volume "armor6"
+  {thickness 6.4}
+}
+{volume "armor7"
+  {thickness 6.4}
+}
+{volume "armor8"
+  {thickness 6.4}
+}
+{volume "armor9"
+  {thickness 6.4}
+}
+{volume "armor10"
+  {thickness 6.4}
+}
+{volume "armor_ring"
+  {thickness 6.4}
+  {able {holed}}
+}
