@@ -246,6 +246,9 @@
   {Item "flare_usa" "artillery_203_vt" "ammo" 1 {Value 10}}
   {Item "flare_usa" "artillery_240"    "ammo" 1 {Value 10}}
 
+  ; additional repair kit
+  {Item "repair_kit" 1 {Value 10}}
+
   ; custom
   {Item "usa-hmgun"             "ammo" 100 {Value 10}}
   {Item "usa-hmgun"   "api"     "ammo" 100 {Value 12}}
