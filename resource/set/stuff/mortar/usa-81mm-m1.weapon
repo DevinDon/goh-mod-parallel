@@ -1,6 +1,6 @@
 {from "pattern mortar"
 
-  {Filling "mortarusa_81" 1}
+  {Filling "ammo mortarusa_81" 3}
   {Calibre 81}
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
@@ -24,7 +24,7 @@
   {Gravity 6} ; 炮弹重力
 
   {Spreading 1
-    {RadiusTable {0 0} {300 30} {1000 100}}
+    {RadiusTable {0 0} {500 30} {1000 100}}
   }
 
 }

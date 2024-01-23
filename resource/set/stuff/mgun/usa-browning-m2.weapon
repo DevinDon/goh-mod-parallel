@@ -11,7 +11,7 @@
   {Inventory {size 7 3}}
 
   {Calibre 12.7}
-  {Filling "usa-hmgun" 100}
+  {Filling "ammo usa-hmgun" 100}
 
   {TraceFreq 3}
   {Range 300 300}
