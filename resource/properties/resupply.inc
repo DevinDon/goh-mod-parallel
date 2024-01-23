@@ -835,7 +835,7 @@
     {radius            25} ;// resupply radius in meter
     {resupplyPeriod 3} ;// resupply period in seconds
     {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit           2000} ;// max number of resupplies (0 = unlimited)
+    {limit           5000} ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -860,11 +860,13 @@
       ("items_heavy_eng")
       ("items_heavy_fin")
       ("items_heavy_usa")
+      ("items_engineer")
+      ("items_explosives")
     }
     {radius            25} ;// resupply radius in meter
     {resupplyPeriod 3} ;// resupply period in seconds
     {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit           4000} ;// max number of resupplies (0 = unlimited)
+    {limit          10000} ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
