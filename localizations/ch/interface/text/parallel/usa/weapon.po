@@ -28,6 +28,11 @@ msgctxt "desc/weapon/usa-browning-m2-x8"
 msgid   "AN/M2 Browning .50 cal"
 msgstr  "AN/M2 勃朗宁 .50 口径 M2HB 重机枪"
 
+# 迫击炮
+msgctxt "desc/weapon/usa-81mm-m1"
+msgid   "81mm M1 Mortar"
+msgstr  "81mm M1 迫击炮"
+
 # 火炮
 msgctxt "desc/weapon/usa-37mm-m6"
 msgid   "37mm Gun M3 L/53.5"
