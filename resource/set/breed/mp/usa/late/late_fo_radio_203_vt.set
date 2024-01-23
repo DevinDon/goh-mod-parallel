@@ -23,7 +23,7 @@
     {item "garand" filling "rifle_usa garand_clip ap ammo" 8}
     {item "rifle_usa garand_clip ap ammo" 80}
 
-    {item "flaregun_anm8" filling "flare_usa artillery_240" 1}
+    {item "weapon flaregun_anm8" filling "flare_usa artillery_240" 1}
     {item "ammo flare_usa artillery_240" 5}
 
     {item "mk2 grenade" 2}
