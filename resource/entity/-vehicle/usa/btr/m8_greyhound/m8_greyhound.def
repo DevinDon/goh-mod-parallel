@@ -64,7 +64,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo usa-hmgun" 3000}
+      {Item "ammo usa-hmgun api" 3000}
       {Item "ammo usa-37 apcbc" 30}
       {Item "ammo usa-37 he" 70}
     }
@@ -74,7 +74,7 @@
     {RestoreIKTime 7}
     {Place "gun"
       {RestoreIKAfterAim }
-      {Weapon "usa-37mm-m6" filling "usa-37 apcbc" 5}
+      {Weapon "weapon usa-37mm-m6" filling "ammo usa-37 apcbc" 5}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion
@@ -88,7 +88,7 @@
     }
     {Place "mgun1"
       {Type "coaxial"}
-      {Weapon "usa-browning-m2" filled}
+      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 100}
       {Foresight "foresight4"}
       {Gunner "gunner"}
       {Charger "charger"}
@@ -104,7 +104,7 @@
     }
     {Place "mgun"
       {Type "aa"}
-      {Weapon "usa-browning-m2-x2" filled}
+      {Weapon "weapon usa-browning-m2-x2" filling "ammo usa-hmgun api" 200}
       {Gunner "gunner2"}
       {Charger "gunner2"}
       {LinkBone "mgun"}
