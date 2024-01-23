@@ -18,7 +18,7 @@ msgstr  ".50 口径 M2 穿甲弹"
 
 msgctxt "desc/ammo/usa-hmgun api"
 msgid   ".50 cal API M8 Rounds"
-msgstr  ".50 口径 M8 穿甲燃烧弹"
+msgstr  ".50 口径 M8 穿甲爆破燃烧弹"
 
 # 炮弹
 # 37mm

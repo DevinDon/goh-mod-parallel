@@ -55,7 +55,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo usa-hmgun" 5000}
+      {Item "ammo usa-hmgun api" 5000}
       {Item "ammo usa-90x1270 apcbche" 15}
       {Item "ammo usa-90x1270 hvap" 7}
       {Item "ammo usa-90x1270 he" 20}
@@ -66,7 +66,7 @@
     {RestoreIKTime 3}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "usa-90mm-t15e1" filling "ammo usa-90x1270 apcbche" 1}
+      {Weapon "weapon usa-90mm-t15e1" filling "ammo usa-90x1270 apcbche" 1}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion
@@ -80,7 +80,7 @@
     }
     {Place "mgun2"
       {Type "coaxial"}
-      {Weapon "usa-browning-m2" filled}
+      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 100}
       {Foresight "foresight5"}
       {Gunner "gunner"}
       {Charger "charger"}
@@ -96,7 +96,7 @@
     }
     {Place "mgun1"
       {Type "hull"}
-      {Weapon "usa-browning-m2-x2" filled}
+      {Weapon "weapon usa-browning-m2-x2" filling "ammo usa-hmgun api" 200}
       {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}
@@ -113,7 +113,7 @@
     }
     {Place "mgun"
       {Type "aa"}
-      {Weapon "usa-browning-m2-x2" filled}
+      {Weapon "weapon usa-browning-m2-x2" filling "ammo usa-hmgun api" 200}
       {Gunner "commander"}
       {Charger "commander"}
       {LinkBone "mgun"}

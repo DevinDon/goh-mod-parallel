@@ -1,0 +1,15 @@
+; standard hmgun ammo define
+
+; args = calibre
+(define "api"
+  {damage fire
+    {radius (* %calibre 0.01)}
+    {heating (* %calibre 0.1)}
+    {time (* %calibre 0.1)}
+  }
+  {damage blastwave
+    {energy (* %calibre 0.02)}
+    {area (* %calibre 0.02) (* %calibre 0.02)}
+    {ground_interaction_radius 0.2} ; 该值与 area 的第二个参数相乘，以确定爆炸距离地面是否足够近，从而触发地形效果
+  }
+)

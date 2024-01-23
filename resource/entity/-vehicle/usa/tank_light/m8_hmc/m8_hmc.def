@@ -82,7 +82,7 @@
     {RestoreIKTime 5}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "usa-75mm-m2-how" filling "usa-75x272 he" 1}
+      {Weapon "weapon usa-75mm-m2-how" filling "ammo usa-75x272 he" 1}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion
@@ -96,7 +96,7 @@
     }
     {Place "mgun"
       {Type "aa"}
-      {Weapon "usa-browning-m2-x2" filled}
+      {Weapon "weapon usa-browning-m2-x2" filled}
       {Gunner "commander"}
       {Charger "commander"}
       {LinkBone "mgun"}

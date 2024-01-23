@@ -1,5 +1,7 @@
 {bullet
 
+  (include "/properties/standard/ammo/hmgun.ext")
+
   {Tag "bullet stackable pierce hmgun"}
   {Tag "bullet_fx size3"}
 
