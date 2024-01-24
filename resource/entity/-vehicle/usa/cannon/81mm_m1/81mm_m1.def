@@ -4,8 +4,7 @@
   {Extender "inventory"
     {Box
       {Item "sandbag_vehicle" 2}
-
-      {Item "ammo mortarusa_81 he2" 30}
+      {Item "ammo usa-mortar-81 he" 30}
     }
   }
 

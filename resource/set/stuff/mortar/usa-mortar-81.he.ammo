@@ -1,0 +1,38 @@
+{from "pattern mortar_ammo"
+
+  {Tag "mortar pierce he fg 75to76 all_he"}
+
+  {Mass 3.2}
+  {Inventory
+    {size 3 1}
+  }
+
+  {Entity "81mm_usa_mortar_he"}
+  {View "81mm_usa_mortar_he"
+    {Tail "shell_tail" "tail"}
+  }
+
+  ("he_medium")
+
+  {damage fire
+    {radius  0.50}
+    {heating 9.00}
+    {time    0.50}
+  }
+  {damage blastwave
+    {energy  3.20}
+    {area    0.40 0.50}
+    {ground_interaction_radius 0}
+  }
+  {damage add blastwave
+    {energy  1.50}
+    {area    3.00 5.00}
+    {ground_interaction_radius 0}
+  }
+  {damage add blastwave
+    {energy 0.15}
+    {area   5.00 9.00}
+    {ground_interaction_radius 0}
+  }
+
+}

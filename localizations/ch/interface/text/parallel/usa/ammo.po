@@ -83,3 +83,9 @@ msgstr  "90mm T42 高爆弹 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/73</c>"
 msgctxt "desc/ammo/usa-90x1270 hvap"
 msgid   "90mm HVAP-T, Shot T44 [<c(48c445)>HVAP</c>] <c(65696d)>L/73</c>"
 msgstr  "90mm T44 高速穿甲曳光弹 [<c(48c445)>高速穿甲弹</c>] <c(65696d)>L/73</c>"
+
+# 迫击炮
+# 81mm
+msgctxt "desc/ammo/usa-mortar-81 he"
+msgid   "81mm HE, Shell M56 [<c(ff1200)>HE</c>]"
+msgstr  "81mm M56 高爆弹 [<c(ff1200)>高爆弹</c>]"

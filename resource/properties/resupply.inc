@@ -267,6 +267,7 @@
   {Item "usa-90x1270" "apcbche" "ammo"   1 {Value  9}}
   {Item "usa-90x1270" "he"      "ammo"   1 {Value  9}}
   {Item "usa-90x1270" "hvap"    "ammo"   1 {Value  9}}
+  {Item "usa-mortar-81" "he"    "ammo"   1 {Value  8}}
 )
 
 (define "items_medic"
@@ -863,10 +864,10 @@
       ("items_engineer")
       ("items_explosives")
     }
-    {radius            25} ;// resupply radius in meter
+    {radius 50} ;// resupply radius in meter
     {resupplyPeriod 3} ;// resupply period in seconds
     {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit          10000} ;// max number of resupplies (0 = unlimited)
+    {limit 0} ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
