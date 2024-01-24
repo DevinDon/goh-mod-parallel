@@ -49,7 +49,7 @@
 {Weaponry
   ("restore_ik_time")
   {place "gun"
-    {weapon "weapon usa-81mm-m1" filling "ammo mortarusa_81 he" 1}
+    {weapon "weapon usa-81mm-m1" filling "ammo mortarusa_81 he2" 6}
     {RestoreIKAfterAim}
     {gunner "gunner"}
     {charger "gunner"}
