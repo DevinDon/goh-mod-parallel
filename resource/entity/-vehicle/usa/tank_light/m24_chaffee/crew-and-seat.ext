@@ -62,7 +62,7 @@
 (define "set-open-gunner-crew"
   {sensor
     {visor "top"
-      {vision "human"}
+      {vision "standard-vision-wide"}
       {bone "%visorbone"}
     }
   }

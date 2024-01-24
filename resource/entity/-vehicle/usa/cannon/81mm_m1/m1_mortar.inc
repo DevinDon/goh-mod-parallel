@@ -9,7 +9,7 @@
 
 {sensor
   {visor "main"
-    {vision "cannon_mortar"}
+    {vision "standard-vision-wide"}
     {bone "visor"}
   }
 }

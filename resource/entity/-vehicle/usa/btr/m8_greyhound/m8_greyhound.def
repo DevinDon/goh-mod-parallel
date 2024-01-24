@@ -44,11 +44,11 @@
 
   {Sensor
     {Visor "main"
-      {Vision "tank_range_250"}
+      {Vision "standard-vision-narrow"}
       {Bone "foresight1"}
     }
     {Visor "around"
-      {Vision "vehicle_around"}    ;// better vision than a in-closed turret
+      {Vision "standard-vision-around"}
     }
   }
 

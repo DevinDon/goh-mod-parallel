@@ -18,7 +18,7 @@
 
 {sensor
   {Visor "hearing"
-    {vision "noise_detection"}
+    {vision "standard-vision-noise-detection"}
     {bone "hearing_bone"}
   }
   {RecognizeTime 0.01}

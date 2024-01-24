@@ -60,7 +60,7 @@
 
 {Sensor
   {Visor "around"
-    {Vision "vehicle_around"}    ;// better vision than a in-closed turret
+    {Vision "standard-vision-around"}
   }
 }
 

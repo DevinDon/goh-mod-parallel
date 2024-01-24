@@ -21,26 +21,26 @@ actor
 
 {sensor
   {visor "main"
-    {vision "tank_range_200"}
+    {vision "standard-vision-narrow"}
     {bone "foresight1"}
   }
   {Visor "driver"
-    {vision "tank_driver"}
+    {vision "standard-vision-narrow"}
     {bone "visor2"}
   }
   {visor "around"
-    {vision "tank_around"}
+    {vision "standard-vision-around"}
     {bone "visor1"}
   }
   {visor "human"
-    {vision "human"}
+    {vision "standard-vision-wide"}
     {bone "visor3"}
   }
   {visor "none"
-    {vision "none"}
+    {vision "standard-vision-none"}
   }
   {visor "hearing"
-    {vision "noise_detection"}
+    {vision "standard-vision-noise-detection"}
     {bone "hearing_bone"}
   }
 }
