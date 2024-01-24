@@ -1,0 +1,12 @@
+{
+  (include "m1_mortar.inc")
+
+  {Extender "inventory"
+    {Box
+      {Item "sandbag_vehicle" 2}
+
+      {Item "ammo mortarusa_81 he2" 30}
+    }
+  }
+
+}
