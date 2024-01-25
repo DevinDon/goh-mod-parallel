@@ -1,0 +1,119 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/armored-car-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(1.0))
+
+  {Extension "m8_greyhound.mdl"}
+  (include "m8_greyhound.ext")
+  (include "crew-and-seat-early.ext")
+
+  {Props "m8_greyhound" "tank" "turret" "wheeled" "with_gun" "tractor" "tractor_light" "vision_lev02" "muzzle_37mm_47mm" "open_top"}
+
+  {PatherId "sdkfz232"}
+  {Targetclass "armoredcar"}
+  {TargetSelector "tank_light"}
+
+  {Extender "shield" {off}}
+
+  {Boarder
+    {anm "gunner"
+      {forward {begin "board_MiddleArmor"} {end "seat_m8_gunner"}}
+      {reverse {end "emit_tank_1"}}
+    }
+    {anm "charger"
+      {forward {begin "board_MiddleArmor"} {end "seat_m8_charger"}}
+      {reverse {end "emit_tank_1"}}
+    }
+    {anm "driver"
+      {forward {begin "board_MiddleArmor"} {end "seat_m8_driver"}}
+      {reverse {end "emit_tank_1"}}
+    }
+    {anm "commander"
+      {forward {begin "board_MiddleArmor"} {end "seat_m8_driver"}}
+      {reverse {end "emit_tank_1"}}
+    }
+    {anm "armor1"
+      {forward {begin "board_LowArmor"} {end "pose_seat_armor_1"}}
+      {reverse {end "emit_tank_1"}}
+    }
+  }
+
+  {Sensor
+    {Visor "main"
+      {Vision "standard-vision-narrow"}
+      {Bone "foresight1"}
+    }
+    {Visor "around"
+      {Vision "standard-vision-around"}
+    }
+  }
+
+  {Placer
+    {Place "gunner" {Visor "main"}}
+    {Place "commander" {Visor "around"}}
+    {Place "charger" {Visor "none"}}
+  }
+
+  {Extender "inventory"
+    {Box
+      {Size 12 5}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo usa-hmgun api" 3000}
+      {Item "ammo usa-37 apcbc" 30}
+      {Item "ammo usa-37 he" 70}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 7}
+    {Place "gun"
+      {RestoreIKAfterAim }
+      {Weapon "weapon usa-37mm-m6" filling "ammo usa-37 apcbc" 5}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  10.00} ; km/h
+        {ByLinearSpeed    0.25} ; km/h
+        {MaxAngularSpeed  5.00} ; deg/s
+        {ByAngularSpeed   0.35} ; deg/s
+        {DisorderTime     0.25} ; s
+        {OrderTime        3.00} ; s
+      }
+    }
+    {Place "mgun1"
+      {Type "coaxial"}
+      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 100}
+      {Foresight "foresight4"}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {Basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 7890}
+  {Chassis "wheel"
+    ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
+    ("set-maneuverability-of-armored-car" speed(90) power(300) mass(7890) performance(1.5))
+    ("set-fuel-tank" volume(500) power(300))
+  }
+
+  {Bone "gun_rot"
+    {limits -10 20}
+    {speed2 10}
+  }
+  {Bone "turret"
+    {speed2 36}
+  }
+
+}
