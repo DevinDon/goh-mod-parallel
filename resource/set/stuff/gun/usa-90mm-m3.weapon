@@ -10,7 +10,7 @@
   {Calibre 90} ; 口径
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
-  {SpreadTolerance 0.75} ; 瞄准到 75% 就可以开火
+  {SpreadTolerance 0.50} ; 瞄准到 50% 就可以开火
   {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
 
   {RechargeTime 10} ; 装填时间（秒）
@@ -23,7 +23,7 @@
     {ProjectileDamageTable {0 188} {300 96} {1000 0}} ; 穿深
     {MinimumDamageModifier 200} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {300 2.0} {1000 4}} ; 散布
+      {RadiusTable {0 0.0} {500 2.0} {1000 4}} ; 散布
       {SpreadXYRatio 0.4} ; 后坐力
     }
     {OvermatchCalibre ; 倾斜入射修正
@@ -50,7 +50,7 @@
     {ProjectileDamageTable {0 164} {300 140} {1000 0}} ; 穿深
     {MinimumDamageModifier 200} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {300 1.5} {1000 3}} ; 散布
+      {RadiusTable {0 0.0} {500 1.5} {1000 3}} ; 散布
       {SpreadXYRatio 0.4} ; 后坐力
     }
     {OvermatchCalibre ; 倾斜入射修正
@@ -75,7 +75,7 @@
     {ProjectileDamageTable {0 169} {300 127} {1000 0}} ; 穿深
     {MinimumDamageModifier 300} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {300 1.5} {1000 3}} ; 散布
+      {RadiusTable {0 0.0} {500 1.5} {1000 3}} ; 散布
       {SpreadXYRatio 0.4} ; 后坐力
     }
     {OvermatchCalibre ; 倾斜入射修正
@@ -104,7 +104,7 @@
     {ProjectileDamageTable {0 306} {300 193} {1000 0}} ; 穿深
     {MinimumDamageModifier 150} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {300 1.0} {1000 2}} ; 散布
+      {RadiusTable {0 0.0} {500 1.0} {1000 2}} ; 散布
       {SpreadXYRatio 0.9} ; 后坐力
     }
     {OvermatchCalibre ; 倾斜入射修正
@@ -129,7 +129,7 @@
     {Speed 823} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {Spreading
-      {RadiusTable {0 0.0} {300 3.0} {1000 6}} ; 散布
+      {RadiusTable {0 0.0} {500 3.0} {1000 6}} ; 散布
       {SpreadXYRatio 0.4} ; 后坐力
     }
   }

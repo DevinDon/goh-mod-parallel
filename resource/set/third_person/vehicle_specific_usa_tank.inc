@@ -1174,7 +1174,10 @@
     {soundEffect "opentop_vehicle"}
   }
   {level ;2
-    {camera "zoom3"}
+    {camera "zoom4"}
+  }
+  {level ;3
+    {camera "zoom8"}
   }
 }
 

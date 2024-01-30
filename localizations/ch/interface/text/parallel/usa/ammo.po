@@ -55,6 +55,23 @@ msgctxt "desc/ammo/usa-75x350 wp"
 msgid   "75mm Smoke WP, Shell M64 [White Phosphorus] <c(65696d)>L/31 L/39 L/40</c>"
 msgstr  "75mm M64 白磷烟雾弹 [白磷弹] <c(65696d)>L/31 L/39 L/40</c>"
 
+# 76mm
+msgctxt "desc/ammo/usa-76x539 apcbche"
+msgid   "76mm APC-T, Projectile M62 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/52</c>"
+msgstr  "76mm M62 曳光被帽穿甲弹 [<c(ff6a00)>被帽风帽穿甲榴弹</c>] <c(65696d)>L/52</c>"
+
+msgctxt "desc/ammo/usa-76x539 he"
+msgid   "76mm HE, Shell M42A1 [<c(ff1200)>HE</c>] <c(65696d)>L/52</c>"
+msgstr  "76mm M42A1 高爆弹 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/52</c>"
+
+msgctxt "desc/ammo/usa-76x539 hvap"
+msgid   "76mm HVAP-T, Shot M93 [<c(48c445)>HVAP</c>] <c(65696d)>L/52</c>"
+msgstr  "76mm M93 高速穿甲曳光弹 [<c(48c445)>高速穿甲弹</c>] <c(65696d)>L/52</c>"
+
+msgctxt "desc/ammo/usa-76x539 wp"
+msgid   "76mm Smoke, Shell M88 [<c(FFFFFF)>WP</c>] <c(65696d)>L/52</c>"
+msgstr  "76mm M88 白磷烟雾弹 [白磷] <c(65696d)>L/52</c>"
+
 # 90mm
 msgctxt "desc/ammo/usa-90x600 apbc"
 msgid   "90mm AP-T, Shot T33 [<c(ff6a00)>APBC</c>] <c(65696d)>L/53</c>"

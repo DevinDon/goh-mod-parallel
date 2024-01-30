@@ -47,6 +47,14 @@ msgctxt "desc/entity/m36_gmc_t33"
 msgid   "90mm GMC M36"
 msgstr  "M36 \"杰克逊\""
 
+msgctxt "desc/entity/m18_hellcat"
+msgid   "76mm GMC M18 'Hellcat'"
+msgstr  "M18 \"地狱猫\""
+
+msgctxt "desc/entity/m18_hellcat_late"
+msgid   "76mm GMC M18 'Hellcat' (Late)"
+msgstr  "M18 \"地狱猫\" 后期型"
+
 # 自行榴弹炮
 msgctxt "desc/entity/m8_hmc"
 msgid   "75mm HMC M8"
