@@ -260,6 +260,10 @@
   {Item "usa-75x350"  "apcbche" "ammo"   1 {Value  7}}
   {Item "usa-75x350"  "he"      "ammo"   1 {Value  7}}
   {Item "usa-75x350"  "wp"      "ammo"   1 {Value  7}}
+  {Item "usa-76x539"  "apcbche" "ammo"   1 {Value  7}}
+  {Item "usa-76x539"  "he"      "ammo"   1 {Value  7}}
+  {Item "usa-76x539"  "hvap"    "ammo"   1 {Value  7}}
+  {Item "usa-76x539"  "wp"      "ammo"   1 {Value  7}}
   {Item "usa-90x600"  "apbc"    "ammo"   1 {Value  9}}
   {Item "usa-90x600"  "apcbche" "ammo"   1 {Value  9}}
   {Item "usa-90x600"  "he"      "ammo"   1 {Value  9}}
