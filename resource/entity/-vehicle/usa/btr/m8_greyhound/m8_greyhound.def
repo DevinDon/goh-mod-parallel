@@ -104,7 +104,7 @@
     }
     {Place "mgun"
       {Type "aa"}
-      {Weapon "weapon usa-browning-m2-x2" filling "ammo usa-hmgun api" 200}
+      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 200}
       {Gunner "gunner2"}
       {Charger "gunner2"}
       {LinkBone "mgun"}

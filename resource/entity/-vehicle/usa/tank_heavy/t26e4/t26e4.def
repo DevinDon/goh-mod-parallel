@@ -96,7 +96,7 @@
     }
     {Place "mgun1"
       {Type "hull"}
-      {Weapon "weapon usa-browning-m2-x2" filling "ammo usa-hmgun api" 200}
+      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 200}
       {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}
@@ -113,7 +113,7 @@
     }
     {Place "mgun"
       {Type "aa"}
-      {Weapon "weapon usa-browning-m2-x2" filling "ammo usa-hmgun api" 200}
+      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 200}
       {Gunner "commander"}
       {Charger "commander"}
       {LinkBone "mgun"}
