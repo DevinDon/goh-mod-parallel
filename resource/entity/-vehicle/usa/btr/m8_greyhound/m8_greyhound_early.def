@@ -60,7 +60,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo usa-hmgun api" 1000}
+      {Item "ammo usa-hmgun" 1000}
       {Item "ammo usa-37 apcbc" 40}
       {Item "ammo usa-37 he" 60}
     }
@@ -84,7 +84,7 @@
     }
     {Place "mgun1"
       {Type "coaxial"}
-      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 100}
+      {Weapon "weapon usa-browning-m2" filled}
       {Foresight "foresight4"}
       {Gunner "gunner"}
       {Charger "charger"}

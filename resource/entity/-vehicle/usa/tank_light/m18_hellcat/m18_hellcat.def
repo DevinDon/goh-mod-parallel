@@ -76,8 +76,8 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "weapon usa-browning-m2" filling "ammo usa-hmgun api" 100 {user "mgun1"}}
-      {Item "ammo usa-hmgun api" 1000}
+      {Item "weapon usa-browning-m2" filled {user "mgun1"}}
+      {Item "ammo usa-hmgun" 1000}
       {Item "ammo usa-76x539 apcbche" 29}
       {Item "ammo usa-76x539 he" 11}
       {Item "ammo usa-76x539 hvap" 2}
@@ -120,7 +120,7 @@
     }
     {Place "mgun"
       {Type "aa"}
-      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 100}
+      {Weapon "weapon usa-browning-m2" filled}
       {Gunner "charger2"}
       {Charger "charger2"}
       {LinkBone "mgun"}

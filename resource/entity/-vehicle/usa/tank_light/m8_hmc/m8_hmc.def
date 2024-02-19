@@ -71,7 +71,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo usa-hmgun api" 1000}
+      {Item "ammo usa-hmgun" 1000}
       {Item "ammo usa-75x272 he" 30}
       {Item "ammo usa-75x272 heat" 8}
       {Item "ammo usa-75x272 wp" 8}
@@ -96,7 +96,7 @@
     }
     {Place "mgun"
       {Type "aa"}
-      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 100}
+      {Weapon "weapon usa-browning-m2" filled}
       {Gunner "commander"}
       {Charger "commander"}
       {LinkBone "mgun"}

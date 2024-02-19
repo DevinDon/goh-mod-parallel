@@ -251,7 +251,6 @@
 
   ; custom
   {Item "usa-hmgun"             "ammo" 100 {Value 10}}
-  {Item "usa-hmgun"   "api"     "ammo" 100 {Value 12}}
   {Item "usa-37"      "apcbc"   "ammo"   1 {Value  3}}
   {Item "usa-37"      "he"      "ammo"   1 {Value  3}}
   {Item "usa-75x272"  "he"      "ammo"   1 {Value  7}}

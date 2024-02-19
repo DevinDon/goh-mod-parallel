@@ -62,7 +62,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo usa-hmgun api" 2000}
+      {Item "ammo usa-hmgun" 2000}
       {Item "usa-75x350 apcbche" 20}
       {Item "usa-75x350 he" 40}
       {Item "usa-75x350 wp" 20}
@@ -89,7 +89,7 @@
     }
     {Place "mgun2"
       {Type "coaxial"}
-      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 100}
+      {Weapon "weapon usa-browning-m2" filled}
       {Foresight "foresight5"}
       {Gunner "gunner"}
       {Charger "charger"}
@@ -105,7 +105,7 @@
     }
     {Place "mgun1"
       {Type "hull"}
-      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 100}
+      {Weapon "weapon usa-browning-m2" filled}
       {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}
@@ -122,7 +122,7 @@
     }
     {Place "mgun"
       {Type "aa"}
-      {Weapon "weapon usa-browning-m2" filling "ammo usa-hmgun api" 100}
+      {Weapon "weapon usa-browning-m2" filled}
       {Gunner "gunner2"}
       {Charger "gunner2"}
       {LinkBone "mgun"}
