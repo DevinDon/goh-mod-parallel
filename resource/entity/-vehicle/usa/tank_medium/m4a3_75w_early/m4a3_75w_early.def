@@ -51,7 +51,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo usa-hmgun" 2000}
+      {Item "ammo usa-hmgun" 1900}
       {Item "usa-75x350 apcbche" 20}
       {Item "usa-75x350 he" 30}
       {Item "usa-75x350 wp" 10}
