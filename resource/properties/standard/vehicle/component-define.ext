@@ -400,6 +400,18 @@
   }
 )
 
+; args = repair thickness
+(define "set-gun1"
+  ("private-set-main-weapon" name("barrel11") thickness(%thickness) type("gun1"))
+  ("private-set-main-weapon" name("barrel12") thickness(%thickness) type("gun1"))
+  ("private-set-main-weapon" name("barrel13") thickness(%thickness) type("gun1"))
+
+  {component "gun1"
+    {RepairTime %repair}
+    {RepairOrder 1}
+  }
+)
+
 ; args = name thickness
 (define "set-shield"
   {volume %name

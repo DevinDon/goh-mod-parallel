@@ -1,5 +1,5 @@
-msgid   ""
-msgstr  ""
+msgid  ""
+msgstr ""
 "Project-Id-Version: Parallel World - Weapon\n"
 "Language: zh-CN\n"
 "MIME-Version: 1.0\n"
@@ -57,3 +57,8 @@ msgstr  "90mm M3 L/53 坦克炮"
 msgctxt "desc/weapon/usa-90mm-t15e1"
 msgid   "90mm Gun T15E1 L/73"
 msgstr  "90mm T15E1 L/73 坦克炮"
+
+# 火箭炮
+msgctxt "desc/weapon/usa-114mm-t34-calliope"
+msgid   "Rocket Launcher T34 (60x114mm Rockets)"
+msgstr  "T34 管风琴 60x114mm 多管火箭炮"

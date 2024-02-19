@@ -1,5 +1,5 @@
-msgid   ""
-msgstr  ""
+msgid  ""
+msgstr ""
 "Project-Id-Version: Parallel World - Ammo\n"
 "Language: zh-CN\n"
 "MIME-Version: 1.0\n"
@@ -106,3 +106,9 @@ msgstr  "90mm T44 高速穿甲曳光弹 [<c(48c445)>高速穿甲弹</c>] <c(6569
 msgctxt "desc/ammo/usa-mortar-81 he"
 msgid   "81mm HE, Shell M56 [<c(ff1200)>HE</c>]"
 msgstr  "81mm M56 高爆弹 [<c(ff1200)>高爆弹</c>]"
+
+# 火箭弹
+# 114mm
+msgctxt "desc/ammo/usa-114mm-m8"
+msgid   "4.5-inch Rockets [<c(ff1200)>HE</c>]"
+msgstr  "4.5 英寸火箭弹 [<c(ff1200)>高爆弹</c>]"
