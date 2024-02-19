@@ -272,7 +272,7 @@
   {Item "usa-90x1270" "he"      "ammo"   1 {Value  9}}
   {Item "usa-90x1270" "hvap"    "ammo"   1 {Value  9}}
   {Item "usa-mortar-81" "he"    "ammo"   1 {Value  8}}
-  {Item "usa-114mm-m8"  "he"    "ammo"   3 {Value 10}}
+  {Item "usa-114mm-m8"          "ammo"   3 {Value 10}}
 )
 
 (define "items_medic"
