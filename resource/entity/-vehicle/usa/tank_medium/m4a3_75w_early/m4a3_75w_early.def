@@ -3,8 +3,8 @@
   (include "/properties/standard/vehicle/tank-config.ext")
   (include "/properties/selection/vehicle.inc" scale(1.1))
 
-  {Extension "m4a3_75w.mdl"}
-  (include   "m4a3_75w.ext")
+  {Extension "m4a3_75w_early.mdl"}
+  (include   "m4a3_75w_early.ext")
   (include   "crew-and-seat.ext")
 
   {Props "medium" "vision_lev04" "rocket" "muzzle_75mm_76mm" "smoke" "2in_wp" "captor"}

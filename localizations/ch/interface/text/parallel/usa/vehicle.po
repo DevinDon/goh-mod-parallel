@@ -28,7 +28,7 @@ msgid   "M24 Chaffee"
 msgstr  "M24 \"霞飞\""
 
 # 中型坦克
-msgctxt "desc/entity/m4a3_75w"
+msgctxt "desc/entity/m4a3_75w_early"
 msgid   "M4A3(75)W (Late)"
 msgstr  "谢尔曼 M4A3(75)W 加装管风琴多管火箭炮"
 
