@@ -72,9 +72,9 @@
       {Item "repair_kit" 10}
 
       {Item "ammo usa-hmgun" 900}
-      {Item "ammo usa-75x272 he" 30}
-      {Item "ammo usa-75x272 heat" 8}
-      {Item "ammo usa-75x272 wp" 8}
+      {Item "ammo usa-75x272 he" 29}
+      {Item "ammo usa-75x272 heat" 9}
+      {Item "ammo usa-75x272 wp" 9}
     }
   }
 

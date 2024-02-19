@@ -9,7 +9,7 @@
       {Item "repair_kit" 10}
 
       {Item "ammo usa-hmgun" 900}
-      {Item "ammo usa-90x600 apcbche" 32}
+      {Item "ammo usa-90x600 apcbche" 29}
       {Item "ammo usa-90x600 he" 14}
     }
   }

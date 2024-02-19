@@ -52,9 +52,9 @@
       {Item "repair_kit" 10}
 
       {Item "ammo usa-hmgun" 1900}
-      {Item "usa-75x350 apcbche" 20}
-      {Item "usa-75x350 he" 30}
-      {Item "usa-75x350 wp" 10}
+      {Item "usa-75x350 apcbche" 19}
+      {Item "usa-75x350 he" 29}
+      {Item "usa-75x350 wp" 9}
 
       {Item "ammo usa-114mm-m8" 60}
       {Item "mortareng_50 sm" 20}
