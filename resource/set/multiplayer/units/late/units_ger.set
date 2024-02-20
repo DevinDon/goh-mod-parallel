@@ -384,7 +384,7 @@
 
 ; // Jagdtiger
 {"doctrine_jagdtiger"
-  ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(jagdtiger) crew1(tankman_pzjag:5) crew2(tank_commander_pzjag:2))
+  ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(jagdtiger) crew1(tankman_pzjag:5) crew2(tank_commander_pzjag:1))
   ("doctrine_t1" cool(480) d(late_ger_support) cost(30))
 }
 

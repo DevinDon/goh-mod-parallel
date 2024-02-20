@@ -100,12 +100,12 @@
         {OrderTime       2.00} ; s
       }
     }
-    {Place "mgun"
-      {Type "aa"}
-      {Gunner "charger2"}
-      {Charger "charger2"}
-      {LinkBone "mgun_rot"}
-      {LinkAnimation "off"}
+    {Place "mgun1"
+      {Type "hull"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight4"}
+      {Gunner "gunner3"}
+      {Charger "gunner3"}
       {Basic}
       {ai_in_manual}
       {AccuracyByMotion
@@ -117,12 +117,12 @@
         {OrderTime        1.00} ; s
       }
     }
-    {Place "mgun1"
-      {Type "hull"}
-      {Weapon "weapon ger-mg42" filled}
-      {Foresight "foresight4"}
-      {Gunner "gunner3"}
-      {Charger "gunner3"}
+    {Place "mgun"
+      {Type "aa"}
+      {Gunner "charger2"}
+      {Charger "charger2"}
+      {LinkBone "mgun_rot"}
+      {LinkAnimation "off"}
       {Basic}
       {ai_in_manual}
       {AccuracyByMotion
