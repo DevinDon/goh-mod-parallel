@@ -11,7 +11,7 @@
   {Preloaded}
   {DisableRicochet} ; 不会跳弹
 
-  {RechargeTime 4} ; 装填时间（秒）
+  {RechargeTime 5} ; 装填时间（秒）
   {RecoveryTime 1} ; 短射间隔（秒），适用于弹链
 
   {Automatic} ; 自动武器

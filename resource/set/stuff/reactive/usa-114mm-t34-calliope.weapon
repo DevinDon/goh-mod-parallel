@@ -12,7 +12,7 @@
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
   {SpreadTolerance 0.50} ; 瞄准到 50% 就可以开火
 
-  {RechargeTime 99.0} ; 装填时间（秒）
+  {RechargeTime 90.0} ; 装填时间（秒）
   {RecoveryTime 0.50} ; 短射间隔（秒），适用于弹链
 
   {FillingVisible "rocket"}
