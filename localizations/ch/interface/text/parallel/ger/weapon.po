@@ -21,12 +21,16 @@ msgstr  "MG 42 通用机抢"
 # 迫击炮
 
 # 火炮
+msgctxt "desc/weapon/ger-75mm-kwk40-l48"
+msgid   "7.5cm KwK40 L/48"
+msgstr  "7.5cm KwK40 L/48 坦克炮"
+
 msgctxt "desc/weapon/ger-105mm-kwspzk"
 msgid   "10.5cm Kwspzk L/68"
 msgstr  "10.5cm Kwspzk L/68 坦克炮"
 
 msgctxt "desc/weapon/ger-128mm-pak44"
-msgid   "12.8cm PaK 44 L/61"
-msgstr  "12.8cm PaK 44 L/61 反坦克炮"
+msgid   "12.8cm PaK44 L/61"
+msgstr  "12.8cm PaK44 L/61 反坦克炮"
 
 # 火箭炮

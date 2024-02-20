@@ -1,0 +1,116 @@
+; armor notes
+; tracks and wheels 20mm
+; gun 25mm
+; spare tracks 20mm
+; schürzen 5mm
+
+
+
+
+("set-basic-durability" body(440) engine(300) turret(400) mantlet(200) gun(300) track(300) ammo(300))
+("set-basic-armor"      ammo(40))
+
+("set-turret" repair(15))
+("set-mantlet" repair(10))
+("set-gun" thickness(25) repair(10))
+
+("set-body" repair(15))
+("set-engine" repair(10))
+("set-tracks" thickness(15) repair(10))
+
+("set-shield" name("shield1")  thickness(44))
+("set-shield" name("shield2")  thickness(44))
+
+("set-shield" name("shieldl1") thickness(22))
+("set-shield" name("shieldl2") thickness(22))
+("set-shield" name("shieldl3") thickness(22))
+("set-shield" name("shieldl4") thickness(22))
+("set-shield" name("shieldl5") thickness(22))
+("set-shield" name("shieldr1") thickness(22))
+("set-shield" name("shieldr2") thickness(22))
+("set-shield" name("shieldr3") thickness(22))
+("set-shield" name("shieldr4") thickness(22))
+("set-shield" name("shieldr5") thickness(22))
+
+("set-shield-group" name("shieldt")   thickness(14) type("shieldt"))
+("set-shield-group" name("shieldt1")  thickness(14) type("shieldt"))
+("set-shield-group" name("shieldt2")  thickness(14) type("shieldt"))
+("set-shield-group" name("shieldt3")  thickness(14) type("shieldt"))
+("set-shield-group" name("shieldt4")  thickness(14) type("shieldt"))
+("set-shield-group" name("shieldt5")  thickness(14) type("shieldt"))
+("set-shield-group" name("shieldt6")  thickness(14) type("shieldt"))
+("set-shield-group" name("shieldt7")  thickness(14) type("shieldt"))
+("set-shield-group" name("shieldt8")  thickness(14) type("shieldt"))
+("set-shield-group" name("shieldt9")  thickness(14) type("shieldt"))
+("set-shield-group" name("shieldt10") thickness(14) type("shieldt"))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("ammo4") type("ammo") repair(3))
+("set-internal-components" name("fuel")  type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+{component "shieldl1" {tags "cut_part"}}
+{component "shieldl2" {tags "cut_part"}}
+{component "shieldl3" {tags "cut_part"}}
+{component "shieldl4" {tags "cut_part"}}
+{component "shieldl5" {tags "cut_part"}}
+{component "shieldr1" {tags "cut_part"}}
+{component "shieldr2" {tags "cut_part"}}
+{component "shieldr3" {tags "cut_part"}}
+{component "shieldr4" {tags "cut_part"}}
+{component "shieldr5" {tags "cut_part"}}
+
+{volume "body1"      ; Hull
+  {thickness 30
+    {front 80}
+    {top 20}    ; Glacis
+    {rear 10}
+    {bottom 10}
+  }
+}
+{volume "body2"      ; Superstructure
+  {thickness 30
+    {front 80}
+    {top 12}
+    {rear 10}
+  }
+}
+{volume "engine1"    ; Hull
+  {thickness 30
+    {front 10}
+    {rear 20}
+    {bottom 10}
+  }
+}
+{volume "engine2"    ; Superstructure
+  {thickness 20
+    {front 10}
+    {top 10}
+    {rear 20}
+  }
+}
+{volume "turret"
+  {thickness 30
+    {front 50}
+    {top 16}    ; 83° Front
+    {rear 25}    ; 90° Top
+  }
+}
+{volume "mantlet"
+  {thickness 50}
+}
+{volume "mantlet1"
+  {thickness 20
+    {front 50}
+  }
+}
+{volume "cupola"
+  {thickness 50
+    {top 8}
+  }
+}
+{volume "basket"
+  {thickness 5}
+}

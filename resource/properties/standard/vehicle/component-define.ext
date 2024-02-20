@@ -529,3 +529,18 @@
     {RepairOrder 11}
   }
 )
+
+; define shield_group
+; args = name thickness type
+(define "set-shield-group"
+  {volume %name
+    {thickness %thickness}
+    {tags "shield"}
+    {component %type}
+  }
+  {component %type
+    {RepairTime 10}
+    {tags "shield"}
+    {RepairOrder 11}
+  }
+)
