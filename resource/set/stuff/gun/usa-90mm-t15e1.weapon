@@ -20,8 +20,8 @@
     {Range 300 300} ; 射程
     {Speed 975} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 215} {300 171} {1000 0}} ; 穿深
-    {MinimumDamageModifier 360} ; 伤害
+    {ProjectileDamageTable {0 202} {300 171} {1000 0}} ; 穿深
+    {MinimumDamageModifier 300} ; 伤害
     {Spreading
       {RadiusTable {0 0.0} {500 1.5} {1000 3}} ; 散布
       {SpreadXYRatio 0.9} ; 后坐力
@@ -49,8 +49,8 @@
     {Range 300 300} ; 射程
     {Speed 1143} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 373} {300 231} {1000 0}} ; 穿深
-    {MinimumDamageModifier 180} ; 伤害
+    {ProjectileDamageTable {0 258} {300 185} {1000 0}} ; 穿深
+    {MinimumDamageModifier 200} ; 伤害
     {Spreading
       {RadiusTable {0 0.0} {500 1.0} {1000 2}} ; 散布
       {SpreadXYRatio 1.8} ; 后坐力
