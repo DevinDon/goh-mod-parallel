@@ -22,7 +22,7 @@ msgstr ""
 # 重型坦克
 msgctxt "desc/entity/tiger2h"
 msgid   "Pz.Kpfw VI Ausf.B 'Königstiger'"
-msgstr  "\"虎王\" 六号 II 型重型坦克 亨舍尔炮塔"
+msgstr  "\"虎王\" 六号 II H 型重型坦克"
 
 msgctxt "desc/squad/doctrine_tiger2h_support"
 msgid   "<c(B29557)>( III )</c> Königstiger"
