@@ -276,12 +276,16 @@
 
   ; custom
   ; ger
-  {Item "ger-mgun"              "ammo" 100 {Value 10}}
-  {Item "ger-105" "apcbche"     "ammo"   1 {Value 10}}
-  {Item "ger-105" "apcr"        "ammo"   1 {Value 10}}
-  {Item "ger-105" "he"          "ammo"   1 {Value 10}}
-  {Item "ger-128" "apcbche"     "ammo"   1 {Value 12}}
-  {Item "ger-128" "he"          "ammo"   1 {Value 12}}
+  {Item "ger-mgun"                 "ammo" 100 {Value 10}}
+  {Item "ger-75l48"  "apcbche"     "ammo"   1 {Value 7}}
+  {Item "ger-75l48"  "apcr"        "ammo"   1 {Value 7}}
+  {Item "ger-75l48"  "heat"        "ammo"   1 {Value 7}}
+  {Item "ger-75l48"  "he"          "ammo"   1 {Value 7}}
+  {Item "ger-105l68" "apcbche"     "ammo"   1 {Value 10}}
+  {Item "ger-105l68" "apcr"        "ammo"   1 {Value 10}}
+  {Item "ger-105l68" "he"          "ammo"   1 {Value 10}}
+  {Item "ger-128l61" "apcbche"     "ammo"   1 {Value 12}}
+  {Item "ger-128l61" "he"          "ammo"   1 {Value 12}}
 )
 
 (define "items_medic"
