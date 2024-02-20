@@ -85,7 +85,7 @@
     {Speed 750} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {Spreading
-      {RadiusTable {0 0.0} {500 3.0} {1000 6}} ; 散布
+      {RadiusTable {0 0.0} {500 2.3} {1000 5}} ; 散布
       {SpreadXYRatio 0.5} ; 后坐力
     }
   }

@@ -1,7 +1,7 @@
 {from "pattern apcr"
 
   {tag "shell size2 88to105"}
-  {inventory {size 10 1}}
+  {inventory {size 10 2}}
   {entity "88mm_ger_l56_apcr"}
   {mass 25.6}
 
