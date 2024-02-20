@@ -1,0 +1,39 @@
+{from "pattern mgun"
+
+  {Tag "aa" "gun"}
+
+  {Entity "mg42_belt"}
+  {FireSound "smallarms/s3/d1/GER/MG42/"}
+  {FireSoundclose "smallarms/s3/3p/GER/MG42/"}
+  {ReloadSound "mg42"}
+
+  {Mass 11.57}
+  {Inventory {size 7 2}}
+
+  {Calibre 7.92}
+  {Filling "ammo ger-mgun" 100}
+
+  {TraceFreq 3}
+  {Range 300 300}
+  {SpreadTolerance 0.1}
+
+  ("velocity" mps(740))
+  ("fire rate" rpm(1200))
+  ("reload time" seconds(5))
+  ("human health" damage(100)) ; 对人员伤害
+
+  {ProjectileDamageTable {10 14} {300 5} {1000 0}} ; 穿深
+  {MinimumDamageModifier 5} ; 对载具伤害
+
+  {Burst
+    {Short 5 1}
+    {Long  12 3}
+    {RangeKoef 0.5}
+  }
+
+  {Spreading
+    {BurstAccuracy 100 99 99 99 98 97 97 96 95}
+    {RadiusTable {0 0.0} {500 2} {1000 5}}
+  }
+
+}

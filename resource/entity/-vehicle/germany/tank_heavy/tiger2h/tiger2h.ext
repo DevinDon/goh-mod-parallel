@@ -1,0 +1,133 @@
+; armor notes
+; tracks and wheels 30mm
+; gun 30mm
+; spare tracks 30mm
+; schürzen 5mm
+
+
+
+
+("set-basic-durability" body(500) engine(250) turret(300) mantlet(225) gun(225) track(300) ammo(250))
+("set-basic-armor"      ammo(50))
+
+("set-turret" repair(20))
+("set-mantlet" repair(10))
+("set-gun" thickness(50) repair(10))
+
+("set-body" repair(30))
+("set-engine" repair(10))
+("set-tracks" thickness(50) repair(15))
+
+("set-shield-track" name("shield1") thickness(90))
+("set-shield-track" name("shield2") thickness(90))
+("set-shield-track" name("shield3") thickness(90))
+("set-shield-track" name("shield4") thickness(90))
+("set-shield-track" name("shield5") thickness(90))
+("set-shield-track" name("shield6") thickness(90))
+("set-shield-track" name("shield7") thickness(90))
+("set-shield-track" name("shield8") thickness(90))
+
+("set-tear-shield" name("shieldL1") thickness(30))
+("set-tear-shield" name("shieldL2") thickness(30))
+("set-tear-shield" name("shieldL3") thickness(30))
+("set-tear-shield" name("shieldL4") thickness(30))
+("set-tear-shield" name("shieldL5") thickness(30))
+("set-tear-shield" name("shieldR1") thickness(30))
+("set-tear-shield" name("shieldR2") thickness(30))
+("set-tear-shield" name("shieldR3") thickness(30))
+("set-tear-shield" name("shieldR4") thickness(30))
+("set-tear-shield" name("shieldR5") thickness(30))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("ammo4") type("ammo") repair(3))
+("set-internal-components" name("fuel1") type("fuel") repair(3))
+("set-internal-components" name("fuel2") type("fuel") repair(3))
+("set-internal-components" name("fuel3") type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+{volume "body1"      ; Hull
+  {thickness 80
+    {front 120}    ; Lower Nose
+    {top 150}    ; Glacis
+    {rear 25}
+    {bottom 25}
+  }
+  {Quality "large_flaw"}
+}
+{volume "body2"      ; Superstructure
+  {thickness 80
+    {front 150}
+    {top 40}
+    {rear 25}
+    {bottom 25}    ; Overhang (above tracks)
+  }
+  {Quality "large_flaw"}
+}
+{volume "engine1"    ; Hull
+  {thickness 80
+    {front 25}
+    {rear 80}
+    {top 25}
+    {bottom 25}
+  }
+  {Quality "large_flaw"}
+}
+{volume "engine2"    ; Superstructure
+  {thickness 80
+    {front 25}
+    {top 40}
+    {rear 80}
+    {bottom 25}    ; Overhang (above tracks)
+  }
+  {Quality "large_flaw"}
+}
+{volume "turret1"    ; Main Turret
+  {thickness 80
+    {front 185}
+    {top 40}
+    {bottom 40}
+  }
+  {Quality "large_flaw"}
+}
+{volume "turret2"    ; Turret Ring
+  {thickness 80
+    {front 185}
+    {top 25}
+    {bottom 25}
+    {rear 30}
+  }
+  {Quality "large_flaw"}
+}
+{volume "mantlet"
+  {thickness 110
+    {front 200}
+  }
+  {Quality "large_flaw"}
+  {CastSteel 0.8063}
+}
+{volume "cupola"
+  {thickness 150
+    {top 40}
+    {bottom 25}
+  }
+  {Quality "large_flaw"}
+  {CastSteel 0.8063}
+}
+
+{volume "mg_port"
+  {thickness 150}
+  {Quality "large_flaw"}
+  {CastSteel 0.8063}
+  {component "body"}
+}
+
+{component "shield1" {tags "cut_part"}}
+{component "shield2" {tags "cut_part"}}
+{component "shield3" {tags "cut_part"}}
+{component "shield4" {tags "cut_part"}}
+{component "shield5" {tags "cut_part"}}
+{component "shield6" {tags "cut_part"}}
+{component "shield7" {tags "cut_part"}}
+{component "shield8" {tags "cut_part"}}

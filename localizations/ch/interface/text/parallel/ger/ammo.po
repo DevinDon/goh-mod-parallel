@@ -1,0 +1,35 @@
+msgid  ""
+msgstr ""
+"Project-Id-Version: Parallel World - GER - Ammo\n"
+"Language: zh-CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+# 子弹
+msgctxt "desc/ammo/ger-mgun"
+msgid   "7.92mm Rounds"
+msgstr  "7.92mm 穿甲爆破燃烧弹"
+
+# 炮弹
+# 105mm
+msgctxt "desc/ammo/ger-105 apcbche"
+msgid   "10.5cm PzGr.44 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/68</c>"
+msgstr  "10.5cm PzGr.44 [<c(ff6a00)>被帽风帽穿甲榴弹</c>] <c(65696d)>L/68</c>"
+
+msgctxt "desc/ammo/ger-105 apcr"
+msgid   "10.5cm PzGr.45 [<c(48c445)>APCR</c>] <c(65696d)>L/68</c>"
+msgstr  "10.5cm PzGr.45 [<c(48c445)>硬芯穿甲弹</c>] <c(65696d)>L/68</c>"
+
+msgctxt "desc/ammo/ger-105 he"
+msgid   "10.5cm SprGr.L/5.0 [<c(ff1200)>HE</c>] <c(65696d)>L/68</c>"
+msgstr  "10.5cm SprGr.L/5.0 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/68</c>"
+
+# 迫击炮
+
+# 火箭弹

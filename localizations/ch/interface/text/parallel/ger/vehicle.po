@@ -1,0 +1,29 @@
+msgid  ""
+msgstr ""
+"Project-Id-Version: Parallel World - GER - Vehicle\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+# 非装甲车辆
+
+# 步兵战车
+
+# 轻型坦克
+
+# 中型坦克
+
+# 重型坦克
+msgctxt "desc/entity/tiger2h"
+msgid   "Pz.Kpfw VI Ausf.B 'Königstiger'"
+msgstr  "六号 II 型重型坦克 \"虎王\" 亨舍尔炮塔"
+
+# 坦克歼击车
+
+# 自行榴弹炮

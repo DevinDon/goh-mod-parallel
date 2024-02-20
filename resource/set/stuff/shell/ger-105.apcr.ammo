@@ -1,0 +1,14 @@
+{from "pattern apcr"
+
+  {tag "shell size2 88to105"}
+  {inventory {size 10 1}}
+  {entity "88mm_ger_l56_apcr"}
+  {mass 25.6}
+
+  {view "howitzer_shell_88-100"
+    {tail "shell_tracer_88_apcr" "tail"}
+  }
+
+  ("apcr_blast" args 1.5)
+
+}
