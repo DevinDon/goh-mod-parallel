@@ -20,17 +20,17 @@
     {time    0.50}
   }
   {damage blastwave
-    {energy  3.20}
+    {energy  2.20}
     {area    0.40 0.50}
     {ground_interaction_radius 0}
   }
   {damage add blastwave
-    {energy  1.50}
+    {energy  1.10}
     {area    3.00 5.00}
     {ground_interaction_radius 0}
   }
   {damage add blastwave
-    {energy 0.15}
+    {energy 0.10}
     {area   5.00 9.00}
     {ground_interaction_radius 0}
   }
