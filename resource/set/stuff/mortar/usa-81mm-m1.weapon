@@ -24,7 +24,7 @@
   {Gravity 6} ; 炮弹重力
 
   {Spreading 1
-    {RadiusTable {0 0} {500 30} {1000 100}}
+    {RadiusTable {0 0} {500 50} {1000 200}}
   }
 
 }
