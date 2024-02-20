@@ -14,7 +14,7 @@
     {tail "rocket_smoke_bm13" "tail"}
   }
 
-  ("rocket_level_3" weight(18.143) filler(3.66))
+  ("rocket_level_3" weight(18.143) filler(3.99))
 
   {possibleDamageRadius 30}
 
