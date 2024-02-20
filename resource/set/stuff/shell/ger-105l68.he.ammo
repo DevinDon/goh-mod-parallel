@@ -1,6 +1,6 @@
 {from "pattern he"
 
-  {tag "shell size3 88to105 arty"}
+  {tag "shell size3 88to105"}
   {inventory {size 10 2}}
   {entity "88mm_ger_l56_he"}
   {mass 28.5}
