@@ -1,13 +1,13 @@
 {game_entity
 
-  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/standard/vehicle/tank-assaultgun-config.ext")
   (include "/properties/selection/vehicle_big.inc" scale(1.0))
 
-  {Extension "tiger2h.mdl"}
-  (include   "tiger2h.ext")
+  {Extension "jagdtiger.mdl"}
+  (include   "jagdtiger.ext")
   (include   "crew-and-seat.ext")
 
-  {Props "heavy" "vision_lev05" "muzzle_85mm_93mm_sides" "shield" "smoke" "nvw" "detect_tank_heavy"}
+  {Props "heavy" "td" "-turret" "vision_lev05" "muzzle_122mm_128mm" "shield" "smoke" "nvw" "detect_td_heavy"}
 
   {PatherId "tiger2"}
   {Targetclass "tank_heavy"}
@@ -26,15 +26,15 @@
 
   {Boarder
     {anm "driver"
-      {forward {begin "board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+      {forward {begin "board_pz4_driver"} {end "pose_jagdtiger_aa"} {base "open_driver"}}
       {reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
     }
     {anm "left"
-      {forward {begin "board_Kv"} {end "pose_mgun_pz6"}}
+      {forward {begin "board_Kv"} {end "pose_jagdtiger_aa"}}
       {reverse {end "emit_tank_2_hold"}}
     }
     {anm "right"
-      {forward {begin "board_tank_right"} {end "pose_mgun_pz6"}}
+      {forward {begin "board_tank_right"} {end "pose_jagdtiger_aa"}}
       {reverse {end "emit_tank_2_hold"}}
     }
     {anm "armor"
@@ -45,27 +45,26 @@
 
   {Extender "detail"
     {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail6}
+    {detail7}
+    {detail8}
+    {detail9}
+    {detail10}
     {detail11}
     {detail12}
     {detail13}
-    {detail14}
-    {detail15}
-    {detail16}
-    {detail17}
-    {detail18}
-    {detail19}
-    {detail20 0}
-    {detail21 0}
-    {detail22 0}
-    {detail30}
-    {detail31}
   }
 
   {Extender "shield" {on}}
 
   {Extender "smokescreen"
-    {Cooldown 5}
-    {ItemTags "grenade nbks"}
+    {cooldown 5}
+    {itemTags "grenade nbks"}
   }
 
   {Extender "inventory"
@@ -75,22 +74,21 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo ger-105 apcbche" 19}
-      {Item "ammo ger-105 apcr" 5}
-      {Item "ammo ger-105 he" 19}
+      {item "ammo ger-128 apcbche" 19}
+      {item "ammo ger-128 he" 19}
 
       {Item "ammo ger-mgun" 4500}
       {Item "weapon ger-mg42" filled {user "mgun"}}
 
-      {Item "nbks grenade" 20}
+      {item "nbks grenade" 20}
     }
   }
 
   {Weaponry
-    {RestoreIKTime 3}
+    {RestoreIKTime 4}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-105mm-kwspzk" filling "ammo ger-105 apcbche" 1}
+      {Weapon "weapon ger-128mm-pak44" filling "ammo ger-128 apcbche" 1}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion
@@ -102,13 +100,14 @@
         {OrderTime       2.00} ; s
       }
     }
-    {Place "mgun2"
-      {Type "coaxial"}
-      {Weapon "weapon ger-mg42" filled}
-      {Foresight "foresight5"}
-      {Gunner "gunner"}
-      {Charger "charger"}
+    {Place "mgun"
+      {Type "aa"}
+      {Gunner "charger2"}
+      {Charger "charger2"}
+      {LinkBone "mgun_rot"}
+      {LinkAnimation "off"}
       {Basic}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
         {ByLinearSpeed    0.40} ; km/h
@@ -135,40 +134,28 @@
         {OrderTime        1.00} ; s
       }
     }
-    {Place "mgun"
-      {Type "aa"}
-      {Gunner "commander"}
-      {Charger "commander"}
-      {LinkBone "mgun_rot"}
-      {LinkAnimation "off"}
-      {Basic}
-      {ai_in_manual}
-      {AccuracyByMotion
-        {MaxLinearSpeed   8.00} ; km/h
-        {ByLinearSpeed    0.40} ; km/h
-        {MaxAngularSpeed 30.00} ; deg/s
-        {ByAngularSpeed   0.50} ; deg/s
-        {DisorderTime     0.60} ; s
-        {OrderTime        1.00} ; s
-      }
-    }
   }
 
-  {Mass 70940}
+  {Mass 75500}
   {Chassis "track"
-    ("set-tank-trace" fx("tracks_big") step(0.47) length(1.16) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(35) power(700) mass(70940) performance(1.2))
+    ("set-tank-trace" fx("tracks_big") step(0.47) length(1.19) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(35) power(700) mass(75500) performance(1.2))
     ("set-fuel-tank" volume(860) power(700))
   }
 
   {Bone "gun_rot"
-    {limits -8 15}
-    {speed2 3}
+    {limits -7 15}
+    {speed2 2}
   }
   {Bone "turret"
-    {speed2 12}
+    {limits -10 10}
+    {speed2 4.5}
   }
-
-  {texmod "camo"}
+  {Bone "mgun_a_rot1"
+    {speed2 60}
+  }
+  {Bone "mgun_a_rot2"
+    {speed2 60}
+  }
 
 }

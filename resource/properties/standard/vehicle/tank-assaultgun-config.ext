@@ -1,0 +1,65 @@
+; standard tank assaultgun config
+
+actor
+
+(include "vehicle-config.ext");
+
+{brain "vehicle"
+  {state "vehicle"}
+  {const "crush/min_danger_zone_time"   1}
+  {const "crush/min_danger_zone_length" 1}
+}
+
+{PatherID "tank"}
+{collider "tank.medium"}
+{props "tank" "hatch" "engine" "with_gun" "detect_tank_medium"}
+
+{targetClass "tank_medium" "ap fg bullet"}
+{targetSelector "tank_medium"}
+
+{hearingBias 2.0} ; reduces units ability to hear sound signals. value = meters
+
+{sensor
+  {visor "main"
+    {vision "standard-vision-narrow"}
+    {bone "foresight1"}
+  }
+  {Visor "driver"
+    {vision "standard-vision-narrow"}
+    {bone "visor2"}
+  }
+  {visor "around"
+    {vision "standard-vision-around"}
+    {bone "visor1"}
+  }
+  {visor "human"
+    {vision "standard-vision-wide"}
+    {bone "visor3"}
+  }
+  {visor "none"
+    {vision "standard-vision-none"}
+  }
+  {visor "hearing"
+    {vision "standard-vision-noise-detection"}
+    {bone "hearing_bone"}
+  }
+}
+
+{Skeleton
+  {bone "hearing_bone"
+    {Position 0 0 70}
+  }
+}
+
+{extender "talk"
+  {talker "tank"}
+}
+{able "talk"}
+
+{perks {blastwave_modifier 500}}
+
+{Weaponry
+	{Place "gun"
+		{rotate}
+	}
+}

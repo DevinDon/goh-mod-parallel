@@ -30,6 +30,15 @@ msgctxt "desc/ammo/ger-105 he"
 msgid   "10.5cm SprGr.L/5.0 [<c(ff1200)>HE</c>] <c(65696d)>L/68</c>"
 msgstr  "10.5cm SprGr.L/5.0 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/68</c>"
 
+# 128mm
+msgctxt "desc/ammo/ger-128 apcbche"
+msgid   "12.8cm PzGr.46 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/61</c>"
+msgstr  "12.8cm PzGr.46 [<c(ff6a00)>被帽风帽穿甲榴弹</c>] <c(65696d)>L/61</c>"
+
+msgctxt "desc/ammo/ger-128 he"
+msgid   "12.8cm SprGr.L/5.0 [<c(ff1200)>HE</c>] <c(65696d)>L/61</c>"
+msgstr  "12.8cm SprGr.L/5.0 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/61</c>"
+
 # 迫击炮
 
 # 火箭弹

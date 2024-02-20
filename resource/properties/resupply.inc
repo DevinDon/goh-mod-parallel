@@ -250,6 +250,7 @@
   {Item "repair_kit" 1 {Value 10}}
 
   ; custom
+  ; usa
   {Item "usa-hmgun"             "ammo" 100 {Value 10}}
   {Item "usa-37"      "apcbc"   "ammo"   1 {Value  3}}
   {Item "usa-37"      "he"      "ammo"   1 {Value  3}}
@@ -272,6 +273,15 @@
   {Item "usa-90x1270" "hvap"    "ammo"   1 {Value  9}}
   {Item "usa-mortar-81" "he"    "ammo"   1 {Value  8}}
   {Item "usa-114mm-m8"          "ammo"   3 {Value 10}}
+
+  ; custom
+  ; ger
+  {Item "ger-mgun"              "ammo" 100 {Value 10}}
+  {Item "ger-105" "apcbche"     "ammo"   1 {Value 10}}
+  {Item "ger-105" "apcr"        "ammo"   1 {Value 10}}
+  {Item "ger-105" "he"          "ammo"   1 {Value 10}}
+  {Item "ger-128" "apcbche"     "ammo"   1 {Value 12}}
+  {Item "ger-128" "he"          "ammo"   1 {Value 12}}
 )
 
 (define "items_medic"
