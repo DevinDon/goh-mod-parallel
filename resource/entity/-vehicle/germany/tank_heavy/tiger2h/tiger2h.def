@@ -75,9 +75,9 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo ger-105 apcbche" 19}
-      {Item "ammo ger-105 apcr" 5}
-      {Item "ammo ger-105 he" 19}
+      {Item "ammo ger-105l68 apcbche" 19}
+      {Item "ammo ger-105l68 apcr" 5}
+      {Item "ammo ger-105l68 he" 19}
 
       {Item "ammo ger-mgun" 4500}
       {Item "weapon ger-mg42" filled {user "mgun"}}
@@ -90,7 +90,7 @@
     {RestoreIKTime 3}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-105mm-kwspzk-l68" filling "ammo ger-105 apcbche" 1}
+      {Weapon "weapon ger-105mm-kwspzk-l68" filling "ammo ger-105l68 apcbche" 1}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion

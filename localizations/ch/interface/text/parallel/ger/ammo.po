@@ -35,24 +35,24 @@ msgid   "7.5cm SprGr.34 [<c(ff1200)>HE</c>] <c(65696d)>L/43 L/46 L/48</c>"
 msgstr  "7.5cm SprGr.34 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/43 L/46 L/48</c>"
 
 # 105mm
-msgctxt "desc/ammo/ger-105 apcbche"
+msgctxt "desc/ammo/ger-105l68 apcbche"
 msgid   "10.5cm PzGr.44 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/68</c>"
 msgstr  "10.5cm PzGr.44 [<c(ff6a00)>被帽风帽穿甲榴弹</c>] <c(65696d)>L/68</c>"
 
-msgctxt "desc/ammo/ger-105 apcr"
+msgctxt "desc/ammo/ger-105l68 apcr"
 msgid   "10.5cm PzGr.45 [<c(48c445)>APCR</c>] <c(65696d)>L/68</c>"
 msgstr  "10.5cm PzGr.45 [<c(48c445)>硬芯穿甲弹</c>] <c(65696d)>L/68</c>"
 
-msgctxt "desc/ammo/ger-105 he"
+msgctxt "desc/ammo/ger-105l68 he"
 msgid   "10.5cm SprGr.L/5.0 [<c(ff1200)>HE</c>] <c(65696d)>L/68</c>"
 msgstr  "10.5cm SprGr.L/5.0 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/68</c>"
 
 # 128mm
-msgctxt "desc/ammo/ger-128 apcbche"
+msgctxt "desc/ammo/ger-128l61 apcbche"
 msgid   "12.8cm PzGr.46 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/61</c>"
 msgstr  "12.8cm PzGr.46 [<c(ff6a00)>被帽风帽穿甲榴弹</c>] <c(65696d)>L/61</c>"
 
-msgctxt "desc/ammo/ger-128 he"
+msgctxt "desc/ammo/ger-128l61 he"
 msgid   "12.8cm SprGr.L/5.0 [<c(ff1200)>HE</c>] <c(65696d)>L/61</c>"
 msgstr  "12.8cm SprGr.L/5.0 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/61</c>"
 
