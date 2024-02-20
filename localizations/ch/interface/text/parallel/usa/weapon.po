@@ -1,6 +1,6 @@
 msgid  ""
 msgstr ""
-"Project-Id-Version: Parallel World - Weapon\n"
+"Project-Id-Version: Parallel World - USA - Weapon\n"
 "Language: zh-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -10,6 +10,8 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+
+# 通用机枪
 
 # 重机枪
 msgctxt "desc/weapon/usa-browning-m2"

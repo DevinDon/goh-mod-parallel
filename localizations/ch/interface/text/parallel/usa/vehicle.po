@@ -1,6 +1,6 @@
 msgid  ""
 msgstr ""
-"Project-Id-Version: Parallel World - Vehicle\n"
+"Project-Id-Version: Parallel World - USA - Vehicle\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
