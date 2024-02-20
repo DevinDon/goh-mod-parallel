@@ -14,7 +14,7 @@
   {Filling "ammo ger-mgun" 100}
 
   {TraceFreq 3}
-  {Range 300 300}
+  {Range 350 350}
   {SpreadTolerance 0.1}
 
   ("velocity" mps(740))
@@ -22,7 +22,7 @@
   ("reload time" seconds(5))
   ("human health" damage(100)) ; 对人员伤害
 
-  {ProjectileDamageTable {10 14} {300 5} {1000 0}} ; 穿深
+  {ProjectileDamageTable {10 14} {500 5} {1000 0}} ; 穿深
   {MinimumDamageModifier 5} ; 对载具伤害
 
   {Burst

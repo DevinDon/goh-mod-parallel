@@ -22,7 +22,7 @@
   ("reload time" seconds(5))
   ("human health" damage(200))
 
-  {ProjectileDamageTable {10 30} {300 5} {1000 0}}
+  {ProjectileDamageTable {10 30} {500 5} {1000 0}}
   {MinimumDamageModifier 15} ; 对载具伤害
 
   {Burst

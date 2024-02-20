@@ -20,7 +20,7 @@
     {Range 300 300} ; 射程
     {Speed 823} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 188} {300 96} {1000 0}} ; 穿深
+    {ProjectileDamageTable {0 188} {500 96} {1000 0}} ; 穿深
     {MinimumDamageModifier 200} ; 伤害
     {Spreading
       {RadiusTable {0 0.0} {500 2.0} {1000 4}} ; 散布
@@ -47,7 +47,7 @@
     {Range 300 300} ; 射程
     {Speed 853} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 164} {300 140} {1000 0}} ; 穿深
+    {ProjectileDamageTable {0 164} {500 140} {1000 0}} ; 穿深
     {MinimumDamageModifier 200} ; 伤害
     {Spreading
       {RadiusTable {0 0.0} {500 1.5} {1000 3}} ; 散布
@@ -72,7 +72,7 @@
     {Range 300 300} ; 射程
     {Speed 853} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 169} {300 127} {1000 0}} ; 穿深
+    {ProjectileDamageTable {0 169} {500 127} {1000 0}} ; 穿深
     {MinimumDamageModifier 300} ; 伤害
     {Spreading
       {RadiusTable {0 0.0} {500 1.5} {1000 3}} ; 散布
@@ -101,7 +101,7 @@
     {Range 300 300} ; 射程
     {Speed 1018} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 306} {300 193} {1000 0}} ; 穿深
+    {ProjectileDamageTable {0 306} {500 193} {1000 0}} ; 穿深
     {MinimumDamageModifier 150} ; 伤害
     {Spreading
       {RadiusTable {0 0.0} {500 1.0} {1000 2}} ; 散布
