@@ -6,7 +6,7 @@
   {FireSoundclose "gun/gun_interior/size3"}
   {ReloadSound "interior/large/big_reload_interior"}
 
-  {Filling "ammo ger-105" 1} ; 弹种及弹链内炮弹数量
+  {Filling "ammo ger-105l68" 1} ; 弹种及弹链内炮弹数量
   {Calibre 105} ; 口径
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
