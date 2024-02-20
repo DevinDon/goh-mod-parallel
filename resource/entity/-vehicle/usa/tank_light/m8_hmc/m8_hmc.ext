@@ -18,12 +18,12 @@
 ("set-engine" repair(10))
 ("set-tracks" thickness(15) repair(10))
 
-("set-tear-shield" name("shieldl1") thickness(5))
-("set-tear-shield" name("shieldl2") thickness(5))
-("set-tear-shield" name("shieldl3") thickness(5))
-("set-tear-shield" name("shieldr1") thickness(5))
-("set-tear-shield" name("shieldr2") thickness(5))
-("set-tear-shield" name("shieldr3") thickness(5))
+("set-shield-tear" name("shieldl1") thickness(5))
+("set-shield-tear" name("shieldl2") thickness(5))
+("set-shield-tear" name("shieldl3") thickness(5))
+("set-shield-tear" name("shieldr1") thickness(5))
+("set-shield-tear" name("shieldr2") thickness(5))
+("set-shield-tear" name("shieldr3") thickness(5))
 
 ("set-shield-track" name("shield1") thickness(15))
 ("set-shield-track" name("shield2") thickness(15))

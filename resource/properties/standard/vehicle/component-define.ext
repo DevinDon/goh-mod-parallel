@@ -517,7 +517,7 @@
 
 ; define shield_tear
 ; args = name thickness
-(define "set-tear-shield"
+(define "set-shield-tear"
   {volume %name
     {thickness %thickness}
     {tags "cut_part" "shield"}
