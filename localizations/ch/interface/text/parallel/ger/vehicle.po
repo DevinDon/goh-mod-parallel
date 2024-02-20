@@ -24,6 +24,10 @@ msgctxt "desc/entity/tiger2h"
 msgid   "Pz.Kpfw VI Ausf.B 'Königstiger'"
 msgstr  "六号 II 型重型坦克 \"虎王\" 亨舍尔炮塔"
 
+msgctxt "desc/squad/doctrine_tiger2h_support"
+msgid   "<c(B29557)>( III )</c> Königstiger"
+msgstr  "<c(B29557)>( III )</c> 虎王"
+
 # 坦克歼击车
 
 # 自行榴弹炮
