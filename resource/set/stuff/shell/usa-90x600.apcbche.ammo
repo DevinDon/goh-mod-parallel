@@ -1,4 +1,5 @@
 {from "pattern apcbche"
+
   {tag "shell size2 88to105_he_filler"}
   {inventory {size 7 1}}
   {entity "90x600mm_usa_apc"}
@@ -9,4 +10,6 @@
   }
 
   ("ap_blast" args 0.9)
+  ("he_level_2" weight(19.91) filler(0.199))
+
 }

@@ -1,4 +1,5 @@
 {from "pattern hvap"
+
   {tag "shell size2 88to105"}
   {inventory {size 9 1}}
   {entity "90x1270mm_usa_hvap"}
@@ -9,4 +10,5 @@
   }
 
   ("apcr_blast" args 0.9)
+
 }

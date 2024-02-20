@@ -1,4 +1,5 @@
 {from "pattern he"
+
   {tag "shell size2 88to105 no_throw"}
   {inventory {size 7 1}}
   {entity "90x600mm_usa_he"}
@@ -9,4 +10,5 @@
   }
 
   ("he_level_2" weight(10.56) filler(0.975))
+
 }

@@ -1,4 +1,5 @@
 {from "pattern heat"
+
   {tag "shell size2 size2_heat_shell heat_low"}
   {inventory {size 5 1}}
   {entity "75x272mm_usa_heat"}
@@ -9,4 +10,5 @@
   }
 
   ("he_level_2" weight(5.94) filler(0.4788))
+
 }

@@ -1,4 +1,5 @@
 {from "pattern apbc"
+
   {tag "shell size2 88to105"}
   {inventory {size 7 1}}
   {entity "90x600mm_usa_apbc"}
@@ -9,4 +10,5 @@
   }
 
   ("ap_blast" args 0.9)
+
 }
