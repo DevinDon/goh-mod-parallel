@@ -49,6 +49,19 @@
 ("set-internal-components" name("fuel2") type("fuel") repair(3))
 ("set-internal-components" name("transmission") type("transmission") repair(10))
 
+{component "shield1" {tags "cut_part"}}
+{component "shield2" {tags "cut_part"}}
+{component "shield3" {tags "cut_part"}}
+{component "shield4" {tags "cut_part"}}
+{component "shield5" {tags "cut_part"}}
+{component "shield6" {tags "cut_part"}}
+{component "shield7" {tags "cut_part"}}
+{component "shield8" {tags "cut_part"}}
+{component "shield9" {tags "cut_part"}}
+{component "shield10" {tags "cut_part"}}
+{component "shield11" {tags "cut_part"}}
+{component "shield12" {tags "cut_part"}}
+
 {volume "body1"      ; Hull
   {thickness 80
     {front 120}    ; Lower Nose
@@ -113,16 +126,3 @@
   {tags "body"}
   {component "body"}
 }
-
-{component "shield1" {tags "cut_part"}}
-{component "shield2" {tags "cut_part"}}
-{component "shield3" {tags "cut_part"}}
-{component "shield4" {tags "cut_part"}}
-{component "shield5" {tags "cut_part"}}
-{component "shield6" {tags "cut_part"}}
-{component "shield7" {tags "cut_part"}}
-{component "shield8" {tags "cut_part"}}
-{component "shield9" {tags "cut_part"}}
-{component "shield10" {tags "cut_part"}}
-{component "shield11" {tags "cut_part"}}
-{component "shield12" {tags "cut_part"}}
