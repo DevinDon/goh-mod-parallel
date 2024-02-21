@@ -10,7 +10,7 @@
   {Calibre 90} ; 口径
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
-  {SpreadTolerance 0.50} ; 瞄准到 50% 就可以开火
+  {SpreadTolerance 0.75} ; 瞄准到 75% 就可以开火
   {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
 
   {RechargeTime 10} ; 装填时间（秒）
