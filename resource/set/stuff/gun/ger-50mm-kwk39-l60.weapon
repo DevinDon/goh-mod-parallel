@@ -23,7 +23,7 @@
     {Speed 835} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 97} {500 38} {1000 0}} ; 穿深
-    {MinimumDamageModifier 70} ; 伤害
+    {MinimumDamageModifier 110} ; 伤害
     {Spreading
       {RadiusTable {0 0.0} {500 1.1} {1000 3}} ; 散布
       {SpreadXYRatio 0.9} ; 后坐力
