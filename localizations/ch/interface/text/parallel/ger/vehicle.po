@@ -79,6 +79,18 @@ msgid   "Pz.Kpfw VI/B 'Königstiger' Early Production"
 msgstr  "\"虎王\" 六号 II B 早期型重型坦克"
 
 # 坦克歼击车
+msgctxt "desc/entity/hetzer"
+msgid "Jagdpanzer 38(t)"
+msgstr "\"追猎者\" 38(t) 坦克歼击车"
+
+msgctxt "desc/entity/stug3g_late"
+msgid "StuG III Ausf.G (Late)"
+msgstr "三号突击炮 G 型坦克歼击车"
+
+msgctxt "desc/entity/stuh42"
+msgid "StuH 42 Ausf.G"
+msgstr "42 式 G 型突击榴弹炮"
+
 msgctxt "desc/entity/jagdtiger"
 msgid   "Jagdtiger Sd. Kfz. 186"
 msgstr  "\"猎虎\" 重型坦克歼击车"

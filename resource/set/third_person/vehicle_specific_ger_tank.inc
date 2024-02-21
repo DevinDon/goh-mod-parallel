@@ -2048,14 +2048,17 @@
     {distanceSet 0}
     {delta 0}
     {no_rim_light}
-    {camera "zoom1.5"}
     {ManualAccuracyZoom}
     {blur_strength 5}
     {disable_fow 0}
     {soundEffect "enclosed_vehicle"}
+    {camera "zoom2"}
   }
   {level ;2
     {camera "zoom5"}
+  }
+  {level ;3
+    {camera "zoom10"}
   }
 }
 
@@ -2089,14 +2092,17 @@
     {distanceSet 0}
     {delta 0}
     {no_rim_light}
-    {camera "zoom1.5"}
     {ManualAccuracyZoom}
     {blur_strength 5}
     {disable_fow 0}
     {soundEffect "enclosed_vehicle"}
+    {camera "zoom2"}
   }
   {level ;2
     {camera "zoom5"}
+  }
+  {level ;3
+    {camera "zoom10"}
   }
 }
 
@@ -2130,14 +2136,17 @@
     {distanceSet 0}
     {delta 0}
     {no_rim_light}
-    {camera "zoom1.5"}
     {ManualAccuracyZoom}
     {blur_strength 5}
     {disable_fow 0}
     {soundEffect "enclosed_vehicle"}
+    {camera "zoom2"}
   }
   {level ;2
     {camera "zoom5"}
+  }
+  {level ;3
+    {camera "zoom10"}
   }
 }
 

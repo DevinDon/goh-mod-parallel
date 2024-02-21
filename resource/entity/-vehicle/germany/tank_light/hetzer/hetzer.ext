@@ -5,28 +5,38 @@
 ; spare tracks 15mm
 ; mg shield 10mm
 
-("tank_medium_tier1")
 
-("shield" args "shieldL1" 5)  ; Schürzen
-("shield" args "shieldL2" 5)  ; Schürzen
-("shield" args "shieldL3" 5)  ; Schürzen
-("shield" args "shieldR1" 5)  ; Schürzen
-("shield" args "shieldR2" 5)  ; Schürzen
-("shield" args "shieldR3" 5)  ; Schürzen
-("shield_track" args "shield1" 15)  ; Spare Tracks
-("shield_track" args "shield2" 15)  ; Spare Tracks
-("shield_track" args "shield3" 15)  ; Spare Tracks
-("shield_group" args "shield4" 10 "shield4")    ; MG Shield
-("shield_group" args "shield5" 10 "shield4")    ; MG Shield
 
-("tracks" repair(30) thickness(15))
-("gun" repair(30) thickness(25))
+("set-basic-durability" body(440) engine(300) turret(400) mantlet(200) gun(300) track(300) ammo(300))
+("set-basic-armor"      ammo(20))
 
-("ammo" args "ammo1")
-("ammo" args "ammo2")
-("ammo" args "ammo3")
-("fuel" args "fuel")
-("transmission" args "transmission")
+("set-turret" repair(15))
+("set-mantlet" repair(10))
+("set-gun" thickness(25) repair(10))
+
+("set-body" repair(15))
+("set-engine" repair(10))
+("set-tracks" thickness(20) repair(10))
+
+("set-shield" name("shieldL1") thickness(9))
+("set-shield" name("shieldL2") thickness(9))
+("set-shield" name("shieldL3") thickness(9))
+("set-shield" name("shieldR1") thickness(9))
+("set-shield" name("shieldR2") thickness(9))
+("set-shield" name("shieldR3") thickness(9))
+
+("set-shield-track" name("shield1") thickness(20))
+("set-shield-track" name("shield2") thickness(20))
+("set-shield-track" name("shield3") thickness(20))
+
+("set-shield-group" name("shield4")  thickness(9) type("shield4"))
+("set-shield-group" name("shield5")  thickness(9) type("shield4"))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("fuel")  type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
 
 {component "shieldl1" {tags "cut_part"}}
 {component "shieldl2" {tags "cut_part"}}
