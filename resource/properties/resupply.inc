@@ -754,8 +754,8 @@
     }
     {radius               25} ;// resupply radius in meter
     {resupplyPeriod 3} ;// resupply period in seconds
-    {regenerationPeriod    0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit                 0} ;// max number of resupplies (0 = unlimited)
+    {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {limit 10000} ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -784,8 +784,8 @@
     }
     {radius               25} ;// resupply radius in meter
     {resupplyPeriod 3} ;// resupply period in seconds
-    {regenerationPeriod    0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit                 0} ;// max number of resupplies (0 = unlimited)
+    {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {limit 10000} ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -814,8 +814,8 @@
     }
     {radius               25} ;// resupply radius in meter
     {resupplyPeriod 3} ;// resupply period in seconds
-    {regenerationPeriod    0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit                 0} ;// max number of resupplies (0 = unlimited)
+    {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {limit 10000} ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -840,7 +840,7 @@
     {radius        40}    ;// resupply radius in meter
     {resupplyPeriod 3}    ;// resupply period in seconds
     {regenerationPeriod 0}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit        1000}  ;// max number of resupplies (0 = unlimited)
+    {limit 10000}  ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -869,7 +869,7 @@
     {radius            25} ;// resupply radius in meter
     {resupplyPeriod 3} ;// resupply period in seconds
     {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit           5000} ;// max number of resupplies (0 = unlimited)
+    {limit 10000} ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -900,7 +900,7 @@
     {radius 50} ;// resupply radius in meter
     {resupplyPeriod 3} ;// resupply period in seconds
     {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 0} ;// max number of resupplies (0 = unlimited)
+    {limit 10000} ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -920,7 +920,7 @@
     {radius       30}      ;// resupply radius in meter
     {resupplyPeriod 3}      ;// resupply period in seconds
     {regenerationPeriod 0}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit         %liters}  ;// max number of resupplies (0 = unlimited)
+    {limit %liters}  ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -941,7 +941,7 @@
     {radius       30}      ;// resupply radius in meter
     {resupplyPeriod 3}      ;// resupply period in seconds
     {regenerationPeriod 0}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit         1000}    ;// max number of resupplies (0 = unlimited)
+    {limit 10000}    ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -962,7 +962,7 @@
     {radius       40}      ;// resupply radius in meter
     {resupplyPeriod 3}      ;// resupply period in seconds
     {regenerationPeriod 0}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit         2000}    ;// max number of resupplies (0 = unlimited)
+    {limit 10000}    ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
