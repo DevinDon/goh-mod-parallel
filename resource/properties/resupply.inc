@@ -292,6 +292,9 @@
   {Item "ger-75l43"  "apcr"        "ammo"   1 {Value  7}}
   {Item "ger-75l43"  "heat"        "ammo"   1 {Value  7}}
   {Item "ger-75l43"  "he"          "ammo"   1 {Value  7}}
+  {Item "ger-88l56"  "apcbche"     "ammo"   1 {Value  8}}
+  {Item "ger-88l56"  "apcr"        "ammo"   1 {Value  8}}
+  {Item "ger-88l56"  "he"          "ammo"   1 {Value  8}}
   {Item "ger-88l71"  "apcbche"     "ammo"   1 {Value  8}}
   {Item "ger-88l71"  "apcr"        "ammo"   1 {Value  8}}
   {Item "ger-88l71"  "he"          "ammo"   1 {Value  8}}

@@ -1,0 +1,16 @@
+{from "pattern apcbche"
+
+  {tag "shell size2 88to105_he_filler"}
+
+  {inventory {size 7 1}}
+  {entity "88mm_ger_l56_apcbc"}
+  {mass 20.86}
+
+  {view "howitzer_shell_88-100"
+    {tail "shell_tracer_88_ap" "tail"}
+  }
+
+  ("ap_blast" args 0.9)
+  ("he_level_2" weight(20.86) filler(0.101))
+
+}
