@@ -11,21 +11,21 @@
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
   {SpreadTolerance 0.75} ; 瞄准到 75% 就可以开火
-  {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
+  {ZeroingAccuracy 0.95 0.92 0.87 0.83 0.80} ; 归零精度？不确定
 
-  {RechargeTime 7} ; 装填时间（秒）
+  {RechargeTime 5} ; 装填时间（秒）
   {RecoveryTime 1} ; 短射间隔（秒），适用于弹链
 
   {Automatic} ; 自动武器
 
   {Parameters "apcbche" ; APCBCHE 被帽风帽穿甲榴弹
-    {Range 350 350} ; 射程
+    {Range 370 370} ; 射程
     {Speed 780} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 162} {500 116} {1000 0}} ; 穿深
     {MinimumDamageModifier 240} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {500 1.2} {1000 2.9}} ; 散布
+      {RadiusTable {0 0.0} {500 1.0} {1000 2.5}} ; 散布
       {SpreadXYRatio 1.2} ; 后坐力
     }
     {OvermatchCalibre ; 倾斜入射修正
@@ -48,13 +48,13 @@
   }
 
   {Parameters "apcr" ; APCR 硬芯穿甲弹
-    {Range 350 350} ; 射程
+    {Range 370 370} ; 射程
     {Speed 930} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 219} {500 143} {1000 0}} ; 穿深
     {MinimumDamageModifier 180} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {500 0.8} {1000 2.2}} ; 散布
+      {RadiusTable {0 0.0} {500 0.5} {1000 2.0}} ; 散布
       {SpreadXYRatio 1.8} ; 后坐力
     }
     {OvermatchFixed ; 倾斜入射修正
@@ -81,11 +81,11 @@
   }
 
   {Parameters "he" ; HE 高爆弹
-    {Range 350 350} ; 射程
+    {Range 370 370} ; 射程
     {Speed 820} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {Spreading
-      {RadiusTable {0 0.0} {500 2.1} {1000 5}} ; 散布
+      {RadiusTable {0 0.0} {500 2.0} {1000 5}} ; 散布
       {SpreadXYRatio 0.6} ; 后坐力
     }
   }

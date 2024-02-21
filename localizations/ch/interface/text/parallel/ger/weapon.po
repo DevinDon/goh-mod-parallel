@@ -45,6 +45,10 @@ msgctxt "desc/weapon/ger-88mm-kwk36-l56"
 msgid   "8.8cm KwK 36 L/56"
 msgstr  "8.8cm KwK 36 L/56 坦克炮"
 
+msgctxt "desc/weapon/ger-88mm-kwk36-l56-ace"
+msgid   "8.8cm KwK 36 L/56"
+msgstr  "8.8cm KwK 36 L/56 王牌虎式坦克炮"
+
 msgctxt "desc/weapon/ger-88mm-kwk43-l71"
 msgid   "8.8cm KwK 43 L/71"
 msgstr  "8.8cm KwK 43 L/71 坦克炮"
