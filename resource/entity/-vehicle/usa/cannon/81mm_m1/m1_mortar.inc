@@ -64,7 +64,7 @@
 {mass 62}
 {Chassis
   ("mobility_cannon"
-    speed(62) ;----------------------------------Max speed.
+    speed(10) ;----------------------------------Max speed.
     weight(62) ;---------------------------------Weight in Kilograms.
   )
 }

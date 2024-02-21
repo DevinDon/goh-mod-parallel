@@ -100,7 +100,7 @@
   {Chassis "track"
     ("car_trace" fx("tracewheel05a") step(0.14) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
     ("mobility_cannon"
-      speed(90.0) ;--------------------------------Max speed.
+      speed(10.0) ;--------------------------------Max speed.
       weight(1087) ;-------------------------------Weight in Kilograms.
     )
   }
