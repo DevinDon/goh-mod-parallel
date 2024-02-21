@@ -8,7 +8,7 @@
 
 
 ("set-basic-durability" body(175) engine(150) turret(150) mantlet(100) gun(150) track(150) ammo(120))
-("set-basic-armor"      ammo(15))
+("set-basic-armor"      ammo(10))
 
 ("set-turret" repair(10))
 ("set-mantlet" repair(5))
