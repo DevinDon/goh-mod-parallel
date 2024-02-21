@@ -1,28 +1,29 @@
 {game_entity
-  (include "/properties/tank.ext")
 
+  (include "/properties/standard/vehicle/tank-config.ext")
   (include "/properties/selection/vehicle.inc" scale(1.2))
-  {props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nvw" "detect_tank_heavy" "panzer5a"}
-  {extension "panzer5a_armor.mdl"}
-  (include "panzer5a.ext")
-  {PatherId "panzer5"}
-  {targetclass "tank_heavy"}
-  {targetSelector "tank_heavy"}
 
-  {extender "enumerator"
+  {Extension "panzer5a_armor.mdl"}
+  (include   "panzer5a.ext")
+  (include   "crew-and-seat.ext")
+
+  {Props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nvw" "detect_tank_heavy" "panzer5a"}
+
+  {PatherId "panzer5"}
+  {Targetclass "tank_heavy"}
+  {TargetSelector "tank_heavy"}
+
+  {Extender "enumerator"
     {digit_folder "ger"}
   }
 
-  {sensor
-    {visor "main"
-      {vision "tank_range_210"}
+  {Sensor
+    {Visor "main"
+      {Vision "standard-vision-narrow"}
     }
   }
 
-  ("crew_5_human_extended")
-  ("gunner_visible")
-
-  {boarder
+  {Boarder
     {anm "driver"
       {forward {begin "board_pz4_driver"} {end "pose_mgun_pz6"} {base "open_driver"}}
       {reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
@@ -41,95 +42,135 @@
     }
   }
 
-  ("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
-  ("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
-  ("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
-  ("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+  {Extender "detail"
+    {random 0}
+    {detail9}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail6}
+    {detail11}
+    {detail12}
+    {detail13}
+    {detail14}
+    {detail10}
+    {detail8}
+    {detail7}
+    {detail16}
+    {detail17}
+    {detail18}
+    {detail19}
+  }
 
-  {extender "shield" {on}}
+  {Extender "shield" {on}}
 
-  {extender "smokescreen"
+  {Extender "smokescreen"
     {cooldown 5}
     {itemTags "grenade nbks"}
   }
 
-  {extender "inventory"
-    {weapon "mgun" {mask "mountable"}}
-    {box
-      {item "bulletger_75_l70 apcbche" 36}   ; 79 rounds
-      {item "bulletger_75_l70 he" 40}
-      {item "bulletger_75_l70 apcr" 2}
-      {item "ammo mgun_ger belt" 4800}    ; 34 belts (150 rounds each)
-      {item "mg34_drum" filled {user "mgun"}}
-      {item "geballteladung_3kg" 1}
-      {item "nbks grenade" 6}
+  {Extender "inventory"
+    {Weapon "mgun" {mask "mountable"}}
+    {Box
+      {Size 14 10}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun" 4500}
+      {Item "weapon ger-mg42" filled {user "mgun"}}
+
+      {Item "nbks grenade" 10}
+
+      {Item "ammo ger-75l70 apcbche" 39}
+      {Item "ammo ger-75l70 apcr" 5}
+      {Item "ammo ger-75l70 he" 29}
     }
   }
 
   {Weaponry
-    ("restore_ik_time")
-    {place "gun"
+    {RestoreIKTime 3}
+    {Place "gun"
       {RestoreIKAfterAim}
-      {weapon "75mm_kwk42" filling "bulletger_75_l70 apcbche" 1}
-      {gunner "gunner"}
-      {charger "charger"}
-      ("abm_dymamic_stabilised"
-        zeroing(3.0)
-        dispersion(0.20)
-      )
+      {Weapon "weapon ger-75mm-kwk42-l70" filling "ammo ger-75l70 apcbche" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.00} ; s
+      }
     }
-    {place "mgun2"
-      {type "coaxial"}
-      {weapon "mg34_tank" filled}
-      {foresight "foresight5"}
-      {gunner "gunner"}
-      {charger "charger"}
-      ("abm_mgun")
-      {basic}
-    }
-    {place "mgun1"
-      {type "hull"}
-      {weapon "mg34_tank" filled}
-      {foresight "foresight4"}
-      {gunner "gunner3"}
-      {charger "gunner3"}
-      ("abm_mgun")
-      {basic}
+    {Place "mgun2"
+      {Type "coaxial"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight5"}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {Basic}
       {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
     }
-    {place "mgun"
-      {type "aa"}
-      {gunner "commander"}
-      {charger "commander"}
+    {Place "mgun1"
+      {Type "hull"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight4"}
+      {Gunner "gunner3"}
+      {Charger "gunner3"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "aa"}
+      {Gunner "commander"}
+      {Charger "commander"}
       {LinkBone "mgun"}
       {LinkAnimation "off"}
-      ("abm_mgun")
-      {basic}
+      {Basic}
       {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
     }
   }
 
-  {mass 45500}
-  {Chassis
-    ("tank_trace" fx("tracks_big") step(0.47) len(0.94))
-    ("mobility_tank"
-      speed(46) ;----------Max speed when fully accelerated on road, km/h.
-      reverse(5.3) ;---------Max speed in reverse on road, km/h. 3.3 + 2kmh
-      traverse(30) ;-------Track traverse, per second, in degrees.
-      weight(45.5) ;-------Weight in Tonnes.
-      power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
-      track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-      fuel(730) ;----------Fuel capacity in Litres.
-      type(fuel) ;---------Fuel type. (diesel OR fuel)
-      range(100) ;---------Range in km, off-road.
-    )
+  {Mass 45500}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_big") step(0.47) length(0.94) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(46) power(600) mass(45500) performance(1.30))
+    ("set-fuel-tank" volume(730) power(600))
   }
 
-  {bone "gun_rot"
+  {Bone "gun_rot"
     {limits -8 18}
     {speed2 4}
   }
-  {bone "turret"
-    ("turret_medium" power_traverse(20))
+  {Bone "turret"
+    {speed2 24}
   }
+
 }

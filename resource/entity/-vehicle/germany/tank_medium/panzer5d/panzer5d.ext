@@ -4,41 +4,71 @@
 ; spare tracks 20mm
 ; schürzen 5mm
 
-("tank_heavy_tier1")
 
-("shield_track" args "detail6" 20)
-("shield_track" args "detail7" 20)
-("shield_track" args "detail8" 20)
 
-("shield" args "fenderl" 5)
-("shield" args "fenderl2" 5)
-("shield" args "shieldl3" 5)
-("shield" args "shieldl4" 5)
-("shield" args "shieldl5" 5)
-("shield" args "shieldl6" 5)
-("shield" args "shieldl7" 5)
-("shield" args "shieldl8" 5)
-("shield" args "fenderr" 5)
-("shield" args "fenderr2" 5)
-("shield" args "shieldr3" 5)
-("shield" args "shieldr4" 5)
-("shield" args "shieldr5" 5)
-("shield" args "shieldr6" 5)
-("shield" args "shieldr7" 5)
-("shield" args "shieldr8" 5)
 
-("tracks" repair(30) thickness(20))
-("gun" repair(30) thickness(25))
+("set-basic-durability" body(750) engine(450) turret(550) mantlet(300) gun(300) track(350) ammo(400))
+("set-basic-armor"      ammo(30))
 
-("ammo" args "ammo1")
-("ammo" args "ammo2")
-("ammo" args "ammo3")
-("ammo" args "ammo4")
-("fuel" args "fuel1")
-("fuel" args "fuel2")
-("fuel" args "fuel3")
-("fuel" args "fuel4")
-("transmission" args "transmission")
+("set-turret" repair(20))
+("set-mantlet" repair(10))
+("set-gun" thickness(30) repair(10))
+
+("set-body" repair(30))
+("set-engine" repair(10))
+("set-tracks" thickness(30) repair(10))
+
+("set-shield-track" name("detail6") thickness(25))
+("set-shield-track" name("detail7") thickness(25))
+("set-shield-track" name("detail8") thickness(25))
+
+("set-shield" name("fenderl")  thickness(9))
+("set-shield" name("fenderl2") thickness(9))
+("set-shield" name("shieldl3") thickness(9))
+("set-shield" name("shieldl4") thickness(9))
+("set-shield" name("shieldl5") thickness(9))
+("set-shield" name("shieldl6") thickness(9))
+("set-shield" name("shieldl7") thickness(9))
+("set-shield" name("shieldl8") thickness(9))
+
+("set-shield" name("fenderr")  thickness(9))
+("set-shield" name("fenderr2") thickness(9))
+("set-shield" name("shieldr3") thickness(9))
+("set-shield" name("shieldr4") thickness(9))
+("set-shield" name("shieldr5") thickness(9))
+("set-shield" name("shieldr6") thickness(9))
+("set-shield" name("shieldr7") thickness(9))
+("set-shield" name("shieldr8") thickness(9))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("ammo4") type("ammo") repair(3))
+("set-internal-components" name("fuel1") type("fuel") repair(3))
+("set-internal-components" name("fuel2") type("fuel") repair(3))
+("set-internal-components" name("fuel3") type("fuel") repair(3))
+("set-internal-components" name("fuel4") type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+{component "fenderl" {tags "cut_part"}}
+{component "fenderl2" {tags "cut_part"}}
+{component "shieldl3" {tags "cut_part"}}
+{component "shieldl4" {tags "cut_part"}}
+{component "shieldl5" {tags "cut_part"}}
+{component "shieldl6" {tags "cut_part"}}
+{component "shieldl7" {tags "cut_part"}}
+{component "shieldl8" {tags "cut_part"}}
+{component "fenderr" {tags "cut_part"}}
+{component "fenderr2" {tags "cut_part"}}
+{component "shieldr3" {tags "cut_part"}}
+{component "shieldr4" {tags "cut_part"}}
+{component "shieldr5" {tags "cut_part"}}
+{component "shieldr6" {tags "cut_part"}}
+{component "shieldr7" {tags "cut_part"}}
+{component "shieldr8" {tags "cut_part"}}
+{component "detail6" {tags "cut_part"}}
+{component "detail7" {tags "cut_part"}}
+{component "detail8" {tags "cut_part"}}
 
 {volume "body1"      ; Hull
   {thickness 40
@@ -102,23 +132,3 @@
   }
   {CastSteel 0.8063}
 }
-
-{component "fenderl" {tags "cut_part"}}
-{component "fenderl2" {tags "cut_part"}}
-{component "shieldl3" {tags "cut_part"}}
-{component "shieldl4" {tags "cut_part"}}
-{component "shieldl5" {tags "cut_part"}}
-{component "shieldl6" {tags "cut_part"}}
-{component "shieldl7" {tags "cut_part"}}
-{component "shieldl8" {tags "cut_part"}}
-{component "fenderr" {tags "cut_part"}}
-{component "fenderr2" {tags "cut_part"}}
-{component "shieldr3" {tags "cut_part"}}
-{component "shieldr4" {tags "cut_part"}}
-{component "shieldr5" {tags "cut_part"}}
-{component "shieldr6" {tags "cut_part"}}
-{component "shieldr7" {tags "cut_part"}}
-{component "shieldr8" {tags "cut_part"}}
-{component "detail6" {tags "cut_part"}}
-{component "detail7" {tags "cut_part"}}
-{component "detail8" {tags "cut_part"}}

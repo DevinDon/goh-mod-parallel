@@ -48,32 +48,6 @@
   }
 )
 
-; define crew_open
-; args = place bone visorbone door door2 animationLeft animationRight group
-(define "set-open-crew"
-  {sensor
-    {visor "top"
-      {vision "standard-vision-wide"}
-      {bone "%visorbone"}
-    }
-  }
-  {placer
-    {place "%place"
-      {group "%group"}
-      {linkbone "%bone"}
-      {visor "top"}
-      ;{openForCrush}
-      {sealable}
-    }
-  }
-  {boarder
-    {door "%door"}
-    {door "%door2"}
-    {link "%door" "%place" {anm "%animationLeft"} {forward putoff} {reverse puton}}
-    {link "%door2" "%place" {anm "%animationRight"} {forward putoff} {reverse puton}}
-  }
-)
-
 ; define seat_human
 ; args = place bone door animation
 (define "set-seat"
@@ -87,9 +61,6 @@
 )
 
 ; apply settings
-; gunner_visible
-("set-open-crew" place(commander) bone(gunner2) visorbone(mgun_rot) door(emit1) door2(emit2) animationLeft(left) animationRight(right) group(crew))
-
 ; crew_5_human_extended
 ("set-inside-crew")
 ("set-driver-crew" door(emit0)      door2(emit1) door3(emit2))
