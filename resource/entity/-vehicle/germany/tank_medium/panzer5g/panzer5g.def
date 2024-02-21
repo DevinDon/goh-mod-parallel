@@ -165,7 +165,7 @@
     {speed2 4}
   }
   {Bone "turret"
-    {speed2 24}
+    {speed2 20}
   }
 
 }
