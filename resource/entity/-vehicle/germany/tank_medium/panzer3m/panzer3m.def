@@ -1,125 +1,149 @@
 {game_entity
-	(include "/properties/tank.ext")
-	
-	(include "/properties/selection/vehicle.inc"  scale(1.1))
-	{props "medium" "vision_lev04" "muzzle_50mm_57mm" "shield"}
-	{extension "panzer3m.mdl"}
-	(include "panzer3m.ext")
-	{PatherId "panzer3"}
-	{targetclass "tank_medium"}
-	{targetSelector "tank_medium"}
-	{extender "enumerator"
-		{digit_folder "ger"}
-	}
 
-	("crew_5_human")
-	;("commander_visible")
+  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(1.1))
 
-	{boarder
-		{anm "left"
-			{forward	{begin	"board_tank_right"} {end "seat_commander_hatch"}}
-			{reverse 	{end	"emit_tank_2_hold"}}
-		}
-		{anm "right"
-			{forward	{begin	"board_tank_left"} {end "seat_commander_hatch"}}
-			{reverse 	{end	"emit_tank_2_hold"}}
-		}
-		{anm "armor"
-			{forward	{begin	"board_MiddleArmor"} 	{end "pose_seat_armor_2"}}
-			{reverse 	{end	"emit_tank_1"}}
-		}
-		{anm "armor1"
-			{forward	{begin	"board_MiddleArmor"} {end "pose_seat_armor_1"}}
-			{reverse 	{end	"emit_tank_1"}}
-		}
-		{anm "armor2"
-			{forward	{begin	"board_MiddleArmor"} {end "seat_crew_cannon1"}}
-			{reverse 	{end	"emit_tank_1"}}
-		}
-	}
+  {Extension "panzer3m.mdl"}
+  (include   "panzer3m.ext")
+  (include   "crew-and-seat.ext")
 
-	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
-	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
-	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor2))
-	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+  {Props "medium" "vision_lev04" "muzzle_50mm_57mm" "shield"}
 
-	{extender "shield" {on}}
+  {PatherId "panzer3"}
+  {Targetclass "tank_medium"}
+  {TargetSelector "tank_medium"}
 
-	{extender "inventory"
-		{box
-			{item "bulletger_50_l60 apche" 37} 		; 84 rounds
-			{item "bulletger_50_l60 he" 42}
-			{item "bulletger_50_l60 apcr" 4}
-			{item "ammo mgun_ger belt" 3450}		; 25 belts (150 rounds each)
-			{item "geballteladung_3kg" 1}
-		}
-	}
-	
-	{Weaponry
-		("restore_ik_time")
-		{place "gun"
-			{RestoreIKAfterAim}
-			{weapon "50mm_kwk39" filling "bulletger_50_l60 apche" 1}
-			{gunner "gunner"}
-			{charger "charger"}
-			("abm_dymamic"
-				zeroing(2.8)
-				dispersion(0.20)
-			)
-		}
-		{place "mgun2"
-			{type "coaxial"}
-			{weapon "mg34_tank" filled}
-			{foresight "foresight5"}
-			{gunner "gunner"}
-			{charger "charger"}
-			("abm_mgun")
-			{basic}
-		}
-		{place "mgun1"
-			{type "hull"}
-			{weapon "mg34_tank" filled}
-			{foresight "foresight4"}
-			{gunner "gunner3"}
-			{charger "gunner3"}
-			("abm_mgun")
-			{basic}
-			{ai_in_manual}
-		}
-		{##place "mgun"
-			{type "commander"}
-			{weapon "commander_vision"}
-			{foresight "vision_rot"}
-			{gunner "commander"}
-			{basic}
-			{ai_in_manual}
-		}
-	}
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
 
-	{mass 22700}
-	{Chassis
-		("tank_trace" fx("tracks_mid") step(0.52) len(1.05))
-		("mobility_tank"	
-			speed(40)  ;---------Max speed when fully accelerated on road, km/h.
-			reverse(8);----------Max speed in reverse on road, km/h.
-			traverse(30) ;-------Track traverse, per second, in degrees.
-			weight(22.7) ;-------Weight in Tonnes.
-			power(265) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
-			track(5) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(320) ;----------Fuel capacity in Litres.
-			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(95) ;----------Range in km, off-road.
-		)
-	}
-	
-	{bone "gun_rot"
-		{limits -10 20}
-		{speed2 8}
-	}
-	{bone "turret"
-		("turret_medium" power_traverse(6)) ;// manual, gunner + loader has handcranks
-	}
-	{##bone "commander_rot"
-		{speed2 180}
-	}
+  {Boarder
+    {anm "left"
+      {forward  {begin  "board_tank_right"} {end "seat_commander_hatch"}}
+      {reverse   {end  "emit_tank_2_hold"}}
+    }
+    {anm "right"
+      {forward  {begin  "board_tank_left"} {end "seat_commander_hatch"}}
+      {reverse   {end  "emit_tank_2_hold"}}
+    }
+    {anm "armor"
+      {forward  {begin  "board_MiddleArmor"}   {end "pose_seat_armor_2"}}
+      {reverse   {end  "emit_tank_1"}}
+    }
+    {anm "armor1"
+      {forward  {begin  "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+      {reverse   {end  "emit_tank_1"}}
+    }
+    {anm "armor2"
+      {forward  {begin  "board_MiddleArmor"} {end "seat_crew_cannon1"}}
+      {reverse   {end  "emit_tank_1"}}
+    }
+  }
+
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail6}
+    {detail9}
+    {detail10}
+  }
+
+  {Extender "shield" {on}}
+
+  {Extender "inventory"
+    {Box
+      {Size 12 9}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun" 2500}
+
+      {Item "ammo ger-50l60 apche" 39}
+      {Item "ammo ger-50l60 apcr" 5}
+      {Item "ammo ger-50l60 he" 79}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 7}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "weapon ger-50mm-kwk39-l60" filling "bulletger_50_l60 apche" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.00} ; s
+      }
+    }
+    {Place "mgun2"
+      {Type "coaxial"}
+      {Weapon "mg34_tank" filled}
+      {Foresight "foresight5"}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun1"
+      {Type "hull"}
+      {Weapon "mg34_tank" filled}
+      {Foresight "foresight4"}
+      {Gunner "gunner3"}
+      {Charger "gunner3"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {##Place "mgun"
+      {Type "commander"}
+      {Weapon "commander_vision"}
+      {foresight "vision_rot"}
+      {Gunner "commander"}
+      {Basic}
+      {ai_in_manual}
+    }
+  }
+
+  {Mass 22700}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_mid") step(0.52) length(1.05) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(40) power(265) mass(22700) performance(1.24))
+    ("set-fuel-tank" volume(320) power(265))
+  }
+
+  {Bone "gun_rot"
+    {limits -10 20}
+    {speed2 8}
+  }
+  {Bone "turret"
+    {speed2 20}
+  }
+  {##Bone "commander_rot"
+    {speed2 180}
+  }
+
 }
