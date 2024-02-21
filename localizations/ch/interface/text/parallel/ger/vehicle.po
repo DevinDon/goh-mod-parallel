@@ -41,7 +41,7 @@ msgctxt "desc/entity/panzer5a"
 msgid   "Pz.Kpfw Panther Ausf.A"
 msgstr  "\"黑豹\" 五号 A 型中型坦克"
 
-msgctxt "desc/entity/panzer5a_armor""
+msgctxt "desc/entity/panzer5a_armor"
 msgid   "Pz.Kpfw Panther Ausf.A Armored"
 msgstr  "\"黑豹\" 五号 A 型中型坦克 附加装甲"
 
