@@ -37,6 +37,22 @@ msgctxt "desc/entity/panzer4h"
 msgid   "Pz.Kpfw IV Ausf.H"
 msgstr  "四号坦克 H 型"
 
+msgctxt "desc/entity/panzer5a"
+msgid   "Pz.Kpfw Panther Ausf.A"
+msgstr  "\"黑豹\" 五号 A 型中型坦克"
+
+msgctxt "desc/entity/panzer5a_armor""
+msgid   "Pz.Kpfw Panther Ausf.A Armored"
+msgstr  "\"黑豹\" 五号 A 型中型坦克 附加装甲"
+
+msgctxt "desc/entity/panzer5d"
+msgid   "Pz.Kpfw Panther Ausf.D"
+msgstr  "\"黑豹\" 五号 D 型中型坦克"
+
+msgctxt "desc/entity/panzer5g"
+msgid   "Pz.Kpfw Panther Ausf.G"
+msgstr  "\"黑豹\" 五号 G 型中型坦克"
+
 # 重型坦克
 msgctxt "desc/entity/tiger1e"
 msgid   "Pz.Kpfw VI 'Tiger' Ausf.E"
