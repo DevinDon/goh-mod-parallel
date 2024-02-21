@@ -74,13 +74,13 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {item "ammo ger-128l61 apcbche" 19}
-      {item "ammo ger-128l61 he" 19}
-
       {Item "ammo ger-mgun" 4500}
       {Item "weapon ger-mg42" filled {user "mgun"}}
 
       {item "nbks grenade" 20}
+
+      {item "ammo ger-128l61 apcbche" 19}
+      {item "ammo ger-128l61 he" 19}
     }
   }
 

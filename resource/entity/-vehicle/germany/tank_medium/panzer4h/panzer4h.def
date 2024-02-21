@@ -64,13 +64,13 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
+      {Item "ammo ger-mgun" 4500}
+      {Item "weapon ger-mg42" filled {user "mgun"}}
+
       {Item "ammo ger-75l43 apcbche" 49}
       {Item "ammo ger-75l43 apcr" 5}
       {Item "ammo ger-75l43 heat" 9}
       {Item "ammo ger-75l43 he" 49}
-
-      {Item "ammo ger-mgun" 4500}
-      {Item "weapon ger-mg42" filled {user "mgun"}}
     }
   }
 
