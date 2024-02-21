@@ -106,6 +106,12 @@ msgctxt "desc/ammo/ger-128l61 he"
 msgid   "12.8cm SprGr.L/5.0 [<c(ff1200)>HE</c>] <c(65696d)>L/61</c>"
 msgstr  "12.8cm SprGr.L/5.0 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/61</c>"
 
+# 600mm
+msgctxt "desc/ammo/ger-600l8 he"
+msgid   "60cm schwere Betongranate 040"
+msgstr  "60cm 040 重型混凝土侵彻弹"
+
+
 # 迫击炮
 
 # 火箭弹

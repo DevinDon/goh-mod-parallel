@@ -52,3 +52,6 @@ msgid   "Jagdtiger Sd. Kfz. 186"
 msgstr  "\"猎虎\" 重型坦克歼击车"
 
 # 自行榴弹炮
+msgctxt "desc/entity/600mm_thor"
+msgid   "60cm Gerät Nr. III"
+msgstr  "60cm 卡尔臼炮 Nr. III"

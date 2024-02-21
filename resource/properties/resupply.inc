@@ -297,6 +297,7 @@
   {Item "ger-105l68" "he"          "ammo"   1 {Value 10}}
   {Item "ger-128l61" "apcbche"     "ammo"   1 {Value 12}}
   {Item "ger-128l61" "he"          "ammo"   1 {Value 12}}
+  {Item "ger-600l8"  "he"          "ammo"   1 {Value 60}}
 )
 
 (define "items_medic"
