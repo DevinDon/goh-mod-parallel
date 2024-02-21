@@ -1183,7 +1183,6 @@
     {distance 30}
     {distanceSet 0}
     {delta 0}
-    {camera "zoom1.5"}
     {ManualAccuracyZoom}
     {blur_strength 5}
     {disable_fow 0}
@@ -1192,9 +1191,13 @@
       {viewoff "shieldt shieldl5 shieldr5"} ; removes shield to prevent clipping
     }
     {soundEffect "enclosed_vehicle"}
+    {camera "zoom2"}
   }
   {level ;2
-    {camera "zoom2.5"}
+    {camera "zoom4"}
+  }
+  {level ;3
+    {camera "zoom8"}
   }
 }
 
@@ -1271,7 +1274,6 @@
     {distance 30}
     {distanceSet 0}
     {delta 0}
-    {camera "zoom1.5"}
     {ManualAccuracyZoom}
     {blur_strength 5}
     {disable_fow 0}
@@ -1280,9 +1282,13 @@
       {viewoff "shieldt shieldl5 shieldr5"} ; removes shield to prevent clipping
     }
     {soundEffect "enclosed_vehicle"}
+    {camera "zoom2"}
   }
   {level ;2
-    {camera "zoom2.5"}
+    {camera "zoom4"}
+  }
+  {level ;3
+    {camera "zoom8"}
   }
 }
 
@@ -1315,15 +1321,18 @@
     {distance 30}
     {distanceSet 0}
     {delta 0}
-    {camera "zoom1.5"}
     {ManualAccuracyZoom}
     {blur_strength 5}
     {disable_fow 0}
     {no_rim_light}
     {soundEffect "enclosed_vehicle"}
+    {camera "zoom2"}
   }
   {level ;2
-    {camera "zoom2.5"}
+    {camera "zoom4"}
+  }
+  {level ;3
+    {camera "zoom8"}
   }
 }
 
@@ -1487,10 +1496,10 @@
     {camera "zoom2"}
   }
   {level ;2
-    {camera "zoom5"}
+    {camera "zoom4"}
   }
   {level ;3
-    {camera "zoom10"}
+    {camera "zoom8"}
   }
 }
 
