@@ -74,7 +74,7 @@
     {RestoreIKTime 7}
     {Place "gun"
       {RestoreIKAfterAim }
-      {Weapon "weapon usa-37mm-m6" filling "ammo usa-37 apcbc" 5}
+      {Weapon "weapon usa-37mm-m6" filling "ammo usa-37 apcbc" 1}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion
@@ -126,8 +126,8 @@
   {Chassis "wheel"
     ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
-    ("set-maneuverability-of-armored-car" speed(90) power(300) mass(7890) performance(1.5))
-    ("set-fuel-tank" volume(500) power(300))
+    ("set-maneuverability-of-armored-car" speed(88) power(110) mass(7890) performance(1.35))
+    ("set-fuel-tank" volume(200) power(110))
   }
 
   {Bone "gun_rot"

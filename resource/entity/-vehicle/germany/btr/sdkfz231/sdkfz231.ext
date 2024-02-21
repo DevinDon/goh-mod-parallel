@@ -1,0 +1,93 @@
+; armor notes
+; wheels 10mm (wheels did not deflate when piereced by bullet)
+; gun 20mm
+; shields 2-8mm
+
+
+
+
+
+("set-basic-durability" body(175) engine(150) turret(150) mantlet(100) gun(150) track(150) ammo(120))
+("set-basic-armor"      ammo(10))
+
+("set-turret" repair(10))
+("set-mantlet" repair(5))
+("set-gun" repair(10) thickness(20))
+
+("set-body" repair(15))
+("set-engine" repair(10))
+
+("set-solid-wheel" name("wheelleft1"))
+("set-solid-wheel" name("wheelleft2"))
+("set-solid-wheel" name("wheelleft3"))
+("set-solid-wheel" name("wheelleft4"))
+("set-solid-wheel" name("wheelright1"))
+("set-solid-wheel" name("wheelright2"))
+("set-solid-wheel" name("wheelright3"))
+("set-solid-wheel" name("wheelright4"))
+
+("set-shield" name("shield2") thickness(1))
+
+("set-shield-group" name("shield1")   thickness(30) type("shield1"))
+("set-shield-group" name("shield1a")  thickness(20) type("shield1"))
+("set-shield-group" name("shield1b")  thickness(20) type("shield1"))
+
+("set-internal-components" name("fuel") type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+{volume "transmission" {able {NoWoundDecal 0}}}
+
+{volume "body1"      ; Hull
+  {thickness 8
+    {front 14.5}
+    {top 5.5}
+    {bottom 5.5}
+    {rear 5.5}
+  }
+  {tags "no_target"}
+}
+{volume "body2"      ; Superstructure
+  {thickness 8
+    {front 14.5}
+    {top 5.5}    ; Glacis
+    {bottom 5.5}
+    {rear 5.5}
+  }
+}
+{volume "body3"      ; Top Superstructure
+  {thickness 8
+    {top 5.5}
+    {bottom 5.5}
+  }
+  {tags "no_target"}
+}
+{volume "body4"      ; Lower Front Hull
+  {thickness 8}
+  {tags "no_target"}
+}
+{volume "turret"
+  {thickness 8
+    {front 14.5}
+    {top 5.5}
+  }
+}
+{volume "mantlet"
+  {thickness 14.5}
+}
+{volume "engine1"    ; Hull
+  {thickness 10
+    {front 5.5}
+    {top 5.5}
+    {bottom 5.5}
+  }
+}
+{volume "engine2"    ; Superstructure
+  {thickness 10
+    {front 5.5}
+    {top 5.5}
+    {bottom 5.5}
+  }
+}
+{volume "engine3"    ; Lower Rear Hull
+  {thickness 10}
+}

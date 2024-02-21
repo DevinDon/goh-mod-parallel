@@ -17,6 +17,19 @@ msgid   "7.92mm Rounds"
 msgstr  "7.92mm 穿甲爆破燃烧弹"
 
 # 炮弹
+# 20mm
+msgctxt "desc/ammo/ger-20l55 ap"
+msgid   "2cm PzGr. [<c(ff6a00)>AP</c>]"
+msgstr  "2cm PzGr. [<c(ff6a00)>穿甲弹</c>]"
+
+msgctxt "desc/ammo/ger-20l55 apcr"
+msgid   "2cm PzGr.40 [<c(48c445)>APCR</c>]"
+msgstr  "2cm PzGr.40 [<c(48c445)>硬芯穿甲弹</c>]"
+
+msgctxt "desc/ammo/ger-20l55 he"
+msgid   "2cm SprGr. [<c(ff1200)>HE</c>]"
+msgstr  "2cm SprGr. [<c(ff1200)>高爆弹</c>]"
+
 # 50mm
 msgctxt "desc/ammo/ger-50l60 apche"
 msgid   "5cm PzGr.39 [<c(ff6a00)>APC-HE</c>] <c(65696d)>L/60</c>"

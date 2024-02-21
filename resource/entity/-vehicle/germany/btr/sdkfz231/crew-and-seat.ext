@@ -1,0 +1,21 @@
+; crew and seat
+
+; define crew_human
+; args = place visor
+(define "set-crew"
+  {placer
+    {place "%place" {group "crew"} {visor "%visor"}}
+  }
+  {boarder
+    {door "emit1"}
+    {door "emit2"}
+    {link "emit1" "%place" {anm "left"} {forward putoff} {reverse puton}}
+    {link "emit2" "%place" {anm "right"} {forward putoff} {reverse puton}}
+  }
+)
+
+; apply settings
+("set-crew" place(driver) visor(driver))
+("set-crew" place(gunner) visor(main))
+("set-crew" place(commander) visor(around))
+("set-crew" place(charger) visor(none))

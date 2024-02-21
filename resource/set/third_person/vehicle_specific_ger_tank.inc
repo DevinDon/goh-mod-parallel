@@ -864,6 +864,9 @@
   {level ;2
     {camera "zoom2.4"}
   }
+  {level ;3
+    {camera "zoom5"}
+  }
 }
 
 {"tank.panzer35t" ; Panzer 35t

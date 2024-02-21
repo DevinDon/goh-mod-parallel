@@ -6,14 +6,14 @@
   {FireSoundclose "gun/gun_interior/size2"}
   {ReloadSound "interior/large/small_reload_interior"}
 
-  {Filling "ammo usa-37" 5} ; 弹种及弹链内炮弹数量
+  {Filling "ammo usa-37" 1} ; 弹种及弹链内炮弹数量
   {Calibre 37} ; 口径
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
   {SpreadTolerance 0.50} ; 瞄准到 50% 就可以开火
   {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
 
-  {RechargeTime 7} ; 装填时间（秒）
+  {RechargeTime 3} ; 装填时间（秒）
   {RecoveryTime 1} ; 短射间隔（秒），适用于弹链
 
   {Automatic} ; 自动武器

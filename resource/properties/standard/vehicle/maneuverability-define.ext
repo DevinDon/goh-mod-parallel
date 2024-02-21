@@ -5,23 +5,23 @@
 ; performance 为性能系数，取值范围为 [0.5, 2]，数字越大性能越好，1 为标准性能
 (define "set-maneuverability-of-armored-car"
   {Locomotion
-    {Slow                                                      10} ; Slow speed. Mainly used in mission scripting
-    {Normal                                          (/ %speed 1)} ; Standard speed. Single click movement order
-    {Fast                                            (/ %speed 1)} ; Sprint speed. Double click movement order
-    {MaxSpeed                                        (/ %speed 1)} ; Max speed.
-    {MaxSpeedAtMaxTurn           (* (/ %speed 1.50) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
-    {SteerOn                                  (* %performance 10)} ; Steering wheel's turn speed, degrees per second.
-    {SteerOff                                 (* %performance 20)} ; Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second.
-    {TurnRadius                                (/ 6 %performance)} ; AI turning radius, lower = able to turn more without stopping.
-    {StartTime                  (/ (/ %mass %power) %performance)} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
-    {StopTime          (/ (+ 1.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
-    {BrakeTime         (/ (+ 0.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
-    {Gears                                            0.5 0.8 1.0} ; Gearing affects acceleration curve.
-    {RearGears                               (* %performance 0.5)} ; Reverse max speed.
-    {GearSwitchDelay                         (/ 0.5 %performance)} ; Time to switch between forward and reverse.
-    {SplineRadius                                            0.75} ; limit turning radius on the splines (path planner parameter), meters
-    {MaxSlope                                                  75} ; Maximum slope to drive up hill
-    {FallSlope                                                 75} ; Maximum slope before physics kick in
+    {Slow                                                                       10} ; Slow speed. Mainly used in mission scripting
+    {Normal                                                           (/ %speed 1)} ; Standard speed. Single click movement order
+    {Fast                                                             (/ %speed 1)} ; Sprint speed. Double click movement order
+    {MaxSpeed                                                         (/ %speed 1)} ; Max speed.
+    {MaxSpeedAtMaxTurn                            (* (/ %speed 2.00) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
+    {SteerOn                                                   (* %performance 10)} ; Steering wheel's turn speed, degrees per second.
+    {SteerOff                                                  (* %performance 20)} ; Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second.
+    {TurnRadius                                                 (/ 9 %performance)} ; AI turning radius, lower = able to turn more without stopping.
+    {StartTime         (/ (* 4 (/ %speed (/ %power (/ %mass 1000)))) %performance)} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
+    {StopTime                           (/ (+ 1.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
+    {BrakeTime                          (/ (+ 0.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
+    {Gears                                                             0.5 0.8 1.0} ; Gearing affects acceleration curve.
+    {RearGears                                                (* %performance 0.5)} ; Reverse max speed.
+    {GearSwitchDelay                                          (/ 0.5 %performance)} ; Time to switch between forward and reverse.
+    {SplineRadius                                                             0.75} ; limit turning radius on the splines (path planner parameter), meters
+    {MaxSlope                                                                   75} ; Maximum slope to drive up hill
+    {FallSlope                                                                  75} ; Maximum slope before physics kick in
   }
 )
 

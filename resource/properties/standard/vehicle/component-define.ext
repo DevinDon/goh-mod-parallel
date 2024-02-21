@@ -240,7 +240,7 @@
   }
 )
 
-;args = name thickness repair
+; args = name thickness repair
 (define "set-bulletproof-wheel"
   {volume %name
     {thickness %thickness}
@@ -255,7 +255,23 @@
   }
 )
 
-;args = name thickness repair
+; define solid_wheel
+; args = name
+(define "set-solid-wheel"
+  {volume %name
+    {thickness 10}
+    {tags "wheel" "no_target"}
+    {component %name}
+    {able {NoWoundDecal}}
+  }
+  {component %name
+    {RepairTime 10}
+    {tags "wheel" "no_target"}
+    {RepairOrder 10}
+  }
+)
+
+; args = name thickness repair
 (define "set-bulletproof-shield"
   {volume %name
     {thickness %thickness}

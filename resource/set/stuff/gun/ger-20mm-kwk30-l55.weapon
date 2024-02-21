@@ -1,0 +1,91 @@
+{from "pattern gun"
+
+  (include "/properties/standard/gun/define.ext")
+
+  {FireSound "gun/gun_auto_tank"}
+  {FireSoundclose "gun/gun_interior/size1"}
+  {ReloadSound "interior/large/small_reload_interior"}
+  {Cursor "ironsights/aa"}
+
+  {Filling "ammo ger-20l55" 10} ; 弹种及弹链内炮弹数量
+  {Calibre 20} ; 口径
+
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
+  {SpreadTolerance 0.50} ; 瞄准到 50% 就可以开火
+  {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
+
+  {RechargeTime 3} ; 装填时间（秒）
+  {RecoveryTime 0.25} ; 短射间隔（秒），适用于弹链
+
+  {Automatic} ; 自动武器
+
+  {Parameters "ap" ; AP 穿甲弹
+    {Range 350 350} ; 射程
+    {Speed 760} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {0 45} {500 11} {1000 0}} ; 穿深
+    {MinimumDamageModifier 30} ; 伤害
+    {Spreading
+      {RadiusTable {0 0.0} {500 1.7} {1000 4}} ; 散布
+      {SpreadXYRatio 0.2} ; 后坐力
+    }
+    {OvermatchCalibre ; 倾斜入射修正
+      {0  1.0000 0.0000}
+      {20 1.3810 0.1500}
+      {30 1.6570 0.2900}
+      {40 1.9500 0.2950}
+      {50 2.9200 0.3900}
+      {60 3.9650 0.3250}
+      {65 5.4700 0.4600}
+      {70 7.5800 0.4600}
+      {75 11.520 0.4600}
+      {80 20.850 0.4600}
+      {85 57.400 0.4600}
+      {90 99.000 0.0000}
+    }
+  }
+
+  {Parameters "apcr" ; APCR 硬芯穿甲弹
+    {Range 350 350} ; 射程
+    {Speed 1050} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {0 63} {500 3} {1000 0}} ; 穿深
+    {MinimumDamageModifier 20} ; 伤害
+    {Spreading
+      {RadiusTable {0 0.0} {500 1.2} {1000 3.5}} ; 散布
+      {SpreadXYRatio 0.3} ; 后坐力
+    }
+    {OvermatchFixed ; 倾斜入射修正
+      {0  1.0000}
+      {5  1.0100}
+      {10 1.0300}
+      {15 1.0700}
+      {20 1.1300}
+      {25 1.2300}
+      {30 1.3600}
+      {35 1.5900}
+      {40 1.9000}
+      {45 2.2800}
+      {50 2.7800}
+      {55 3.4100}
+      {60 4.2300}
+      {65 5.2900}
+      {70 6.6900}
+      {75 8.5200}
+      {80 10.930}
+      {85 14.150}
+      {90 99.000}
+    }
+  }
+
+  {Parameters "he" ; HE 高爆弹
+    {Range 350 350} ; 射程
+    {Speed 900} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {Spreading
+      {RadiusTable {0 0.0} {500 3.0} {1000 6}} ; 散布
+      {SpreadXYRatio 0.2} ; 后坐力
+    }
+  }
+
+}
