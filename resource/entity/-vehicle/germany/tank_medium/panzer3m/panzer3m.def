@@ -86,7 +86,7 @@
     }
     {Place "mgun2"
       {Type "coaxial"}
-      {Weapon "mg34_tank" filled}
+      {Weapon "weapon ger-mg42" filled}
       {Foresight "foresight5"}
       {Gunner "gunner"}
       {Charger "charger"}
@@ -103,7 +103,7 @@
     }
     {Place "mgun1"
       {Type "hull"}
-      {Weapon "mg34_tank" filled}
+      {Weapon "weapon ger-mg42" filled}
       {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}
