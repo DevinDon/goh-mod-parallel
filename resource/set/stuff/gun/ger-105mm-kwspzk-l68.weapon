@@ -19,7 +19,7 @@
   {Automatic} ; 自动武器
 
   {Parameters "apcbche" ; APCBCHE 被帽风帽穿甲榴弹
-    {Range 350 350} ; 射程
+    {Range 400 400} ; 射程
     {Speed 1000} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 225} {500 171} {1000 0}} ; 穿深
@@ -48,7 +48,7 @@
   }
 
   {Parameters "apcr" ; APCR 硬芯穿甲弹
-    {Range 350 350} ; 射程
+    {Range 400 400} ; 射程
     {Speed 1130} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 285} {500 201} {1000 0}} ; 穿深
@@ -81,7 +81,7 @@
   }
 
   {Parameters "he" ; HE 高爆弹
-    {Range 350 350} ; 射程
+    {Range 400 400} ; 射程
     {Speed 750} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {Spreading
