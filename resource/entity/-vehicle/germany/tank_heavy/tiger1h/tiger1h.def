@@ -1,29 +1,30 @@
 {game_entity
-  (include "/properties/tank.ext")
 
+  (include "/properties/standard/vehicle/tank-config.ext")
   (include "/properties/selection/vehicle_big.inc" scale(0.9))
-  {props "heavy" "vision_lev05" "muzzle_85mm_93mm_sides" "shield" "smoke" "nwg" "detect_tank_heavy"}
-  {extension "tiger1h.mdl"}
-  (include "tiger1h.ext")
-  {targetclass "tank_heavy"}
-  {targetSelector "tank_heavy"}
-  {collider "tank.heavy"}
-  {PatherId "tiger"}
 
-  {extender "enumerator"
+  {Extension "tiger1h.mdl"}
+  (include   "tiger1h.ext")
+  (include   "crew-and-seat.ext")
+
+  {Props "heavy" "vision_lev05" "muzzle_85mm_93mm_sides" "shield" "smoke" "nwg" "detect_tank_heavy"}
+
+  {PatherId "tiger"}
+  {Targetclass "tank_heavy"}
+  {TargetSelector "tank_heavy"}
+  {Collider "tank.heavy"}
+
+  {Extender "enumerator"
     {digit_folder "ger"}
   }
 
-  {sensor
-    {visor "main"
-      {vision "tank_range_210"}
+  {Sensor
+    {Visor "main"
+      {Vision "standard-vision-narrow"}
     }
   }
 
-  ("crew_5_human_extended")
-  ("commander_visible")
-
-  {boarder
+  {Boarder
     {anm "driver"
       {forward  {begin  "board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
       {reverse   {end  "board_pz4_driver" -1} {base "open_driver" -1}}
@@ -42,95 +43,129 @@
     }
   }
 
-  ("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
-  ("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
-  ("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
-  ("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+  {Extender "detail"
+    {random 0}
+    {detail18}
+    {detail17}
+    {detail10}
+    {detail11}
+    {detail2}
+    {detail7}
+    {detail12}
+    {detail3}
+    {detail6}
+    {detail5}
+    {detail9}
+    {detail1}
+    {detail8}
+    {detail4}
+    {detail14}
+    {detail16}
+    {detail15}
+    {detail13}
+    {detail19}
+  }
 
-  {extender "shield"{on}}
+  {Extender "shield"{on}}
 
-  {extender "smokescreen"
-    {cooldown 20}
+  {Extender "smokescreen"
+    {cooldown 10}
     {itemTags "grenade nbks"}
   }
 
-  {extender "inventory"
-    {box
-      {item "bulletger_88_l56 apcbche" 33}   ; 92 rounds
-      {item "bulletger_88_l56 he" 46}
-      {item "bulletger_88_l56 apcr" 3}
-      {item "bulletger_88_l56 heat" 9}
-      {item "ammo mgun_ger belt" 4500}    ; 32 belts (150 rounds each)
-      {item "geballteladung_3kg" 1}
-      {item "nbks grenade" 2}
+  {Extender "inventory"
+    {Box
+      {Size 14 10}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun" 4500}
+      {Item "weapon ger-mg42" filled {user "mgun"}}
+
+      {Item "nbks grenade" 24}
+
+      {Item "ammo ger-88l56 apcbche" 49}
+      {Item "ammo ger-88l56 apcr" 5}
+      {Item "ammo ger-88l56 he" 39}
     }
   }
 
   {Weaponry
-    ("restore_ik_time")
-    {place "gun"
+    {RestoreIKTime 3}
+    {Place "gun"
       {RestoreIKAfterAim}
-      {weapon "88mm_kwk36" filling "ammo bulletger_88_l56 apcbche" 1}
-      {gunner "gunner"}
-      {charger "charger"}
-      ("abm_dymamic"
-        zeroing(3.0)
-        dispersion(0.20)
-      )
+      {Weapon "weapon ger-88mm-kwk36-l56" filling "ammo ger-88l56 apcbche" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.00} ; s
+      }
     }
-    {place "mgun2"
-      {type "coaxial"}
-      {weapon "mg34_tank" filled}
-      {foresight "foresight5"}
-      {gunner "gunner"}
-      {charger "charger"}
-      ("abm_mgun")
-      {basic}
-    }
-    {place "mgun1"
-      {type "hull"}
-      {weapon "mg34_tank" filled}
-      {foresight "foresight4"}
-      {gunner "gunner3"}
-      {charger "gunner3"}
-      ("abm_mgun")
-      {basic}
+    {Place "mgun2"
+      {Type "coaxial"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight5"}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {Basic}
       {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
     }
-    {place "mgun"
-      {type "commander"}
-      {weapon "commander_vision"}
-      {foresight "vision_rot"}
-      {gunner "commander"}
-      {basic}
+    {Place "mgun1"
+      {Type "hull"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight4"}
+      {Gunner "gunner3"}
+      {Charger "gunner3"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "commander"}
+      {Weapon "commander_vision"}
+      {Foresight "vision_rot"}
+      {Gunner "commander"}
+      {Basic}
       {ai_in_manual}
     }
   }
 
-  {mass 57000}
-  {Chassis
-    ("tank_trace" fx("tracks_big") step(0.47) len(0.91))
-    ("mobility_tank"
-      speed(38) ;----------Max speed when fully accelerated on road, km/h.
-      reverse(12) ;--------Max speed in reverse on road, km/h. (+2 of real life speed)
-      traverse(21) ;-------Track traverse, per second, in degrees.
-      weight(57) ;---------Weight in Tonnes.
-      power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
-      track(3.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-      fuel(540) ;----------Fuel capacity in Litres.
-      type(fuel) ;---------Fuel type. (diesel OR fuel)
-      range(80) ;----------Range in km, off-road.
-    )
+  {Mass 57000}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_big") step(0.47) length(0.91) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(38) power(600) mass(57000) performance(1.33))
+    ("set-fuel-tank" volume(540) power(600))
   }
 
-  {bone "gun_rot"
+  {Bone "gun_rot"
     {limits -8 15}
     {speed2 4}
   }
-  {bone "turret"
+  {Bone "turret"
     {speed2 6}
   }
-  {bone "commander_rot"
+  {Bone "commander_rot"
     {speed2 180}
   }
+
 }
