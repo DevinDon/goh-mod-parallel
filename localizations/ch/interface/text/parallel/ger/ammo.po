@@ -134,6 +134,14 @@ msgctxt "desc/ammo/ger-105l68 he"
 msgid   "10.5cm SprGr.L/5.0 [<c(ff1200)>HE</c>] <c(65696d)>L/68</c>"
 msgstr  "10.5cm SprGr.L/5.0 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/68</c>"
 
+msgctxt "desc/ammo/ger-105l28 he"
+msgid   "10.5cm F.H.Gr [<c(ff1200)>HE Alt</c>] <c(65696d)>L/28</c>"
+msgstr  "10.5cm F.H.Gr [<c(ff1200)>高爆弹</c>] <c(65696d)>L/28</c>"
+
+msgctxt "desc/ammo/ger-105l28 heat"
+msgid   "10.5cm Gr.39 HL/C [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/28</c>"
+msgstr  "10.5cm Gr.39 HL/C [<c(c9a6ff)>破甲弹</c>] <c(65696d)>L/28</c>"
+
 # 128mm
 msgctxt "desc/ammo/ger-128l61 apcbche"
 msgid   "12.8cm PzGr.46 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/61</c>"

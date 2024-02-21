@@ -19,7 +19,7 @@
   {Parameters "heat" ; HEAT 破甲弹
     {Range 300 300} ; 射程
     {Speed 305} ; 炮弹速度
-    {Gravity 9} ; 炮弹重力
+    {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 91} {500 91} {1000 91}} ; 穿深
     {MinimumDamageModifier 175} ; 伤害
     {Spreading
@@ -35,7 +35,7 @@
   {Parameters "he" ; HE 高爆弹
     {Range 300 300} ; 射程
     {Speed 381} ; 炮弹速度
-    {Gravity 9} ; 炮弹重力
+    {Gravity 5} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 3.0} {1000 6}} ; 散布
       {SpreadXYRatio 0.4} ; 后坐力
@@ -45,7 +45,7 @@
   {Parameters "wp" ; WP 白磷烟雾弹
     {Range 300 300} ; 射程
     {Speed 381} ; 炮弹速度
-    {Gravity 9} ; 炮弹重力
+    {Gravity 5} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 3.0} {1000 6}} ; 散布
       {SpreadXYRatio 0.4} ; 后坐力

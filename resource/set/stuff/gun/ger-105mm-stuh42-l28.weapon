@@ -1,0 +1,47 @@
+{from "pattern gun"
+
+  (include "/properties/standard/gun/define.ext")
+
+  {FireSound "gun/gun_75_105"}
+  {FireSoundclose "gun/gun_interior/size3"}
+  {ReloadSound "interior/large/big_reload_interior"}
+
+  {Filling "ammo ger-105l28" 1} ; 弹种及弹链内炮弹数量
+  {Calibre 75} ; 口径
+
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
+  {SpreadTolerance 0.75} ; 瞄准到 75% 就可以开火
+  {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
+
+  {RechargeTime 10} ; 装填时间（秒）
+  {RecoveryTime 1} ; 短射间隔（秒），适用于弹链
+
+  {Automatic} ; 自动武器
+
+  {Parameters "heat" ; HEAT 破甲弹
+    {Range 350 350} ; 射程
+    {Speed 496} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {0 115} {500 115} {1000 115}} ; 穿深
+    {MinimumDamageModifier 110} ; 伤害
+    {Spreading
+      {RadiusTable {0 0.0} {500 3.7} {1000 9}} ; 散布
+      {SpreadXYRatio 0.4} ; 后坐力
+    }
+    {OvermatchSlope ; 倾斜入射修正
+      {0  1}
+      {90 1}
+    }
+  }
+
+  {Parameters "he" ; HE 高爆弹
+    {Range 350 350} ; 射程
+    {Speed 470} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {Spreading
+      {RadiusTable {0 0.0} {500 3.3} {1000 8}} ; 散布
+      {SpreadXYRatio 0.5} ; 后坐力
+    }
+  }
+
+}

@@ -20,9 +20,9 @@
 
   {Parameters "apcbche" ; APCBCHE 被帽风帽穿甲榴弹
     {Range 350 350} ; 射程
-    {Speed 690} ; 炮弹速度
+    {Speed 750} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 117} {500 72} {1000 0}} ; 穿深
+    {ProjectileDamageTable {0 135} {500 86} {1000 0}} ; 穿深
     {MinimumDamageModifier 110} ; 伤害
     {Spreading
       {RadiusTable {0 0.0} {500 1.2} {1000 3}} ; 散布
@@ -48,9 +48,9 @@
 
   {Parameters "apcr" ; APCR 硬芯穿甲弹
     {Range 350 350} ; 射程
-    {Speed 855} ; 炮弹速度
+    {Speed 930} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 150} {500 69} {1000 0}} ; 穿深
+    {ProjectileDamageTable {0 176} {500 92} {1000 0}} ; 穿深
     {MinimumDamageModifier 90} ; 伤害
     {Spreading
       {RadiusTable {0 0.0} {500 0.7} {1000 2}} ; 散布
@@ -75,7 +75,7 @@
 
   {Parameters "heat" ; HEAT 破甲弹
     {Range 350 350} ; 射程
-    {Speed 400} ; 炮弹速度
+    {Speed 450} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 115} {500 115} {1000 115}} ; 穿深
     {MinimumDamageModifier 110} ; 伤害
@@ -91,7 +91,7 @@
 
   {Parameters "he" ; HE 高爆弹
     {Range 350 350} ; 射程
-    {Speed 520} ; 炮弹速度
+    {Speed 570} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 2.3} {1000 5}} ; 散布
@@ -101,7 +101,7 @@
 
   {Parameters "sm" ; SM 烟雾弹
     {Range 350 350} ; 射程
-    {Speed 520} ; 炮弹速度
+    {Speed 570} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 2.3} {1000 5}} ; 散布
