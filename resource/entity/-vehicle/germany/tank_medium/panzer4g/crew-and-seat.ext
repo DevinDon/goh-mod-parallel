@@ -87,9 +87,6 @@
 )
 
 ; apply settings
-; gunner_visible
-("set-open-crew" place(commander) bone(gunner2) visorbone(mgun_rot) door(emit1) door2(emit2) animationLeft(left) animationRight(right) group(crew))
-
 ; crew_5_human_extended
 ("set-inside-crew")
 ("set-driver-crew" door(emit0)      door2(emit1) door3(emit2))

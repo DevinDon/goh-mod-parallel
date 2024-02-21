@@ -3,6 +3,10 @@
 ; gun 25mm
 ; 30mm plates were add to the hull, superstructure front.
 
+
+
+
+
 ("set-basic-durability" body(440) engine(300) turret(400) mantlet(200) gun(300) track(300) ammo(300))
 ("set-basic-armor"      ammo(20))
 
