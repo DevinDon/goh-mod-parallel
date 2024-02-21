@@ -1,0 +1,16 @@
+{from "pattern apcbche"
+
+  {tag "shell size2 75to76_he_filler"}
+
+  {inventory {size 4 1}}
+  {entity "75mm_ger_l24_apcbche"}
+  {mass 6.98}
+
+  {view "howitzer_shell_50-75"
+    {tail "shell_tracer_75s_ap" "tail"}
+  }
+
+  ("ap_blast" args 0.78)
+  ("he_level_2" weight(6.98) filler(0.091))
+
+}

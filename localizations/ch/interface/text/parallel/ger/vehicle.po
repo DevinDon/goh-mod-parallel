@@ -18,6 +18,14 @@ msgstr ""
 # 轻型坦克
 
 # 中型坦克
+msgctxt "desc/entity/panzer3m"
+msgid   "Pz.Kpfw III Ausf.M"
+msgstr  "三号坦克 M 型"
+
+msgctxt "desc/entity/panzer3n"
+msgid   "Pz.Kpfw III Ausf.N"
+msgstr  "三号坦克 N 型"
+
 msgctxt "desc/entity/panzer4g"
 msgid   "Pz.Kpfw IV Ausf.G"
 msgstr  "四号坦克 G 型"
