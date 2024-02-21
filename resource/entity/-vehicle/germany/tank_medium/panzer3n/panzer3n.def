@@ -7,7 +7,7 @@
   (include   "panzer3n.ext")
   (include   "crew-and-seat.ext")
 
-  {props "medium" "vision_lev04" "muzzle_50mm_57mm" "shield"}
+  {Props "medium" "vision_lev04" "muzzle_50mm_57mm" "shield"}
 
   {PatherId "panzer3"}
   {Targetclass "tank_medium"}
@@ -140,7 +140,7 @@
     {speed2 6}
   }
   {Bone "turret"
-    {speed2 9}
+    {speed2 20}
   }
   {##Bone "commander_rot"
     {speed2 180}
