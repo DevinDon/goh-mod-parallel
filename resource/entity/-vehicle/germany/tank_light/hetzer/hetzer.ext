@@ -29,8 +29,8 @@
 ("set-shield-track" name("shield2") thickness(20))
 ("set-shield-track" name("shield3") thickness(20))
 
-("set-shield-group" name("shield4")  thickness(9) type("shield4"))
-("set-shield-group" name("shield5")  thickness(9) type("shield4"))
+("set-shield-group" name("shield4") thickness(9) type("shield4"))
+("set-shield-group" name("shield5") thickness(9) type("shield4"))
 
 ("set-internal-components" name("ammo1") type("ammo") repair(3))
 ("set-internal-components" name("ammo2") type("ammo") repair(3))

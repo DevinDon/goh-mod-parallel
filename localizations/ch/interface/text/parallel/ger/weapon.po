@@ -49,6 +49,10 @@ msgctxt "desc/weapon/ger-75mm-pak39-l48"
 msgid   "7.5cm Pak 39 L/48"
 msgstr  "7.5cm Pak 39 L/48 反坦克炮"
 
+msgctxt "desc/weapon/ger-75mm-pak40-l46"
+msgid   "7.5cm PaK 40 L/46"
+msgstr  "7.5cm PaK 40 L/46 反坦克炮"
+
 msgctxt "desc/weapon/ger-75mm-stuk40-l48"
 msgid   "7.5cm StuK 40 L/48"
 msgstr  "7.5cm StuK 40 L/48 反坦克炮"
