@@ -83,6 +83,14 @@
       {Weapon "weapon ger-75mm-kwk40-l43" filling "ammo ger-75l43 apcbche" 1}
       {Gunner "gunner"}
       {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.00} ; s
+      }
     }
     {Place "mgun2"
       {Type "coaxial"}
@@ -92,6 +100,14 @@
       {Charger "charger"}
       {Basic}
       {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
     }
     {Place "mgun1"
       {Type "hull"}
@@ -101,6 +117,14 @@
       {Charger "gunner3"}
       {Basic}
       {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
     }
     {##Place "mgun"
       {Type "commander"}
