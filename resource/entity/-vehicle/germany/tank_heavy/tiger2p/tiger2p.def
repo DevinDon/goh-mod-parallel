@@ -1,0 +1,168 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/selection/vehicle_big.inc" scale(1.0))
+
+  {Extension "tiger2p.mdl"}
+  (include   "tiger2p.ext")
+  (include   "crew-and-seat.ext")
+
+  {Props "heavy" "vision_lev05" "muzzle_85mm_93mm_sides" "shield" "smoke" "nvw" "detect_tank_heavy"}
+
+  {PatherId "tiger2"}
+  {Targetclass "tank_heavy"}
+  {TargetSelector "tank_heavy"}
+  {collider "tank.heavy"}
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
+
+  {Sensor
+    {Visor "main"
+      {Vision "standard-vision-narrow"}
+    }
+  }
+
+  {Boarder
+    {anm "driver"
+      {forward {begin "board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+      {reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
+    }
+    {anm "left"
+      {forward {begin "board_Kv"} {end "pose_mgun_pz6"}}
+      {reverse {end "emit_tank_2_hold"}}
+    }
+    {anm "right"
+      {forward {begin "board_tank_right"} {end "pose_mgun_pz6"}}
+      {reverse {end "emit_tank_2_hold"}}
+    }
+    {anm "armor"
+      {forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+      {reverse {end "emit_tank_1"}}
+    }
+  }
+
+  {Extender "detail"
+    {random 0}
+    {detail11}
+    {detail12}
+    {detail13}
+    {detail14}
+    {detail15}
+    {detail16}
+    {detail17}
+    {detail18}
+    {detail31}
+  }
+
+  {Extender "shield" {on}}
+
+  {Extender "smokescreen"
+    {cooldown 5}
+    {itemTags "grenade nbks"}
+  }
+
+  {Extender "inventory"
+    {Weapon "mgun" {mask "mountable"}}
+    {Box
+      {Size 12 16}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun" 4500}
+      {Item "weapon ger-mg42" filled {user "mgun"}}
+
+      {Item "nbks grenade" 20}
+
+      {Item "ammo ger-88l71 apcbche" 32}
+      {Item "ammo ger-88l71 apcr" 5}
+      {Item "ammo ger-88l71 he" 39}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 3}
+    {place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "weapon ger-88mm-kwk43-l71" filling "ammo ger-88l71 apcbche" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.00} ; s
+      }
+    }
+    {Place "mgun2"
+      {Type "coaxial"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight5"}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun1"
+      {Type "hull"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight4"}
+      {Gunner "gunner3"}
+      {Charger "gunner3"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "aa"}
+      {Gunner "commander"}
+      {Charger "commander"}
+      {LinkBone "mgun_rot"}
+      {LinkAnimation "off"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 69800}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_big") step(0.47) length(1.16) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(35) power(600) mass(69800) performance(1.25))
+    ("set-fuel-tank" volume(860) power(600))
+  }
+
+  {Bone "gun_rot"
+    {limits -8 15}
+    {speed2 3}
+  }
+  {Bone "turret"
+    {speed2 16}
+  }
+
+}

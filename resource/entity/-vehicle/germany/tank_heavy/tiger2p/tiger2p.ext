@@ -1,0 +1,128 @@
+; armor notes
+; tracks and wheels 30mm
+; gun 30mm
+; schürzen 5mm
+
+
+
+
+
+("set-basic-durability" body(800) engine(500) turret(600) mantlet(300) gun(300) track(400) ammo(400))
+("set-basic-armor"      ammo(30))
+
+("set-turret" repair(20))
+("set-mantlet" repair(10))
+("set-gun" thickness(50) repair(10))
+
+("set-body" repair(30))
+("set-engine" repair(10))
+("set-tracks" thickness(50) repair(15))
+
+("set-shield" name("shieldL1") thickness(30))
+("set-shield" name("shieldL2") thickness(30))
+("set-shield" name("shieldL3") thickness(30))
+("set-shield" name("shieldL4") thickness(30))
+("set-shield" name("shieldL5") thickness(30))
+("set-shield" name("shieldR1") thickness(30))
+("set-shield" name("shieldR2") thickness(30))
+("set-shield" name("shieldR3") thickness(30))
+("set-shield" name("shieldR4") thickness(30))
+("set-shield" name("shieldR5") thickness(30))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("ammo4") type("ammo") repair(3))
+("set-internal-components" name("fuel1") type("fuel") repair(3))
+("set-internal-components" name("fuel2") type("fuel") repair(3))
+("set-internal-components" name("fuel3") type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+{component "shieldl1" {tags "cut_part"}}
+{component "shieldl2" {tags "cut_part"}}
+{component "shieldl3" {tags "cut_part"}}
+{component "shieldl4" {tags "cut_part"}}
+{component "shieldl5" {tags "cut_part"}}
+{component "shieldr1" {tags "cut_part"}}
+{component "shieldr2" {tags "cut_part"}}
+{component "shieldr3" {tags "cut_part"}}
+{component "shieldr4" {tags "cut_part"}}
+{component "shieldr5" {tags "cut_part"}}
+
+{volume "body1"      ; Hull
+  {thickness 80
+    {front 100}    ; Lower Nose
+    {top 160}    ; Glacis
+    {rear 25}
+    {bottom 25}
+  }
+  {Quality "large_flaw"}
+}
+{volume "body2"      ; Superstructure
+  {thickness 80
+    {front 160}
+    {top 40}
+    {rear 25}
+    {bottom 25}    ; Overhang (above tracks)
+  }
+  {Quality "large_flaw"}
+}
+{volume "engine1"    ; Hull
+  {thickness 80
+    {front 25}
+    {rear 80}
+    {top 25}
+    {bottom 25}
+  }
+}
+{volume "engine2"    ; Superstructure
+  {thickness 80
+    {front 25}
+    {top 40}
+    {rear 80}
+    {bottom 25}    ; Overhang (above tracks)
+  }
+  {Quality "large_flaw"}
+}
+{volume "turret1"    ; Main Turret
+  {thickness 80
+    {front 100}
+    {top 40}
+    {bottom 25}
+  }
+  {Quality "large_flaw"}
+}
+{volume "turret2"    ; Turret Ring
+  {thickness 80
+    {front 100}
+    {top 25}
+    {bottom 25}
+  }
+  {Quality "large_flaw"}
+}
+{volume "turret3"    ; Buldge for Cupola
+  {thickness 80
+    {top 40}
+    {bottom 25}
+  }
+  {Quality "large_flaw"}
+}
+{volume "mantlet"
+  {thickness 120}
+  {Quality "large_flaw"}
+  {CastSteel 0.8063}
+}
+{volume "cupola"
+  {thickness 100
+    {top 40}
+    {bottom 25}
+  }
+  {Quality "large_flaw"}
+  {CastSteel 0.8063}
+}
+{volume "mg_port"
+  {thickness 150}
+  {Quality "large_flaw"}
+  {CastSteel 0.8063}
+  {component "body"}
+}
