@@ -56,7 +56,7 @@ actor
 }
 {able "talk"}
 
-{perks {blastwave_modifier 500}}
+{perks {blastwave_modifier 7}}
 
 {Weaponry
 	{Place "gun"

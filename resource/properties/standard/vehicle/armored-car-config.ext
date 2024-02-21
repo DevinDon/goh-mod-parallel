@@ -56,4 +56,4 @@ actor
 }
 {able "talk"}
 
-{perks {blastwave_modifier 100}}
+{perks {blastwave_modifier 9}}
