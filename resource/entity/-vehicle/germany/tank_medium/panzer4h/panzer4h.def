@@ -71,7 +71,6 @@
 
       {Item "ammo ger-mgun" 4500}
       {Item "weapon ger-mg42" filled {user "mgun"}}
-
     }
   }
 
