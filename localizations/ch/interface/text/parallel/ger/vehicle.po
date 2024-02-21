@@ -38,6 +38,18 @@ msgid   "Pz.Kpfw IV Ausf.H"
 msgstr  "四号坦克 H 型"
 
 # 重型坦克
+msgctxt "desc/entity/tiger1e"
+msgid   "Pz.Kpfw VI 'Tiger' Ausf.E"
+msgstr  "\"虎式\" 六号 E 型重型坦克 "
+
+msgctxt "desc/entity/tiger1h"
+msgid   "Pz.Kpfw VI 'Tiger' Ausf.H"
+msgstr  "\"虎式\" 六号 H 型重型坦克 "
+
+msgctxt "desc/entity/tiger1hunt"
+msgid   "Pz.Kpfw VI 'Ace Tiger' Ausf.E"
+msgstr  "\"王牌虎式\" 六号 E 型重型坦克 "
+
 msgctxt "desc/entity/tiger2h"
 msgid   "Pz.Kpfw VI Ausf.B 'Königstiger'"
 msgstr  "\"虎王\" 六号 II H 型重型坦克"
