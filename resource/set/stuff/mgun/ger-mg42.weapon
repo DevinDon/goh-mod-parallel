@@ -15,7 +15,7 @@
 
   {TraceFreq 3}
   {Range 350 350}
-  {SpreadTolerance 0.1}
+  {SpreadTolerance 0.10} ; 瞄准到 10% 就可以开火
 
   ("velocity" mps(740))
   ("fire rate" rpm(1200))
