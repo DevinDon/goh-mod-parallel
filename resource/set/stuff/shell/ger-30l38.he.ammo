@@ -5,7 +5,7 @@
 
   {inventory
     {weight 10}
-    {size 3 2}
+    {size 2 2}
     {block 10}
   }
   {entity "30mm_ger_auto_he"}
