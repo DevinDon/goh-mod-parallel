@@ -99,3 +99,8 @@ msgstr  "\"猎虎\" 重型坦克歼击车"
 msgctxt "desc/entity/600mm_thor"
 msgid   "60cm Gerät Nr. III"
 msgstr  "60cm 卡尔臼炮 Nr. III"
+
+# 自行防空炮
+msgctxt "desc/entity/grille_m"
+msgid   "Grille Ausf.M mit 3cm MK 103"
+msgstr  "蟋蟀 M 型 加装 3cm MK 103 机炮"
