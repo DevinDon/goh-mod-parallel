@@ -13,7 +13,7 @@
   {SpreadTolerance 0.75} ; 瞄准到 75% 就可以开火
   {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
 
-  {RechargeTime 8} ; 装填时间（秒）
+  {RechargeTime 13} ; 装填时间（秒）
   {RecoveryTime 3} ; 短射间隔（秒），适用于弹链
 
   {Parameters "apcbche" ; APCBCHE 被帽风帽穿甲榴弹
