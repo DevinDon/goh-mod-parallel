@@ -25,6 +25,10 @@ msgctxt "desc/weapon/ger-20mm-kwk30-l55"
 msgid   "2cm KwK 30 L/55"
 msgstr  "2cm KwK 30 L/55 坦克机炮"
 
+msgctxt "desc/weapon/ger-30mm-mk103-l38"
+msgid   "3cm MK 103 L/38"
+msgstr  "3cm MK 103 L/38 机炮"
+
 msgctxt "desc/weapon/ger-50mm-kwk39-l60"
 msgid   "5cm KwK 39 L/60"
 msgstr  "5cm KwK 39 L/60 坦克炮"

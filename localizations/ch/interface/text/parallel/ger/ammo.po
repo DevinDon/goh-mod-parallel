@@ -30,6 +30,15 @@ msgctxt "desc/ammo/ger-20l55 he"
 msgid   "2cm SprGr. [<c(ff1200)>HE</c>]"
 msgstr  "2cm SprGr. [<c(ff1200)>高爆弹</c>]"
 
+# 30mm
+msgctxt "desc/ammo/ger-30l38 apcr"
+msgid   "3cm Pzgr.40 [<c(48c445)>APCR</c>] "
+msgstr  "3cm Pzgr.40 [<c(48c445)>硬芯穿甲弹</c>] "
+
+msgctxt "desc/ammo/ger-30l38 he"
+msgid   "3cm Minengeschoss [<c(ff1200)>HE</c>]"
+msgstr  "3cm 薄壳弹 [<c(ff1200)>高爆弹</c>]"
+
 # 50mm
 msgctxt "desc/ammo/ger-50l60 apche"
 msgid   "5cm PzGr.39 [<c(ff6a00)>APC-HE</c>] <c(65696d)>L/60</c>"
