@@ -1,19 +1,30 @@
 {game_entity
-  (include "/properties/tank_assaultgun.ext")
-  (include "/properties/selection/vehicle_elongated.inc" scale(1.1))
-  {props "td" "light" "-turret" "mantlet" "vision_lev02" "muzzle_37mm_40mm_auto_sides" "shield" "open_top" "detect_tank_light"}
-  {extension "grille_m.mdl"}
-  (include "grille_m.ext")
-  {targetclass "tank_light"}
-  {targetSelector "tank_zenite"}
-  {patherId "panzer38"}
-  {collider "tank.light"}
 
-  {extender "enumerator"
+  (include "/properties/standard/vehicle/tank-assaultgun-config.ext")
+  (include "/properties/selection/vehicle_elongated.inc" scale(1.1))
+
+  {Extension "grille_m.mdl"}
+  (include   "grille_m.ext")
+  (include   "crew-and-seat.ext")
+
+  {Props "td" "light" "-turret" "mantlet" "vision_lev02" "muzzle_37mm_40mm_auto_sides" "shield" "open_top" "detect_tank_light"}
+
+  {PatherId "panzer38"}
+  {Targetclass "tank_light"}
+  {TargetSelector "tank_zenite"}
+  {Collider "tank.light"}
+
+  {Extender "enumerator"
     {digit_folder "ger"}
   }
 
-  {boarder
+  {Sensor
+    {Visor "around"
+      {Vision "standard-vision-around"}
+    }
+  }
+
+  {Boarder
     {anm "driver"
       {forward {begin "board_t34_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
       {reverse {end "emit_t34_hold"} {base "open_driver"}}
@@ -28,60 +39,49 @@
     }
   }
 
-  ("crew_driver"                  door(emit0) door2(emit1) door3(emit2))
-  ("crew_human_visible_anm" place(gunner)    door(emit2) door2(emit2) visor(main)   anm_left(right)  anm_right(right))
-  ("crew_human_visible_anm" place(commander)  door(emit1) door2(emit1) visor(around) anm_left(left)  anm_right(left))
+  {Extender "inventory"
+    {Box
+      {Size 10 7}
+      {Weight 1000}
+      {Item "repair_kit" 10}
 
-  {sensor
-    {visor "around"
-      {vision "vehicle_around"}    ;// better vision than a in-closed turret
-    }
-  }
-
-  {extender "inventory"
-    {box
-      {item "bulletger_30_auto apcr" 320}    ; 8 belts of 80 rounds
-      {item "bulletger_30_auto he" 320}
-      {item "geballteladung_3kg" 1}
+      {Item "ammo ger-30l38 apcr" 320}
+      {Item "ammo ger-30l38 he"   320}
     }
   }
 
   {Weaponry
-    ("restore_ik_time")
+    {RestoreIKTime 9}
     {place "gun"
-      {weapon "30mm_mk103" filling "bulletger_30_auto apcr" 80}
-      {gunner "gunner"}
-      {charger "commander"}
-      ("abm_dymamic_autocannon"
-        zeroing(2.5)
-        dispersion(0.20)
-      )
-      {rotate}
+      {Weapon "weapon ger-30mm-mk103-l38" filling "ammo ger-30l38 he" 80}
+      {Gunner "gunner"}
+      {Charger "commander"}
+      {Rotate}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.00} ; s
+      }
     }
   }
 
-  {mass 11000}
-  {Chassis
-    ("tank_trace" fx("tracks_sm2") step(0.2) len(0.55))
-    ("mobility_tank"
-      speed(47) ;----------Max speed when fully accelerated on road, km/h.
-      reverse(8);----------Max speed in reverse on road, km/h.
-      traverse(35) ;-------Track traverse, per second, in degrees.
-      weight(11.0) ;-------Weight in Tonnes.
-      power(150) ;---------Engine Power, in hp.
-      track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-      fuel(218) ;----------Fuel capacity in Litres.
-      type(fuel) ;---------Fuel type. (diesel OR fuel)
-      range(140) ;---------Range in km, off-road.
-    )
+  {Mass 11000}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_sm2") step(0.2) length(0.55) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(47) power(150) mass(11000) performance(1.38))
+    ("set-fuel-tank" volume(218) power(150))
   }
 
-  {bone "gun_rot"
+  {Bone "gun_rot"
     {limits -10 60}
     {speed2 10}
   }
-  {bone "turret"
+  {Bone "turret"
     {limits -8 8}
     {speed2 8}
   }
+
 }
