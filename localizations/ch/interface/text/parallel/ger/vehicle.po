@@ -70,10 +70,6 @@ msgctxt "desc/entity/tiger2h"
 msgid   "Pz.Kpfw VI Ausf.B 'Königstiger'"
 msgstr  "\"虎王\" 六号 II H 型重型坦克"
 
-msgctxt "desc/squad/doctrine_tiger2h_support"
-msgid   "<c(B29557)>( III )</c> Königstiger"
-msgstr  "<c(B29557)>( III )</c> 虎王"
-
 msgctxt "desc/entity/tiger2p"
 msgid   "Pz.Kpfw VI/B 'Königstiger' Early Production"
 msgstr  "\"虎王\" 六号 II B 早期型重型坦克"

@@ -379,19 +379,13 @@
 ; // Karl Gerät
 {"doctrine_600mm_thor_late"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(600mm_thor) crew1(tankman:4) crew2(tank_commander:1))
-  ("doctrine_t3" cool(480) d(late_ger_support) cost(40))
+  ("doctrine_t3" cool(480) d(late_ger_support) cost(120))
 }
 
 ; // Jagdtiger
 {"doctrine_jagdtiger"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(jagdtiger) crew1(tankman_pzjag:5) crew2(tank_commander_pzjag:1))
-  ("doctrine_t3" cool(60) d(late_ger_support) cost(30))
-}
-
-; // Tiger II H
-{"doctrine_tiger2h_support"
-  ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(tiger2h) crew1(tankman:4) crew2(tank_commander:1))
-  ("doctrine_t3" cool(60) d(late_ger_support) cost(30))
+  ("doctrine_t3" cool(480) d(late_ger_support) cost(125))
 }
 
 
