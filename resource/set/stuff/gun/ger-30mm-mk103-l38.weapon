@@ -7,7 +7,7 @@
   {ReloadSound "interior/reload_small"}
   {Cursor "ironsights/aa"}
 
-  {Filling "ammo ger-30l38" 10} ; 弹种及弹链内炮弹数量
+  {Filling "ammo ger-30l38" 80} ; 弹种及弹链内炮弹数量
   {Calibre 30} ; 口径
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
