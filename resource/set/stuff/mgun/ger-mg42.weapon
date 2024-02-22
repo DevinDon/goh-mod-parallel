@@ -33,7 +33,7 @@
 
   {Spreading
     {BurstAccuracy 100 99 99 99 98 97 97 96 95}
-    {RadiusTable {0 0.0} {500 2} {1000 5}}
+    {RadiusTable {0 0.0} {500 5} {1000 15}}
   }
 
 }
