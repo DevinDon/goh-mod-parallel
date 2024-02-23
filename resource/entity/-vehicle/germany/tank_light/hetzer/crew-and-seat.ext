@@ -15,22 +15,6 @@
   }
 )
 
-; define crew_driver
-; args = door door2 door3
-(define "set-driver-crew"
-  {placer
-    {place "driver" {group "crew"} {visor "driver"}}
-  }
-  {boarder
-    {door "%door"}
-    {door "%door2"}
-    {door "%door3"}
-    {link "%door" "driver" {anm "driver"} {forward putoff} {reverse puton}}
-    {link "%door2" "driver" {anm "left"} {forward putoff} {reverse puton}}
-    {link "%door3" "driver" {anm "right"} {forward putoff} {reverse puton}}
-  }
-)
-
 ; define crew_human
 ; args = door door2 visor
 (define "set-crew"
