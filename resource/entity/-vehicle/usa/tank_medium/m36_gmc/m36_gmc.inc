@@ -112,7 +112,7 @@
   {speed2 4}
 }
 {Bone "turret"
-    {speed2 20}
+  {speed2 12}
 }
 {Bone "mgun_a_rot1"
   {limits -15 15}

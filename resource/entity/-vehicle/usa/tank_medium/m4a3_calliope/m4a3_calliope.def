@@ -146,7 +146,7 @@
     {speed2 5}
   }
   {Bone "turret"
-    {speed2 16}
+    {speed2 12}
   }
   {Bone "cupola_ring"
     {speed2 50}
