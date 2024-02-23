@@ -67,9 +67,8 @@
 
       {Item "nbks grenade" 2}
 
-      {Item "ammo ger-20l55 ap"   120}
-      {Item "ammo ger-20l55 apcr"  20}
-      {Item "ammo ger-20l55 he"   200}
+      {Item "ammo ger-20l55 apcr" 100}
+      {Item "ammo ger-20l55 he"   300}
     }
   }
 
@@ -77,7 +76,7 @@
     {RestoreIKTime 9}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-20mm-kwk30-l55" filling "ammo ger-20l55 ap" 10}
+      {Weapon "weapon ger-20mm-kwk30-l55" filling "ammo ger-20l55 apcr" 10}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion
@@ -111,7 +110,7 @@
   {Mass 11800}
   {Chassis "track"
     ("set-tank-trace" fx("tracks_sm2") step(0.2) length(0.76) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(60) power(180) mass(11800) performance(1.65))
+    ("set-maneuverability-of-tank" speed(60) power(180) mass(11800) performance(1.75))
     ("set-fuel-tank" volume(235) power(180))
   }
 
