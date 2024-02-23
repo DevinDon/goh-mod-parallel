@@ -19,60 +19,63 @@ msgid "Sd.Kfz 231"
 msgstr "Sd.Kfz 231 装甲车"
 
 # 轻型坦克
+msgctxt "desc/entity/panzer2l"
+msgid   "Pz.Kpfw II Ausf.L"
+msgstr  "二号 L 型"
 
 # 中型坦克
 msgctxt "desc/entity/panzer3m"
 msgid   "Pz.Kpfw III Ausf.M"
-msgstr  "三号坦克 M 型"
+msgstr  "三号 M 型"
 
 msgctxt "desc/entity/panzer3n"
 msgid   "Pz.Kpfw III Ausf.N"
-msgstr  "三号坦克 N 型"
+msgstr  "三号 N 型"
 
 msgctxt "desc/entity/panzer4g"
 msgid   "Pz.Kpfw IV Ausf.G"
-msgstr  "四号坦克 G 型"
+msgstr  "四号 G 型"
 
 msgctxt "desc/entity/panzer4h"
 msgid   "Pz.Kpfw IV Ausf.H"
-msgstr  "四号坦克 H 型"
+msgstr  "四号 H 型"
 
 msgctxt "desc/entity/panzer5a"
 msgid   "Pz.Kpfw Panther Ausf.A"
-msgstr  "\"黑豹\" 五号 A 型中型坦克"
+msgstr  "五号 A 型 \"黑豹\""
 
 msgctxt "desc/entity/panzer5a_armor"
 msgid   "Pz.Kpfw Panther Ausf.A Armored"
-msgstr  "\"黑豹\" 五号 A 型中型坦克 附加装甲"
+msgstr  "五号 A 型 \"黑豹\" 附加装甲"
 
 msgctxt "desc/entity/panzer5d"
 msgid   "Pz.Kpfw Panther Ausf.D"
-msgstr  "\"黑豹\" 五号 D 型中型坦克"
+msgstr  "五号 D 型 \"黑豹\""
 
 msgctxt "desc/entity/panzer5g"
 msgid   "Pz.Kpfw Panther Ausf.G"
-msgstr  "\"黑豹\" 五号 G 型中型坦克"
+msgstr  "五号 G 型 \"黑豹\""
 
 # 重型坦克
 msgctxt "desc/entity/tiger1e"
 msgid   "Pz.Kpfw VI 'Tiger' Ausf.E"
-msgstr  "\"虎式\" 六号 E 型重型坦克 "
+msgstr  "六号 E 型 \"虎式\""
 
 msgctxt "desc/entity/tiger1h"
 msgid   "Pz.Kpfw VI 'Tiger' Ausf.H"
-msgstr  "\"虎式\" 六号 H 型重型坦克 "
+msgstr  "六号 H 型 \"虎式\""
 
 msgctxt "desc/entity/tiger1hunt"
 msgid   "Pz.Kpfw VI 'Ace Tiger' Ausf.E"
-msgstr  "\"王牌虎式\" 六号 E 型重型坦克 "
+msgstr  "六号 E 型 \"王牌虎式\""
 
 msgctxt "desc/entity/tiger2h"
 msgid   "Pz.Kpfw VI Ausf.B 'Königstiger'"
-msgstr  "\"虎王\" 六号 II H 型重型坦克"
+msgstr  "六号 II H 型 \"虎王\""
 
 msgctxt "desc/entity/tiger2p"
 msgid   "Pz.Kpfw VI/B 'Königstiger' Early Production"
-msgstr  "\"虎王\" 六号 II B 早期型重型坦克"
+msgstr  "六号 II B 早期型 \"虎王\""
 
 # 坦克歼击车
 msgctxt "desc/entity/hetzer"
@@ -81,15 +84,15 @@ msgstr "\"追猎者\" 38(t) 坦克歼击车"
 
 msgctxt "desc/entity/marder3m"
 msgid "Marder III Ausf.M"
-msgstr "黄鼠狼 III M 型"
+msgstr "\"黄鼠狼\" III 号 M 型"
 
 msgctxt "desc/entity/stug3g_late"
 msgid "StuG III Ausf.G (Late)"
-msgstr "三号突击炮 G 型坦克歼击车"
+msgstr "三号突击炮 G 型"
 
 msgctxt "desc/entity/stuh42"
 msgid "StuH 42 Ausf.G"
-msgstr "42 式 G 型突击榴弹炮"
+msgstr "42 式突击榴弹炮 G 型"
 
 msgctxt "desc/entity/jagdtiger"
 msgid   "Jagdtiger Sd. Kfz. 186"
