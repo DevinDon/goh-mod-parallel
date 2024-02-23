@@ -3,16 +3,20 @@
 ; gun 25mm
 ; spare tracks 15mm
 
+
+
+
+
 ("set-basic-durability" body(350) engine(200) turret(300) mantlet(150) gun(200) track(200) ammo(200))
 ("set-basic-armor"      ammo(10))
 
-("set-turret" repair(10))
-("set-mantlet" repair(10))
-("set-gun" thickness(25) repair(10))
+("set-turret"               repair(10))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(25) repair(15))
 
-("set-body" repair(10))
-("set-engine" repair(10))
-("set-tracks" thickness(20) repair(10))
+("set-body"                 repair(20))
+("set-engine"               repair(20))
+("set-tracks" thickness(15) repair(15))
 
 ("set-shield" name("gun_shield") thickness(10))
 

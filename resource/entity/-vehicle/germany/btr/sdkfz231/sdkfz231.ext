@@ -10,12 +10,12 @@
 ("set-basic-durability" body(175) engine(150) turret(150) mantlet(100) gun(150) track(150) ammo(120))
 ("set-basic-armor"      ammo(10))
 
-("set-turret" repair(10))
-("set-mantlet" repair(5))
-("set-gun" repair(10) thickness(20))
+("set-turret"                repair(10))
+("set-mantlet"               repair(5))
+("set-gun"     thickness(20) repair(10))
 
-("set-body" repair(15))
-("set-engine" repair(10))
+("set-body"                  repair(15))
+("set-engine"                repair(10))
 
 ("set-solid-wheel" name("wheelleft1"))
 ("set-solid-wheel" name("wheelleft2"))
@@ -26,11 +26,11 @@
 ("set-solid-wheel" name("wheelright3"))
 ("set-solid-wheel" name("wheelright4"))
 
-("set-shield" name("shield2") thickness(1))
+("set-shield" name("shield2") thickness(8))
 
-("set-shield-group" name("shield1")   thickness(30) type("shield1"))
-("set-shield-group" name("shield1a")  thickness(20) type("shield1"))
-("set-shield-group" name("shield1b")  thickness(20) type("shield1"))
+("set-shield-group" name("shield1")  thickness(8) type("shield1"))
+("set-shield-group" name("shield1a") thickness(2) type("shield1"))
+("set-shield-group" name("shield1b") thickness(2) type("shield1"))
 
 ("set-internal-components" name("fuel") type("fuel") repair(3))
 ("set-internal-components" name("transmission") type("transmission") repair(10))

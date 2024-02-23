@@ -10,21 +10,23 @@
 ("set-basic-durability" body(500) engine(300) turret(400) mantlet(250) gun(300) track(300) ammo(300))
 ("set-basic-armor"      ammo(20))
 
-("set-turret" repair(15))
-("set-mantlet" repair(10))
-("set-gun" thickness(25) repair(10))
+("set-turret"               repair(15))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(30) repair(10))
 
-("set-body" repair(15))
-("set-engine" repair(10))
-("set-tracks" thickness(20) repair(10))
+("set-body"                 repair(25))
+("set-engine"               repair(20))
+("set-tracks" thickness(20) repair(15))
 
-("set-shield-track" name("shield1") thickness(42))
-("set-shield-track" name("shield2") thickness(42))
+("set-shield-track" name("shield1") thickness(20))
+("set-shield-track" name("shield2") thickness(20))
 
 ("set-internal-components" name("ammo1") type("ammo") repair(3))
 ("set-internal-components" name("ammo2") type("ammo") repair(3))
 ("set-internal-components" name("fuel")  type("fuel") repair(3))
 ("set-internal-components" name("transmission") type("transmission") repair(10))
+
+{component "shield1" {tags "cut_part"}}
 
 {volume "body1"      ; Hull
   {thickness  30
@@ -81,5 +83,3 @@
   {thickness 6}
   {able {holed}}
 }
-
-{component "shield1" {tags "cut_part"}}
