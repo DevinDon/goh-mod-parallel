@@ -29,6 +29,17 @@
     }
   }
 
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail6}
+    {detail9}
+  }
+
   {Extender "enumerator"
     {digit_folder "ger2"}
   }
@@ -100,7 +111,7 @@
   {Mass 11800}
   {Chassis "track"
     ("set-tank-trace" fx("tracks_sm2") step(0.2) length(0.76) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(60) power(180) mass(11800) performance(1.31))
+    ("set-maneuverability-of-tank" speed(60) power(180) mass(11800) performance(1.65))
     ("set-fuel-tank" volume(235) power(180))
   }
 
@@ -109,7 +120,7 @@
     {speed2 15}
   }
   {Bone "turret"
-    {speed2 8}
+    {speed2 10}
   }
 
 }
