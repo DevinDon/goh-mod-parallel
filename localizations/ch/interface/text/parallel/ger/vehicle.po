@@ -21,7 +21,7 @@ msgstr "Sd.Kfz 231 装甲车"
 # 轻型坦克
 msgctxt "desc/entity/panzer2l"
 msgid   "Pz.Kpfw II Ausf.L"
-msgstr  "二号 L 型"
+msgstr  "二号 L 型 \"山猫\""
 
 # 中型坦克
 msgctxt "desc/entity/panzer3m"
