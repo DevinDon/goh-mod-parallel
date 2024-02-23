@@ -59,7 +59,7 @@ actor
 {perks {blastwave_modifier 7}}
 
 {Weaponry
-	{Place "gun"
-		{rotate}
-	}
+  {Place "gun"
+    {rotate}
+  }
 }

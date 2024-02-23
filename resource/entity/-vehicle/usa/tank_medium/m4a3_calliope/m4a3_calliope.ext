@@ -30,16 +30,16 @@
 ("set-internal-components" name("fuel4") type("fuel") repair(3))
 ("set-internal-components" name("transmission") type("transmission") repair(10))
 
-{volume "body1"			; Hull lower Front
+{volume "body1"      ; Hull lower Front
   {thickness 38.1
-    {front 107.9}	;
-    {top 51}		; front upper part
+    {front 107.9}  ;
+    {top 51}    ; front upper part
     {rear 10}
     {bottom 25.4}
   }
   {CastSteel 0.8063}
 }
-{volume "body2"			;
+{volume "body2"      ;
   {thickness 38.1
     {front 63.5}
     {top 19.5}
@@ -61,22 +61,22 @@
 {volume "body6"
   {thickness 63.5}
 }
-{volume "body7"		; Hull lower middle
+{volume "body7"    ; Hull lower middle
   {thickness 38.1
     {top 51}
     {rear 10}
     {bottom 25.4}
   }
 }
-{volume "body8"		; Hull lower Front right
+{volume "body8"    ; Hull lower Front right
   {thickness 38.1
-    {front 107.9}	;
+    {front 107.9}  ;
   }
   {CastSteel 0.8063}
 }
-{volume "body9"		; Hull lower Front left
+{volume "body9"    ; Hull lower Front left
   {thickness 38.1
-    {front 107.9}	;
+    {front 107.9}  ;
   }
   {CastSteel 0.8063}
 }
@@ -128,13 +128,13 @@
   {able {holed}}
   {CastSteel 0.8063}
 }
-{volume "armor1"	; rear engine grill
+{volume "armor1"  ; rear engine grill
   {thickness 4}
 }
-{volume "armor2"	; rear engine grill
+{volume "armor2"  ; rear engine grill
   {thickness 4}
 }
-{volume "armor3"	; turret ring armor
+{volume "armor3"  ; turret ring armor
   {thickness 19.5
     {top 5.9}
   }
