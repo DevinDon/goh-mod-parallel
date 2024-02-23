@@ -3,24 +3,32 @@
 ; gun 15mm
 ; front hull shield 20mm
 
-("tank_light_tier2")
 
-("shield" args "shield1" 20)
 
-("tracks" repair(30) thickness(15))
-("gun" repair(30) thickness(15))
 
-("ammo" args "ammo1")
-("ammo" args "ammo2")
-("ammo" args "ammo3")
-("fuel" args "fuel1")
-("fuel" args "fuel2")
-("transmission" args "transmission")
+
+("set-basic-durability" body(440) engine(300) turret(400) mantlet(200) gun(300) track(300) ammo(300))
+("set-basic-armor"      ammo(20))
+
+("set-turret" repair(15))
+("set-mantlet" repair(10))
+("set-gun" thickness(15) repair(10))
+
+("set-body" repair(15))
+("set-engine" repair(10))
+("set-tracks" thickness(15) repair(10))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("fuel1") type("fuel") repair(3))
+("set-internal-components" name("fuel2") type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
 
 {volume "body1"      ; Hull
   {thickness 20
     {front 30}
-    {top 20}    ; Glacis
+    {top 20}         ; Glacis
     {rear 5.5}
     {bottom 5.5}
   }

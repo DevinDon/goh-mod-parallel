@@ -1,0 +1,59 @@
+; crew and seat
+
+; define crew_inside
+; no args
+(define "set-inside-crew"
+  {boarder
+    {anm "left"
+      {forward {begin "board_tank"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "right"
+      {forward {begin "board_tank"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+  }
+)
+
+; define crew_human
+; args = door door2 visor
+(define "set-crew"
+  {placer
+    {place "%place"
+      {group "crew"}
+      {visor "%visor"}
+    }
+  }
+  {boarder
+    {door "%door"}
+    {door "%door2"}
+    {link "%door" "%place" {anm "left"} {forward putoff} {reverse puton}}
+    {link "%door2" "%place" {anm "right"} {forward putoff} {reverse puton}}
+  }
+)
+
+; define seat_human
+; args = place bone door animation
+(define "set-seat"
+  {placer
+    {place "%place" {group "passenger"} {LinkBone "%bone"}}
+  }
+  {boarder
+    {door "%door"}
+    {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+  }
+)
+
+; apply settings
+; crew_4_human
+("set-inside-crew")
+("set-crew" place(gunner)    door(emit1) door2(emit2) visor(main))
+("set-crew" place(driver)    door(emit1) door2(emit2) visor(driver))
+("set-crew" place(charger)   door(emit1) door2(emit2) visor(none))
+("set-crew" place(commander) door(emit1) door2(emit2) visor(around))
+
+; seat_human
+("set-seat" place(seat1) bone(seat01) door(emit3) animation(armor))
+("set-seat" place(seat2) bone(seat02) door(emit4) animation(armor))
+("set-seat" place(seat3) bone(seat03) door(emit5) animation(armor))
+("set-seat" place(seat4) bone(seat04) door(emit6) animation(armor))

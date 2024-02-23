@@ -44,9 +44,9 @@
 
       {Item "ammo ger-mgun" 1900}
 
-      {Item "ammo ger-20l55 ap" 80}
+      {Item "ammo ger-20l55 ap"   80}
       {Item "ammo ger-20l55 apcr" 20}
-      {Item "ammo ger-20l55 he" 100}
+      {Item "ammo ger-20l55 he"   100}
     }
   }
 
@@ -61,8 +61,8 @@
         {ByLinearSpeed    0.25} ; km/h
         {MaxAngularSpeed  5.00} ; deg/s
         {ByAngularSpeed   0.35} ; deg/s
-        {DisorderTime     0.25} ; s
-        {OrderTime        3.00} ; s
+        {DisorderTime     0.20} ; s
+        {OrderTime        2.25} ; s
       }
     }
     {Place "mgun2"

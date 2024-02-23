@@ -855,17 +855,20 @@
     {distanceSet 0}
     {delta 0}
     {no_rim_light}
-    {camera "zoom1.5"}
     {ManualAccuracyZoom}
     {blur_strength 5}
     {disable_fow 0}
     {soundEffect "enclosed_vehicle"}
+    {camera "zoom2"}
   }
   {level ;2
-    {camera "zoom2.4"}
+    {camera "zoom4"}
   }
   {level ;3
     {camera "zoom5"}
+  }
+  {level ;4
+    {camera "zoom8"}
   }
 }
 
