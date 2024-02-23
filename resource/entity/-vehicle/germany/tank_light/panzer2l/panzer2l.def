@@ -54,7 +54,7 @@
 
       {Item "ammo ger-mgun" 1900}
 
-      {Item "nbks grenade" 10}
+      {Item "nbks grenade" 12}
 
       {Item "ammo ger-20l55 ap"   120}
       {Item "ammo ger-20l55 apcr"  20}
