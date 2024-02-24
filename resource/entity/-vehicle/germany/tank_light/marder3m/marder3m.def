@@ -1,6 +1,5 @@
 {game_entity
 
-
   (include "/properties/standard/vehicle/tank-assaultgun-config.ext")
   (include "/properties/selection/vehicle_elongated.inc" scale(1.15))
 
@@ -15,16 +14,6 @@
   {TargetSelector "tank_medium"}
   {Collider "tank.light"}
 
-  {Extender "enumerator"
-    {digit_folder "ger"}
-  }
-
-  {Sensor
-    {Visor "around"
-      {Vision "standard-vision-around"}
-    }
-  }
-
   {Boarder
     {anm "driver"
       {forward {begin "board_t26_driver"} {end "pose_t26_driver"} {base "open_driver"}}
@@ -37,6 +26,16 @@
     {anm "right"
       {forward {begin "board_tank_right"} {end "seat_armor"}}
       {reverse {end "emit_tank_2_hold"}}
+    }
+  }
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
+
+  {Sensor
+    {Visor "around"
+      {Vision "standard-vision-around"}
     }
   }
 
@@ -63,9 +62,9 @@
       {Item "repair_kit" 10}
 
       {Item "ammo ger-75l43 apcbche" 19}
-      {Item "ammo ger-75l43 apcr" 5}
-      {Item "ammo ger-75l43 heat" 5}
-      {Item "ammo ger-75l43 he" 19}
+      {Item "ammo ger-75l43 apcr"     5}
+      {Item "ammo ger-75l43 heat"     5}
+      {Item "ammo ger-75l43 he"      19}
     }
   }
 

@@ -1,91 +1,96 @@
 {game_entity
-	(include "/properties/tank_assaultgun.ext")
-	(include "/properties/selection/vehicle_elongated.inc" scale(1.1))
-	{props "spg" "light" "-turret" "multi_board" "vision_lev03" "muzzle_85mm_93mm_sides" "shell_eject" "open_top" "detect_spg" "artillery_minimap_medium"}
-	{extension "wespe.mdl"}
-	(include "wespe.ext")
-	{patherId "panzer38"}
-	{collider "tank.light"}
-	{targetclass "tank_light"}
-	{targetSelector "cannon_howitzer"}
 
-	{extender "enumerator"
-		{digit_folder "ger"}
-	}
+  (include "/properties/standard/vehicle/tank-assaultgun-config.ext")
+  (include "/properties/selection/vehicle_elongated.inc" scale(1.1))
 
-	{sensor
-		{visor "around"
-			{vision "vehicle_around"}		;// better vision than a in-closed turret
-		}
-	}
+  {Extension "wespe.mdl"}
+  (include   "wespe.ext")
+  (include   "crew-and-seat.ext")
 
-	{boarder
-		{anm "driver"
-			{forward {begin "board_pz4_driver"} {end "pose_t26_driver"} {base "open_driver"}}
-			{reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
-		}
-		{anm "left"
-			{forward {begin "board_tank_left"} {end "seat_armor"} {base "board"}}
-			{reverse {end "emit_tank_1"}{base "board"}}
-		}
-		{anm "right"
-			{forward {begin "board_tank_right"} {end "seat_armor"} {base "board"}}
-			{reverse {end "emit_tank_2_hold"}{base "board"}}
-		}
-	}
+  {Props "spg" "light" "-turret" "multi_board" "vision_lev03" "muzzle_85mm_93mm_sides" "shell_eject" "open_top" "detect_spg" "artillery_minimap_medium"}
 
-	("crew_driver" door(emit0) door2(emit1) door3(emit2))
-	("crew_human_visible_anm"	place(gunner)	 door(emit1) door2(emit2) visor(main)	anm_left(left)	anm_right(right))
-	("crew_human_visible_anm"	place(charger)	 door(emit1) door2(emit2) visor(none)	anm_left(left)	anm_right(right))
-	("crew_human_visible_anm"	place(commander) door(emit1) door2(emit2) visor(around) anm_left(left)	anm_right(right))
-	("crew_human_visible_anm"	place(charger2)	 door(emit1) door2(emit2) visor(none)	anm_left(left)	anm_right(right))
+  {PatherId "panzer38"}
+  {Targetclass "tank_light"}
+  {TargetSelector "cannon_howitzer"}
+  {Collider "tank.light"}
 
-	{extender "inventory"
-		{box
-			{item "ammo bulletger_105 he" 21}		; 32 rounds
-			{item "ammo bulletger_105 aphe" 5}
-			{item "ammo bulletger_105 heat" 5}
-			{item "geballteladung_3kg" 1}
-		}
-	}
+  {Boarder
+    {anm "driver"
+      {forward {begin "board_pz4_driver"} {end "pose_t26_driver"} {base "open_driver"}}
+      {reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
+    }
+    {anm "left"
+      {forward {begin "board_tank_left"} {end "seat_armor"} {base "board"}}
+      {reverse {end "emit_tank_1"}{base "board"}}
+    }
+    {anm "right"
+      {forward {begin "board_tank_right"} {end "seat_armor"} {base "board"}}
+      {reverse {end "emit_tank_2_hold"}{base "board"}}
+    }
+  }
 
-	{Weaponry
-		("restore_ik_time")
-		{place "gun"
-			{RestoreIKAfterAim}
-			{weapon "105mm_lefh18" filling "ammo bulletger_105 he" 1}
-			{gunner "gunner"}
-			{charger "charger charger2" minWorkers 1}
-			("abm_dymamic_gun"
-				zeroing(5.0)	; // time it takes to aim until the reticle shrinks. Bigger values, more control.
-				dispersion(1)	; // time it takes to distort the reticle when you move the gun (how abrupt it loses zeroing). Bigger values, more control.
-			)
-			{rotate}
-		}
-	}
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
 
-	{mass 11000}
-	{Chassis
-		("tank_trace" fx("tracks_sm2") step(0.2) len(-0.47))
-		("mobility_tank"
-			speed(40) ;----------Max speed when fully accelerated on road, km/h.
-			reverse(8) ;---------Max speed in reverse on road, km/h.
-			traverse(30) ;-------Track traverse, per second, in degrees.
-			weight(11.0) ;-------Weight in Tonnes.
-			power(140) ;---------Engine Power, in hp.
-			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(200) ;----------Fuel capacity in Litres.
-			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(95) ;----------Range in km, off-road.
-		)
-	}
+  {Sensor
+    {Visor "around"
+      {Vision "standard-vision-around"}
+    }
+  }
 
-	{bone "gun_rot"
-		{limits -5 42}
-		{speed2 10}
-	}
-	{bone "turret"
-		{limits -20 20}
-		{speed2 8}
-	}
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+  }
+
+  {Extender "inventory"
+    {Box
+      {Size 10 7}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-105l28 aphe"  7}
+      {Item "ammo ger-105l28 heat"  5}
+      {Item "ammo ger-105l28 he"   19}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 7}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "weapon ger-105mm-lefh18-l28" filling "ammo ger-105l28 he" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {Rotate}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.90} ; s
+        {OrderTime       5.00} ; s
+      }
+    }
+  }
+
+  {Mass 11000}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_sm2") step(0.2) length(-0.47) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(40) power(140) mass(11000) performance(1.30))
+    ("set-fuel-tank" volume(200) power(140))
+  }
+
+  {Bone "gun_rot"
+    {limits -5 42}
+    {speed2 10}
+  }
+  {Bone "turret"
+    {limits -20 20}
+    {speed2 8}
+  }
+
 }

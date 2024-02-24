@@ -38,6 +38,7 @@
 
 ; apply settings
 ("set-driver-crew"  door(emit0)      door2(emit1) door3(emit2))
-("set-crew-visible" place(commander) door(emit2)  door2(emit2) visor(around) animationLeft(right) animationRight(right))
-("set-crew-visible" place(gunner)    door(emit1)  door2(emit1) visor(main)   animationLeft(left)  animationRight(left))
-("set-crew-visible" place(charger)   door(emit1)  door2(emit1) visor(main)   animationLeft(left)  animationRight(left))
+("set-crew-visible" place(gunner)    door(emit1)  door2(emit2) visor(main)   animationLeft(left)  animationRight(right))
+("set-crew-visible" place(charger)   door(emit1)  door2(emit2) visor(none)   animationLeft(left)  animationRight(right))
+("set-crew-visible" place(commander) door(emit1)  door2(emit2) visor(around) animationLeft(left)  animationRight(right))
+("set-crew-visible" place(charger2)  door(emit1)  door2(emit2) visor(none)   animationLeft(left)  animationRight(right))

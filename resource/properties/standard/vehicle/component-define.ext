@@ -560,3 +560,15 @@
     {RepairOrder 11}
   }
 )
+
+; define gun_shield
+; reserved for shields around gun on open top SPG
+; Allows crew to be hurt/stun when penetrated
+; No vehicle component damage
+; args = name thickness
+(define "set-gun-shield"
+  {volume %name
+    {thickness %thickness}
+    {tags "gun_shield"}
+  }
+)

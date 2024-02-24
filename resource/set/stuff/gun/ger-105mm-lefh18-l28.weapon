@@ -10,9 +10,9 @@
   {Calibre 105} ; 口径
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
-  {SpreadTolerance 0.50} ; 瞄准到 50% 就可以开火
+  {SpreadTolerance 0.75} ; 瞄准到 75% 就可以开火
   {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
-  {Aimtype curved} ; 曲射模式
+  {DisableRicochet} ; 禁用跳弹
 
   {RechargeTime 12} ; 装填时间（秒）
   {RecoveryTime 1} ; 短射间隔（秒），适用于弹链
@@ -22,7 +22,7 @@
   {Parameters "aphe" ; APHE 穿甲榴弹
     {Range 750 750} ; 射程
     {Speed 390} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 10} ; 炮弹重力
     {ProjectileDamageTable {0 73} {500 53} {1000 0}} ; 穿深
     {MinimumDamageModifier 410} ; 伤害
     {Spreading
@@ -50,7 +50,7 @@
   {Parameters "heat" ; HEAT 破甲弹
     {Range 750 750} ; 射程
     {Speed 496} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 10} ; 炮弹重力
     {ProjectileDamageTable {0 104} {500 104} {1000 104}} ; 穿深
     {MinimumDamageModifier 410} ; 伤害
     {Spreading
@@ -66,7 +66,7 @@
   {Parameters "he" ; HE 高爆弹
     {Range 750 750} ; 射程
     {Speed 196} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 10} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 8.5} {1000 27}} ; 散布
       {SpreadXYRatio 0.5} ; 后坐力
