@@ -29,7 +29,7 @@
     {Range 350 350} ; 射程
     {Speed 960} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 95} {500 12} {1000 0}} ; 穿深
+    {ProjectileDamageTable {0 111} {500 12} {1000 0}} ; 穿深
     {MinimumDamageModifier 30} ; 伤害
     {Spreading
       {RadiusTable {0 0.0} {500 1.5} {1000 4.0}} ; 散布
