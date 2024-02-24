@@ -15,8 +15,8 @@ msgstr ""
 
 # 步兵战车
 msgctxt "desc/entity/sdkfz231"
-msgid "Sd.Kfz 231"
-msgstr "Sd.Kfz 231 装甲车"
+msgid   "Sd.Kfz 231"
+msgstr  "Sd.Kfz 231 装甲车"
 
 # 轻型坦克
 msgctxt "desc/entity/panzer2l"
@@ -79,29 +79,42 @@ msgstr  "六号 II B 早期型 \"虎王\""
 
 # 坦克歼击车
 msgctxt "desc/entity/hetzer"
-msgid "Jagdpanzer 38(t)"
-msgstr "\"追猎者\" 38(t) 坦克歼击车"
+msgid   "Jagdpanzer 38(t)"
+msgstr  "\"追猎者\" 38(t) 坦克歼击车"
 
 msgctxt "desc/entity/marder3m"
-msgid "Marder III Ausf.M"
-msgstr "\"黄鼠狼\" III 号 M 型"
-
-msgctxt "desc/entity/stug3g_late"
-msgid "StuG III Ausf.G (Late)"
-msgstr "三号突击炮 G 型"
-
-msgctxt "desc/entity/stuh42"
-msgid "StuH 42 Ausf.G"
-msgstr "42 式突击榴弹炮 G 型"
+msgid   "Marder III Ausf.M"
+msgstr  "\"黄鼠狼\" III 号 M 型"
 
 msgctxt "desc/entity/jagdtiger"
 msgid   "Jagdtiger Sd. Kfz. 186"
 msgstr  "\"猎虎\" 重型坦克歼击车"
 
-# 自行榴弹炮
+# 自行火炮 / 自行榴弹炮
+msgctxt "desc/entity/wespe"
+msgid   "Wespe"
+msgstr  "\"黃蜂\" 自行榴弹炮"
+
 msgctxt "desc/entity/600mm_thor"
 msgid   "60cm Gerät Nr. III"
 msgstr  "60cm 卡尔臼炮 Nr. III"
+
+# 突击炮
+msgctxt "desc/entity/stug3g_late"
+msgid   "StuG III Ausf.G"
+msgstr  "三号 G 型突击炮"
+
+msgctxt "desc/entity/stuh42"
+msgid   "StuH 42 Ausf.G"
+msgstr  "42 式 G 型突击榴弹炮"
+
+msgctxt "desc/entity/sturmpanzer4"
+msgid   "Sturmpanzer IV"
+msgstr  "\"灰熊\" 四号突击坦克"
+
+msgctxt "desc/entity/sturmtiger"
+msgid   "Sturmtiger"
+msgstr  "\"突击虎\" 虎式突击坦克"
 
 # 自行防空炮
 msgctxt "desc/entity/grille_m"
