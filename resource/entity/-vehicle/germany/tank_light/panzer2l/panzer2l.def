@@ -77,7 +77,7 @@
     {RestoreIKTime 9}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-30mm-kwk36-l45" filling "ammo ger-37l45 aphe" 1}
+      {Weapon "weapon ger-37mm-kwk36-l45" filling "ammo ger-37l45 aphe" 1}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion
