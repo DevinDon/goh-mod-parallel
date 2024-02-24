@@ -19,7 +19,7 @@
   {Parameters "ap" ; AP 穿甲弹
     {Range 300 300} ; 射程
     {Speed 823} ; 炮弹速度
-    {Gravity 9} ; 炮弹重力
+    {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 188} {500 96} {1000 0}} ; 穿深
     {MinimumDamageModifier 200} ; 伤害
     {Spreading
@@ -46,7 +46,7 @@
   {Parameters "apbc" ; APBC 风帽穿甲弹
     {Range 300 300} ; 射程
     {Speed 853} ; 炮弹速度
-    {Gravity 9} ; 炮弹重力
+    {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 164} {500 140} {1000 0}} ; 穿深
     {MinimumDamageModifier 200} ; 伤害
     {Spreading
@@ -71,7 +71,7 @@
   {Parameters "apcbche" ; APCBCHE 被帽风帽穿甲榴弹
     {Range 300 300} ; 射程
     {Speed 853} ; 炮弹速度
-    {Gravity 9} ; 炮弹重力
+    {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 169} {500 127} {1000 0}} ; 穿深
     {MinimumDamageModifier 300} ; 伤害
     {Spreading
@@ -100,7 +100,7 @@
   {Parameters "hvap" ; HVAP 高速穿甲弹
     {Range 300 300} ; 射程
     {Speed 1018} ; 炮弹速度
-    {Gravity 9} ; 炮弹重力
+    {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 306} {500 193} {1000 0}} ; 穿深
     {MinimumDamageModifier 150} ; 伤害
     {Spreading
@@ -127,7 +127,7 @@
   {Parameters "he" ; HE 高爆弹
     {Range 300 300} ; 射程
     {Speed 823} ; 炮弹速度
-    {Gravity 9} ; 炮弹重力
+    {Gravity 5} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 3.0} {1000 6}} ; 散布
       {SpreadXYRatio 0.4} ; 后坐力

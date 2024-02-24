@@ -21,7 +21,7 @@
   ("fire rate" rpm(1200))
   ("reload time" seconds(5))
   ("human health" damage(100)) ; 对人员伤害
-  {Gravity 9}
+  {Gravity 5}
 
   {ProjectileDamageTable {10 14} {500 5} {1000 0}} ; 穿深
   {MinimumDamageModifier 5} ; 对载具伤害
