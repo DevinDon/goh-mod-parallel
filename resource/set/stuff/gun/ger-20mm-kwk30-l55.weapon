@@ -28,7 +28,7 @@
   {Parameters "ap" ; AP 穿甲弹
     {Range 350 350} ; 射程
     {Speed 760} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {ProjectileDamageTable {0 45} {500 11} {1000 0}} ; 穿深
     {MinimumDamageModifier 30} ; 伤害
     {Spreading
@@ -54,7 +54,7 @@
   {Parameters "apcr" ; APCR 硬芯穿甲弹
     {Range 350 350} ; 射程
     {Speed 1050} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {ProjectileDamageTable {0 63} {500 3} {1000 0}} ; 穿深
     {MinimumDamageModifier 20} ; 伤害
     {Spreading
@@ -87,7 +87,7 @@
   {Parameters "he" ; HE 高爆弹
     {Range 350 350} ; 射程
     {Speed 900} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 3.0} {1000 6}} ; 散布
       {SpreadXYRatio 0.2} ; 后坐力

@@ -21,7 +21,7 @@
   {Parameters "apcbche" ; APCBCHE 被帽风帽穿甲榴弹
     {Range 400 400} ; 射程
     {Speed 1000} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {ProjectileDamageTable {0 232} {500 176} {1000 0}} ; 穿深
     {MinimumDamageModifier 280} ; 伤害
     {Spreading
@@ -50,7 +50,7 @@
   {Parameters "apcr" ; APCR 硬芯穿甲弹
     {Range 400 400} ; 射程
     {Speed 1130} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {ProjectileDamageTable {0 304} {500 213} {1000 0}} ; 穿深
     {MinimumDamageModifier 230} ; 伤害
     {Spreading
@@ -83,7 +83,7 @@
   {Parameters "he" ; HE 高爆弹
     {Range 400 400} ; 射程
     {Speed 750} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 2.1} {1000 5}} ; 散布
       {SpreadXYRatio 0.6} ; 后坐力

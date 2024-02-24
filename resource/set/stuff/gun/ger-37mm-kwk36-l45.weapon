@@ -21,7 +21,7 @@
   {Parameters "aphe" ; APHE 穿甲榴弹
     {Range 350 350} ; 射程
     {Speed 740} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {ProjectileDamageTable {0 52} {500 18} {1000 0}} ; 穿深
     {MinimumDamageModifier 60} ; 伤害
     {Spreading
@@ -48,7 +48,7 @@
   {Parameters "apcr" ; APCR 硬芯穿甲弹
     {Range 350 350} ; 射程
     {Speed 1020} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {ProjectileDamageTable {0 90} {500 5} {1000 0}} ; 穿深
     {MinimumDamageModifier 45} ; 伤害
     {Spreading
@@ -75,7 +75,7 @@
   {Parameters "he" ; HE 高爆弹
     {Range 350 350} ; 射程
     {Speed 680} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 2.0} {1000 5}} ; 散布
       {SpreadXYRatio 0.5} ; 后坐力

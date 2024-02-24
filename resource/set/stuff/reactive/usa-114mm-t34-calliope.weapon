@@ -19,8 +19,8 @@
   {Inventory {noView}}
 
   {Range 500 500} ; 射程
-  {Speed 150}     ; 炮弹速度
-  {Gravity 3}   ; 炮弹重力
+  {Speed  150}   ; 炮弹速度
+  {Gravity  9}   ; 炮弹重力
   {Spreading
     {RadiusTable {0 0.0} {500 30.0} {1000 100}} ; 散布
   }

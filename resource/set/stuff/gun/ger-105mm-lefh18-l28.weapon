@@ -22,7 +22,7 @@
   {Parameters "aphe" ; APHE 穿甲榴弹
     {Range 750 750} ; 射程
     {Speed 390} ; 炮弹速度
-    {Gravity 10} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {ProjectileDamageTable {0 73} {500 53} {1000 0}} ; 穿深
     {MinimumDamageModifier 410} ; 伤害
     {Spreading
@@ -50,7 +50,7 @@
   {Parameters "heat" ; HEAT 破甲弹
     {Range 750 750} ; 射程
     {Speed 496} ; 炮弹速度
-    {Gravity 10} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {ProjectileDamageTable {0 104} {500 104} {1000 104}} ; 穿深
     {MinimumDamageModifier 410} ; 伤害
     {Spreading
@@ -66,7 +66,7 @@
   {Parameters "he" ; HE 高爆弹
     {Range 750 750} ; 射程
     {Speed 196} ; 炮弹速度
-    {Gravity 10} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 8.5} {1000 27}} ; 散布
       {SpreadXYRatio 0.5} ; 后坐力
