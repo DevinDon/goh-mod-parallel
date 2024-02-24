@@ -97,6 +97,10 @@ msgctxt "desc/weapon/ger-150mm-stuh43-l12"
 msgid   "15cm StuH 43 L/12"
 msgstr  "15cm StuH 43 L/12 榴弹炮"
 
+msgctxt "desc/weapon/ger-380mm-rw61-l5"
+msgid   "38cm StuM Raketenwerfer 61 L/5.4"
+msgstr  "38cm StuM Raketenwerfer 61 L/5.4 火箭炮"
+
 msgctxt "desc/weapon/ger-600mm-karl-l8"
 msgid   "60cm Mörser L/8.4"
 msgstr  "60cm 卡尔臼炮 L/8.4"

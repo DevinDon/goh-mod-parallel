@@ -186,6 +186,11 @@ msgctxt "desc/ammo/ger-150l12 he"
 msgid   "15cm Steilgranate.42 [<c(ff1200)>HE</c>] <c(65696d)>L/12</c>"
 msgstr  "15cm Steilgranate.42 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/12</c>"
 
+# 380mm
+msgctxt "desc/ammo/ger-380mm-rw61-l5"
+msgid   "38cm Raketen Sprenggranate 4581 [<c(ff1200)>Rocket</c>]"
+msgstr  "38cm Raketen Sprenggranate 4581 火箭弹 [<c(ff1200)>火箭弹</c>]"
+
 # 600mm
 msgctxt "desc/ammo/ger-600l8 he"
 msgid   "60cm schwere Betongranate 040"
