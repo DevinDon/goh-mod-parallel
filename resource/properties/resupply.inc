@@ -282,10 +282,13 @@
   {Item "ger-20l55"  "he"          "ammo"  10 {Value 20}}
   {Item "ger-30l38"  "apcr"        "ammo"  10 {Value 30}}
   {Item "ger-30l38"  "he"          "ammo"  10 {Value 30}}
-  {Item "ger-50l60"  "apche"       "ammo"   1 {Value  5}}
-  {Item "ger-50l60"  "apcr"        "ammo"   1 {Value  5}}
-  {Item "ger-50l60"  "heat"        "ammo"   1 {Value  5}}
-  {Item "ger-50l60"  "he"          "ammo"   1 {Value  5}}
+  {Item "ger-37l45"  "aphe"        "ammo"   2 {Value  8}}
+  {Item "ger-37l45"  "apcr"        "ammo"   2 {Value  8}}
+  {Item "ger-37l45"  "he"          "ammo"   2 {Value  8}}
+  {Item "ger-50l60"  "apche"       "ammo"   2 {Value 11}}
+  {Item "ger-50l60"  "apcr"        "ammo"   2 {Value 11}}
+  {Item "ger-50l60"  "heat"        "ammo"   2 {Value 11}}
+  {Item "ger-50l60"  "he"          "ammo"   2 {Value 11}}
   {Item "ger-75l24"  "apcbche"     "ammo"   1 {Value  7}}
   {Item "ger-75l24"  "heat"        "ammo"   1 {Value  7}}
   {Item "ger-75l24"  "he"          "ammo"   1 {Value  7}}
