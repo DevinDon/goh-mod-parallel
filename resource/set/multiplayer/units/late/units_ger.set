@@ -280,7 +280,7 @@
 
 ; // Wespe
 {"doctrine_wespe_late"
-  ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(wespe) crew1(tankman_stug:3) crew2(tank_commander_stug:1))
+  ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(wespe) crew1(tankman_stug:4) crew2(tank_commander_stug:1))
   ("doctrine_t2" cool(300) d(late_ger_offensive) cost(75))
 }
 
@@ -1027,7 +1027,7 @@
 
 ;// Doctrine Units
 {"wespe"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(ger) crew1(tankman_stug:3) crew2(tank_commander_stug:1) g(spg6) b(tanks) cw(6) cp(34)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(ger) crew1(tankman_stug:4) crew2(tank_commander_stug:1) g(spg6) b(tanks) cw(6) cp(34)
   cost(950)) ;// +35 for crew
 }
 {"hummel"

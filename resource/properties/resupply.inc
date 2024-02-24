@@ -316,7 +316,7 @@
   {Item "ger-128l61" "he"          "ammo"   1 {Value 12}}
   {Item "ger-150l12" "heat"        "ammo"   1 {Value 15}}
   {Item "ger-150l12" "he"          "ammo"   1 {Value 15}}
-  {Item "ger-380-rw61-l5"          "ammo"   1 {Value 38}}
+  {Item "ger-380-rw61mm-l5"        "ammo"   1 {Value 38}}
   {Item "ger-600l8"  "he"          "ammo"   1 {Value 60}}
 )
 
