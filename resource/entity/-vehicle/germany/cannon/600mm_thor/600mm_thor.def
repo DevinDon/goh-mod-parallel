@@ -225,7 +225,7 @@
   }
 
   {Weaponry
-    {RestoreIKTime 4}
+    {RestoreIKTime 5}
     {Place "gun"
       {Weapon "weapon ger-600mm-karl-l8" filling "ammo ger-600l8 he" 1}
       {RestoreIKAfterAim}

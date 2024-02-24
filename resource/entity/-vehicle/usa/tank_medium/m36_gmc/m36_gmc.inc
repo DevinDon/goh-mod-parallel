@@ -65,7 +65,7 @@
 }
 
 {Weaponry
-  {RestoreIKTime 4}
+  {RestoreIKTime 5}
   {Place "gun"
     {RestoreIKAfterAim}
     {Weapon "weapon usa-90mm-m3" filling "ammo usa-90x600 apcbche" 1}
