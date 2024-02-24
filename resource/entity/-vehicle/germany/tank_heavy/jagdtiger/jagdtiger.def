@@ -14,16 +14,6 @@
   {TargetSelector "tank_heavy"}
   {Collider "tank.heavy"}
 
-  {Extender "enumerator"
-    {digit_folder "ger"}
-  }
-
-  {Sensor
-    {Visor "main"
-      {Vision "standard-vision-narrow"}
-    }
-  }
-
   {Boarder
     {anm "driver"
       {forward {begin "board_pz4_driver"} {end "pose_jagdtiger_aa"} {base "open_driver"}}
@@ -58,6 +48,16 @@
     {detail11}
     {detail12}
     {detail13}
+  }
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
+
+  {Sensor
+    {Visor "main"
+      {Vision "standard-vision-narrow"}
+    }
   }
 
   {Extender "shield" {on}}

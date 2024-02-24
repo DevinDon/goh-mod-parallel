@@ -3,27 +3,37 @@
 ; gun 80mm
 ; mud guards 4mm
 
-("tank_heavy_tier2")
 
-("shield" args "shieldl3" 4)
-("shield" args "shieldl4" 4)
-("shield" args "shieldl5" 4)
-("shield" args "shieldl6" 4)
-("shield" args "shieldr3" 4)
-("shield" args "shieldr4" 4)
-("shield" args "shieldr5" 4)
-("shield" args "shieldr6" 4)
 
-("gun" repair(30) thickness(80))
-("tracks" repair(30) thickness(30))
 
-("ammo" args "ammo1")
-("ammo" args "ammo2")
-("ammo" args "ammo3")
-("ammo" args "ammo4")
-("fuel" args "fuel1")
-("fuel" args "fuel2")
-("transmission" args "transmission")
+
+("set-basic-durability" body(750) engine(450) turret(550) mantlet(300) gun(300) track(350) ammo(400))
+("set-basic-armor"      ammo(30))
+
+("set-turret"               repair(20))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(80) repair(25))
+
+("set-body"                 repair(30))
+("set-engine"               repair(20))
+("set-tracks" thickness(30) repair(15))
+
+("set-shield" name("shieldl3") thickness(4))
+("set-shield" name("shieldl4") thickness(4))
+("set-shield" name("shieldl5") thickness(4))
+("set-shield" name("shieldl6") thickness(4))
+("set-shield" name("shieldr3") thickness(4))
+("set-shield" name("shieldr4") thickness(4))
+("set-shield" name("shieldr5") thickness(4))
+("set-shield" name("shieldr6") thickness(4))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("ammo4") type("ammo") repair(3))
+("set-internal-components" name("fuel1") type("fuel") repair(3))
+("set-internal-components" name("fuel2") type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
 
 {component "shieldl3" {tags "cut_part"}}
 {component "shieldl4" {tags "cut_part"}}
