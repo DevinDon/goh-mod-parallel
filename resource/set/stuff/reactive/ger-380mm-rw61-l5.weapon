@@ -4,35 +4,29 @@
 
   {FireSound "gun/38cm"}
   {FireSoundclose "gun/gun_interior/size4"}
+  {ReloadSound "interior/large/howitzer_reload_interior"}
 
-  {Filling "ammo ger-380mm-rw61-l5" 1}
-  {Calibre 380}
+  {Filling "ammo ger-380mm-rw61-l5" 1} ; 弹种及弹链内炮弹数量
+  {Calibre 380} ; 口径
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
   {SpreadTolerance 0.75} ; 瞄准到 75% 就可以开火
+  {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
 
   {RechargeTime 90.0} ; 装填时间（秒）
   {RecoveryTime 0.50} ; 短射间隔（秒），适用于弹链
 
-  {FillingVisible "rocket"}
+  {Automatic} ; 自动武器
 
-  {ZeroingAccuracy 0.95 0.85 0.75}
+  {FillingVisible "rocket"}
   {RelaxationTime 3.8}
 
   {Range 750 750} ; 射程
-  {Speed  150}    ; 炮弹速度
-  {Gravity  9}    ; 炮弹重力
-
-  {Spreading 12
-    {SpreadXYRatio 1.8}
-    {radiusFunction
-      0.000 0.02
-      0.200 0.10
-      0.500 0.40
-      0.750 0.70
-      0.999 1.00
-      1.000 50.0
-    }
+  {Speed 250} ; 炮弹速度
+  {Gravity 9} ; 炮弹重力
+  {Spreading
+    {RadiusTable {0 0.0} {500 15.8} {1000 53.8}} ; 散布
+    {SpreadXYRatio 9.5} ; 后坐力
   }
 
 }

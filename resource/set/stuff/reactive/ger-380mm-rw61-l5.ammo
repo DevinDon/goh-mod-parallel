@@ -4,7 +4,7 @@
 
   {inventory
     {size 12 3}
-    {weight 500}
+    {weight 250}
   }
   {entity "sturmtiger_ammo"}
   {mass 376}
