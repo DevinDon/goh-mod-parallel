@@ -25,7 +25,7 @@
     {ProjectileDamageTable {0 185} {500 185} {1000 185}} ; 穿深
     {MinimumDamageModifier 600} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {500 17} {1000 75}} ; 散布
+      {RadiusTable {0 0.0} {500 7.2} {1000 28.1}} ; 散布
       {SpreadXYRatio 5.5} ; 后坐力
     }
     {OvermatchSlope ; 倾斜入射修正
@@ -39,7 +39,7 @@
     {Speed 280} ; 炮弹速度
     {Gravity 9} ; 炮弹重力
     {Spreading
-      {RadiusTable {0 0.0} {500 23} {1000 85}} ; 散布
+      {RadiusTable {0 0.0} {500 9.1} {1000 37.5}} ; 散布
       {SpreadXYRatio 5.5} ; 后坐力
     }
   }
