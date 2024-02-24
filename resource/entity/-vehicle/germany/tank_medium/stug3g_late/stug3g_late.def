@@ -13,19 +13,6 @@
   {Targetclass "tank_medium"}
   {TargetSelector "tank_medium"}
 
-  {Extender "enumerator"
-    {digit_folder "ger"}
-  }
-
-  {Sensor
-    {Visor "main"
-      {Bone "visor1"}
-    }
-    {Visor "around"
-      {Bone "visor"}
-    }
-  }
-
   {Boarder
     {anm "left"
       {forward  {begin  "board_tank_left"} {end "pose_mgun_pz6"}}
@@ -46,6 +33,19 @@
     {anm "armor2"
       {forward  {begin  "board_lowArmor"} {end "pose_seat_armor_1"}}
       {reverse   {end  "emit_tank_1"}}
+    }
+  }
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
+
+  {Sensor
+    {Visor "main"
+      {Bone "visor1"}
+    }
+    {Visor "around"
+      {Bone "visor"}
     }
   }
 

@@ -177,6 +177,15 @@ msgctxt "desc/ammo/ger-128l61 he"
 msgid   "12.8cm SprGr.L/5.0 [<c(ff1200)>HE</c>] <c(65696d)>L/61</c>"
 msgstr  "12.8cm SprGr.L/5.0 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/61</c>"
 
+# 150mm
+msgctxt "desc/ammo/ger-150l12 heat"
+msgid   "15cm Steilgranate.42 [<c(ff1200)>HEAT</c>] <c(65696d)>L/12</c>"
+msgstr  "15cm Steilgranate.42 [<c(ff1200)>破甲弹</c>] <c(65696d)>L/12</c>"
+
+msgctxt "desc/ammo/ger-150l12 he"
+msgid   "15cm Steilgranate.42 [<c(ff1200)>HE</c>] <c(65696d)>L/12</c>"
+msgstr  "15cm Steilgranate.42 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/12</c>"
+
 # 600mm
 msgctxt "desc/ammo/ger-600l8 he"
 msgid   "60cm schwere Betongranate 040"

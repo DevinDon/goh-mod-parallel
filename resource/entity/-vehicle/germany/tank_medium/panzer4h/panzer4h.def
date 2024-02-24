@@ -13,10 +13,6 @@
   {Targetclass "tank_medium"}
   {TargetSelector "tank_medium"}
 
-  {Extender "enumerator"
-    {digit_folder "ger"}
-  }
-
   {Boarder
     {anm "driver"
       {forward  {begin  "board_pz4_driver"} {end "pose_mgun_pz6"} {base "open_driver"}}
@@ -53,6 +49,10 @@
     {detail9}
     {detail10}
     {detail11}
+  }
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
   }
 
   {Extender "shield" {on}}
