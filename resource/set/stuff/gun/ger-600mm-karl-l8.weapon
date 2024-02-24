@@ -13,7 +13,7 @@
   {SpreadTolerance 0.50} ; 瞄准到 50% 就可以开火
   {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
   {DisableRicochet} ; 禁用跳弹
-  {aimtype curved} ; 曲射模式
+  {Aimtype curved} ; 曲射模式
 
   {RechargeTime 120} ; 装填时间（秒）
   {RecoveryTime 1} ; 短射间隔（秒），适用于弹链
@@ -25,7 +25,7 @@
     {AimRange 999} ; 不确定
     {MaxRange 999} ; 最大射程
     {Speed 176} ; 炮弹速度
-    {Gravity 9} ; 炮弹重力
+    {Gravity 5} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 50} {1000 150}} ; 散布
       {SpreadXYRatio 9.5} ; 后坐力
