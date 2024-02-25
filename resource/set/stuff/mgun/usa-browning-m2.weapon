@@ -14,7 +14,7 @@
   {Filling "ammo usa-hmgun" 100}
 
   {TraceFreq 3}
-  {Range 300 300}
+  {Range 250 250}
   {SpreadTolerance 0.10} ; 瞄准到 10% 就可以开火
 
   ("velocity" mps(894))

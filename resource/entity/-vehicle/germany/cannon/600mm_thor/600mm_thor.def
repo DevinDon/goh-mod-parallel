@@ -258,7 +258,7 @@
     {speed2 2}
   }
   {Bone "foresight1"
-    {limits -10 20}
+    {limits -10 90}
     {speed2 3}
   }
 

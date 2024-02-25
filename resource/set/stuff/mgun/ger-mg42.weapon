@@ -14,7 +14,7 @@
   {Filling "ammo ger-mgun" 100}
 
   {TraceFreq 3}
-  {Range 350 350}
+  {Range 275 275}
   {SpreadTolerance 0.10} ; 瞄准到 10% 就可以开火
 
   ("velocity" mps(740))

@@ -19,7 +19,7 @@
   {Automatic} ; 自动武器
 
   {Parameters "heat" ; HEAT 破甲弹
-    {Range 750 750} ; 射程
+    {Range 450 450} ; 射程
     {Speed 280} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 185} {500 185} {1000 185}} ; 穿深
@@ -35,7 +35,7 @@
   }
 
   {Parameters "he" ; HE 高爆弹
-    {Range 750 750} ; 射程
+    {Range 450 450} ; 射程
     {Speed 280} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {Spreading
