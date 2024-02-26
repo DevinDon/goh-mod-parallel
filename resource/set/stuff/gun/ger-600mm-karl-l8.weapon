@@ -25,7 +25,7 @@
     {AimRange 750} ; 不确定
     {MaxRange 750} ; 最大射程
     {Speed 176} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 9} ; 炮弹重力
     {Spreading
       {RadiusTable {0 0.0} {500 50} {1000 150}} ; 散布
       {SpreadXYRatio 9.5} ; 后坐力
