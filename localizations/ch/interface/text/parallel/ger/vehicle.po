@@ -95,6 +95,10 @@ msgctxt "desc/entity/wespe"
 msgid   "Wespe"
 msgstr  "\"黃蜂\" 自行榴弹炮"
 
+msgctxt "desc/entity/grille_k"
+msgid "Grille Ausf.K mit 15cm sIG 33"
+msgstr "\"蟋蟀\" K 型 加装 15cm sIG 33"
+
 msgctxt "desc/entity/600mm_thor"
 msgid   "60cm Gerät Nr. III"
 msgstr  "60cm 卡尔臼炮 Nr. III"
@@ -119,4 +123,4 @@ msgstr  "\"突击虎\" 虎式突击坦克"
 # 自行防空炮
 msgctxt "desc/entity/grille_m"
 msgid   "Grille Ausf.M mit 3cm MK 103"
-msgstr  "蟋蟀 M 型 加装 3cm MK 103 机炮"
+msgstr  "\"蟋蟀\" M 型 加装 3cm MK 103"
