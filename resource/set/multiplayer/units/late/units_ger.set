@@ -358,7 +358,7 @@
 ; // Grille
 {"doctrine_grille"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(grille_k) crew1(tankman_stug:3) crew2(tank_commander_stug:1))
-  ("doctrine_t2" cool(300) d(late_ger_support) cost(85))
+  ("doctrine_t2" cool(300) d(late_ger_support) cost(80))
 }
 
 
@@ -367,7 +367,7 @@
 ; // Pak43
 {"doctrine_88mm_pak43_late"
   ("towed_gun_doctrine" side(ger) period(late) vehicle(sdkfz7) crew_v(rifleman_1:1) cannon(88mm_pak4341) crew_c(artilleryman:4))
-  ("doctrine_t3" cool(480) d(late_ger_support) cost(75))
+  ("doctrine_t3" cool(480) d(late_ger_support) cost(80))
 }
 
 ; // 170mm K18
@@ -385,7 +385,7 @@
 ; // Jagdtiger
 {"doctrine_jagdtiger"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(jagdtiger) crew1(tankman_pzjag:5) crew2(tank_commander_pzjag:1))
-  ("doctrine_t3" cool(480) d(late_ger_support) cost(125))
+  ("doctrine_t3" cool(480) d(late_ger_support) cost(120))
 }
 
 
