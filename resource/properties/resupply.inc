@@ -991,3 +991,16 @@
     {Visible 0}
   }
 )
+
+; custom
+(define "set-ammo-resupply"
+  ("truck_ammo_heavy_2x")
+)
+
+(define "set-fuel-resupply"
+  ("supply_fuel" liters(2000))
+)
+
+(define "set-engineer-resupply"
+  ("supply_engineer")
+)

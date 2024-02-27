@@ -1,85 +1,81 @@
 {game_entity
 
-  (include "/properties/car.ext")
+  (include "/properties/standard/vehicle/car-config.ext")
   (include "/properties/selection/vehicle_elongated.inc" scale(1.15))
   (include "/properties/resupply.inc")
 
-  {props  "truck" "vision_lev02" "tractor" "tractor_heavy"}
-  {able "emit_on_attack"}
-  {extension "blitz3_6_art_ammo.mdl"}
-  {collider "truck"}
-  {patherId "blitz36"}
+  {Extension "blitz3_6_art_ammo.mdl"}
+  {Extension "crew-and-seat.ext"}
 
-  ("wheel" args "wheelright1")
-  ("wheel" args "wheelleft1")
-  ("wheel" args "wheelright2")
-  ("wheel" args "wheelleft2")
+  {Props  "truck" "vision_lev02" "tractor" "tractor_heavy"}
 
-  ("glass" args "glassr")
-  ("glass" args "glassl")
-  ("glass" args "glass")
-  ("fuel" args "fuel")
-  ("transmission" args "transmission")
+  {PatherId "blitz36"}
+  {Collider "truck"}
 
-  ("bodyback" repair(30))
+  {Able "emit_on_attack"}
+
+  ("set-basic-durability" body(200) engine(80) turret(100) mantlet(100) gun(150) track(100) ammo(100))
+  ("set-basic-armor"      ammo(10))
+  ("set-car-thickness"    body(3) engine(5))
+
+  ("set-bodyback"             repair(20))
+  ("set-turret"               repair(10))
+  ("set-mantlet"              repair(10))
+  ("set-gun"    thickness(15) repair(20))
+  ("set-body"                 repair(20))
+  ("set-engine"               repair(20))
+  ("set-tracks" thickness(10) repair(15))
+
+  ("set-wheel" name("wheelright1"))
+  ("set-wheel" name("wheelleft1"))
+  ("set-wheel" name("wheelright2"))
+  ("set-wheel" name("wheelleft2"))
+
+  ("set-glass" name("glassr"))
+  ("set-glass" name("glassl"))
+  ("set-glass" name("glass"))
+
+  ("set-wood" name("bodyback1"))
+  ("set-wood" name("bodyback2"))
+  ("set-wood" name("bodyback3"))
+  ("set-wood" name("bodyback4"))
+  ("set-wood" name("bodyback5"))
+  ("set-wood" name("bodyback6"))
+  ("set-wood" name("bodyback7"))
+  ("set-wood" name("bodyback8"))
+  ("set-wood" name("bodyback9"))
+  ("set-wood" name("bodyback10"))
+  ("set-wood" name("bodyback11"))
+  ("set-wood" name("bodyback12"))
+  ("set-wood" name("bodyback13"))
+  ("set-wood" name("bodyback14"))
+  ("set-wood" name("bodyback15"))
+
+  ("set-internal-components" name("fuel")  type("fuel") repair(3))
+  ("set-internal-components" name("transmission") type("transmission") repair(10))
 
   {volume "body6" {able {holed}}}
   {volume "fuel" {able {NoWoundDecal 0}}}
   {volume "transmission" {able {NoWoundDecal 0}}}
 
-  ("wood" args "bodyback1")
-  ("wood" args "bodyback2")
-  ("wood" args "bodyback3")
-  ("wood" args "bodyback4")
-  ("wood" args "bodyback5")
-  ("wood" args "bodyback6")
-  ("wood" args "bodyback7")
-  ("wood" args "bodyback8")
-  ("wood" args "bodyback9")
-  ("wood" args "bodyback10")
-  ("wood" args "bodyback11")
-  ("wood" args "bodyback12")
-  ("wood" args "bodyback13")
-  ("wood" args "bodyback14")
-  ("wood" args "bodyback15")
+  ("set-ammo-resupply")
+  ("set-fuel-resupply")
+  ("set-engineer-resupply")
 
-  ("truck_ammo_heavy_2x")
-
-  ("crew_2_human")
-
-  ("board_animation"
-    place(driver)
-    board_begin(board_opel_driver)
-    board_end(seat_opel_driver)
-    base(doorleft)
-  )
-  ("board_animation"
-    place(commander)
-    board_begin(board_big-highcar)
-    board_end(seat_opel_commander)
-    base(doorright)
-  )
-
-  {extender "inventory"
-    {box
-      {item "repair_kit" 5}
+  {Extender "inventory"
+    {Box
+      {Size 9 9}
+      {Weight 2000}
+      {Item "repair_kit" 20}
     }
   }
 
-  {mass 3600}
-  {Chassis
-    ("car_trace" fx("tracewheel03") step(0.08) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
-    ("car_trace" fx("tracewheel03d") step(0.08) wheell("wlr") wheelr("wrr") bonel("FXtraceL2") boner("FXtraceR2"))
-    ("mobility_car"
-      speed(80) ;----------------------------------Max speed.
-      speedatmaxturn(60) ;-------------------------Max speed at max turn.
-      reverse(36) ;--------------------------------Max speed in Reverse.
-      weight(3.6) ;--------------------------------Weight in Tonnes.
-      power(68) ;----------------------------------Horse Power.
-      fuel(80) ;-----------------------------------Fuel capacity in Litres.
-      type(fuel) ;---------------------------------Fuel type.
-      range(230) ;---------------------------------Range in Kilometers.
-    )
+  {Mass 3600}
+  {Chassis "wheel"
+    ("set-car-trace" fx("tracewheel03")  step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-car-trace" fx("tracewheel03d") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
+    ("set-maneuverability-of-armored-car" speed(80) power(68) mass(3200) performance(1.45))
+    ("set-fuel-tank" volume(80) power(68))
   }
 
 }

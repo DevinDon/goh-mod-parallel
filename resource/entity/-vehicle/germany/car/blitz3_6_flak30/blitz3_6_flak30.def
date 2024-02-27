@@ -24,7 +24,7 @@
   ("set-gun"    thickness(15) repair(20))
   ("set-body"                 repair(20))
   ("set-engine"               repair(20))
-  ("set-tracks" thickness(15) repair(15))
+  ("set-tracks" thickness(10) repair(15))
 
   ("set-wheel" name("wheelright1"))
   ("set-wheel" name("wheelleft1"))
@@ -53,7 +53,7 @@
   {Extender "inventory"
     {Box
       {Size 9 9}
-      {Weight 1000}
+      {Weight 2000}
       {Item "repair_kit" 10}
 
       {Item "ammo ger-20l55 ap" 100}
@@ -80,7 +80,7 @@
   {Chassis "wheel"
     ("set-car-trace" fx("tracewheel03")  step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-car-trace" fx("tracewheel03d") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
-    ("set-maneuverability-of-armored-car" speed(60) power(68) mass(3200) performance(1.35))
+    ("set-maneuverability-of-armored-car" speed(80) power(68) mass(3200) performance(1.35))
     ("set-fuel-tank" volume(80) power(68))
   }
 

@@ -24,15 +24,45 @@
   }
 }
 
+; define crew_inside
+; no args
+(define "set-inside-crew"
+  {boarder
+    {anm "left"
+      {forward {begin "board_tank"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+    {anm "right"
+      {forward {begin "board_tank"}}
+      {reverse {end "emit_tank_1_hold"}}
+    }
+  }
+)
+
 ; define crew_human
-; args = place door bone animation group off
+; args = place door door2 visor
 (define "set-crew"
   {placer
-    {place "%place" {group "%group"} {linkbone "%bone"} {turnoff %off {shadow}}}
+    {place "%place"
+      {group "%group"}
+      {linkbone "%bone"}
+      {turnoff {sensor} {targetable 0}}
+    }
   }
   {boarder
     {door "%door"}
     {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+  }
+)
+
+; define board_animation
+; args = place begin end base
+(define "set-board-animation"
+  {boarder
+    {anm "%place"
+      {forward {begin "%begin"} {end "%end"} {base "%base"}}
+      {reverse {end "%begin" -1} {base "%base"}}
+    }
   }
 )
 
@@ -43,7 +73,19 @@
   {place "commander" {visor "none"}}
 }
 
-("set-crew" place(driver)    door(emit1) bone(driver)    animation(driver)    group(crew) off({sensor}))
-("set-crew" place(commander) door(emit2) bone(commander) animation(commander) group(crew) off())
-("set-crew" place(gunner)    door(emit3) bone(gunner)    animation(gunner)    group(crew) off({targetable 0}))
-("set-crew" place(charger)   door(emit4) bone(charger)   animation(charger)   group(crew) off())
+("set-inside-crew")
+("set-crew" place(gunner) door(emit1) door2(emit2) visor(main))
+("set-crew" place(driver) door(emit1) door2(emit2) visor(driver))
+
+("set-board-animation"
+  place(driver)
+  begin(board_opel_driver)
+  end(seat_opel_driver)
+  base(doorleft)
+)
+("set-board-animation"
+  place(commander)
+  begin(board_big-highcar)
+  end(seat_opel_commander)
+  base(doorright)
+)
