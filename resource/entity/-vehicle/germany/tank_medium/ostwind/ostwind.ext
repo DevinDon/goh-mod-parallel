@@ -1,0 +1,61 @@
+; armor notes
+; tracks and wheels 20mm
+; gun 20mm
+; 30mm plates were add to the hull, superstructure front.
+
+("tank_medium_tier2")
+
+("tracks" repair(30) thickness(20))
+("gun" repair(30) thickness(20))
+
+("ammo" args "ammo1")
+("ammo" args "ammo2")
+("ammo" args "ammo3")
+("ammo" args "ammo4")
+("ammo" args "ammo5")
+("fuel" args "fuel")
+("transmission" args "transmission")
+
+("shield_track" args "shield1" 20)
+("shield_track" args "shield2" 20)
+("shield" args "shield3" 20)
+("shield" args "shield4" 20)
+
+{component "shield1" {tags "cut_part"}}
+
+{volume "body1"      ; Hull
+  {thickness 30
+    {front 80}    ; 50mm base + 30mm plate
+    {top 20}    ; Glacis
+    {rear 10}
+    {bottom 10}
+  }
+}
+{volume "body2"      ; Superstructure
+  {thickness 30
+    {front 80}    ; 50mm base + 30mm plate
+    {top 12}
+    {rear 10}
+  }
+}
+{volume "engine1"
+  {thickness 30
+    {front 10}
+    {rear 20}
+    {bottom 10}
+  }
+}
+{volume "engine2"
+  {thickness 30
+    {front 10}
+    {top 10}
+    {rear 20}
+  }
+}
+{volume "turret1"  ;main
+  {thickness 25}
+  {able {holed}}
+}
+{volume "turret2"  ;ring
+  {thickness 25}
+}
