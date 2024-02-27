@@ -1,0 +1,99 @@
+import type { WeaponOptions } from '../options.mjs';
+
+const options: WeaponOptions = {
+
+  name: 'usa-90mm-t15e1',
+  description: '美国 90mm T15E1 坦克炮',
+
+  from: 'pattern gun',
+
+  fireSound: 'gun/gun_75_105',
+  fireSoundClose: 'gun/gun_interior/size3',
+  reloadSound: 'interior/large/big_reload_interior',
+  cursor: 'ironsights/tank2',
+
+  ammo: 'usa-90x1270',
+  amout: 1,
+  calibre: 90,
+  syncedProjectiles: true,
+
+  aimingTolerance: 1,
+  spreadTolerance: 0.5,
+
+  rechargeTime: 12.5,
+  recoveryTime: 1,
+
+  automatic: false,
+
+  bullets: {
+    apcbche: {
+      minRange: 0,
+      aimRange: 350,
+      maxRange: 350,
+      speed: 975,
+      gravity: 5,
+      projectile: {
+        nearest: 202,
+        farthest: 171,
+      },
+      damage: 300,
+      spreading: {
+        radiusTable: {
+          nearest: 0.39,
+          farthest: 2.59,
+          factor: 3.5,
+        },
+        burstRecoveryTime: 0.9,
+        burstAccuracy: 100,
+        spreadPower: 1.35,
+        spreadXYRatio: 0.75,
+      },
+      overmatch: 'usa-90mm-apcbc',
+    },
+    hvap: {
+      minRange: 0,
+      aimRange: 350,
+      maxRange: 350,
+      speed: 1143,
+      gravity: 5,
+      projectile: {
+        nearest: 258,
+        farthest: 185,
+      },
+      damage: 225,
+      spreading: {
+        radiusTable: {
+          nearest: 0.345,
+          farthest: 2.24,
+          factor: 3.5,
+        },
+        burstRecoveryTime: 0.9,
+        burstAccuracy: 100,
+        spreadPower: 1.35,
+        spreadXYRatio: 0.75,
+      },
+      overmatch: 'usa-90mm-hvap',
+    },
+    he: {
+      minRange: 0,
+      aimRange: 350,
+      maxRange: 350,
+      speed: 975,
+      gravity: 5,
+      spreading: {
+        radiusTable: {
+          nearest: 1.32,
+          farthest: 4.67,
+          factor: 4.0,
+        },
+        burstRecoveryTime: 0.9,
+        burstAccuracy: 100,
+        spreadPower: 1.00,
+        spreadXYRatio: 0.75,
+      },
+    },
+  },
+
+};
+
+export default options;
