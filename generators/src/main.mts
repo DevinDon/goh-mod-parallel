@@ -1,7 +1,7 @@
 import { logger } from '@pipers/logger';
-import { getAllWeaponOptions, saveGunWeaponsToFiles } from './utils/save-gun-weapons.mjs';
-import { resolve } from 'node:path';
 import { getExecDirPath } from '@pipers/toolbox/environment';
+import { resolve } from 'node:path';
+import { getAllWeaponOptions, saveGunWeaponsToFiles } from './utils/save-gun-weapons.mjs';
 
 logger.info('正在生成武器配置');
 
