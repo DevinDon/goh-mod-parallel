@@ -1,32 +1,49 @@
-{from "pattern gun" ; L/39
+; usa-75mm-m6
+; 美国 75mm M6 坦克炮
+{from "pattern gun"
 
   (include "/properties/standard/gun/define.ext")
 
-  {FireSound "gun/gun_75_105"}
-  {FireSoundclose "gun/gun_interior/size3"}
-  {ReloadSound "interior/large/medium_reload_interior"}
+  {FireSound "gun/gun_75_105"} ; 开火音效
+  {FireSoundclose "gun/gun_interior/size3"} ; 车内视角开火音效
+  {ReloadSound "interior/large/medium_reload_interior"} ; 装弹音效
+  {Cursor "ironsights/tank2"} ; 鼠标指针
 
   {Filling "ammo usa-75x350" 1} ; 弹种及弹链内炮弹数量
   {Calibre 75} ; 口径
+  {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
 
-  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
-  {SpreadTolerance 0.50} ; 瞄准到 50% 就可以开火
-  {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
+  {AimingTolerance 1} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
+  {SpreadTolerance 0.5} ; 瞄准到一定精度就可以开火
+  {ZeroingAccuracy 0.95 0.9 0.85 0.8 0.75} ; 归零精度？不确定
+  {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
+  {DisableRicochet 0} ; 是否禁用跳弹模式
+  ; 不启用曲射模式
 
   {RechargeTime 7} ; 装填时间（秒）
-  {RecoveryTime 3} ; 短射间隔（秒），适用于弹链
+  {RecoveryTime 1.000} ; 短射间隔（秒）, 适用于弹链
 
-  {Parameters "ap" ; AP 穿甲弹
-    {Range 300 300} ; 射程
+  ; 非自动武器
+
+  ; 无连发模式
+
+  {Parameters "ap"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 300} ; AI 最长射击距离 m
+    {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 619} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 109} {500 51} {1000 0}} ; 穿深
-    {MinimumDamageModifier 150} ; 伤害
+    {ProjectileDamageTable {100 109} {500 51} {1000 0}} ; 穿深表
+    {MinimumDamageModifier 135} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {500 2.0} {1000 4}} ; 散布
-      {SpreadXYRatio 0.4} ; 后坐力
+      {RadiusTable {0 0} {10 0.37} {500 2.73} {1000 9.55}} ; 散布
+      {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.35} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
     }
-    {OvermatchCalibre ; 倾斜入射修正
+    {OvermatchCalibre
       {0  1.0000 0.0000}
       {10 1.0440 0.0060}
       {20 1.2030 0.0090}
@@ -42,82 +59,113 @@
       {85 20.200 0.2000}
       {90 99.000 0.0000}
     }
+    ; 无防空炮配置
   }
 
-  {Parameters "apcbc" ; APCBC 被帽风帽穿甲弹
-    {Range 300 300} ; 射程
+  {Parameters "apcbc"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 300} ; AI 最长射击距离 m
+    {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 619} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 88} {500 59} {1000 0}} ; 穿深
-    {MinimumDamageModifier 150} ; 伤害
+    {ProjectileDamageTable {100 88} {500 59} {1000 0}} ; 穿深表
+    {MinimumDamageModifier 135} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {500 1.5} {1000 3}} ; 散布
-      {SpreadXYRatio 0.4} ; 后坐力
+      {RadiusTable {0 0} {10 0.33} {500 2.43} {1000 8.51}} ; 散布
+      {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.35} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
     }
-    {OvermatchCalibre ; 倾斜入射修正
+    {OvermatchCalibre
       {0  1.0000 0.0000}
-      {10 1.0300 0.0000}
-      {20 1.1255 0.0180}
-      {30 1.2720 0.0650}
-      {45 1.8550 0.1890}
-      {50 2.0640 0.2400}
-      {55 2.5870 0.2500}
-      {60 3.1820 0.2400}
-      {65 4.0220 0.3400}
-      {70 6.2550 0.5380}
-      {75 11.160 0.7700}
-      {80 22.880 0.7700}
-      {85 77.850 0.7690}
+      {20 1.1590 -0.120}
+      {30 1.3740 -0.222}
+      {40 1.5960 -0.254}
+      {45 1.9100 -0.200}
+      {50 2.4850 0.1110}
+      {55 3.1720 0.3180}
+      {60 3.8750 0.3760}
+      {65 9.7500 1.2500}
+      {70 9.9600 1.1100}
+      {75 20.300 1.2100}
+      {80 49.000 1.2000}
+      {85 232.50 1.2150}
       {90 99.000 0.0000}
     }
+    ; 无防空炮配置
   }
 
-  {Parameters "apcbche" ; APCBCHE 被帽风帽穿甲榴弹
-    {Range 300 300} ; 射程
+  {Parameters "apcbche"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 300} ; AI 最长射击距离 m
+    {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 619} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 88} {500 59} {1000 0}} ; 穿深
-    {MinimumDamageModifier 200} ; 伤害
+    {ProjectileDamageTable {100 88} {500 59} {1000 0}} ; 穿深表
+    {MinimumDamageModifier 135} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {500 1.5} {1000 3}} ; 散布
-      {SpreadXYRatio 0.4} ; 后坐力
+      {RadiusTable {0 0} {10 0.33} {500 2.43} {1000 8.51}} ; 散布
+      {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.35} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
     }
-    {OvermatchCalibre ; 倾斜入射修正
+    {OvermatchCalibre
       {0  1.0000 0.0000}
-      {10 1.0300 0.0000}
-      {20 1.1255 0.0180}
-      {30 1.2720 0.0650}
-      {45 1.8550 0.1890}
-      {50 2.0640 0.2400}
-      {55 2.5870 0.2500}
-      {60 3.1820 0.2400}
-      {65 4.0220 0.3400}
-      {70 6.2550 0.5380}
-      {75 11.160 0.7700}
-      {80 22.880 0.7700}
-      {85 77.850 0.7690}
+      {20 1.1590 -0.120}
+      {30 1.3740 -0.222}
+      {40 1.5960 -0.254}
+      {45 1.9100 -0.200}
+      {50 2.4850 0.1110}
+      {55 3.1720 0.3180}
+      {60 3.8750 0.3760}
+      {65 9.7500 1.2500}
+      {70 9.9600 1.1100}
+      {75 20.300 1.2100}
+      {80 49.000 1.2000}
+      {85 232.50 1.2150}
       {90 99.000 0.0000}
     }
+    ; 无防空炮配置
   }
 
-  {Parameters "he" ; HE 高爆弹
-    {Range 300 300} ; 射程
+  {Parameters "he"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 300} ; AI 最长射击距离 m
+    {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 603} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
+    ; 无穿深表配置
+    ; 无穿透伤害配置
     {Spreading
-      {RadiusTable {0 0.0} {500 3.0} {1000 6}} ; 散布
-      {SpreadXYRatio 0.4} ; 后坐力
+      {RadiusTable {0 0} {10 1.5} {500 4.67} {1000 18.68}} ; 散布
+      {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
     }
+    ; 无穿深修正表配置
+    ; 无防空炮配置
   }
 
-  {Parameters "wp" ; WP 白磷烟雾弹
-    {Range 300 300} ; 射程
+  {Parameters "sm"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 350} ; AI 最长射击距离 m
+    {MaxRange 350} ; 玩家最长射击距离 m
     {Speed 603} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
+    ; 无穿深表配置
+    ; 无穿透伤害配置
     {Spreading
-      {RadiusTable {0 0.0} {500 3.0} {1000 6}} ; 散布
-      {SpreadXYRatio 0.4} ; 后坐力
+      {RadiusTable {0 0} {10 1.5} {500 4.67} {1000 18.68}} ; 散布
+      {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
     }
+    ; 无穿深修正表配置
+    ; 无防空炮配置
   }
 
 }

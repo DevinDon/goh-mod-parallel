@@ -1,35 +1,50 @@
+; ger-600mm-karl-l8
+; 德国 60cm L/8 卡尔臼炮
 {from "pattern gun"
 
   (include "/properties/standard/gun/define.ext")
 
-  {FireSound "gun/gun_203_210"}
-  {FireSoundclose "gun/gun_203_210"}
-  {ReloadSound "tank/reload_howitzer"}
+  {FireSound "gun/gun_203_210"} ; 开火音效
+  {FireSoundclose "gun/gun_203_210"} ; 车内视角开火音效
+  {ReloadSound "tank/reload_howitzer"} ; 装弹音效
+  {Cursor "ironsights/tank2"} ; 鼠标指针
 
   {Filling "ammo ger-600l8" 1} ; 弹种及弹链内炮弹数量
   {Calibre 600} ; 口径
+  {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
 
-  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
-  {SpreadTolerance 0.75} ; 瞄准到 75% 就可以开火
-  {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
-  {DisableRicochet} ; 禁用跳弹
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
+  {AimingTolerance 1} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
+  {SpreadTolerance 0.75} ; 瞄准到一定精度就可以开火
+  {ZeroingAccuracy 0.95 0.9 0.85 0.8 0.75} ; 归零精度？不确定
+  {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
+  {DisableRicochet 0} ; 是否禁用跳弹模式
   {Aimtype curved} ; 曲射模式
 
-  {RechargeTime 120} ; 装填时间（秒）
-  {RecoveryTime 1} ; 短射间隔（秒），适用于弹链
+  {RechargeTime 180} ; 装填时间（秒）
+  {RecoveryTime 1.000} ; 短射间隔（秒）, 适用于弹链
 
-  {Automatic} ; 自动武器
+  ; 非自动武器
 
-  {Parameters "he" ; HE 高爆弹
-    {MinRange 100} ; 最小射程
-    {AimRange 750} ; 不确定
-    {MaxRange 750} ; 最大射程
+  ; 无连发模式
+
+  {Parameters "he"
+    {MinRange 100} ; 最短射击距离 m
+    {AimRange 750} ; AI 最长射击距离 m
+    {MaxRange 750} ; 玩家最长射击距离 m
     {Speed 176} ; 炮弹速度
     {Gravity 9} ; 炮弹重力
+    ; 无穿深表配置
+    ; 无穿透伤害配置
     {Spreading
-      {RadiusTable {0 0.0} {500 50} {1000 150}} ; 散布
-      {SpreadXYRatio 9.5} ; 后坐力
+      {RadiusTable {0 0} {10 16} {500 60} {1000 240.00}} ; 散布
+      {BurstRecoveryTime 6} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.66} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     1} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
     }
+    ; 无穿深修正表配置
+    ; 无防空炮配置
   }
 
 }

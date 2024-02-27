@@ -1,66 +1,87 @@
+; ger-30mm-mk103-l38
+; 德国 3cm MK 103 L/38 防空炮，适用于蟋蟀 M 型
 {from "pattern gun"
 
   (include "/properties/standard/gun/define.ext")
 
-  {FireSound "gun/gun_auto_tank"}
-  {FireSoundclose "gun/gun_auto_tank"}
-  {ReloadSound "interior/reload_small"}
-  {Cursor "ironsights/aa"}
+  {FireSound "gun/gun_auto_tank"} ; 开火音效
+  {FireSoundclose "gun/gun_auto_tank"} ; 车内视角开火音效
+  {ReloadSound "interior/reload_small"} ; 装弹音效
+  {Cursor "ironsights/aa"} ; 鼠标指针
 
   {Filling "ammo ger-30l38" 80} ; 弹种及弹链内炮弹数量
   {Calibre 30} ; 口径
+  {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
 
-  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
-  {SpreadTolerance 0.10} ; 瞄准到 10% 就可以开火
-  {ZeroingAccuracy 0.95 0.90 0.85 0.80 0.75} ; 归零精度？不确定
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
+  {AimingTolerance 8} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
+  {SpreadTolerance 0.1} ; 瞄准到一定精度就可以开火
+  {ZeroingAccuracy 0.95 0.9 0.85 0.8 0.75} ; 归零精度？不确定
+  {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
+  {DisableRicochet 0} ; 是否禁用跳弹模式
+  ; 不启用曲射模式
 
-  {RechargeTime 10} ; 装填时间（秒）
-  {RecoveryTime 0.15} ; 短射间隔（秒），适用于弹链
+  {RechargeTime 9} ; 装填时间（秒）
+  {RecoveryTime 0.158} ; 短射间隔（秒）, 适用于弹链
 
   {Automatic} ; 自动武器
 
   {Burst
-    {Short 3 0.75}  ; short burst shots on long distance, rand (+-) shots
-    {Long  5 1}     ; long burst shots on short distance, rand (+-) shots
-    {RangeKoef 0.5} ; rangeKoef * aimRange = max long burst distance
+    {Short 5 1} ; 远距离短连发，基数 +- 随机数
+    {Long  3 1} ; 近距离长连发，基数 +- 随机数
+    {RangeKoef 0.45} ; 该系数乘以 AimRange = 分界距离，大于分界距离为远距离，小于分界距离为近距离
   }
 
-  {Parameters "apcr" ; APCR 硬芯穿甲弹
-    {Range 350 350} ; 射程
+  {Parameters "apcr"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 350} ; AI 最长射击距离 m
+    {MaxRange 350} ; 玩家最长射击距离 m
     {Speed 960} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {0 111} {500 12} {1000 0}} ; 穿深
+    {ProjectileDamageTable {100 111} {500 12} {1000 0}} ; 穿深表
     {MinimumDamageModifier 30} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {500 1.5} {1000 4.0}} ; 散布
-      {SpreadXYRatio 0.4} ; 后坐力
+      {RadiusTable {0 0} {10 0.4} {500 2.1} {1000 6.30}} ; 散布
+      {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
     }
-    {OvermatchCalibre ; 倾斜入射修正
-      {0  1.0000  0.0000}
-      {20 1.2420 -0.0980}
-      {30 1.4760 -0.1060}
-      {40 1.9050 -0.0420}
-      {50 2.6690 -0.1020}
-      {55 3.2450 -0.1580}
-      {60 3.8570 -0.2070}
-      {65 4.4580 -0.2060}
-      {70 5.3260 -0.2050}
-      {75 6.7000 -0.2040}
-      {80 9.3250 -0.1980}
-      {85 16.630 -0.1870}
-      {90 99.000  0.0000}
+    {OvermatchCalibre
+      {0  1.0000 0.0000}
+      {20 1.2420 -0.098}
+      {30 1.4760 -0.106}
+      {40 1.9050 -0.042}
+      {50 2.6690 -0.102}
+      {55 3.2450 -0.158}
+      {60 3.8570 -0.207}
+      {65 4.4580 -0.206}
+      {70 5.3260 -0.205}
+      {75 6.7000 -0.204}
+      {80 9.3250 -0.198}
+      {85 16.630 -0.187}
+      {90 99.000 0.0000}
     }
+    ; 无防空炮配置
   }
 
-  {Parameters "he" ; HE 高爆弹
-    {Range 350 350} ; 射程
+  {Parameters "he"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 350} ; AI 最长射击距离 m
+    {MaxRange 350} ; 玩家最长射击距离 m
     {Speed 860} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
+    ; 无穿深表配置
+    ; 无穿透伤害配置
     {Spreading
-      {RadiusTable {0 0.0} {500 3.0} {1000 6}} ; 散布
-      {SpreadXYRatio 0.2} ; 后坐力
+      {RadiusTable {0 0} {10 0.4} {500 3} {1000 12.00}} ; 散布
+      {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
     }
-    {FalloffStrength 0} ; 衰减强度？不确定
+    ; 无穿深修正表配置
+    {FalloffStrength 0} ; 防空炮配置
   }
 
 }
