@@ -1,7 +1,7 @@
 import type { OvermatchTables } from './type.mjs';
 
 export const ger30mmOvermatchTables: OvermatchTables = {
-  'ger-30mm-ap': {
+  'ger-30mm-apcr': {
     type: 'OvermatchCalibre',
     lines: [
       [ 0, 1.0000, 0.0000 ],
