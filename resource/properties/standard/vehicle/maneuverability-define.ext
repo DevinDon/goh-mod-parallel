@@ -51,7 +51,7 @@
 )
 
 ; args = volume power
-(define "set-fuel-tank"
+(define "set-fuel-bag"
   {FuelBag
     {volume                           %volume} ; Fuel capacity in Litres.
     {rate   (* (/ %power 100) (/ %power 100))} ; = power / mass(t). Fuel cunsumption rate. Based on off-road range of vehicle.
