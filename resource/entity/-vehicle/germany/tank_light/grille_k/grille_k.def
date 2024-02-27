@@ -1,25 +1,20 @@
 {game_entity
-  (include "/properties/tank_assaultgun.ext")
+
+  (include "/properties/standard/vehicle/tank-assaultgun-config.ext")
   (include "/properties/selection/vehicle_elongated.inc" scale(1.1))
-  {props "spg" "light" "-turret" "mantlet" "multi_board"  "vision_lev04" "muzzle_150mm_155mm" "shield" "open_top" "detect_spg" "artillery_minimap_heavy"}
-  {extension "grille_k.mdl"}
-  (include "grille_k.ext")
-  {targetclass "tank_medium"}
-  {targetSelector "tank_medium"}
-  {patherId "panzer38"}
-  {collider "tank.light"}
 
-  {extender "enumerator"
-    {digit_folder "ger"}
-  }
+  {Extension "grille_k.mdl"}
+  (include   "grille_k.ext")
+  (include   "crew-and-seat.ext")
 
-  {sensor
-    {visor "around"
-      {vision "vehicle_around"}    ;// better vision than a in-closed turret
-    }
-  }
+  {Props "spg" "light" "-turret" "mantlet" "multi_board"  "vision_lev04" "muzzle_150mm_155mm" "shield" "open_top" "detect_spg" "artillery_minimap_heavy"}
 
-  {boarder
+  {PatherId "panzer38"}
+  {Targetclass "tank_medium"}
+  {TargetSelector "tank_medium"}
+  {Collider "tank.light"}
+
+  {Boarder
     {anm "driver"
       {forward {begin "board_t26_driver"} {end "pose_t26_driver"} {base "open_driver"}}
       {reverse {end "board_t26_driver" -1} {base "open_driver" -1}}
@@ -34,59 +29,64 @@
     }
   }
 
-  ("crew_driver" door(emit0) door2(emit1) door3(emit2))
-  ("crew_human_visible_anm"  place(gunner)   door(emit2) door2(emit2) visor(main)  anm_left(right)  anm_right(right))
-  ("crew_human_visible_anm"  place(charger)   door(emit1) door2(emit1) visor(main)  anm_left(left)  anm_right(left))
-  ("crew_human_visible_anm"  place(commander) door(emit1) door2(emit1) visor(around)  anm_left(left)  anm_right(left))
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
 
-  {extender "shield" {on}}
+  {Sensor
+    {Visor "around"
+      {Vision "standard-vision-around"}
+    }
+  }
 
-  {extender "inventory"
-    {box
-      {item "bulletger_150_l11 he" 14}
-      {item "geballteladung_3kg" 1}
+  {Extender "shield" {on}}
+
+  {Extender "inventory"
+    {Box
+      {Size 10 7}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-150l11 heat" 2}
+      {Item "ammo ger-150l11 he"   9}
     }
   }
 
   {Weaponry
-    ("restore_ik_time")
+    {RestoreIKTime 5}
     {place "gun"
       {RestoreIKAfterAim}
-      {weapon "150mm_sig33_2" filling "bulletger_150_l11 he" 1}
-      {gunner "gunner"}
-      {charger "charger"}
-      ("abm_dymamic"
-        zeroing(4.5)
-        dispersion(0.25)
-      )
+      {Weapon "weapon ger-150mm-sig33-l11" filling "ammo ger-150l11 he" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.00} ; s
+      }
     }
   }
 
-  {mass 11500}
-  {Chassis
-    ("tank_trace" fx("tracks_sm2") step(0.2) len(0.55))
-    ("mobility_tank"
-      speed(47) ;----------Max speed when fully accelerated on road, km/h.
-      reverse(8) ;---------Max speed in reverse on road, km/h.
-      traverse(30) ;-------Track traverse, per second, in degrees.
-      weight(11.5) ;-------Weight in Tonnes.
-      power(150) ;---------Engine Power, in hp.
-      track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-      fuel(218) ;----------Fuel capacity in Litres.
-      type(fuel) ;---------Fuel type. (diesel OR fuel)
-      range(140) ;---------Range in km, off-road.
-    )
+  {Mass 11500}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_sm2") step(0.2) length(0.55) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(47) power(150) mass(11000) performance(1.38))
+    ("set-fuel-tank" volume(218) power(150))
   }
 
-  {bone "foresight1"
+  {Bone "foresight1"
     {limits -5 5}
     {speed2 4}
   }
-  {bone "gun_rot"
+  {Bone "gun_rot"
     {limits -3 72}
     {speed2 10}
   }
-  {bone "basis"
+  {Bone "basis"
     {speed2 2}
   }
+
 }

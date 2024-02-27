@@ -14,16 +14,6 @@
   {TargetSelector "tank_zenite"}
   {Collider "tank.light"}
 
-  {Extender "enumerator"
-    {digit_folder "ger"}
-  }
-
-  {Sensor
-    {Visor "around"
-      {Vision "standard-vision-around"}
-    }
-  }
-
   {Boarder
     {anm "driver"
       {forward {begin "board_t34_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
@@ -36,6 +26,16 @@
     {anm "right"
       {forward {begin "board_tank_right"} {end "pose_flak30_gunner" 10}}
       {reverse {end "emit_tank_2_hold"}}
+    }
+  }
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
+
+  {Sensor
+    {Visor "around"
+      {Vision "standard-vision-around"}
     }
   }
 
