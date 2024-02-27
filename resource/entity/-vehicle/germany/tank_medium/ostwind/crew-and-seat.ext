@@ -1,5 +1,36 @@
 ; crew and seat
 
+{Boarder
+  {anm "driver"
+    {forward {begin "board_pz4_driver"} {end "seat_commander_hatch"} {base "open_driver"}}
+    {reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
+  }
+  {anm "charger"
+    {forward {begin "board_tank_left"} {end "seat_ostwind_charger"}}
+    {reverse {end "emit_tank_1_hold"}}
+  }
+  {anm "gunner"
+    {forward {begin "board_tank_right"} {end "seat_ostwind_gunner"}}
+    {reverse {end "emit_tank_1_hold"}}
+  }
+  {anm "commander"
+    {forward {begin "board_tank_right"} {end "seat_ostwind_commander"}}
+    {reverse {end "emit_tank_1_hold"}}
+  }
+  {anm "armor"
+    {forward {begin "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+    {reverse {end "emit_tank_1"}}
+  }
+  {anm "armor1"
+    {forward {begin "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+    {reverse {end "emit_tank_1"}}
+  }
+  {anm "armor2"
+    {forward {begin "board_lowArmor"} {end "seat_crew_cannon1"}}
+    {reverse {end "emit_tank_1"}}
+  }
+}
+
 ; define crew_inside
 ; no args
 (define "set-inside-crew"
@@ -48,22 +79,16 @@
   }
 )
 
-; define crew_open
-; args = place bone visorbone door door2 animationLeft animationRight group
-(define "set-open-crew"
-  {sensor
-    {visor "top"
-      {vision "standard-vision-wide"}
-      {bone "%visorbone"}
-    }
-  }
+; define crew_human_visible_anm
+; args = place door door2 visor animationLeft animationRight
+(define "set-crew-visible"
   {placer
     {place "%place"
-      {group "%group"}
-      {linkbone "%bone"}
-      {visor "top"}
+      {group "crew"}
+      {visor "%visor"}
+      {linkbone "%place"}
+      {turnoff {sensor}}
       ;{openForCrush}
-      {sealable}
     }
   }
   {boarder
@@ -87,19 +112,16 @@
 )
 
 ; apply settings
-; gunner_visible
-("set-open-crew" place(commander) bone(gunner2) visorbone(mgun_rot) door(emit1) door2(emit2) animationLeft(left) animationRight(right) group(crew))
-
-; crew_5_human_extended
 ("set-inside-crew")
 ("set-driver-crew" door(emit0)      door2(emit1) door3(emit2))
-("set-crew"        place(gunner)    door(emit1)  door2(emit2) visor(main))
-("set-crew"        place(charger)   door(emit1)  door2(emit2) visor(none))
 ("set-crew"        place(gunner3)   door(emit1)  door2(emit2) visor(driver))
-("set-crew"        place(commander) door(emit1)  door2(emit2) visor(around))
+
+("set-crew-visible" place(commander) door(emit2) visor(around) animationLeft(commander) animationRight(commander))
+("set-crew-visible" place(gunner)    door(emit1) visor(main)   animationLeft(gunner)    animationRight(gunner))
+("set-crew-visible" place(charger)   door(emit2) visor(around) animationLeft(charger)   animationRight(charger))
 
 ; seat
 ("set-seat" place(seat1) bone(seat01) door(emit3) animation(armor))
 ("set-seat" place(seat2) bone(seat02) door(emit4) animation(armor))
 ("set-seat" place(seat3) bone(seat03) door(emit5) animation(armor1))
-("set-seat" place(seat4) bone(seat04) door(emit6) animation(armor))
+("set-seat" place(seat4) bone(seat04) door(emit6) animation(armor2))

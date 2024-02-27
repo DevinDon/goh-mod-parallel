@@ -3,23 +3,34 @@
 ; gun 20mm
 ; 30mm plates were add to the hull, superstructure front.
 
-("tank_medium_tier2")
 
-("tracks" repair(30) thickness(20))
-("gun" repair(30) thickness(20))
 
-("ammo" args "ammo1")
-("ammo" args "ammo2")
-("ammo" args "ammo3")
-("ammo" args "ammo4")
-("ammo" args "ammo5")
-("fuel" args "fuel")
-("transmission" args "transmission")
 
-("shield_track" args "shield1" 20)
-("shield_track" args "shield2" 20)
-("shield" args "shield3" 20)
-("shield" args "shield4" 20)
+
+("set-basic-durability" body(440) engine(300) turret(400) mantlet(200) gun(300) track(300) ammo(300))
+("set-basic-armor"      ammo(20))
+
+("set-turret"               repair(20))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(20) repair(20))
+
+("set-body"                 repair(25))
+("set-engine"               repair(20))
+("set-tracks" thickness(20) repair(15))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("ammo4") type("ammo") repair(3))
+("set-internal-components" name("ammo5") type("ammo") repair(3))
+("set-internal-components" name("fuel")  type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+("set-shield" name("shield3") thickness(20))
+("set-shield" name("shield4") thickness(20))
+
+("set-shield-track" name("shield1") thickness(20))
+("set-shield-track" name("shield2") thickness(20))
 
 {component "shield1" {tags "cut_part"}}
 

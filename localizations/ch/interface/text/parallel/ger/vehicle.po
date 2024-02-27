@@ -139,3 +139,11 @@ msgstr  "\"突击虎\" 虎式突击坦克"
 msgctxt "desc/entity/grille_m"
 msgid   "Grille Ausf.M mit 3cm MK 103"
 msgstr  "\"蟋蟀\" M 型 加装 3cm MK 103"
+
+msgctxt "desc/entity/ostwind"
+msgid   "FlaKPz.IV Ostwind"
+msgstr  "\"东风\" 四号自行防空炮"
+
+msgctxt "desc/entity/wirbelwind"
+msgid   "FlakPz.IV Wirbelwind"
+msgstr  "\"旋风\" 四号自行防空炮"
