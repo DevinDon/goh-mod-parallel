@@ -3,36 +3,36 @@ import type { WeaponOptions } from '../options.mjs';
 const options: WeaponOptions = {
 
   name: 'ger-20mm-flak30-l65',
-  description: '德国 2cm FlaK 30 L/65 防空炮，适用于欧宝闪电',
+  description: '德国 2cm KwK 30 L/55 坦克炮，适用于 Sd.kfz 231',
 
   from: 'pattern gun',
 
-  fireSound: 'gun/gun_auto',
-  fireSoundClose: 'gun/gun_auto',
-  reloadSound: 'tank/reload_small',
+  fireSound: 'gun/gun_auto_tank',
+  fireSoundClose: 'gun/gun_interior/size1',
+  reloadSound: 'interior/large/small_reload_interior',
   cursor: 'ironsights/aa',
 
   ammo: 'ger-20l55',
-  amout: 20,
+  amout: 10,
   calibre: 20,
   syncedProjectiles: false,
 
-  aimingTolerance: 12,
-  spreadTolerance: 0.1,
+  aimingTolerance: 1,
+  spreadTolerance: 0.25,
 
-  rechargeTime: 2,
-  recoveryTime: 60 / 280,
+  rechargeTime: 3,
+  recoveryTime: 60 / 220,
 
   automatic: true,
 
   burst: {
     short: {
-      standard: 10,
+      standard: 2,
       random: 1,
     },
     long: {
-      standard: 20,
-      random: 2,
+      standard: 5,
+      random: 1,
     },
     rangeKoef: 0.45,
   },
@@ -101,9 +101,8 @@ const options: WeaponOptions = {
         burstRecoveryTime: 0.1,
         burstAccuracy: 100,
         spreadPower: 1.00,
-        spreadXYRatio: 1.25,
+        spreadXYRatio: 0.75,
       },
-      falloffStrength: 0,
     },
   },
 

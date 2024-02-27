@@ -18,7 +18,7 @@ export const generateWeapon = (options: WeaponOptions) => {
       name => {
         const bullet = options.bullets[name];
         const projectileDamageTable = bullet.projectile
-          ? `{ProjectileDamageTable {100 ${bullet.projectile.nearest}} {500 ${bullet.projectile.farthest}} {1000 0}} ; 穿深表`
+          ? `{ProjectileDamageTable {100 ${bullet.projectile.nearest}} {500 ${bullet.projectile.farthest}} {1000 ${name === 'heat' ? bullet.projectile.nearest : 0}}} ; 穿深表`
           : '';
         return `{Parameters "${name}"
     {MinRange ${bullet.minRange}} ; 最短射击距离 m
@@ -58,7 +58,7 @@ export const generateWeapon = (options: WeaponOptions) => {
 
   {UnlimitedRangeTPC ${(options.unlimitedRangeTPC ?? true) === true ? 1 : 0}} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance ${options.aimingTolerance ?? 1}} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
-  {SpreadTolerance ${((options.spreadTolerance ?? 0.75) * 100).toFixed(0)}%} ; 瞄准到一定精度就可以开火
+  {SpreadTolerance ${((options.spreadTolerance ?? 0.5) * 100).toFixed(0)}%} ; 瞄准到一定精度就可以开火
   {ZeroingAccuracy ${(options.zeroingAccuracy ?? [ 0.95, 0.90, 0.85, 0.80, 0.75 ]).join(' ')}} ; 归零精度？不确定
   {LockFireDistanceTime ${options.lockFireDistanceTime ?? 3}} ; 超出射击距离后允许继续开火的时间
   {DisableRicochet ${(options.disableRicochet ?? false) === true ? 1 : 0}} ; 是否禁用跳弹模式

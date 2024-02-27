@@ -2,8 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  name: 'ger-20mm-flak30-l65',
-  description: '德国 2cm FlaK 30 L/65 防空炮，适用于欧宝闪电',
+  name: 'ger-20mm-flak38-l112-x4',
+  description: '德国 2cm FlaK 30 L/112 四联防空炮，适用于旋风自行防空炮',
 
   from: 'pattern gun',
 
@@ -13,26 +13,26 @@ const options: WeaponOptions = {
   cursor: 'ironsights/aa',
 
   ammo: 'ger-20l55',
-  amout: 20,
+  amout: 80,
   calibre: 20,
   syncedProjectiles: false,
 
   aimingTolerance: 12,
   spreadTolerance: 0.1,
 
-  rechargeTime: 2,
-  recoveryTime: 60 / 280,
+  rechargeTime: 8,
+  recoveryTime: 60 / 1680,
 
   automatic: true,
 
   burst: {
     short: {
-      standard: 10,
-      random: 1,
-    },
-    long: {
       standard: 20,
       random: 2,
+    },
+    long: {
+      standard: 40,
+      random: 4,
     },
     rangeKoef: 0.45,
   },
