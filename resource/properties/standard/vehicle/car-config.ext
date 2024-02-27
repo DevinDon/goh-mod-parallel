@@ -1,0 +1,46 @@
+; standard car config
+
+actor
+
+(include "vehicle-config.ext")
+
+{brain "vehicle"
+  {state "vehicle"}
+  {const "crush/min_danger_zone_time" 1}
+  {const "crush/min_danger_zone_length" 1}
+}
+
+{hearingBias 4.5} ; in meters
+{collider "car"}
+{props "car" "engine" "wheeled" "turn_over"}
+{targetClass "car"}
+{targetSelector "car_bullet"}
+
+{able "talk"}
+
+{extender "talk"
+  {talker "cannon"}
+}
+
+{placer
+  {place "driver"
+    {visor "main"}
+    {UseVision 0}
+  }
+}
+
+{sensor
+  {visor "main"
+    {vision "standard-vision-medium"}
+    {bone "visor2"}
+  }
+  {visor "around"
+    {vision "standard-vision-around"}
+    {bone "visor1"}
+  }
+  {visor "none"
+    {vision "none"}
+  }
+}
+
+{perks {blastwave_modifier 9.0}}

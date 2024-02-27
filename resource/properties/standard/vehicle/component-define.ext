@@ -1,5 +1,6 @@
 ; standard component define
 
+; define general_durability
 ; args = body engine turret mantlet gun track ammo
 (define "set-basic-durability"
   {perks
@@ -570,5 +571,170 @@
   {volume %name
     {thickness %thickness}
     {tags "gun_shield"}
+  }
+)
+
+; define glass
+; args = name
+(define "set-glass"
+  {volume %name
+    {thickness 0.1}
+    {material "glass"}
+    {tags "glass"}
+    {component %name}
+    {able {visible 0}{obstacle 0}{window}}
+  }
+  {component %name
+    {tags "glass"}
+    {RepairOrder 13}
+  }
+)
+
+; define wheel
+; args = name
+(define "set-wheel"
+  {volume %name
+    {thickness 0.5}
+    {tags "wheel"}
+    {component %name}
+    {able {NoWoundDecal}}
+  }
+  {component %name
+    {RepairTime 10}
+    {tags "wheel"}
+    {RepairOrder 10}
+  }
+)
+
+; define bodyback
+; args = repair
+(define "set-bodyback"
+  ("make_component" args "bodyback" "bodyback")
+  ("make_component" args "bodyback1" "bodyback")
+  ("make_component" args "bodyback2" "bodyback")
+  ("make_component" args "bodyback3" "bodyback")
+  ("make_component" args "bodyback4" "bodyback")
+  ("make_component" args "bodyback5" "bodyback")
+  ("make_component" args "bodyback6" "bodyback")
+  ("make_component" args "bodyback7" "bodyback")
+  ("make_component" args "bodyback8" "bodyback")
+  ("make_component" args "bodyback9" "bodyback")
+  ("make_component" args "bodyback10" "bodyback")
+  ("make_component" args "bodyback11" "bodyback")
+  ("make_component" args "bodyback12" "bodyback")
+  ("make_component" args "bodyback13" "bodyback")
+  ("make_component" args "bodyback14" "bodyback")
+  ("make_component" args "bodyback15" "bodyback")
+
+  {component "bodyback"
+    {RepairTime %repair} ;30
+    {RepairOrder 6}
+  }
+)
+
+; define wood
+; args = name
+(define "set-wood"
+  {volume %name {material "wood"} {tags "wood"}}
+)
+
+; define car_thickness
+; args = body engine
+(define "set-car-thickness"
+  {volume "body"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body1"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body2"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body3"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body4"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body5"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body6"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body7"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body8"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body9"      ; Main Body
+    {thickness %body}
+  }
+  {volume "bodyback1"    ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback2"    ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback3"    ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback4"    ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback5"    ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback6"    ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback7"    ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback8"    ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback9"    ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback10"  ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback11"  ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback12"  ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback13"  ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback14"  ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback15"  ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback16"  ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback17"  ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback18"  ; Truck Bed
+    {thickness %body}
+  }
+  {volume "bodyback19"  ; Truck Bed
+    {thickness %body}
+  }
+  {volume "engine"    ; Engine
+    {thickness %engine}
+  }
+  {volume "engine1"    ; Engine
+    {thickness %engine}
+  }
+  {volume "engine2"    ; Engine
+    {thickness %engine}
   }
 )
