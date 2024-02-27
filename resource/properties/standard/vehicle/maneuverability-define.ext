@@ -54,7 +54,7 @@
 (define "set-fuel-bag"
   {FuelBag
     {volume                           %volume} ; Fuel capacity in Litres.
-    {rate   (* (/ %power 100) (/ %power 100))} ; = power / mass(t). Fuel cunsumption rate. Based on off-road range of vehicle.
+    {rate                       (/ %power 21)} ; 消耗速率等于 100 时，大约消耗燃料 2 升每秒，能运转 50 秒左右
     {remain                           %volume} ; Amount of fuel in vehicle when spawned.
     {fuel                              "fuel"} ; Type of fuel used. "fuel" = petrol/gasoline. "diesel" = diesel.
   }
