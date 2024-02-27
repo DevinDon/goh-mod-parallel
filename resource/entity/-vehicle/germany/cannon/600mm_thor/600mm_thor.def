@@ -220,7 +220,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo ger-600l8 he" 2}
+      {Item "ammo ger-600l8 he" 1}
     }
   }
 
