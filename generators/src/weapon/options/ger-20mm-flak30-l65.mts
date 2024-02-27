@@ -1,0 +1,111 @@
+import type { WeaponOptions } from '../options.mjs';
+
+const options: WeaponOptions = {
+  name: 'ger-20mm-flak30-l65',
+  description: '德国 2cm FlaK 30 L/65 防空炮，适用于欧宝闪电',
+
+  from: 'pattern gun',
+
+  fireSound: 'gun/gun_auto',
+  fireSoundClose: 'gun/gun_auto',
+  reloadSound: 'tank/reload_small',
+  cursor: 'ironsights/aa',
+
+  ammo: 'ger-20l55',
+  amout: 20,
+  calibre: 20,
+  syncedProjectiles: false,
+
+  aimingTolerance: 12,
+  spreadTolerance: 0.1,
+
+  rechargeTime: 2,
+  recoveryTime: 60 / 280,
+
+  automatic: true,
+
+  burst: {
+    short: {
+      standard: 10,
+      random: 1,
+    },
+    long: {
+      standard: 20,
+      random: 2,
+    },
+    rangeKoef: 0.85,
+  },
+
+  bullets: {
+    ap: {
+      minRange: 0,
+      aimRange: 350,
+      maxRange: 350,
+      speed: 760,
+      gravity: 5,
+      projectile: {
+        nearest: 45,
+        farthest: 11,
+      },
+      damage: 30,
+      spreading: {
+        radiusTable: {
+          nearest: 0.3,
+          farthest: 1.7,
+          factor: 3.5,
+        },
+        burstRecoveryTime: 0.1,
+        burstAccuracy: 100,
+        spreadPower: 1.25,
+        spreadXYRatio: 0.75,
+      },
+      overmatch: 'ger-20mm-ap',
+    },
+    apcr: {
+      minRange: 0,
+      aimRange: 350,
+      maxRange: 350,
+      speed: 1050,
+      gravity: 5,
+      projectile: {
+        nearest: 63,
+        farthest: 1,
+      },
+      damage: 20,
+      spreading: {
+        radiusTable: {
+          nearest: 0.2,
+          farthest: 1.5,
+          factor: 3.0,
+        },
+        burstRecoveryTime: 0.1,
+        burstAccuracy: 100,
+        spreadPower: 1.25,
+        spreadXYRatio: 0.75,
+      },
+      overmatch: 'ger-20mm-apcr',
+    },
+    he: {
+      minRange: 0,
+      aimRange: 350,
+      maxRange: 350,
+      speed: 900,
+      gravity: 5,
+      spreading: {
+        radiusTable: {
+          nearest: 0.4,
+          farthest: 2.5,
+          factor: 4.0,
+        },
+        burstRecoveryTime: 0.1,
+        burstAccuracy: 100,
+        spreadPower: 1.00,
+        spreadXYRatio: 1.25,
+      },
+      falloffStrength: 0,
+    },
+  },
+
+};
+
+export default options;
