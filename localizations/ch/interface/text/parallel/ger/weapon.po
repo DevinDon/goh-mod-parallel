@@ -21,6 +21,18 @@ msgstr  "MG 42 通用机抢"
 # 迫击炮
 
 # 火炮
+msgctxt "desc/weapon/ger-20mm-flak30-l65"
+msgid   "2cm Flak 30 L/65"
+msgstr  "2cm Flak 30 L/65 防空炮"
+
+msgctxt "desc/weapon/ger-20mm-flak38-l112"
+msgid   "2cm FlaK 38 L/112.5"
+msgstr  "2cm FlaK 38 L/112.5 防空炮"
+
+msgctxt "desc/weapon/ger-20mm-flak38-l112-x4"
+msgid   "2cm FlaK 38 L/112.5"
+msgstr  "2cm FlaK 38 L/112.5 四联装防空炮"
+
 msgctxt "desc/weapon/ger-20mm-kwk30-l55"
 msgid   "2cm KwK 30 L/55"
 msgstr  "2cm KwK 30 L/55 坦克机炮"
