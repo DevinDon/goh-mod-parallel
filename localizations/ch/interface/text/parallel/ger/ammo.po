@@ -178,6 +178,10 @@ msgid   "12.8cm SprGr.L/5.0 [<c(ff1200)>HE</c>] <c(65696d)>L/61</c>"
 msgstr  "12.8cm SprGr.L/5.0 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/61</c>"
 
 # 150mm
+msgctxt "desc/ammo/ger-150l11 heat"
+msgid   "15cm Steilgranate.42 [<c(ff1200)>HEAT</c>] <c(65696d)>L/11</c>"
+msgstr  "15cm Steilgranate.42 [<c(ff1200)>破甲弹</c>] <c(65696d)>L/11</c>"
+
 msgctxt "desc/ammo/ger-150l11 he"
 msgid   "15cm Steilgranate.42 [<c(ff1200)>HE</c>] <c(65696d)>L/11</c>"
 msgstr  "15cm Steilgranate.42 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/11</c>"

@@ -1,12 +1,12 @@
-{from "pattern gun"
+{from "pattern gun" ; 蟋蟀 K 型自行火炮
 
   (include "/properties/standard/gun/define.ext")
 
   {FireSound "gun/gun_122_152_short"}
-  {FireSoundclose "gun/gun_interior/size4"}
-  {ReloadSound "interior/large/howitzer_reload_interior"}
+  {FireSoundclose "gun/gun_122_152_short"}
+  {ReloadSound "tank/reload_howitzer"}
 
-  {Filling "ammo ger-150l12" 1} ; 弹种及弹链内炮弹数量
+  {Filling "ammo ger-150l11" 1} ; 弹种及弹链内炮弹数量
   {Calibre 150} ; 口径
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火，1 为允许，0 为禁止
@@ -25,8 +25,8 @@
     {ProjectileDamageTable {0 185} {500 185} {1000 185}} ; 穿深
     {MinimumDamageModifier 600} ; 伤害
     {Spreading
-      {RadiusTable {0 0.0} {500 7.2} {1000 28.1}} ; 散布
-      {SpreadXYRatio 2.5} ; 后坐力
+      {RadiusTable {0 0.0} {500 7.9} {1000 31.1}} ; 散布
+      {SpreadXYRatio 3.5} ; 后坐力
     }
     {OvermatchSlope ; 倾斜入射修正
       {0  1}
@@ -36,11 +36,11 @@
 
   {Parameters "he" ; HE 高爆弹
     {Range 750 750} ; 射程
-    {Speed 280} ; 炮弹速度
+    {Speed 178} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {Spreading
-      {RadiusTable {0 0.0} {500 9.1} {1000 37.5}} ; 散布
-      {SpreadXYRatio 3.5} ; 后坐力
+      {RadiusTable {0 0.0} {500 9.5} {1000 39.5}} ; 散布
+      {SpreadXYRatio 3.1} ; 后坐力
     }
   }
 
