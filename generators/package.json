@@ -1,0 +1,24 @@
+{
+  "name": "goh-parallel-generators",
+  "version": "1.0.0",
+  "description": "Gate of Hell Parallel Mod Generators",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "main": "dist/main.mjs",
+  "scripts": {
+    "start": "node .",
+    "watch": "pcc watch --clean"
+  },
+  "devDependencies": {
+    "@pipers/compiler": "https://npm.iinfinity.io/@pipers/compiler/0.29.13",
+    "@pipers/eslint-config": "https://npm.iinfinity.io/@pipers/eslint-config/0.29.13",
+    "@pipers/logger": "https://npm.iinfinity.io/@pipers/logger/0.29.13",
+    "@pipers/toolbox": "https://npm.iinfinity.io/@pipers/toolbox/0.29.13",
+    "@types/node": "20.11.20",
+    "commander": "12.0.0",
+    "ts-node": "10.9.2",
+    "tslib": "2.6.2",
+    "typescript": "5.3.3",
+    "zx": "7.2.3"
+  }
+}
