@@ -574,22 +574,6 @@
   }
 )
 
-; define glass
-; args = name
-(define "set-glass"
-  {volume %name
-    {thickness 0.1}
-    {material "glass"}
-    {tags "glass"}
-    {component %name}
-    {able {visible 0}{obstacle 0}{window}}
-  }
-  {component %name
-    {tags "glass"}
-    {RepairOrder 13}
-  }
-)
-
 ; define wheel
 ; args = name
 (define "set-wheel"
@@ -639,12 +623,6 @@
     {RepairTime %repair} ;30
     {RepairOrder 6}
   }
-)
-
-; define wood
-; args = name
-(define "set-wood"
-  {volume %name {material "wood"} {tags "wood"}}
 )
 
 ; define car_thickness

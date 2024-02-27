@@ -1,5 +1,11 @@
 ; standard additional define
 
+; define wood
+; args = name
+(define "set-wood"
+  {volume %name {material "wood"} {tags "wood"}}
+)
+
 ; args = number
 (define "set-wood-shield"
   {volume "shieldw%number"
@@ -15,6 +21,7 @@
   }
 )
 
+; define glass
 ; args = name
 (define "set-glass"
   {volume %name
