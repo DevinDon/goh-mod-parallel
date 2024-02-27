@@ -33,7 +33,7 @@ const options: WeaponOptions = {
       standard: 20,
       random: 2,
     },
-    rangeKoef: 0.85,
+    rangeKoef: 0.45,
   },
 
   bullets: {

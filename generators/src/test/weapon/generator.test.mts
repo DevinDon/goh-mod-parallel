@@ -27,14 +27,14 @@ const output = `; ger-20mm-flak30-l65
   ; 不启用曲射模式
 
   {RechargeTime 2} ; 装填时间（秒）
-  {RecoveryTime 0.21} ; 短射间隔（秒）, 适用于弹链
+  {RecoveryTime 0.214} ; 短射间隔（秒）, 适用于弹链
 
   {Automatic} ; 自动武器
 
   {Burst
     {Short 20 2} ; 远距离短连发，基数 +- 随机数
     {Long  10 1} ; 近距离长连发，基数 +- 随机数
-    {RangeKoef 0.85} ; 该系数乘以 AimRange = 分界距离，大于分界距离为远距离，小于分界距离为近距离
+    {RangeKoef 0.45} ; 该系数乘以 AimRange = 分界距离，大于分界距离为远距离，小于分界距离为近距离
   }
 
   {Parameters "ap"

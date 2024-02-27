@@ -65,7 +65,7 @@ export const generateWeapon = (options: WeaponOptions) => {
   ${options.curved === true ? '{Aimtype curved} ; 曲射模式' : '; 不启用曲射模式'}
 
   {RechargeTime ${options.rechargeTime}} ; 装填时间（秒）
-  {RecoveryTime ${options.recoveryTime.toFixed(2)}} ; 短射间隔（秒）, 适用于弹链
+  {RecoveryTime ${options.recoveryTime.toFixed(3)}} ; 短射间隔（秒）, 适用于弹链
 
   ${options.automatic === true ? '{Automatic} ; 自动武器' : '; 非自动武器'}
 
