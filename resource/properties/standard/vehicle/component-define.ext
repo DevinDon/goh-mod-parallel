@@ -606,25 +606,34 @@
   }
 )
 
+; define make_component
+; args = name type
+(define "private-make-component"
+  {volume %name
+    {component %type}
+    {tags %type}
+  }
+)
+
 ; define bodyback
 ; args = repair
 (define "set-bodyback"
-  ("make_component" args "bodyback" "bodyback")
-  ("make_component" args "bodyback1" "bodyback")
-  ("make_component" args "bodyback2" "bodyback")
-  ("make_component" args "bodyback3" "bodyback")
-  ("make_component" args "bodyback4" "bodyback")
-  ("make_component" args "bodyback5" "bodyback")
-  ("make_component" args "bodyback6" "bodyback")
-  ("make_component" args "bodyback7" "bodyback")
-  ("make_component" args "bodyback8" "bodyback")
-  ("make_component" args "bodyback9" "bodyback")
-  ("make_component" args "bodyback10" "bodyback")
-  ("make_component" args "bodyback11" "bodyback")
-  ("make_component" args "bodyback12" "bodyback")
-  ("make_component" args "bodyback13" "bodyback")
-  ("make_component" args "bodyback14" "bodyback")
-  ("make_component" args "bodyback15" "bodyback")
+  ("private-make-component" name("bodyback")   type("bodyback"))
+  ("private-make-component" name("bodyback1")  type("bodyback"))
+  ("private-make-component" name("bodyback2")  type("bodyback"))
+  ("private-make-component" name("bodyback3")  type("bodyback"))
+  ("private-make-component" name("bodyback4")  type("bodyback"))
+  ("private-make-component" name("bodyback5")  type("bodyback"))
+  ("private-make-component" name("bodyback6")  type("bodyback"))
+  ("private-make-component" name("bodyback7")  type("bodyback"))
+  ("private-make-component" name("bodyback8")  type("bodyback"))
+  ("private-make-component" name("bodyback9")  type("bodyback"))
+  ("private-make-component" name("bodyback10") type("bodyback"))
+  ("private-make-component" name("bodyback11") type("bodyback"))
+  ("private-make-component" name("bodyback12") type("bodyback"))
+  ("private-make-component" name("bodyback13") type("bodyback"))
+  ("private-make-component" name("bodyback14") type("bodyback"))
+  ("private-make-component" name("bodyback15") type("bodyback"))
 
   {component "bodyback"
     {RepairTime %repair} ;30
