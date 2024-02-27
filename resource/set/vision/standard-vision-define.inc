@@ -231,9 +231,17 @@
 
 ; standard-vision-narrow 前方窄视角
 {"standard-vision-narrow"
-  {uncover  20}
+  {uncover  25}
   {h_fov    30} ; 水平
   {v_fov    30} ; 垂直
+  ("set-spotting" radius(15))
+}
+
+; standard-vision-medium 前方中视角
+{"standard-vision-medium"
+  {uncover  25}
+  {h_fov    60} ; 水平
+  {v_fov    90} ; 垂直
   ("set-spotting" radius(15))
 }
 

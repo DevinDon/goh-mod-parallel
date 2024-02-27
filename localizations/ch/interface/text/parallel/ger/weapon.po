@@ -35,11 +35,11 @@ msgstr  "2cm FlaK 38 L/112.5 四联装防空炮"
 
 msgctxt "desc/weapon/ger-20mm-kwk30-l55"
 msgid   "2cm KwK 30 L/55"
-msgstr  "2cm KwK 30 L/55 坦克机炮"
+msgstr  "2cm KwK 30 L/55 坦克炮"
 
 msgctxt "desc/weapon/ger-30mm-mk103-l38"
 msgid   "3cm MK 103 L/38"
-msgstr  "3cm MK 103 L/38 机炮"
+msgstr  "3cm MK 103 L/38 防空炮"
 
 msgctxt "desc/weapon/ger-37mm-kwk36-l45"
 msgid   "3.7cm KwK 36 L/45"
@@ -75,7 +75,7 @@ msgstr  "7.5cm PaK 40 L/46 反坦克炮"
 
 msgctxt "desc/weapon/ger-75mm-stuk40-l48"
 msgid   "7.5cm StuK 40 L/48"
-msgstr  "7.5cm StuK 40 L/48 反坦克炮"
+msgstr  "7.5cm StuK 40 L/48 突击坦克炮"
 
 msgctxt "desc/weapon/ger-88mm-kwk36-l56"
 msgid   "8.8cm KwK 36 L/56"
@@ -83,23 +83,23 @@ msgstr  "8.8cm KwK 36 L/56 坦克炮"
 
 msgctxt "desc/weapon/ger-88mm-kwk36-l56-ace"
 msgid   "8.8cm KwK 36 L/56"
-msgstr  "8.8cm KwK 36 L/56 王牌虎式坦克炮"
+msgstr  "8.8cm KwK 36 L/56 王牌坦克炮"
 
 msgctxt "desc/weapon/ger-88mm-kwk43-l71"
 msgid   "8.8cm KwK 43 L/71"
 msgstr  "8.8cm KwK 43 L/71 坦克炮"
 
 msgctxt "desc/weapon/ger-105mm-lefh18-l28"
-msgid   "10.5cm FH 18 L/28"
-msgstr  "10.5cm FH 18 L/28 榴弹炮"
+msgid   "10.5cm leFH 18 L/28"
+msgstr  "10.5cm leFH 18 L/28 榴弹炮"
 
 msgctxt "desc/weapon/ger-105mm-stuh42-l28"
 msgid   "10.5cm StuH 42 L/28"
-msgstr  "10.5cm StuH 42 L/28 榴弹炮"
+msgstr  "10.5cm StuH 42 L/28 突击榴弹炮"
 
 msgctxt "desc/weapon/ger-105mm-kwspzk-l68"
-msgid   "10.5cm Kwspzk L/68"
-msgstr  "10.5cm Kwspzk L/68 坦克炮"
+msgid   "10.5cm KwsPz.K L/68"
+msgstr  "10.5cm KwsPz.K L/68 实验性坦克炮"
 
 msgctxt "desc/weapon/ger-128mm-pak44-l61"
 msgid   "12.8cm PaK44 L/61"
