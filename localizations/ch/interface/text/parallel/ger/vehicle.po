@@ -12,6 +12,9 @@ msgstr ""
 "Language-Team: \n"
 
 # 非装甲车辆
+msgctxt "desc/entity/blitz3_6_flak30"
+msgid   "Opel Blitz mit 2cm FlaK 30"
+msgstr  "欧宝 闪电 加装 2cm FlaK 30"
 
 # 步兵战车
 msgctxt "desc/entity/sdkfz231"
