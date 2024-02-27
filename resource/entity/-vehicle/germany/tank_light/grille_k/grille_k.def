@@ -59,6 +59,7 @@
       {Weapon "weapon ger-150mm-sig33-l11" filling "ammo ger-150l11 he" 1}
       {Gunner "gunner"}
       {Charger "charger"}
+      {Rotate}
       {AccuracyByMotion
         {MaxLinearSpeed  7.00} ; km/h
         {ByLinearSpeed   0.25} ; km/h
