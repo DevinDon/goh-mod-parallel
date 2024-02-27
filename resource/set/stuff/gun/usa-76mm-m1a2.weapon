@@ -37,7 +37,7 @@
     {ProjectileDamageTable {100 125} {500 92} {1000 0}} ; 穿深表
     {MinimumDamageModifier 165} ; 伤害
     {Spreading
-      {RadiusTable {0 0} {10 0.45} {500 3.43} {1000 12.01}} ; 散布
+      {RadiusTable {0 0} {100 0.45} {500 3.43} {1000 12.01}} ; 散布
       {BurstRecoveryTime 0.76} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.35} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -71,7 +71,7 @@
     {ProjectileDamageTable {100 239} {500 124} {1000 0}} ; 穿深表
     {MinimumDamageModifier 130} ; 伤害
     {Spreading
-      {RadiusTable {0 0} {10 0.375} {500 2.88} {1000 10.08}} ; 散布
+      {RadiusTable {0 0} {100 0.375} {500 2.88} {1000 10.08}} ; 散布
       {BurstRecoveryTime 0.76} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.35} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -104,7 +104,7 @@
     ; 无穿深表配置
     ; 无穿透伤害配置
     {Spreading
-      {RadiusTable {0 0} {10 1.5} {500 4.67} {1000 18.68}} ; 散布
+      {RadiusTable {0 0} {100 1.5} {500 4.67} {1000 18.68}} ; 散布
       {BurstRecoveryTime 0.76} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -123,7 +123,7 @@
     ; 无穿深表配置
     ; 无穿透伤害配置
     {Spreading
-      {RadiusTable {0 0} {10 1.5} {500 4.67} {1000 18.68}} ; 散布
+      {RadiusTable {0 0} {100 1.5} {500 4.67} {1000 18.68}} ; 散布
       {BurstRecoveryTime 0.76} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心

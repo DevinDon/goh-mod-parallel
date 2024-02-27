@@ -29,7 +29,7 @@ export const generateWeapon = (options: WeaponOptions) => {
     ${bullet.projectile ? projectileDamageTable : '; 无穿深表配置'}
     ${bullet.damage ? `{MinimumDamageModifier ${bullet.damage}} ; 伤害` : '; 无穿透伤害配置'}
     {Spreading
-      {RadiusTable {0 0} {10 ${bullet.spreading.radiusTable.nearest}} {500 ${bullet.spreading.radiusTable.farthest}} {1000 ${(bullet.spreading.radiusTable.farthest * (bullet.spreading.radiusTable.factor ?? 3.5)).toFixed(2)}}} ; 散布
+      {RadiusTable {0 0} {100 ${bullet.spreading.radiusTable.nearest}} {500 ${bullet.spreading.radiusTable.farthest}} {1000 ${(bullet.spreading.radiusTable.farthest * (bullet.spreading.radiusTable.factor ?? 3.5)).toFixed(2)}}} ; 散布
       {BurstRecoveryTime ${bullet.spreading.burstRecoveryTime ?? 1}} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     ${bullet.spreading.burstAccuracy ?? 100}} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       ${bullet.spreading.spreadPower ?? 1}} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -59,7 +59,7 @@ export const generateWeapon = (options: WeaponOptions) => {
   {UnlimitedRangeTPC ${(options.unlimitedRangeTPC ?? true) === true ? 1 : 0}} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance ${options.aimingTolerance ?? 1}} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
   {SpreadTolerance ${(options.spreadTolerance ?? 0.5)}} ; 瞄准到一定精度就可以开火
-  {ZeroingAccuracy ${(options.zeroingAccuracy ?? [ 0.95, 0.90, 0.85, 0.80, 0.75 ]).join(' ')}} ; 归零精度？不确定
+  {ZeroingAccuracy ${(options.zeroingAccuracy ?? [0.95, 0.90, 0.85, 0.80, 0.75]).join(' ')}} ; 归零精度？不确定
   {LockFireDistanceTime ${options.lockFireDistanceTime ?? 3}} ; 超出射击距离后允许继续开火的时间
   {DisableRicochet ${(options.disableRicochet ?? false) === true ? 1 : 0}} ; 是否禁用跳弹模式
   ${options.curved === true ? '{Aimtype curved} ; 曲射模式' : '; 不启用曲射模式'}

@@ -41,7 +41,7 @@
     {ProjectileDamageTable {100 111} {500 12} {1000 0}} ; 穿深表
     {MinimumDamageModifier 30} ; 伤害
     {Spreading
-      {RadiusTable {0 0} {10 0.4} {500 2.1} {1000 6.30}} ; 散布
+      {RadiusTable {0 0} {100 0.4} {500 2.1} {1000 6.30}} ; 散布
       {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -74,7 +74,7 @@
     ; 无穿深表配置
     ; 无穿透伤害配置
     {Spreading
-      {RadiusTable {0 0} {10 0.4} {500 3} {1000 12.00}} ; 散布
+      {RadiusTable {0 0} {100 0.4} {500 3} {1000 12.00}} ; 散布
       {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
