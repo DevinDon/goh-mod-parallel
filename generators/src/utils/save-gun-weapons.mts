@@ -23,8 +23,7 @@ export const getAllWeaponOptions = async () => {
   return options.filter((option): option is WeaponOptions => !!option);
 };
 
-export const saveGunWeaponsToFiles = async (options: WeaponOptions[]) => {
-  const output = resolve(getExecDirPath(import.meta.url), '../../outputs/gun');
+export const saveGunWeaponsToFiles = async (options: WeaponOptions[], output: string = resolve(getExecDirPath(import.meta.url), '../../outputs/gun')) => {
   const tasks = options.map(
     option => async () => {
       const weapon = generateWeapon(option);
