@@ -25,6 +25,14 @@ msgctxt "desc/entity/sdkfz231"
 msgid   "Sd.Kfz 231"
 msgstr  "Sd.Kfz 231 装甲车"
 
+msgctxt "desc/entity/sdkfz234_3"
+msgid   "Sd.Kfz 234/3"
+msgstr  "Sd.Kfz 234/3 装甲车"
+
+msgctxt "desc/entity/sdkfz234_4"
+msgid   "Sd.Kfz 234/4"
+msgstr  "Sd.Kfz 234/4 装甲车"
+
 # 轻型坦克
 msgctxt "desc/entity/panzer2l"
 msgid   "Pz.Kpfw II Ausf.L"
