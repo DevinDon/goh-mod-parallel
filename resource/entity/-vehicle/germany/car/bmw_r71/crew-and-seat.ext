@@ -1,5 +1,16 @@
 ; crew and seat
 
+; define board_animation
+; args = place begin end base
+(define "set-board-animation"
+  {boarder
+    {anm "%place"
+      {forward {begin "%begin"} {end "%end"} {base "%base"}}
+      {reverse {end "%begin" -1} {base "%base"}}
+    }
+  }
+)
+
 ; define set-crew-inside
 ; no args
 (define "set-crew-inside"
