@@ -26,8 +26,18 @@ actor
     {vision "standard-vision-around"}
     {bone "visor1"}
   }
+  {visor "hearing"
+    {vision "standard-vision-noise-detection"}
+    {bone "hearing_bone"}
+  }
   {visor "none"
     {vision "none"}
+  }
+}
+
+{Skeleton
+  {bone "hearing_bone"
+    {Position 0 0 40}
   }
 }
 

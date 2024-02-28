@@ -11,12 +11,8 @@
 ("set-basic-armor"     ammo(10))
 ("set-moto-thickness"  body(2) engine(3))
 
-("set-turret"               repair(10))
-("set-mantlet"              repair(10))
-("set-gun"    thickness(15) repair(20))
 ("set-body"                 repair(15))
 ("set-engine"               repair(15))
-("set-tracks" thickness(10) repair(10))
 
 ("set-wheel" name("wheelleft1"))
 ("set-wheel" name("wheelleft2"))

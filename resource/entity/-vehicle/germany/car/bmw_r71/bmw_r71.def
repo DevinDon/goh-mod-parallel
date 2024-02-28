@@ -1,7 +1,7 @@
 {game_entity
 
   (include "/properties/standard/vehicle/moto-config.ext")
-  (include "/properties/selection/vehicle_elongated.inc" scale(1.0))
+  (include "/properties/selection/vehicle_small.inc" scale(1.0))
   (include "/properties/resupply.inc")
 
   {Extension "bmw_r71.mdl"}
@@ -20,6 +20,17 @@
   }
 
   {Able "emit_on_attack"}
+
+  ; {Sensor
+  ;   {Visor "main"
+  ;     {Vision "standard-vision-wide"}
+  ;     {Bone "driver"}
+  ;   }
+  ;   {Visor "around"
+  ;     {Vision "standard-vision-around"}
+  ;     {Bone "gunner"}
+  ;   }
+  ; }
 
   {Extender "inventory"
     {Weapon "mgun" {mask "mountable"}}
@@ -54,7 +65,7 @@
 
   {Mass 397}
   {Chassis "wheel"
-    ("set-car-trace" fx("tracewheel03a")  step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-car-trace" fx("tracewheel03a") step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-car-trace" fx("tracewheel03a") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
     ("set-maneuverability-of-car" speed(120) power(22) mass(397) performance(1.15))
     ("set-fuel-bag" volume(14) power(22))
