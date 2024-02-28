@@ -4,8 +4,8 @@
   (include "/properties/selection/vehicle_elongated.inc" scale(1.15))
   (include "/properties/resupply.inc")
 
-  {Extension "blitz3_6_engineering.mdl"}
-  (include   "blitz3_6_engineering.ext")
+  {Extension "blitz3_6_fuel.mdl"}
+  (include   "blitz3_6_fuel.ext")
   (include   "crew-and-seat.ext")
 
   {Props "truck" "vision_lev02" "fuel_tank" "tractor" "tractor_heavy"}
