@@ -323,13 +323,13 @@
 ; // Wirbelwind in 1st sequence
 {"doctrine_wirbelwind"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(wirbelwind) crew1(tankman:4) crew2(tank_commander:1))
-  ("doctrine_t1" cool(240) d(late_ger_support) cost(30))
+  ("doctrine_t1" cool(240) d(late_ger_support) cost(20))
   {icon 2}
 }
 ; // Ostwind in 1st sequence
 {"doctrine_ostwind"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(ostwind) crew1(tankman:4) crew2(tank_commander:1))
-  ("doctrine_t1" cool(240) d(late_ger_support) cost(30))
+  ("doctrine_t1" cool(240) d(late_ger_support) cost(20))
   {icon 2}
 }
 
