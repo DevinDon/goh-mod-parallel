@@ -12,6 +12,10 @@ msgstr ""
 "Language-Team: \n"
 
 # 非装甲车辆
+msgctxt "desc/entity/bmw_r71"
+msgid   "BMW R71 mit MG42"
+msgstr  "宝马 R71 加装 MG42"
+
 msgctxt "desc/entity/blitz3_6"
 msgid   "Opel Blitz Transportation"
 msgstr  "欧宝 闪电 运输"
