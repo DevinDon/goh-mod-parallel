@@ -17,8 +17,6 @@
 
   {Able "emit_on_attack"}
 
-  ("passenger_12_human")
-
   {Extender "shield" {on}}
 
   {Extender "inventory"
