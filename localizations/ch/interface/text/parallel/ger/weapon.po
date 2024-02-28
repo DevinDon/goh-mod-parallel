@@ -41,6 +41,14 @@ msgctxt "desc/weapon/ger-30mm-mk103-l38"
 msgid   "3cm MK 103 L/38"
 msgstr  "3cm MK 103 L/38 防空炮"
 
+msgctxt "desc/weapon/ger-37mm-flak37-l87"
+msgid   "3.7cm FlaK 37 L/87"
+msgstr  "3.7cm FlaK 37 L/87 防空炮"
+
+msgctxt "desc/weapon/ger-37mm-flak43-l57"
+msgid   "3.7cm FlaK 43 L/57"
+msgstr  "3.7cm FlaK 43 L/57 防空炮"
+
 msgctxt "desc/weapon/ger-37mm-kwk36-l45"
 msgid   "3.7cm KwK 36 L/45"
 msgstr  "3.7cm KwK 36 L/45 坦克炮"
