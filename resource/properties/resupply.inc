@@ -887,7 +887,7 @@
       ("items_heavy_fin")
       ("items_heavy_usa")
     }
-    {radius            25} ;// resupply radius in meter
+    {radius 50} ;// resupply radius in meter
     {resupplyPeriod 3} ;// resupply period in seconds
     {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
     {limit 10000} ;// max number of resupplies (0 = unlimited)
@@ -938,7 +938,7 @@
     {resupply
       {item "flame_thrower" "ammo" 50 {value 1}}
     }
-    {radius       30}      ;// resupply radius in meter
+    {radius 30}      ;// resupply radius in meter
     {resupplyPeriod 3}      ;// resupply period in seconds
     {regenerationPeriod 0}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
     {limit %liters}  ;// max number of resupplies (0 = unlimited)
@@ -959,10 +959,10 @@
       ("items_explosives")
     }
     {mechanicResources {amount 10}{value 10}}
-    {radius       30}      ;// resupply radius in meter
+    {radius 30}      ;// resupply radius in meter
     {resupplyPeriod 3}      ;// resupply period in seconds
     {regenerationPeriod 0}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 10000}    ;// max number of resupplies (0 = unlimited)
+    {limit 5000}    ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -980,10 +980,10 @@
       ("items_explosives")
     }
     {mechanicResources {amount 10}{value 10}}
-    {radius       40}      ;// resupply radius in meter
+    {radius 40}      ;// resupply radius in meter
     {resupplyPeriod 3}      ;// resupply period in seconds
     {regenerationPeriod 0}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 10000}    ;// max number of resupplies (0 = unlimited)
+    {limit 5000}    ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -996,13 +996,13 @@
 
 ; custom
 (define "set-ammo-resupply"
-  ("truck_ammo_heavy_2x")
-)
-
-(define "set-fuel-resupply"
-  ("supply_fuel" liters(3000))
+  ("truck_ammo_heavy")
 )
 
 (define "set-engineer-resupply"
   ("supply_engineer")
+)
+
+(define "set-fuel-resupply"
+  ("supply_fuel" liters(3000))
 )
