@@ -1,65 +1,19 @@
 {game_entity
 
-  (include "/properties/cannon.ext")
-  {extension "105mm_lefh18.mdl"}
+  (include "/properties/standard/vehicle/cannon-config.ext")
   (include "/properties/selection/cannon_elongated.inc" scale(1.2))
-  {props "wheeled" "vision_lev05_can" "muzzle_100mm_105mm" "cannon_sandbag_standard" "trailer" "trailer_medium" "detect_artillery" "artillery_minimap_medium" "c_gun_med"}
+
+  {Extension "105mm_lefh18.mdl"}
+  (include   "105mm_lefh18.ext")
+  (include   "crew-and-seat.ext")
+
+  {Props "wheeled" "vision_lev05_can" "muzzle_100mm_105mm" "cannon_sandbag_standard" "trailer" "trailer_medium" "detect_artillery" "artillery_minimap_medium" "c_gun_med"}
+
   {PatherId "cannon.medium"}
-  {targetclass "howitzer"}
-  {targetSelector "cannon_howitzer"}
+  {Targetclass "howitzer"}
+  {TargetSelector "cannon_howitzer"}
 
-  ("solid_wheel" args "wheelright")
-  ("solid_wheel" args "wheelleft")
-
-  ("gun" repair(20) thickness(30))
-  ("shield" args "shield" 10)
-  ("shield" args "shield_lower" 10)
-
-  ("armor_heavy_cannon")
-  ("crew_wheeled_cannon_4")
-
-  {volume "shield" {able {holed}}}
-
-  {boarder
-    {anm "gunner"
-      {forward {end "pose_m5_gunlayer" 10}}
-    }
-    {anm "charger"
-      {forward {end "pose_pdr25_charger" 10}}
-    }
-    {anm "charger2"
-      {forward {end "pose_squat_empty" 10}}
-    }
-    {anm "commander"
-      {forward {end "pose_squat_watch_binocular" 10}}
-    }
-    {anm "driver1"  ;// gunner
-      {forward {end "cannon_pak40_pusher_left" 10}}
-    }
-    {anm "driver2"  ;// charger
-      {forward {end "cannon_pak40_pusher_right" 10}}
-    }
-    {anm "driver3"  ;// charger2
-      {forward {end "mgun_browning_driver_l" 10}}
-    }
-    {anm "driver4"  ;// commander
-      {forward {end "mgun_browning_driver_r" 10}}
-    }
-    {anm "seat1"  ;// gunner
-      {forward {end "pose_seat_cannon_left" 10}}
-    }
-    {anm "seat2"  ;// charger
-      {forward {end "pose_seat_cannon_right" 10}}
-    }
-    {anm "seat3"  ;// charger2
-      {forward {end "pose_seat_cannon_right" 10}}
-    }
-    {anm "seat4"  ;// commander
-      {forward {end "pose_seat_cannon_left" 10}}
-    }
-  }
-
-  {extender "cannon"
+  {Extender "cannon"
     {animation
       {switch "close"}
       ;// "gunner" "charger" "charger2" "commander"
@@ -68,51 +22,56 @@
       {fire "cannon_gunlayer_fire-alert" "cannon_pdr25_charger_fire" "" ""}
       {reload "" "cannon_pdr25_charger" "" ""}
     }
-    {move {workers "driver1" "driver2" "driver3" "driver4" minWorkers 2} {obstacle "close"}}      ;// move state: cannon being pushed and which positions play animations
-    {attack {workers "gunner""charger" "charger2" "commander"} {obstacle "open"}}    ;// fire/attack state: cannon aim, fire, and reload events
-    {trailing {workers "seat1" "seat2" "seat3" "seat4"}}                ;// trailing state: cannon is being towed {obstacle} not needed. Uses "close"
+    {move {workers "driver1" "driver2" "driver3" "driver4" minWorkers 2} {obstacle "close"}} ;// move state: cannon being pushed and which positions play animations
+    {attack {workers "gunner""charger" "charger2" "commander"} {obstacle "open"}} ;// fire/attack state: cannon aim, fire, and reload events
+    {trailing {workers "seat1" "seat2" "seat3" "seat4"}} ;// trailing state: cannon is being towed {obstacle} not needed. Uses "close"
   }
 
-  {extender "inventory"
-    {box
-      {item "ammo bulletger_105 he" 20}
-      {item "ammo bulletger_105 aphe" 5}
-      {item "ammo bulletger_105 heat" 5}
+  {Extender "inventory"
+    {Box
+      {Size 12 10}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
       {item "sandbag_vehicle" 1}
+
+      {Item "ammo ger-105l28 he"   29}
     }
   }
 
   {Weaponry
-    ("restore_ik_time")
-    {place "gun"
-      {weapon "105mm_lefh18" filling "ammo bulletger_105 he" 1}
-      {charger "charger charger2" minWorkers 1}
+    {RestoreIKTime 10}
+    {Place "gun"
       {RestoreIKAfterAim}
-      ("abm_dymamic_gun"
-        zeroing(5.0)  ; // time it takes to aim until the reticle shrinks. Bigger values, more control.
-        dispersion(1)   ; // time it takes to distort the reticle when you move the gun (how abrupt it loses zeroing). Bigger values, more control.
-      )
+      {Weapon "weapon ger-105mm-lefh18-l28" filling "ammo ger-105l28 he" 1}
+      {Charger "charger charger2" minWorkers 1}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.95} ; s
+        {OrderTime       5.25} ; s
+      }
     }
   }
 
-  {mass 1985}
+  {Mass 1985}
   {Chassis "track"
-    ("car_trace" fx("tracewheel06") step(0.14) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
-    ("mobility_cannon"
-      speed(6.3) ;----------------------------------Max speed.
-      weight(1985) ;--------------------------------Weight in Kilograms.
-    )
+    ("set-car-trace" fx("tracewheel06")  step(0.14) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-cannon" speed(7) mass(1985))
   }
 
-  {bone "basis"
+  {Bone "basis"
     {speed2 3}
   }
-  {bone "gun_rot"
+  {Bone "gun_rot"
     {limits -6 40}
     {speed2 5}
   }
-  {bone "turret"
+  {Bone "turret"
     {limits -28 28}
     {speed2 5}
   }
+
 }

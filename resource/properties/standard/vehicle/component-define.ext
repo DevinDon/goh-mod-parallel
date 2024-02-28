@@ -859,3 +859,132 @@
     }
   }
 )
+
+; define cannon_durability
+; args = body gun wheel shield
+(define "set-cannon-durability"
+  {perks
+    {component "body"
+      {health
+        {hp %body}
+        {hp_broken (* %body 0.5)}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "gun"
+      {health
+        {hp %gun}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component tag "wheel"
+      {health
+        {hp %wheel}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component tag "shield"
+      {health
+        {hp %shield}
+      }
+      {armor_damage_modifier 0.1}
+    }
+  }
+)
+
+; define cannon_thickness
+; args = thickness
+(define "set-cannon-thickness"
+  {volume "body"      ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body1"      ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body2"      ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body3"      ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body4"      ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body5"      ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body6"      ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body7"      ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body8"      ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body9"      ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body10"    ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body11"    ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body12"    ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body13"    ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body14"    ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body15"    ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body16"    ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body17"    ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body18"    ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body19"    ; Main Body
+    {thickness %thickness}
+  }
+  {volume "body20"    ; Main Body
+    {thickness %thickness}
+  }
+
+  {volume "standc"    ; Center Stand/leg
+    {thickness %thickness}
+    {able {Visible 0} {nolook 1}}
+  }
+  {volume "standr"    ; Right Stand/leg
+    {thickness %thickness}
+    {able {Visible 0} {nolook 1}}
+  }
+  {volume "standl"    ; Left Stand/leg
+    {thickness %thickness}
+    {able {Visible 0} {nolook 1}}
+  }
+  {volume "standr1"    ; Right Stand/leg
+    {thickness %thickness}
+    {able {Visible 0} {nolook 1}}
+  }
+  {volume "standr2"    ; Right Stand/leg
+    {thickness %thickness}
+    {able {Visible 0} {nolook 1}}
+  }
+  {volume "standl1"    ; Left Stand/leg
+    {thickness %thickness}
+    {able {Visible 0} {nolook 1}}
+  }
+  {volume "standl2"    ; Left Stand/leg
+    {thickness %thickness}
+    {able {Visible 0} {nolook 1}}
+  }
+)

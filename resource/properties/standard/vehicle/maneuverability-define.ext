@@ -1,5 +1,28 @@
 ; standard maneuverability define
 
+; define mobility_cannon
+; args = speed mass
+; mass 单位为 kg
+(define "set-maneuverability-of-cannon"
+  {Locomotion
+    {Slow                                                                       10} ; Slow speed. Mainly used in mission scripting
+    {Normal                                                           (/ %speed 1)} ; Standard speed. Single click movement order
+    {Fast                                                             (/ %speed 1)} ; Sprint speed. Double click movement order
+    {MaxSpeed                                                         (/ %speed 1)} ; Max speed.
+    {TurnTime                               (- (+ (/ %mass 500) (/ 100 %speed)) 4)}
+    {TurnStart                                             (+ 0.65 (/ %mass 1500))}
+    {TurnRadius                                               (+ 2 (/ %mass 5000))}
+    {TurnStop                                              (+ 0.65 (/ %mass 2500))}
+    {StartTime                                             (+ 1.25 (/ %mass 4000))}
+    {StopTime                                              (+ 0.35 (/ %mass 4000))}
+    {BrakeTime                                            (+ 0.25 (/ %mass 10000))}
+    {Gears                                                        0.35 0.5 0.7 1.0}
+    {RearGears                                                                0.75}
+    {MaxSlope                                                                   60} ; Maximum slope to drive up hill
+    {FallSlope                                                                  70} ; Maximum slope before physics kick in
+  }
+)
+
 ; define mobility_car
 ; args = speed power mass performance
 ; mass 单位为 kg
@@ -80,9 +103,9 @@
 ; args = volume power
 (define "set-fuel-bag"
   {FuelBag
-    {volume                           %volume} ; Fuel capacity in Litres.
-    {rate                       (/ %power 21)} ; 消耗速率等于 100 时，大约消耗燃料 2 升每秒，能运转 50 秒左右
-    {remain                           %volume} ; Amount of fuel in vehicle when spawned.
-    {fuel                              "fuel"} ; Type of fuel used. "fuel" = petrol/gasoline. "diesel" = diesel.
+    {Volume                           %volume} ; Fuel capacity in Litres.
+    {Rate                       (/ %power 21)} ; 消耗速率等于 100 时，大约消耗燃料 2 升每秒，能运转 50 秒左右
+    {Remain                           %volume} ; Amount of fuel in vehicle when spawned.
+    {Fuel                              "fuel"} ; Type of fuel used. "fuel" = petrol/gasoline. "diesel" = diesel.
   }
 )

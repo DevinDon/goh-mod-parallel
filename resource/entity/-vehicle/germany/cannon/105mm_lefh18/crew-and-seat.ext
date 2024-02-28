@@ -1,0 +1,102 @@
+; crew and seat
+
+; define crew_open
+; args = place group bone door animation extra
+(define "set-open-crew"
+  {placer
+    {place "%place"
+      {group "%group"}
+      {linkbone "%bone"}
+      %extra
+    }
+  }
+  {boarder
+    {door "%door"}
+    {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+  }
+)
+
+; apply crew_wheeled_cannon_4
+("set-open-crew" place(gunner)    group(crew) bone(gunner)    door(emit1) animation(gunner)    extra({openForCrush}))
+("set-open-crew" place(charger)   group(crew) bone(charger)   door(emit2) animation(charger)   extra({openForCrush}))
+("set-open-crew" place(charger2)  group(crew) bone(charger2)  door(emit3) animation(charger2)  extra({openForCrush}))
+("set-open-crew" place(commander) group(crew) bone(commander) door(emit4) animation(commander) extra({openForCrush}))
+
+("set-open-crew" place(driver1) group(crew) bone(driver1) door(emit1) animation(driver1) extra())
+("set-open-crew" place(driver2) group(crew) bone(driver2) door(emit2) animation(driver2) extra())
+("set-open-crew" place(driver3) group(crew) bone(driver3) door(emit3) animation(driver3) extra())
+("set-open-crew" place(driver4) group(crew) bone(driver4) door(emit4) animation(driver4) extra())
+
+("set-open-crew" place(seat1) group(crew) bone(seat1) door(emit1) animation(seat1) extra())
+("set-open-crew" place(seat2) group(crew) bone(seat2) door(emit2) animation(seat2) extra())
+("set-open-crew" place(seat3) group(crew) bone(seat3) door(emit3) animation(seat3) extra())
+("set-open-crew" place(seat4) group(crew) bone(seat4) door(emit4) animation(seat4) extra())
+
+{Placer
+  {place "gunner" {visor "main"}}
+  {place "charger"}
+  {place "charger2"}
+  {place "commander"}
+
+  {place "driver1"}
+  {place "driver2"}
+  {place "driver3"}
+  {place "driver4"}
+
+  {place "seat1"}
+  {place "seat2"}
+  {place "seat3"}
+  {place "seat4"}
+}
+
+{Boarder
+  {link "seat1" "driver1"}
+  {link "seat2" "driver2"}
+  {link "seat3" "driver3"}
+  {link "seat4" "driver4"}
+
+  {link "driver1" "gunner"}
+  {link "driver2" "charger"}
+  {link "driver3" "charger2"}
+  {link "driver4" "commander"}
+}
+
+; apply boarders
+{Boarder
+  {anm "gunner"
+    {forward {end "pose_m5_gunlayer" 10}}
+  }
+  {anm "charger"
+    {forward {end "pose_pdr25_charger" 10}}
+  }
+  {anm "charger2"
+    {forward {end "pose_squat_empty" 10}}
+  }
+  {anm "commander"
+    {forward {end "pose_squat_watch_binocular" 10}}
+  }
+  {anm "driver1"  ;// gunner
+    {forward {end "cannon_pak40_pusher_left" 10}}
+  }
+  {anm "driver2"  ;// charger
+    {forward {end "cannon_pak40_pusher_right" 10}}
+  }
+  {anm "driver3"  ;// charger2
+    {forward {end "mgun_browning_driver_l" 10}}
+  }
+  {anm "driver4"  ;// commander
+    {forward {end "mgun_browning_driver_r" 10}}
+  }
+  {anm "seat1"  ;// gunner
+    {forward {end "pose_seat_cannon_left" 10}}
+  }
+  {anm "seat2"  ;// charger
+    {forward {end "pose_seat_cannon_right" 10}}
+  }
+  {anm "seat3"  ;// charger2
+    {forward {end "pose_seat_cannon_right" 10}}
+  }
+  {anm "seat4"  ;// commander
+    {forward {end "pose_seat_cannon_left" 10}}
+  }
+}
