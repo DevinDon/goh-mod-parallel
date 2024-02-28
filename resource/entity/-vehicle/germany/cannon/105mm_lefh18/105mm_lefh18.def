@@ -13,6 +13,12 @@
   {Targetclass "howitzer"}
   {TargetSelector "cannon_howitzer"}
 
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+  }
+
   {Extender "cannon"
     {animation
       {switch "close"}
@@ -33,9 +39,9 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {item "sandbag_vehicle" 1}
+      {item "sandbag_vehicle" 10}
 
-      {Item "ammo ger-105l28 he"   29}
+      {Item "ammo ger-105l28 he" 39}
     }
   }
 
