@@ -24,6 +24,7 @@
 }
 
 ; define crew_human
+; args = place door bone animation group
 (define "set-crew"
   {placer
     {place "%place" {group "%group"} {linkbone "%bone"} {turnoff {shadow}}}

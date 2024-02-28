@@ -3,32 +3,42 @@
 ; gun 20mm
 ; shields 2-8mm
 
-("armoredcar_tier2")
 
-("solid_wheel" args "wheelleft1")
-("solid_wheel" args "wheelleft2")
-("solid_wheel" args "wheelleft3")
-("solid_wheel" args "wheelleft4")
-("solid_wheel" args "wheelright1")
-("solid_wheel" args "wheelright2")
-("solid_wheel" args "wheelright3")
-("solid_wheel" args "wheelright4")
 
-("turret" repair(45))
-("mantlet" repair(30))
-("gun" repair(30) thickness(20))
 
-("shield_tear" args "detail10" 10)
-("shield_group" args "shield1" 8 "shield")
-("shield_group" args "shield1a" 2 "shield")
-("shield_group" args "shield1b" 2 "shield")
-("shield" args "shield2" 8)
 
-("ammo" args "ammo1")
-("ammo" args "ammo2")
-("ammo" args "ammo3")
-("fuel" args "fuel")
-("transmission" args "transmission")
+("set-basic-durability" body(200) engine(150) turret(150) mantlet(100) gun(150) track(150) ammo(150))
+("set-basic-armor"      ammo(10))
+
+("set-turret"                repair(10))
+("set-mantlet"               repair(5))
+("set-gun"     thickness(20) repair(10))
+
+("set-body"                  repair(15))
+("set-engine"                repair(10))
+
+("set-solid-wheel" name("wheelleft1"))
+("set-solid-wheel" name("wheelleft2"))
+("set-solid-wheel" name("wheelleft3"))
+("set-solid-wheel" name("wheelleft4"))
+("set-solid-wheel" name("wheelright1"))
+("set-solid-wheel" name("wheelright2"))
+("set-solid-wheel" name("wheelright3"))
+("set-solid-wheel" name("wheelright4"))
+
+("set-shield" name("shield2") thickness(8))
+
+("set-shield-tear"  name("detail10") thickness(10))
+
+("set-shield-group" name("shield1")  thickness(8) type("shield"))
+("set-shield-group" name("shield1a") thickness(2) type("shield"))
+("set-shield-group" name("shield1b") thickness(2) type("shield"))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("fuel")  type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
 
 {volume "transmission" {able {NoWoundDecal 0}}}
 

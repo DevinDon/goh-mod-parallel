@@ -1,6 +1,4 @@
-;SDL
-
-{boarder
+{Boarder
   {anm "left"
     {forward {begin "board_sd222_driver"} {base ""}}
     {reverse {end "emit_sd222_driver"} {base "" -1}}
@@ -11,7 +9,9 @@
   }
 }
 
-(define "crew_human"
+; define crew_human
+; args = place visor
+(define "set-crew"
   {placer
     {place "%place" {group "crew"} {visor "%visor"}}
   }
@@ -23,7 +23,8 @@
   }
 )
 
-("crew_human" place(driver) visor(driver))
-("crew_human" place(gunner) visor(main))
-("crew_human" place(commander) visor(around))
-("crew_human" place(charger) visor(none))
+; apply settings
+("set-crew" place(driver)    visor(driver))
+("set-crew" place(gunner)    visor(main))
+("set-crew" place(commander) visor(around))
+("set-crew" place(charger)   visor(none))
