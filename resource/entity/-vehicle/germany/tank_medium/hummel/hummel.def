@@ -13,6 +13,22 @@
   {Targetclass "tank_medium"}
   {TargetSelector "cannon_howitzer"}
 
+  {Extender "detail"
+    {random 0}
+    {detail12}
+    {detail1}
+    {detail4}
+    {detail5}
+    {detail6}
+    {detail9}
+    {detail10}
+    {detail11}
+    {detail2}
+    {detail3}
+    {detail7}
+    {detail8}
+  }
+
   {Extender "enumerator"
     {digit_folder "ger"}
   }
