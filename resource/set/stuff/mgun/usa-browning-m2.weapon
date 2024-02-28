@@ -19,7 +19,7 @@
 
   ("velocity" mps(894))
   ("fire rate" rpm(600))
-  ("reload time" seconds(5))
+  ("reload time" seconds(10))
   ("human health" damage(200))
   {Gravity 5}
 
