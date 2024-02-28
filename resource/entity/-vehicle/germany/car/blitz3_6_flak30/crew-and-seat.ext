@@ -1,3 +1,17 @@
+; crew and seat
+
+; define crew_human
+; args = place door bone animation group off
+(define "set-crew"
+  {placer
+    {place "%place" {group "%group"} {linkbone "%bone"} {turnoff %off {shadow}}}
+  }
+  {boarder
+    {door "%door"}
+    {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+  }
+)
+
 {Boarder
   {anm "driver"
     {forward  {begin "board_opel_driver"} {end "seat_opel_driver"} {base "doorleft"}}
@@ -17,25 +31,14 @@
   }
 }
 
-; define crew_human
-; args = place door bone animation group off
-(define "set-crew"
-  {placer
-    {place "%place" {group "%group"} {linkbone "%bone"} {turnoff %off {shadow}}}
-  }
-  {boarder
-    {door "%door"}
-    {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
-
-{placer
+{Placer
   {place "driver"    {visor "main"}}
   {place "gunner"    {visor "gun"}}
   {place "charger"   {visor "none"}}
   {place "commander" {visor "none"}}
 }
 
+; apply settings
 ("set-crew" place(driver)    door(emit1) bone(driver)    animation(driver)    group(crew) off({sensor}))
 ("set-crew" place(commander) door(emit2) bone(commander) animation(commander) group(crew) off())
 ("set-crew" place(gunner)    door(emit3) bone(gunner)    animation(gunner)    group(crew) off({targetable 0}))

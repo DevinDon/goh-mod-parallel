@@ -35,10 +35,10 @@
     {Box
       {Size 9 9}
       {Weight 2000}
-      {Item "repair_kit" 10}
+      {Item "repair_kit" 20}
 
       {Item "ammo ger-20l55 ap" 100}
-      {Item "ammo ger-20l55 he" 280}
+      {Item "ammo ger-20l55 he" 380}
     }
   }
 

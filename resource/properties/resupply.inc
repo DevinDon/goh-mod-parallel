@@ -857,11 +857,11 @@
       ("items_light_usa")
       ("items_light_fin")
     }
-    {mechanicResources {amount 10}{value 10}}
-    {radius        40}    ;// resupply radius in meter
-    {resupplyPeriod 3}    ;// resupply period in seconds
+    {mechanicResources {amount 10} {value 10}}
+    {radius 25}    ;// resupply radius in meter
+    {resupplyPeriod 2}    ;// resupply period in seconds
     {regenerationPeriod 0}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 10000}  ;// max number of resupplies (0 = unlimited)
+    {limit 1000}  ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -995,6 +995,10 @@
 )
 
 ; custom
+(define "set-ammo-resupply-with-transportation"
+  ("truck_ammo")
+)
+
 (define "set-ammo-resupply"
   ("truck_ammo_heavy")
 )

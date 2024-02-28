@@ -12,6 +12,10 @@ msgstr ""
 "Language-Team: \n"
 
 # 非装甲车辆
+msgctxt "desc/entity/blitz3_6"
+msgid   "Opel Blitz Transportation"
+msgstr  "欧宝 闪电 运输"
+
 msgctxt "desc/entity/blitz3_6_art_ammo"
 msgid   "Opel Blitz Ammo Supply"
 msgstr  "欧宝 闪电 弹药补给"
