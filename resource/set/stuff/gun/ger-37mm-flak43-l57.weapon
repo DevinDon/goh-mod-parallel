@@ -1,0 +1,87 @@
+; ger-37mm-flak43-l57
+; 德国 3.7cm FlaK 43 L/57 防空炮，适用于东风自行防空炮
+{from "pattern gun"
+
+  (include "/properties/standard/gun/define.ext")
+
+  {FireSound "gun/gun_auto"} ; 开火音效
+  {FireSoundclose "gun/gun_auto"} ; 车内视角开火音效
+  {ReloadSound "tank/reload_small"} ; 装弹音效
+  {Cursor "ironsights/aa"} ; 鼠标指针
+
+  {Filling "ammo ger-37l87" 16} ; 弹种及弹链内炮弹数量
+  {Calibre 37} ; 口径
+  {SyncedProjectiles 0} ; 生成弹坑, 0 为禁止, 1 为允许
+
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
+  {AimingTolerance 12} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
+  {SpreadTolerance 0.1} ; 瞄准到一定精度就可以开火
+  {ZeroingAccuracy 0.95 0.9 0.85 0.8 0.75} ; 归零精度？不确定
+  {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
+  {DisableRicochet 0} ; 是否禁用跳弹模式
+  ; 不启用曲射模式
+
+  {RechargeTime 2} ; 装填时间（秒）
+  {RecoveryTime 0.375} ; 短射间隔（秒）, 适用于弹链
+
+  {Automatic} ; 自动武器
+
+  {Burst
+    {Short 5 1} ; 远距离短连发，基数 +- 随机数
+    {Long  3 1} ; 近距离长连发，基数 +- 随机数
+    {RangeKoef 0.45} ; 该系数乘以 AimRange = 分界距离，大于分界距离为远距离，小于分界距离为近距离
+  }
+
+  {Parameters "ap"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 350} ; AI 最长射击距离 m
+    {MaxRange 350} ; 玩家最长射击距离 m
+    {Speed 770} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {100 53} {500 22} {1000 0}} ; 穿深表
+    {MinimumDamageModifier 55} ; 伤害
+    {Spreading
+      {RadiusTable {0 0} {100 0.33} {500 1.9} {1000 6.65}} ; 散布
+      {BurstRecoveryTime 0.37} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    }
+    {OvermatchCalibre
+      {0  1.0000 0.0000}
+      {20 1.2010 -0.049}
+      {30 1.3010 -0.090}
+      {40 1.5060 -0.077}
+      {50 1.8930 -0.028}
+      {55 2.1750 -0.079}
+      {60 2.5100 -0.145}
+      {65 2.9260 -0.145}
+      {70 3.5400 -0.145}
+      {75 4.5270 -0.145}
+      {80 6.4050 -0.145}
+      {85 11.590 -0.145}
+      {90 99.000 0.0000}
+    }
+    ; 无防空炮配置
+  }
+
+  {Parameters "he"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 350} ; AI 最长射击距离 m
+    {MaxRange 350} ; 玩家最长射击距离 m
+    {Speed 770} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    ; 无穿深表配置
+    ; 无穿透伤害配置
+    {Spreading
+      {RadiusTable {0 0} {100 0.4} {500 2.5} {1000 10.00}} ; 散布
+      {BurstRecoveryTime 0.37} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     1.25} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    }
+    ; 无穿深修正表配置
+    {FalloffStrength 0} ; 防空炮配置
+  }
+
+}

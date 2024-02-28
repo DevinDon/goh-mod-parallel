@@ -1,0 +1,125 @@
+; ger-75mm-k51-l24
+; 德国 7.5cm K 51 L/24 坦克炮，适用于 Sd.kfz 234/3
+{from "pattern gun"
+
+  (include "/properties/standard/gun/define.ext")
+
+  {FireSound "gun/gun_75_105_short"} ; 开火音效
+  {FireSoundclose "gun/gun_75_105_short"} ; 车内视角开火音效
+  {ReloadSound "tank/reload_medium"} ; 装弹音效
+  {Cursor "ironsights/tank2"} ; 鼠标指针
+
+  {Filling "ammo ger-75l24" 1} ; 弹种及弹链内炮弹数量
+  {Calibre 75} ; 口径
+  {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
+
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
+  {AimingTolerance 1} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
+  {SpreadTolerance 0.5} ; 瞄准到一定精度就可以开火
+  {ZeroingAccuracy 0.95 0.9 0.85 0.8 0.75} ; 归零精度？不确定
+  {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
+  {DisableRicochet 0} ; 是否禁用跳弹模式
+  ; 不启用曲射模式
+
+  {RechargeTime 6} ; 装填时间（秒）
+  {RecoveryTime 1.000} ; 短射间隔（秒）, 适用于弹链
+
+  ; 非自动武器
+
+  ; 无连发模式
+
+  {Parameters "apcbche"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 350} ; AI 最长射击距离 m
+    {MaxRange 350} ; 玩家最长射击距离 m
+    {Speed 385} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {100 50} {500 38} {1000 0}} ; 穿深表
+    {MinimumDamageModifier 150} ; 伤害
+    {Spreading
+      {RadiusTable {0 0} {100 0.4} {500 2.2} {1000 7.70}} ; 散布
+      {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.5} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    }
+    {OvermatchCalibre
+      {0  1.0000 0.0000}
+      {20 1.0670 0.0910}
+      {30 1.1070 0.3070}
+      {40 1.4550 0.1600}
+      {45 1.7130 0.1130}
+      {50 1.8980 0.0800}
+      {55 2.1450 0.0700}
+      {60 2.6350 0.0850}
+      {65 3.0950 0.1600}
+      {70 4.1250 0.3000}
+      {75 5.9900 0.4600}
+      {80 10.770 0.4560}
+      {85 29.660 0.4580}
+      {90 99.000 0.0000}
+    }
+    ; 无防空炮配置
+  }
+
+  {Parameters "heat"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 350} ; AI 最长射击距离 m
+    {MaxRange 350} ; 玩家最长射击距离 m
+    {Speed 450} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {100 115} {500 115} {1000 115}} ; 穿深表
+    {MinimumDamageModifier 130} ; 伤害
+    {Spreading
+      {RadiusTable {0 0} {100 0.5} {500 2.7} {1000 10.80}} ; 散布
+      {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.75} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    }
+    {OvermatchSlope
+      {0  1.0000}
+      {90 1.0000}
+    }
+    ; 无防空炮配置
+  }
+
+  {Parameters "he"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 350} ; AI 最长射击距离 m
+    {MaxRange 350} ; 玩家最长射击距离 m
+    {Speed 450} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    ; 无穿深表配置
+    ; 无穿透伤害配置
+    {Spreading
+      {RadiusTable {0 0} {100 0.5} {500 2.7} {1000 10.80}} ; 散布
+      {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    }
+    ; 无穿深修正表配置
+    ; 无防空炮配置
+  }
+
+  {Parameters "sm"
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 350} ; AI 最长射击距离 m
+    {MaxRange 350} ; 玩家最长射击距离 m
+    {Speed 520} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    ; 无穿深表配置
+    ; 无穿透伤害配置
+    {Spreading
+      {RadiusTable {0 0} {100 0.5} {500 2.7} {1000 10.80}} ; 散布
+      {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    }
+    ; 无穿深修正表配置
+    ; 无防空炮配置
+  }
+
+}
