@@ -178,7 +178,7 @@
     {"marder3m" inherit "vehicle custom.tank.marder3-m"} ; custom
 
     {"grille_m" inherit "vehicle custom.tank.grille-m"} ; custom
-    {"grille_k" inherit "vehicle custom.tank.grille-k"} ; custom
+    {"grille_k" inherit "vehicle custom.spg.grille-k"} ; custom
 
     {"stug3b" inherit "vehicle td.stug3b"}
 

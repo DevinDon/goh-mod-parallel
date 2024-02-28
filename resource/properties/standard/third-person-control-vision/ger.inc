@@ -313,36 +313,99 @@
     {linkBone "gun"}
     {offset 75 0 300}
     {gunnerviewoff 1}
-    {camera "zoom1.5"}
     ;{ManualAccuracyZoom}
     {blur_strength 10}
     {disable_fow 0}
     {no_rim_light}
     {soundEffect "opentop_vehicle"}
+    {camera "zoom2"}
   }
   {level ;2
-    {camera "zoom4"}
+    {camera "zoom3"}
     {offset 100 0 500}
   }
   {level ;3
+    {camera "zoom3"}
+    {offset 100 0 600}
+  }
+  {level ;4
     {camera "zoom4"}
     {offset 200 0 600}
   }
-  {level ;4
+  {level ;5
+    {camera "zoom4"}
+    {offset 200 0 700}
+  }
+  {level ;6
     {camera "zoom5"}
     {offset 300 0 700}
   }
-  {level ;5
+  {level ;7
     {camera "zoom5"}
-    {offset 400 0 800}
+    {offset 300 0 800}
+  }
+}
+
+{"custom.tank.grille-k"
+  {clip
+    {viewMin    -15}  ; camera rotate upward limit (looking down)
+    {viewMax    20 }  ; camera rotate downward limit (looking up)
+    {distanceMin  200}  ; camera min distance from object. value / 20 = meters
+    {distanceMax  400}  ; camera max distance from object. value / 20 = meters
+  }
+  {level ;0
+    {linkBone "basis"}
+    {faroffset 0 0 75}
+    {nearoffset -25 0 65}
+    {camera "zoom1"}
+    ;{hide_hitmarker 1}
+    {blur_strength 2}
+    {disable_fow 0}
+    {no_grain}
+  }
+  {level ;1
+    {zoom}
+    {vision_modes_active}
+    {vignette "/texture/common/environment/lens_effects/zoom_vignette_artillery_01"}
+    {blur_mask "/texture/common/environment/lens_effects/zoom_vignette_infantry_01_mask"}
+    {lens_dirt_mask "/texture/common/environment/lens_effects/dirty_lens_scope_01"}
+    {refraction_mask "/texture/common/environment/lens_effects/zoom_vignette_artillery_bp"}
+    {distance 50}
+    {distanceset 1}
+    {delta 0}
+    {linkBone "gun"}
+    {offset 75 0 300}
+    {gunnerviewoff 1}
+    ;{ManualAccuracyZoom}
+    {blur_strength 10}
+    {disable_fow 0}
+    {no_rim_light}
+    {soundEffect "opentop_vehicle"}
+    {camera "zoom2"}
+  }
+  {level ;2
+    {camera "zoom3"}
+    {offset 100 0 500}
+  }
+  {level ;3
+    {camera "zoom3"}
+    {offset 100 0 600}
+  }
+  {level ;4
+    {camera "zoom4"}
+    {offset 200 0 600}
+  }
+  {level ;5
+    {camera "zoom4"}
+    {offset 200 0 700}
   }
   {level ;6
-    {camera "zoom6"}
-    {offset 500 0 900}
+    {camera "zoom5"}
+    {offset 300 0 700}
   }
   {level ;7
-    {camera "zoom6"}
-    {offset 600 0 1000}
+    {camera "zoom5"}
+    {offset 300 0 800}
   }
 }
 
@@ -522,69 +585,6 @@
   }
   {level ;3
     {camera "zoom8"}
-  }
-}
-
-{"custom.tank.grille-k"
-  {clip
-    {viewMin    -15}  ; camera rotate upward limit (looking down)
-    {viewMax    20 }  ; camera rotate downward limit (looking up)
-    {distanceMin  200}  ; camera min distance from object. value / 20 = meters
-    {distanceMax  400}  ; camera max distance from object. value / 20 = meters
-  }
-  {level ;0
-    {linkBone "basis"}
-    {faroffset 0 0 75}
-    {nearoffset -25 0 65}
-    {camera "zoom1"}
-    ;{hide_hitmarker 1}
-    {blur_strength 2}
-    {disable_fow 0}
-    {no_grain}
-  }
-  {level ;1
-    {zoom}
-    {vision_modes_active}
-    {vignette "/texture/common/environment/lens_effects/zoom_vignette_artillery_01"}
-    {blur_mask "/texture/common/environment/lens_effects/zoom_vignette_infantry_01_mask"}
-    {lens_dirt_mask "/texture/common/environment/lens_effects/dirty_lens_scope_01"}
-    {refraction_mask "/texture/common/environment/lens_effects/zoom_vignette_artillery_bp"}
-    {distance 50}
-    {distanceset 1}
-    {delta 0}
-    {linkBone "gun"}
-    {offset 75 0 300}
-    {gunnerviewoff 1}
-    {camera "zoom1.5"}
-    ;{ManualAccuracyZoom}
-    {blur_strength 10}
-    {disable_fow 0}
-    {no_rim_light}
-    {soundEffect "opentop_vehicle"}
-  }
-  {level ;2
-    {camera "zoom4"}
-    {offset 100 0 500}
-  }
-  {level ;3
-    {camera "zoom4"}
-    {offset 200 0 600}
-  }
-  {level ;4
-    {camera "zoom5"}
-    {offset 300 0 700}
-  }
-  {level ;5
-    {camera "zoom5"}
-    {offset 400 0 800}
-  }
-  {level ;6
-    {camera "zoom6"}
-    {offset 500 0 900}
-  }
-  {level ;7
-    {camera "zoom6"}
-    {offset 600 0 1000}
   }
 }
 
