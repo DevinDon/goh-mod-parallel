@@ -52,6 +52,14 @@ msgctxt "desc/ammo/ger-37l45 he"
 msgid   "3.7cm SprGr.40 [<c(ff1200)>HE</c>] <c(65696d)>L/45</c>"
 msgstr  "3.7cm SprGr.40 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/45</c>"
 
+msgctxt "desc/ammo/ger-37l87 ap"
+msgid   "3.7cm Pzgr.18 [<c(ff6a00)>AP</c>]"
+msgstr  "3.7cm Pzgr.18 [<c(ff6a00)>穿甲弹</c>]"
+
+msgctxt "desc/ammo/ger-37l87 he"
+msgid   "3.7cm SprGr.18 [<c(ff1200)>HE</c>]"
+msgstr  "3.7cm SprGr.18 [<c(ff1200)>高爆弹</c>]"
+
 # 50mm
 msgctxt "desc/ammo/ger-50l60 apche"
 msgid   "5cm PzGr.39 [<c(ff6a00)>APC-HE</c>] <c(65696d)>L/60</c>"
