@@ -21,17 +21,6 @@
 
   {Able "emit_on_attack"}
 
-  ; {Sensor
-  ;   {Visor "main"
-  ;     {Vision "standard-vision-wide"}
-  ;     {Bone "driver"}
-  ;   }
-  ;   {Visor "around"
-  ;     {Vision "standard-vision-around"}
-  ;     {Bone "gunner"}
-  ;   }
-  ; }
-
   {Extender "inventory"
     {Weapon "mgun" {mask "mountable"}}
     {Box
