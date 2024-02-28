@@ -62,6 +62,23 @@
   }
 )
 
+; define crew_human
+; args = door door2 visor
+(define "set-crew"
+  {placer
+    {place "%place"
+      {group "crew"}
+      {visor "%visor"}
+    }
+  }
+  {boarder
+    {door "%door"}
+    {door "%door2"}
+    {link "%door" "%place" {anm "left"} {forward putoff} {reverse puton}}
+    {link "%door2" "%place" {anm "right"} {forward putoff} {reverse puton}}
+  }
+)
+
 ; define crew_human_visible_anm
 ; args = place door door2 visor animationLeft animationRight
 (define "set-crew-visible"
