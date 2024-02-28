@@ -28,11 +28,10 @@
 
   ("set-ammo-resupply")
   ("set-fuel-resupply")
-  ("set-engineer-resupply")
 
   {Extender "inventory"
     {Box
-      {Size 9 9}
+      {Size 15 15}
       {Weight 2000}
       {Item "repair_kit" 20}
     }

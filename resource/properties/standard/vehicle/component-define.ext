@@ -725,3 +725,30 @@
     {thickness %engine}
   }
 )
+
+; define shield_cover
+; no args
+(define "set-shield-cover"
+  {volume "shield_cover"
+    {thickness 0.01}
+    {material "fabric"}
+    {able {NoWoundDecal}}
+    {component "shield_cover"}
+  }
+  {volume "shield_cover1"
+    {thickness 0.01}
+    {material "fabric"}
+    {able {NoWoundDecal}}
+    {component "shield_cover"}
+  }
+  {volume "shield_cover2"
+    {thickness 0.01}
+    {material "fabric"}
+    {able {NoWoundDecal}}
+    {component "shield_cover"}
+  }
+  {component "shield_cover"
+    {RepairTime 10}
+    {RepairOrder 12}
+  }
+)

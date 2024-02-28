@@ -1,0 +1,54 @@
+; armor notes
+
+
+
+
+
+
+
+
+("set-basic-durability" body(200) engine(80) turret(100) mantlet(100) gun(150) track(100) ammo(100))
+("set-basic-armor"      ammo(10))
+("set-car-thickness"    body(3) engine(5))
+
+("set-bodyback"             repair(20))
+("set-turret"               repair(10))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(15) repair(20))
+("set-body"                 repair(20))
+("set-engine"               repair(20))
+("set-tracks" thickness(10) repair(15))
+
+("set-wheel" name("wheelright1"))
+("set-wheel" name("wheelleft1"))
+("set-wheel" name("wheelright2"))
+("set-wheel" name("wheelleft2"))
+
+("set-glass" name("glassr"))
+("set-glass" name("glassl"))
+("set-glass" name("glass"))
+
+("set-wood" name("bodyback1"))
+("set-wood" name("bodyback2"))
+("set-wood" name("bodyback3"))
+("set-wood" name("bodyback4"))
+("set-wood" name("bodyback5"))
+("set-wood" name("bodyback6"))
+("set-wood" name("bodyback7"))
+("set-wood" name("bodyback8"))
+("set-wood" name("bodyback9"))
+("set-wood" name("bodyback10"))
+("set-wood" name("bodyback11"))
+("set-wood" name("bodyback12"))
+("set-wood" name("bodyback13"))
+("set-wood" name("bodyback14"))
+("set-wood" name("bodyback15"))
+
+("set-internal-components" name("fuel")  type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+("set-shield-cover")
+
+{volume "body6" {able {holed}}}
+{volume "fuel" {able {NoWoundDecal 0}}}
+{volume "transmission" {able {NoWoundDecal 0}}}

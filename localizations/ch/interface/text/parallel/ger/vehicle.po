@@ -22,7 +22,7 @@ msgstr  "欧宝 闪电 工程补给"
 
 msgctxt "desc/entity/blitz3_6_fuel"
 msgid   "Opel Blitz Fuel Supply"
-msgstr  "欧宝 闪电 燃料补给"
+msgstr  "欧宝 闪电 燃油补给"
 
 msgctxt "desc/entity/blitz3_6_flak30"
 msgid   "Opel Blitz mit 2cm FlaK 30"
