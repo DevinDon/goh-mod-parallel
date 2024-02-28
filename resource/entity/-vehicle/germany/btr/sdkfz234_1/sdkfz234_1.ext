@@ -2,28 +2,38 @@
 ; wheels 10mm (wheels did not deflate when piereced by bullet)
 ; gun 25mm
 
-("armoredcar_tier2")
 
-("solid_wheel" args "wheelleft1")
-("solid_wheel" args "wheelleft2")
-("solid_wheel" args "wheelleft3")
-("solid_wheel" args "wheelleft4")
-("solid_wheel" args "wheelright1")
-("solid_wheel" args "wheelright2")
-("solid_wheel" args "wheelright3")
-("solid_wheel" args "wheelright4")
 
-("turret" repair(50))
-("gun" repair(30) thickness(25))
 
-("shield" args "shield1" 4)
-("shield" args "shield2" 4)
-("shield" args "shield3" 4)
-("shield" args "shield4" 4)
-("shield" args "shield5" 4)
 
-("fuel" args "fuel")
-("transmission" args "transmission")
+
+("set-basic-durability" body(200) engine(150) turret(150) mantlet(100) gun(150) track(150) ammo(150))
+("set-basic-armor"      ammo(10))
+
+("set-turret"                repair(10))
+("set-mantlet"               repair(5))
+("set-gun"     thickness(25) repair(10))
+
+("set-body"                  repair(15))
+("set-engine"                repair(10))
+
+("set-solid-wheel" name("wheelleft1"))
+("set-solid-wheel" name("wheelleft2"))
+("set-solid-wheel" name("wheelleft3"))
+("set-solid-wheel" name("wheelleft4"))
+("set-solid-wheel" name("wheelright1"))
+("set-solid-wheel" name("wheelright2"))
+("set-solid-wheel" name("wheelright3"))
+("set-solid-wheel" name("wheelright4"))
+
+("set-shield" name("shield1") thickness(4))
+("set-shield" name("shield2") thickness(4))
+("set-shield" name("shield3") thickness(4))
+("set-shield" name("shield4") thickness(4))
+("set-shield" name("shield5") thickness(4))
+
+("set-internal-components" name("fuel") type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
 
 {volume "transmission" {able {NoWoundDecal 0}}}
 
