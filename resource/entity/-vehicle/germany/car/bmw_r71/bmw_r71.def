@@ -29,7 +29,7 @@
 
   {Weaponry
     {RestoreIKTime 10}
-    {place "mgun"
+    {Place "mgun"
       {Type "main"}
       {Charger "gunner"}
       {LinkBone "mgun"}
