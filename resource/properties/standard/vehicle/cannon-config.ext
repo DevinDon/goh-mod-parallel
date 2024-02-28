@@ -1,0 +1,48 @@
+; standard cannon config
+
+actor
+
+(include "vehicle-config.ext")
+
+{brain "vehicle"
+  {state "vehicle"}
+  {const "crush/min_danger_zone_time" 1}
+  {const "crush/min_danger_zone_length" 1}
+}
+
+{PatherID "cannon.small"}
+{collider "cannon"}
+
+{targetClass "cannon_small" "ap fg"}
+{targetSelector "cannon_small"}
+
+{props "with_gun" "cannon"}
+{able "talk" "-emit_passangers_on_enemy"}
+{lodclass "cannon"}
+
+{sensor
+  {visor "main"
+    {vision "standard-vision-around"}
+    {bone "visor"}
+  }
+}
+
+{Skeleton
+  {bone "hearing_bone"
+    {Position 0 0 40}
+  }
+}
+
+{Weaponry
+  {place "gun"
+    {gunner "gunner"}
+  }
+}
+
+{extender "talk"
+  {talker "cannon"}
+}
+
+{perks
+  {blastwave_modifier 20.0}
+}

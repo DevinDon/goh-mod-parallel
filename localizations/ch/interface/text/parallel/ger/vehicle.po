@@ -11,6 +11,8 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 
+# 牵引火炮
+
 # 非装甲车辆
 msgctxt "desc/entity/bmw_r71"
 msgid   "BMW R71 mit MG42"
