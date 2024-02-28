@@ -48,7 +48,7 @@
         {ByLinearSpeed   0.25} ; km/h
         {MaxAngularSpeed 3.00} ; deg/s
         {ByAngularSpeed  0.35} ; deg/s
-        {DisorderTime    2.55} ; s
+        {DisorderTime    1.55} ; s
         {OrderTime      17.75} ; s
       }
     }
