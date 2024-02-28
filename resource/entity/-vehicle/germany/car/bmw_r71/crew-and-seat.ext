@@ -41,6 +41,7 @@
 ("set-crew" place(gunner) bone(gunner) door(emit2) animation(gunner)    group(crew))
 ("set-crew" place(seat1)  bone(seat1)  door(emit3) animation(passenger) group(passenger))
 
+; apply boarders
 {Boarder
   {anm "driver"
     {forward  {begin  "board_moto_driver"} {end "pose_moto_driver"} {base "doorleft1"}}

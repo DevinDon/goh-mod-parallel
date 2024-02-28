@@ -1,16 +1,5 @@
 ; crew and seat
 
-{Boarder
-  {anm "left"
-    {forward {begin "board_hetzer"} {end "seat_armor"}}
-    {reverse {end "emit_tank_1"}}
-  }
-  {anm "right"
-    {forward {begin "board_hetzer"} {end "seat_gunner_stand"}}
-    {reverse {end "emit_tank_2_hold"}}
-  }
-}
-
 ; define crew_inside
 ; no args
 (define "set-inside-crew"
@@ -64,3 +53,15 @@
 ("set-crew" place(driver)    door(emit1) door2(emit2) visor(driver))
 ("set-crew" place(charger)   door(emit1) door2(emit2) visor(none))
 ("set-crew" place(commander) door(emit1) door2(emit2) visor(around))
+
+; apply boarders
+{Boarder
+  {anm "left"
+    {forward {begin "board_hetzer"} {end "seat_armor"}}
+    {reverse {end "emit_tank_1"}}
+  }
+  {anm "right"
+    {forward {begin "board_hetzer"} {end "seat_gunner_stand"}}
+    {reverse {end "emit_tank_2_hold"}}
+  }
+}

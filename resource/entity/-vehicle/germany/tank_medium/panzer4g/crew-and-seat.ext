@@ -1,32 +1,5 @@
 ; crew and seat
 
-{Boarder
-  {anm "driver"
-    {forward  {begin  "board_pz4_driver"} {end "seat_commander_hatch"} {base "open_driver"}}
-    {reverse   {end  "board_pz4_driver" -1} {base "open_driver" -1}}
-  }
-  {anm "left"
-    {forward  {begin  "board_cromwell"} {end "seat_commander_hatch"}}
-    {reverse   {end  "board_cromwell" -1}}
-  }
-  {anm "right"
-    {forward  {begin  "board_cromwell"} {end "seat_commander_hatch"}}
-    {reverse   {end  "board_cromwell" -1}}
-  }
-  {anm "armor"
-    {forward  {begin  "board_MiddleArmor"} {end "pose_seat_armor_1"}}
-    {reverse   {end  "emit_tank_1"}}
-  }
-  {anm "armor1"
-    {forward  {begin  "board_MiddleArmor"} {end "pose_seat_armor_2"}}
-    {reverse   {end  "emit_tank_1"}}
-  }
-  {anm "armor2"
-    {forward  {begin  "board_lowArmor"} {end "seat_crew_cannon1"}}
-    {reverse   {end  "emit_tank_1"}}
-  }
-}
-
 ; define crew_inside
 ; no args
 (define "set-inside-crew"
@@ -127,3 +100,31 @@
 ("set-seat" place(seat2) bone(seat02) door(emit4) animation(armor))
 ("set-seat" place(seat3) bone(seat03) door(emit5) animation(armor1))
 ("set-seat" place(seat4) bone(seat04) door(emit6) animation(armor2))
+
+; apply boarders
+{Boarder
+  {anm "driver"
+    {forward  {begin  "board_pz4_driver"} {end "seat_commander_hatch"} {base "open_driver"}}
+    {reverse   {end  "board_pz4_driver" -1} {base "open_driver" -1}}
+  }
+  {anm "left"
+    {forward  {begin  "board_cromwell"} {end "seat_commander_hatch"}}
+    {reverse   {end  "board_cromwell" -1}}
+  }
+  {anm "right"
+    {forward  {begin  "board_cromwell"} {end "seat_commander_hatch"}}
+    {reverse   {end  "board_cromwell" -1}}
+  }
+  {anm "armor"
+    {forward  {begin  "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+    {reverse   {end  "emit_tank_1"}}
+  }
+  {anm "armor1"
+    {forward  {begin  "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+    {reverse   {end  "emit_tank_1"}}
+  }
+  {anm "armor2"
+    {forward  {begin  "board_lowArmor"} {end "seat_crew_cannon1"}}
+    {reverse   {end  "emit_tank_1"}}
+  }
+}

@@ -12,6 +12,13 @@
   }
 )
 
+; apply settings
+("set-crew" place(driver)    door(emit1) bone(driver)    animation(driver)    group(crew) off({sensor}))
+("set-crew" place(commander) door(emit2) bone(commander) animation(commander) group(crew) off())
+("set-crew" place(gunner)    door(emit3) bone(gunner)    animation(gunner)    group(crew) off({targetable 0}))
+("set-crew" place(charger)   door(emit4) bone(charger)   animation(charger)   group(crew) off())
+
+; apply boarders
 {Boarder
   {anm "driver"
     {forward  {begin "board_opel_driver"} {end "seat_opel_driver"} {base "doorleft"}}
@@ -37,9 +44,3 @@
   {place "charger"   {visor "none"}}
   {place "commander" {visor "none"}}
 }
-
-; apply settings
-("set-crew" place(driver)    door(emit1) bone(driver)    animation(driver)    group(crew) off({sensor}))
-("set-crew" place(commander) door(emit2) bone(commander) animation(commander) group(crew) off())
-("set-crew" place(gunner)    door(emit3) bone(gunner)    animation(gunner)    group(crew) off({targetable 0}))
-("set-crew" place(charger)   door(emit4) bone(charger)   animation(charger)   group(crew) off())

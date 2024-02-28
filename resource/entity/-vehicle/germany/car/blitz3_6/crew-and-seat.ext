@@ -67,13 +67,6 @@
   }
 )
 
-{Boarder
-  {anm "passenger"
-    {forward  {begin "board_body"} {end "seat_passenger"} {base "board"}}
-    {reverse  {end "emit_body" 1} {base "board"}}
-  }
-}
-
 ; apply settings
 ; crew_2_human
 ("set-crew-inside")
@@ -96,3 +89,11 @@
 ("set-passenger" place(seat10) bone(seat10) door(emit4) animation(passenger) group(passenger))
 ("set-passenger" place(seat11) bone(seat11) door(emit3) animation(passenger) group(passenger))
 ("set-passenger" place(seat12) bone(seat12) door(emit4) animation(passenger) group(passenger))
+
+; apply boarders
+{Boarder
+  {anm "passenger"
+    {forward  {begin "board_body"} {end "seat_passenger"} {base "board"}}
+    {reverse  {end "emit_body" 1} {base "board"}}
+  }
+}

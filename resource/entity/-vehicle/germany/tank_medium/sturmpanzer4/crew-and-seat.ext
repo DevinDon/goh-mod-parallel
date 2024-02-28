@@ -1,20 +1,5 @@
 ; crew and seat
 
-{Boarder
-  {anm "left"
-    {forward  {begin  "board_tank_right"} {end "pose_mgun_pz6"}}
-    {reverse   {end  "emit_tank_2_hold"}}
-  }
-  {anm "right"
-    {forward  {begin  "board_tank_left"} {end "pose_mgun_pz6"}}
-    {reverse   {end  "emit_tank_2_hold"}}
-  }
-  {anm "armor"
-    {forward  {begin  "board_HighArmor"}   {end "pose_seat_armor_1"}}
-    {reverse   {end  "emit_tank_1"}}
-  }
-}
-
 ; define crew_inside
 ; no args
 (define "set-inside-crew"
@@ -118,3 +103,19 @@
 ("set-seat" place(seat2) bone(seat02) door(emit4) animation(armor))
 ("set-seat" place(seat3) bone(seat03) door(emit5) animation(armor))
 ("set-seat" place(seat4) bone(seat04) door(emit6) animation(armor))
+
+; apply boarders
+{Boarder
+  {anm "left"
+    {forward  {begin  "board_tank_right"} {end "pose_mgun_pz6"}}
+    {reverse   {end  "emit_tank_2_hold"}}
+  }
+  {anm "right"
+    {forward  {begin  "board_tank_left"} {end "pose_mgun_pz6"}}
+    {reverse   {end  "emit_tank_2_hold"}}
+  }
+  {anm "armor"
+    {forward  {begin  "board_HighArmor"}   {end "pose_seat_armor_1"}}
+    {reverse   {end  "emit_tank_1"}}
+  }
+}

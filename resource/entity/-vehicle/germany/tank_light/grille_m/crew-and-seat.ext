@@ -1,20 +1,5 @@
 ; crew and seat
 
-{Boarder
-  {anm "driver"
-    {forward {begin "board_t34_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
-    {reverse {end "emit_t34_hold"} {base "open_driver"}}
-  }
-  {anm "left"
-    {forward {begin "board_tank_left"} {end "pose_flak30_loader" 10}}
-    {reverse {end "emit_tank_2_hold"}}
-  }
-  {anm "right"
-    {forward {begin "board_tank_right"} {end "pose_flak30_gunner" 10}}
-    {reverse {end "emit_tank_2_hold"}}
-  }
-}
-
 ; define crew_driver
 ; args = door door2 door3
 (define "set-driver-crew"
@@ -55,3 +40,19 @@
 ("set-driver-crew"  door(emit0)      door2(emit1) door3(emit2))
 ("set-crew-visible" place(gunner)    door(emit2)  door2(emit2) visor(main)   animationLeft(right) animationRight(right))
 ("set-crew-visible" place(commander) door(emit1)  door2(emit1) visor(around) animationLeft(left)  animationRight(left))
+
+; apply boarders
+{Boarder
+  {anm "driver"
+    {forward {begin "board_t34_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+    {reverse {end "emit_t34_hold"} {base "open_driver"}}
+  }
+  {anm "left"
+    {forward {begin "board_tank_left"} {end "pose_flak30_loader" 10}}
+    {reverse {end "emit_tank_2_hold"}}
+  }
+  {anm "right"
+    {forward {begin "board_tank_right"} {end "pose_flak30_gunner" 10}}
+    {reverse {end "emit_tank_2_hold"}}
+  }
+}
