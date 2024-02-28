@@ -27,19 +27,19 @@ msgstr  "Sd.Kfz 231 装甲车"
 
 msgctxt "desc/entity/sdkfz234_1"
 msgid   "Sd.Kfz 234/1"
-msgstr  "Sd.Kfz 234/1 装甲车 侦察"
+msgstr  "Sd.Kfz 234/1 侦察装甲车"
 
 msgctxt "desc/entity/sdkfz234_2"
 msgid   "Sd.Kfz 234/2"
-msgstr  "Sd.Kfz 234/2 装甲车 美洲豹"
+msgstr  "Sd.Kfz 234/2 美洲豹"
 
 msgctxt "desc/entity/sdkfz234_3"
 msgid   "Sd.Kfz 234/3"
-msgstr  "Sd.Kfz 234/3 装甲车 支援"
+msgstr  "Sd.Kfz 234/3 支援装甲车"
 
 msgctxt "desc/entity/sdkfz234_4"
 msgid   "Sd.Kfz 234/4"
-msgstr  "Sd.Kfz 234/4 装甲车 反坦克"
+msgstr  "Sd.Kfz 234/4 反坦克装甲车"
 
 # 轻型坦克
 msgctxt "desc/entity/panzer2l"

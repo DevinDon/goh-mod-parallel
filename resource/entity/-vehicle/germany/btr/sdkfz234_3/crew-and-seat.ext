@@ -1,5 +1,4 @@
-;SDL
-{boarder
+{Boarder
   {anm "gunner"
     {forward {begin "board_sd222_driver"} {end "seat_sdkfz2343_gunner"}}
     {reverse {end "emit_sd222_driver"}}
@@ -22,7 +21,14 @@
   }
 }
 
-(define "crew_human"
+{Placer
+  {place "gunner" {visor "main"}}
+  {place "driver" {turnoff {targetable}}}
+}
+
+; define crew_human
+; args = place bone animation group
+(define "set-crew"
   {placer
     {place "%place" {group "%group"} {linkbone "%bone"} {turnoff {shadow}{sensor}}}
   }
@@ -34,23 +40,8 @@
   }
 )
 
-{sensor
-  {visor "main"
-    {vision "tank_range_200"}
-    {bone "foresight1"}
-  }
-  {visor "around"
-    {vision "vehicle_around"}    ;// better vision than a in-closed turret
-  }
-}
-
-{placer
-  {place "gunner" {visor "main"}}
-  {place "driver" {turnoff {targetable}}}    ;// sits out of view from top of turret
-}
-
-("crew_human" place(driver)    bone(driver)  animation(driver)    group(crew))
-("crew_human" place(commander)  bone(commander)  animation(commander)  group(crew))
-("crew_human" place(gunner)    bone(gunner)  animation(gunner)    group(crew))
-("crew_human" place(charger)  bone(charger)  animation(charger)    group(crew))
-;("crew_human" place(gunner2)  bone(gunner2)  animation(gunner2)    group(crew))
+; apply settings
+("set-crew" place(driver)    bone(driver)    animation(driver)    group(crew))
+("set-crew" place(commander) bone(commander) animation(commander) group(crew))
+("set-crew" place(gunner)    bone(gunner)    animation(gunner)    group(crew))
+("set-crew" place(charger)   bone(charger)   animation(charger)   group(crew))

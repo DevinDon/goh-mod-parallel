@@ -19,8 +19,8 @@
 
 {Placer
   {place "gunner" {visor "main"}}
-  {place "driver" {turnoff {targetable}}}    ;// sits out of view from top of turret
-  {place "charger" {turnoff {targetable}}}  ;// sits out of view from top of turret
+  {place "driver" {turnoff {targetable}}}
+  {place "charger" {turnoff {targetable}}}
 }
 
 ; define crew_human
