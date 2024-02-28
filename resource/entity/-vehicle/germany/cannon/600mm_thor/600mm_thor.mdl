@@ -1,0 +1,79 @@
+; armor notes
+; tracks and wheels 30mm
+; gun 50mm
+
+
+
+
+
+
+("set-basic-durability" body(440) engine(300) turret(400) mantlet(200) gun(300) track(300) ammo(300))
+("set-basic-armor"      ammo(20))
+
+("set-turret"               repair(20))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(50) repair(60))
+
+("set-body"                 repair(20))
+("set-engine"               repair(60))
+("set-tracks" thickness(30) repair(45))
+
+{volume "body1"
+  {thickness 15}
+}
+{volume "body2"
+  {thickness 15}
+}
+{volume "body3"
+  {thickness 15}
+}
+{volume "body4"
+  {thickness 15}
+}
+{volume "body5"
+  {thickness 15}
+}
+{volume "engine1"
+  {thickness 15}
+}
+{volume "barrel1"
+  {thickness 30}
+}
+{volume "barrel2"
+  {thickness 30}
+}
+{volume "barrel3"
+  {thickness 50}
+}
+{volume "barrel4"
+  {thickness 50}
+}
+{volume "barrel5"
+  {thickness 50}
+}
+{volume "armor1"
+  {thickness 4}
+}
+{volume "armor2"
+  {thickness 4}
+}
+{volume "armor3"
+  {thickness 4}
+}
+{volume "armor4"
+  {thickness 4}
+}
+{volume "armor5"
+  {thickness 4}
+}
+{volume "armor6"
+  {thickness 4}
+}
+{volume "shell1"
+  {thickness 10}
+  {tags "shell1"}
+}
+{volume "shell2"
+  {thickness 10}
+  {tags "shell2"}
+}
