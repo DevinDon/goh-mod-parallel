@@ -2,8 +2,8 @@
 
   (include "/properties/standard/ammo/hmgun.ext")
 
-  {Tag "bullet stackable pierce hmgun api"}
-  {Tag "bullet_fx size3"}
+  {Tag "bullet hmgun stackable pierce api"}
+  {Tag "bullet_fx size3 ap"}
 
   {Inventory
     {Weight 1}

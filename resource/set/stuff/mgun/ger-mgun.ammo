@@ -3,7 +3,7 @@
   (include "/properties/standard/ammo/mgun.ext")
 
   {Tag "bullet small_arms stackable pierce api"}
-  {Tag "bullet_fx size2 ap"}
+  {Tag "bullet_fx size2"}
 
   {Inventory
     {weight 0.333}
