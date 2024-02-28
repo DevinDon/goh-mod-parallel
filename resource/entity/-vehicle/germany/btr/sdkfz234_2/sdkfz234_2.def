@@ -51,6 +51,8 @@
 
       {Item "ammo ger-mgun" 2900}
 
+      {Item "nbks grenade" 2}
+
       {Item "ammo ger-50l60 apche" 19}
       {Item "ammo ger-50l60 apcr" 5}
       {Item "ammo ger-50l60 he" 29}
