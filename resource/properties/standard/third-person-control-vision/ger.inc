@@ -346,7 +346,7 @@
   }
 }
 
-{"custom.tank.grille-k"
+{"custom.spg.grille-k"
   {clip
     {viewMin    -15}  ; camera rotate upward limit (looking down)
     {viewMax    20 }  ; camera rotate downward limit (looking up)
