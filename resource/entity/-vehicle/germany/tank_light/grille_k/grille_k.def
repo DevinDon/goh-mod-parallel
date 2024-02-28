@@ -14,19 +14,13 @@
   {TargetSelector "tank_medium"}
   {Collider "tank.light"}
 
-  {Boarder
-    {anm "driver"
-      {forward {begin "board_t26_driver"} {end "pose_t26_driver"} {base "open_driver"}}
-      {reverse {end "board_t26_driver" -1} {base "open_driver" -1}}
-    }
-    {anm "left"
-      {forward {begin "board_tank_left"} {end "seat_armor"} {base "board"}}
-      {reverse {end "emit_tank_1"} {base "board"}}
-    }
-    {anm "right"
-      {forward {begin "board_tank_right"} {end "seat_armor"} {base "board"}}
-      {reverse {end "emit_tank_2_hold"} {base "board"}}
-    }
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
   }
 
   {Extender "enumerator"

@@ -62,6 +62,17 @@
   ("set-fuel-resupply")
   ("set-engineer-resupply")
 
+  {Extender "detail"
+    {random 0}
+    {detail9}
+    {detail1}
+    {detail3}
+    {detail6}
+    {detail4}
+    {detail5}
+    {detail2}
+  }
+
   {Extender "inventory"
     {Box
       {Size 9 9}

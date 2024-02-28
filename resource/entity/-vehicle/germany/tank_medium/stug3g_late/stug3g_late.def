@@ -13,27 +13,15 @@
   {Targetclass "tank_medium"}
   {TargetSelector "tank_medium"}
 
-  {Boarder
-    {anm "left"
-      {forward  {begin  "board_tank_left"} {end "pose_mgun_pz6"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
-    {anm "right"
-      {forward  {begin  "board_tank_left"} {end "pose_mgun_pz6"}}
-      {reverse   {end  "emit_tank_2_hold"}}
-    }
-    {anm "armor"
-      {forward  {begin  "board_MiddleArmor"}   {end "pose_seat_armor_2"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
-    {anm "armor1"
-      {forward  {begin  "board_MiddleArmor"} {end "pose_seat_armor_1"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
-    {anm "armor2"
-      {forward  {begin  "board_lowArmor"} {end "pose_seat_armor_1"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail111}
+    {detail112}
   }
 
   {Extender "enumerator"
@@ -47,17 +35,6 @@
     {Visor "around"
       {Bone "visor"}
     }
-  }
-
-  {Extender "detail"
-    {random 0}
-    {detail1}
-    {detail2}
-    {detail3}
-    {detail4}
-    {detail5}
-    {detail111}
-    {detail112}
   }
 
   {Extender "shield" {on}}

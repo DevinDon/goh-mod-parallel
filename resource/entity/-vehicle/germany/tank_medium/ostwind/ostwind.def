@@ -13,6 +13,22 @@
   {Targetclass "tank_medium"}
   {TargetSelector "tank_zenite"}
 
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail8}
+    {detail4}
+    {detail10}
+    {detail5}
+    {detail6}
+    {detail7}
+    {detail9}
+    {detail12}
+    {detail11}
+  }
+
   {Extender "enumerator"
     {digit_folder "ger"}
   }

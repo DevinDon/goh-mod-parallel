@@ -14,19 +14,11 @@
   {TargetSelector "cannon_howitzer"}
   {Collider "tank.light"}
 
-  {Boarder
-    {anm "driver"
-      {forward {begin "board_pz4_driver"} {end "pose_t26_driver"} {base "open_driver"}}
-      {reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
-    }
-    {anm "left"
-      {forward {begin "board_tank_left"} {end "seat_armor"} {base "board"}}
-      {reverse {end "emit_tank_1"}{base "board"}}
-    }
-    {anm "right"
-      {forward {begin "board_tank_right"} {end "seat_armor"} {base "board"}}
-      {reverse {end "emit_tank_2_hold"}{base "board"}}
-    }
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
   }
 
   {Extender "enumerator"
@@ -37,13 +29,6 @@
     {Visor "around"
       {Vision "standard-vision-around"}
     }
-  }
-
-  {Extender "detail"
-    {random 0}
-    {detail1}
-    {detail2}
-    {detail3}
   }
 
   {Extender "inventory"

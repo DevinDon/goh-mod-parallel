@@ -1,5 +1,16 @@
 ; crew and seat
 
+{Boarder
+  {anm "left"
+    {forward {begin "board_sd222_driver"} {base ""}}
+    {reverse {end "emit_sd222_driver"} {base "" -1}}
+  }
+  {anm "right"
+    {forward {begin "board_sd222_driver"} {base ""}}
+    {reverse {end "emit_sd222_driver"} {base "" -1}}
+  }
+}
+
 ; define crew_human
 ; args = place visor
 (define "set-crew"

@@ -1,5 +1,24 @@
 ; crew and seat
 
+{Boarder
+  {anm "driver"
+    {forward {begin "board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+    {reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
+  }
+  {anm "left"
+    {forward {begin "board_Kv"} {end "pose_mgun_pz6"}}
+    {reverse {end "emit_tank_2_hold"}}
+  }
+  {anm "right"
+    {forward {begin "board_tank_right"} {end "pose_mgun_pz6"}}
+    {reverse {end "emit_tank_2_hold"}}
+  }
+  {anm "armor"
+    {forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+    {reverse {end "emit_tank_1"}}
+  }
+}
+
 ; define crew_inside
 ; no args
 (define "set-inside-crew"

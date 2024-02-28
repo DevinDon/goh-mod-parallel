@@ -17,13 +17,6 @@
   }
 }
 
-{sensor
-  {visor "gun"
-    {vision "standard-vision-around"}
-    {bone "foresight1"}
-  }
-}
-
 ; define crew_human
 ; args = place door bone animation group off
 (define "set-crew"

@@ -14,17 +14,6 @@
   {TargetSelector "tank_medium"}
   {Collider "tank.light"}
 
-  {Boarder
-    {anm "left"
-      {forward {begin "board_hetzer"} {end "seat_armor"}}
-      {reverse {end "emit_tank_1"}}
-    }
-    {anm "right"
-      {forward {begin "board_hetzer"} {end "seat_gunner_stand"}}
-      {reverse {end "emit_tank_2_hold"}}
-    }
-  }
-
   {Extender "detail"
     {random 0}
     {detail1}

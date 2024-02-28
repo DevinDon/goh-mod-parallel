@@ -7,41 +7,11 @@
   (include   "stuh42.ext")
   (include   "crew-and-seat.ext")
 
-
-
-
   {Props "td" "medium" "-turret" "mantlet" "vision_lev05" "muzzle_85mm_93mm_sides" "shield" "detect_spg"}
 
   {PatherId "panzer3"}
   {Targetclass "tank_medium"}
   {TargetSelector "tank_spg"}
-
-  {Extender "enumerator"
-    {digit_folder "ger"}
-  }
-
-  {Boarder
-    {anm "left"
-      {forward  {begin  "board_tank_left"} {end "pose_mgun_pz6"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
-    {anm "right"
-      {forward  {begin  "board_tank_left"} {end "pose_mgun_pz6"}}
-      {reverse   {end  "emit_tank_2_hold"}}
-    }
-    {anm "armor"
-      {forward  {begin  "board_MiddleArmor"}   {end "pose_seat_armor_2"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
-    {anm "armor1"
-      {forward  {begin  "board_MiddleArmor"} {end "pose_seat_armor_1"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
-    {anm "armor2"
-      {forward  {begin  "board_lowArmor"} {end "seat_crew_cannon1"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
-  }
 
   {Extender "detail"
     {random 0}
@@ -53,6 +23,10 @@
     {detail7}
     {detail8}
     {detail9}
+  }
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
   }
 
   {Sensor
@@ -131,4 +105,5 @@
     {limits -10 10}
     {speed2 8}
   }
+
 }

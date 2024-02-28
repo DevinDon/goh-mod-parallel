@@ -1,5 +1,20 @@
 ; crew and seat
 
+{Boarder
+  {anm "driver"
+    {forward {begin "board_t26_driver"} {end "pose_t26_driver"} {base "open_driver"}}
+    {reverse {end "board_t26_driver" -1} {base "open_driver" -1}}
+  }
+  {anm "left"
+    {forward {begin "board_tank_left"} {end "seat_armor"}}
+    {reverse {end "emit_tank_1"}}
+  }
+  {anm "right"
+    {forward {begin "board_tank_right"} {end "seat_armor"}}
+    {reverse {end "emit_tank_2_hold"}}
+  }
+}
+
 ; define crew_driver
 ; args = door door2 door3
 (define "set-driver-crew"

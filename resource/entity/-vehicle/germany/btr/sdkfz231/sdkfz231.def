@@ -13,15 +13,13 @@
   {Targetclass "armoredcar"}
   {TargetSelector "tank_light"}
 
-  {Boarder
-    {anm "left"
-      {forward {begin "board_sd222_driver"} {base ""}}
-      {reverse {end "emit_sd222_driver"} {base "" -1}}
-    }
-    {anm "right"
-      {forward {begin "board_sd222_driver"} {base ""}}
-      {reverse {end "emit_sd222_driver"} {base "" -1}}
-    }
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
   }
 
   {Extender "enumerator"

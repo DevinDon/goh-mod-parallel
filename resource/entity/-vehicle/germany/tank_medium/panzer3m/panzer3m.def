@@ -13,33 +13,6 @@
   {Targetclass "tank_medium"}
   {TargetSelector "tank_medium"}
 
-  {Extender "enumerator"
-    {digit_folder "ger"}
-  }
-
-  {Boarder
-    {anm "left"
-      {forward  {begin  "board_tank_right"} {end "seat_commander_hatch"}}
-      {reverse   {end  "emit_tank_2_hold"}}
-    }
-    {anm "right"
-      {forward  {begin  "board_tank_left"} {end "seat_commander_hatch"}}
-      {reverse   {end  "emit_tank_2_hold"}}
-    }
-    {anm "armor"
-      {forward  {begin  "board_MiddleArmor"}   {end "pose_seat_armor_2"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
-    {anm "armor1"
-      {forward  {begin  "board_MiddleArmor"} {end "pose_seat_armor_1"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
-    {anm "armor2"
-      {forward  {begin  "board_MiddleArmor"} {end "seat_crew_cannon1"}}
-      {reverse   {end  "emit_tank_1"}}
-    }
-  }
-
   {Extender "detail"
     {random 0}
     {detail1}
@@ -50,6 +23,10 @@
     {detail6}
     {detail9}
     {detail10}
+  }
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
   }
 
   {Extender "shield" {on}}

@@ -50,6 +50,22 @@
   {volume "turret" {thickness 8} {able {holed}}}
   {volume "turret2" {thickness 8}}
 
+  {Sensor
+    {Visor "gun"
+      {Vision "standard-vision-around"}
+      {Bone "foresight1"}
+    }
+  }
+
+  {Extender "detail"
+    {random 0}
+    {detail6}
+    {detail2}
+    {detail5}
+    {detail8}
+    {detail9}
+  }
+
   {Extender "inventory"
     {Box
       {Size 9 9}
