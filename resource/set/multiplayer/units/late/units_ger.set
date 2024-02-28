@@ -326,6 +326,7 @@
   ("doctrine_t1" cool(240) d(late_ger_support) cost(20))
   {icon 2}
 }
+
 ; // Ostwind in 1st sequence
 {"doctrine_ostwind"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(ostwind) crew1(tankman:4) crew2(tank_commander:1))
@@ -336,7 +337,7 @@
 ; // Sd.kfz. 234 kwk37
 {"doctrine_sdkfz234_3"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sdkfz234_3) crew1(tankman_scout:3) crew2(tank_commander_scout:1))
-  ("doctrine_t1" cool(300) d(late_ger_support) cost(35))
+  ("doctrine_t1" cool(300) d(late_ger_support) cost(30))
 }
 
 
@@ -352,7 +353,7 @@
 ; // Sd.kfz. 234 pak40
 {"doctrine_sdkfz234_4"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sdkfz234_4) crew1(tankman_scout:3) crew2(tank_commander_scout:1))
-  ("doctrine_t2" cool(300) d(late_ger_support) cost(45))
+  ("doctrine_t2" cool(300) d(late_ger_support) cost(40))
 }
 
 ; // Grille
@@ -373,7 +374,7 @@
 ; // 170mm K18
 {"doctrine_170mm_k18_late"
   ("towed_gun_doctrine" side(ger) period(late) vehicle(sdkfz7) crew_v(rifleman_1:1) cannon(170mm_k18) crew_c(artilleryman:6))
-  ("doctrine_t3" cool(480) d(late_ger_support) cost(105))
+  ("doctrine_t3" cool(480) d(late_ger_support) cost(80))
 }
 
 ; // Karl Gerät
