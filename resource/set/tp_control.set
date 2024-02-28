@@ -15,6 +15,9 @@
     (include "third_person/vehicle_specific_eng_tank.inc")
     (include "third_person/vehicle_specific_usa_cannon.inc")
     (include "third_person/vehicle_specific_usa_tank.inc")
+    ; custom
+    (include "/properties/standard/third-person-control-vision/ger.inc")
+    (include "/properties/standard/third-person-control-vision/usa.inc")
 ;_____________________________________________________
 ;|   Unnamed units will inherit 'default' setting     |
 ;|    Which has a rudimentary generic visor slot      |
@@ -94,7 +97,7 @@
     {"bmw_r71" inherit "vehicle generic.moto"}
 
     {"blitz3_6" inherit "vehicle generic.unarmed"}
-    {"blitz3_6_art_ammo" inherit "vehicle generic.unarmed"}
+    {"blitz3_6_art_ammo" inherit "vehicle custom.car"} ; custom
     {"blitz3_6_engineering" inherit "vehicle generic.unarmed"}
     {"blitz3_6_fuel" inherit "vehicle generic.unarmed"}
     {"blitz3_6_radio" inherit "vehicle generic.unarmed"}
@@ -109,7 +112,7 @@
     {"kfz13" inherit "vehicle vehicle.kfz13"}
     {"kfz14" inherit "vehicle vehicle.kfz14"}
     {"kfz15" inherit "vehicle vehicle.kfz13"}
-    {"blitz3_6_flak30" inherit "vehicle truck.flak30"}
+    {"blitz3_6_flak30" inherit "vehicle custom.truck.flak30"} ; custom
 
 ;=================== Ger btr ===================
 
@@ -140,12 +143,12 @@
     {"sdkfz221" inherit "vehicle vehicle.221"}
     {"sdkfz222a" inherit "vehicle vehicle.222"}
 
-    {"sdkfz231" inherit "vehicle tank.panzer2l"}
+    {"sdkfz231" inherit "vehicle custom.armored-car.sdkfz231"} ; custom
 
-    {"sdkfz234_1" inherit "vehicle vehicle.222"}
-    {"sdkfz234_2" inherit "vehicle tank.puma"}
-    {"sdkfz234_3" inherit "vehicle tank.234_3"}
-    {"sdkfz234_4" inherit "vehicle tank.234_4"}
+    {"sdkfz234_1" inherit "vehicle custom.armored-car.sdkfz234-1"} ; custom
+    {"sdkfz234_2" inherit "vehicle custom.armored-car.sdkfz234-2"} ; custom
+    {"sdkfz234_3" inherit "vehicle custom.armored-car.sdkfz234-3"} ; custom
+    {"sdkfz234_4" inherit "vehicle custom.armored-car.sdkfz234-4"} ; custom
 
     {"p204_f" inherit "vehicle tank.panhard"}
     {"p204_f_rail" inherit "vehicle tank.panhard"}
@@ -168,22 +171,22 @@
 
     {"panzerjager1" inherit "vehicle td.panzerjaeger"}
 
-    {"hetzer" inherit "vehicle td.hetzer"}
+    {"hetzer" inherit "vehicle custom.tank.hetzer"} ; custom
 
     {"marder2" inherit "vehicle td.marder2"}
 
-    {"marder3m" inherit "vehicle td.marder3m"}
+    {"marder3m" inherit "vehicle custom.tank.marder3-m"} ; custom
 
-    {"grille_m" inherit "vehicle td.grille"}
-    {"grille_k" inherit "vehicle td.grille_k"}
+    {"grille_m" inherit "vehicle custom.tank.grille-m"} ; custom
+    {"grille_k" inherit "vehicle custom.tank.grille-k"} ; custom
 
     {"stug3b" inherit "vehicle td.stug3b"}
 
-    {"stug3f" inherit "vehicle td.stug3"}
-    {"stug3g" inherit "vehicle td.stug3"}
-    {"stug3g_late" inherit "vehicle td.stug3"}
+    {"stug3f" inherit "vehicle custom.tank.stug3"} ; custom
+    {"stug3g" inherit "vehicle custom.tank.stug3"} ; custom
+    {"stug3g_late" inherit "vehicle custom.tank.stug3"} ; custom
 
-    {"stuh42" inherit "vehicle td.stuh42"}
+    {"stuh42" inherit "vehicle custom.tank.stuh42"} ; custom
 
     {"pz35t" inherit "vehicle tank.panzer35t"}
     {"pz38t_a" inherit "vehicle tank.panzer38t"}
@@ -204,52 +207,52 @@
 
     {"panzer3j1" inherit "vehicle tank.panzer3l"}
     {"panzer3l" inherit "vehicle tank.panzer3l"}
-    {"panzer3m" inherit "vehicle tank.panzer3l"}
+    {"panzer3m" inherit "vehicle custom.tank.panzer3-m"} ; custom
     {"panzer3_flamm" inherit "vehicle tank.panzer3flamm"}
 
-    {"panzer3n" inherit "vehicle tank.panzer3n"}
+    {"panzer3n" inherit "vehicle custom.tank.panzer3-n"} ; custom
     {"panzer4d" inherit "vehicle tank.panzer3n"}
     {"panzer4f1" inherit "vehicle tank.panzer3n"}
 
     {"panzer4f2" inherit "vehicle tank.panzer4f2"}
-    {"panzer4g" inherit "vehicle tank.panzer4f2"}
+    {"panzer4g" inherit "vehicle custom.tank.panzer4-g"} ; custom
     {"pz756r" inherit "vehicle tank.pz756r"}
 
-    {"panzer4h" inherit "vehicle tank.panzer4h"}
-    {"wirbelwind" inherit "vehicle tank.wirbelwind"}
-    {"ostwind" inherit "vehicle tank.ostwind"}
+    {"panzer4h" inherit "vehicle custom.tank.panzer4-h"} ; custom
+    {"wirbelwind" inherit "vehicle custom.tank.wirbelwind"} ; custom
+    {"ostwind" inherit "vehicle custom.tank.ostwind"} ; custom
     {"panzer4j" inherit "vehicle tank.panzer4h"}
 
     {"jagdpanzer4_l48_early" inherit "vehicle td.stug3"}
     {"jagdpanzer4_l48" inherit "vehicle td.stug3"}
     {"panzer4_70_v" inherit "vehicle td.stug3"}
 
-    {"wespe" inherit "vehicle spa.common"}
-    {"hummel" inherit "vehicle spa.common"}
+    {"wespe" inherit "vehicle custom.spg"} ; custom
+    {"hummel" inherit "vehicle custom.spg"} ; custom
     {"nashorn" inherit "vehicle atgun.pak4341.mounted"}
 
-    {"panzer5a" inherit "vehicle tank.panther"}
-    {"panzer5d" inherit "vehicle tank.panther"}
-    {"panzer5g" inherit "vehicle tank.panther"}
+    {"panzer5a" inherit "vehicle custom.tank"} ; custom
+    {"panzer5d" inherit "vehicle custom.tank"} ; custom
+    {"panzer5g" inherit "vehicle custom.tank"} ; custom
 
-    {"tiger1h" inherit "vehicle tank.tigerh"}
-    {"tiger1e" inherit "vehicle tank.tiger"}
-    {"tiger1hunt" inherit "vehicle tank.tiger"}
+    {"tiger1e" inherit "vehicle custom.tank.tiger-e"} ; custom
+    {"tiger1h" inherit "vehicle custom.tank.tiger-h"} ; custom
+    {"tiger1hunt" inherit "vehicle custom.tank.tiger-e"} ; custom
 
-    {"tiger2p" inherit "vehicle tank.tiger2p"}
-    {"tiger2h" inherit "vehicle tank.tiger2h"}
+    {"tiger2p" inherit "vehicle custom.tank.tiger2-p"} ; custom
+    {"tiger2h" inherit "vehicle custom.tank.tiger2-h"} ; custom
 
-    {"jagdpanther" inherit "vehicle td.jagdpanther"}
+    {"jagdpanther" inherit "vehicle custom.tank.jagdpanther"} ; custom
 
-    {"ferdinand" inherit "vehicle td.ferdinand"}
+    {"ferdinand" inherit "vehicle custom.tank.ferdinand"} ; custom
 
     {"sig33b" inherit "vehicle td.sig33b"}
     {"sturmpanzer4" inherit "vehicle td.sig33b"}
 
     {"bison" inherit "vehicle td.bison"}
 
-    {"sturmtiger" inherit "vehicle td.sturmtiger"}
-    {"jagdtiger" inherit "vehicle td.jagdtiger"}
+    {"sturmtiger" inherit "vehicle custom.tank.sturmtiger"} ; custom
+    {"jagdtiger" inherit "vehicle custom.tank.jagdtiger"} ; custom
 
 ;=================== Ger airborne ===================
 
