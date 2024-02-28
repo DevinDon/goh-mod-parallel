@@ -36,12 +36,12 @@ actor
     {vision "standard-vision-wide"}
     {bone "visor3"}
   }
-  {visor "none"
-    {vision "standard-vision-none"}
-  }
   {visor "hearing"
     {vision "standard-vision-noise-detection"}
     {bone "hearing_bone"}
+  }
+  {visor "none"
+    {vision "standard-vision-none"}
   }
 }
 
