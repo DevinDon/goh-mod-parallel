@@ -7,7 +7,7 @@
   (include   "sdkfz234_1.ext")
   (include   "crew-and-seat.ext")
 
-  {Props  "tank" "turret" "-hatch" "vision_lev02" "muzzle_20mm_25mm_auto" "wheeled" "8_wheels" "with_gun" "open_top"}
+  {Props "tank" "turret" "-hatch" "vision_lev02" "muzzle_20mm_25mm_auto" "wheeled" "8_wheels" "with_gun" "open_top"}
 
   {PatherId "sdkfz232"}
   {Targetclass "armoredcar"}

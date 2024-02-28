@@ -8,7 +8,7 @@
   (include   "blitz3_6_engineering.ext")
   (include   "crew-and-seat.ext")
 
-  {Props  "truck" "vision_lev02" "tractor" "tractor_heavy"}
+  {Props "truck" "vision_lev02" "tractor" "tractor_heavy"}
 
   {PatherId "blitz36"}
   {Collider "truck"}
