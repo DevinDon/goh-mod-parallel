@@ -3,13 +3,13 @@
 ; args = calibre
 (define "api"
   {damage fire
-    {radius (* %calibre 0.01)}
-    {heating (* %calibre 0.09)}
-    {time (* %calibre 0.05)}
+    {radius (* %calibre 0.010)}
+    {heating (* %calibre 0.070)}
+    {time (* %calibre 0.020)}
   }
   {damage blastwave
-    {energy (* %calibre 0.018)}
-    {area (* %calibre 0.018) (* %calibre 0.018)}
-    {ground_interaction_radius 0.2} ; 该值与 area 的第二个参数相乘，以确定爆炸距离地面是否足够近，从而触发地形效果
+    {energy (* %calibre 0.017)}
+    {area (* %calibre 0.017) (* %calibre 0.017)}
+    {ground_interaction_radius 0.017} ; 该值与 area 的第二个参数相乘，以确定爆炸距离地面是否足够近，从而触发地形效果
   }
 )
