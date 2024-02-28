@@ -1,0 +1,34 @@
+; standard moto config
+
+actor
+
+(include "vehicle-config.ext")
+
+{brain "vehicle"
+  {state "vehicle"}
+  {const "crush/min_danger_zone_time" 1}
+  {const "crush/min_danger_zone_length" 1}
+}
+
+{collider "moto"}
+{props "moto" "engine" "wheeled" "vision_lev01" "explosion_throw_crew" "turn_over" "no_recrew_logic"}
+{targetClass "car"}
+{targetSelector "car_bullet"}
+
+{able "talk"}
+
+{sensor
+  {visor "main"
+    {vision "standard-vision-wide"}
+    {bone "visor2"}
+  }
+  {visor "around"
+    {vision "standard-vision-around"}
+    {bone "visor1"}
+  }
+  {visor "none"
+    {vision "none"}
+  }
+}
+
+{perks {blastwave_modifier 9.0}}

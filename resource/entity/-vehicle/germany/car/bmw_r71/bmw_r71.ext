@@ -1,0 +1,32 @@
+; armor note
+
+
+
+
+
+
+
+
+("set-moto-durability" body(150) engine(90))
+("set-basic-armor"     ammo(10))
+("set-moto-thickness"  body(2) engine(3))
+
+("set-turret"               repair(10))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(15) repair(20))
+("set-body"                 repair(15))
+("set-engine"               repair(15))
+("set-tracks" thickness(10) repair(10))
+
+("set-wheel" name("wheelleft1"))
+("set-wheel" name("wheelleft2"))
+("set-wheel" name("wheelright2"))
+
+("set-internal-components" name("fuel")  type("fuel") repair(3))
+
+{volume "body3" {able {holed}}}
+{volume "body5" {able {holed}}}
+{volume "detail1" {thickness 2}}
+{volume "detail21" {thickness 2}}
+{volume "detail22" {thickness 2}}
+{volume "fuel" {able {NoWoundDecal 0}}}

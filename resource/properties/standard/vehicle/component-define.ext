@@ -752,3 +752,116 @@
     {RepairOrder 12}
   }
 )
+
+; define moto_thickness
+; args = body engine
+(define "set-moto-thickness"
+  {volume "body"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body1"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body2"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body3"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body4"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body5"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body6"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body7"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body8"      ; Main Body
+    {thickness %body}
+  }
+  {volume "body9"      ; Main Body
+    {thickness %body}
+  }
+  {volume "engine"    ; Engine
+    {thickness %engine}
+  }
+  {volume "engine1"    ; Engine
+    {thickness %engine}
+  }
+  {volume "engine2"    ; Engine
+    {thickness %engine}
+  }
+  {volume "fuel"
+    {tags "explosive"}
+    {thickness 1}
+  }
+)
+
+; define moto_durability
+; args = body engine
+(define "set-moto-durability"
+  {perks
+    {component "body"
+      {health
+        {hp %body}
+        {hp_broken (* %body 3)}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+      {armor_damage_modifier 2}
+    }
+    {component "engine"
+      {health
+        {hp %engine}
+        {hp_broken %engine}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+      {armor_damage_modifier 3}
+    }
+    {component tag "wheel"
+      {health
+        {hp 125}
+      }
+      {armor_damage_modifier 5}
+    }
+    {component tag "glass"
+      {health
+        {hp 60}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+    }
+    {component tag "shield"
+      {health
+        {hp 100}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+    }
+    {component tag "cut_part"
+      {health
+        {hp 100}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+    }
+    {component tag "fuel"
+      {health
+        {hp 100}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+      {armor_damage_modifier 3}
+    }
+    {component tag "ammo"
+      {health
+        {hp 100}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+      {armor_damage_modifier 3}
+    }
+  }
+)

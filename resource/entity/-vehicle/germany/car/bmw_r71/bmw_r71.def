@@ -1,90 +1,63 @@
 {game_entity
 
-  (include "/properties/moto.ext")
-  (include "/properties/selection/vehicle_small.inc" scale(1.0))
-  {props "vision_lev01"}
-  {extension "bmw_r71.mdl"}
-  {able "emit_on_attack"}
+  (include "/properties/standard/vehicle/moto-config.ext")
+  (include "/properties/selection/vehicle_elongated.inc" scale(1.0))
+  (include "/properties/resupply.inc")
+
+  {Extension "bmw_r71.mdl"}
+  (include   "bmw_r71.ext")
+  (include   "crew-and-seat.ext")
+
+  {Props "vision_lev01"}
+
   {PatherId "moto"}
-  {targetSelector "car_bullet"}
+  {TargetSelector "car_bullet"}
 
-  ("wheel" args "wheelleft1")
-  ("wheel" args "wheelleft2")
-  ("wheel" args "wheelright2")
-  ("fuel" args "fuel")
+  {Able "emit_on_attack"}
 
-  {volume "body3" {able {holed}}}
-  {volume "body5" {able {holed}}}
-  {volume "detail1" {thickness 2}}
-  {volume "detail21" {thickness 2}}
-  {volume "detail22" {thickness 2}}
-  {volume "fuel" {able {NoWoundDecal 0}}}
-
-  ("crew_inside")
-  ("crew_human" place(driver) bone(driver) door(emit1) animation(driver) group(crew))
-  ("crew_human" place(gunner) bone(gunner) door(emit2) animation(gunner) group(crew))
-  ("crew_human" place(seat1) bone(seat1) door(emit3) animation(passenger) group(passenger))
-
-  {boarder
-    {anm "driver"
-      {forward  {begin  "board_moto_driver"} {end "pose_moto_driver"} {base "doorleft1"}}
-      {reverse  {end  "board_moto_driver" -1} {base "doorleft1" -1}}
-    }
-    {anm "gunner"
-      {forward  {begin  "board_moto_sidecar"} {end "pose_moto_sidecar"}}
-      {reverse  {end  "board_moto_sidecar" -1}}
-    }
-    {anm "passenger"
-      {forward  {begin  "board_moto_passenger"} {end "pose_moto_passenger"}}
-      {reverse  {end  "board_moto_passenger" -1}}
-    }
-  }
-
-  {placer
-    {place "driver"    {visor "none"} {turnoff {sensor 0}{targetable 0}}}
-    {place "gunner"    {visor "none"} {turnoff {sensor 0}{targetable 0}}}
-    {place "seat1"    {visor "none"} {turnoff {sensor 0}{targetable 0}}}
-  }
-
-  {extender "inventory"
-    {weapon "mgun" {mask "mountable"}}
+  {Extender "inventory"
+    {Weapon "mgun" {mask "mountable"}}
     {Box
-      {item "ammo mgun_ger drum" 450}        ; 10 drums (50 rounds each)
-      {item "mg34_drum" filling "ammo mgun_ger drum" 50 {user "mgun"}}
+      {Size 6 6}
+      {Weight 500}
+      {Item "repair_kit" 5}
+
+      {Item "ammo ger-mgun" 500}
+      {Item "weapon ger-mg42" filled {user "mgun"}}
     }
   }
 
   {Weaponry
+    {RestoreIKTime 10}
     {place "mgun"
-      {type "main"}
-      {charger "gunner"}
+      {Type "main"}
+      {Charger "gunner"}
       {LinkBone "mgun"}
       {LinkAnimation "off"}
-      ("abm_mgun")
-      {basic}
+      {Basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
     }
   }
 
-  {mass 397} ;//187 + 210 for side car
-  {Chassis
-    ("car_trace" fx("tracewheel03a") step(0.08) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
-    ("car_trace" fx("tracewheel03a") step(0.08) wheell("wlr") wheelr("wrr") bonel("FXtraceL2") boner("FXtraceR2"))
-    ("mobility_car"
-      speed(95) ;----------------------------------Max speed.
-      speedatmaxturn(20) ;-------------------------Max speed at max turn.
-      reverse(25) ;--------------------------------Max speed in Reverse.
-      weight(0.397) ;------------------------------Weight in Tonnes.
-      power(22) ;----------------------------------Horse Power.
-      fuel(14) ;-----------------------------------Fuel capacity in Litres.
-      type(fuel) ;---------------------------------Fuel type.
-      range(310) ;---------------------------------Range in Kilometers.
-    )
+  {Mass 397}
+  {Chassis "wheel"
+    ("set-car-trace" fx("tracewheel03a")  step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-car-trace" fx("tracewheel03a") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
+    ("set-maneuverability-of-car" speed(120) power(22) mass(397) performance(1.15))
+    ("set-fuel-bag" volume(14) power(22))
   }
 
-  {bone "mgun_rot1"
+  {Bone "mgun_rot1"
     {speed2 60}
   }
-  {bone "mgun_rot2"
+  {Bone "mgun_rot2"
     {speed2 60}
   }
 

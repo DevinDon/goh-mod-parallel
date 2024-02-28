@@ -61,7 +61,7 @@
   {Chassis "wheel"
     ("set-car-trace" fx("tracewheel03")  step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-car-trace" fx("tracewheel03d") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
-    ("set-maneuverability-of-armored-car" speed(80) power(68) mass(3200) performance(1.35))
+    ("set-maneuverability-of-car" speed(80) power(68) mass(3200) performance(1.35))
     ("set-fuel-bag" volume(80) power(68))
   }
 
