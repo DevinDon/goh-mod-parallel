@@ -35,14 +35,14 @@ const options: WeaponOptions = {
       gravity: 9,
       spreading: {
         radiusTable: {
-          nearest: 16,
-          farthest: 60,
+          nearest: 12.5,
+          farthest: 35,
           factor: 4.0,
         },
         burstRecoveryTime: 6,
         burstAccuracy: 100,
         spreadPower: 1.66,
-        spreadXYRatio: 1.00,
+        spreadXYRatio: 1.55,
       },
     },
   },
