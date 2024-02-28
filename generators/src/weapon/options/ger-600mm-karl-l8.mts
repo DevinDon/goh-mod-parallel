@@ -42,7 +42,7 @@ const options: WeaponOptions = {
         burstRecoveryTime: 6,
         burstAccuracy: 100,
         spreadPower: 1.66,
-        spreadXYRatio: 1.55,
+        spreadXYRatio: 1.15,
       },
     },
   },
