@@ -12,6 +12,9 @@ msgstr ""
 "Language-Team: \n"
 
 # 牵引火炮
+msgctxt "desc/entity/105mm_lefh18"
+msgid   "10.5cm leFH 18 L/28"
+msgstr  "10.5cm leFH 18 L/28 牵引式榴弹炮"
 
 # 非装甲车辆
 msgctxt "desc/entity/bmw_r71"
