@@ -21,7 +21,7 @@
   {DisableRicochet 0} ; 是否禁用跳弹模式
   ; 不启用曲射模式
 
-  {RechargeTime 15.15} ; 装填时间（秒）
+  {RechargeTime 13.33} ; 装填时间（秒）
   {RecoveryTime 1.000} ; 短射间隔（秒）, 适用于弹链
 
   ; 非自动武器
@@ -37,7 +37,7 @@
     {ProjectileDamageTable {100 115} {500 115} {1000 115}} ; 穿深表
     {MinimumDamageModifier 355} ; 伤害
     {Spreading
-      {RadiusTable {0 0} {100 2.105} {500 5.215} {1000 20.86}} ; 散布
+      {RadiusTable {0 0} {100 1.652} {500 4.011} {1000 16.04}} ; 散布
       {BurstRecoveryTime 1.05} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.5} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -59,7 +59,7 @@
     ; 无穿深表配置
     ; 无穿透伤害配置
     {Spreading
-      {RadiusTable {0 0} {100 2.875} {500 6.698} {1000 26.79}} ; 散布
+      {RadiusTable {0 0} {100 1.875} {500 4.212} {1000 16.85}} ; 散布
       {BurstRecoveryTime 1.05} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
