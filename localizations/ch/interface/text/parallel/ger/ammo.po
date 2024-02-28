@@ -202,6 +202,14 @@ msgctxt "desc/ammo/ger-150l12 he"
 msgid   "15cm Steilgranate.42 [<c(ff1200)>HE</c>] <c(65696d)>L/12</c>"
 msgstr  "15cm Steilgranate.42 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/12</c>"
 
+msgctxt "desc/ammo/ger-150l30 heat"
+msgid   "15cm Gr.39 HL/A [<c(c9a6ff)>HEAT</c>]"
+msgstr  "15cm Gr.39 HL/A [<c(c9a6ff)>破甲弹</c>]"
+
+msgctxt "desc/ammo/ger-150l30 he"
+msgid   "15cm Gr.19 [<c(ff1200)>HE</c>]"
+msgstr  "15cm Gr.19 [<c(ff1200)>高爆弹</c>]"
+
 # 380mm
 msgctxt "desc/ammo/ger-380mm-rw61-l5"
 msgid   "38cm Raketen Sprenggranate 4581 [<c(ff1200)>Rocket</c>]"

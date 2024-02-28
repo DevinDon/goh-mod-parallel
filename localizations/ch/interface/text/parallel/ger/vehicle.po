@@ -115,8 +115,12 @@ msgstr  "\"猎虎\" 重型坦克歼击车"
 
 # 自行火炮 / 自行榴弹炮
 msgctxt "desc/entity/wespe"
-msgid   "Wespe"
-msgstr  "\"黃蜂\" 自行榴弹炮"
+msgid   "Wespe mit leFH 18 L/24"
+msgstr  "\"黃蜂\" 加装 leFH 18 L/24"
+
+msgctxt "desc/entity/hummel"
+msgid   "Hummel mit 15cm sFH 18 L/30"
+msgstr  "\"野蜂\" 加装 15cm sFH 18 L/30"
 
 msgctxt "desc/entity/grille_k"
 msgid "Grille Ausf.K mit 15cm sIG 33"

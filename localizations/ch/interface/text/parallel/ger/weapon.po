@@ -121,6 +121,10 @@ msgctxt "desc/weapon/ger-128mm-pak44-l61"
 msgid   "12.8cm PaK44 L/61"
 msgstr  "12.8cm PaK44 L/61 反坦克炮"
 
+msgctxt "desc/weapon/ger-150mm-sfh18-l30"
+msgid   "15cm sFH 18 L/30"
+msgstr  "15cm sFH 18 L/30 榴弹炮"
+
 msgctxt "desc/weapon/ger-150mm-sig33-l11"
 msgid   "15cm sIG 33 L/11"
 msgstr  "15cm sIG 33 L/11 步兵炮"
