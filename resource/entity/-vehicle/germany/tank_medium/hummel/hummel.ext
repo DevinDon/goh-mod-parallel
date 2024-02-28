@@ -2,32 +2,45 @@
 ; tracks and wheels 20mm
 ; gun 30mm
 
-("tank_medium_tier2")
 
-("gun_shield" args "tshield1" 10)
-("gun_shield" args "tshield2" 10)
-("gun_shield" args "tshield3" 10)
-("gun_shield" args "tshield4" 10)
-("gun_shield" args "tshield5" 10)
-("gun_shield" args "tshield6" 10)
-("gun_shield" args "tshield7" 10)
-("gun_shield" args "gun_shield1" 15)
-("gun_shield" args "gun_shield2" 15)
-("shield" args "shield1" 20)
-("shield" args "shield2" 4)
-("shield" args "shield3" 4)
+
+
+
+
+("set-basic-durability" body(400) engine(300) turret(400) mantlet(200) gun(300) track(300) ammo(300))
+("set-basic-armor"      ammo(20))
+
+("set-turret"               repair(15))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(30) repair(10))
+
+("set-body"                 repair(25))
+("set-engine"               repair(20))
+("set-tracks" thickness(20) repair(15))
+
+("set-shield" name("shield1") thickness(20))
+("set-shield" name("shield2") thickness(4))
+("set-shield" name("shield3") thickness(4))
+
+("set-gun-shield" name("tshield1")    thickness(10))
+("set-gun-shield" name("tshield2")    thickness(10))
+("set-gun-shield" name("tshield3")    thickness(10))
+("set-gun-shield" name("tshield4")    thickness(10))
+("set-gun-shield" name("tshield5")    thickness(10))
+("set-gun-shield" name("tshield6")    thickness(10))
+("set-gun-shield" name("tshield7")    thickness(10))
+
+("set-gun-shield" name("gun_shield1") thickness(15))
+("set-gun-shield" name("gun_shield2") thickness(15))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("fuel")  type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
 
 {component "shield2" {tags "cut_part"}}
 {component "shield3" {tags "cut_part"}}
-
-("tracks" repair(30) thickness(20))
-("gun" repair(30) thickness(30))
-
-("ammo" args "ammo1")
-("ammo" args "ammo2")
-("ammo" args "ammo3")
-("fuel" args "fuel")
-("transmission" args "transmission")
 
 {volume "body1"
   {thickness 20

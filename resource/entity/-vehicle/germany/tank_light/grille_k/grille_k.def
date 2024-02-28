@@ -48,7 +48,7 @@
 
   {Weaponry
     {RestoreIKTime 5}
-    {place "gun"
+    {Place "gun"
       {RestoreIKAfterAim}
       {Weapon "weapon ger-150mm-sig33-l11" filling "ammo ger-150l11 he" 1}
       {Gunner "gunner"}
@@ -59,8 +59,8 @@
         {ByLinearSpeed   0.25} ; km/h
         {MaxAngularSpeed 3.00} ; deg/s
         {ByAngularSpeed  0.35} ; deg/s
-        {DisorderTime    0.25} ; s
-        {OrderTime       2.00} ; s
+        {DisorderTime    1.35} ; s
+        {OrderTime       8.00} ; s
       }
     }
   }
