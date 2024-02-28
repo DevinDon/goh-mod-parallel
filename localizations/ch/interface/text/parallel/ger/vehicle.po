@@ -13,8 +13,16 @@ msgstr ""
 
 # 非装甲车辆
 msgctxt "desc/entity/blitz3_6_art_ammo"
-msgid   "Opel Blitz Supply"
-msgstr  "欧宝 闪电 补给卡车"
+msgid   "Opel Blitz Ammo Supply"
+msgstr  "欧宝 闪电 弹药补给"
+
+msgctxt "desc/entity/blitz3_6_engineering"
+msgid   "Opel Blitz Engineer Supply"
+msgstr  "欧宝 闪电 工程补给"
+
+msgctxt "desc/entity/blitz3_6_fuel"
+msgid   "Opel Blitz Fuel Supply"
+msgstr  "欧宝 闪电 燃料补给"
 
 msgctxt "desc/entity/blitz3_6_flak30"
 msgid   "Opel Blitz mit 2cm FlaK 30"
