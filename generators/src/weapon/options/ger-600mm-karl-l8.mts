@@ -29,8 +29,8 @@ const options: WeaponOptions = {
   bullets: {
     he: {
       minRange: 100,
-      aimRange: 750,
-      maxRange: 750,
+      aimRange: 500,
+      maxRange: 500,
       speed: 176,
       gravity: 9,
       spreading: {

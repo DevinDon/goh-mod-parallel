@@ -30,8 +30,8 @@
 
   {Parameters "he"
     {MinRange 100} ; 最短射击距离 m
-    {AimRange 750} ; AI 最长射击距离 m
-    {MaxRange 750} ; 玩家最长射击距离 m
+    {AimRange 500} ; AI 最长射击距离 m
+    {MaxRange 500} ; 玩家最长射击距离 m
     {Speed 176} ; 炮弹速度
     {Gravity 9} ; 炮弹重力
     ; 无穿深表配置
