@@ -105,7 +105,7 @@
     ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
     ("set-maneuverability-of-armored-car" speed(88) power(110) mass(7890) performance(1.5))
-    ("set-fuel-bag" volume(200) power(110))
+    ("set-fuel-bag" volume(200) power(110) mass(7890))
   }
 
   {Bone "gun_rot"

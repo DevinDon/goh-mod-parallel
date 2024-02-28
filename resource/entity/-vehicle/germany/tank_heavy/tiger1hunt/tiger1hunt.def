@@ -143,7 +143,7 @@
   {Chassis "track"
     ("set-tank-trace" fx("tracks_big") step(0.47) length(0.91) boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-maneuverability-of-tank" speed(38) power(700) mass(57000) performance(1.50))
-    ("set-fuel-bag" volume(540) power(700))
+    ("set-fuel-bag" volume(540) power(700) mass(57000))
   }
 
   {Bone "gun_rot"
