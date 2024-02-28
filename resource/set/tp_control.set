@@ -96,11 +96,11 @@
     {"m42_truppenfahrrad" inherit "vehicle generic.bicycle"}
     {"bmw_r71" inherit "vehicle generic.moto"}
 
-    {"blitz3_6" inherit "vehicle generic.unarmed"}
-    {"blitz3_6_art_ammo" inherit "vehicle custom.car"} ; custom
-    {"blitz3_6_engineering" inherit "vehicle generic.unarmed"}
-    {"blitz3_6_fuel" inherit "vehicle generic.unarmed"}
-    {"blitz3_6_radio" inherit "vehicle generic.unarmed"}
+    {"blitz3_6" inherit "vehicle custom.truck"} ; custom
+    {"blitz3_6_art_ammo" inherit "vehicle custom.truck"} ; custom
+    {"blitz3_6_engineering" inherit "vehicle custom.truck"} ; custom
+    {"blitz3_6_fuel" inherit "vehicle custom.truck"} ; custom
+    {"blitz3_6_radio" inherit "vehicle custom.truck"} ; custom
     {"kettenkrad" inherit "vehicle small.unarmed"}
     {"kettenkrad_eng" inherit "vehicle small.unarmed"}
     {"kubelwagen" inherit "vehicle small.unarmed"}
