@@ -6,7 +6,7 @@
   {Tag "bullet_fx size2"}
 
   {Inventory
-    {weight 0.333}
+    {weight 0.5}
     {block 300}
     {size 3 2}
     {fsm "belt"}
