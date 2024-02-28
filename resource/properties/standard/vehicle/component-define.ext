@@ -810,7 +810,6 @@
         {hp %body}
         {hp_broken (* %body 3)}  ;// destroys component and cannot be repaired
       }
-      ("global_damage_mod")
       {armor_damage_modifier 2}
     }
     {component "engine"
@@ -818,7 +817,6 @@
         {hp %engine}
         {hp_broken %engine}  ;// destroys component and cannot be repaired
       }
-      ("global_damage_mod")
       {armor_damage_modifier 3}
     }
     {component tag "wheel"
@@ -838,21 +836,18 @@
         {hp 100}
         {hp_broken 1}  ;// destroys component and cannot be repaired
       }
-      ("global_damage_mod")
     }
     {component tag "cut_part"
       {health
         {hp 100}
         {hp_broken 1}  ;// destroys component and cannot be repaired
       }
-      ("global_damage_mod")
     }
     {component tag "fuel"
       {health
         {hp 100}
         {hp_broken 1}  ;// destroys component and cannot be repaired
       }
-      ("global_damage_mod")
       {armor_damage_modifier 3}
     }
     {component tag "ammo"
@@ -860,7 +855,6 @@
         {hp 100}
         {hp_broken 1}  ;// destroys component and cannot be repaired
       }
-      ("global_damage_mod")
       {armor_damage_modifier 3}
     }
   }
