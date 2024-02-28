@@ -49,7 +49,7 @@
         {MaxAngularSpeed 3.00} ; deg/s
         {ByAngularSpeed  0.35} ; deg/s
         {DisorderTime    1.55} ; s
-        {OrderTime      17.75} ; s
+        {OrderTime      12.75} ; s
       }
     }
   }
@@ -68,5 +68,13 @@
     {limits -10 90}
     {speed2 3}
   }
+
+  (mod "mp"
+    {brain
+      {properties
+        {fire_mode hold}
+      }
+    }
+  )
 
 }
