@@ -35,6 +35,12 @@
   }
 )
 
+; apply settings
+("set-crew-inside")
+("set-crew" place(driver) bone(driver) door(emit1) animation(driver)    group(crew))
+("set-crew" place(gunner) bone(gunner) door(emit2) animation(gunner)    group(crew))
+("set-crew" place(seat1)  bone(seat1)  door(emit3) animation(passenger) group(passenger))
+
 {Boarder
   {anm "driver"
     {forward  {begin  "board_moto_driver"} {end "pose_moto_driver"} {base "doorleft1"}}
@@ -55,9 +61,3 @@
   {place "gunner" {visor "none"} {turnoff {sensor 0} {targetable 0}}}
   {place "seat1"  {visor "none"} {turnoff {sensor 0} {targetable 0}}}
 }
-
-; apply settings
-("set-crew-inside")
-("set-crew" place(driver) bone(driver) door(emit1) animation(driver)    group(crew))
-("set-crew" place(gunner) bone(gunner) door(emit2) animation(gunner)    group(crew))
-("set-crew" place(seat1)  bone(seat1)  door(emit3) animation(passenger) group(passenger))
