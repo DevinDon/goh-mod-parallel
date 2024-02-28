@@ -269,19 +269,19 @@
 ; // Sturmartillerie unit
 {"doctrine_sturmartillerie_unit"
   ("squad_2vehicles2_8_doctrine" side(ger) period(late) vehicle1(stug3g) vehicle2(sdkfz251d_1) crew1(tankman:3) crew2(tank_commander:1) crew3(begleitgren_stg:1) crew4(begleitgren_sl:1) crew5(begleitgren_sl_asst:1) crew6(begleitgren_sa:1) crew7(begleitgren_sa_pzf:2) crew8(begleitgren_stg:4) crew9(begleitgren_mg:1) crew10(begleitgren_mg_asst:1))
-  ("doctrine_t2" cool(300) d(late_ger_offensive) cost(50))
+  ("doctrine_t2" cool(300) d(late_ger_offensive) cost(40))
 }
 
 ; // Sturmpanzer4
 {"doctrine_sturmpanzer4_late"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sturmpanzer4) crew1(tankman_stug:4) crew2(tank_commander_stug:1))
-  ("doctrine_t2" cool(300) d(late_ger_offensive) cost(75))
+  ("doctrine_t2" cool(300) d(late_ger_offensive) cost(80))
 }
 
 ; // Wespe
 {"doctrine_wespe_late"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(wespe) crew1(tankman_stug:4) crew2(tank_commander_stug:1))
-  ("doctrine_t2" cool(300) d(late_ger_offensive) cost(75))
+  ("doctrine_t2" cool(300) d(late_ger_offensive) cost(80))
 }
 
 
@@ -290,13 +290,13 @@
 ; // Ace Panther G
 {"doctrine_panzer5g"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(panzer5g) crew1(tankman_ace:4) crew2(tank_commander_ace:1))
-  ("doctrine_t3" cool(480) d(late_ger_offensive) cost(90))
+  ("doctrine_t3" cool(480) d(late_ger_offensive) cost(80))
 }
 
 ; // Sturmtiger
 {"doctrine_sturmtiger"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sturmtiger) crew1(tankman_stug:4) crew2(tank_commander_stug:1))
-  ("doctrine_t3" cool(480) d(late_ger_offensive) cost(95))
+  ("doctrine_t3" cool(480) d(late_ger_offensive) cost(100))
 }
 
 ; // Tiger II H
