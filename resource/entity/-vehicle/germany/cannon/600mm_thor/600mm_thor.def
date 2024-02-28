@@ -231,14 +231,14 @@
       {RestoreIKAfterAim}
       {Basic}
       ("abm_dymamic_gun"
-        zeroing(10.0)  ; // time it takes to aim until the reticle shrinks. Bigger values, more control.
+        zeroing(15.0)  ; // time it takes to aim until the reticle shrinks. Bigger values, more control.
         dispersion(1)  ; // time it takes to distort the reticle when you move the gun (how abrupt it loses zeroing). Bigger values, more control.
       )
       {rotate}
     }
   }
 
-  {mass 124000}
+  {Mass 124000}
   {Chassis "track"
     ("tank_trace_ex" fx("tracks_mid") step(0.52) len(0.8) boneleft("wheell4") boneright("wheelr4"))
     ("mobility_tank"

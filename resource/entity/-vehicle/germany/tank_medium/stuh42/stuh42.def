@@ -67,8 +67,8 @@
         {ByLinearSpeed   0.25} ; km/h
         {MaxAngularSpeed 3.00} ; deg/s
         {ByAngularSpeed  0.35} ; deg/s
-        {DisorderTime    0.25} ; s
-        {OrderTime       2.00} ; s
+        {DisorderTime    0.75} ; s
+        {OrderTime       4.55} ; s
       }
     }
     {Place "mgun"
