@@ -13,6 +13,11 @@
   {PatherId "blitz36"}
   {Collider "truck"}
 
+  {Extender "detail"
+    {random 0}
+    {detail9}
+  }
+
   ("set-ammo-resupply-with-transportation")
 
   {Able "emit_on_attack"}
