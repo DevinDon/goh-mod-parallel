@@ -8,9 +8,6 @@
   (include   "blitz3_6_engineering.ext")
   (include   "crew-and-seat.ext")
 
-
-
-
   {Props  "truck" "vision_lev02" "tractor" "tractor_heavy"}
 
   {PatherId "blitz36"}
@@ -23,9 +20,9 @@
     {detail9}
   }
 
-  {Able "emit_on_attack"}
-
   ("set-engineer-resupply")
+
+  {Able "emit_on_attack"}
 
   {Extender "shield" {on}}
 

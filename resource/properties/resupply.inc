@@ -1000,7 +1000,7 @@
 )
 
 (define "set-fuel-resupply"
-  ("supply_fuel" liters(2000))
+  ("supply_fuel" liters(3000))
 )
 
 (define "set-engineer-resupply"
