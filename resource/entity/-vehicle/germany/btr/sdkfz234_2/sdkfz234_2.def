@@ -37,7 +37,7 @@
   }
 
   {Extender "smokescreen"
-    {cooldown 20}
+    {cooldown 10}
     {itemTags "grenade nbks"}
   }
 
