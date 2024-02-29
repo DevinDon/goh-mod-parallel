@@ -14,6 +14,20 @@
   {TargetSelector "tank_medium"}
   {Collider "tank.light"}
 
+  {Extender "detail"
+    {random 0}
+    {detail9}
+    {detail10}
+    {detail3}
+    {detail4}
+    {detail2}
+    {detail1}
+    {detail5}
+    {detail6}
+    {detail7}
+    {detail8}
+  }
+
   {Sensor
     {Visor "around"
       {Vision "standard-vision-around"}

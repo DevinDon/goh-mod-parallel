@@ -14,6 +14,20 @@
   {TargetSelector "tank_medium"}
   {Collider "tank.light"}
 
+  {Extender "detail"
+    {random 0}
+    {detail9}
+    {detail10}
+    {detail3}
+    {detail4}
+    {detail2}
+    {detail1}
+    {detail5}
+    {detail6}
+    {detail7}
+    {detail8}
+  }
+
   {Sensor
     {Visor "around"
       {Vision "standard-vision-around"}
@@ -23,13 +37,10 @@
   {Extender "shield" {on}}
 
   {Extender "inventory"
-    {Weapon "mgun1" {mask "mountable"}}
     {Box
       {Size 12 8}
       {Weight 1000}
       {Item "repair_kit" 10}
-
-      {Item "weapon usa-browning-m2" filled {user "mgun1"}}
 
       {Item "ammo usa-hmgun" 900}
       {Item "ammo usa-76x539 apcbche" 29}
