@@ -16,12 +16,18 @@ export const generatePassenger = ({ name, animations, bone, turnoff, extra }: Pa
     ? setIndent(extra.join('\n'), { indent: 4, indentFirstLine: true })
     : '; no extra';
 
-  const animationLines = animations
-    .map(
-      ({ door, animation }) => `{door "${door}"}\n{link "${door}" "${name}" {anm "${animation}"} {forward putoff} {reverse puton}}`,
-    )
-    .map(line => setIndent(line, { indent: 2, indentFirstLine: false }))
-    .join('\n');
+  const animationLines = setIndent(
+    animations
+      .map(
+        ({ door, animation }) => [
+          `{door "${door}"}`,
+          `{link "${door}" "${name}" {anm "${animation}"} {forward putoff} {reverse puton}}`,
+        ],
+      )
+      .flat()
+      .join('\n'),
+    { indent: 2, indentFirstLine: false },
+  );
 
   return `; passenger ${name}
 {Placer
