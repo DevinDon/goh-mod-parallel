@@ -5,7 +5,7 @@
 (define "set-board-animation"
   {boarder
     {anm "%name"
-      {forward {base "%base"} {begin "%begin"} {end "%end"}     }
+      {forward {base "%base"} {begin "%begin"} {end "%end"}}
       {reverse {base "%base"}                  {end "%begin" -1}}
     }
   }
