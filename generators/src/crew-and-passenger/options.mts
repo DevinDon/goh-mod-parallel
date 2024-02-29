@@ -72,7 +72,7 @@ export type CrewOptions = {
   bone: string;
   /** 乘员视角，默认为 `none` */
   visor?: string;
-  /** 禁用特性列表，默认为 `['shadow', 'sensor', 'targetable 1']` */
+  /** 禁用的特性 */
   turnoff?: string[];
 };
 
@@ -86,7 +86,7 @@ export type PassengerOptions = {
   door: string;
   /** 乘客绑定点 */
   bone: string;
-  /** 禁用特性列表，默认为 `['shadow', 'sensor', 'targetable 1']` */
+  /** 禁用的特性 */
   turnoff?: string[];
 };
 

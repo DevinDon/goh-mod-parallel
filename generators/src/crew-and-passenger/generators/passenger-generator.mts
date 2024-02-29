@@ -1,7 +1,7 @@
 import type { PassengerOptions } from '../options.mjs';
 
 /** 生成乘客配置 */
-export const generatePassenger = ({ name, animation, door, bone, turnoff = [ 'shadow', 'sensor', 'targetable 1' ] }: PassengerOptions) => {
+export const generatePassenger = ({ name, animation, door, bone, turnoff }: PassengerOptions) => {
 
   const turnoffLine = turnoff
     ? `{turnoff ${turnoff.map(feature => `{${feature}}`).join(' ')}}`

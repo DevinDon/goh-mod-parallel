@@ -92,6 +92,7 @@ const options: CrewAndPassengerOptions = {
       door: 'emit1',
       bone: 'driver',
       visor: 'driver',
+      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'gunner',
@@ -99,6 +100,7 @@ const options: CrewAndPassengerOptions = {
       door: 'emit2',
       bone: 'gunner',
       visor: 'gunner',
+      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
   ],
 
@@ -108,6 +110,7 @@ const options: CrewAndPassengerOptions = {
       animation: 'passenger',
       door: 'emit3',
       bone: 'seat1',
+      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
   ],
 

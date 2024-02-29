@@ -1,7 +1,7 @@
 import type { CrewOptions } from '../options.mjs';
 
 /** 生成乘员配置 */
-export const generateCrew = ({ name, animation, door, bone, visor, turnoff = [ 'shadow', 'sensor', 'targetable 1' ] }: CrewOptions) => {
+export const generateCrew = ({ name, animation, door, bone, visor, turnoff }: CrewOptions) => {
 
   const visorLine = visor
     ? `{visor "${visor}"}`
