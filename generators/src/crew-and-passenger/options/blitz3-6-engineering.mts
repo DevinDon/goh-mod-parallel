@@ -2,7 +2,7 @@ import type { CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 
-  destination: 'resource/entity/-vehicle/germany/car/blitz3_6_art_ammo/crew-and-passenger.ext',
+  destination: 'resource/entity/-vehicle/germany/car/blitz3_6_engineering/crew-and-passenger.ext',
 
   visors: [
     {
@@ -22,7 +22,7 @@ const options: CrewAndPassengerOptions = {
       },
       backward: {
         base: [ 'doorleft', 1 ],
-        end: [ 'board_opel_driver', 1 ],
+        end: [ 'board_opel_driver', -1 ],
       },
     },
     {

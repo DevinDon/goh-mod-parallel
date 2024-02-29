@@ -22,7 +22,7 @@ const options: CrewAndPassengerOptions = {
       },
       backward: {
         base: [ 'doorleft', 1 ],
-        end: [ 'board_opel_driver', 1 ],
+        end: [ 'board_opel_driver', -1 ],
       },
     },
     {

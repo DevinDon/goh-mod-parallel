@@ -18,7 +18,7 @@ export const generateCrew = ({ name, animations, bone, visor, turnoff, extra }: 
 
   const extraLines = extra?.length
     ? setIndent(extra.join('\n'), { indent: 4, indentFirstLine: true })
-    : '; no additional';
+    : '; no extra';
 
   const animationLines = animations
     .map(

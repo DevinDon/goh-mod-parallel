@@ -27,7 +27,7 @@ const options: CrewAndPassengerOptions = {
       },
       backward: {
         base: [ 'doorleft', 1 ],
-        end: [ 'emit_body', -1 ],
+        end: [ 'emit_body', 1 ],
       },
     },
     {

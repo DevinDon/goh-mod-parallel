@@ -70,7 +70,7 @@ const output = `; crew and passenger
     {linkbone "driver"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "driver"}
-    ; no additional
+    ; no extra
   }
 }
 {Boarder
@@ -84,7 +84,7 @@ const output = `; crew and passenger
     {linkbone "gunner"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "gunner"}
-    ; no additional
+    ; no extra
   }
 }
 {Boarder
@@ -99,13 +99,16 @@ const output = `; crew and passenger
     {group "passenger"}
     {linkbone "seat1"}
     {turnoff {shadow} {sensor} {targetable 1}}
-    ; no additional
+    ; no extra
   }
 }
 {Boarder
   {door "emit3"}
   {link "emit3" "passenger" {anm "passenger"} {forward putoff} {reverse puton}}
 }
+
+; set extra
+; no extra
 `;
 
 it('generate crew and passenger', () => {

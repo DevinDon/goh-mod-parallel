@@ -20,6 +20,7 @@
     }
     {reverse
       {base "doorleft" 1}
+      ; no backward animation begin
       {end "board_opel_driver" -1}
     }
   }
@@ -32,6 +33,7 @@
     }
     {reverse
       {base "doorright" 1}
+      ; no backward animation begin
       {end "board_big-midcar" -1}
     }
   }
@@ -44,6 +46,7 @@
     }
     {reverse
       {base "board" 1}
+      ; no backward animation begin
       {end "emit_body" 1}
     }
   }
@@ -57,6 +60,7 @@
     {linkbone "driver"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "driver"}
+    ; no extra
   }
 }
 {Boarder
@@ -70,6 +74,7 @@
     {linkbone "commander"}
     {turnoff {shadow} {sensor} {targetable 1}}
     ; no visor
+    ; no extra
   }
 }
 {Boarder
@@ -84,6 +89,7 @@
     {group "passenger"}
     {linkbone "seat01"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -96,6 +102,7 @@
     {group "passenger"}
     {linkbone "seat02"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -108,6 +115,7 @@
     {group "passenger"}
     {linkbone "seat03"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -120,6 +128,7 @@
     {group "passenger"}
     {linkbone "seat04"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -132,6 +141,7 @@
     {group "passenger"}
     {linkbone "seat05"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -144,6 +154,7 @@
     {group "passenger"}
     {linkbone "seat06"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -156,6 +167,7 @@
     {group "passenger"}
     {linkbone "seat07"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -168,6 +180,7 @@
     {group "passenger"}
     {linkbone "seat08"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -180,6 +193,7 @@
     {group "passenger"}
     {linkbone "seat09"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -192,6 +206,7 @@
     {group "passenger"}
     {linkbone "seat10"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -204,6 +219,7 @@
     {group "passenger"}
     {linkbone "seat11"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -216,9 +232,13 @@
     {group "passenger"}
     {linkbone "seat12"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
   {door "emit4"}
   {link "emit4" "passenger12" {anm "passenger"} {forward putoff} {reverse puton}}
 }
+
+; set extra
+; no extra

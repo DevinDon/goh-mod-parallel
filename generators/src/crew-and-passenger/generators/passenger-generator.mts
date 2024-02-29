@@ -14,7 +14,7 @@ export const generatePassenger = ({ name, animations, bone, turnoff, extra }: Pa
 
   const extraLines = extra?.length
     ? setIndent(extra.join('\n'), { indent: 4, indentFirstLine: true })
-    : '; no additional';
+    : '; no extra';
 
   const animationLines = animations
     .map(

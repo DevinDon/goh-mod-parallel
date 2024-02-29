@@ -25,6 +25,7 @@
     }
     {reverse
       {base "doorleft" 1}
+      ; no backward animation begin
       {end "emit_body" 1}
     }
   }
@@ -37,6 +38,7 @@
     }
     {reverse
       {base "board" 1}
+      ; no backward animation begin
       {end "emit_body" 1}
     }
   }
@@ -49,6 +51,7 @@
     }
     {reverse
       {base "board" 1}
+      ; no backward animation begin
       {end "emit_body" 1}
     }
   }
@@ -61,6 +64,7 @@
     }
     {reverse
       {base "doorright" 1}
+      ; no backward animation begin
       {end "emit_body" 1}
     }
   }
@@ -74,6 +78,7 @@
     {linkbone "driver"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "driver"}
+    ; no extra
   }
 }
 {Boarder
@@ -87,6 +92,7 @@
     {linkbone "gunner"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "gunner"}
+    ; no extra
   }
 }
 {Boarder
@@ -100,6 +106,7 @@
     {linkbone "charger"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "charger"}
+    ; no extra
   }
 }
 {Boarder
@@ -114,6 +121,7 @@
     {group "passenger"}
     {linkbone "commander"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
@@ -126,9 +134,13 @@
     {group "passenger"}
     {linkbone "commander"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no extra
   }
 }
 {Boarder
   {door "emit2"}
   {link "emit2" "passenger02" {anm "passenger"} {forward putoff} {reverse puton}}
 }
+
+; set extra
+; no extra
