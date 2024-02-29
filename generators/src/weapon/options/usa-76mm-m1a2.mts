@@ -20,7 +20,7 @@ const options: WeaponOptions = {
   aimingTolerance: 1,
   spreadTolerance: 0.5,
 
-  rechargeTime: 7.5,
+  rechargeTime: 7,
   recoveryTime: 1,
 
   automatic: false,
@@ -34,7 +34,7 @@ const options: WeaponOptions = {
       gravity: 5,
       projectile: {
         nearest: 125,
-        farthest: 92,
+        farthest: 90,
       },
       damage: 165,
       spreading: {
@@ -45,7 +45,7 @@ const options: WeaponOptions = {
         },
         burstRecoveryTime: 0.76,
         burstAccuracy: 100,
-        spreadPower: 1.35,
+        spreadPower: 1.15,
         spreadXYRatio: 0.75,
       },
       overmatch: 'usa-76mm-apcbc',
@@ -69,7 +69,7 @@ const options: WeaponOptions = {
         },
         burstRecoveryTime: 0.76,
         burstAccuracy: 100,
-        spreadPower: 1.35,
+        spreadPower: 1.25,
         spreadXYRatio: 0.75,
       },
       overmatch: 'usa-76mm-hvap',
@@ -96,7 +96,7 @@ const options: WeaponOptions = {
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
-      speed: 603,
+      speed: 270,
       gravity: 5,
       spreading: {
         radiusTable: {
@@ -106,7 +106,7 @@ const options: WeaponOptions = {
         },
         burstRecoveryTime: 0.76,
         burstAccuracy: 100,
-        spreadPower: 1.25,
+        spreadPower: 1.00,
         spreadXYRatio: 0.75,
       },
     },

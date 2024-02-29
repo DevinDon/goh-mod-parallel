@@ -2,8 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  name: 'usa-75mm-m6',
-  description: '美国 75mm M6 坦克炮',
+  name: 'usa-76mm-m1a1',
+  description: '美国 76mm M1A1 坦克炮',
 
   from: 'pattern gun',
 
@@ -12,115 +12,91 @@ const options: WeaponOptions = {
   reloadSound: 'interior/large/medium_reload_interior',
   cursor: 'ironsights/tank2',
 
-  ammo: 'usa-75x350',
+  ammo: 'usa-76x539',
   amout: 1,
-  calibre: 75,
+  calibre: 76,
   syncedProjectiles: true,
 
   aimingTolerance: 1,
   spreadTolerance: 0.5,
 
-  rechargeTime: 7,
+  rechargeTime: 6,
   recoveryTime: 1,
 
   automatic: false,
 
   bullets: {
-    ap: {
-      minRange: 0,
-      aimRange: 300,
-      maxRange: 300,
-      speed: 619,
-      gravity: 5,
-      projectile: {
-        nearest: 109,
-        farthest: 51,
-      },
-      damage: 135,
-      spreading: {
-        radiusTable: {
-          nearest: 0.37,
-          farthest: 2.73,
-          factor: 3.5,
-        },
-        burstRecoveryTime: 0.75,
-        burstAccuracy: 100,
-        spreadPower: 1.10,
-        spreadXYRatio: 0.75,
-      },
-      overmatch: 'usa-75mm-ap',
-    },
-    apcbc: {
-      minRange: 0,
-      aimRange: 300,
-      maxRange: 300,
-      speed: 619,
-      gravity: 5,
-      projectile: {
-        nearest: 88,
-        farthest: 59,
-      },
-      damage: 135,
-      spreading: {
-        radiusTable: {
-          nearest: 0.33,
-          farthest: 2.43,
-          factor: 3.5,
-        },
-        burstRecoveryTime: 0.75,
-        burstAccuracy: 100,
-        spreadPower: 1.15,
-        spreadXYRatio: 0.75,
-      },
-      overmatch: 'usa-37mm-apcbc',
-    },
     apcbche: {
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
-      speed: 619,
+      speed: 792,
       gravity: 5,
       projectile: {
-        nearest: 88,
-        farthest: 59,
+        nearest: 125,
+        farthest: 86,
       },
-      damage: 135,
+      damage: 165,
       spreading: {
         radiusTable: {
-          nearest: 0.33,
-          farthest: 2.43,
+          nearest: 0.49,
+          farthest: 3.71,
           factor: 3.5,
         },
-        burstRecoveryTime: 0.75,
+        burstRecoveryTime: 0.76,
         burstAccuracy: 100,
         spreadPower: 1.15,
         spreadXYRatio: 0.75,
       },
-      overmatch: 'usa-37mm-apcbc',
+      overmatch: 'usa-76mm-apcbc',
+    },
+    hvap: {
+      minRange: 0,
+      aimRange: 300,
+      maxRange: 300,
+      speed: 1036,
+      gravity: 5,
+      projectile: {
+        nearest: 239,
+        farthest: 124,
+      },
+      damage: 130,
+      spreading: {
+        radiusTable: {
+          nearest: 0.412,
+          farthest: 2.99,
+          factor: 3.5,
+        },
+        burstRecoveryTime: 0.76,
+        burstAccuracy: 100,
+        spreadPower: 1.25,
+        spreadXYRatio: 0.75,
+      },
+      overmatch: 'usa-76mm-hvap',
     },
     he: {
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
-      speed: 603,
+      speed: 820,
       gravity: 5,
       spreading: {
         radiusTable: {
-          nearest: 1.5,
-          farthest: 4.67,
+          nearest: 1.6,
+          farthest: 4.8,
           factor: 4.0,
         },
-        burstRecoveryTime: 0.75,
+        burstRecoveryTime: 0.76,
         burstAccuracy: 100,
         spreadPower: 1.00,
         spreadXYRatio: 0.75,
       },
     },
-    sm: {
+    wp: {
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
-      speed: 603,
+      speed: 270,
       gravity: 5,
       spreading: {
         radiusTable: {
@@ -128,7 +104,7 @@ const options: WeaponOptions = {
           farthest: 4.67,
           factor: 4.0,
         },
-        burstRecoveryTime: 0.75,
+        burstRecoveryTime: 0.76,
         burstAccuracy: 100,
         spreadPower: 1.00,
         spreadXYRatio: 0.75,
