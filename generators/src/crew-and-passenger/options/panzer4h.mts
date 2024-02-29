@@ -120,6 +120,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'left' },
         { door: 'emit2', animation: 'right' },
       ],
+      bone: 'gunner2',
       visor: 'standard-visor-driver',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
@@ -131,6 +132,7 @@ const options: CrewAndPassengerOptions = {
       ],
       visor: 'standard-visor-commander',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      extra: [ '{sealable}' ],
     },
     {
       name: 'charger',
