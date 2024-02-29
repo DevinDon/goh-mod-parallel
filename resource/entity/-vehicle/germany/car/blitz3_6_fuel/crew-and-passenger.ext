@@ -1,5 +1,16 @@
 ; crew and passenger
 
+; define from board_animation
+; args = name base begin end
+(define "set-board-animation"
+  {boarder
+    {anm "%name"
+      {forward {base "%base"} {begin "%begin"} {end "%end"}     }
+      {reverse {base "%base"}                  {end "%begin" -1}}
+    }
+  }
+)
+
 ; define from crew_human
 ; args = name animation bone door
 (define "set-crew"
@@ -29,17 +40,6 @@
   {boarder
     {door "%door"}
     {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
-
-; define from board_animation
-; args = name base begin end
-(define "set-board-animation"
-  {boarder
-    {anm "%name"
-      {forward {base "%base"} {begin "%begin"} {end "%end"}     }
-      {reverse {base "%base"}                  {end "%begin" -1}}
-    }
   }
 )
 
