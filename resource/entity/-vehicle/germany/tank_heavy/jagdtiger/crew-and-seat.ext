@@ -62,8 +62,8 @@
       {group "%group"}
       {linkbone "%bone"}
       {visor "top"}
-      ;{openForCrush}
-      {sealable}
+      ; {openForCrush}
+      ; {sealable}
     }
   }
   {boarder
