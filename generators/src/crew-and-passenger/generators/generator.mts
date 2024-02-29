@@ -8,13 +8,21 @@ import { generateVisor } from './visor-generator.mjs';
 /** 生成载具乘员及乘客配置 */
 export const generateCrewAndPassenger = ({ visors, animations, crews, passengers, extra }: CrewAndPassengerOptions) => {
 
-  const visorsText = visors.map(generateVisor).join('\n');
+  const visorsText = visors?.length
+    ? visors.map(generateVisor).join('\n')
+    : '; no visors';
 
-  const animationsText = animations.map(generateAnimation).join('\n');
+  const animationsText = animations?.length
+    ? animations.map(generateAnimation).join('\n')
+    : '; no animations';
 
-  const crewsText = crews.map(generateCrew).join('\n');
+  const crewsText = crews?.length
+    ? crews.map(generateCrew).join('\n')
+    : '; no crew';
 
-  const passengersText = passengers.map(generatePassenger).join('\n');
+  const passengersText = passengers?.length
+    ? passengers.map(generatePassenger).join('\n')
+    : '; no passenger';
 
   const extraText = extra?.length
     ? extra.join('\n')
