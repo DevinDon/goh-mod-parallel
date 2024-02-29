@@ -1,38 +1,54 @@
-; crew and seat
+; crew and passenger
 
-; define crew_human
-; args = place bone door animation group
-(define "set-crew-or-seat"
+; define from crew_human
+; args = name animation bone door
+(define "set-crew"
   {placer
-    {place "%place"
-      {group "%group"}
+    {place "%name"
+      {group "crew"}
       {linkbone "%bone"}
-      {turnoff {sensor} {targetable 0}}
+      {turnoff {shadow} {sensor} {targetable 1}}
     }
   }
   {boarder
     {door "%door"}
-    {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
   }
 )
 
-; define board_animation
-; args = place begin end base
+; define from crew_human
+; args = name animation bone door
+(define "set-passenger"
+  {placer
+    {place "%name"
+      {group "passenger"}
+      {linkbone "%bone"}
+      {turnoff {shadow} {sensor} {targetable 1}}
+    }
+  }
+  {boarder
+    {door "%door"}
+    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
+  }
+)
+
+; define from board_animation
+; args = name base begin end
 (define "set-board-animation"
   {boarder
-    {anm "%place"
-      {forward {begin "%begin"} {end "%end"} {base "%base"}}
-      {reverse {end "%begin" -1} {base "%base"}}
+    {anm "%name"
+      {forward {base "%base"} {begin "%begin"} {end "%end"}     }
+      {reverse {base "%base"}                  {end "%begin" -1}}
     }
   }
 )
 
 ; apply settings
 ; set animations
-("set-board-animation" place(driver)    begin(board_opel_driver) end(seat_opel_driver)    base(doorleft))
-("set-board-animation" place(passenger) begin(board_big-midcar)  end(seat_opel_commander) base(doorright))
+("set-board-animation" name(driver)    base(doorleft)  begin(board_opel_driver) end(seat_opel_driver))
+("set-board-animation" name(passenger) base(doorright) begin(board_big-midcar)  end(seat_opel_commander))
 
-; set crew and seat
-("set-crew-or-seat" place(driver) bone(driver)    door(emit1) animation(driver)    group(crew))
-("set-crew-or-seat" place(seat01) bone(commander) door(emit2) animation(passenger) group(passenger))
-("set-crew-or-seat" place(seat02) bone(commander) door(emit2) animation(passenger) group(passenger))
+; set crew and passenger
+("set-crew"      name(driver)      animation(driver)    bone(driver)    door(emit1))
+("set-passenger" name(passenger01) animation(passenger) bone(commander) door(emit2))
+("set-passenger" name(passenger02) animation(passenger) bone(commander) door(emit2))
