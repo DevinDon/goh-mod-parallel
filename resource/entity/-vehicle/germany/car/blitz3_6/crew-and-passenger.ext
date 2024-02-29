@@ -1,66 +1,224 @@
 ; crew and passenger
 
-; define from crew_human
-; args = name animation bone door
-(define "set-crew"
-  {placer
-    {place "%name"
-      {group "crew"}
-      {linkbone "%bone"}
-      {turnoff {shadow} {sensor} {targetable 1}}
-    }
-  }
-  {boarder
-    {door "%door"}
-    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
-
-; define from crew_human
-; args = name animation bone door
-(define "set-passenger"
-  {placer
-    {place "%name"
-      {group "passenger"}
-      {linkbone "%bone"}
-      {turnoff {shadow} {sensor} {targetable 1}}
-    }
-  }
-  {boarder
-    {door "%door"}
-    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
-
-; apply settings
-; set animation
-{Boarder
-  {anm "driver"
-    {forward {base "doorleft"} {begin "board_opel_driver"} {end "seat_opel_driver"}}
-    {reverse {base "doorleft"}                             {end "board_opel_driver" -1}}
-  }
-  {anm "commander"
-    {forward {base "doorright"} {begin "board_big-midcar"} {end "seat_opel_commander"}}
-    {reverse {base "doorright"}                            {end "board_big-midcar" -1}}
-  }
-  {anm "passenger"
-    {forward {base "board"} {begin "board_body"} {end "seat_passenger"}}
-    {reverse {base "board"}                      {end "emit_body" 1}}
+; set visors
+{Sensor
+  ; visor driver
+  {Visor "driver"
+    {Bone "driver"}
+    {Vision "standard-vision-around"}
   }
 }
 
-; set crew and passenger
-("set-crew"      name(driver)      animation(driver)    bone(driver)    door(emit1))
-("set-passenger" name(leader)      animation(commander) bone(commander) door(emit2))
-("set-passenger" name(passenger01) animation(passenger) bone(seat01)    door(emit3))
-("set-passenger" name(passenger02) animation(passenger) bone(seat02)    door(emit4))
-("set-passenger" name(passenger03) animation(passenger) bone(seat03)    door(emit3))
-("set-passenger" name(passenger04) animation(passenger) bone(seat04)    door(emit4))
-("set-passenger" name(passenger05) animation(passenger) bone(seat05)    door(emit3))
-("set-passenger" name(passenger06) animation(passenger) bone(seat06)    door(emit4))
-("set-passenger" name(passenger07) animation(passenger) bone(seat07)    door(emit3))
-("set-passenger" name(passenger08) animation(passenger) bone(seat08)    door(emit4))
-("set-passenger" name(passenger09) animation(passenger) bone(seat09)    door(emit3))
-("set-passenger" name(passenger10) animation(passenger) bone(seat10)    door(emit4))
-("set-passenger" name(passenger11) animation(passenger) bone(seat11)    door(emit3))
-("set-passenger" name(passenger12) animation(passenger) bone(seat12)    door(emit4))
+; set animations
+{Boarder
+  ; animation driver
+  {Anm "driver"
+    {forward
+      {base "doorleft" 1}
+      {begin "board_opel_driver" 1}
+      {end "seat_opel_driver" 1}
+    }
+    {reverse
+      {base "doorleft" 1}
+      {end "board_opel_driver" -1}
+    }
+  }
+  ; animation leader
+  {Anm "leader"
+    {forward
+      {base "doorright" 1}
+      {begin "board_big-midcar" 1}
+      {end "seat_opel_commander" 1}
+    }
+    {reverse
+      {base "doorright" 1}
+      {end "board_big-midcar" -1}
+    }
+  }
+  ; animation passenger
+  {Anm "passenger"
+    {forward
+      {base "board" 1}
+      {begin "board_body" 1}
+      {end "seat_passenger" 1}
+    }
+    {reverse
+      {base "board" 1}
+      {end "emit_body" 1}
+    }
+  }
+}
+
+; set crews
+; crew driver
+{Placer
+  {Place "driver"
+    {group "crew"}
+    {linkbone "driver"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+    {visor "driver"}
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+}
+; crew leader
+{Placer
+  {Place "leader"
+    {group "crew"}
+    {linkbone "commander"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+    ; no visor
+  }
+}
+{Boarder
+  {door "emit2"}
+  {link "emit2" "leader" {anm "leader"} {forward putoff} {reverse puton}}
+}
+
+; set passengers
+; passenger passenger01
+{Placer
+  {Place "passenger01"
+    {group "passenger"}
+    {linkbone "seat01"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit3"}
+  {link "emit3" "passenger01" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger02
+{Placer
+  {Place "passenger02"
+    {group "passenger"}
+    {linkbone "seat02"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit4"}
+  {link "emit4" "passenger02" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger03
+{Placer
+  {Place "passenger03"
+    {group "passenger"}
+    {linkbone "seat03"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit3"}
+  {link "emit3" "passenger03" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger04
+{Placer
+  {Place "passenger04"
+    {group "passenger"}
+    {linkbone "seat04"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit4"}
+  {link "emit4" "passenger04" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger05
+{Placer
+  {Place "passenger05"
+    {group "passenger"}
+    {linkbone "seat05"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit3"}
+  {link "emit3" "passenger05" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger06
+{Placer
+  {Place "passenger06"
+    {group "passenger"}
+    {linkbone "seat06"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit4"}
+  {link "emit4" "passenger06" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger07
+{Placer
+  {Place "passenger07"
+    {group "passenger"}
+    {linkbone "seat07"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit3"}
+  {link "emit3" "passenger07" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger08
+{Placer
+  {Place "passenger08"
+    {group "passenger"}
+    {linkbone "seat08"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit4"}
+  {link "emit4" "passenger08" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger09
+{Placer
+  {Place "passenger09"
+    {group "passenger"}
+    {linkbone "seat09"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit3"}
+  {link "emit3" "passenger09" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger10
+{Placer
+  {Place "passenger10"
+    {group "passenger"}
+    {linkbone "seat10"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit4"}
+  {link "emit4" "passenger10" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger11
+{Placer
+  {Place "passenger11"
+    {group "passenger"}
+    {linkbone "seat11"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit3"}
+  {link "emit3" "passenger11" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger12
+{Placer
+  {Place "passenger12"
+    {group "passenger"}
+    {linkbone "seat12"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit4"}
+  {link "emit4" "passenger12" {anm "passenger"} {forward putoff} {reverse puton}}
+}
