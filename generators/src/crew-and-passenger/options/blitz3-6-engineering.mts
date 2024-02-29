@@ -2,7 +2,7 @@ import type { CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 
-  destination: 'resource/entity/-vehicle/germany/car/blitz3_6_engineering/crew-and-passenger.ext',
+  destination: 'resource/entity/-vehicle/germany/car/blitz3_6_art_ammo/crew-and-passenger.ext',
 
   visors: [
     {
@@ -16,55 +16,25 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'driver',
       forward: {
-        base: {
-          name: 'doorleft',
-          direction: 'forward',
-        },
-        begin: {
-          name: 'board_opel_driver',
-          direction: 'forward',
-        },
-        end: {
-          name: 'seat_opel_driver',
-          direction: 'forward',
-        },
+        base: [ 'doorleft', 1 ],
+        begin: [ 'board_opel_driver', 1 ],
+        end: [ 'seat_opel_driver', 1 ],
       },
       backward: {
-        base: {
-          name: 'doorleft',
-          direction: 'forward',
-        },
-        end: {
-          name: 'board_opel_driver',
-          direction: 'backward',
-        },
+        base: [ 'doorleft', 1 ],
+        end: [ 'board_opel_driver', 1 ],
       },
     },
     {
       name: 'passenger',
       forward: {
-        base: {
-          name: 'doorright',
-          direction: 'forward',
-        },
-        begin: {
-          name: 'board_big-midcar',
-          direction: 'forward',
-        },
-        end: {
-          name: 'seat_opel_commander',
-          direction: 'forward',
-        },
+        base: [ 'doorright', 1 ],
+        begin: [ 'board_big-midcar', 1 ],
+        end: [ 'seat_opel_commander', 1 ],
       },
       backward: {
-        base: {
-          name: 'doorright',
-          direction: 'forward',
-        },
-        end: {
-          name: 'board_big-midcar',
-          direction: 'backward',
-        },
+        base: [ 'doorright', 1 ],
+        end: [ 'board_big-midcar', -1 ],
       },
     },
   ],
@@ -72,8 +42,9 @@ const options: CrewAndPassengerOptions = {
   crews: [
     {
       name: 'driver',
-      animation: 'driver',
-      door: 'emit1',
+      animations: [
+        { door: 'emit1', animation: 'driver' },
+      ],
       bone: 'driver',
       visor: 'driver',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
@@ -83,15 +54,17 @@ const options: CrewAndPassengerOptions = {
   passengers: [
     {
       name: 'passenger01',
-      animation: 'passenger',
-      door: 'emit2',
+      animations: [
+        { door: 'emit2', animation: 'passenger' },
+      ],
       bone: 'commander',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger02',
-      animation: 'passenger',
-      door: 'emit2',
+      animations: [
+        { door: 'emit2', animation: 'passenger' },
+      ],
       bone: 'commander',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },

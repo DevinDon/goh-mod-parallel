@@ -21,66 +21,33 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'driver',
       forward: {
-        base: {
-          name: 'doorleft1',
-          direction: 'forward',
-        },
-        begin: {
-          name: 'board_moto_driver',
-          direction: 'forward',
-        },
-        end: {
-          name: 'pose_moto_driver',
-          direction: 'forward',
-        },
+        base: [ 'doorleft1', 1 ],
+        begin: [ 'board_moto_driver', 1 ],
+        end: [ 'pose_moto_driver', 1 ],
       },
       backward: {
-        base: {
-          name: 'doorleft1',
-          direction: 'backward',
-        },
-        end: {
-          name: 'board_moto_driver',
-          direction: 'backward',
-        },
+        base: [ 'doorleft1', -1 ],
+        end: [ 'board_moto_driver', -1 ],
       },
     },
     {
       name: 'gunner',
       forward: {
-        begin: {
-          name: 'board_moto_sidecar',
-          direction: 'forward',
-        },
-        end: {
-          name: 'pose_moto_sidecar',
-          direction: 'forward',
-        },
+        begin: [ 'board_moto_sidecar', 1 ],
+        end: [ 'pose_moto_sidecar', 1 ],
       },
       backward: {
-        end: {
-          name: 'board_moto_sidecar',
-          direction: 'backward',
-        },
+        end: [ 'board_moto_sidecar', -1 ],
       },
     },
     {
       name: 'passenger',
       forward: {
-        begin: {
-          name: 'board_moto_passenger',
-          direction: 'forward',
-        },
-        end: {
-          name: 'pose_moto_passenger',
-          direction: 'forward',
-        },
+        begin: [ 'board_moto_passenger', 1 ],
+        end: [ 'pose_moto_passenger', 1 ],
       },
       backward: {
-        end: {
-          name: 'board_moto_passenger',
-          direction: 'backward',
-        },
+        end: [ 'board_moto_passenger', -1 ],
       },
     },
   ],
@@ -88,16 +55,18 @@ const options: CrewAndPassengerOptions = {
   crews: [
     {
       name: 'driver',
-      animation: 'driver',
-      door: 'emit1',
+      animations: [
+        { door: 'emit1', animation: 'driver' },
+      ],
       bone: 'driver',
       visor: 'driver',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'gunner',
-      animation: 'gunner',
-      door: 'emit2',
+      animations: [
+        { door: 'emit2', animation: 'gunner' },
+      ],
       bone: 'gunner',
       visor: 'gunner',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
@@ -107,8 +76,9 @@ const options: CrewAndPassengerOptions = {
   passengers: [
     {
       name: 'passenger',
-      animation: 'passenger',
-      door: 'emit3',
+      animations: [
+        { door: 'emit3', animation: 'passenger' },
+      ],
       bone: 'seat1',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },

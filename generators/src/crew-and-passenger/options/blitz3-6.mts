@@ -16,82 +16,37 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'driver',
       forward: {
-        base: {
-          name: 'doorleft',
-          direction: 'forward',
-        },
-        begin: {
-          name: 'board_opel_driver',
-          direction: 'forward',
-        },
-        end: {
-          name: 'seat_opel_driver',
-          direction: 'forward',
-        },
+        base: [ 'doorleft', 1 ],
+        begin: [ 'board_opel_driver', 1 ],
+        end: [ 'seat_opel_driver', 1 ],
       },
       backward: {
-        base: {
-          name: 'doorleft',
-          direction: 'forward',
-        },
-        end: {
-          name: 'board_opel_driver',
-          direction: 'backward',
-        },
+        base: [ 'doorleft', 1 ],
+        end: [ 'board_opel_driver', 1 ],
       },
     },
     {
       name: 'leader',
       forward: {
-        base: {
-          name: 'doorright',
-          direction: 'forward',
-        },
-        begin: {
-          name: 'board_big-midcar',
-          direction: 'forward',
-        },
-        end: {
-          name: 'seat_opel_commander',
-          direction: 'forward',
-        },
+        base: [ 'doorright', 1 ],
+        begin: [ 'board_big-midcar', 1 ],
+        end: [ 'seat_opel_commander', 1 ],
       },
       backward: {
-        base: {
-          name: 'doorright',
-          direction: 'forward',
-        },
-        end: {
-          name: 'board_big-midcar',
-          direction: 'backward',
-        },
+        base: [ 'doorright', 1 ],
+        end: [ 'board_big-midcar', -1 ],
       },
     },
     {
       name: 'passenger',
       forward: {
-        base: {
-          name: 'board',
-          direction: 'forward',
-        },
-        begin: {
-          name: 'board_body',
-          direction: 'forward',
-        },
-        end: {
-          name: 'seat_passenger',
-          direction: 'forward',
-        },
+        base: [ 'board', 1 ],
+        begin: [ 'board_body', 1 ],
+        end: [ 'seat_passenger', 1 ],
       },
       backward: {
-        base: {
-          name: 'board',
-          direction: 'forward',
-        },
-        end: {
-          name: 'emit_body',
-          direction: 'forward',
-        },
+        base: [ 'board', 1 ],
+        end: [ 'emit_body', 1 ],
       },
     },
   ],
@@ -99,16 +54,18 @@ const options: CrewAndPassengerOptions = {
   crews: [
     {
       name: 'driver',
-      animation: 'driver',
-      door: 'emit1',
+      animations: [
+        { door: 'emit1', animation: 'driver' },
+      ],
       bone: 'driver',
       visor: 'driver',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'leader',
-      animation: 'leader',
-      door: 'emit2',
+      animations: [
+        { door: 'emit2', animation: 'leader' },
+      ],
       bone: 'commander',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
@@ -117,85 +74,97 @@ const options: CrewAndPassengerOptions = {
   passengers: [
     {
       name: 'passenger01',
-      animation: 'passenger',
-      door: 'emit3',
+      animations: [
+        { door: 'emit3', animation: 'passenger' },
+      ],
       bone: 'seat01',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger02',
-      animation: 'passenger',
-      door: 'emit4',
+      animations: [
+        { door: 'emit4', animation: 'passenger' },
+      ],
       bone: 'seat02',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger03',
-      animation: 'passenger',
-      door: 'emit3',
+      animations: [
+        { door: 'emit3', animation: 'passenger' },
+      ],
       bone: 'seat03',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger04',
-      animation: 'passenger',
-      door: 'emit4',
+      animations: [
+        { door: 'emit4', animation: 'passenger' },
+      ],
       bone: 'seat04',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger05',
-      animation: 'passenger',
-      door: 'emit3',
+      animations: [
+        { door: 'emit3', animation: 'passenger' },
+      ],
       bone: 'seat05',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger06',
-      animation: 'passenger',
-      door: 'emit4',
+      animations: [
+        { door: 'emit4', animation: 'passenger' },
+      ],
       bone: 'seat06',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger07',
-      animation: 'passenger',
-      door: 'emit3',
+      animations: [
+        { door: 'emit3', animation: 'passenger' },
+      ],
       bone: 'seat07',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger08',
-      animation: 'passenger',
-      door: 'emit4',
+      animations: [
+        { door: 'emit4', animation: 'passenger' },
+      ],
       bone: 'seat08',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger09',
-      animation: 'passenger',
-      door: 'emit3',
+      animations: [
+        { door: 'emit3', animation: 'passenger' },
+      ],
       bone: 'seat09',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger10',
-      animation: 'passenger',
-      door: 'emit4',
+      animations: [
+        { door: 'emit4', animation: 'passenger' },
+      ],
       bone: 'seat10',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger11',
-      animation: 'passenger',
-      door: 'emit3',
+      animations: [
+        { door: 'emit3', animation: 'passenger' },
+      ],
       bone: 'seat11',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger12',
-      animation: 'passenger',
-      door: 'emit4',
+      animations: [
+        { door: 'emit4', animation: 'passenger' },
+      ],
       bone: 'seat12',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },

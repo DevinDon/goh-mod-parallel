@@ -24,12 +24,13 @@ const output = `; crew and passenger
   ; animation driver
   {Anm "driver"
     {forward
-      {base "driver" 1}
+      {base "doorleft1" 1}
       {begin "board_moto_driver" 1}
       {end "pose_moto_driver" 1}
     }
     {reverse
-      {base "driver" -1}
+      {base "doorleft1" -1}
+      ; no backward animation begin
       {end "board_moto_driver" -1}
     }
   }
@@ -42,6 +43,7 @@ const output = `; crew and passenger
     }
     {reverse
       ; no backward animation base
+      ; no backward animation begin
       {end "board_moto_sidecar" -1}
     }
   }
@@ -54,6 +56,7 @@ const output = `; crew and passenger
     }
     {reverse
       ; no backward animation base
+      ; no backward animation begin
       {end "board_moto_passenger" -1}
     }
   }
@@ -67,6 +70,7 @@ const output = `; crew and passenger
     {linkbone "driver"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "driver"}
+    ; no additional
   }
 }
 {Boarder
@@ -80,6 +84,7 @@ const output = `; crew and passenger
     {linkbone "gunner"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "gunner"}
+    ; no additional
   }
 }
 {Boarder
@@ -94,6 +99,7 @@ const output = `; crew and passenger
     {group "passenger"}
     {linkbone "seat1"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no additional
   }
 }
 {Boarder

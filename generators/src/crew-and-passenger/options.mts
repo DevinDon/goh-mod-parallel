@@ -19,44 +19,21 @@ export type AnimationOptions = {
   name: string;
   /** 正向动画配置 */
   forward: {
-    /** 动画基准，可选 */
-    base?: {
-      /** 动画基准名称 */
-      name: string;
-      /** 动画基准方向 */
-      direction: 'forward' | 'backward';
-    };
+    /** 动画基准 */
+    base?: [string, number];
     /** 起始动画 */
-    begin: {
-      /** 起始动画名称 */
-      name: string;
-      /** 起始动画方向 */
-      direction: 'forward' | 'backward';
-    };
+    begin?: [string, number];
     /** 结束动画 */
-    end: {
-      /** 结束动画名称 */
-      name: string;
-      /** 结束动画方向 */
-      direction: 'forward' | 'backward';
-    };
+    end?: [string, number];
   };
   /** 反向动画配置 */
   backward: {
-    /** 动画基准，可选 */
-    base?: {
-      /** 动画基准名称 */
-      name: string;
-      /** 动画基准方向 */
-      direction: 'forward' | 'backward';
-    };
+    /** 动画基准 */
+    base?: [string, number];
+    /** 起始动画 */
+    begin?: [string, number];
     /** 结束动画 */
-    end: {
-      /** 结束动画名称 */
-      name: string;
-      /** 结束动画方向 */
-      direction: 'forward' | 'backward';
-    };
+    end?: [string, number];
   };
 };
 
@@ -64,31 +41,25 @@ export type AnimationOptions = {
 export type CrewOptions = {
   /** 乘员位置名称 */
   name: string;
-  /** 乘员出入动画 */
-  animation: string;
-  /** 乘员出入舱口 */
-  door: string;
+  /** 乘员出入舱口及动画 */
+  animations: {
+    /** 出入舱口 */
+    door: string;
+    /** 出入动画 */
+    animation: string;
+  }[];
   /** 乘员绑定点 */
-  bone: string;
-  /** 乘员视角，默认为 `none` */
+  bone?: string;
+  /** 乘员视角 */
   visor?: string;
   /** 禁用的特性 */
   turnoff?: string[];
+  /** 额外的自定义参数，需要包含花括号或大括号，一项为一行 */
+  extra?: string[];
 };
 
 /** 乘客配置 */
-export type PassengerOptions = {
-  /** 乘客位置名称 */
-  name: string;
-  /** 乘客出入动画 */
-  animation: string;
-  /** 乘客出入舱口 */
-  door: string;
-  /** 乘客绑定点 */
-  bone: string;
-  /** 禁用的特性 */
-  turnoff?: string[];
-};
+export type PassengerOptions = Omit<CrewOptions, 'visor'>;
 
 export type CrewAndPassengerOptions = {
 
@@ -103,5 +74,8 @@ export type CrewAndPassengerOptions = {
   crews: CrewOptions[];
   /** 乘客列表 */
   passengers: PassengerOptions[];
+
+  /** 额外的自定义参数，需要包含花括号或大括号，一项为一行 */
+  extra?: string[];
 
 };

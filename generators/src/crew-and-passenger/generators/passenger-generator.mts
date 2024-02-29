@@ -1,23 +1,39 @@
+import { setIndent } from '../../utils/set-indent.mjs';
 import type { PassengerOptions } from '../options.mjs';
 
 /** 生成乘客配置 */
-export const generatePassenger = ({ name, animation, door, bone, turnoff }: PassengerOptions) => {
+export const generatePassenger = ({ name, animations, bone, turnoff, extra }: PassengerOptions) => {
 
-  const turnoffLine = turnoff
+  const boneLine = bone
+    ? `{linkbone "${bone}"}`
+    : '; no bone';
+
+  const turnoffLine = turnoff?.length
     ? `{turnoff ${turnoff.map(feature => `{${feature}}`).join(' ')}}`
     : '; no turnoff';
+
+  const extraLines = extra?.length
+    ? setIndent(extra.join('\n'), { indent: 4, indentFirstLine: true })
+    : '; no additional';
+
+  const animationLines = animations
+    .map(
+      ({ door, animation }) => `{door "${door}"}\n{link "${door}" "${name}" {anm "${animation}"} {forward putoff} {reverse puton}}`,
+    )
+    .map(line => setIndent(line, { indent: 2, indentFirstLine: false }))
+    .join('\n');
 
   return `; passenger ${name}
 {Placer
   {Place "${name}"
     {group "passenger"}
-    {linkbone "${bone}"}
+    ${boneLine}
     ${turnoffLine}
+    ${extraLines}
   }
 }
 {Boarder
-  {door "${door}"}
-  {link "${door}" "${name}" {anm "${animation}"} {forward putoff} {reverse puton}}
+  ${animationLines}
 }`;
 
 };

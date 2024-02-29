@@ -6,7 +6,7 @@ import { generatePassenger } from './passenger-generator.mjs';
 import { generateVisor } from './visor-generator.mjs';
 
 /** 生成载具乘员及乘客配置 */
-export const generateCrewAndPassenger = ({ visors, animations, crews, passengers }: CrewAndPassengerOptions) => {
+export const generateCrewAndPassenger = ({ visors, animations, crews, passengers, extra }: CrewAndPassengerOptions) => {
 
   const visorsText = visors.map(generateVisor).join('\n');
 
@@ -15,6 +15,10 @@ export const generateCrewAndPassenger = ({ visors, animations, crews, passengers
   const crewsText = crews.map(generateCrew).join('\n');
 
   const passengersText = passengers.map(generatePassenger).join('\n');
+
+  const extraText = extra?.length
+    ? extra.join('\n')
+    : '; no extra';
 
   return `; crew and passenger
 
@@ -33,6 +37,9 @@ ${crewsText}
 
 ; set passengers
 ${passengersText}
+
+; set extra
+${extraText}
 `;
 
 };

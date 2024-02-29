@@ -1,28 +1,44 @@
+import { setIndent } from '../../utils/set-indent.mjs';
 import type { CrewOptions } from '../options.mjs';
 
 /** 生成乘员配置 */
-export const generateCrew = ({ name, animation, door, bone, visor, turnoff }: CrewOptions) => {
+export const generateCrew = ({ name, animations, bone, visor, turnoff, extra }: CrewOptions) => {
+
+  const boneLine = bone
+    ? `{linkbone "${bone}"}`
+    : '; no bone';
 
   const visorLine = visor
     ? `{visor "${visor}"}`
     : '; no visor';
 
-  const turnoffLine = turnoff
+  const turnoffLine = turnoff?.length
     ? `{turnoff ${turnoff.map(feature => `{${feature}}`).join(' ')}}`
     : '; no turnoff';
+
+  const extraLines = extra?.length
+    ? setIndent(extra.join('\n'), { indent: 4, indentFirstLine: true })
+    : '; no additional';
+
+  const animationLines = animations
+    .map(
+      ({ door, animation }) => `{door "${door}"}\n{link "${door}" "${name}" {anm "${animation}"} {forward putoff} {reverse puton}}`,
+    )
+    .map(line => setIndent(line, { indent: 2, indentFirstLine: false }))
+    .join('\n');
 
   return `; crew ${name}
 {Placer
   {Place "${name}"
     {group "crew"}
-    {linkbone "${bone}"}
+    ${boneLine}
     ${turnoffLine}
     ${visorLine}
+    ${extraLines}
   }
 }
 {Boarder
-  {door "${door}"}
-  {link "${door}" "${name}" {anm "${animation}"} {forward putoff} {reverse puton}}
+  ${animationLines}
 }`;
 
 };

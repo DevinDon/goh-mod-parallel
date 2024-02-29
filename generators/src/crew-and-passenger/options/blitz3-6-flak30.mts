@@ -21,109 +21,49 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'driver',
       forward: {
-        base: {
-          name: 'doorleft',
-          direction: 'forward',
-        },
-        begin: {
-          name: 'board_opel_driver',
-          direction: 'forward',
-        },
-        end: {
-          name: 'seat_opel_driver',
-          direction: 'forward',
-        },
+        base: [ 'doorleft', 1 ],
+        begin: [ 'board_opel_driver', 1 ],
+        end: [ 'seat_opel_driver', 1 ],
       },
       backward: {
-        base: {
-          name: 'doorleft',
-          direction: 'forward',
-        },
-        end: {
-          name: 'emit_body',
-          direction: 'forward',
-        },
+        base: [ 'doorleft', 1 ],
+        end: [ 'emit_body', -1 ],
       },
     },
     {
       name: 'gunner',
       forward: {
-        base: {
-          name: 'board',
-          direction: 'forward',
-        },
-        begin: {
-          name: 'board_SdKfz251-1',
-          direction: 'forward',
-        },
-        end: {
-          name: 'pose_flak30_gunner',
-          direction: 'forward',
-        },
+        base: [ 'board', 1 ],
+        begin: [ 'board_SdKfz251-1', 1 ],
+        end: [ 'pose_flak30_gunner', 1 ],
       },
       backward: {
-        base: {
-          name: 'board',
-          direction: 'forward',
-        },
-        end: {
-          name: 'emit_body',
-          direction: 'forward',
-        },
+        base: [ 'board', 1 ],
+        end: [ 'emit_body', 1 ],
       },
     },
     {
       name: 'charger',
       forward: {
-        base: {
-          name: 'board',
-          direction: 'forward',
-        },
-        begin: {
-          name: 'board_SdKfz251-1',
-          direction: 'forward',
-        },
-        end: {
-          name: 'pose_flak30_loader',
-          direction: 'forward',
-        },
+        base: [ 'board', 1 ],
+        begin: [ 'board_SdKfz251-1', 1 ],
+        end: [ 'pose_flak30_loader', 1 ],
       },
       backward: {
-        base: {
-          name: 'board',
-          direction: 'forward',
-        },
-        end: {
-          name: 'emit_body',
-          direction: 'forward',
-        },
+        base: [ 'board', 1 ],
+        end: [ 'emit_body', 1 ],
       },
     },
     {
       name: 'passenger',
       forward: {
-        base: {
-          name: 'doorright',
-          direction: 'forward',
-        },
-        begin: {
-          name: 'board_big-midcar',
-          direction: 'forward',
-        },
-        end: {
-          name: 'seat_opel_commander',
-          direction: 'forward',
-        },
+        base: [ 'doorright', 1 ],
+        begin: [ 'board_big-midcar', 1 ],
+        end: [ 'seat_opel_commander', 1 ],
       },
       backward: {
-        base: {
-          name: 'doorright',
-          direction: 'forward',
-        },
-        end: {
-          name: 'emit_body',
-          direction: 'forward',
-        },
+        base: [ 'doorright', 1 ],
+        end: [ 'emit_body', 1 ],
       },
     },
   ],
@@ -131,24 +71,27 @@ const options: CrewAndPassengerOptions = {
   crews: [
     {
       name: 'driver',
-      animation: 'driver',
-      door: 'emit1',
+      animations: [
+        { door: 'emit1', animation: 'driver' },
+      ],
       bone: 'driver',
       visor: 'driver',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'gunner',
-      animation: 'gunner',
-      door: 'emit3',
+      animations: [
+        { door: 'emit3', animation: 'gunner' },
+      ],
       bone: 'gunner',
       visor: 'gunner',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'charger',
-      animation: 'charger',
-      door: 'emit4',
+      animations: [
+        { door: 'emit4', animation: 'charger' },
+      ],
       bone: 'charger',
       visor: 'charger',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
@@ -158,15 +101,17 @@ const options: CrewAndPassengerOptions = {
   passengers: [
     {
       name: 'passenger01',
-      animation: 'passenger',
-      door: 'emit2',
+      animations: [
+        { door: 'emit2', animation: 'passenger' },
+      ],
       bone: 'commander',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'passenger02',
-      animation: 'passenger',
-      door: 'emit2',
+      animations: [
+        { door: 'emit2', animation: 'passenger' },
+      ],
       bone: 'commander',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },

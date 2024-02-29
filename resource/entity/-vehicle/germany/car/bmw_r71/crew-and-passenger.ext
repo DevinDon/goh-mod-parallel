@@ -25,6 +25,7 @@
     }
     {reverse
       {base "doorleft1" -1}
+      ; no backward animation begin
       {end "board_moto_driver" -1}
     }
   }
@@ -37,6 +38,7 @@
     }
     {reverse
       ; no backward animation base
+      ; no backward animation begin
       {end "board_moto_sidecar" -1}
     }
   }
@@ -49,6 +51,7 @@
     }
     {reverse
       ; no backward animation base
+      ; no backward animation begin
       {end "board_moto_passenger" -1}
     }
   }
@@ -62,6 +65,7 @@
     {linkbone "driver"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "driver"}
+    ; no additional
   }
 }
 {Boarder
@@ -75,6 +79,7 @@
     {linkbone "gunner"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "gunner"}
+    ; no additional
   }
 }
 {Boarder
@@ -89,6 +94,7 @@
     {group "passenger"}
     {linkbone "seat1"}
     {turnoff {shadow} {sensor} {targetable 1}}
+    ; no additional
   }
 }
 {Boarder
