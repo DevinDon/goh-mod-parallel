@@ -130,7 +130,7 @@ const output = `; ger-20mm-flak30-l65
 }
 `;
 
-it('generateWeapon', () => {
+it('generate weapon', () => {
   const weapon = generateWeapon(options);
   equal(weapon, output);
 });
