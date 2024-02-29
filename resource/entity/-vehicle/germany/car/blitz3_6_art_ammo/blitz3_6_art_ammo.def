@@ -6,7 +6,7 @@
 
   {Extension "blitz3_6_art_ammo.mdl"}
   (include   "blitz3_6_art_ammo.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "truck" "vision_lev02" "tractor" "tractor_heavy"}
 

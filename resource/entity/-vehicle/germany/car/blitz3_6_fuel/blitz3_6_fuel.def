@@ -6,7 +6,7 @@
 
   {Extension "blitz3_6_fuel.mdl"}
   (include   "blitz3_6_fuel.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "truck" "vision_lev02" "tractor" "tractor_heavy" "fuel_tank"}
 
