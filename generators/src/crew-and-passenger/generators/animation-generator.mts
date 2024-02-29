@@ -11,7 +11,8 @@ export const generateAnimation = ({ name, forward, backward }: AnimationOptions)
     ? `{base "${name}" ${backward.base.direction === 'forward' ? 1 : -1}}`
     : '; no backward animation base';
 
-  return `{Anm "${name}"
+  return `; animation ${name}
+{Anm "${name}"
   {forward
     ${forwardBaseLine}
     {begin "${forward.begin.name}" ${forward.begin.direction === 'forward' ? 1 : -1}}

@@ -11,7 +11,8 @@ export const generateCrew = ({ name, animation, door, bone, visor, turnoff = [ '
     ? `{turnoff ${turnoff.map(feature => `{${feature}}`).join(' ')}}`
     : '; no turnoff';
 
-  return `{Placer
+  return `; crew ${name}
+{Placer
   {Place "${name}"
     {group "crew"}
     {linkbone "${bone}"}

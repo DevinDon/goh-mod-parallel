@@ -1,68 +1,97 @@
 ; crew and passenger
 
-; define from crew_human
-; args = name animation bone door
-(define "set-crew"
-  {placer
-    {place "%name"
-      {group "crew"}
-      {linkbone "%bone"}
-      {turnoff {shadow} {sensor} {targetable 1}}
-      {visor "%visor"}
-    }
-  }
-  {boarder
-    {door "%door"}
-    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
-
-; define from crew_human
-; args = name animation bone door
-(define "set-passenger"
-  {placer
-    {place "%name"
-      {group "passenger"}
-      {linkbone "%bone"}
-      {turnoff {shadow} {sensor} {targetable 1}}
-    }
-  }
-  {boarder
-    {door "%door"}
-    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
-
-; apply settings
-; set animation
-{Boarder
-  {anm "driver"
-    {forward {base "doorleft1"}    {begin "board_moto_driver"} {end "pose_moto_driver"}}
-    {reverse {base "doorleft1" -1}                             {end "board_moto_driver" -1}}
-  }
-  {anm "gunner"
-    {forward {begin "board_moto_sidecar"} {end "pose_moto_sidecar"}}
-    {reverse                              {end "board_moto_sidecar" -1}}
-  }
-  {anm "passenger"
-    {forward {begin "board_moto_passenger"} {end "pose_moto_passenger"}}
-    {reverse                                {end "board_moto_passenger" -1}}
-  }
-}
-
-; set crew and passenger
-("set-crew"      name(driver)    animation(driver)    bone(driver) door(emit1) visor(driver))
-("set-crew"      name(gunner)    animation(gunner)    bone(gunner) door(emit2) visor(gunner))
-("set-passenger" name(passenger) animation(passenger) bone(seat1)  door(emit3))
-
-; set vision
+; set visors
 {Sensor
+  ; visor driver
   {Visor "driver"
     {Bone "driver"}
     {Vision "standard-vision-around"}
   }
+  ; visor gunner
   {Visor "gunner"
     {Bone "gunner"}
     {Vision "standard-vision-medium"}
   }
+}
+
+; set animations
+{Boarder
+  ; animation driver
+  {Anm "driver"
+    {forward
+      {base "driver" 1}
+      {begin "board_moto_driver" 1}
+      {end "pose_moto_driver" 1}
+    }
+    {reverse
+      {base "driver" -1}
+      {end "board_moto_driver" -1}
+    }
+  }
+  ; animation gunner
+  {Anm "gunner"
+    {forward
+      ; no forward animation base
+      {begin "board_moto_sidecar" 1}
+      {end "pose_moto_sidecar" 1}
+    }
+    {reverse
+      ; no backward animation base
+      {end "board_moto_sidecar" -1}
+    }
+  }
+  ; animation passenger
+  {Anm "passenger"
+    {forward
+      ; no forward animation base
+      {begin "board_moto_passenger" 1}
+      {end "pose_moto_passenger" 1}
+    }
+    {reverse
+      ; no backward animation base
+      {end "board_moto_passenger" -1}
+    }
+  }
+}
+
+; set crews
+; crew driver
+{Placer
+  {Place "driver"
+    {group "crew"}
+    {linkbone "driver"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+    {visor "driver"}
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+}
+; crew gunner
+{Placer
+  {Place "gunner"
+    {group "crew"}
+    {linkbone "gunner"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+    {visor "gunner"}
+  }
+}
+{Boarder
+  {door "emit2"}
+  {link "emit2" "gunner" {anm "gunner"} {forward putoff} {reverse puton}}
+}
+
+; set passengers
+; passenger passenger
+{Placer
+  {Place "passenger"
+    {group "passenger"}
+    {linkbone "seat1"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit3"}
+  {link "emit3" "passenger" {anm "passenger"} {forward putoff} {reverse puton}}
 }

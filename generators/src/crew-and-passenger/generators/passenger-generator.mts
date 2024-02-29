@@ -7,7 +7,8 @@ export const generatePassenger = ({ name, animation, door, bone, turnoff = [ 'sh
     ? `{turnoff ${turnoff.map(feature => `{${feature}}`).join(' ')}}`
     : '; no turnoff';
 
-  return `{Placer
+  return `; passenger ${name}
+{Placer
   {Place "${name}"
     {group "passenger"}
     {linkbone "${bone}"}

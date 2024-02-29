@@ -7,10 +7,12 @@ const output = `; crew and passenger
 
 ; set visors
 {Sensor
+  ; visor driver
   {Visor "driver"
     {Bone "driver"}
     {Vision "standard-vision-around"}
   }
+  ; visor gunner
   {Visor "gunner"
     {Bone "gunner"}
     {Vision "standard-vision-medium"}
@@ -19,6 +21,7 @@ const output = `; crew and passenger
 
 ; set animations
 {Boarder
+  ; animation driver
   {Anm "driver"
     {forward
       {base "driver" 1}
@@ -30,6 +33,7 @@ const output = `; crew and passenger
       {end "board_moto_driver" -1}
     }
   }
+  ; animation gunner
   {Anm "gunner"
     {forward
       ; no forward animation base
@@ -41,6 +45,7 @@ const output = `; crew and passenger
       {end "board_moto_sidecar" -1}
     }
   }
+  ; animation passenger
   {Anm "passenger"
     {forward
       ; no forward animation base
@@ -55,6 +60,7 @@ const output = `; crew and passenger
 }
 
 ; set crews
+; crew driver
 {Placer
   {Place "driver"
     {group "crew"}
@@ -67,6 +73,7 @@ const output = `; crew and passenger
   {door "emit1"}
   {link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
 }
+; crew gunner
 {Placer
   {Place "gunner"
     {group "crew"}
@@ -81,6 +88,7 @@ const output = `; crew and passenger
 }
 
 ; set passengers
+; passenger passenger
 {Placer
   {Place "passenger"
     {group "passenger"}
