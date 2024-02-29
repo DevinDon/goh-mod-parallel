@@ -58,4 +58,4 @@
 ("set-crew-v" place(commander) bone(commander) door(emit2) animation(commander) group(passenger))
 
 ("set-board-animation" place(driver)    begin(board_opel_driver) end(seat_opel_driver)    base(doorleft))
-("set-board-animation" place(commander) begin(board_big-highcar) end(seat_opel_commander) base(doorright))
+("set-board-animation" place(commander) begin(board_big-midcar)  end(seat_opel_commander) base(doorright))

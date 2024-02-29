@@ -25,7 +25,7 @@
     {reverse  {end "emit_body" 1} {base "doorleft" 1}}
   }
   {anm "commander"
-    {forward  {begin  "board_big-highcar"} {end "seat_opel_commander"} {base "doorright"}}
+    {forward  {begin  "board_big-midcar"} {end "seat_opel_commander"} {base "doorright"}}
     {reverse  {end  "emit_body" 1} {base "doorright" 1}}
   }
   {anm "gunner"
