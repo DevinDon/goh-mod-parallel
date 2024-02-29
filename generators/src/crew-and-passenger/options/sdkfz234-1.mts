@@ -2,7 +2,7 @@ import type { CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 
-  destination: 'resource/entity/-vehicle/germany/btr/sdkfz231/crew-and-passenger.ext',
+  destination: 'resource/entity/-vehicle/germany/btr/sdkfz234_1/crew-and-passenger.ext',
 
   visors: [
     // 覆盖默认视野，需要同名且占用该连接点才能覆盖
@@ -41,24 +41,42 @@ const options: CrewAndPassengerOptions = {
 
   animations: [
     {
-      name: 'left',
+      name: 'driver',
       forward: {
-        base: [ '', 1 ],
         begin: [ 'board_sd222_driver', 1 ],
+        end: [ 'seat_sdkfz234_driver', 1 ],
       },
       reverse: {
-        base: [ '', -1 ],
         end: [ 'emit_sd222_driver', 1 ],
       },
     },
     {
-      name: 'right',
+      name: 'gunner',
       forward: {
-        base: [ '', 1 ],
         begin: [ 'board_sd222_driver', 1 ],
+        end: [ 'seat_driver_car', 1 ],
       },
       reverse: {
-        base: [ '', -1 ],
+        end: [ 'emit_sd222_driver', 1 ],
+      },
+    },
+    {
+      name: 'commander',
+      forward: {
+        begin: [ 'board_sd222_driver', 1 ],
+        end: [ 'seat_driver_car', 1 ],
+      },
+      reverse: {
+        end: [ 'emit_sd222_driver', 1 ],
+      },
+    },
+    {
+      name: 'charger',
+      forward: {
+        begin: [ 'board_sd222_driver', 1 ],
+        end: [ 'seat_sdkfz234_driver', 1 ],
+      },
+      reverse: {
         end: [ 'emit_sd222_driver', 1 ],
       },
     },
@@ -68,36 +86,36 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'driver',
       animations: [
-        { door: 'emit1', animation: 'left' },
-        { door: 'emit2', animation: 'right' },
+        { door: 'emit2', animation: 'driver' },
       ],
+      bone: 'driver',
       visor: 'standard-visor-driver',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'gunner',
       animations: [
-        { door: 'emit1', animation: 'left' },
-        { door: 'emit2', animation: 'right' },
+        { door: 'emit1', animation: 'gunner' },
       ],
+      bone: 'gunner',
       visor: 'standard-visor-gunner',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'commander',
       animations: [
-        { door: 'emit1', animation: 'left' },
-        { door: 'emit2', animation: 'right' },
+        { door: 'emit2', animation: 'commander' },
       ],
+      bone: 'commander',
       visor: 'standard-visor-commander',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
       name: 'charger',
       animations: [
-        { door: 'emit1', animation: 'left' },
-        { door: 'emit2', animation: 'right' },
+        { door: 'emit1', animation: 'charger' },
       ],
+      bone: 'charger',
       visor: 'none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },

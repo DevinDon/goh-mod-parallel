@@ -26,16 +26,6 @@
     {detail11}
   }
 
-  {Sensor
-    {Visor "main"
-      {Vision "standard-vision-medium"}
-      {Bone "foresight1"}
-    }
-    {Visor "around"
-      {Vision "standard-vision-around"}
-    }
-  }
-
   {Extender "shield" {on}}
 
   {Extender "inventory"
