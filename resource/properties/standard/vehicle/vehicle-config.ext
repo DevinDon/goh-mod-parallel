@@ -16,13 +16,22 @@
 {collider "vehicle"}
 {NoGroupMesh 1}
 
-{sensor
-  {Visor "hearing"
-    {vision "standard-vision-noise-detection"}
-    {bone "hearing_bone"}
+{Skeleton
+  {Bone "hearing"
+    {Position 0 0 40}
   }
-  {RecognizeTime 0.01}
-  {InformRange 50 75}    ; first = AI , second = USER
+}
+
+{Sensor
+  {RecognizeTime 1} ; 单位秒，敌军单位识别时间
+  {InformRange 200 200} ; 单位米，向友军单位通告敌军位置的通信距离，第一个参数用于向电脑通告的距离，第二个参数用于向玩家通告的距离
+  {Visor "hearing"
+    {Bone "hearing"}
+    {Vision "standard-vision-noise-detection"}
+  }
+  {Visor "none"
+    {Vision "standard-vision-none"}
+  }
 }
 
 {Weaponry

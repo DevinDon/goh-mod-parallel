@@ -17,28 +17,4 @@ actor
 
 {able "talk"}
 
-{sensor
-  {visor "main"
-    {vision "standard-vision-wide"}
-    {bone "visor2"}
-  }
-  {visor "around"
-    {vision "standard-vision-around"}
-    {bone "visor1"}
-  }
-  {visor "hearing"
-    {vision "standard-vision-noise-detection"}
-    {bone "hearing_bone"}
-  }
-  {visor "none"
-    {vision "none"}
-  }
-}
-
-{Skeleton
-  {bone "hearing_bone"
-    {Position 0 0 40}
-  }
-}
-
 {perks {blastwave_modifier 9.0}}
