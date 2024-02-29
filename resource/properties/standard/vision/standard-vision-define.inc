@@ -248,7 +248,7 @@
 ; standard-vision-wide 前方宽视角
 {"standard-vision-wide"
   {uncover  20}
-  {h_fov    180} ; 水平
+  {h_fov    150} ; 水平
   {v_fov    180} ; 垂直
   ("set-spotting" radius(15))
 }
