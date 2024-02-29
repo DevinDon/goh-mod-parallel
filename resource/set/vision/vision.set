@@ -6,5 +6,5 @@
   (include "spotting.inc")
   (include "hearing.inc")
   (include "vision_fields.inc")
-  (include "standard-vision-define.inc")
+  (include "/properties/standard/vision/standard-vision-define.inc")
 }
