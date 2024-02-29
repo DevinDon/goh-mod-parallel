@@ -2,8 +2,23 @@
 
 ; set visors
 {Sensor
+  ; visor main
+  {Visor "main"
+    {Bone "foresight1"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor around
+  {Visor "around"
+    {Bone "visor1"}
+    {Vision "standard-vision-none"}
+  }
   ; visor driver
   {Visor "driver"
+    {Bone "visor2"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor standard-visor-driver
+  {Visor "standard-visor-driver"
     {Bone "driver"}
     {Vision "standard-vision-around"}
   }
@@ -46,7 +61,7 @@
     {group "crew"}
     {linkbone "driver"}
     {turnoff {shadow} {sensor} {targetable 1}}
-    {visor "driver"}
+    {visor "standard-visor-driver"}
     ; no extra
   }
 }

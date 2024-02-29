@@ -5,13 +5,30 @@ const options: CrewAndPassengerOptions = {
   destination: 'resource/entity/-vehicle/germany/car/bmw_r71/crew-and-passenger.ext',
 
   visors: [
+    // 覆盖默认视野，需要同名且占用该连接点才能覆盖
+    {
+      name: 'main',
+      bone: 'foresight1',
+      preset: 'standard-vision-none',
+    },
+    {
+      name: 'around',
+      bone: 'visor1',
+      preset: 'standard-vision-none',
+    },
     {
       name: 'driver',
+      bone: 'visor2',
+      preset: 'standard-vision-none',
+    },
+    // 重新定义视野
+    {
+      name: 'standard-visor-driver',
       bone: 'driver',
       preset: 'standard-vision-around',
     },
     {
-      name: 'gunner',
+      name: 'standard-visor-gunner',
       bone: 'gunner',
       preset: 'standard-vision-medium',
     },
@@ -59,7 +76,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'driver' },
       ],
       bone: 'driver',
-      visor: 'driver',
+      visor: 'standard-visor-driver',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
     {
@@ -68,7 +85,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'gunner' },
       ],
       bone: 'gunner',
-      visor: 'gunner',
+      visor: 'standard-visor-gunner',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
   ],

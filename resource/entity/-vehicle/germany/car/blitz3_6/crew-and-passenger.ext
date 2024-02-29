@@ -2,8 +2,23 @@
 
 ; set visors
 {Sensor
+  ; visor main
+  {Visor "main"
+    {Bone "foresight1"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor around
+  {Visor "around"
+    {Bone "visor1"}
+    {Vision "standard-vision-none"}
+  }
   ; visor driver
   {Visor "driver"
+    {Bone "visor2"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor standard-visor-driver
+  {Visor "standard-visor-driver"
     {Bone "driver"}
     {Vision "standard-vision-around"}
   }
@@ -59,7 +74,7 @@
     {group "crew"}
     {linkbone "driver"}
     {turnoff {shadow} {sensor} {targetable 1}}
-    {visor "driver"}
+    {visor "standard-visor-driver"}
     ; no extra
   }
 }
@@ -67,13 +82,14 @@
   {door "emit1"}
   {link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
 }
-; crew leader
+
+; set passengers
+; passenger leader
 {Placer
   {Place "leader"
-    {group "crew"}
+    {group "passenger"}
     {linkbone "commander"}
     {turnoff {shadow} {sensor} {targetable 1}}
-    ; no visor
     ; no extra
   }
 }
@@ -81,8 +97,6 @@
   {door "emit2"}
   {link "emit2" "leader" {anm "leader"} {forward putoff} {reverse puton}}
 }
-
-; set passengers
 ; passenger passenger01
 {Placer
   {Place "passenger01"
