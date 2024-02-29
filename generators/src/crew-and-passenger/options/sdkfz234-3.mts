@@ -120,7 +120,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'charger' },
       ],
       bone: 'charger',
-      visor: 'none',
+      visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
   ],

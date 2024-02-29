@@ -98,7 +98,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'left' },
         { door: 'emit2', animation: 'right' },
       ],
-      visor: 'none',
+      visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
   ],

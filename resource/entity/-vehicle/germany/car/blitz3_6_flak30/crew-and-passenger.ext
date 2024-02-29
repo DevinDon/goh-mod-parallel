@@ -120,7 +120,7 @@
     {group "crew"}
     {linkbone "charger"}
     {turnoff {shadow} {sensor} {targetable 1}}
-    {visor "none"}
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
