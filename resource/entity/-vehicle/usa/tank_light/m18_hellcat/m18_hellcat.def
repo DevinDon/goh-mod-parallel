@@ -87,7 +87,7 @@
     {speed2 6}
   }
   {Bone "turret"
-    ("turret_medium" power_traverse(24))
+    {speed2 16}
   }
   {Bone "mgun_a_rot1"
     {speed2 30}
