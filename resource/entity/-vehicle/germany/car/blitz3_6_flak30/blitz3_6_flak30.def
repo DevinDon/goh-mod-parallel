@@ -5,7 +5,7 @@
 
   {Extension "blitz3_6_flak30.mdl"}
   (include   "blitz3_6_flak30.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "turret" "with_gun" "open_top" "automatic" "multi_board" "truck" "vision_lev02" "muzzle_20mm_25mm_auto" "tractor" "tractor_heavy" "detect_tank_light"}
 
@@ -63,7 +63,7 @@
     {speed2 60}
   }
   {Bone "turret"
-    ; {limits -145 145}
+    {limits -145 145}
     {speed2 60}
   }
 
