@@ -5,7 +5,7 @@
 
   {Extension "panzer4h.mdl"}
   (include   "panzer4h.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "medium" "vision_lev04" "muzzle_75mm_76mm_sides" "shield"}
 
