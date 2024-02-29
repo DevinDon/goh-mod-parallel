@@ -242,7 +242,7 @@
   {uncover  25}
   {h_fov    60} ; 水平
   {v_fov    90} ; 垂直
-  ("set-spotting" radius(15))
+  ("set-spotting" radius(14))
 }
 
 ; standard-vision-wide 前方宽视角
@@ -250,7 +250,7 @@
   {uncover  20}
   {h_fov    120} ; 水平
   {v_fov    180} ; 垂直
-  ("set-spotting" radius(15))
+  ("set-spotting" radius(13))
 }
 
 ; standard-vision-around 全景环绕视角
