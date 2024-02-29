@@ -6,7 +6,7 @@
 
   {Extension "bmw_r71.mdl"}
   (include   "bmw_r71.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "vision_lev01"}
 

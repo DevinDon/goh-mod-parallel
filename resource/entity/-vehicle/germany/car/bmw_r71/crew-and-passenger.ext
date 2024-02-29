@@ -1,0 +1,68 @@
+; crew and passenger
+
+; define from crew_human
+; args = name animation bone door
+(define "set-crew"
+  {placer
+    {place "%name"
+      {group "crew"}
+      {linkbone "%bone"}
+      {turnoff {shadow} {sensor} {targetable 1}}
+      {visor "%visor"}
+    }
+  }
+  {boarder
+    {door "%door"}
+    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
+  }
+)
+
+; define from crew_human
+; args = name animation bone door
+(define "set-passenger"
+  {placer
+    {place "%name"
+      {group "passenger"}
+      {linkbone "%bone"}
+      {turnoff {shadow} {sensor} {targetable 1}}
+    }
+  }
+  {boarder
+    {door "%door"}
+    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
+  }
+)
+
+; apply settings
+; set animation
+{Boarder
+  {anm "driver"
+    {forward {base "doorleft1"}    {begin "board_moto_driver"} {end "pose_moto_driver"}}
+    {reverse {base "doorleft1" -1}                             {end "board_moto_driver" -1}}
+  }
+  {anm "gunner"
+    {forward {begin "board_moto_sidecar"} {end "pose_moto_sidecar"}}
+    {reverse                              {end "board_moto_sidecar" -1}}
+  }
+  {anm "passenger"
+    {forward {begin "board_moto_passenger"} {end "pose_moto_passenger"}}
+    {reverse                                {end "board_moto_passenger" -1}}
+  }
+}
+
+; set crew and passenger
+("set-crew"      name(driver)    animation(driver)    bone(driver) door(emit1) visor(driver))
+("set-crew"      name(gunner)    animation(gunner)    bone(gunner) door(emit2) visor(gunner))
+("set-passenger" name(passenger) animation(passenger) bone(seat1)  door(emit3))
+
+; set vision
+{Sensor
+  {Visor "driver"
+    {Bone "driver"}
+    {Vision "standard-vision-around"}
+  }
+  {Visor "gunner"
+    {Bone "gunner"}
+    {Vision "standard-vision-medium"}
+  }
+}
