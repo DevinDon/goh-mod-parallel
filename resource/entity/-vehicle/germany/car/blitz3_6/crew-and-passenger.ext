@@ -1,99 +1,66 @@
-; crew and seat
+; crew and passenger
 
-; define board_animation
-; args = place begin end base
-(define "set-board-animation"
-  {boarder
-    {anm "%place"
-      {forward {begin "%begin"} {end "%end"} {base "%base"}}
-      {reverse {end "%begin" -1} {base "%base"}}
-    }
-  }
-)
-
-; define crew_inside
-; no args
-(define "set-crew-inside"
-  ("set-board-animation" place(driver)    begin(board_bigcar) end(seat_driver_car) base(doordriver))
-  ("set-board-animation" place(passenger) begin(board_bigcar) end(seat_passenger)  base(doorpassenger))
-  ("set-board-animation" place(commander) begin(board_bigcar) end(seat_passenger)  base(doorcommander))
-)
-
-; define crew_human
-; args = place bone door animation group
+; define from crew_human
+; args = name animation bone door
 (define "set-crew"
   {placer
-    {place "%place"
-      {group "%group"}
+    {place "%name"
+      {group "crew"}
       {linkbone "%bone"}
-      {turnoff {sensor} {targetable 0}}
+      {turnoff {shadow} {sensor} {targetable 1}}
     }
   }
   {boarder
     {door "%door"}
-    {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
   }
 )
 
-; define crew_human_v
-; args = place bone door animation group
-(define "set-crew-v"
-  {placer
-    {place "%place"
-      {group "%group"}
-      {linkbone "%bone"}
-      {turnoff {targetable 0}}
-    }
-  }
-  {boarder
-    {door "%door"}
-    {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
-
-; define passenger_human
-; args = place bone door animation group
+; define from crew_human
+; args = name animation bone door
 (define "set-passenger"
   {placer
-    {place "%place"
-      {group "%group"}
+    {place "%name"
+      {group "passenger"}
       {linkbone "%bone"}
-      {turnoff {sensor} {targetable}}
+      {turnoff {shadow} {sensor} {targetable 1}}
     }
   }
   {boarder
     {door "%door"}
-    {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
   }
 )
 
 ; apply settings
-; crew_2_human
-("set-crew-inside")
-("set-crew"   place(driver)    bone(driver)    door(emit1) animation(driver)    group(crew))
-("set-crew-v" place(commander) bone(commander) door(emit2) animation(commander) group(passenger))
-
-("set-board-animation" place(driver)    begin(board_opel_driver) end(seat_opel_driver)    base(doorleft))
-("set-board-animation" place(commander) begin(board_big-midcar)  end(seat_opel_commander) base(doorright))
-
-; passenger_12_human
-("set-passenger" place(seat01) bone(seat01) door(emit3) animation(passenger) group(passenger))
-("set-passenger" place(seat02) bone(seat02) door(emit4) animation(passenger) group(passenger))
-("set-passenger" place(seat03) bone(seat03) door(emit3) animation(passenger) group(passenger))
-("set-passenger" place(seat04) bone(seat04) door(emit4) animation(passenger) group(passenger))
-("set-passenger" place(seat05) bone(seat05) door(emit3) animation(passenger) group(passenger))
-("set-passenger" place(seat06) bone(seat06) door(emit4) animation(passenger) group(passenger))
-("set-passenger" place(seat07) bone(seat07) door(emit3) animation(passenger) group(passenger))
-("set-passenger" place(seat08) bone(seat08) door(emit4) animation(passenger) group(passenger))
-("set-passenger" place(seat09) bone(seat09) door(emit3) animation(passenger) group(passenger))
-("set-passenger" place(seat10) bone(seat10) door(emit4) animation(passenger) group(passenger))
-("set-passenger" place(seat11) bone(seat11) door(emit3) animation(passenger) group(passenger))
-("set-passenger" place(seat12) bone(seat12) door(emit4) animation(passenger) group(passenger))
-
-; apply boarders
+; set animation
 {Boarder
+  {anm "driver"
+    {forward {base "doorleft"} {begin "board_opel_driver"} {end "seat_opel_driver"}}
+    {reverse {base "doorleft"}                             {end "board_opel_driver" -1}}
+  }
+  {anm "commander"
+    {forward {base "doorright"} {begin "board_big-midcar"} {end "seat_opel_commander"}}
+    {reverse {base "doorright"}                            {end "board_big-midcar" -1}}
+  }
   {anm "passenger"
-    {forward  {begin "board_body"} {end "seat_passenger"} {base "board"}}
-    {reverse  {end "emit_body" 1} {base "board"}}
+    {forward {base "board"} {begin "board_body"} {end "seat_passenger"}}
+    {reverse {base "board"}                      {end "emit_body" 1}}
   }
 }
+
+; set crew and passenger
+("set-crew"      name(driver)      animation(driver)    bone(driver)    door(emit1))
+("set-passenger" name(leader)      animation(commander) bone(commander) door(emit2))
+("set-passenger" name(passenger01) animation(passenger) bone(seat01)    door(emit3))
+("set-passenger" name(passenger02) animation(passenger) bone(seat02)    door(emit4))
+("set-passenger" name(passenger03) animation(passenger) bone(seat03)    door(emit3))
+("set-passenger" name(passenger04) animation(passenger) bone(seat04)    door(emit4))
+("set-passenger" name(passenger05) animation(passenger) bone(seat05)    door(emit3))
+("set-passenger" name(passenger06) animation(passenger) bone(seat06)    door(emit4))
+("set-passenger" name(passenger07) animation(passenger) bone(seat07)    door(emit3))
+("set-passenger" name(passenger08) animation(passenger) bone(seat08)    door(emit4))
+("set-passenger" name(passenger09) animation(passenger) bone(seat09)    door(emit3))
+("set-passenger" name(passenger10) animation(passenger) bone(seat10)    door(emit4))
+("set-passenger" name(passenger11) animation(passenger) bone(seat11)    door(emit3))
+("set-passenger" name(passenger12) animation(passenger) bone(seat12)    door(emit4))
