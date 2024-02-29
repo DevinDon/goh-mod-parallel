@@ -5,7 +5,7 @@
 
   {Extension "sdkfz231.mdl"}
   (include   "sdkfz231.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "tank" "turret" "wheeled" "8_wheels" "with_gun" "vision_lev02" "muzzle_20mm_25mm_auto"}
 
