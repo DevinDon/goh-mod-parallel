@@ -19,12 +19,12 @@
   ; animation driver
   {Anm "driver"
     {forward
-      {base "driver" 1}
+      {base "doorleft1" 1}
       {begin "board_moto_driver" 1}
       {end "pose_moto_driver" 1}
     }
     {reverse
-      {base "driver" -1}
+      {base "doorleft1" -1}
       {end "board_moto_driver" -1}
     }
   }
