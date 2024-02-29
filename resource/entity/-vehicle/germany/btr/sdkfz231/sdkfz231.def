@@ -26,12 +26,6 @@
     {digit_folder "np"}
   }
 
-  {Sensor
-    {Visor "main"
-      {Vision "standard-vision-narrow"}
-    }
-  }
-
   {Extender "shield" {on}}
 
   {Extender "inventory"

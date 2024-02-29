@@ -17,43 +17,12 @@ actor
 {targetClass    "armoredcar" "bullet"}
 {targetSelector "tank_zenite"}
 
-{hearingBias 0} ; reduces units ability to hear sound signals. value = meters
-
-{sensor
-  {visor "main"
-    {vision "standard-vision-narrow"}
-    {bone "foresight1"}
-  }
-  {Visor "driver"
-    {vision "standard-vision-narrow"}
-    {bone "visor2"}
-  }
-  {visor "around"
-    {vision "standard-vision-around"}
-    {bone "visor1"}
-  }
-  {visor "human"
-    {vision "standard-vision-wide"}
-    {bone "visor3"}
-  }
-  {visor "none"
-    {vision "standard-vision-none"}
-  }
-  {Visor "hearing"
-    {vision "standard-vision-noise-detection"}
-    {bone "hearing_bone"}
-  }
-}
-
-{Skeleton
-  {bone "hearing_bone"
-    {Position 0 0 50}
-  }
-}
+{hearingBias 1} ; reduces units ability to hear sound signals. value = meters
 
 {extender "talk"
   {talker "tank"}
 }
+
 {able "talk"}
 
 {perks {blastwave_modifier 9}}
