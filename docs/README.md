@@ -5,4 +5,5 @@
 3. 神奇的多装填手用法 `resource/entity/-vehicle/germany/cannon/105mm_lefh18/105mm_lefh18.def`
 4. 一个不知道原因的错误 `EXCEPTION_ACCESS_VIOLATION read at 0x000002b8`，出现在 M18 地狱猫和黑豹 D 型上
    1. 破案了，地狱猫的错误是因为绑定了个不存在的机枪位置
+   2. 黑豹 D 型一样的问题
 5. `{turnoff {shadow} {sensor} {targetable 1}}` 表示关闭该载具内成员的阴影效果以及视觉判定，并且移除该成员的不可选中状态，其他单位可以直接攻击该成员
