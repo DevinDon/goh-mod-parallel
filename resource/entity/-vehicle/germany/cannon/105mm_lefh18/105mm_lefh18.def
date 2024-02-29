@@ -5,7 +5,7 @@
 
   {Extension "105mm_lefh18.mdl"}
   (include   "105mm_lefh18.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "wheeled" "vision_lev05_can" "muzzle_100mm_105mm" "cannon_sandbag_standard" "trailer" "trailer_medium" "detect_artillery" "artillery_minimap_medium" "c_gun_med"}
 
