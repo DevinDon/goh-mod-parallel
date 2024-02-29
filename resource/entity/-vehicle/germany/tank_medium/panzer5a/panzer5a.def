@@ -35,12 +35,6 @@
     {digit_folder "ger"}
   }
 
-  {Sensor
-    {Visor "main"
-      {Vision "standard-vision-narrow"}
-    }
-  }
-
   {Extender "shield" {on}}
 
   {Extender "smokescreen"
