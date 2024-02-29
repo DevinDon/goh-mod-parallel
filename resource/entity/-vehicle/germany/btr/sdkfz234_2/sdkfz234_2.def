@@ -30,12 +30,6 @@
     {detail9}
   }
 
-  {Sensor
-    {Visor "main"
-      {Vision "standard-vision-medium"}
-    }
-  }
-
   {Extender "smokescreen"
     {cooldown 10}
     {itemTags "grenade nbks"}
