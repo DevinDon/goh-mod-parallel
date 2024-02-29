@@ -2,7 +2,7 @@ import type { CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 
-  destination: 'resource/entity/-vehicle/germany/btr/sdkfz234_1/crew-and-passenger.ext',
+  destination: 'resource/entity/-vehicle/germany/btr/sdkfz234_3/crew-and-passenger.ext',
 
   visors: [
     // 覆盖默认视野，需要同名且占用该连接点才能覆盖
@@ -54,7 +54,7 @@ const options: CrewAndPassengerOptions = {
       name: 'gunner',
       forward: {
         begin: [ 'board_sd222_driver', 1 ],
-        end: [ 'seat_driver_car', 1 ],
+        end: [ 'seat_sdkfz2343_gunner', 1 ],
       },
       reverse: {
         end: [ 'emit_sd222_driver', 1 ],
@@ -64,7 +64,7 @@ const options: CrewAndPassengerOptions = {
       name: 'commander',
       forward: {
         begin: [ 'board_sd222_driver', 1 ],
-        end: [ 'seat_driver_car', 1 ],
+        end: [ 'seat_sdkfz2343_commander', 1 ],
       },
       reverse: {
         end: [ 'emit_sd222_driver', 1 ],
@@ -74,7 +74,7 @@ const options: CrewAndPassengerOptions = {
       name: 'charger',
       forward: {
         begin: [ 'board_sd222_driver', 1 ],
-        end: [ 'seat_sdkfz234_driver', 1 ],
+        end: [ 'seat_sdkfz2343_charger', 1 ],
       },
       reverse: {
         end: [ 'emit_sd222_driver', 1 ],
@@ -86,6 +86,7 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'driver',
       animations: [
+        { door: 'emit1', animation: 'driver' },
         { door: 'emit2', animation: 'driver' },
       ],
       bone: 'driver',
@@ -96,6 +97,7 @@ const options: CrewAndPassengerOptions = {
       name: 'gunner',
       animations: [
         { door: 'emit1', animation: 'gunner' },
+        { door: 'emit2', animation: 'gunner' },
       ],
       bone: 'gunner',
       visor: 'standard-visor-gunner',
@@ -104,6 +106,7 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'commander',
       animations: [
+        { door: 'emit1', animation: 'commander' },
         { door: 'emit2', animation: 'commander' },
       ],
       bone: 'commander',
@@ -114,10 +117,11 @@ const options: CrewAndPassengerOptions = {
       name: 'charger',
       animations: [
         { door: 'emit1', animation: 'charger' },
+        { door: 'emit2', animation: 'charger' },
       ],
       bone: 'charger',
       visor: 'none',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
     },
   ],
 
