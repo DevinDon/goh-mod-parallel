@@ -142,7 +142,7 @@
 {Placer
   {Place "gunner3"
     {group "crew"}
-    {linkbone "gunner2"}
+    ; no bone
     {turnoff {shadow} {sensor} {targetable}}
     {visor "standard-visor-driver"}
     ; no extra
@@ -158,7 +158,7 @@
 {Placer
   {Place "commander"
     {group "crew"}
-    ; no bone
+    {linkbone "gunner2"}
     {turnoff {shadow} {sensor} {targetable}}
     {visor "standard-visor-commander"}
     {sealable}
@@ -176,7 +176,7 @@
     {group "crew"}
     ; no bone
     {turnoff {shadow} {sensor} {targetable}}
-    {visor "none"}
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
