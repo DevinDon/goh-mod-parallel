@@ -1,54 +1,79 @@
 ; crew and passenger
 
-; define from board_animation
-; args = name base begin end
-(define "set-board-animation"
-  {boarder
-    {anm "%name"
-      {forward {base "%base"} {begin "%begin"} {end "%end"}}
-      {reverse {base "%base"}                  {end "%begin" -1}}
+; set visors
+{Sensor
+  ; visor driver
+  {Visor "driver"
+    {Bone "driver"}
+    {Vision "standard-vision-around"}
+  }
+}
+
+; set animations
+{Boarder
+  ; animation driver
+  {Anm "driver"
+    {forward
+      {base "doorleft" 1}
+      {begin "board_opel_driver" 1}
+      {end "seat_opel_driver" 1}
+    }
+    {reverse
+      {base "doorleft" 1}
+      {end "board_opel_driver" -1}
     }
   }
-)
-
-; define from crew_human
-; args = name animation bone door
-(define "set-crew"
-  {placer
-    {place "%name"
-      {group "crew"}
-      {linkbone "%bone"}
-      {turnoff {shadow} {sensor} {targetable 1}}
+  ; animation passenger
+  {Anm "passenger"
+    {forward
+      {base "doorright" 1}
+      {begin "board_big-midcar" 1}
+      {end "seat_opel_commander" 1}
+    }
+    {reverse
+      {base "doorright" 1}
+      {end "board_big-midcar" -1}
     }
   }
-  {boarder
-    {door "%door"}
-    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
+}
 
-; define from crew_human
-; args = name animation bone door
-(define "set-passenger"
-  {placer
-    {place "%name"
-      {group "passenger"}
-      {linkbone "%bone"}
-      {turnoff {shadow} {sensor} {targetable 1}}
-    }
+; set crews
+; crew driver
+{Placer
+  {Place "driver"
+    {group "crew"}
+    {linkbone "driver"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+    {visor "driver"}
   }
-  {boarder
-    {door "%door"}
-    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+}
+
+; set passengers
+; passenger passenger01
+{Placer
+  {Place "passenger01"
+    {group "passenger"}
+    {linkbone "commander"}
+    {turnoff {shadow} {sensor} {targetable 1}}
   }
-)
-
-; apply settings
-; set animation
-("set-board-animation" name(driver)    base(doorleft)  begin(board_opel_driver) end(seat_opel_driver))
-("set-board-animation" name(passenger) base(doorright) begin(board_big-midcar)  end(seat_opel_commander))
-
-; set crew and passenger
-("set-crew"      name(driver)      animation(driver)    bone(driver)    door(emit1))
-("set-passenger" name(passenger01) animation(passenger) bone(commander) door(emit2))
-("set-passenger" name(passenger02) animation(passenger) bone(commander) door(emit2))
+}
+{Boarder
+  {door "emit2"}
+  {link "emit2" "passenger01" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger02
+{Placer
+  {Place "passenger02"
+    {group "passenger"}
+    {linkbone "commander"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit2"}
+  {link "emit2" "passenger02" {anm "passenger"} {forward putoff} {reverse puton}}
+}
