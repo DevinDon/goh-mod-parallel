@@ -2,36 +2,46 @@
 ; tracks and wheels 15mm
 ; gun 15mm
 ; spare tracks 15mm
-;
 
-("tank_light_tier1")
 
-("shield_track" args "shield1" 15)
-("shield" args "shieldL1" 5)
-("shield" args "shieldL2" 5)
-("shield" args "shieldL3" 5)
-("shield" args "shieldL4" 5)
-("shield" args "shieldL5" 5)
-("shield" args "shieldL6" 5)
-("shield" args "shieldL7" 5)
-("shield" args "shieldR1" 5)
-("shield" args "shieldR2" 5)
-("shield" args "shieldR3" 5)
-("shield" args "shieldR4" 5)
-("shield" args "shieldR5" 5)
-("shield" args "shieldR6" 5)
-("shield" args "shieldR7" 5)
 
-("tracks" repair(30) thickness(15))
-("gun" repair(30) thickness(25))
 
-("ammo" args "ammo1")
-("ammo" args "ammo2")
-("ammo" args "ammo3")
-("ammo" args "ammo4")
-("fuel" args "fuel1")
-("fuel" args "fuel2")
-("transmission" args "transmission")
+
+("set-basic-durability" body(175) engine(150) turret(200) mantlet(125) gun(150) track(150) ammo(120))
+("set-basic-armor"      ammo(15))
+
+("set-turret"               repair(20))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(15) repair(10))
+
+("set-body"                 repair(20))
+("set-engine"               repair(20))
+("set-tracks" thickness(15) repair(10))
+
+("set-shield-track" name("shield1") thickness(15))
+
+("set-shield" name("shieldL1") thickness(15))
+("set-shield" name("shieldL2") thickness(15))
+("set-shield" name("shieldL3") thickness(15))
+("set-shield" name("shieldL4") thickness(15))
+("set-shield" name("shieldL5") thickness(15))
+("set-shield" name("shieldL6") thickness(15))
+("set-shield" name("shieldL7") thickness(15))
+("set-shield" name("shieldR1") thickness(15))
+("set-shield" name("shieldR2") thickness(15))
+("set-shield" name("shieldR3") thickness(15))
+("set-shield" name("shieldR4") thickness(15))
+("set-shield" name("shieldR5") thickness(15))
+("set-shield" name("shieldR6") thickness(15))
+("set-shield" name("shieldR7") thickness(15))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("ammo4") type("ammo") repair(3))
+("set-internal-components" name("fuel1") type("fuel") repair(3))
+("set-internal-components" name("fuel2") type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
 
 {component "shieldl1" {tags "cut_part"}}
 {component "shieldl2" {tags "cut_part"}}
