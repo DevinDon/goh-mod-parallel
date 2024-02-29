@@ -17,7 +17,7 @@ export const generateCrew = ({ name, animations, bone, visor, turnoff, extra }: 
     : '; no turnoff';
 
   const extraLines = extra?.length
-    ? setIndent(extra.join('\n'), { indent: 4, indentFirstLine: true })
+    ? setIndent(extra.join('\n'), { indent: 4, indentFirstLine: false })
     : '; no extra';
 
   const animationLines = setIndent(

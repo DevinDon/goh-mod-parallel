@@ -8,10 +8,13 @@ export type SetIndentOptions = {
 /** 设置缩进 */
 export const setIndent = (input: string, { indent, indentFirstLine }: SetIndentOptions) => {
   const [ firstLine, ...lines ] = input.split('\n');
+  const firstLinePart = indentFirstLine
+    ? ' '.repeat(indent) + firstLine
+    : firstLine;
   const part = lines
     .map(line => ' '.repeat(indent) + line)
     .join('\n');
-  return indentFirstLine
-    ? `${' '.repeat(indent)}${firstLine}\n${part}`
-    : `${firstLine}\n${part}`;
+  return part
+    ? `${firstLinePart}\n${part}`
+    : firstLinePart;
 };

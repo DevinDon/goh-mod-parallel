@@ -2,7 +2,7 @@ import type { CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 
-  destination: 'resource/entity/-vehicle/germany/cannon/105mm_lefh18/crew-and-seat.ext',
+  destination: 'resource/entity/-vehicle/germany/cannon/105mm_lefh18/crew-and-passenger.ext',
 
   visors: [
     // 覆盖默认视野，需要同名且占用该连接点才能覆盖
@@ -124,7 +124,7 @@ const options: CrewAndPassengerOptions = {
       bone: 'gunner',
       visor: 'standard-visor-gunner',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
-      extra: [ 'openForCrush' ],
+      extra: [ '{openForCrush}' ],
     },
     {
       name: 'commander',
@@ -134,7 +134,7 @@ const options: CrewAndPassengerOptions = {
       bone: 'commander',
       visor: 'standard-visor-commander',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
-      extra: [ 'openForCrush' ],
+      extra: [ '{openForCrush}' ],
     },
     {
       name: 'charger',
@@ -144,7 +144,7 @@ const options: CrewAndPassengerOptions = {
       bone: 'charger',
       visor: 'none',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
-      extra: [ 'openForCrush' ],
+      extra: [ '{openForCrush}' ],
     },
     {
       name: 'charger2',
@@ -154,7 +154,7 @@ const options: CrewAndPassengerOptions = {
       bone: 'charger2',
       visor: 'none',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
-      extra: [ 'openForCrush' ],
+      extra: [ '{openForCrush}' ],
     },
     // 移动模式
     {

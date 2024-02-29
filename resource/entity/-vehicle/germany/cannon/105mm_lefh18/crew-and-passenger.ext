@@ -154,8 +154,7 @@
     {linkbone "gunner"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "standard-visor-gunner"}
-        openForCrush
-
+    {openForCrush}
   }
 }
 {Boarder
@@ -169,8 +168,7 @@
     {linkbone "commander"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "standard-visor-commander"}
-        openForCrush
-
+    {openForCrush}
   }
 }
 {Boarder
@@ -184,8 +182,7 @@
     {linkbone "charger"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "none"}
-        openForCrush
-
+    {openForCrush}
   }
 }
 {Boarder
@@ -199,8 +196,7 @@
     {linkbone "charger2"}
     {turnoff {shadow} {sensor} {targetable 1}}
     {visor "none"}
-        openForCrush
-
+    {openForCrush}
   }
 }
 {Boarder
