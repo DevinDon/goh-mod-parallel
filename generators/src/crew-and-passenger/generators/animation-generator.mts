@@ -4,11 +4,11 @@ import type { AnimationOptions } from '../options.mjs';
 export const generateAnimation = ({ name, forward, backward }: AnimationOptions) => {
 
   const forwardBaseLine = forward.base
-    ? `{base "${name}" ${forward.base.direction === 'forward' ? 1 : -1}}`
+    ? `{base "${forward.base.name}" ${forward.base.direction === 'forward' ? 1 : -1}}`
     : '; no forward animation base';
 
   const backwardBaseLine = backward.base
-    ? `{base "${name}" ${backward.base.direction === 'forward' ? 1 : -1}}`
+    ? `{base "${backward.base.name}" ${backward.base.direction === 'forward' ? 1 : -1}}`
     : '; no backward animation base';
 
   return `; animation ${name}
