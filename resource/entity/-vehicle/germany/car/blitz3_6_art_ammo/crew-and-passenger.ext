@@ -44,7 +44,7 @@
 )
 
 ; apply settings
-; set animations
+; set animation
 ("set-board-animation" name(driver)    base(doorleft)  begin(board_opel_driver) end(seat_opel_driver))
 ("set-board-animation" name(passenger) base(doorright) begin(board_big-midcar)  end(seat_opel_commander))
 
