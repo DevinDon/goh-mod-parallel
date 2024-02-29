@@ -234,7 +234,7 @@
   {uncover  25}
   {h_fov    30} ; 水平
   {v_fov    30} ; 垂直
-  ("set-spotting" radius(15))
+  ("set-spotting" radius(16))
 }
 
 ; standard-vision-medium 前方中视角
@@ -242,7 +242,7 @@
   {uncover  25}
   {h_fov    60} ; 水平
   {v_fov    90} ; 垂直
-  ("set-spotting" radius(14))
+  ("set-spotting" radius(15))
 }
 
 ; standard-vision-wide 前方宽视角
@@ -250,7 +250,7 @@
   {uncover  20}
   {h_fov    120} ; 水平
   {v_fov    180} ; 垂直
-  ("set-spotting" radius(13))
+  ("set-spotting" radius(14))
 }
 
 ; standard-vision-around 全景环绕视角
@@ -258,7 +258,7 @@
   {uncover  15}
   {h_fov   240} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(15))
+  ("set-spotting" radius(12))
 }
 
 ; standard-vision-noise-detection 环境噪音检测视角
