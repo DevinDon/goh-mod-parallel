@@ -1,69 +1,134 @@
 ; crew and passenger
 
-; define from crew_human
-; args = name animation bone door
-(define "set-crew"
-  {placer
-    {place "%name"
-      {group "crew"}
-      {linkbone "%bone"}
-      {turnoff {shadow} {sensor} {targetable 1}}
-    }
+; set visors
+{Sensor
+  ; visor driver
+  {Visor "driver"
+    {Bone "driver"}
+    {Vision "standard-vision-around"}
   }
-  {boarder
-    {door "%door"}
-    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
-
-; define from crew_human
-; args = name animation bone door
-(define "set-passenger"
-  {placer
-    {place "%name"
-      {group "passenger"}
-      {linkbone "%bone"}
-      {turnoff {shadow} {sensor} {targetable 1}}
-    }
-  }
-  {boarder
-    {door "%door"}
-    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
-
-; apply settings
-; set animation
-{Boarder
-  {anm "driver"
-    {forward {base "doorleft"}   {begin "board_opel_driver"} {end "seat_opel_driver"}}
-    {reverse {base "doorleft" 1}                             {end "emit_body" 1}}
-  }
-  {anm "gunner"
-    {forward {base "board"} {begin "board_SdKfz251-1"} {end "pose_flak30_gunner"}}
-    {reverse {base "board"}                            {end "emit_body" 1}}
-  }
-  {anm "charger"
-    {forward {base "board"} {begin "board_SdKfz251-1"} {end "pose_flak30_loader"}}
-    {reverse {base "board"}                            {end "emit_body" 1}}
-  }
-  {anm "passenger"
-    {forward {base "doorright"}   {begin "board_big-midcar"} {end "seat_opel_commander"}}
-    {reverse {base "doorright" 1}                            {end "emit_body" 1}}
+  ; visor gunner
+  {Visor "gunner"
+    {Bone "gunner"}
+    {Vision "standard-vision-wide"}
   }
 }
 
-; set crew and passenger
-("set-crew"      name(driver)      animation(driver)    bone(driver)    door(emit1))
-("set-crew"      name(gunner)      animation(gunner)    bone(gunner)    door(emit3))
-("set-crew"      name(charger)     animation(charger)   bone(charger)   door(emit4))
-("set-passenger" name(passenger01) animation(passenger) bone(commander) door(emit2))
-("set-passenger" name(passenger02) animation(passenger) bone(commander) door(emit2))
-
-; set vision
-{Sensor
-  {Visor "gun"
-    {Bone "foresight1"}
-    {Vision "standard-vision-wide"}
+; set animations
+{Boarder
+  ; animation driver
+  {Anm "driver"
+    {forward
+      {base "doorleft" 1}
+      {begin "board_opel_driver" 1}
+      {end "seat_opel_driver" 1}
+    }
+    {reverse
+      {base "doorleft" 1}
+      {end "emit_body" 1}
+    }
   }
+  ; animation gunner
+  {Anm "gunner"
+    {forward
+      {base "board" 1}
+      {begin "board_SdKfz251-1" 1}
+      {end "pose_flak30_gunner" 1}
+    }
+    {reverse
+      {base "board" 1}
+      {end "emit_body" 1}
+    }
+  }
+  ; animation charger
+  {Anm "charger"
+    {forward
+      {base "board" 1}
+      {begin "board_SdKfz251-1" 1}
+      {end "pose_flak30_loader" 1}
+    }
+    {reverse
+      {base "board" 1}
+      {end "emit_body" 1}
+    }
+  }
+  ; animation passenger
+  {Anm "passenger"
+    {forward
+      {base "doorright" 1}
+      {begin "board_big-midcar" 1}
+      {end "seat_opel_commander" 1}
+    }
+    {reverse
+      {base "doorright" 1}
+      {end "emit_body" 1}
+    }
+  }
+}
+
+; set crews
+; crew driver
+{Placer
+  {Place "driver"
+    {group "crew"}
+    {linkbone "driver"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+    {visor "driver"}
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+}
+; crew gunner
+{Placer
+  {Place "gunner"
+    {group "crew"}
+    {linkbone "gunner"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+    {visor "gunner"}
+  }
+}
+{Boarder
+  {door "emit3"}
+  {link "emit3" "gunner" {anm "gunner"} {forward putoff} {reverse puton}}
+}
+; crew charger
+{Placer
+  {Place "charger"
+    {group "crew"}
+    {linkbone "charger"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+    {visor "charger"}
+  }
+}
+{Boarder
+  {door "emit4"}
+  {link "emit4" "charger" {anm "charger"} {forward putoff} {reverse puton}}
+}
+
+; set passengers
+; passenger passenger01
+{Placer
+  {Place "passenger01"
+    {group "passenger"}
+    {linkbone "commander"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit2"}
+  {link "emit2" "passenger01" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+; passenger passenger02
+{Placer
+  {Place "passenger02"
+    {group "passenger"}
+    {linkbone "commander"}
+    {turnoff {shadow} {sensor} {targetable 1}}
+  }
+}
+{Boarder
+  {door "emit2"}
+  {link "emit2" "passenger02" {anm "passenger"} {forward putoff} {reverse puton}}
 }
