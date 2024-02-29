@@ -5,7 +5,7 @@
 
   {Extension "panzer5g.mdl"}
   (include   "panzer5g.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nvw" "detect_tank_heavy"}
 
