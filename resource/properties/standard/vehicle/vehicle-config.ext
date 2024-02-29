@@ -24,7 +24,7 @@
 
 {Sensor
   {RecognizeTime 1} ; 单位秒，敌军单位识别时间
-  {InformRange 200 200} ; 单位米，向友军单位通告敌军位置的通信距离，第一个参数用于向电脑通告的距离，第二个参数用于向玩家通告的距离
+  {InformRange 500 500} ; 单位米，向友军单位通告敌军位置的通信距离，第一个参数用于向电脑通告的距离，第二个参数用于向玩家通告的距离
   ; 必备配置
   {Visor "standard-visor-hearing"
     {Bone "hearing"}
