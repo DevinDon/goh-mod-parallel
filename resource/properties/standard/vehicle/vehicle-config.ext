@@ -33,39 +33,18 @@
   {Visor "none"
     {Vision "standard-vision-none"}
   }
-  ; 标准视野
-  {Visor "driver"
-    {Bone "visor2"}
-    {Vision "standard-vision-narrow"}
-  }
-  {Visor "gunner"
-    {Bone "foresight1"}
-    {Vision "standard-vision-narrow"}
-  }
-  {Visor "commander"
-    {Bone "visor1"}
-    {Vision "standard-vision-around"}
-  }
-  {Visor "human"
-    {Bone "visor3"}
-    {Vision "standard-vision-medium"}
-  }
   ; 兼容旧视野，后续计划删除
   {Visor "main"
     {Bone "foresight1"}
     {Vision "standard-vision-narrow"}
   }
+  {Visor "around"
+    {Bone "visor1"}
+    {Vision "standard-vision-wide"}
+  }
   {Visor "driver"
     {Bone "visor2"}
     {Vision "standard-vision-narrow"}
-  }
-  {Visor "around"
-    {Bone "visor1"}
-    {Vision "standard-vision-around"}
-  }
-  {Visor "human"
-    {Bone "visor3"}
-    {Vision "standard-vision-wide"}
   }
 }
 
