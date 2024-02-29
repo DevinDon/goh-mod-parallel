@@ -24,13 +24,6 @@
 
   {Able "emit_on_attack"}
 
-  {Sensor
-    {Visor "gun"
-      {Vision "standard-vision-around"}
-      {Bone "foresight1"}
-    }
-  }
-
   {Extender "inventory"
     {Box
       {Size 9 9}

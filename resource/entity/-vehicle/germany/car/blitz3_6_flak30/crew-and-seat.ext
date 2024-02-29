@@ -1,46 +1,69 @@
-; crew and seat
+; crew and passenger
 
-; define crew_human
-; args = place door bone animation group off
+; define from crew_human
+; args = name animation bone door
 (define "set-crew"
   {placer
-    {place "%place" {group "%group"} {linkbone "%bone"} {turnoff %off {shadow}}}
+    {place "%name"
+      {group "crew"}
+      {linkbone "%bone"}
+      {turnoff {shadow} {sensor} {targetable 1}}
+    }
   }
   {boarder
     {door "%door"}
-    {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
+  }
+)
+
+; define from crew_human
+; args = name animation bone door
+(define "set-passenger"
+  {placer
+    {place "%name"
+      {group "passenger"}
+      {linkbone "%bone"}
+      {turnoff {shadow} {sensor} {targetable 1}}
+    }
+  }
+  {boarder
+    {door "%door"}
+    {link "%door" "%name" {anm "%animation"} {forward putoff} {reverse puton}}
   }
 )
 
 ; apply settings
-("set-crew" place(driver)    door(emit1) bone(driver)    animation(driver)    group(crew) off({sensor}))
-("set-crew" place(commander) door(emit2) bone(commander) animation(commander) group(crew) off())
-("set-crew" place(gunner)    door(emit3) bone(gunner)    animation(gunner)    group(crew) off({targetable 0}))
-("set-crew" place(charger)   door(emit4) bone(charger)   animation(charger)   group(crew) off())
-
-; apply boarders
+; set animation
 {Boarder
   {anm "driver"
-    {forward  {begin "board_opel_driver"} {end "seat_opel_driver"} {base "doorleft"}}
-    {reverse  {end "emit_body" 1} {base "doorleft" 1}}
-  }
-  {anm "commander"
-    {forward  {begin  "board_big-midcar"} {end "seat_opel_commander"} {base "doorright"}}
-    {reverse  {end  "emit_body" 1} {base "doorright" 1}}
+    {forward {begin "board_opel_driver"} {end "seat_opel_driver"} {base "doorleft"}}
+    {reverse {end "emit_body" 1} {base "doorleft" 1}}
   }
   {anm "gunner"
-    {forward  {begin "board_SdKfz251-1"} {end "pose_flak30_gunner"} {base "board"}}
-    {reverse  {end "emit_body" 1} {base "board"}}
+    {forward {begin "board_SdKfz251-1"} {end "pose_flak30_gunner"} {base "board"}}
+    {reverse {end "emit_body" 1} {base "board"}}
   }
   {anm "charger"
-    {forward  {begin "board_SdKfz251-1"} {end "pose_flak30_loader"} {base "board"}}
-    {reverse  {end "emit_body" 1} {base "board"}}
+    {forward {begin "board_SdKfz251-1"} {end "pose_flak30_loader"} {base "board"}}
+    {reverse {end "emit_body" 1} {base "board"}}
+  }
+  {anm "passenger"
+    {forward {begin "board_big-midcar"} {end "seat_opel_commander"} {base "doorright"}}
+    {reverse {end "emit_body" 1} {base "doorright" 1}}
   }
 }
 
-{Placer
-  {place "driver"    {visor "main"}}
-  {place "gunner"    {visor "gun"}}
-  {place "charger"   {visor "none"}}
-  {place "commander" {visor "none"}}
+; set crew and passenger
+("set-crew"      name(driver)      animation(driver)    bone(driver)    door(emit1))
+("set-crew"      name(gunner)      animation(gunner)    bone(gunner)    door(emit3))
+("set-crew"      name(charger)     animation(charger)   bone(charger)   door(emit4))
+("set-passenger" name(passenger01) animation(passenger) bone(commander) door(emit2))
+("set-passenger" name(passenger02) animation(passenger) bone(commander) door(emit2))
+
+; set vision
+{Sensor
+  {Visor "gun"
+    {Bone "foresight1"}
+    {Vision "standard-vision-wide"}
+  }
 }
