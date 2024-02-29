@@ -1,125 +1,232 @@
-; crew and seat
+; crew and passenger
 
-; define crew_inside
-; no args
-(define "set-inside-crew"
-  {boarder
-    {anm "left"
-      {forward {begin "board_tank"}}
-      {reverse {end "emit_tank_1_hold"}}
-    }
-    {anm "right"
-      {forward {begin "board_tank"}}
-      {reverse {end "emit_tank_1_hold"}}
-    }
+; set visors
+{Sensor
+  ; visor main
+  {Visor "main"
+    {Bone "foresight1"}
+    {Vision "standard-vision-none"}
   }
-)
-
-; define crew_driver
-; args = door door2 door3
-(define "set-driver-crew"
-  {placer
-    {place "driver" {group "crew"} {visor "driver"}}
+  ; visor around
+  {Visor "around"
+    {Bone "visor1"}
+    {Vision "standard-vision-none"}
   }
-  {boarder
-    {door "%door"}
-    {door "%door2"}
-    {door "%door3"}
-    {link "%door" "driver" {anm "driver"} {forward putoff} {reverse puton}}
-    {link "%door2" "driver" {anm "left"} {forward putoff} {reverse puton}}
-    {link "%door3" "driver" {anm "right"} {forward putoff} {reverse puton}}
+  ; visor driver
+  {Visor "driver"
+    {Bone "visor2"}
+    {Vision "standard-vision-none"}
   }
-)
-
-; define crew_human
-; args = door door2 visor
-(define "set-crew"
-  {placer
-    {place "%place"
-      {group "crew"}
-      {visor "%visor"}
-    }
+  ; visor standard-visor-driver
+  {Visor "standard-visor-driver"
+    {Bone "visor2"}
+    {Vision "standard-vision-narrow"}
   }
-  {boarder
-    {door "%door"}
-    {door "%door2"}
-    {link "%door" "%place" {anm "left"} {forward putoff} {reverse puton}}
-    {link "%door2" "%place" {anm "right"} {forward putoff} {reverse puton}}
+  ; visor standard-visor-gunner
+  {Visor "standard-visor-gunner"
+    {Bone "foresight1"}
+    {Vision "standard-vision-narrow"}
   }
-)
-
-; define crew_open
-; args = place bone visorbone door door2 animationLeft animationRight group
-(define "set-open-crew"
-  {sensor
-    {visor "top"
-      {vision "standard-vision-wide"}
-      {bone "%visorbone"}
-    }
-  }
-  {placer
-    {place "%place"
-      {group "%group"}
-      {linkbone "%bone"}
-      {visor "top"}
-      ;{openForCrush}
-      {sealable}
-    }
-  }
-  {boarder
-    {door "%door"}
-    {door "%door2"}
-    {link "%door" "%place" {anm "%animationLeft"} {forward putoff} {reverse puton}}
-    {link "%door2" "%place" {anm "%animationRight"} {forward putoff} {reverse puton}}
-  }
-)
-
-; define seat_human
-; args = place bone door animation
-(define "set-seat"
-  {placer
-    {place "%place" {group "passenger"} {LinkBone "%bone"}}
-  }
-  {boarder
-    {door "%door"}
-    {link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
-  }
-)
-
-; apply settings
-; gunner_visible
-("set-open-crew" place(commander) bone(gunner2) visorbone(mgun_rot) door(emit1) door2(emit2) animationLeft(left) animationRight(right) group(crew))
-
-; crew_5_human_extended
-("set-inside-crew")
-("set-driver-crew" door(emit0)      door2(emit1) door3(emit2))
-("set-crew"        place(gunner)    door(emit1)  door2(emit2) visor(main))
-("set-crew"        place(charger)   door(emit1)  door2(emit2) visor(none))
-("set-crew"        place(gunner3)   door(emit1)  door2(emit2) visor(driver))
-("set-crew"        place(commander) door(emit1)  door2(emit2) visor(around))
-
-; seat
-("set-seat" place(seat1) bone(seat01) door(emit3) animation(armor))
-("set-seat" place(seat2) bone(seat02) door(emit4) animation(armor))
-("set-seat" place(seat3) bone(seat03) door(emit5) animation(armor))
-("set-seat" place(seat4) bone(seat04) door(emit6) animation(armor))
-
-; apply boarders
-{Boarder
-  {anm "driver"
-    {forward {begin "board_pz4_driver"} {end "pose_mgun_pz6"} {base "open_driver"}}
-    {reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
-  }
-  {anm "left"
-    {forward {begin "board_cromwell"} {end "pose_mgun_pz6"}}
-    {reverse {end "board_cromwell" -1}}
-  }
-  {anm "right"
-    {forward {begin "board_cromwell"} {end "pose_mgun_pz6"}}
-    {reverse {end "board_cromwell" -1}}
-  }
-  {anm "armor"
-    {forward {begin "board_HighArmor"}   {end "pose_seat_armor_1"}}
-    {reverse {end "emit_tank_1"}}
+  ; visor standard-visor-commander
+  {Visor "standard-visor-commander"
+    {Bone "visor1"}
+    {Vision "standard-vision-around"}
   }
 }
+
+; set animations
+{Boarder
+  ; animation driver
+  {Anm "driver"
+    {forward
+      {base "open_driver" 1}
+      {begin "board_pz4_driver" 1}
+      {end "pose_mgun_pz6" 1}
+    }
+    {reverse
+      {base "open_driver" -1}
+      ; no reverse animation begin
+      {end "board_pz4_driver" -1}
+    }
+  }
+  ; animation left
+  {Anm "left"
+    {forward
+      ; no forward animation base
+      {begin "board_cromwell" 1}
+      {end "pose_mgun_pz6" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "board_cromwell" -1}
+    }
+  }
+  ; animation right
+  {Anm "right"
+    {forward
+      ; no forward animation base
+      {begin "board_cromwell" 1}
+      {end "pose_mgun_pz6" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "board_cromwell" -1}
+    }
+  }
+  ; animation armor
+  {Anm "armor"
+    {forward
+      ; no forward animation base
+      {begin "board_HighArmor" 1}
+      {end "pose_seat_armor_1" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_1" 1}
+    }
+  }
+}
+
+; set crews
+; crew driver
+{Placer
+  {Place "driver"
+    {group "crew"}
+    ; no bone
+    {turnoff {shadow} {sensor} {targetable}}
+    {visor "standard-visor-driver"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit0"}
+  {link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+  {door "emit1"}
+  {link "emit1" "driver" {anm "left"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "driver" {anm "right"} {forward putoff} {reverse puton}}
+}
+; crew gunner
+{Placer
+  {Place "gunner"
+    {group "crew"}
+    ; no bone
+    {turnoff {shadow} {sensor} {targetable}}
+    {visor "standard-visor-gunner"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "gunner" {anm "left"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "gunner" {anm "right"} {forward putoff} {reverse puton}}
+}
+; crew gunner3
+{Placer
+  {Place "gunner3"
+    {group "crew"}
+    ; no bone
+    {turnoff {shadow} {sensor} {targetable}}
+    {visor "standard-visor-driver"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "gunner3" {anm "left"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "gunner3" {anm "right"} {forward putoff} {reverse puton}}
+}
+; crew commander
+{Placer
+  {Place "commander"
+    {group "crew"}
+    {linkbone "gunner2"}
+    {turnoff {shadow} {sensor} {targetable}}
+    {visor "standard-visor-commander"}
+    {sealable}
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "commander" {anm "left"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "commander" {anm "right"} {forward putoff} {reverse puton}}
+}
+; crew charger
+{Placer
+  {Place "charger"
+    {group "crew"}
+    ; no bone
+    {turnoff {shadow} {sensor} {targetable}}
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "charger" {anm "left"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "charger" {anm "right"} {forward putoff} {reverse puton}}
+}
+
+; set passengers
+; passenger passenger01
+{Placer
+  {Place "passenger01"
+    {group "passenger"}
+    {linkbone "seat01"}
+    {turnoff {targetable 1}}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit3"}
+  {link "emit3" "passenger01" {anm "armor"} {forward putoff} {reverse puton}}
+}
+; passenger passenger02
+{Placer
+  {Place "passenger02"
+    {group "passenger"}
+    {linkbone "seat02"}
+    {turnoff {targetable 1}}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit4"}
+  {link "emit4" "passenger02" {anm "armor"} {forward putoff} {reverse puton}}
+}
+; passenger passenger03
+{Placer
+  {Place "passenger03"
+    {group "passenger"}
+    {linkbone "seat03"}
+    {turnoff {targetable 1}}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit5"}
+  {link "emit5" "passenger03" {anm "armor"} {forward putoff} {reverse puton}}
+}
+; passenger passenger04
+{Placer
+  {Place "passenger04"
+    {group "passenger"}
+    {linkbone "seat04"}
+    {turnoff {targetable 1}}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit6"}
+  {link "emit6" "passenger04" {anm "armor"} {forward putoff} {reverse puton}}
+}
+
+; set extra
+; no extra
