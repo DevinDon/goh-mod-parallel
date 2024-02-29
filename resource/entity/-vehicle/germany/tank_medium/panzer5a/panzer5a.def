@@ -79,7 +79,7 @@
         {MaxAngularSpeed 3.00} ; deg/s
         {ByAngularSpeed  0.35} ; deg/s
         {DisorderTime    0.25} ; s
-        {OrderTime       2.00} ; s
+        {OrderTime       2.15} ; s
       }
     }
     {Place "mgun2"
@@ -137,7 +137,7 @@
   {Mass 45500}
   {Chassis "track"
     ("set-tank-trace" fx("tracks_big") step(0.47) length(0.94) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(46) power(600) mass(45500) performance(1.35))
+    ("set-maneuverability-of-tank" speed(46) power(600) mass(45500) performance(1.30))
     ("set-fuel-bag" volume(730) power(600) mass(45500))
   }
 

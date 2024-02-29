@@ -78,7 +78,7 @@
         {MaxAngularSpeed 3.00} ; deg/s
         {ByAngularSpeed  0.35} ; deg/s
         {DisorderTime    0.25} ; s
-        {OrderTime       2.00} ; s
+        {OrderTime       1.75} ; s
       }
     }
     {Place "mgun2"
