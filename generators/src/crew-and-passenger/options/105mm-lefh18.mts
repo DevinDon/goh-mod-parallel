@@ -23,18 +23,13 @@ const options: CrewAndPassengerOptions = {
     },
     // 重新定义视野
     {
-      name: 'standard-visor-driver',
-      bone: 'visor2',
-      preset: 'standard-vision-narrow',
-    },
-    {
       name: 'standard-visor-gunner',
       bone: 'foresight1',
       preset: 'standard-vision-narrow',
     },
     {
       name: 'standard-visor-commander',
-      bone: 'visor1',
+      bone: 'visor',
       preset: 'standard-vision-around',
     },
   ],
@@ -142,7 +137,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'charger' },
       ],
       bone: 'charger',
-      visor: 'none',
+      visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
       extra: [ '{openForCrush}' ],
     },
@@ -152,7 +147,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit3', animation: 'charger2' },
       ],
       bone: 'charger2',
-      visor: 'none',
+      visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
       extra: [ '{openForCrush}' ],
     },
@@ -163,7 +158,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'driver1' },
       ],
       bone: 'driver1',
-      visor: 'standard-visor-around',
+      visor: 'standard-visor-commander',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
@@ -172,7 +167,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'driver2' },
       ],
       bone: 'driver2',
-      visor: 'standard-visor-around',
+      visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
@@ -181,7 +176,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'driver3' },
       ],
       bone: 'driver3',
-      visor: 'standard-visor-around',
+      visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
@@ -190,7 +185,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'driver4' },
       ],
       bone: 'driver4',
-      visor: 'standard-visor-around',
+      visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     // 牵引模式
@@ -200,7 +195,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'seat1' },
       ],
       bone: 'seat1',
-      visor: 'standard-visor-around',
+      visor: 'standard-visor-commander',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
@@ -209,7 +204,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'seat2' },
       ],
       bone: 'seat2',
-      visor: 'standard-visor-around',
+      visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
@@ -218,7 +213,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'seat3' },
       ],
       bone: 'seat3',
-      visor: 'standard-visor-around',
+      visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
@@ -227,7 +222,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'seat4' },
       ],
       bone: 'seat4',
-      visor: 'standard-visor-around',
+      visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
   ],
@@ -235,22 +230,6 @@ const options: CrewAndPassengerOptions = {
   passengers: [],
 
   extra: [
-    `{Placer
-  {place "gunner" {visor "main"}}
-  {place "charger"}
-  {place "charger2"}
-  {place "commander"}
-
-  {place "driver1"}
-  {place "driver2"}
-  {place "driver3"}
-  {place "driver4"}
-
-  {place "seat1"}
-  {place "seat2"}
-  {place "seat3"}
-  {place "seat4"}
-}`,
     `{Boarder
   {link "seat1" "driver1"}
   {link "seat2" "driver2"}

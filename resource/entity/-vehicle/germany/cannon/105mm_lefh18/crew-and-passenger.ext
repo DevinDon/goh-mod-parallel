@@ -17,11 +17,6 @@
     {Bone "visor2"}
     {Vision "standard-vision-none"}
   }
-  ; visor standard-visor-driver
-  {Visor "standard-visor-driver"
-    {Bone "visor2"}
-    {Vision "standard-vision-narrow"}
-  }
   ; visor standard-visor-gunner
   {Visor "standard-visor-gunner"
     {Bone "foresight1"}
@@ -29,7 +24,7 @@
   }
   ; visor standard-visor-commander
   {Visor "standard-visor-commander"
-    {Bone "visor1"}
+    {Bone "visor"}
     {Vision "standard-vision-around"}
   }
 }
@@ -181,7 +176,7 @@
     {group "crew"}
     {linkbone "charger"}
     {turnoff {shadow} {sensor} {targetable 1}}
-    {visor "none"}
+    {visor "standard-visor-none"}
     {openForCrush}
   }
 }
@@ -195,7 +190,7 @@
     {group "crew"}
     {linkbone "charger2"}
     {turnoff {shadow} {sensor} {targetable 1}}
-    {visor "none"}
+    {visor "standard-visor-none"}
     {openForCrush}
   }
 }
@@ -209,7 +204,7 @@
     {group "crew"}
     {linkbone "driver1"}
     {turnoff {shadow} {sensor} {targetable}}
-    {visor "standard-visor-around"}
+    {visor "standard-visor-commander"}
     ; no extra
   }
 }
@@ -223,7 +218,7 @@
     {group "crew"}
     {linkbone "driver2"}
     {turnoff {shadow} {sensor} {targetable}}
-    {visor "standard-visor-around"}
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
@@ -237,7 +232,7 @@
     {group "crew"}
     {linkbone "driver3"}
     {turnoff {shadow} {sensor} {targetable}}
-    {visor "standard-visor-around"}
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
@@ -251,7 +246,7 @@
     {group "crew"}
     {linkbone "driver4"}
     {turnoff {shadow} {sensor} {targetable}}
-    {visor "standard-visor-around"}
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
@@ -265,7 +260,7 @@
     {group "crew"}
     {linkbone "seat1"}
     {turnoff {shadow} {sensor} {targetable}}
-    {visor "standard-visor-around"}
+    {visor "standard-visor-commander"}
     ; no extra
   }
 }
@@ -279,7 +274,7 @@
     {group "crew"}
     {linkbone "seat2"}
     {turnoff {shadow} {sensor} {targetable}}
-    {visor "standard-visor-around"}
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
@@ -293,7 +288,7 @@
     {group "crew"}
     {linkbone "seat3"}
     {turnoff {shadow} {sensor} {targetable}}
-    {visor "standard-visor-around"}
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
@@ -307,7 +302,7 @@
     {group "crew"}
     {linkbone "seat4"}
     {turnoff {shadow} {sensor} {targetable}}
-    {visor "standard-visor-around"}
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
@@ -320,22 +315,6 @@
 ; no passenger
 
 ; set extra
-{Placer
-  {place "gunner" {visor "main"}}
-  {place "charger"}
-  {place "charger2"}
-  {place "commander"}
-
-  {place "driver1"}
-  {place "driver2"}
-  {place "driver3"}
-  {place "driver4"}
-
-  {place "seat1"}
-  {place "seat2"}
-  {place "seat3"}
-  {place "seat4"}
-}
 {Boarder
   {link "seat1" "driver1"}
   {link "seat2" "driver2"}
