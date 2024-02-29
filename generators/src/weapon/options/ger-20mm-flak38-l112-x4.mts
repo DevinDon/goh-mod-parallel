@@ -2,6 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
+  destination: 'resource/set/stuff/gun/ger-20mm-flak38-l112-x4.weapon',
+
   name: 'ger-20mm-flak38-l112-x4',
   description: '德国 2cm FlaK 30 L/112 四联防空炮，适用于旋风自行防空炮',
 

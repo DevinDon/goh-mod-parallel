@@ -2,6 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
+  destination: 'resource/set/stuff/gun/ger-37mm-flak43-l57.weapon',
+
   name: 'ger-37mm-flak43-l57',
   description: '德国 3.7cm FlaK 43 L/57 防空炮，适用于东风自行防空炮',
 

@@ -2,6 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
+  destination: 'resource/set/stuff/gun/ger-75mm-stuk40-l48.weapon',
+
   name: 'ger-75mm-stuk40-l48',
   description: '德国 7.5cm StuK 40 L/48 突击坦克炮',
 

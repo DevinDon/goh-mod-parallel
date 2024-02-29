@@ -91,6 +91,10 @@ export type PassengerOptions = {
 };
 
 export type CrewAndPassengerOptions = {
+
+  /** 要保存到的路径，相对于当前模组的根目录 */
+  destination: string;
+
   /** 视角列表 */
   visors: VisorOptions[];
   /** 动画列表 */
@@ -99,4 +103,5 @@ export type CrewAndPassengerOptions = {
   crews: CrewOptions[];
   /** 乘客列表 */
   passengers: PassengerOptions[];
+
 };

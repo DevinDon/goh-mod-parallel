@@ -2,6 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
+  destination: 'resource/set/stuff/gun/ger-150mm-sfh18-l30.weapon',
+
   name: 'ger-150mm-sfh18-l30',
   description: '德国 15cm sFH 18 L/30 榴弹炮',
 

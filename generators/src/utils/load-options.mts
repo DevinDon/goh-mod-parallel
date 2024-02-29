@@ -1,4 +1,3 @@
-import { getExecDirPath } from '@pipers/toolbox/environment';
 import { loadDefaultExportFromPath } from '@pipers/toolbox/extend';
 import { listPaths } from '@pipers/toolbox/filesystem';
 import { platform } from 'node:os';
@@ -6,15 +5,13 @@ import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import type { CrewAndPassengerOptions } from '../crew-and-passenger/options.mjs';
 import type { WeaponOptions } from '../weapon/options.mjs';
-
-/** `main.mjs` 所在的 `dist` 目录 */
-const generatorDistDir = resolve(getExecDirPath(import.meta.url), '..');
+import { GeneratorDistDir } from './constants.mjs';
 
 /** 加载指定目录下的所有配置文件，该目录路径相对于 `main.mjs` 所在的 `dist` 目录 */
 export const loadOptions = async <T extends WeaponOptions | CrewAndPassengerOptions>(dir: string): Promise<T[]> => {
 
   const paths = await listPaths(
-    resolve(generatorDistDir, dir),
+    resolve(GeneratorDistDir, dir),
     { type: 'absolute' },
   );
   const filtered = paths.filter(path => path.endsWith('.mjs'));

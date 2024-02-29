@@ -2,6 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
+  destination: 'resource/set/stuff/gun/ger-600mm-karl-l8.weapon',
+
   name: 'ger-600mm-karl-l8',
   description: '德国 60cm L/8 卡尔臼炮',
 

@@ -2,6 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
+  destination: 'resource/set/stuff/gun/ger-105mm-lefh18-l28.weapon',
+
   name: 'ger-105mm-lefh18-l28',
   description: '德国 10.5cm leFH 18 L/28 榴弹炮',
 

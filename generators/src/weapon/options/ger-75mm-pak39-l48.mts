@@ -2,6 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
+  destination: 'resource/set/stuff/gun/ger-75mm-pak39-l48.weapon',
+
   name: 'ger-75mm-pak39-l48',
   description: '德国 7.5cm PaK 39 L/48 反坦克炮',
 

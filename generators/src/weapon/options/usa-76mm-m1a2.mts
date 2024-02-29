@@ -2,6 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
+  destination: 'resource/set/stuff/gun/usa-76mm-m1a2.weapon',
+
   name: 'usa-76mm-m1a2',
   description: '美国 76mm M1A2 坦克炮',
 

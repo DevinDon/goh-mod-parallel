@@ -1,13 +1,10 @@
 import { logger } from '@pipers/logger';
-import { getExecDirPath } from '@pipers/toolbox/environment';
-import { resolve } from 'node:path';
-import { getAllWeaponOptions, saveGunWeaponsToFiles } from './utils/save-gun-weapons.mjs';
+import { generateAllCrewAndPassengers } from './crew-and-passenger/generators/generate.mjs';
+import { generateAllWeapons } from './weapon/generators/generate.mjs';
 
-logger.info('正在生成武器配置');
+logger.info('开始生成配置文件');
 
-await saveGunWeaponsToFiles(
-  await getAllWeaponOptions(),
-  resolve(getExecDirPath(import.meta.url), '../../resource/set/stuff/gun'),
-);
+await generateAllWeapons();
+await generateAllCrewAndPassengers();
 
-logger.info('已生成武器配置');
+logger.info('生成配置文件完成');

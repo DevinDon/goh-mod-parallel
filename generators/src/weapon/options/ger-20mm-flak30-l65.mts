@@ -2,6 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
+  destination: 'resource/set/stuff/gun/ger-20mm-flak30-l65.weapon',
+
   name: 'ger-20mm-flak30-l65',
   description: '德国 2cm FlaK 30 L/65 防空炮，适用于欧宝闪电',
 

@@ -47,6 +47,10 @@ export type WeaponBulletOptions = {
 
 /** 武器配置 */
 export type WeaponOptions = {
+
+  /** 要保存到的路径，相对于当前模组的根目录 */
+  destination: string;
+
   /** 武器名称，用于文件名 */
   name: string;
   /** 武器描述，用于备注 */

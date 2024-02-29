@@ -2,6 +2,8 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
+  destination: 'resource/set/stuff/gun/ger-37mm-kwk36-l45.weapon',
+
   name: 'ger-37mm-kwk36-l45',
   description: '德国 3.7cm KwK 36 L/45 坦克炮，适用于山猫',
 

@@ -2,6 +2,8 @@ import type { CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 
+  destination: 'resource/entity/-vehicle/germany/car/bmw_r71/crew-and-passenger.ext',
+
   visors: [
     {
       name: 'driver',

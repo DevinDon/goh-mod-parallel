@@ -1,5 +1,5 @@
-import type { WeaponOptions } from './options.mjs';
-import { generateOvermatchTable } from './overmatch-tables.mjs';
+import type { WeaponOptions } from '../options.mjs';
+import { generateOvermatchTable } from './generate-overmatch-table.mjs';
 
 /** 生成武器配置 */
 export const generateWeapon = (options: WeaponOptions) => {
