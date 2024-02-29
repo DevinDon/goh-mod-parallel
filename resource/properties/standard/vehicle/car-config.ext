@@ -31,7 +31,7 @@ actor
 
 {sensor
   {visor "main"
-    {vision "standard-vision-medium"}
+    {vision "standard-vision-wide"}
     {bone "visor2"}
   }
   {visor "around"
