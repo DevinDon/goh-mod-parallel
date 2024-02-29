@@ -45,7 +45,7 @@
     }
     {reverse
       {base "" -1}
-      ; no backward animation begin
+      ; no reverse animation begin
       {end "emit_sd222_driver" 1}
     }
   }
@@ -58,7 +58,7 @@
     }
     {reverse
       {base "" -1}
-      ; no backward animation begin
+      ; no reverse animation begin
       {end "emit_sd222_driver" 1}
     }
   }

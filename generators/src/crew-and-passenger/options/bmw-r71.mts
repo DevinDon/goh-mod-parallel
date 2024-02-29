@@ -42,7 +42,7 @@ const options: CrewAndPassengerOptions = {
         begin: [ 'board_moto_driver', 1 ],
         end: [ 'pose_moto_driver', 1 ],
       },
-      backward: {
+      reverse: {
         base: [ 'doorleft1', -1 ],
         end: [ 'board_moto_driver', -1 ],
       },
@@ -53,7 +53,7 @@ const options: CrewAndPassengerOptions = {
         begin: [ 'board_moto_sidecar', 1 ],
         end: [ 'pose_moto_sidecar', 1 ],
       },
-      backward: {
+      reverse: {
         end: [ 'board_moto_sidecar', -1 ],
       },
     },
@@ -63,7 +63,7 @@ const options: CrewAndPassengerOptions = {
         begin: [ 'board_moto_passenger', 1 ],
         end: [ 'pose_moto_passenger', 1 ],
       },
-      backward: {
+      reverse: {
         end: [ 'board_moto_passenger', -1 ],
       },
     },

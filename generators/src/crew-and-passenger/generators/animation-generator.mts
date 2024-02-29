@@ -1,7 +1,7 @@
 import type { AnimationOptions } from '../options.mjs';
 
 /** 生成动画配置 */
-export const generateAnimation = ({ name, forward, backward }: AnimationOptions) => {
+export const generateAnimation = ({ name, forward, reverse }: AnimationOptions) => {
 
   const forwardBaseLine = forward.base
     ? `{base "${forward.base[0]}" ${forward.base[1]}}`
@@ -15,17 +15,17 @@ export const generateAnimation = ({ name, forward, backward }: AnimationOptions)
     ? `{end "${forward.end[0]}" ${forward.end[1]}}`
     : '; no forward animation end';
 
-  const backwardBaseLine = backward.base
-    ? `{base "${backward.base[0]}" ${backward.base[1]}}`
-    : '; no backward animation base';
+  const reverseBaseLine = reverse.base
+    ? `{base "${reverse.base[0]}" ${reverse.base[1]}}`
+    : '; no reverse animation base';
 
-  const backwardBeginLine = backward.begin
-    ? `{begin "${backward.begin[0]}" ${backward.begin[1]}}`
-    : '; no backward animation begin';
+  const reverseBeginLine = reverse.begin
+    ? `{begin "${reverse.begin[0]}" ${reverse.begin[1]}}`
+    : '; no reverse animation begin';
 
-  const backwardEndLine = backward.end
-    ? `{end "${backward.end[0]}" ${backward.end[1]}}`
-    : '; no backward animation end';
+  const reverseEndLine = reverse.end
+    ? `{end "${reverse.end[0]}" ${reverse.end[1]}}`
+    : '; no reverse animation end';
 
   return `; animation ${name}
 {Anm "${name}"
@@ -35,9 +35,9 @@ export const generateAnimation = ({ name, forward, backward }: AnimationOptions)
     ${forwardEndLine}
   }
   {reverse
-    ${backwardBaseLine}
-    ${backwardBeginLine}
-    ${backwardEndLine}
+    ${reverseBaseLine}
+    ${reverseBeginLine}
+    ${reverseEndLine}
   }
 }`;
 

@@ -27,7 +27,7 @@ export type AnimationOptions = {
     end?: [string, number];
   };
   /** 反向动画配置 */
-  backward: {
+  reverse: {
     /** 动画基准 */
     base?: [string, number];
     /** 起始动画 */

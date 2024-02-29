@@ -7,13 +7,28 @@ const output = `; crew and passenger
 
 ; set visors
 {Sensor
+  ; visor main
+  {Visor "main"
+    {Bone "foresight1"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor around
+  {Visor "around"
+    {Bone "visor1"}
+    {Vision "standard-vision-none"}
+  }
   ; visor driver
   {Visor "driver"
+    {Bone "visor2"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor standard-visor-driver
+  {Visor "standard-visor-driver"
     {Bone "driver"}
     {Vision "standard-vision-around"}
   }
-  ; visor gunner
-  {Visor "gunner"
+  ; visor standard-visor-gunner
+  {Visor "standard-visor-gunner"
     {Bone "gunner"}
     {Vision "standard-vision-medium"}
   }
@@ -30,7 +45,7 @@ const output = `; crew and passenger
     }
     {reverse
       {base "doorleft1" -1}
-      ; no backward animation begin
+      ; no reverse animation begin
       {end "board_moto_driver" -1}
     }
   }
@@ -42,8 +57,8 @@ const output = `; crew and passenger
       {end "pose_moto_sidecar" 1}
     }
     {reverse
-      ; no backward animation base
-      ; no backward animation begin
+      ; no reverse animation base
+      ; no reverse animation begin
       {end "board_moto_sidecar" -1}
     }
   }
@@ -55,8 +70,8 @@ const output = `; crew and passenger
       {end "pose_moto_passenger" 1}
     }
     {reverse
-      ; no backward animation base
-      ; no backward animation begin
+      ; no reverse animation base
+      ; no reverse animation begin
       {end "board_moto_passenger" -1}
     }
   }
@@ -69,7 +84,7 @@ const output = `; crew and passenger
     {group "crew"}
     {linkbone "driver"}
     {turnoff {shadow} {sensor} {targetable 1}}
-    {visor "driver"}
+    {visor "standard-visor-driver"}
     ; no extra
   }
 }
@@ -83,7 +98,7 @@ const output = `; crew and passenger
     {group "crew"}
     {linkbone "gunner"}
     {turnoff {shadow} {sensor} {targetable 1}}
-    {visor "gunner"}
+    {visor "standard-visor-gunner"}
     ; no extra
   }
 }

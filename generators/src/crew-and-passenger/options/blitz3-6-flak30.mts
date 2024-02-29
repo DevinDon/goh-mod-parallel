@@ -42,7 +42,7 @@ const options: CrewAndPassengerOptions = {
         begin: [ 'board_opel_driver', 1 ],
         end: [ 'seat_opel_driver', 1 ],
       },
-      backward: {
+      reverse: {
         base: [ 'doorleft', 1 ],
         end: [ 'emit_body', 1 ],
       },
@@ -54,7 +54,7 @@ const options: CrewAndPassengerOptions = {
         begin: [ 'board_SdKfz251-1', 1 ],
         end: [ 'pose_flak30_gunner', 1 ],
       },
-      backward: {
+      reverse: {
         base: [ 'board', 1 ],
         end: [ 'emit_body', 1 ],
       },
@@ -66,7 +66,7 @@ const options: CrewAndPassengerOptions = {
         begin: [ 'board_SdKfz251-1', 1 ],
         end: [ 'pose_flak30_loader', 1 ],
       },
-      backward: {
+      reverse: {
         base: [ 'board', 1 ],
         end: [ 'emit_body', 1 ],
       },
@@ -78,7 +78,7 @@ const options: CrewAndPassengerOptions = {
         begin: [ 'board_big-midcar', 1 ],
         end: [ 'seat_opel_commander', 1 ],
       },
-      backward: {
+      reverse: {
         base: [ 'doorright', 1 ],
         end: [ 'emit_body', 1 ],
       },

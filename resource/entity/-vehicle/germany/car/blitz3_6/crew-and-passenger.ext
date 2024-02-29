@@ -35,7 +35,7 @@
     }
     {reverse
       {base "doorleft" 1}
-      ; no backward animation begin
+      ; no reverse animation begin
       {end "board_opel_driver" -1}
     }
   }
@@ -48,7 +48,7 @@
     }
     {reverse
       {base "doorright" 1}
-      ; no backward animation begin
+      ; no reverse animation begin
       {end "board_big-midcar" -1}
     }
   }
@@ -61,7 +61,7 @@
     }
     {reverse
       {base "board" 1}
-      ; no backward animation begin
+      ; no reverse animation begin
       {end "emit_body" 1}
     }
   }

@@ -40,7 +40,7 @@
     }
     {reverse
       {base "doorleft1" -1}
-      ; no backward animation begin
+      ; no reverse animation begin
       {end "board_moto_driver" -1}
     }
   }
@@ -52,8 +52,8 @@
       {end "pose_moto_sidecar" 1}
     }
     {reverse
-      ; no backward animation base
-      ; no backward animation begin
+      ; no reverse animation base
+      ; no reverse animation begin
       {end "board_moto_sidecar" -1}
     }
   }
@@ -65,8 +65,8 @@
       {end "pose_moto_passenger" 1}
     }
     {reverse
-      ; no backward animation base
-      ; no backward animation begin
+      ; no reverse animation base
+      ; no reverse animation begin
       {end "board_moto_passenger" -1}
     }
   }

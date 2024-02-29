@@ -46,7 +46,7 @@ const options: CrewAndPassengerOptions = {
         base: [ '', 1 ],
         begin: [ 'board_sd222_driver', 1 ],
       },
-      backward: {
+      reverse: {
         base: [ '', -1 ],
         end: [ 'emit_sd222_driver', 1 ],
       },
@@ -57,7 +57,7 @@ const options: CrewAndPassengerOptions = {
         base: [ '', 1 ],
         begin: [ 'board_sd222_driver', 1 ],
       },
-      backward: {
+      reverse: {
         base: [ '', -1 ],
         end: [ 'emit_sd222_driver', 1 ],
       },
