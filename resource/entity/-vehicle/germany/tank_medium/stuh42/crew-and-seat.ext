@@ -88,7 +88,7 @@
 
 ; apply settings
 ; charger_visible
-("set-open-crew" place(charger2) bone(gunner2) visorbone(mgun_rot) door(emit1) door2(emit2) animationLeft(left) animationRight(right) group(crew))
+("set-open-crew" place(charger) bone(gunner2) visorbone(mgun_rot) door(emit1) door2(emit2) animationLeft(left) animationRight(right) group(crew))
 
 ; crew_4_human
 ("set-inside-crew")
