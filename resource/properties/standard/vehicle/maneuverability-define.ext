@@ -37,7 +37,7 @@
     {SteerOn                                                   (* %performance 15)} ; Steering wheel's turn speed, degrees per second.
     {SteerOff                                                  (* %performance 30)} ; Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second.
     {TurnRadius                                                 (/ 8 %performance)} ; AI turning radius, lower = able to turn more without stopping.
-    {StartTime         (/ (* 5 (/ %speed (/ %power (/ %mass 1000)))) %performance)} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
+    {StartTime                          (* 5 (/ %speed (/ %power (/ %mass 1000))))} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
     {StopTime                           (/ (+ 1.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
     {BrakeTime                          (/ (+ 0.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
     {Gears                                                                 0.2 1.0} ; Gearing affects acceleration curve.
@@ -63,7 +63,7 @@
     {SteerOn                                                   (* %performance 10)} ; Steering wheel's turn speed, degrees per second.
     {SteerOff                                                  (* %performance 20)} ; Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second.
     {TurnRadius                                                 (/ 9 %performance)} ; AI turning radius, lower = able to turn more without stopping.
-    {StartTime         (/ (* 4 (/ %speed (/ %power (/ %mass 1000)))) %performance)} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
+    {StartTime                          (* 4 (/ %speed (/ %power (/ %mass 1000))))} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
     {StopTime                           (/ (+ 1.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
     {BrakeTime                          (/ (+ 0.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
     {Gears                                                             0.5 0.8 1.0} ; Gearing affects acceleration curve.
@@ -85,11 +85,11 @@
     {Fast                                                                (/ %speed 1)} ; Sprint speed. Double click movement order
     {MaxSpeed                                                            (/ %speed 1)} ; Max speed.
     {MaxSpeedAtMaxTurn                               (* (/ %speed 1.75) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
-    {TurnTime                               (/ (/ (/ %mass 3.8) %power) %performance)} ; Direct Control, Time it takes to do a full 360 degree at max turn speed, fetching custom define
-    {TurnStart                (/ (+ 0.50 (* (/ (/ %mass 1000) 6) 0.04)) %performance)} ; Direct Control, Time for vehicle to from 0°/s rotation speed to max rotation speed.
+    {TurnTime                                                (/ (/ %mass 3.8) %power)} ; Direct Control, Time it takes to do a full 360 degree at max turn speed, fetching custom define
+    {TurnStart                                 (+ 0.50 (* (/ (/ %mass 1000) 6) 0.04))} ; Direct Control, Time for vehicle to from 0°/s rotation speed to max rotation speed.
     {TurnStop                 (/ (+ 0.50 (* (/ (/ %mass 1000) 6) 0.04)) %performance)} ; Direct Control, Time for vehicle to from max rotation speed to 0°/s rotation speed to max rotation speed.
     {TurnRadius        (/ (+ 1 (+ (/ %speed 14) (/ (/ %mass 1000) 60))) %performance)} ; AI turning radius, lower = able to turn more without stopping.
-    {StartTime            (/ (* 4 (/ %speed (/ %power (/ %mass 1000)))) %performance)} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
+    {StartTime                             (* 4 (/ %speed (/ %power (/ %mass 1000))))} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
     {StopTime                       (/ (+ 2.30 (* (/ %mass 1000) 0.04)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
     {BrakeTime                      (/ (+ 0.95 (* (/ %mass 1000) 0.04)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
     {Gears                                                                0.5 0.8 1.0} ; Gearing affects acceleration curve.
@@ -104,7 +104,7 @@
 (define "set-fuel-bag"
   {FuelBag
     {Volume                           %volume} ; Fuel capacity in Litres.
-    {Rate   (+ (/ %power 25) (/ %mass 17500))} ; 消耗速率等于 100 时，大约消耗燃料 2 升每秒，能运转 50 秒左右
+    {Rate   (+ (/ %power 22) (/ %mass 20000))} ; 消耗速率等于 100 时，大约消耗燃料 2 升每秒，能运转 50 秒左右
     {Remain                           %volume} ; Amount of fuel in vehicle when spawned.
     {Fuel                              "fuel"} ; Type of fuel used. "fuel" = petrol/gasoline. "diesel" = diesel.
   }

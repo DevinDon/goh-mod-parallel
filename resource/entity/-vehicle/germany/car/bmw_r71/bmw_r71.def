@@ -56,7 +56,7 @@
   {Chassis "wheel"
     ("set-car-trace" fx("tracewheel03a") step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-car-trace" fx("tracewheel03a") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
-    ("set-maneuverability-of-car" speed(120) power(22) mass(397) performance(1.15))
+    ("set-maneuverability-of-car" speed(120) power(22) mass(397) performance(1.75))
     ("set-fuel-bag" volume(14) power(22) mass(397))
   }
 
