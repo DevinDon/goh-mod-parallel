@@ -63,7 +63,7 @@
     {HealthDamage 30000} ; 弹种对人员的击穿伤害
     {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
-      {RadiusTable {0 0} {100 12.5} {500 35} {1000 140.00}} ; 散布
+      {RadiusTable {0 0} {100 6} {500 18.6} {1000 74.40}} ; 散布
       {BurstRecoveryTime 6} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.66} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
