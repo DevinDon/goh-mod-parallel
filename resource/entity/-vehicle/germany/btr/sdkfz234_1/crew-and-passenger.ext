@@ -110,7 +110,7 @@
   {Place "gunner"
     {group "crew"}
     {linkbone "gunner"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-gunner"}
     ; no extra
   }
@@ -124,7 +124,7 @@
   {Place "commander"
     {group "crew"}
     {linkbone "commander"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-commander"}
     ; no extra
   }

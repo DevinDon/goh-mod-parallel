@@ -64,7 +64,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'driver',
       visor: 'standard-visor-driver',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 
@@ -75,7 +75,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'passenger' },
       ],
       bone: 'commander',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger02',
@@ -83,7 +83,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'passenger' },
       ],
       bone: 'commander',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 

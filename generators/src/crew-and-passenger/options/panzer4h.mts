@@ -152,7 +152,6 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit3', animation: 'armor' },
       ],
       bone: 'seat01',
-      turnoff: [ 'targetable 1' ],
     },
     {
       name: 'passenger02',
@@ -160,7 +159,6 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit4', animation: 'armor' },
       ],
       bone: 'seat02',
-      turnoff: [ 'targetable 1' ],
     },
     {
       name: 'passenger03',
@@ -168,7 +166,6 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit5', animation: 'armor1' },
       ],
       bone: 'seat03',
-      turnoff: [ 'targetable 1' ],
     },
     {
       name: 'passenger04',
@@ -176,7 +173,6 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit6', animation: 'armor' },
       ],
       bone: 'seat04',
-      turnoff: [ 'targetable 1' ],
     },
   ],
 

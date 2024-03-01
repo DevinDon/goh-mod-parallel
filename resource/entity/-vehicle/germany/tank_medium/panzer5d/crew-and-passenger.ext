@@ -96,7 +96,7 @@
   {Place "driver"
     {group "crew"}
     ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-driver"}
     ; no extra
   }
@@ -114,7 +114,7 @@
   {Place "gunner"
     {group "crew"}
     ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-gunner"}
     ; no extra
   }
@@ -130,7 +130,7 @@
   {Place "gunner3"
     {group "crew"}
     ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-driver"}
     ; no extra
   }
@@ -146,7 +146,7 @@
   {Place "commander"
     {group "crew"}
     ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-commander"}
     ; no extra
   }
@@ -162,7 +162,7 @@
   {Place "charger"
     {group "crew"}
     ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-none"}
     ; no extra
   }
@@ -180,7 +180,7 @@
   {Place "passenger01"
     {group "passenger"}
     {linkbone "seat01"}
-    {turnoff {targetable 1}}
+    ; no turnoff
     ; no extra
   }
 }
@@ -193,7 +193,7 @@
   {Place "passenger02"
     {group "passenger"}
     {linkbone "seat02"}
-    {turnoff {targetable 1}}
+    ; no turnoff
     ; no extra
   }
 }
@@ -206,7 +206,7 @@
   {Place "passenger03"
     {group "passenger"}
     {linkbone "seat03"}
-    {turnoff {targetable 1}}
+    ; no turnoff
     ; no extra
   }
 }
@@ -219,7 +219,7 @@
   {Place "passenger04"
     {group "passenger"}
     {linkbone "seat04"}
-    {turnoff {targetable 1}}
+    ; no turnoff
     ; no extra
   }
 }

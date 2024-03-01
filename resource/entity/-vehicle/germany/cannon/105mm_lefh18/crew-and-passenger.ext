@@ -147,7 +147,7 @@
   {Place "gunner"
     {group "crew"}
     {linkbone "gunner"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-gunner"}
     {openForCrush}
   }
@@ -161,7 +161,7 @@
   {Place "commander"
     {group "crew"}
     {linkbone "commander"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-commander"}
     {openForCrush}
   }
@@ -175,7 +175,7 @@
   {Place "charger"
     {group "crew"}
     {linkbone "charger"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-none"}
     {openForCrush}
   }
@@ -189,7 +189,7 @@
   {Place "charger2"
     {group "crew"}
     {linkbone "charger2"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-none"}
     {openForCrush}
   }

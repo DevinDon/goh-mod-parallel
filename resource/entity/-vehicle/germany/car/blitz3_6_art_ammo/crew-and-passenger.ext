@@ -60,7 +60,7 @@
   {Place "driver"
     {group "crew"}
     {linkbone "driver"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-driver"}
     ; no extra
   }
@@ -76,7 +76,7 @@
   {Place "passenger01"
     {group "passenger"}
     {linkbone "commander"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     ; no extra
   }
 }
@@ -89,7 +89,7 @@
   {Place "passenger02"
     {group "passenger"}
     {linkbone "commander"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     ; no extra
   }
 }

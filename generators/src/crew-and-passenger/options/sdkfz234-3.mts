@@ -101,7 +101,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'gunner',
       visor: 'standard-visor-gunner',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'commander',
@@ -111,7 +111,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'commander',
       visor: 'standard-visor-commander',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'charger',
@@ -121,7 +121,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'charger',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 

@@ -76,7 +76,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'driver',
       visor: 'standard-visor-driver',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 
@@ -87,7 +87,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'leader' },
       ],
       bone: 'commander',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger01',
@@ -95,7 +95,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit3', animation: 'passenger' },
       ],
       bone: 'seat01',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger02',
@@ -103,7 +103,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit4', animation: 'passenger' },
       ],
       bone: 'seat02',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger03',
@@ -111,7 +111,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit3', animation: 'passenger' },
       ],
       bone: 'seat03',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger04',
@@ -119,7 +119,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit4', animation: 'passenger' },
       ],
       bone: 'seat04',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger05',
@@ -127,7 +127,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit3', animation: 'passenger' },
       ],
       bone: 'seat05',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger06',
@@ -135,7 +135,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit4', animation: 'passenger' },
       ],
       bone: 'seat06',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger07',
@@ -143,7 +143,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit3', animation: 'passenger' },
       ],
       bone: 'seat07',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger08',
@@ -151,7 +151,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit4', animation: 'passenger' },
       ],
       bone: 'seat08',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger09',
@@ -159,7 +159,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit3', animation: 'passenger' },
       ],
       bone: 'seat09',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger10',
@@ -167,7 +167,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit4', animation: 'passenger' },
       ],
       bone: 'seat10',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger11',
@@ -175,7 +175,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit3', animation: 'passenger' },
       ],
       bone: 'seat11',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'passenger12',
@@ -183,7 +183,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit4', animation: 'passenger' },
       ],
       bone: 'seat12',
-      turnoff: [ 'shadow', 'sensor', 'targetable 1' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 

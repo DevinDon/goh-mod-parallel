@@ -78,7 +78,7 @@
   {Place "driver"
     {group "crew"}
     {linkbone "driver"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-driver"}
     ; no extra
   }
@@ -92,7 +92,7 @@
   {Place "gunner"
     {group "crew"}
     {linkbone "gunner"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-gunner"}
     ; no extra
   }
@@ -108,7 +108,7 @@
   {Place "passenger"
     {group "passenger"}
     {linkbone "seat1"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     ; no extra
   }
 }

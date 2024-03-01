@@ -93,7 +93,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-driver',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'gunner',
@@ -102,7 +102,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-gunner',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'gunner3',
@@ -111,7 +111,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-driver',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'commander',
@@ -120,7 +120,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-commander',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'charger',
@@ -129,7 +129,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 
@@ -140,7 +140,6 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit3', animation: 'armor' },
       ],
       bone: 'seat01',
-      turnoff: [ 'targetable 1' ],
     },
     {
       name: 'passenger02',
@@ -148,7 +147,6 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit4', animation: 'armor' },
       ],
       bone: 'seat02',
-      turnoff: [ 'targetable 1' ],
     },
     {
       name: 'passenger03',
@@ -156,7 +154,6 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit5', animation: 'armor' },
       ],
       bone: 'seat03',
-      turnoff: [ 'targetable 1' ],
     },
     {
       name: 'passenger04',
@@ -164,7 +161,6 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit6', animation: 'armor' },
       ],
       bone: 'seat04',
-      turnoff: [ 'targetable 1' ],
     },
   ],
 
