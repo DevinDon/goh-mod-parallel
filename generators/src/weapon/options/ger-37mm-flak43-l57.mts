@@ -39,8 +39,9 @@ const options: WeaponOptions = {
     rangeKoef: 0.45,
   },
 
-  bullets: {
-    ap: {
+  bullets: [
+    {
+      name: 'ap',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
@@ -50,7 +51,8 @@ const options: WeaponOptions = {
         nearest: 53,
         farthest: 22,
       },
-      damage: 55,
+      damageToArmor: 55,
+      damageToHuman: 550,
       spreading: {
         radiusTable: {
           nearest: 0.33,
@@ -64,12 +66,15 @@ const options: WeaponOptions = {
       },
       overmatch: 'ger-37mm-ap',
     },
-    he: {
+    {
+      name: 'he',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
       speed: 770,
       gravity: 5,
+      damageToArmor: 110,
+      damageToHuman: 1100,
       spreading: {
         radiusTable: {
           nearest: 0.4,
@@ -83,7 +88,7 @@ const options: WeaponOptions = {
       },
       falloffStrength: 0,
     },
-  },
+  ],
 
 };
 

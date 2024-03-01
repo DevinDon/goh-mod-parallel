@@ -28,13 +28,16 @@ const options: WeaponOptions = {
 
   automatic: false,
 
-  bullets: {
-    he: {
+  bullets: [
+    {
+      name: 'he',
       minRange: 100,
       aimRange: 500,
       maxRange: 500,
       speed: 176,
       gravity: 9,
+      damageToArmor: 3000,
+      damageToHuman: 30000,
       spreading: {
         radiusTable: {
           nearest: 12.5,
@@ -47,7 +50,7 @@ const options: WeaponOptions = {
         spreadXYRatio: 1.15,
       },
     },
-  },
+  ],
 
 };
 

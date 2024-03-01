@@ -27,8 +27,9 @@ const options: WeaponOptions = {
 
   automatic: false,
 
-  bullets: {
-    aphe: {
+  bullets: [
+    {
+      name: 'aphe',
       minRange: 0,
       aimRange: 750,
       maxRange: 750,
@@ -38,7 +39,8 @@ const options: WeaponOptions = {
         nearest: 73,
         farthest: 53,
       },
-      damage: 410,
+      damageToArmor: 410,
+      damageToHuman: 4100,
       spreading: {
         radiusTable: {
           nearest: 1.751,
@@ -52,7 +54,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'ger-105mm-ap',
     },
-    heat: {
+    {
+      name: 'heat',
       minRange: 0,
       aimRange: 750,
       maxRange: 750,
@@ -62,7 +65,8 @@ const options: WeaponOptions = {
         nearest: 104,
         farthest: 104,
       },
-      damage: 355,
+      damageToArmor: 355,
+      damageToHuman: 3550,
       spreading: {
         radiusTable: {
           nearest: 1.975,
@@ -76,12 +80,15 @@ const options: WeaponOptions = {
       },
       overmatch: 'heat',
     },
-    he: {
+    {
+      name: 'he',
       minRange: 0,
       aimRange: 750,
       maxRange: 750,
       speed: 196,
       gravity: 5,
+      damageToArmor: 650,
+      damageToHuman: 6500,
       spreading: {
         radiusTable: {
           nearest: 2.775,
@@ -94,7 +101,7 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-  },
+  ],
 
 };
 

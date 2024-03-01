@@ -27,8 +27,9 @@ const options: WeaponOptions = {
 
   automatic: false,
 
-  bullets: {
-    apcbche: {
+  bullets: [
+    {
+      name: 'apcbche',
       minRange: 0,
       aimRange: 400,
       maxRange: 400,
@@ -38,7 +39,8 @@ const options: WeaponOptions = {
         nearest: 225,
         farthest: 171,
       },
-      damage: 360,
+      damageToArmor: 360,
+      damageToHuman: 3600,
       spreading: {
         radiusTable: {
           nearest: 0.32,
@@ -52,7 +54,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'ger-105mm-apcbc',
     },
-    apcr: {
+    {
+      name: 'apcr',
       minRange: 0,
       aimRange: 400,
       maxRange: 400,
@@ -62,7 +65,8 @@ const options: WeaponOptions = {
         nearest: 285,
         farthest: 201,
       },
-      damage: 315,
+      damageToArmor: 315,
+      damageToHuman: 3150,
       spreading: {
         radiusTable: {
           nearest: 0.299,
@@ -76,12 +80,15 @@ const options: WeaponOptions = {
       },
       overmatch: 'ger-105mm-apcr',
     },
-    he: {
+    {
+      name: 'he',
       minRange: 0,
       aimRange: 400,
       maxRange: 400,
       speed: 750,
       gravity: 5,
+      damageToArmor: 650,
+      damageToHuman: 6500,
       spreading: {
         radiusTable: {
           nearest: 0.39,
@@ -94,7 +101,7 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-  },
+  ],
 
 };
 

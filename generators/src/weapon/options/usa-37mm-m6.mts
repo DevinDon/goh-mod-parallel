@@ -26,9 +26,9 @@ const options: WeaponOptions = {
   recoveryTime: 1,
 
   automatic: false,
-
-  bullets: {
-    ap: {
+  bullets: [
+    {
+      name: 'ap',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
@@ -38,7 +38,8 @@ const options: WeaponOptions = {
         nearest: 89,
         farthest: 27,
       },
-      damage: 50,
+      damageToArmor: 50,
+      damageToHuman: 500,
       spreading: {
         radiusTable: {
           nearest: 0.37,
@@ -52,7 +53,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-37mm-ap',
     },
-    apcbc: {
+    {
+      name: 'apcbc',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
@@ -62,7 +64,8 @@ const options: WeaponOptions = {
         nearest: 78,
         farthest: 43,
       },
-      damage: 50,
+      damageToArmor: 50,
+      damageToHuman: 500,
       spreading: {
         radiusTable: {
           nearest: 0.33,
@@ -76,12 +79,15 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-37mm-apcbc',
     },
-    he: {
+    {
+      name: 'he',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
       speed: 792,
       gravity: 5,
+      damageToArmor: 200,
+      damageToHuman: 2000,
       spreading: {
         radiusTable: {
           nearest: 0.5,
@@ -94,7 +100,7 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-  },
+  ],
 
 };
 

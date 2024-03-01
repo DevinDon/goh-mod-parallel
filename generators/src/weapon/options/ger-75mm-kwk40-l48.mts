@@ -27,8 +27,9 @@ const options: WeaponOptions = {
 
   automatic: false,
 
-  bullets: {
-    apcbche: {
+  bullets: [
+    {
+      name: 'apcbche',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
@@ -38,7 +39,8 @@ const options: WeaponOptions = {
         nearest: 135,
         farthest: 86,
       },
-      damage: 150,
+      damageToArmor: 150,
+      damageToHuman: 1500,
       spreading: {
         radiusTable: {
           nearest: 0.37,
@@ -52,7 +54,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'ger-75mm-apcbc',
     },
-    apcr: {
+    {
+      name: 'apcr',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
@@ -62,7 +65,8 @@ const options: WeaponOptions = {
         nearest: 176,
         farthest: 92,
       },
-      damage: 110,
+      damageToArmor: 110,
+      damageToHuman: 1100,
       spreading: {
         radiusTable: {
           nearest: 0.32,
@@ -76,7 +80,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'ger-75mm-apcr',
     },
-    heat: {
+    {
+      name: 'heat',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
@@ -86,7 +91,8 @@ const options: WeaponOptions = {
         nearest: 115,
         farthest: 115,
       },
-      damage: 130,
+      damageToArmor: 130,
+      damageToHuman: 1300,
       spreading: {
         radiusTable: {
           nearest: 0.49,
@@ -100,7 +106,29 @@ const options: WeaponOptions = {
       },
       overmatch: 'heat',
     },
-    he: {
+    {
+      name: 'he',
+      minRange: 0,
+      aimRange: 350,
+      maxRange: 350,
+      speed: 520,
+      gravity: 5,
+      damageToArmor: 260,
+      damageToHuman: 2600,
+      spreading: {
+        radiusTable: {
+          nearest: 0.5,
+          farthest: 2.7,
+          factor: 4.0,
+        },
+        burstRecoveryTime: 0.75,
+        burstAccuracy: 100,
+        spreadPower: 1.25,
+        spreadXYRatio: 0.75,
+      },
+    },
+    {
+      name: 'sm',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
@@ -118,25 +146,7 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-    sm: {
-      minRange: 0,
-      aimRange: 350,
-      maxRange: 350,
-      speed: 520,
-      gravity: 5,
-      spreading: {
-        radiusTable: {
-          nearest: 0.5,
-          farthest: 2.7,
-          factor: 4.0,
-        },
-        burstRecoveryTime: 0.75,
-        burstAccuracy: 100,
-        spreadPower: 1.25,
-        spreadXYRatio: 0.75,
-      },
-    },
-  },
+  ],
 
 };
 

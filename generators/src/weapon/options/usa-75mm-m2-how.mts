@@ -27,8 +27,9 @@ const options: WeaponOptions = {
 
   automatic: false,
 
-  bullets: {
-    heat: {
+  bullets: [
+    {
+      name: 'heat',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
@@ -38,7 +39,8 @@ const options: WeaponOptions = {
         nearest: 91,
         farthest: 91,
       },
-      damage: 115,
+      damageToArmor: 115,
+      damageToHuman: 1150,
       spreading: {
         radiusTable: {
           nearest: 2.555,
@@ -52,7 +54,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'heat',
     },
-    he: {
+    {
+      name: 'he',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
@@ -70,12 +73,15 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-    sm: {
+    {
+      name: 'sm',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
       speed: 381,
       gravity: 5,
+      damageToArmor: 310,
+      damageToHuman: 3100,
       spreading: {
         radiusTable: {
           nearest: 3.5,
@@ -88,7 +94,7 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-  },
+  ],
 
 };
 

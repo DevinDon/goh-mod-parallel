@@ -39,8 +39,9 @@ const options: WeaponOptions = {
     rangeKoef: 0.45,
   },
 
-  bullets: {
-    ap: {
+  bullets: [
+    {
+      name: 'ap',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
@@ -50,21 +51,23 @@ const options: WeaponOptions = {
         nearest: 45,
         farthest: 11,
       },
-      damage: 30,
+      damageToArmor: 30,
+      damageToHuman: 300,
       spreading: {
         radiusTable: {
           nearest: 0.3,
           farthest: 1.7,
           factor: 3.5,
         },
-        burstRecoveryTime: 0.1,
+        burstRecoveryTime: 0.2,
         burstAccuracy: 100,
         spreadPower: 1.25,
         spreadXYRatio: 0.75,
       },
       overmatch: 'ger-20mm-ap',
     },
-    apcr: {
+    {
+      name: 'apcr',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
@@ -74,40 +77,44 @@ const options: WeaponOptions = {
         nearest: 63,
         farthest: 1,
       },
-      damage: 20,
+      damageToArmor: 20,
+      damageToHuman: 200,
       spreading: {
         radiusTable: {
           nearest: 0.2,
           farthest: 1.5,
           factor: 3.0,
         },
-        burstRecoveryTime: 0.1,
+        burstRecoveryTime: 0.2,
         burstAccuracy: 100,
         spreadPower: 1.25,
         spreadXYRatio: 0.75,
       },
       overmatch: 'ger-20mm-apcr',
     },
-    he: {
+    {
+      name: 'he',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
       speed: 900,
       gravity: 5,
+      damageToArmor: 60,
+      damageToHuman: 600,
       spreading: {
         radiusTable: {
           nearest: 0.4,
           farthest: 2.5,
           factor: 4.0,
         },
-        burstRecoveryTime: 0.1,
+        burstRecoveryTime: 0.2,
         burstAccuracy: 100,
         spreadPower: 1.00,
         spreadXYRatio: 1.25,
       },
       falloffStrength: 0,
     },
-  },
+  ],
 
 };
 

@@ -27,8 +27,9 @@ const options: WeaponOptions = {
 
   automatic: false,
 
-  bullets: {
-    ap: {
+  bullets: [
+    {
+      name: 'ap',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
@@ -38,7 +39,8 @@ const options: WeaponOptions = {
         nearest: 109,
         farthest: 51,
       },
-      damage: 135,
+      damageToArmor: 135,
+      damageToHuman: 1350,
       spreading: {
         radiusTable: {
           nearest: 0.37,
@@ -52,7 +54,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-75mm-ap',
     },
-    apcbc: {
+    {
+      name: 'apcbc',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
@@ -62,7 +65,8 @@ const options: WeaponOptions = {
         nearest: 88,
         farthest: 59,
       },
-      damage: 135,
+      damageToArmor: 135,
+      damageToHuman: 1350,
       spreading: {
         radiusTable: {
           nearest: 0.33,
@@ -76,7 +80,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-37mm-apcbc',
     },
-    apcbche: {
+    {
+      name: 'apcbche',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
@@ -86,7 +91,8 @@ const options: WeaponOptions = {
         nearest: 88,
         farthest: 59,
       },
-      damage: 135,
+      damageToArmor: 135,
+      damageToHuman: 1350,
       spreading: {
         radiusTable: {
           nearest: 0.33,
@@ -100,12 +106,15 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-37mm-apcbc',
     },
-    he: {
+    {
+      name: 'he',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
       speed: 603,
       gravity: 5,
+      damageToArmor: 200,
+      damageToHuman: 2000,
       spreading: {
         radiusTable: {
           nearest: 1.5,
@@ -118,7 +127,8 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-    sm: {
+    {
+      name: 'sm',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
@@ -136,7 +146,7 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-  },
+  ],
 
 };
 

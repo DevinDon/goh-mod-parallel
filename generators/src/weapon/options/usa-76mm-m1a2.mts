@@ -27,8 +27,9 @@ const options: WeaponOptions = {
 
   automatic: false,
 
-  bullets: {
-    apcbche: {
+  bullets: [
+    {
+      name: 'apcbche',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
@@ -38,7 +39,8 @@ const options: WeaponOptions = {
         nearest: 125,
         farthest: 90,
       },
-      damage: 165,
+      damageToArmor: 165,
+      damageToHuman: 1650,
       spreading: {
         radiusTable: {
           nearest: 0.45,
@@ -52,7 +54,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-76mm-apcbc',
     },
-    hvap: {
+    {
+      name: 'hvap',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
@@ -62,7 +65,8 @@ const options: WeaponOptions = {
         nearest: 239,
         farthest: 124,
       },
-      damage: 130,
+      damageToArmor: 130,
+      damageToHuman: 1300,
       spreading: {
         radiusTable: {
           nearest: 0.375,
@@ -76,7 +80,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-76mm-hvap',
     },
-    he: {
+    {
+      name: 'he',
       minRange: 0,
       aimRange: 300,
       maxRange: 300,
@@ -94,12 +99,15 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-    wp: {
+    {
+      name: 'wp',
       minRange: 0,
       aimRange: 350,
       maxRange: 350,
       speed: 270,
       gravity: 5,
+      damageToArmor: 330,
+      damageToHuman: 3300,
       spreading: {
         radiusTable: {
           nearest: 1.5,
@@ -112,7 +120,7 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-  },
+  ],
 
 };
 

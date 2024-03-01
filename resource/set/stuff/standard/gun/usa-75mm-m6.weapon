@@ -7,11 +7,16 @@
   {FireSound "gun/gun_75_105"} ; 开火音效
   {FireSoundclose "gun/gun_interior/size3"} ; 车内视角开火音效
   {ReloadSound "interior/large/medium_reload_interior"} ; 装弹音效
-  {Cursor "ironsights/tank2"} ; 鼠标指针
+
+  {Cursor "ironsights/tank2"} ; 即时战略模式下的瞄准图标
+  {CursorReloading "carbine_reload"} ; 即时战略模式下的装填图标
+  {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
+  {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
 
   {Filling "ammo usa-75x350" 1} ; 弹种及弹链内炮弹数量
   {Calibre 75} ; 口径
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
+  {Preloaded}
 
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance 1} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
@@ -23,19 +28,40 @@
 
   {RechargeTime 7} ; 装填时间（秒）
   {RecoveryTime 1.000} ; 短射间隔（秒）, 适用于弹链
-
-  ; 非自动武器
+  {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
 
   ; 无连发模式
 
+  ; 非自动武器
+
+  {RicochetEnergyDamping ; 跳弹后的能量衰减，距离和比例
+    {0  1.00}
+    {10 0.90}
+    {25 0.70}
+    {45 0.30}
+    {60 0.00}
+  }
+
+  {OvermatchDamping ; 过度穿透后的阻尼，角度和值
+    {0  1.00}
+    {30 1.10}
+    {55 1.15}
+    {60 1.45}
+    {70 4.00}
+    {90 6.00}
+  }
+
   {Parameters "ap"
+    {CursorReloading "gun_ap"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
     {AimRange 300} ; AI 最长射击距离 m
     {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 619} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {100 109} {500 51} {1000 0}} ; 穿深表
-    {MinimumDamageModifier 135} ; 伤害
+    {MinimumDamageModifier 135} ; 弹种对装甲的击穿伤害
+    {HealthDamage 1350} ; 弹种对人员的击穿伤害
+    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.37} {500 2.73} {1000 9.55}} ; 散布
       {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
@@ -45,31 +71,34 @@
     }
     {OvermatchCalibre
       {0  1.0000 0.0000}
-      {10 1.0440 0.0060}
-      {20 1.2030 0.0090}
-      {30 1.4710 0.0200}
-      {40 1.6110 0.0180}
-      {50 2.1670 0.0250}
-      {55 2.4170 0.0310}
-      {60 2.7610 0.0350}
-      {65 3.2100 0.0750}
-      {70 4.0770 0.1360}
-      {75 5.4050 0.2000}
-      {80 8.7900 0.2000}
-      {85 20.200 0.2000}
-      {90 99.000 0.0000}
+    {10 1.0440 0.0060}
+    {20 1.2030 0.0090}
+    {30 1.4710 0.0200}
+    {40 1.6110 0.0180}
+    {50 2.1670 0.0250}
+    {55 2.4170 0.0310}
+    {60 2.7610 0.0350}
+    {65 3.2100 0.0750}
+    {70 4.0770 0.1360}
+    {75 5.4050 0.2000}
+    {80 8.7900 0.2000}
+    {85 20.200 0.2000}
+    {90 99.000 0.0000}
     }
     ; 无防空炮配置
   }
-
+  
   {Parameters "apcbc"
+    {CursorReloading "gun_apcbc"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
     {AimRange 300} ; AI 最长射击距离 m
     {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 619} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {100 88} {500 59} {1000 0}} ; 穿深表
-    {MinimumDamageModifier 135} ; 伤害
+    {MinimumDamageModifier 135} ; 弹种对装甲的击穿伤害
+    {HealthDamage 1350} ; 弹种对人员的击穿伤害
+    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.33} {500 2.43} {1000 8.51}} ; 散布
       {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
@@ -79,31 +108,34 @@
     }
     {OvermatchCalibre
       {0  1.0000 0.0000}
-      {20 1.1590 -0.120}
-      {30 1.3740 -0.222}
-      {40 1.5960 -0.254}
-      {45 1.9100 -0.200}
-      {50 2.4850 0.1110}
-      {55 3.1720 0.3180}
-      {60 3.8750 0.3760}
-      {65 9.7500 1.2500}
-      {70 9.9600 1.1100}
-      {75 20.300 1.2100}
-      {80 49.000 1.2000}
-      {85 232.50 1.2150}
-      {90 99.000 0.0000}
+    {20 1.1590 -0.120}
+    {30 1.3740 -0.222}
+    {40 1.5960 -0.254}
+    {45 1.9100 -0.200}
+    {50 2.4850 0.1110}
+    {55 3.1720 0.3180}
+    {60 3.8750 0.3760}
+    {65 9.7500 1.2500}
+    {70 9.9600 1.1100}
+    {75 20.300 1.2100}
+    {80 49.000 1.2000}
+    {85 232.50 1.2150}
+    {90 99.000 0.0000}
     }
     ; 无防空炮配置
   }
-
+  
   {Parameters "apcbche"
+    {CursorReloading "gun_apcbc"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
     {AimRange 300} ; AI 最长射击距离 m
     {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 619} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {100 88} {500 59} {1000 0}} ; 穿深表
-    {MinimumDamageModifier 135} ; 伤害
+    {MinimumDamageModifier 135} ; 弹种对装甲的击穿伤害
+    {HealthDamage 1350} ; 弹种对人员的击穿伤害
+    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.33} {500 2.43} {1000 8.51}} ; 散布
       {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
@@ -113,31 +145,34 @@
     }
     {OvermatchCalibre
       {0  1.0000 0.0000}
-      {20 1.1590 -0.120}
-      {30 1.3740 -0.222}
-      {40 1.5960 -0.254}
-      {45 1.9100 -0.200}
-      {50 2.4850 0.1110}
-      {55 3.1720 0.3180}
-      {60 3.8750 0.3760}
-      {65 9.7500 1.2500}
-      {70 9.9600 1.1100}
-      {75 20.300 1.2100}
-      {80 49.000 1.2000}
-      {85 232.50 1.2150}
-      {90 99.000 0.0000}
+    {20 1.1590 -0.120}
+    {30 1.3740 -0.222}
+    {40 1.5960 -0.254}
+    {45 1.9100 -0.200}
+    {50 2.4850 0.1110}
+    {55 3.1720 0.3180}
+    {60 3.8750 0.3760}
+    {65 9.7500 1.2500}
+    {70 9.9600 1.1100}
+    {75 20.300 1.2100}
+    {80 49.000 1.2000}
+    {85 232.50 1.2150}
+    {90 99.000 0.0000}
     }
     ; 无防空炮配置
   }
-
+  
   {Parameters "he"
+    {CursorReloading "gun_he"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
     {AimRange 300} ; AI 最长射击距离 m
     {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 603} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     ; 无穿深表配置
-    ; 无穿透伤害配置
+    {MinimumDamageModifier 200} ; 弹种对装甲的击穿伤害
+    {HealthDamage 2000} ; 弹种对人员的击穿伤害
+    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 1.5} {500 4.67} {1000 18.68}} ; 散布
       {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
@@ -148,15 +183,18 @@
     ; 无穿深修正表配置
     ; 无防空炮配置
   }
-
+  
   {Parameters "sm"
+    {CursorReloading "gun_sm"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
     {AimRange 350} ; AI 最长射击距离 m
     {MaxRange 350} ; 玩家最长射击距离 m
     {Speed 603} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     ; 无穿深表配置
-    ; 无穿透伤害配置
+    ; 无装甲伤害配置
+    ; 无人员伤害配置
+    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 1.5} {500 4.67} {1000 18.68}} ; 散布
       {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间

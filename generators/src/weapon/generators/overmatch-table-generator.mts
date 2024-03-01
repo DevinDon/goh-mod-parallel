@@ -18,8 +18,8 @@ import { usa90mmOvermatchTables } from './overmatch-tables/usa-90mm.mjs';
 export const generateOvermatchTable = (name: string) => {
   const table = overmatchTables[name];
   if (!table) {
-    logger.warn(`未找到 ${name} 修正表`);
-    return null;
+    logger.warn(`未匹配到修正表配置 ${name}`);
+    return `; 未匹配到修正表配置 ${name}`;
   }
   const lines = table.lines
     .map(
@@ -29,13 +29,11 @@ export const generateOvermatchTable = (name: string) => {
       },
     )
     .map(
-      ({ range, values }) => `  {${range.toString().padEnd(2)} ${values.map(value => value.toFixed(4).slice(0, 6)).join(' ')}}`,
+      ({ range, values }) => `{${range.toString().padEnd(2)} ${values.map(value => value.toFixed(4).slice(0, 6)).join(' ')}}`,
     );
-  return [
-    `{${table.type}`,
-    ...lines,
-    '}',
-  ].join('\n    ');
+  return `{${table.type}
+  ${lines.join('\n')}
+}`;
 };
 
 /** 倾斜入射修正表 */

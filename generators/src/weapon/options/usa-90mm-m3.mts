@@ -27,8 +27,9 @@ const options: WeaponOptions = {
 
   automatic: false,
 
-  bullets: {
-    ap: {
+  bullets: [
+    {
+      name: 'ap',
       minRange: 0,
       aimRange: 325,
       maxRange: 325,
@@ -38,7 +39,8 @@ const options: WeaponOptions = {
         nearest: 188,
         farthest: 96,
       },
-      damage: 220,
+      damageToArmor: 220,
+      damageToHuman: 2200,
       spreading: {
         radiusTable: {
           nearest: 0.37,
@@ -52,7 +54,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-90mm-ap',
     },
-    apbc: {
+    {
+      name: 'apbc',
       minRange: 0,
       aimRange: 325,
       maxRange: 325,
@@ -62,7 +65,8 @@ const options: WeaponOptions = {
         nearest: 164,
         farthest: 140,
       },
-      damage: 220,
+      damageToArmor: 220,
+      damageToHuman: 2200,
       spreading: {
         radiusTable: {
           nearest: 0.33,
@@ -76,7 +80,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-90mm-apbc',
     },
-    apcbche: {
+    {
+      name: 'apcbche',
       minRange: 0,
       aimRange: 325,
       maxRange: 325,
@@ -86,7 +91,8 @@ const options: WeaponOptions = {
         nearest: 169,
         farthest: 127,
       },
-      damage: 290,
+      damageToArmor: 290,
+      damageToHuman: 2900,
       spreading: {
         radiusTable: {
           nearest: 0.39,
@@ -100,7 +106,8 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-90mm-apcbc',
     },
-    hvap: {
+    {
+      name: 'hvap',
       minRange: 0,
       aimRange: 325,
       maxRange: 325,
@@ -110,7 +117,8 @@ const options: WeaponOptions = {
         nearest: 306,
         farthest: 193,
       },
-      damage: 185,
+      damageToArmor: 185,
+      damageToHuman: 1850,
       spreading: {
         radiusTable: {
           nearest: 0.375,
@@ -124,12 +132,15 @@ const options: WeaponOptions = {
       },
       overmatch: 'usa-90mm-hvap',
     },
-    he: {
+    {
+      name: 'he',
       minRange: 0,
       aimRange: 325,
       maxRange: 325,
       speed: 823,
       gravity: 5,
+      damageToArmor: 400,
+      damageToHuman: 4000,
       spreading: {
         radiusTable: {
           nearest: 1.32,
@@ -142,7 +153,7 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
     },
-  },
+  ],
 
 };
 

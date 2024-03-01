@@ -1,5 +1,34 @@
+/** 炮弹类型对应的装填图标 */
+export const BulletReloadingCursors = {
+  ap: 'gun_ap',
+  aphe: 'gun_aphe',
+  apc: 'gun_apc',
+  apche: 'gun_apc',
+  apbc: 'gun_apbc',
+  apbche: 'gun_apbc',
+  apcbc: 'gun_apcbc',
+  apcbche: 'gun_apcbc',
+  apds: 'gun_apds',
+  apcr: 'gun_apcr',
+  hvap: 'gun_hvap',
+  heat: 'gun_heat',
+  he: 'gun_he',
+  sm: 'gun_sm',
+  wp: 'gun_wp',
+  ic: 'gun_ic',
+  api: 'gun_api',
+} as const;
+
+/** 炮弹类型 */
+export type BulletType = keyof typeof BulletReloadingCursors;
+
+/** 判断是否为支持的弹种类型 */
+export const isSupportedBulletType = (type: string): type is BulletType => Object.keys(BulletReloadingCursors).includes(type);
+
 /** 弹种配置 */
 export type WeaponBulletOptions = {
+  /** 弹种名称 */
+  name: BulletType;
   /** 最短射击距离 m */
   minRange: number;
   /** AI 最长射击距离 m */
@@ -17,8 +46,10 @@ export type WeaponBulletOptions = {
     /** 最远距离穿深 500m */
     farthest: number;
   };
-  /** 弹种伤害，可选 */
-  damage?: number;
+  /** 弹种对装甲的击穿伤害，可选 */
+  damageToArmor?: number;
+  /** 弹种对人员的击穿伤害，可选 */
+  damageToHuman?: number;
   /** 弹种散布及精度 */
   spreading: {
     /** 散布 */
@@ -65,8 +96,8 @@ export type WeaponOptions = {
   fireSoundClose: string;
   /** 装弹音效 */
   reloadSound: string;
-  /** 鼠标指针 */
-  cursor: 'ironsights/aa'
+  /** 即时战略模式下的瞄准图标，默认 `ironsights/tank` */
+  cursor?: 'ironsights/aa'
   | 'ironsights/bazooka'
   | 'ironsights/binoculars'
   | 'ironsights/mortar'
@@ -76,6 +107,12 @@ export type WeaponOptions = {
   | 'ironsights/smg'
   | 'ironsights/tank'
   | 'ironsights/tank2';
+  /** 即时战略模式下的装填图标，默认 `carbine_reload` */
+  cursorReloading?: string;
+  /** 直接操控模式下的第三人称瞄准图标，默认 `crosshair_tank` */
+  crosshair?: string;
+  /** 直接操控模式下的第三人称装填图标，默认 `crosshair_tank_reload` */
+  crosshairReloading?: string;
 
   /** 装填炮弹类型 */
   ammo: string;
@@ -130,6 +167,6 @@ export type WeaponOptions = {
   };
 
   /** 弹种配置 */
-  bullets: Record<string, WeaponBulletOptions>;
+  bullets: WeaponBulletOptions[];
 
 };
