@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-105mm-lefh18-l28',
   description: '德国 10.5cm leFH 18 L/28 榴弹炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_75_105',

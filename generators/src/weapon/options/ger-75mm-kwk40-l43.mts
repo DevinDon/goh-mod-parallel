@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-75mm-kwk40-l43',
   description: '德国 7.5cm KwK 40 L/43 坦克炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

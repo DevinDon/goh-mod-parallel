@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-150mm-sig33-l11',
   description: '德国 15cm sIG 33 L/11 步兵炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_122_152_short',
   fireSoundClose: 'gun/gun_122_152_short',

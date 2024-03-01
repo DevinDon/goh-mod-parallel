@@ -1,6 +1,6 @@
 ; usa-37mm-m6
 ; 美国 37mm M6 坦克炮
-{from "pattern gun"
+{from "pattern standard-gun"
 
   (include "/properties/standard/gun/define.ext")
 
@@ -18,6 +18,7 @@
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
 
+  {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance 1} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
   {SpreadTolerance 0.5} ; 瞄准到一定精度就可以开火
@@ -61,7 +62,6 @@
     {ProjectileDamageTable {100 89} {500 27} {1000 0}} ; 穿深表
     {MinimumDamageModifier 50} ; 弹种对装甲的击穿伤害
     {HealthDamage 500} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.37} {500 2.73} {1000 9.55}} ; 散布
       {BurstRecoveryTime 0.37} ; 开火后恢复到正常精度的时间
@@ -97,7 +97,6 @@
     {ProjectileDamageTable {100 78} {500 43} {1000 0}} ; 穿深表
     {MinimumDamageModifier 50} ; 弹种对装甲的击穿伤害
     {HealthDamage 500} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.33} {500 2.43} {1000 8.51}} ; 散布
       {BurstRecoveryTime 0.37} ; 开火后恢复到正常精度的时间
@@ -134,7 +133,6 @@
     ; 无穿深表配置
     {MinimumDamageModifier 200} ; 弹种对装甲的击穿伤害
     {HealthDamage 2000} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.5} {500 3.2} {1000 12.80}} ; 散布
       {BurstRecoveryTime 0.37} ; 开火后恢复到正常精度的时间

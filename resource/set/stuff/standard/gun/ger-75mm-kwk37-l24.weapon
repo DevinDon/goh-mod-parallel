@@ -1,6 +1,6 @@
 ; ger-75mm-kwk37-l24
 ; 德国 7.5cm KwK 37 L/24 坦克炮，适用于三号 N 型
-{from "pattern gun"
+{from "pattern standard-gun"
 
   (include "/properties/standard/gun/define.ext")
 
@@ -18,6 +18,7 @@
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
 
+  {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance 1} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
   {SpreadTolerance 0.5} ; 瞄准到一定精度就可以开火
@@ -61,7 +62,6 @@
     {ProjectileDamageTable {100 50} {500 38} {1000 0}} ; 穿深表
     {MinimumDamageModifier 150} ; 弹种对装甲的击穿伤害
     {HealthDamage 1500} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.4} {500 2.2} {1000 7.70}} ; 散布
       {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
@@ -98,7 +98,6 @@
     {ProjectileDamageTable {100 115} {500 115} {1000 115}} ; 穿深表
     {MinimumDamageModifier 130} ; 弹种对装甲的击穿伤害
     {HealthDamage 1300} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.5} {500 2.7} {1000 10.80}} ; 散布
       {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
@@ -123,7 +122,6 @@
     ; 无穿深表配置
     {MinimumDamageModifier 300} ; 弹种对装甲的击穿伤害
     {HealthDamage 3000} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.5} {500 2.7} {1000 10.80}} ; 散布
       {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间
@@ -145,7 +143,6 @@
     ; 无穿深表配置
     ; 无装甲伤害配置
     ; 无人员伤害配置
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.5} {500 2.7} {1000 10.80}} ; 散布
       {BurstRecoveryTime 0.75} ; 开火后恢复到正常精度的时间

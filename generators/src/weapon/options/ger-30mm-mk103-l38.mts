@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-30mm-mk103-l38',
   description: '德国 3cm MK 103 L/38 防空炮，适用于蟋蟀 M 型',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_auto_tank',
   fireSoundClose: 'gun/gun_auto_tank',

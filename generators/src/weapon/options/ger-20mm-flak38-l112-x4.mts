@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-20mm-flak38-l112-x4',
   description: '德国 2cm FlaK 30 L/112 四联防空炮，适用于旋风自行防空炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_auto',
   fireSoundClose: 'gun/gun_auto',
@@ -112,7 +112,6 @@ const options: WeaponOptions = {
         spreadPower: 1.00,
         spreadXYRatio: 1.25,
       },
-      overmatch: 'ger-20mm-he',
     },
   ],
 

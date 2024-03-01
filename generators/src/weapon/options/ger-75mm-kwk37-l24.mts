@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-75mm-kwk37-l24',
   description: '德国 7.5cm KwK 37 L/24 坦克炮，适用于三号 N 型',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_75_105_short',
   fireSoundClose: 'gun/gun_interior/size3',

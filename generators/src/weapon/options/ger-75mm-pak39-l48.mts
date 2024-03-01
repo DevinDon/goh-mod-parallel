@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-75mm-pak39-l48',
   description: '德国 7.5cm PaK 39 L/48 反坦克炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

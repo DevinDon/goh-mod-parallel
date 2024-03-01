@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'usa-75mm-m6',
   description: '美国 75mm M6 坦克炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

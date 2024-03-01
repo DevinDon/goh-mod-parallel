@@ -1,6 +1,6 @@
 ; usa-90mm-m3
 ; 美国 90mm M3 坦克炮
-{from "pattern gun"
+{from "pattern standard-gun"
 
   (include "/properties/standard/gun/define.ext")
 
@@ -18,6 +18,7 @@
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
 
+  {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance 1} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
   {SpreadTolerance 0.5} ; 瞄准到一定精度就可以开火
@@ -61,7 +62,6 @@
     {ProjectileDamageTable {100 188} {500 96} {1000 0}} ; 穿深表
     {MinimumDamageModifier 220} ; 弹种对装甲的击穿伤害
     {HealthDamage 2200} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.37} {500 2.73} {1000 9.55}} ; 散布
       {BurstRecoveryTime 0.9} ; 开火后恢复到正常精度的时间
@@ -97,7 +97,6 @@
     {ProjectileDamageTable {100 164} {500 140} {1000 0}} ; 穿深表
     {MinimumDamageModifier 220} ; 弹种对装甲的击穿伤害
     {HealthDamage 2200} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.33} {500 2.43} {1000 8.51}} ; 散布
       {BurstRecoveryTime 0.9} ; 开火后恢复到正常精度的时间
@@ -131,7 +130,6 @@
     {ProjectileDamageTable {100 169} {500 127} {1000 0}} ; 穿深表
     {MinimumDamageModifier 290} ; 弹种对装甲的击穿伤害
     {HealthDamage 2900} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.39} {500 2.59} {1000 9.06}} ; 散布
       {BurstRecoveryTime 0.9} ; 开火后恢复到正常精度的时间
@@ -169,7 +167,6 @@
     {ProjectileDamageTable {100 306} {500 193} {1000 0}} ; 穿深表
     {MinimumDamageModifier 185} ; 弹种对装甲的击穿伤害
     {HealthDamage 1850} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.375} {500 2.88} {1000 10.08}} ; 散布
       {BurstRecoveryTime 0.9} ; 开火后恢复到正常精度的时间
@@ -205,7 +202,6 @@
     ; 无穿深表配置
     {MinimumDamageModifier 400} ; 弹种对装甲的击穿伤害
     {HealthDamage 4000} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 1.32} {500 4.67} {1000 18.68}} ; 散布
       {BurstRecoveryTime 0.9} ; 开火后恢复到正常精度的时间

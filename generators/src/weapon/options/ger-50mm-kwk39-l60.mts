@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-50mm-kwk39-l60',
   description: '德国 5cm KwK 39 L/60 坦克炮，适用于三号 M 型',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_37_57',
   fireSoundClose: 'gun/gun_interior/size2',

@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-105mm-stuh42-l28',
   description: '德国 10.5cm StuH 42 L/28 突击榴弹炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

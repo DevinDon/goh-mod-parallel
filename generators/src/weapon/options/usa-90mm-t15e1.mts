@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'usa-90mm-t15e1',
   description: '美国 90mm T15E1 坦克炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

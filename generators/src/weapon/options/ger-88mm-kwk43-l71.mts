@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-88mm-kwk43-l71',
   description: '德国 8.8cm KwK 43 L/71 坦克炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_88',
   fireSoundClose: 'gun/gun_interior/size3',

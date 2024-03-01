@@ -44,7 +44,6 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
   ${projectileDamageTable}
   ${damageToArmor}
   ${damageToHuman}
-  {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
   {Spreading
     {RadiusTable {0 0} {100 ${bullet.spreading.radiusTable.nearest}} {500 ${bullet.spreading.radiusTable.farthest}} {1000 ${(bullet.spreading.radiusTable.farthest * (bullet.spreading.radiusTable.factor ?? 3.5)).toFixed(2)}}} ; 散布
     {BurstRecoveryTime ${bullet.spreading.burstRecoveryTime ?? 1}} ; 开火后恢复到正常精度的时间

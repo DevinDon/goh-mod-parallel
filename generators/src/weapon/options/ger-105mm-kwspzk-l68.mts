@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-105mm-kwspzk-l68',
   description: '德国 10.5cm KwsPz.K L/68 实验性坦克炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

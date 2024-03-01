@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-20mm-kwk38-l55',
   description: '德国 2cm KwK 38 L/55 坦克炮，适用于 Sd.kfz 234/1',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_auto_tank',
   fireSoundClose: 'gun/gun_interior/size1',

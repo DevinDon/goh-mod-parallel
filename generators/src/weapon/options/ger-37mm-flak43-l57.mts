@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-37mm-flak43-l57',
   description: '德国 3.7cm FlaK 43 L/57 防空炮，适用于东风自行防空炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_auto',
   fireSoundClose: 'gun/gun_auto',

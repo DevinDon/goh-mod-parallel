@@ -1,6 +1,6 @@
 ; ger-30mm-mk103-l38
 ; 德国 3cm MK 103 L/38 防空炮，适用于蟋蟀 M 型
-{from "pattern gun"
+{from "pattern standard-gun"
 
   (include "/properties/standard/gun/define.ext")
 
@@ -18,6 +18,7 @@
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
 
+  {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance 8} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
   {SpreadTolerance 0.1} ; 瞄准到一定精度就可以开火
@@ -65,7 +66,6 @@
     {ProjectileDamageTable {100 111} {500 12} {1000 0}} ; 穿深表
     {MinimumDamageModifier 30} ; 弹种对装甲的击穿伤害
     {HealthDamage 300} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.4} {500 2.1} {1000 6.30}} ; 散布
       {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
@@ -101,7 +101,6 @@
     ; 无穿深表配置
     {MinimumDamageModifier 75} ; 弹种对装甲的击穿伤害
     {HealthDamage 750} ; 弹种对人员的击穿伤害
-    {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
     {Spreading
       {RadiusTable {0 0} {100 0.4} {500 3} {1000 12.00}} ; 散布
       {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间

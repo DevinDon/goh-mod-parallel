@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-88mm-kwk36-l56-ace',
   description: '德国 8.8cm KwK 36 L/56 王牌坦克炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_88',
   fireSoundClose: 'gun/gun_interior/size3',

@@ -14,4 +14,6 @@
 
   {ToplayerVignette ""}
 
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
+
 }

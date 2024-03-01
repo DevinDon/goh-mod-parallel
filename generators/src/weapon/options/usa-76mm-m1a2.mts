@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'usa-76mm-m1a2',
   description: '美国 76mm M1A2 坦克炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

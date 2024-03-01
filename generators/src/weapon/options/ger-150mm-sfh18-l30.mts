@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   name: 'ger-150mm-sfh18-l30',
   description: '德国 15cm sFH 18 L/30 榴弹炮',
 
-  from: 'pattern gun',
+  from: 'pattern standard-gun',
 
   fireSound: 'gun/gun_122_152',
   fireSoundClose: 'gun/gun_122_152',
