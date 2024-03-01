@@ -16,167 +16,327 @@ msgctxt "desc/entity/105mm_lefh18"
 msgid   "10.5cm leFH 18 L/28"
 msgstr  "10.5cm leFH 18 L/28 牵引式榴弹炮"
 
+msgctxt "info/special/105mm_lefh18"
+msgid   "<c(c3baae)>Towed Howitzer</c>"
+msgstr  "<c(c3baae)>牵引式榴弹炮</c>"
+
 # 非装甲车辆
 msgctxt "desc/entity/bmw_r71"
 msgid   "BMW R71 mit MG42"
 msgstr  "宝马 R71 加装 MG42"
 
+msgctxt "info/special/bmw_r71"
+msgid   "<c(c3baae)>Motorcycle</c>"
+msgstr  "<c(c3baae)>摩托车</c>"
+
 msgctxt "desc/entity/blitz3_6"
 msgid   "Opel Blitz Transportation"
 msgstr  "欧宝 闪电 运输"
+
+msgctxt "info/special/blitz3_6"
+msgid   "<c(c3baae)>Troop Truck</c>"
+msgstr  "<c(c3baae)>运兵卡车</c>"
 
 msgctxt "desc/entity/blitz3_6_art_ammo"
 msgid   "Opel Blitz Ammo Supply"
 msgstr  "欧宝 闪电 弹药补给"
 
+msgctxt "info/special/blitz3_6_art_ammo"
+msgid   "<c(c3baae)>Supply Truck</c>"
+msgstr  "<c(c3baae)>补给卡车</c>"
+
 msgctxt "desc/entity/blitz3_6_engineering"
 msgid   "Opel Blitz Engineer Supply"
 msgstr  "欧宝 闪电 工程补给"
+
+msgctxt "info/special/blitz3_6_engineering"
+msgid   "<c(c3baae)>Supply Truck</c>"
+msgstr  "<c(c3baae)>补给卡车</c>"
 
 msgctxt "desc/entity/blitz3_6_fuel"
 msgid   "Opel Blitz Fuel Supply"
 msgstr  "欧宝 闪电 燃油补给"
 
+msgctxt "info/special/blitz3_6_fuel"
+msgid   "<c(c3baae)>Supply Truck</c>"
+msgstr  "<c(c3baae)>补给卡车</c>"
+
 msgctxt "desc/entity/blitz3_6_flak30"
 msgid   "Opel Blitz mit 2cm FlaK 30"
 msgstr  "欧宝 闪电 加装 2cm FlaK 30"
+
+msgctxt "info/special/blitz3_6_flak30"
+msgid   "<c(c3baae)>Anti-Air Truck</c>"
+msgstr  "<c(c3baae)>防空卡车</c>"
 
 # 步兵战车
 msgctxt "desc/entity/sdkfz231"
 msgid   "Sd.Kfz 231"
 msgstr  "Sd.Kfz 231 装甲车"
 
+msgctxt "info/special/sdkfz231"
+msgid   "<c(c3baae)>Armored Vehicle</c>"
+msgstr  "<c(c3baae)>装甲车</c>"
+
 msgctxt "desc/entity/sdkfz234_1"
 msgid   "Sd.Kfz 234/1"
 msgstr  "Sd.Kfz 234/1 侦察装甲车"
+
+msgctxt "info/special/sdkfz234_1"
+msgid   "<c(c3baae)>Armored Vehicle</c>"
+msgstr  "<c(c3baae)>装甲车</c>"
 
 msgctxt "desc/entity/sdkfz234_2"
 msgid   "Sd.Kfz 234/2"
 msgstr  "Sd.Kfz 234/2 美洲豹"
 
+msgctxt "info/special/sdkfz234_2"
+msgid   "<c(c3baae)>Armored Vehicle</c>"
+msgstr  "<c(c3baae)>装甲车</c>"
+
 msgctxt "desc/entity/sdkfz234_3"
 msgid   "Sd.Kfz 234/3"
 msgstr  "Sd.Kfz 234/3 支援装甲车"
 
+msgctxt "info/special/sdkfz234_3"
+msgid   "<c(c3baae)>Armored Vehicle</c>"
+msgstr  "<c(c3baae)>装甲车</c>"
+
 msgctxt "desc/entity/sdkfz234_4"
 msgid   "Sd.Kfz 234/4"
 msgstr  "Sd.Kfz 234/4 反坦克装甲车"
+
+msgctxt "info/special/sdkfz234_4"
+msgid   "<c(c3baae)>Armored Vehicle</c>"
+msgstr  "<c(c3baae)>装甲车</c>"
 
 # 轻型坦克
 msgctxt "desc/entity/panzer2l"
 msgid   "Pz.Kpfw II Ausf.L"
 msgstr  "二号 L 型 \"山猫\""
 
+msgctxt "info/special/panzer2l"
+msgid   "<c(c3baae)>Light Tank</c>"
+msgstr  "<c(c3baae)>轻型坦克</c>"
+
 # 中型坦克
 msgctxt "desc/entity/panzer3m"
 msgid   "Pz.Kpfw III Ausf.M"
 msgstr  "三号 M 型"
 
+msgctxt "info/special/panzer3m"
+msgid   "<c(c3baae)>Medium Tank</c>"
+msgstr  "<c(c3baae)>中型坦克</c>"
+
 msgctxt "desc/entity/panzer3n"
 msgid   "Pz.Kpfw III Ausf.N"
 msgstr  "三号 N 型"
+
+msgctxt "info/special/panzer3n"
+msgid   "<c(c3baae)>Medium Tank</c>"
+msgstr  "<c(c3baae)>中型坦克</c>"
 
 msgctxt "desc/entity/panzer4g"
 msgid   "Pz.Kpfw IV Ausf.G"
 msgstr  "四号 G 型"
 
+msgctxt "info/special/panzer4g"
+msgid   "<c(c3baae)>Medium Tank</c>"
+msgstr  "<c(c3baae)>中型坦克</c>"
+
 msgctxt "desc/entity/panzer4h"
 msgid   "Pz.Kpfw IV Ausf.H"
 msgstr  "四号 H 型"
+
+msgctxt "info/special/panzer4h"
+msgid   "<c(c3baae)>Medium Tank</c>"
+msgstr  "<c(c3baae)>中型坦克</c>"
 
 msgctxt "desc/entity/panzer5a"
 msgid   "Pz.Kpfw Panther Ausf.A"
 msgstr  "五号 A 型 \"黑豹\""
 
+msgctxt "info/special/panzer5a"
+msgid   "<c(c3baae)>Medium Tank</c>"
+msgstr  "<c(c3baae)>中型坦克</c>"
+
 msgctxt "desc/entity/panzer5a_armor"
 msgid   "Pz.Kpfw Panther Ausf.A Armored"
 msgstr  "五号 A 型 \"黑豹\" 附加装甲"
+
+msgctxt "info/special/panzer5a_armored"
+msgid   "<c(c3baae)>Medium Tank</c>"
+msgstr  "<c(c3baae)>中型坦克</c>"
 
 msgctxt "desc/entity/panzer5d"
 msgid   "Pz.Kpfw Panther Ausf.D"
 msgstr  "五号 D 型 \"黑豹\""
 
+msgctxt "info/special/panzer5d"
+msgid   "<c(c3baae)>Medium Tank</c>"
+msgstr  "<c(c3baae)>中型坦克</c>"
+
 msgctxt "desc/entity/panzer5g"
 msgid   "Pz.Kpfw Panther Ausf.G"
 msgstr  "五号 G 型 \"黑豹\""
+
+msgctxt "info/special/panzer5g"
+msgid   "<c(c3baae)>Medium Tank</c>"
+msgstr  "<c(c3baae)>中型坦克</c>"
 
 # 重型坦克
 msgctxt "desc/entity/tiger1e"
 msgid   "Pz.Kpfw VI 'Tiger' Ausf.E"
 msgstr  "六号 E 型 \"虎式\""
 
+msgctxt "info/special/tiger1e"
+msgid   "<c(c3baae)>Heavy Tank</c>"
+msgstr  "<c(c3baae)>重型坦克</c>"
+
 msgctxt "desc/entity/tiger1h"
 msgid   "Pz.Kpfw VI 'Tiger' Ausf.H"
 msgstr  "六号 H 型 \"虎式\""
+
+msgctxt "info/special/tiger1h"
+msgid   "<c(c3baae)>Heavy Tank</c>"
+msgstr  "<c(c3baae)>重型坦克</c>"
 
 msgctxt "desc/entity/tiger1hunt"
 msgid   "Pz.Kpfw VI 'Ace Tiger' Ausf.E"
 msgstr  "六号 E 型 \"王牌虎式\""
 
+msgctxt "info/special/tiger1hunt"
+msgid   "<c(c3baae)>Heavy Tank</c>"
+msgstr  "<c(c3baae)>重型坦克</c>"
+
 msgctxt "desc/entity/tiger2h"
 msgid   "Pz.Kpfw VI Ausf.B 'Königstiger'"
 msgstr  "六号 II H 型 \"虎王\""
 
+msgctxt "info/special/tiger2h"
+msgid   "<c(c3baae)>Heavy Tank</c>"
+msgstr  "<c(c3baae)>重型坦克</c>"
+
 msgctxt "desc/entity/tiger2p"
 msgid   "Pz.Kpfw VI/B 'Königstiger' Early Production"
 msgstr  "六号 II B 早期型 \"虎王\""
+
+msgctxt "info/special/tiger2p"
+msgid   "<c(c3baae)>Heavy Tank</c>"
+msgstr  "<c(c3baae)>重型坦克</c>"
 
 # 坦克歼击车
 msgctxt "desc/entity/hetzer"
 msgid   "Jagdpanzer 38(t)"
 msgstr  "\"追猎者\" 38(t) 坦克歼击车"
 
+msgctxt "info/special/hetzer"
+msgid   "<c(c3baae)>Tank Destroyer</c>"
+msgstr  "<c(c3baae)>坦克歼击车</c>"
+
 msgctxt "desc/entity/marder3m"
 msgid   "Marder III Ausf.M"
 msgstr  "\"黄鼠狼\" III 号 M 型"
 
+msgctxt "info/special/marder3m"
+msgid   "<c(c3baae)>Tank Destroyer</c>"
+msgstr  "<c(c3baae)>坦克歼击车</c>"
+
+msgctxt "desc/entity/stug3g_late"
+msgid   "StuG III Ausf.G"
+msgstr  "三号 G 型突击炮"
+
+msgctxt "info/special/stug3g_late"
+msgid   "<c(c3baae)>Tank Destroyer</c>"
+msgstr  "<c(c3baae)>坦克歼击车</c>"
+
 msgctxt "desc/entity/jagdtiger"
 msgid   "Jagdtiger Sd. Kfz. 186"
 msgstr  "\"猎虎\" 重型坦克歼击车"
+
+msgctxt "info/special/jagdtiger"
+msgid   "<c(c3baae)>Tank Destroyer</c>"
+msgstr  "<c(c3baae)>坦克歼击车</c>"
 
 # 自行火炮 / 自行榴弹炮
 msgctxt "desc/entity/wespe"
 msgid   "Wespe mit leFH 18 L/24"
 msgstr  "\"黃蜂\" 加装 leFH 18 L/24"
 
+msgctxt "info/special/wespe"
+msgid   "<c(c3baae)>Self-propelled Gun</c>"
+msgstr  "<c(c3baae)>自行火炮</c>"
+
 msgctxt "desc/entity/hummel"
 msgid   "Hummel mit 15cm sFH 18 L/30"
 msgstr  "\"野蜂\" 加装 15cm sFH 18 L/30"
+
+msgctxt "info/special/hummel"
+msgid   "<c(c3baae)>Self-propelled Gun</c>"
+msgstr  "<c(c3baae)>自行火炮</c>"
 
 msgctxt "desc/entity/grille_k"
 msgid "Grille Ausf.K mit 15cm sIG 33"
 msgstr "\"蟋蟀\" K 型 加装 15cm sIG 33"
 
+msgctxt "info/special/grille_k"
+msgid   "<c(c3baae)>Self-propelled Gun</c>"
+msgstr  "<c(c3baae)>自行火炮</c>"
+
 msgctxt "desc/entity/600mm_thor"
 msgid   "60cm Gerät Nr. III"
 msgstr  "60cm 卡尔臼炮 Nr. III"
 
-# 突击炮
-msgctxt "desc/entity/stug3g_late"
-msgid   "StuG III Ausf.G"
-msgstr  "三号 G 型突击炮"
+msgctxt "info/special/600mm_thor"
+msgid   "<c(c3baae)>Self-propelled Gun</c>"
+msgstr  "<c(c3baae)>自行火炮</c>"
 
+# 突击炮
 msgctxt "desc/entity/stuh42"
 msgid   "StuH 42 Ausf.G"
 msgstr  "42 式 G 型突击榴弹炮"
+
+msgctxt "info/special/stuh42"
+msgid   "<c(c3baae)>Self-propelled Assault Gun</c>"
+msgstr  "<c(c3baae)>自行突击炮</c>"
 
 msgctxt "desc/entity/sturmpanzer4"
 msgid   "Sturmpanzer IV"
 msgstr  "\"灰熊\" 四号突击坦克"
 
+msgctxt "info/special/sturmpanzer4"
+msgid   "<c(c3baae)>Self-propelled Assault Gun</c>"
+msgstr  "<c(c3baae)>自行突击炮</c>"
+
 msgctxt "desc/entity/sturmtiger"
 msgid   "Sturmtiger"
 msgstr  "\"突击虎\" 虎式突击坦克"
+
+msgctxt "info/special/sturmtiger"
+msgid   "<c(c3baae)>Self-propelled Assault Gun</c>"
+msgstr  "<c(c3baae)>自行突击炮</c>"
 
 # 自行防空炮
 msgctxt "desc/entity/grille_m"
 msgid   "Grille Ausf.M mit 3cm MK 103"
 msgstr  "\"蟋蟀\" M 型 加装 3cm MK 103"
 
+msgctxt "info/special/grille_m"
+msgid   "<c(c3baae)>Self-propelled Anti-Air Gun</c>"
+msgstr  "<c(c3baae)>自行防空炮</c>"
+
 msgctxt "desc/entity/ostwind"
 msgid   "FlaKPz.IV Ostwind"
 msgstr  "\"东风\" 四号自行防空炮"
 
+msgctxt "info/special/ostwind"
+msgid   "<c(c3baae)>Self-propelled Anti-Air Gun</c>"
+msgstr  "<c(c3baae)>自行防空炮</c>"
+
 msgctxt "desc/entity/wirbelwind"
 msgid   "FlakPz.IV Wirbelwind"
 msgstr  "\"旋风\" 四号自行防空炮"
+
+msgctxt "info/special/wirbelwind"
+msgid   "<c(c3baae)>Self-propelled Anti-Air Gun</c>"
+msgstr  "<c(c3baae)>自行防空炮</c>"
