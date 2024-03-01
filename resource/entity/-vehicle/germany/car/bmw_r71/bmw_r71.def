@@ -61,7 +61,7 @@
   }
 
   {Bone "mgun_rot1"
-    {limits -30 30}
+    {limits -60 60}
     {speed2 60}
   }
   {Bone "mgun_rot2"
