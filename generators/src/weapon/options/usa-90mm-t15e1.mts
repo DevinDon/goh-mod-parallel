@@ -2,7 +2,7 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/gun/usa-90mm-t15e1.weapon',
+  destination: 'resource/set/stuff/standard/gun/usa-90mm-t15e1.weapon',
 
   name: 'usa-90mm-t15e1',
   description: '美国 90mm T15E1 坦克炮',

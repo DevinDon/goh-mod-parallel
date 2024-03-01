@@ -1,8 +1,8 @@
-{weapon_bullet                    ;// Example / Default Settings
-
-  ;/*=========== Generic Settings Begin ===========*/
+; gun template
+{weapon_bullet
 
   {tag "weapon build_in gun bullet tank_gun"}
+
   {inventory
     {size 4 2}
     {weight 1000}
@@ -39,10 +39,6 @@
 
   {FiringTimeout 0.35 0.15}          ; delay between bursts
   {preloaded}
-
-  ;/*=========== Generic Settings End ===========*/
-
-  ;/*=========== Ammo Types Begin ===========*/
 
   {parameters "ap"
     {cursorReloading "gun_ap"}
@@ -126,5 +122,4 @@
     {90  6}
   }
 
-  ;/*=========== Ammo Types End ===========*/
 }

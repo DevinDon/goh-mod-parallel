@@ -2,7 +2,7 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/gun/ger-88mm-kwk43-l71.weapon',
+  destination: 'resource/set/stuff/standard/gun/ger-88mm-kwk43-l71.weapon',
 
   name: 'ger-88mm-kwk43-l71',
   description: '德国 8.8cm KwK 43 L/71 坦克炮',

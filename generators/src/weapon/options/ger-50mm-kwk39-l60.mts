@@ -2,7 +2,7 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/gun/ger-50mm-kwk39-l60.weapon',
+  destination: 'resource/set/stuff/standard/gun/ger-50mm-kwk39-l60.weapon',
 
   name: 'ger-50mm-kwk39-l60',
   description: '德国 5cm KwK 39 L/60 坦克炮，适用于三号 M 型',

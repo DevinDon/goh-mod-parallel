@@ -2,7 +2,7 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/gun/ger-20mm-kwk30-l55.weapon',
+  destination: 'resource/set/stuff/standard/gun/ger-20mm-kwk30-l55.weapon',
 
   name: 'ger-20mm-kwk30-l55',
   description: '德国 2cm KwK 30 L/55 坦克炮，适用于 Sd.kfz 231',

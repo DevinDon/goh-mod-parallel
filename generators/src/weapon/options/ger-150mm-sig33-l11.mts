@@ -2,7 +2,7 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/gun/ger-150mm-sig33-l11.weapon',
+  destination: 'resource/set/stuff/standard/gun/ger-150mm-sig33-l11.weapon',
 
   name: 'ger-150mm-sig33-l11',
   description: '德国 15cm sIG 33 L/11 步兵炮',

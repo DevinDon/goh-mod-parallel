@@ -2,7 +2,7 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/gun/ger-105mm-kwspzk-l68.weapon',
+  destination: 'resource/set/stuff/standard/gun/ger-105mm-kwspzk-l68.weapon',
 
   name: 'ger-105mm-kwspzk-l68',
   description: '德国 10.5cm KwsPz.K L/68 实验性坦克炮',

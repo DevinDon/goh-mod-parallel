@@ -2,7 +2,7 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/gun/ger-105mm-stuh42-l28.weapon',
+  destination: 'resource/set/stuff/standard/gun/ger-105mm-stuh42-l28.weapon',
 
   name: 'ger-105mm-stuh42-l28',
   description: '德国 10.5cm StuH 42 L/28 突击榴弹炮',

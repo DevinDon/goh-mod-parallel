@@ -2,7 +2,7 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/gun/ger-75mm-k51-l24.weapon',
+  destination: 'resource/set/stuff/standard/gun/ger-75mm-k51-l24.weapon',
 
   name: 'ger-75mm-k51-l24',
   description: '德国 7.5cm K 51 L/24 坦克炮，适用于 Sd.kfz 234/3',

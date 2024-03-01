@@ -2,7 +2,7 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/gun/ger-75mm-kwk42-l70.weapon',
+  destination: 'resource/set/stuff/standard/gun/ger-75mm-kwk42-l70.weapon',
 
   name: 'ger-75mm-kwk42-l70',
   description: '德国 7.5cm KwK 42 L/70 坦克炮',
