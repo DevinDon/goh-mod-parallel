@@ -34,7 +34,7 @@
   {Extender "inventory"
     {Weapon "mgun" {mask "mountable"}}
     {Box
-      {Size 12 9}
+      {Size 12 10}
       {Weight 1000}
       {Item "repair_kit" 10}
 
@@ -42,7 +42,7 @@
       {Item "weapon ger-mg42" filled {user "mgun"}}
 
       {Item "ammo ger-105l28 heat" 9}
-      {Item "ammo ger-105l28 he" 29}
+      {Item "ammo ger-105l28 he" 19}
     }
   }
 
