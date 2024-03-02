@@ -1,7 +1,6 @@
 {from "pattern he"
 
-  {tag "20to25 no_throw"}
-  {tag "shell auto size1"}
+  {tag "20to25 no_throw auto size1"}
 
   {inventory
     {weight 10}

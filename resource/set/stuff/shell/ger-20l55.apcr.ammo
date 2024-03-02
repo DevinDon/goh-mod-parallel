@@ -1,7 +1,6 @@
 {from "pattern apcr"
 
-  {tag "20to25 zenite"}
-  {tag "shell auto size1"}
+  {tag "20to25 zenite size1 auto"}
 
   {inventory
     {weight 10}

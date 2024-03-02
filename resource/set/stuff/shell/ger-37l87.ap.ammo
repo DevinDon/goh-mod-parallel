@@ -1,7 +1,6 @@
 {from "pattern ap"
 
-  {tag "37to40 zenite"}
-  {tag "shell auto size2"}
+  {tag "37to40 zenite size2 auto"}
 
   {inventory
     {weight 10}
