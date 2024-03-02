@@ -5,7 +5,7 @@
 
   {Extension "stuh42.mdl"}
   (include   "stuh42.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "td" "medium" "-turret" "mantlet" "vision_lev05" "muzzle_85mm_93mm_sides" "shield" "detect_spg"}
 
@@ -27,15 +27,6 @@
 
   {Extender "enumerator"
     {digit_folder "ger"}
-  }
-
-  {Sensor
-    {Visor "main"
-      {Bone "visor1"}
-    }
-    {Visor "around"
-      {Bone "visor"}
-    }
   }
 
   {Extender "shield" {on}}
