@@ -2,7 +2,7 @@
 
   {tag "shell size3 88to105 arty"}
 
-  {inventory {size 4 1}}
+  {inventory {size 10 2}}
   {entity "105mm_ger_he"}
   {mass 15.3}
 

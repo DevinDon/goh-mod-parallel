@@ -2,7 +2,7 @@
 
   {tag "shell size3 size3_heat_shell heat_medium"}
 
-  {inventory {size 4 1}}
+  {inventory {size 10 2}}
   {entity "105mm_ger_heat"}
   {mass 13.37}
 
