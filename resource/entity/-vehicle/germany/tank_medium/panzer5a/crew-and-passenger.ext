@@ -91,6 +91,22 @@
 }
 
 ; set crews
+; crew commander
+{Placer
+  {Place "commander"
+    {group "crew"}
+    {linkbone "gunner2"}
+    {turnoff {shadow} {sensor}}
+    {visor "standard-visor-commander"}
+    {sealable}
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "commander" {anm "left"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "commander" {anm "right"} {forward putoff} {reverse puton}}
+}
 ; crew driver
 {Placer
   {Place "driver"
@@ -125,9 +141,9 @@
   {door "emit2"}
   {link "emit2" "gunner" {anm "right"} {forward putoff} {reverse puton}}
 }
-; crew gunner3
+; crew radioer
 {Placer
-  {Place "gunner3"
+  {Place "radioer"
     {group "crew"}
     ; no bone
     {turnoff {shadow} {sensor}}
@@ -137,25 +153,9 @@
 }
 {Boarder
   {door "emit1"}
-  {link "emit1" "gunner3" {anm "left"} {forward putoff} {reverse puton}}
+  {link "emit1" "radioer" {anm "left"} {forward putoff} {reverse puton}}
   {door "emit2"}
-  {link "emit2" "gunner3" {anm "right"} {forward putoff} {reverse puton}}
-}
-; crew commander
-{Placer
-  {Place "commander"
-    {group "crew"}
-    {linkbone "gunner2"}
-    {turnoff {shadow} {sensor}}
-    {visor "standard-visor-commander"}
-    {sealable}
-  }
-}
-{Boarder
-  {door "emit1"}
-  {link "emit1" "commander" {anm "left"} {forward putoff} {reverse puton}}
-  {door "emit2"}
-  {link "emit2" "commander" {anm "right"} {forward putoff} {reverse puton}}
+  {link "emit2" "radioer" {anm "right"} {forward putoff} {reverse puton}}
 }
 ; crew charger
 {Placer

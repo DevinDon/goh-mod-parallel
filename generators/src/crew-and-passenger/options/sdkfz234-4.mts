@@ -41,6 +41,16 @@ const options: CrewAndPassengerOptions = {
 
   animations: [
     {
+      name: 'commander',
+      forward: {
+        begin: [ 'board_sd222_driver', 1 ],
+        end: [ 'seat_sdkfz234_commander', 1 ],
+      },
+      reverse: {
+        end: [ 'emit_sd222_driver', 1 ],
+      },
+    },
+    {
       name: 'driver',
       forward: {
         begin: [ 'board_sd222_driver', 1 ],
@@ -61,16 +71,6 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'commander',
-      forward: {
-        begin: [ 'board_sd222_driver', 1 ],
-        end: [ 'seat_sdkfz234_commander', 1 ],
-      },
-      reverse: {
-        end: [ 'emit_sd222_driver', 1 ],
-      },
-    },
-    {
       name: 'charger',
       forward: {
         begin: [ 'board_sd222_driver', 1 ],
@@ -83,6 +83,15 @@ const options: CrewAndPassengerOptions = {
   ],
 
   crews: [
+    {
+      name: 'commander',
+      animations: [
+        { door: 'emit2', animation: 'commander' },
+      ],
+      bone: 'commander',
+      visor: 'standard-visor-commander',
+      turnoff: [ 'shadow', 'sensor' ],
+    },
     {
       name: 'driver',
       animations: [
@@ -99,15 +108,6 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'gunner',
       visor: 'standard-visor-gunner',
-      turnoff: [ 'shadow', 'sensor' ],
-    },
-    {
-      name: 'commander',
-      animations: [
-        { door: 'emit2', animation: 'commander' },
-      ],
-      bone: 'commander',
-      visor: 'standard-visor-commander',
       turnoff: [ 'shadow', 'sensor' ],
     },
     {

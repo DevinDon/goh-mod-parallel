@@ -95,8 +95,8 @@
       {Type "hull"}
       {Weapon "weapon ger-mg42" filled}
       {Foresight "foresight4"}
-      {Gunner "gunner3"}
-      {Charger "gunner3"}
+      {Gunner "driver"}
+      {Charger "driver"}
       {Basic}
       {ai_in_manual}
       {AccuracyByMotion

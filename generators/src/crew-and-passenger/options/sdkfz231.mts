@@ -66,6 +66,15 @@ const options: CrewAndPassengerOptions = {
 
   crews: [
     {
+      name: 'commander',
+      animations: [
+        { door: 'emit1', animation: 'left' },
+        { door: 'emit2', animation: 'right' },
+      ],
+      visor: 'standard-visor-commander',
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+    },
+    {
       name: 'driver',
       animations: [
         { door: 'emit1', animation: 'left' },
@@ -81,15 +90,6 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-gunner',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
-    },
-    {
-      name: 'commander',
-      animations: [
-        { door: 'emit1', animation: 'left' },
-        { door: 'emit2', animation: 'right' },
-      ],
-      visor: 'standard-visor-commander',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {

@@ -36,49 +36,49 @@ const options: CrewAndPassengerOptions = {
 
   animations: [
     {
-      name: 'driver1',
+      name: 'driver01',
       forward: {
         end: [ 'cannon_pak40_pusher_left', 10 ],
       },
     },
     {
-      name: 'driver2',
+      name: 'driver02',
       forward: {
         end: [ 'cannon_pak40_pusher_right', 10 ],
       },
     },
     {
-      name: 'driver3',
+      name: 'driver03',
       forward: {
         end: [ 'mgun_browning_driver_l', 10 ],
       },
     },
     {
-      name: 'driver4',
+      name: 'driver04',
       forward: {
         end: [ 'mgun_browning_driver_r', 10 ],
       },
     },
     {
-      name: 'seat1',
+      name: 'seat01',
       forward: {
         end: [ 'pose_seat_cannon_left', 10 ],
       },
     },
     {
-      name: 'seat2',
+      name: 'seat02',
       forward: {
         end: [ 'pose_seat_cannon_right', 10 ],
       },
     },
     {
-      name: 'seat3',
+      name: 'seat03',
       forward: {
         end: [ 'pose_seat_cannon_right', 10 ],
       },
     },
     {
-      name: 'seat4',
+      name: 'seat04',
       forward: {
         end: [ 'pose_seat_cannon_left', 10 ],
       },
@@ -90,13 +90,13 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'charger',
+      name: 'charger01',
       forward: {
         end: [ 'pose_pdr25_charger', 10 ],
       },
     },
     {
-      name: 'charger2',
+      name: 'charger02',
       forward: {
         end: [ 'pose_squat_empty', 10 ],
       },
@@ -112,16 +112,6 @@ const options: CrewAndPassengerOptions = {
   crews: [
     // 射击模式
     {
-      name: 'gunner',
-      animations: [
-        { door: 'emit1', animation: 'gunner' },
-      ],
-      bone: 'gunner',
-      visor: 'standard-visor-gunner',
-      turnoff: [ 'shadow', 'sensor' ],
-      extra: [ '{openForCrush}' ],
-    },
-    {
       name: 'commander',
       animations: [
         { door: 'emit4', animation: 'commander' },
@@ -132,9 +122,19 @@ const options: CrewAndPassengerOptions = {
       extra: [ '{openForCrush}' ],
     },
     {
-      name: 'charger',
+      name: 'gunner',
       animations: [
-        { door: 'emit2', animation: 'charger' },
+        { door: 'emit1', animation: 'gunner' },
+      ],
+      bone: 'gunner',
+      visor: 'standard-visor-gunner',
+      turnoff: [ 'shadow', 'sensor' ],
+      extra: [ '{openForCrush}' ],
+    },
+    {
+      name: 'charger01',
+      animations: [
+        { door: 'emit2', animation: 'charger01' },
       ],
       bone: 'charger',
       visor: 'standard-visor-none',
@@ -142,9 +142,9 @@ const options: CrewAndPassengerOptions = {
       extra: [ '{openForCrush}' ],
     },
     {
-      name: 'charger2',
+      name: 'charger02',
       animations: [
-        { door: 'emit3', animation: 'charger2' },
+        { door: 'emit3', animation: 'charger02' },
       ],
       bone: 'charger2',
       visor: 'standard-visor-none',
@@ -153,36 +153,36 @@ const options: CrewAndPassengerOptions = {
     },
     // 移动模式
     {
-      name: 'driver1',
+      name: 'driver01',
       animations: [
-        { door: 'emit1', animation: 'driver1' },
+        { door: 'emit1', animation: 'driver01' },
       ],
       bone: 'driver1',
       visor: 'standard-visor-commander',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
-      name: 'driver2',
+      name: 'driver02',
       animations: [
-        { door: 'emit1', animation: 'driver2' },
+        { door: 'emit1', animation: 'driver02' },
       ],
       bone: 'driver2',
       visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
-      name: 'driver3',
+      name: 'driver03',
       animations: [
-        { door: 'emit1', animation: 'driver3' },
+        { door: 'emit1', animation: 'driver03' },
       ],
       bone: 'driver3',
       visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
-      name: 'driver4',
+      name: 'driver04',
       animations: [
-        { door: 'emit1', animation: 'driver4' },
+        { door: 'emit1', animation: 'driver04' },
       ],
       bone: 'driver4',
       visor: 'standard-visor-none',
@@ -190,36 +190,36 @@ const options: CrewAndPassengerOptions = {
     },
     // 牵引模式
     {
-      name: 'seat1',
+      name: 'seat01',
       animations: [
-        { door: 'emit1', animation: 'seat1' },
+        { door: 'emit1', animation: 'seat01' },
       ],
       bone: 'seat1',
       visor: 'standard-visor-commander',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
-      name: 'seat2',
+      name: 'seat02',
       animations: [
-        { door: 'emit1', animation: 'seat2' },
+        { door: 'emit1', animation: 'seat02' },
       ],
       bone: 'seat2',
       visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
-      name: 'seat3',
+      name: 'seat03',
       animations: [
-        { door: 'emit1', animation: 'seat3' },
+        { door: 'emit1', animation: 'seat03' },
       ],
       bone: 'seat3',
       visor: 'standard-visor-none',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
-      name: 'seat4',
+      name: 'seat04',
       animations: [
-        { door: 'emit1', animation: 'seat4' },
+        { door: 'emit1', animation: 'seat04' },
       ],
       bone: 'seat4',
       visor: 'standard-visor-none',
@@ -231,15 +231,15 @@ const options: CrewAndPassengerOptions = {
 
   extra: [
     `{Boarder
-  {link "seat1" "driver1"}
-  {link "seat2" "driver2"}
-  {link "seat3" "driver3"}
-  {link "seat4" "driver4"}
+  {link "seat01" "driver01"}
+  {link "seat02" "driver02"}
+  {link "seat03" "driver03"}
+  {link "seat04" "driver04"}
 
-  {link "driver1" "gunner"}
-  {link "driver2" "charger"}
-  {link "driver3" "charger2"}
-  {link "driver4" "commander"}
+  {link "driver01" "gunner"}
+  {link "driver02" "charger01"}
+  {link "driver03" "charger02"}
+  {link "driver04" "commander"}
 }`,
   ],
 

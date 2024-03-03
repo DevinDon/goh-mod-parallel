@@ -65,6 +65,22 @@
 }
 
 ; set crews
+; crew commander
+{Placer
+  {Place "commander"
+    {group "crew"}
+    ; no bone
+    {turnoff {shadow} {sensor} {targetable}}
+    {visor "standard-visor-commander"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "commander" {anm "left"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "commander" {anm "right"} {forward putoff} {reverse puton}}
+}
 ; crew driver
 {Placer
   {Place "driver"
@@ -96,22 +112,6 @@
   {link "emit1" "gunner" {anm "left"} {forward putoff} {reverse puton}}
   {door "emit2"}
   {link "emit2" "gunner" {anm "right"} {forward putoff} {reverse puton}}
-}
-; crew commander
-{Placer
-  {Place "commander"
-    {group "crew"}
-    ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
-    {visor "standard-visor-commander"}
-    ; no extra
-  }
-}
-{Boarder
-  {door "emit1"}
-  {link "emit1" "commander" {anm "left"} {forward putoff} {reverse puton}}
-  {door "emit2"}
-  {link "emit2" "commander" {anm "right"} {forward putoff} {reverse puton}}
 }
 ; crew charger
 {Placer

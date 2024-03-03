@@ -73,7 +73,7 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'armor',
+      name: 'armor01',
       forward: {
         begin: [ 'board_MiddleArmor', 1 ],
         end: [ 'pose_seat_armor_1', 1 ],
@@ -83,7 +83,7 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'armor1',
+      name: 'armor02',
       forward: {
         begin: [ 'board_MiddleArmor', 1 ],
         end: [ 'pose_seat_armor_2', 1 ],
@@ -95,6 +95,17 @@ const options: CrewAndPassengerOptions = {
   ],
 
   crews: [
+    {
+      name: 'commander',
+      animations: [
+        { door: 'emit1', animation: 'left' },
+        { door: 'emit2', animation: 'right' },
+      ],
+      bone: 'gunner2',
+      visor: 'standard-visor-commander',
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      extra: [ '{sealable}' ],
+    },
     {
       name: 'driver',
       animations: [
@@ -115,24 +126,13 @@ const options: CrewAndPassengerOptions = {
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
-      name: 'gunner3',
+      name: 'radioer',
       animations: [
         { door: 'emit1', animation: 'left' },
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-driver',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
-    },
-    {
-      name: 'commander',
-      animations: [
-        { door: 'emit1', animation: 'left' },
-        { door: 'emit2', animation: 'right' },
-      ],
-      bone: 'gunner2',
-      visor: 'standard-visor-commander',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
-      extra: [ '{sealable}' ],
     },
     {
       name: 'charger',
@@ -149,28 +149,28 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'passenger01',
       animations: [
-        { door: 'emit3', animation: 'armor' },
+        { door: 'emit3', animation: 'armor01' },
       ],
       bone: 'seat01',
     },
     {
       name: 'passenger02',
       animations: [
-        { door: 'emit4', animation: 'armor' },
+        { door: 'emit4', animation: 'armor01' },
       ],
       bone: 'seat02',
     },
     {
       name: 'passenger03',
       animations: [
-        { door: 'emit5', animation: 'armor1' },
+        { door: 'emit5', animation: 'armor02' },
       ],
       bone: 'seat03',
     },
     {
       name: 'passenger04',
       animations: [
-        { door: 'emit6', animation: 'armor' },
+        { door: 'emit6', animation: 'armor01' },
       ],
       bone: 'seat04',
     },

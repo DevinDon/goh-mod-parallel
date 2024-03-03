@@ -50,7 +50,8 @@
     {Place "gun"
       {RestoreIKAfterAim}
       {Weapon "weapon ger-105mm-lefh18-l28" filling "ammo ger-105l28 he" 1}
-      {Charger "charger charger2" minWorkers 1}
+      {Gunner "gunner"}
+      {Charger "charger01 charger02" MinWorkers 1}
       {AccuracyByMotion
         {MaxLinearSpeed  7.00} ; km/h
         {ByLinearSpeed   0.25} ; km/h
