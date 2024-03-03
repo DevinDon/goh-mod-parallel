@@ -83,7 +83,7 @@ const output = `; crew and passenger
   {Place "driver"
     {group "crew"}
     {linkbone "driver"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-driver"}
     ; no extra
   }
@@ -97,7 +97,7 @@ const output = `; crew and passenger
   {Place "gunner"
     {group "crew"}
     {linkbone "gunner"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-gunner"}
     ; no extra
   }
@@ -113,7 +113,7 @@ const output = `; crew and passenger
   {Place "passenger"
     {group "passenger"}
     {linkbone "seat1"}
-    {turnoff {shadow} {sensor} {targetable 1}}
+    {turnoff {shadow} {sensor}}
     ; no extra
   }
 }
