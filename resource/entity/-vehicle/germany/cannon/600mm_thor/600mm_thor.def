@@ -65,8 +65,8 @@
     {speed2 2}
   }
   {Bone "foresight1"
-    {limits -10 20}
-    {speed2 3}
+    {limits -10 10}
+    {speed2 1}
   }
 
   (mod "mp"
