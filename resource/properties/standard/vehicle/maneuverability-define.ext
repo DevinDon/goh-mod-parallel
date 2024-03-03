@@ -130,7 +130,7 @@
 (define "set-fuel-bag"
   {FuelBag
     {Volume                           %volume} ; Fuel capacity in Litres.
-    {Rate   (+ (/ %power 22) (/ %mass 20000))} ; 消耗速率等于 100 时，大约消耗燃料 2 升每秒，能运转 50 秒左右
+    {Rate   (+ (/ %power 25) (/ %mass 20000))} ; 消耗速率等于 100 时，大约消耗燃料 2 升每秒，能运转 50 秒左右
     {Remain                           %volume} ; Amount of fuel in vehicle when spawned.
     {Fuel                              "fuel"} ; Type of fuel used. "fuel" = petrol/gasoline. "diesel" = diesel.
   }
