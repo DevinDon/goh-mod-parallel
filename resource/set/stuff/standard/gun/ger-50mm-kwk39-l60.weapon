@@ -85,7 +85,7 @@
     }
     ; 无防空炮配置
   }
-  
+
   {Parameters "apcr"
     {CursorReloading "gun_apcr"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
@@ -120,7 +120,7 @@
     }
     ; 无防空炮配置
   }
-  
+
   {Parameters "he"
     {CursorReloading "gun_he"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m

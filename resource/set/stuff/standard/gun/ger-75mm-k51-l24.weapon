@@ -87,7 +87,7 @@
     }
     ; 无防空炮配置
   }
-  
+
   {Parameters "heat"
     {CursorReloading "gun_heat"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
@@ -111,7 +111,7 @@
     }
     ; 无防空炮配置
   }
-  
+
   {Parameters "he"
     {CursorReloading "gun_he"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
@@ -132,7 +132,7 @@
     ; 无穿深修正表配置
     ; 无防空炮配置
   }
-  
+
   {Parameters "sm"
     {CursorReloading "gun_sm"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
