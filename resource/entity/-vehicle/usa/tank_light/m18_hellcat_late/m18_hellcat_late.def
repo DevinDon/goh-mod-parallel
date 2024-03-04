@@ -70,7 +70,7 @@
       }
     }
     {Place "mgun"
-      {Type "main"}
+      {Type "aa"}
       {Gunner "charger"}
       {Charger "charger"}
       {LinkBone "mgun3"}
@@ -128,12 +128,12 @@
     {speed2 60}
   }
   {Bone "mgun_1_rot1"
-    {limits -15 15}
-    {speed2 60}
+    {limits -30 30}
+    {speed2 45}
   }
   {Bone "mgun_1_rot2"
-    {limits -10 30}
-    {speed2 60}
+    {limits -10 45}
+    {speed2 45}
   }
 
 }
