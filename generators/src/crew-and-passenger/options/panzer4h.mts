@@ -126,21 +126,21 @@ const options: CrewAndPassengerOptions = {
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
-      name: 'radioer',
-      animations: [
-        { door: 'emit1', animation: 'left' },
-        { door: 'emit2', animation: 'right' },
-      ],
-      visor: 'standard-visor-driver',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
-    },
-    {
       name: 'charger',
       animations: [
         { door: 'emit1', animation: 'left' },
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-none',
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+    },
+    {
+      name: 'radioer',
+      animations: [
+        { door: 'emit1', animation: 'left' },
+        { door: 'emit2', animation: 'right' },
+      ],
+      visor: 'standard-visor-driver',
       turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
   ],
