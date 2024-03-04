@@ -37,13 +37,13 @@
   {Extender "shield" {on}}
 
   {Extender "inventory"
-    {Weapon "mgun1" {mask "mountable"}}
+    {Weapon "mgun" {mask "mountable"}}
     {Box
       {Size 12 8}
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "weapon usa-browning-m2" filled {user "mgun1"}}
+      {Item "weapon usa-browning-m2" filled {user "mgun"}}
 
       {Item "ammo usa-hmgun" 900}
       {Item "ammo usa-76x539 apcbche" 29}
@@ -69,8 +69,8 @@
         {OrderTime       2.50} ; s
       }
     }
-    {Place "mgun1"
-      {Type "coaxial"}
+    {Place "mgun"
+      {Type "main"}
       {Gunner "charger"}
       {Charger "charger"}
       {LinkBone "mgun3"}
@@ -86,7 +86,7 @@
         {OrderTime        1.00} ; s
       }
     }
-    {Place "mgun"
+    {Place "mgun1"
       {Type "aa"}
       {Weapon "weapon usa-browning-m2" filled}
       {Gunner "charger2"}
