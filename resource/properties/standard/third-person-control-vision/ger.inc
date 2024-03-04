@@ -456,7 +456,7 @@
   }
 }
 
-{"tank.panzer2l"
+{"custom.tank.panzer2l"
   {clip
     {viewMin    -12}  ; camera rotate upward limit (looking down)
     {viewMax    20 }  ; camera rotate downward limit (looking up)
