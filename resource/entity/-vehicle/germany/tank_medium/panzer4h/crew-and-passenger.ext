@@ -154,6 +154,22 @@
   {door "emit2"}
   {link "emit2" "gunner" {anm "right"} {forward putoff} {reverse puton}}
 }
+; crew gunner2
+{Placer
+  {Place "gunner2"
+    {group "crew"}
+    ; no bone
+    {turnoff {shadow} {sensor} {targetable}}
+    {visor "standard-visor-driver"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "gunner2" {anm "left"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "gunner2" {anm "right"} {forward putoff} {reverse puton}}
+}
 ; crew charger
 {Placer
   {Place "charger"
@@ -169,22 +185,6 @@
   {link "emit1" "charger" {anm "left"} {forward putoff} {reverse puton}}
   {door "emit2"}
   {link "emit2" "charger" {anm "right"} {forward putoff} {reverse puton}}
-}
-; crew radioer
-{Placer
-  {Place "radioer"
-    {group "crew"}
-    ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
-    {visor "standard-visor-driver"}
-    ; no extra
-  }
-}
-{Boarder
-  {door "emit1"}
-  {link "emit1" "radioer" {anm "left"} {forward putoff} {reverse puton}}
-  {door "emit2"}
-  {link "emit2" "radioer" {anm "right"} {forward putoff} {reverse puton}}
 }
 
 ; set passengers
