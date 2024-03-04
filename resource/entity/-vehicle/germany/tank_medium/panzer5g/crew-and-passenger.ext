@@ -141,9 +141,9 @@
   {door "emit2"}
   {link "emit2" "gunner" {anm "right"} {forward putoff} {reverse puton}}
 }
-; crew gunner2
+; crew gunner3
 {Placer
-  {Place "gunner2"
+  {Place "gunner3"
     {group "crew"}
     ; no bone
     {turnoff {shadow} {sensor}}
@@ -153,9 +153,9 @@
 }
 {Boarder
   {door "emit1"}
-  {link "emit1" "gunner2" {anm "left"} {forward putoff} {reverse puton}}
+  {link "emit1" "gunner3" {anm "left"} {forward putoff} {reverse puton}}
   {door "emit2"}
-  {link "emit2" "gunner2" {anm "right"} {forward putoff} {reverse puton}}
+  {link "emit2" "gunner3" {anm "right"} {forward putoff} {reverse puton}}
 }
 ; crew charger
 {Placer

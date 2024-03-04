@@ -116,7 +116,7 @@ const options: CrewAndPassengerOptions = {
       turnoff: [ 'shadow', 'sensor' ],
     },
     {
-      name: 'gunner2',
+      name: 'gunner3',
       animations: [
         { door: 'emit1', animation: 'left' },
         { door: 'emit2', animation: 'right' },
