@@ -109,7 +109,7 @@
   {Place "commander"
     {group "crew"}
     {linkbone "gunner2"}
-    {turnoff {shadow} {sensor} {targetable}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-commander"}
     {sealable}
   }
@@ -125,7 +125,7 @@
   {Place "driver"
     {group "crew"}
     ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-driver"}
     ; no extra
   }
@@ -143,7 +143,7 @@
   {Place "gunner"
     {group "crew"}
     ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-gunner"}
     ; no extra
   }
@@ -159,7 +159,7 @@
   {Place "gunner3"
     {group "crew"}
     ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-driver"}
     ; no extra
   }
@@ -175,7 +175,7 @@
   {Place "charger"
     {group "crew"}
     ; no bone
-    {turnoff {shadow} {sensor} {targetable}}
+    {turnoff {shadow} {sensor}}
     {visor "standard-visor-none"}
     ; no extra
   }
