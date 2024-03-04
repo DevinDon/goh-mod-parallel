@@ -5,7 +5,7 @@
 
   {Extension "panzer2l.mdl"}
   (include   "panzer2l.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "light" "vision_lev03" "muzzle_20mm_25mm_auto" "shield" "smoke" "nwg" "detect_tank_light"}
 
@@ -29,12 +29,6 @@
     {digit_folder "ger2"}
   }
 
-  {Sensor
-    {Visor "main"
-      {Vision "standard-vision-wide"}
-    }
-  }
-
   {Extender "shield" {on}}
 
   {Extender "smokescreen"
@@ -52,9 +46,9 @@
 
       {Item "nbks grenade" 2}
 
-      {Item "ammo ger-37l45 aphe" 40}
-      {Item "ammo ger-37l45 apcr" 10}
-      {Item "ammo ger-37l45 he"   70}
+      {Item "ammo ger-37l45 aphe" 39}
+      {Item "ammo ger-37l45 apcr"  9}
+      {Item "ammo ger-37l45 he"   69}
     }
   }
 
@@ -104,7 +98,7 @@
     {speed2 15}
   }
   {Bone "turret"
-    {speed2 10}
+    {speed2 12}
   }
 
 }

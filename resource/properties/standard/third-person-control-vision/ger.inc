@@ -7,7 +7,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 60}
     {nearoffset 0 0 65}
@@ -27,7 +27,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  300}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "turret"}
     {faroffset 0 10 45}
     {nearoffset -20 10 25}
@@ -37,7 +37,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "camera"}
@@ -56,10 +56,10 @@
     {soundEffect "opentop_vehicle"}
     {camera "zoom1.5"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom3"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom5"}
   }
 }
@@ -71,7 +71,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 50}
     {nearoffset -20 0 50}
@@ -81,7 +81,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -100,10 +100,10 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom3"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom5"}
   }
 }
@@ -115,7 +115,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  250}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 50}
     {nearoffset -20 0 48}
@@ -125,7 +125,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -143,10 +143,10 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom3"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom5"}
   }
 }
@@ -158,7 +158,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 70}
     {nearoffset -45 0 60}
@@ -168,7 +168,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -190,10 +190,10 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom3"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom5"}
   }
 }
@@ -205,7 +205,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 70}
     {nearoffset -45 0 60}
@@ -215,7 +215,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -234,10 +234,10 @@
     {soundEffect "opentop_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom3"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom5"}
   }
 }
@@ -249,7 +249,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 70}
     {nearoffset -45 0 60}
@@ -259,7 +259,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -278,10 +278,10 @@
     {soundEffect "opentop_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom3"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom5"}
   }
 }
@@ -293,14 +293,14 @@
     {distanceMin  1  }  ; camera min distance from object. value / 20 = meters
     {distanceMax  350  }  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 80}
     {nearoffset -50 0 60}
     {blur_strength 2}
     {disable_fow 0}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {vignette "/texture/common/environment/lens_effects/zoom_vignette_artillery_01"}
@@ -320,27 +320,27 @@
     {soundEffect "opentop_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom3"}
     {offset 100 0 500}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom3"}
     {offset 100 0 600}
   }
-  {level ;4
+  {level ; 4
     {camera "zoom4"}
     {offset 200 0 600}
   }
-  {level ;5
+  {level ; 5
     {camera "zoom4"}
     {offset 200 0 700}
   }
-  {level ;6
+  {level ; 6
     {camera "zoom5"}
     {offset 300 0 700}
   }
-  {level ;7
+  {level ; 7
     {camera "zoom5"}
     {offset 300 0 800}
   }
@@ -353,7 +353,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  400}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 75}
     {nearoffset -25 0 65}
@@ -363,7 +363,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {vignette "/texture/common/environment/lens_effects/zoom_vignette_artillery_01"}
@@ -383,27 +383,27 @@
     {soundEffect "opentop_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom3"}
     {offset 100 0 500}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom3"}
     {offset 100 0 600}
   }
-  {level ;4
+  {level ; 4
     {camera "zoom4"}
     {offset 200 0 600}
   }
-  {level ;5
+  {level ; 5
     {camera "zoom4"}
     {offset 200 0 700}
   }
-  {level ;6
+  {level ; 6
     {camera "zoom5"}
     {offset 300 0 700}
   }
-  {level ;7
+  {level ; 7
     {camera "zoom5"}
     {offset 300 0 800}
   }
@@ -416,7 +416,7 @@
     {distanceMin  002}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "fxfire3"}
     {faroffset 0 7 30}
     {nearoffset 5 7 16}
@@ -426,7 +426,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "fxfire3"}
@@ -445,13 +445,63 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
-  {level ;4
+  {level ; 4
+    {camera "zoom10"}
+  }
+}
+
+{"tank.panzer2l"
+  {clip
+    {viewMin    -12}  ; camera rotate upward limit (looking down)
+    {viewMax    20 }  ; camera rotate downward limit (looking up)
+    {distanceMin  200}  ; camera min distance from object. value / 20 = meters
+    {distanceMax  350}  ; camera max distance from object. value / 20 = meters
+  }
+  {level ; 0
+    {linkBone "basis"}
+    {faroffset 0 0 50}
+    {nearoffset -20 0 50}
+    {camera "zoom1"}
+    ;{hide_hitmarker 1}
+    {blur_strength 2}
+    {disable_fow 0}
+    {no_grain}
+  }
+  {level ; 1
+    {zoom}
+    {vision_modes_active}
+    {linkBone "turret"}
+    {offset 42 6.0 4.5}
+    {scope_vignette "/texture/common/environment/lens_effects/vehicle_telescope_tzf_4"}
+    {blur_mask "/texture/common/environment/lens_effects/vehicle_telescope_mask"}
+    {refraction_mask "/texture/common/environment/lens_effects/vehicle_telescope_base_bp"}
+    {lens_dirt_mask "/texture/common/environment/lens_effects/dirty_lens_scope_02"}
+    {distance 30}
+    {distanceSet 0}
+    {delta 0}
+    {no_rim_light}
+    {ManualAccuracyZoom}
+    {blur_strength 5}
+    {disable_fow 0}
+    {soundEffect "enclosed_vehicle"}
+    {camera "zoom2"}
+  }
+  {level ; 2
+    {camera "zoom3"}
+  }
+  {level ; 3
+    {camera "zoom4"}
+  }
+  {level ; 4
+    {camera "zoom8"}
+  }
+  {level ; 5
     {camera "zoom10"}
   }
 }
@@ -463,7 +513,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  400}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 65}
     {nearoffset -25 0 50}
@@ -473,7 +523,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "visor1"}
@@ -492,10 +542,10 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -507,7 +557,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  400}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 65}
     {nearoffset -40 0 60}
@@ -517,7 +567,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -536,10 +586,10 @@
     {soundEffect "opentop_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -551,7 +601,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  400}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 65}
     {nearoffset -40 0 60}
@@ -561,7 +611,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -580,10 +630,10 @@
     {soundEffect "opentop_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -595,7 +645,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  400}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 65}
     {nearoffset -25 0 55}
@@ -605,7 +655,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "visor1"}
@@ -624,10 +674,10 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -639,7 +689,7 @@
     {distanceMin  200  }  ; camera min distance from object. value / 20 = meters
     {distanceMax  400  }  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 65}
     {nearoffset -25 0 55}
@@ -649,7 +699,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "visor1"}
@@ -668,10 +718,10 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -683,7 +733,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 70}
     {nearoffset -45 0 60}
@@ -693,7 +743,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -715,10 +765,10 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -730,7 +780,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 70}
     {nearoffset -45 0 60}
@@ -740,7 +790,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -762,10 +812,10 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -777,7 +827,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 70}
     {nearoffset -45 0 60}
@@ -787,7 +837,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -806,10 +856,10 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -821,7 +871,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 70}
     {nearoffset -45 0 60}
@@ -831,7 +881,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "turret"}
@@ -853,10 +903,10 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -868,7 +918,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 90}
     {nearoffset 0 0 80}
@@ -878,7 +928,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "sight"}
@@ -896,10 +946,10 @@
     {soundEffect "opentop_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -911,7 +961,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 80}
     {nearoffset -50 0 80}
@@ -921,7 +971,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "sight"}
@@ -939,10 +989,10 @@
     {soundEffect "opentop_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
 }
@@ -954,7 +1004,7 @@
     {distanceMin  002}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "fxfire3"}
     {faroffset 0 10 27}
     {nearoffset 5 10 10.5}
@@ -964,7 +1014,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "fxfire3"}
@@ -983,13 +1033,13 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
-  {level ;4
+  {level ; 4
     {camera "zoom10"}
   }
 }
@@ -1001,7 +1051,7 @@
     {distanceMin  002}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "fxfire3"}
     {faroffset 0 10 27}
     {nearoffset 5 10 10.5}
@@ -1011,7 +1061,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "fxfire3"}
@@ -1030,13 +1080,13 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
-  {level ;4
+  {level ; 4
     {camera "zoom10"}
   }
 }
@@ -1048,7 +1098,7 @@
     {distanceMin  002}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "fxfire3"}
     {faroffset 0 8.5 30}
     {nearoffset 5 8.5 16}
@@ -1058,7 +1108,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "fxfire3"}
@@ -1077,13 +1127,13 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
-  {level ;4
+  {level ; 4
     {camera "zoom10"}
   }
 }
@@ -1095,7 +1145,7 @@
     {distanceMin  002}  ; camera min distance from object. value / 20 = meters
     {distanceMax  350}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "fxfire3"}
     {faroffset 0 8.5 30}
     {nearoffset 5 8.5 16}
@@ -1105,7 +1155,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "fxfire3"}
@@ -1124,13 +1174,13 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
-  {level ;4
+  {level ; 4
     {camera "zoom10"}
   }
 }
@@ -1142,7 +1192,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  400}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 75}
     {nearoffset -40 0 65}
@@ -1152,7 +1202,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "visor1"}
@@ -1171,13 +1221,13 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
-  {level ;4
+  {level ; 4
     {camera "zoom10"}
   }
 }
@@ -1189,7 +1239,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  400}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 85}
     {nearoffset -40 0 75}
@@ -1199,7 +1249,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "visor1"}
@@ -1218,13 +1268,13 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
-  {level ;4
+  {level ; 4
     {camera "zoom10"}
   }
 }
@@ -1236,7 +1286,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  400}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 75}
     {nearoffset -25 0 60}
@@ -1246,7 +1296,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "visor1"}
@@ -1265,13 +1315,13 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
-  {level ;4
+  {level ; 4
     {camera "zoom10"}
   }
 }
@@ -1283,7 +1333,7 @@
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  400}  ; camera max distance from object. value / 20 = meters
   }
-  {level ;0
+  {level ; 0
     {linkBone "basis"}
     {faroffset 0 0 85}
     {nearoffset -40 0 75}
@@ -1293,7 +1343,7 @@
     {disable_fow 0}
     {no_grain}
   }
-  {level ;1
+  {level ; 1
     {zoom}
     {vision_modes_active}
     {linkBone "sight"}
@@ -1312,13 +1362,13 @@
     {soundEffect "enclosed_vehicle"}
     {camera "zoom2"}
   }
-  {level ;2
+  {level ; 2
     {camera "zoom4"}
   }
-  {level ;3
+  {level ; 3
     {camera "zoom8"}
   }
-  {level ;4
+  {level ; 4
     {camera "zoom10"}
   }
 }

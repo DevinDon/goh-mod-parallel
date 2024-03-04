@@ -167,7 +167,7 @@
 
     {"panzer2f" inherit "vehicle tank.panzer2f"}
 
-    {"panzer2l" inherit "vehicle tank.panzer2l"}
+    {"panzer2l" inherit "vehicle custom.tank.panzer2l"} ; custom
 
     {"panzerjager1" inherit "vehicle td.panzerjaeger"}
 
