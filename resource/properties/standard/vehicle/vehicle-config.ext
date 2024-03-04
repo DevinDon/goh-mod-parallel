@@ -58,15 +58,6 @@
 
 {RimLight}
 
-{extender "inventory"
-  {weapon "mgun"
-    {mask "mountable"}
-  }
-  {box
-    {Size 9 15}
-  }
-}
-
 {boarder}
 {placer {crew}}
 

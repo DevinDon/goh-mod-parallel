@@ -29,7 +29,7 @@
   {Extender "inventory"
     {Weapon "mgun" {mask "mountable"}}
     {Box
-      {Size 12 5}
+      {Size 12 6}
       {Weight 1000}
       {Item "repair_kit" 10}
 
