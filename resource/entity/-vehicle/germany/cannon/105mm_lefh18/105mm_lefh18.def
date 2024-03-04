@@ -22,15 +22,15 @@
   {Extender "cannon"
     {animation
       {switch "close"}
-      ;// "gunner" "charger" "charger2" "commander"
+      ;// "gunner" "charger01" "charger02" "commander"
       {move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right" "mgun_browning_driver_l" "mgun_browning_driver_r"}
       {aim "cannon_m5_gunlayer" "" "" ""}
       {fire "cannon_gunlayer_fire-alert" "cannon_pdr25_charger_fire" "" ""}
       {reload "" "cannon_pdr25_charger" "" ""}
     }
-    {move {workers "driver1" "driver2" "driver3" "driver4" minWorkers 2} {obstacle "close"}} ;// move state: cannon being pushed and which positions play animations
-    {attack {workers "gunner""charger" "charger2" "commander"} {obstacle "open"}} ;// fire/attack state: cannon aim, fire, and reload events
-    {trailing {workers "seat1" "seat2" "seat3" "seat4"}} ;// trailing state: cannon is being towed {obstacle} not needed. Uses "close"
+    {move {workers "driver01" "driver02" "driver03" "driver04" MinWorkers 2} {obstacle "close"}} ;// move state: cannon being pushed and which positions play animations
+    {attack {workers "commander" "gunner" "charger01" "charger02"} {obstacle "open"}} ;// fire/attack state: cannon aim, fire, and reload events
+    {trailing {workers "seat01" "seat02" "seat03" "seat04"}} ;// trailing state: cannon is being towed {obstacle} not needed. Uses "close"
   }
 
   {Extender "inventory"
