@@ -601,97 +601,97 @@
 
 ;AUTOMATIC WEAPONRY
 {"sg43_stand"
-  ("vehicle2" period(late) cd(0) ci(30) t(cannon) side(rus) crew1(mg_crew:1) crew2(mg_crew_asst:1) g(empl1) b(empl) cw(2) cp(6)
+  ("vehicle2" period(late) cd(0) ci(30) t(cannon) side(rus) crew1(mg_crew:1) crew2(mg_crew_asst:1) g(empl1) b(empl) cw(2) cp(0)
   cost(85))
 }
 {"dshk_stan"
-  ("vehicle2" period(late) cd(0) ci(60) t(cannon) side(rus) crew1(mg_crew:1) crew2(mg_crew_asst:1) g(empl2) b(empl) cw(2) cp(6)
+  ("vehicle2" period(late) cd(0) ci(60) t(cannon) side(rus) crew1(mg_crew:1) crew2(mg_crew_asst:1) g(empl2) b(empl) cw(2) cp(0)
   cost(135))
 }
 {"25mm_72k"
-  ("vehicle"  period(late) cd(0) ci(60) t(cannon) side(rus) crew(artilleryman:3) g(empl3) b(empl) cw(1) cp(8)
+  ("vehicle"  period(late) cd(0) ci(60) t(cannon) side(rus) crew(artilleryman:3) g(empl3) b(empl) cw(1) cp(0)
   cost(200))
 }
 
 ;// Doctrine Units
 {"dshk_aa"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly cannon) side(rus) crew1(mg_crew:1) crew2(mg_crew_asst:1) g(empl2) b(empl) cw(2) cp(6)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly cannon) side(rus) crew1(mg_crew:1) crew2(mg_crew_asst:1) g(empl2) b(empl) cw(2) cp(0)
   cost(150))
 }
 {"37mm_61k"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon) side(rus) crew(artilleryman:3) g(empl3) b(empl) cw(1) cp(10)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon) side(rus) crew(artilleryman:3) g(empl3) b(empl) cw(1) cp(0)
   cost(270))
 }
 {"85mm_52k"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon heavycan) side(rus) crew(artilleryman:4) g(empl8) b(empl) cw(1) cp(20)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon heavycan) side(rus) crew(artilleryman:4) g(empl8) b(empl) cw(1) cp(0)
   cost(650))
 }
 
 ; AT WEAPONRY
 {"45mm_m42"
-  ("vehicle"  period(late) cd(0) ci(60) t(cannon) side(rus) crew(artilleryman:4) g(empl5) b(empl) cw(1) cp(6)
+  ("vehicle"  period(late) cd(0) ci(60) t(cannon) side(rus) crew(artilleryman:4) g(empl5) b(empl) cw(1) cp(0)
   cost(190))
 }
 {"76mm_zis3"
-  ("vehicle"  period(late) cd(240) ci(60) t(cannon mediumcan) side(rus) crew(artilleryman:4) g(empl7) b(empl) cw(1) cp(12)
+  ("vehicle"  period(late) cd(240) ci(60) t(cannon mediumcan) side(rus) crew(artilleryman:4) g(empl7) b(empl) cw(1) cp(0)
   cost(390))
 }
 {"57mm_zis2_late"
-  ("vehicle"  period(late) cd(240) ci(60) t(cannon mediumcan) side(rus) crew(artilleryman:4) g(empl8) b(empl) cw(1) cp(16)
+  ("vehicle"  period(late) cd(240) ci(60) t(cannon mediumcan) side(rus) crew(artilleryman:4) g(empl8) b(empl) cw(1) cp(0)
   cost(450))
 }
 
 ;// Doctrine Units
 {"100mm_bs3"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon heavycan) side(rus) crew(artilleryman:4) g(empl9) b(empl) cw(1) cp(20)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon heavycan) side(rus) crew(artilleryman:4) g(empl9) b(empl) cw(1) cp(0)
   cost(950))
 }
 
 ;HOWITZERS
 {"76mm_m1927_late"
-  ("vehicle"  period(late) cd(240) ci(60) t(cannon mediumcan) side(rus) crew(artilleryman:4) g(empl6) b(empl) cw(1) cp(12)
+  ("vehicle"  period(late) cd(240) ci(60) t(cannon mediumcan) side(rus) crew(artilleryman:4) g(empl6) b(empl) cw(1) cp(0)
   cost(340))
 }
 {"82mm_bm37"
-  ("vehicle"  period(late) cd(0) ci(60) t(cannon) side(rus) crew(artilleryman:2) g(empl10) b(empl) cw(1) cp(12)
+  ("vehicle"  period(late) cd(0) ci(60) t(cannon) side(rus) crew(artilleryman:2) g(empl10) b(empl) cw(1) cp(0)
   cost(250))
 }
 {"122mm_m30"
-  ("vehicle"  period(late) cd(900) ci(180) t(artillery) side(rus) crew(artilleryman:4) g(empl12) b(empl) cw(1) cp(26)
+  ("vehicle"  period(late) cd(900) ci(180) t(artillery) side(rus) crew(artilleryman:4) g(empl12) b(empl) cw(1) cp(0)
   cost(750))
 }
 
 ;// Doctrine Units
 {"76mm_m43"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon mediumcan) side(rus) crew(artilleryman:4) g(empl10) b(empl) cw(1) cp(12)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon mediumcan) side(rus) crew(artilleryman:4) g(empl10) b(empl) cw(1) cp(0)
   cost(350))
 }
 {"120mm_pm38"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly artillery) side(rus) crew(artilleryman:2) g(empl11) b(empl) cw(1) cp(16)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly artillery) side(rus) crew(artilleryman:2) g(empl11) b(empl) cw(1) cp(0)
   cost(450))
 }
 {"107mm_m1910_30"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon mediumcan) side(rus) crew(artilleryman:4) g(empl15) b(empl) cw(1) cp(26)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon mediumcan) side(rus) crew(artilleryman:4) g(empl15) b(empl) cw(1) cp(0)
   cost(740))
 }
 {"122mm_a19"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly artillery) side(rus) crew(artilleryman:5) g(empl12) b(empl) cw(1) cp(26)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly artillery) side(rus) crew(artilleryman:5) g(empl12) b(empl) cw(1) cp(0)
   cost(800))
 }
 {"152mm_ml20"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly heavyart artillery) side(rus) crew(artilleryman:5) g(empl12) b(empl) cw(1) cp(30)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly heavyart artillery) side(rus) crew(artilleryman:5) g(empl12) b(empl) cw(1) cp(0)
   cost(1000))
 }
 {"203mm_b4"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon artillery heavyart) side(rus) crew(artilleryman:5) g(empl12) b(empl) cw(1) cp(30)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon artillery heavyart) side(rus) crew(artilleryman:5) g(empl12) b(empl) cw(1) cp(0)
   cost(1500))
 }
 {"280mm_br5"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon artillery heavyart) side(rus) crew(artilleryman:5) g(empl22) b(empl) cw(1) cp(36)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon artillery heavyart) side(rus) crew(artilleryman:5) g(empl22) b(empl) cw(1) cp(0)
   cost(1750))
 }
 {"300mm_m31"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon artillery heavyart) side(rus) crew(artilleryman:4) g(empl24) b(empl) cw(1) cp(36)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly cannon artillery heavyart) side(rus) crew(artilleryman:4) g(empl24) b(empl) cw(1) cp(0)
   cost(1300))
 }
 
@@ -700,51 +700,51 @@
 ;|________________________________________________|
 
 {"m72"
-  ("vehicle2"  period(late) cd(0) ci(30) g(wheel0) side(rus) t(vehicle) crew1(rifleman_1:1) crew2(mgun_2:1) b(vehicles) cw(1) cp(1)
+  ("vehicle2"  period(late) cd(0) ci(30) g(wheel0) side(rus) t(vehicle) crew1(rifleman_1:1) crew2(mgun_2:1) b(vehicles) cw(1) cp(0)
   cost(40))
 }
 {"gaz67b"
-  ("vehicle"  period(late) cd(0) ci(30) g(wheel1) side(rus) t(vehicle) crew(mgun_2:2) b(vehicles) cw(1) cp(1)
+  ("vehicle"  period(late) cd(0) ci(30) g(wheel1) side(rus) t(vehicle) crew(mgun_2:2) b(vehicles) cw(1) cp(0)
   cost(55))
 }
 {"zis5"
-  ("vehicle"  period(late) cd(90) ci(300) g(wheel2) side(rus) t(vehicle) crew(rifleman_1:1) b(vehicles) cw(1) cp(2)
+  ("vehicle"  period(late) cd(90) ci(300) g(wheel2) side(rus) t(vehicle) crew(rifleman_1:1) b(vehicles) cw(1) cp(0)
   cost(20))
 }
 {"gaz_aaa"
-  ("vehicle"  period(late) cd(90) ci(300) g(wheel2) side(rus) t(vehicle) crew(rifleman_1:1) b(vehicles) cw(1) cp(2)
+  ("vehicle"  period(late) cd(90) ci(300) g(wheel2) side(rus) t(vehicle) crew(rifleman_1:1) b(vehicles) cw(1) cp(0)
   cost(20))
 }
 {"t20"
-  ("vehicle"  period(late) cd(90) ci(30) g(wheel3) side(rus) t(vehicle) crew(tankman:2) b(vehicles) cw(2) cp(4)
+  ("vehicle"  period(late) cd(90) ci(30) g(wheel3) side(rus) t(vehicle) crew(tankman:2) b(vehicles) cw(2) cp(0)
   cost(85))
 }
 {"ba64"
-  ("vehicle2" period(late) cd(90) ci(60) g(wheel4) side(rus) t(vehicle) crew1(tankman:1) crew2(tank_commander:1) b(vehicles) cw(2) cp(4)
+  ("vehicle2" period(late) cd(90) ci(60) g(wheel4) side(rus) t(vehicle) crew1(tankman:1) crew2(tank_commander:1) b(vehicles) cw(2) cp(0)
   cost(115))
 }
 {"ba10"
-  ("vehicle2" period(late) cd(90) ci(60) g(wheel5) side(rus) t(vehicle) crew1(tankman:3) crew2(tank_commander:1) b(vehicles) cw(2) cp(8)
+  ("vehicle2" period(late) cd(90) ci(60) g(wheel5) side(rus) t(vehicle) crew1(tankman:3) crew2(tank_commander:1) b(vehicles) cw(2) cp(0)
   cost(220))
 }
 {"zis5_dshk"
-  ("vehicle"  period(late) cd(90) ci(60) g(wheel6) side(rus) t(vehicle) crew(artilleryman:3) b(vehicles) cw(2) cp(8)
+  ("vehicle"  period(late) cd(90) ci(60) g(wheel6) side(rus) t(vehicle) crew(artilleryman:3) b(vehicles) cw(2) cp(0)
   cost(150))
 }
 {"gaz_aaa_72k"
-  ("vehicle"  period(late) cd(90) ci(60) g(wheel7) side(rus) t(vehicle) crew(artilleryman:4) b(vehicles) cw(2) cp(8)
+  ("vehicle"  period(late) cd(90) ci(60) g(wheel7) side(rus) t(vehicle) crew(artilleryman:4) b(vehicles) cw(2) cp(0)
   cost(230))
 }
 {"gaz_aaa_supply"
-  ("vehicle"  period(late) cd(90) ci(30) g(supply1) side(rus) t(vehicle supply) crew(rifleman_1:1) b(vehicles) cw(1) cp(6)
+  ("vehicle"  period(late) cd(90) ci(30) g(supply1) side(rus) t(vehicle supply) crew(rifleman_1:1) b(vehicles) cw(1) cp(0)
   cost(190))
 }
 {"gaz_fuel"
-  ("vehicle"  period(late) cd(90) ci(30) g(supply2) side(rus) t(vehicle supply) crew(rifleman_1:1) b(vehicles) cw(1) cp(2)
+  ("vehicle"  period(late) cd(90) ci(30) g(supply2) side(rus) t(vehicle supply) crew(rifleman_1:1) b(vehicles) cw(1) cp(0)
   cost(90))
 }
 {"zis5eng"
-  ("vehicle2" period(late) cd(90) ci(30) g(supply3) side(rus) t(vehicle supply)  crew1(engineer_1:1) crew2(engineer_2:1) b(vehicles) cw(1) cp(2)
+  ("vehicle2" period(late) cd(90) ci(30) g(supply3) side(rus) t(vehicle supply)  crew1(engineer_1:1) crew2(engineer_2:1) b(vehicles) cw(1) cp(0)
   cost(80))
 }
 
@@ -754,35 +754,35 @@
   cost(250))
 }
 {"m3a1e1_scout"
-  ("vehicle"  period(late) cd(0) ci(0) g(wheel9) side(rus) t(doctrineonly vehicle) crew(rifleman_1:1) b(vehicles) cw(1) cp(2)
+  ("vehicle"  period(late) cd(0) ci(0) g(wheel9) side(rus) t(doctrineonly vehicle) crew(rifleman_1:1) b(vehicles) cw(1) cp(0)
   cost(20))
 }
 {"m3a1e1_scout_mgun"
-  ("vehicle"  period(late) cd(0) ci(0) g(wheel10) side(rus) t(doctrineonly vehicle) crew(rifleman_1:3) b(vehicles) cw(2) cp(8)
+  ("vehicle"  period(late) cd(0) ci(0) g(wheel10) side(rus) t(doctrineonly vehicle) crew(rifleman_1:3) b(vehicles) cw(2) cp(0)
   cost(165))
 }
 {"universal_carrier_rus"
-  ("vehicle2" period(late) cd(0) ci(0) g(wheel11) side(rus) t(doctrineonly vehicle) crew1(rifleman_1:2) crew2(tank_commander:1) b(vehicles) cw(2) cp(8)
+  ("vehicle2" period(late) cd(0) ci(0) g(wheel11) side(rus) t(doctrineonly vehicle) crew1(rifleman_1:2) crew2(tank_commander:1) b(vehicles) cw(2) cp(0)
   cost(140))
 }
 {"mmg_carrier_rus"
-  ("vehicle2" period(late) cd(0) ci(0) g(wheel11) side(rus) t(doctrineonly vehicle) crew1(rifleman_1:2) crew2(tank_commander:1) b(vehicles) cw(2) cp(8)
+  ("vehicle2" period(late) cd(0) ci(0) g(wheel11) side(rus) t(doctrineonly vehicle) crew1(rifleman_1:2) crew2(tank_commander:1) b(vehicles) cw(2) cp(0)
   cost(160))
 }
 {"zis6_bm8_48"
-  ("vehicle"  period(late) cd(0) ci(0) g(wheel7) side(rus) t(doctrineonly vehicle) crew(tankman:2) b(vehicles) cw(2) cp(34)
+  ("vehicle"  period(late) cd(0) ci(0) g(wheel7) side(rus) t(doctrineonly vehicle) crew(tankman:2) b(vehicles) cw(2) cp(0)
   cost(850))
 }
 {"zis6_bm13_16"
-  ("vehicle"  period(late) cd(0) ci(0) g(wheel7) side(rus) t(doctrineonly vehicle) crew(tankman:2) b(vehicles) cw(2) cp(40)
+  ("vehicle"  period(late) cd(0) ci(0) g(wheel7) side(rus) t(doctrineonly vehicle) crew(tankman:2) b(vehicles) cw(2) cp(0)
   cost(1100))
 }
 {"bm13_studebaker"
-  ("vehicle"  period(late) cd(0) ci(0) g(wheel7) side(rus) t(doctrineonly vehicle) crew(tankman:2) b(vehicles) cw(2) cp(40)
+  ("vehicle"  period(late) cd(0) ci(0) g(wheel7) side(rus) t(doctrineonly vehicle) crew(tankman:2) b(vehicles) cw(2) cp(0)
   cost(1100))
 }
 {"bm31_12"
-  ("vehicle"  period(late) cd(0) ci(0) g(wheel8) side(rus) t(doctrineonly vehicle) crew(tankman:2) b(vehicles) cw(2) cp(56)
+  ("vehicle"  period(late) cd(0) ci(0) g(wheel8) side(rus) t(doctrineonly vehicle) crew(tankman:2) b(vehicles) cw(2) cp(0)
   cost(1600))
 }
 
@@ -793,86 +793,86 @@
 
 ;LIGHT
 {"t70"
-  ("vehicle2" period(late) cd(150) ci(60) t(light) side(rus) crew1(tankman:1) crew2(tank_commander:1) g(light2) b(tanks) cw(4) cp(12)
+  ("vehicle2" period(late) cd(150) ci(60) t(light) side(rus) crew1(tankman:1) crew2(tank_commander:1) g(light2) b(tanks) cw(4) cp(0)
   cost(270)) ;// +20 for crew
 }
 
 ;// Doctrine Units
 {"t60"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:1) crew2(tank_commander:1) g(light1) b(tanks) cw(4) cp(12)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:1) crew2(tank_commander:1) g(light1) b(tanks) cw(4) cp(0)
   cost(290)) ;// +20 for crew
 }
 {"t70m"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:1) crew2(tank_commander:1) g(light3) b(tanks) cw(4) cp(12)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:1) crew2(tank_commander:1) g(light3) b(tanks) cw(4) cp(0)
   cost(290)) ;// +20 for crew
 }
 {"t50"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(light2) b(tanks) cw(4) cp(12)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(light2) b(tanks) cw(4) cp(0)
   cost(350)) ;// +20 for crew
 }
 {"m3_stuart_late_rus"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:3) crew2(tank_commander_m1928:1) g(light2) b(tanks) cw(4) cp(12)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:3) crew2(tank_commander_m1928:1) g(light2) b(tanks) cw(4) cp(0)
   cost(310)) ;// +30 for crew
 }
 {"m3a1_stuart_rus"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:3) crew2(tank_commander_m1928:1) g(light2) b(tanks) cw(4) cp(12)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:3) crew2(tank_commander_m1928:1) g(light2) b(tanks) cw(4) cp(0)
   cost(310)) ;// +30 for crew
 }
 {"valentine7"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:2) crew2(tank_commander:1) g(light4) b(tanks) cw(4) cp(12)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:2) crew2(tank_commander:1) g(light4) b(tanks) cw(4) cp(0)
   cost(330)) ;// +25 for crew
 }
 {"valentine9"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:2) crew2(tank_commander:1) g(light5) b(tanks) cw(4) cp(12)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:2) crew2(tank_commander:1) g(light5) b(tanks) cw(4) cp(0)
   cost(450)) ;// +25 for crew
 }
 {"bt7a"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:2) crew2(tank_commander:1) g(light8) b(tanks) cw(4) cp(12)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(rus) crew1(tankman:2) crew2(tank_commander:1) g(light8) b(tanks) cw(4) cp(0)
   cost(380))
 }
 {"t60_bm8_24"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavyart artillery vehicle) side(rus) crew1(tankman:1) crew2(tank_commander:1) g(light9) b(tanks) cw(4) cp(34)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavyart artillery vehicle) side(rus) crew1(tankman:1) crew2(tank_commander:1) g(light9) b(tanks) cw(4) cp(0)
   cost(850)) ;// +20 for crew
 }
 
 
 ;MEDIUM
 {"t3476_43"
-  ("vehicle2" period(late) cd(240) ci(60) t(medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(medium1) b(tanks) cw(6) cp(20)
+  ("vehicle2" period(late) cd(240) ci(60) t(medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(medium1) b(tanks) cw(6) cp(0)
   cost(460)) ;// +30 for crew
 }
 {"t3485_44"
-  ("vehicle2" period(late) cd(360) ci(60) t(medium) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(medium3) b(tanks) cw(6) cp(24)
+  ("vehicle2" period(late) cd(360) ci(60) t(medium) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(medium3) b(tanks) cw(6) cp(0)
   cost(640)) ;// +35 for crew
 }
 
 ;// Doctrine Units
 {"t3457_43"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(medium2) b(tanks) cw(6) cp(20)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(medium2) b(tanks) cw(6) cp(0)
   cost(580)) ;// +30 for crew
 }
 {"m4a2_75_late_rus"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:4) crew2(tank_commander_m1928:1) g(medium3) b(tanks) cw(6) cp(24)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:4) crew2(tank_commander_m1928:1) g(medium3) b(tanks) cw(6) cp(0)
   cost(450)) ;// +35 for crew
 }
 {"t3476_43_flame"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(medium1) b(tanks) cw(6) cp(20)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(medium1) b(tanks) cw(6) cp(0)
   cost(540)) ;// +30 for crew
 }
 {"m4a2_76w_early_rus"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:4) crew2(tank_commander_m1928:1) g(medium3) b(tanks) cw(6) cp(24)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:4) crew2(tank_commander_m1928:1) g(medium3) b(tanks) cw(6) cp(0)
   cost(620)) ;// +35 for crew
 }
 {"m4a2_76w_late_rus"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:4) crew2(tank_commander_m1928:1) g(medium3) b(tanks) cw(6) cp(24)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:4) crew2(tank_commander_m1928:1) g(medium3) b(tanks) cw(6) cp(0)
   cost(630)) ;// +35 for crew
 }
 {"t3485_44b"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(medium3) b(tanks) cw(6) cp(24)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(medium3) b(tanks) cw(6) cp(0)
   cost(650)) ;// +35 for crew
 }
 {"t3485_44a_flame"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(medium3) b(tanks) cw(6) cp(24)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(medium3) b(tanks) cw(6) cp(0)
   cost(700)) ;// +35 for crew
 }
 
@@ -880,86 +880,86 @@
 
 
 {"kv1s"
-  ("vehicle2" period(late) cd(360) ci(60) t(heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(heavy1) b(tanks) cw(8) cp(26)
+  ("vehicle2" period(late) cd(360) ci(60) t(heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(heavy1) b(tanks) cw(8) cp(0)
   cost(570)) ;// +35 for crew
 }
 {"kv1_42"
-  ("vehicle2" period(late) cd(360) ci(60) t(heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(heavy2) b(tanks) cw(8) cp(26)
+  ("vehicle2" period(late) cd(360) ci(60) t(heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(heavy2) b(tanks) cw(8) cp(0)
   cost(605)) ;// +35 for crew
 }
 {"is1_43"
-  ("vehicle2" period(late) cd(720) ci(60) t(heavy) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(heavy3) b(tanks) cw(8) cp(26)
+  ("vehicle2" period(late) cd(720) ci(60) t(heavy) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(heavy3) b(tanks) cw(8) cp(0)
   cost(840)) ;// +30 for crew
 }
 {"is2_43"
-  ("vehicle2" period(late) cd(720) ci(60) t(heavy) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(heavy4) b(tanks) cw(8) cp(30)
+  ("vehicle2" period(late) cd(720) ci(60) t(heavy) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(heavy4) b(tanks) cw(8) cp(0)
   cost(1350)) ;// +30 for crew
 }
 
 ;// Doctrine Units
 {"churchill3"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(heavy0) b(tanks) cw(8) cp(26)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(heavy0) b(tanks) cw(8) cp(0)
   cost(570)) ;// +35 for crew
 }
 {"kv85"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(heavy2) b(tanks) cw(8) cp(26)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(heavy2) b(tanks) cw(8) cp(0)
   cost(1000)) ;// +30 for crew
 }
 {"is2_44"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(heavy5) b(tanks) cw(8) cp(30)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(heavy5) b(tanks) cw(8) cp(0)
   cost(1400)) ;// +30 for crew
 }
 {"is2_45"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(heavy5) b(tanks) cw(8) cp(30)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(heavy5) b(tanks) cw(8) cp(0)
   cost(1410)) ;// +30 for crew
 }
 
 ;SPG
 {"su76"
-  ("vehicle2" period(late) cd(240) ci(60) t(light) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(spg1) b(tanks) cw(4) cp(16)
+  ("vehicle2" period(late) cd(240) ci(60) t(light) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(spg1) b(tanks) cw(4) cp(0)
   cost(390)) ;// +30 for crew
 }
 {"su85"
-  ("vehicle2" period(late) cd(360) ci(60) t(medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(spg2) b(tanks) cw(6) cp(24)
+  ("vehicle2" period(late) cd(360) ci(60) t(medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(spg2) b(tanks) cw(6) cp(0)
   cost(610)) ;// +30 for crew
 }
 {"su122" ;// missing
-  ("vehicle2" period(late) cd(360) ci(180) t(medium) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(spg4) b(tanks) cw(6) cp(24)
+  ("vehicle2" period(late) cd(360) ci(180) t(medium) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(spg4) b(tanks) cw(6) cp(0)
   cost(625)) ;// +35 for crew
 }
 {"su152"
-  ("vehicle2" period(late) cd(720) ci(180) t(heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(spg6) b(tanks) cw(8) cp(30)
+  ("vehicle2" period(late) cd(720) ci(180) t(heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(spg6) b(tanks) cw(8) cp(0)
   cost(1000)) ;// +35 for crew
 }
 
 ;// Doctrine Units
 {"su85m"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(spg2) b(tanks) cw(6) cp(24)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(spg2) b(tanks) cw(6) cp(0)
   cost(720)) ;// +30 for crew
 }
 {"su100"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(spg3) b(tanks) cw(6) cp(30)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(rus) crew1(tankman:3) crew2(tank_commander:1) g(spg3) b(tanks) cw(6) cp(0)
   cost(1150)) ;// +30 for crew
 }
 {"isu122s"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(spg5) b(tanks) cw(8) cp(30)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(spg5) b(tanks) cw(8) cp(0)
   cost(1150)) ;// +35 for crew
 }
 {"isu152"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(spg7) b(tanks) cw(8) cp(30)
+  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(rus) crew1(tankman:4) crew2(tank_commander:1) g(spg7) b(tanks) cw(8) cp(0)
   cost(1250)) ;// +35 for crew
 }
 
 ;Plane
 {"yak1_ser69"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly) side(rus) crew(pilot:1) g(spg7) b(vehicles) cw(0) cp(23)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly) side(rus) crew(pilot:1) g(spg7) b(vehicles) cw(0) cp(0)
   cost(1000))
 }
 {"il2_mod42"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly) side(rus) crew(pilot:1) g(spg7) b(vehicles) cw(0) cp(23)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly) side(rus) crew(pilot:1) g(spg7) b(vehicles) cw(0) cp(0)
   cost(1000))
 }
 {"po2"
-  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly) side(rus) crew(pilot:2) g(spg8) b(vehicles) cw(0) cp(11)
+  ("vehicle"  period(late) cd(0) ci(0) t(doctrineonly) side(rus) crew(pilot:2) g(spg8) b(vehicles) cw(0) cp(0)
   cost(100))
 }
