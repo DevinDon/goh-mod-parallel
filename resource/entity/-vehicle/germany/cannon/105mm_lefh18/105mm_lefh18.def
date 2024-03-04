@@ -29,7 +29,7 @@
       {reload "" "cannon_pdr25_charger" "" ""}
     }
     {move {workers "driver01" "driver02" "driver03" "driver04" MinWorkers 2} {obstacle "close"}} ;// move state: cannon being pushed and which positions play animations
-    {attack {workers "commander" "gunner" "charger01" "charger02"} {obstacle "open"}} ;// fire/attack state: cannon aim, fire, and reload events
+    {attack {workers "gunner" "charger01" "charger02" "commander"} {obstacle "open"}} ;// fire/attack state: cannon aim, fire, and reload events
     {trailing {workers "seat01" "seat02" "seat03" "seat04"}} ;// trailing state: cannon is being towed {obstacle} not needed. Uses "close"
   }
 

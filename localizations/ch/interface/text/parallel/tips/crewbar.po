@@ -1,0 +1,283 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Parallel World - Tips - Crewbar\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+# 指挥官
+msgctxt "crewbar/commander"
+msgid   "<f(roboto_mono)>Commander"
+msgstr  "<f(roboto_mono)>指挥官"
+
+msgctxt "crewbar/commander01"
+msgid   "<f(roboto_mono)>Commander 01"
+msgstr  "<f(roboto_mono)>指挥官 01"
+
+msgctxt "crewbar/commander02"
+msgid   "<f(roboto_mono)>Commander 02"
+msgstr  "<f(roboto_mono)>指挥官 02"
+
+msgctxt "crewbar/commander03"
+msgid   "<f(roboto_mono)>Commander 03"
+msgstr  "<f(roboto_mono)>指挥官 03"
+
+msgctxt "crewbar/commander04"
+msgid   "<f(roboto_mono)>Commander 04"
+msgstr  "<f(roboto_mono)>指挥官 04"
+
+msgctxt "crewbar/commander05"
+msgid   "<f(roboto_mono)>Commander 05"
+msgstr  "<f(roboto_mono)>指挥官 05"
+
+msgctxt "crewbar/commander06"
+msgid   "<f(roboto_mono)>Commander 06"
+msgstr  "<f(roboto_mono)>指挥官 06"
+
+msgctxt "crewbar/commander07"
+msgid   "<f(roboto_mono)>Commander 07"
+msgstr  "<f(roboto_mono)>指挥官 07"
+
+msgctxt "crewbar/commander08"
+msgid   "<f(roboto_mono)>Commander 08"
+msgstr  "<f(roboto_mono)>指挥官 08"
+
+msgctxt "crewbar/commander09"
+msgid   "<f(roboto_mono)>Commander 09"
+msgstr  "<f(roboto_mono)>指挥官 09"
+
+msgctxt "crewbar/commander10"
+msgid   "<f(roboto_mono)>Commander 10"
+msgstr  "<f(roboto_mono)>指挥官 10"
+
+# 驾驶员
+msgctxt "crewbar/driver"
+msgid   "<f(roboto_mono)>Driver"
+msgstr  "<f(roboto_mono)>驾驶员"
+
+msgctxt "crewbar/driver01"
+msgid   "<f(roboto_mono)>Driver 01"
+msgstr  "<f(roboto_mono)>驾驶员 01"
+
+msgctxt "crewbar/driver02"
+msgid   "<f(roboto_mono)>Driver 02"
+msgstr  "<f(roboto_mono)>驾驶员 02"
+
+msgctxt "crewbar/driver03"
+msgid   "<f(roboto_mono)>Driver 03"
+msgstr  "<f(roboto_mono)>驾驶员 03"
+
+msgctxt "crewbar/driver04"
+msgid   "<f(roboto_mono)>Driver 04"
+msgstr  "<f(roboto_mono)>驾驶员 04"
+
+msgctxt "crewbar/driver05"
+msgid   "<f(roboto_mono)>Driver 05"
+msgstr  "<f(roboto_mono)>驾驶员 05"
+
+msgctxt "crewbar/driver06"
+msgid   "<f(roboto_mono)>Driver 06"
+msgstr  "<f(roboto_mono)>驾驶员 06"
+
+msgctxt "crewbar/driver07"
+msgid   "<f(roboto_mono)>Driver 07"
+msgstr  "<f(roboto_mono)>驾驶员 07"
+
+msgctxt "crewbar/driver08"
+msgid   "<f(roboto_mono)>Driver 08"
+msgstr  "<f(roboto_mono)>驾驶员 08"
+
+msgctxt "crewbar/driver09"
+msgid   "<f(roboto_mono)>Driver 09"
+msgstr  "<f(roboto_mono)>驾驶员 09"
+
+msgctxt "crewbar/driver10"
+msgid   "<f(roboto_mono)>Driver 10"
+msgstr  "<f(roboto_mono)>驾驶员 10"
+
+# 炮手
+msgctxt "crewbar/gunner"
+msgid   "<f(roboto_mono)>Gunner"
+msgstr  "<f(roboto_mono)>炮手"
+
+msgctxt "crewbar/gunner01"
+msgid   "<f(roboto_mono)>Gunner 01"
+msgstr  "<f(roboto_mono)>炮手 01"
+
+msgctxt "crewbar/gunner02"
+msgid   "<f(roboto_mono)>Gunner 02"
+msgstr  "<f(roboto_mono)>炮手 02"
+
+msgctxt "crewbar/gunner03"
+msgid   "<f(roboto_mono)>Gunner 03"
+msgstr  "<f(roboto_mono)>炮手 03"
+
+msgctxt "crewbar/gunner04"
+msgid   "<f(roboto_mono)>Gunner 04"
+msgstr  "<f(roboto_mono)>炮手 04"
+
+msgctxt "crewbar/gunner05"
+msgid   "<f(roboto_mono)>Gunner 05"
+msgstr  "<f(roboto_mono)>炮手 05"
+
+msgctxt "crewbar/gunner06"
+msgid   "<f(roboto_mono)>Gunner 06"
+msgstr  "<f(roboto_mono)>炮手 06"
+
+msgctxt "crewbar/gunner07"
+msgid   "<f(roboto_mono)>Gunner 07"
+msgstr  "<f(roboto_mono)>炮手 07"
+
+msgctxt "crewbar/gunner08"
+msgid   "<f(roboto_mono)>Gunner 08"
+msgstr  "<f(roboto_mono)>炮手 08"
+
+msgctxt "crewbar/gunner09"
+msgid   "<f(roboto_mono)>Gunner 09"
+msgstr  "<f(roboto_mono)>炮手 09"
+
+msgctxt "crewbar/gunner10"
+msgid   "<f(roboto_mono)>Gunner 10"
+msgstr  "<f(roboto_mono)>炮手 10"
+
+# 装填手
+msgctxt "crewbar/charger"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手"
+
+msgctxt "crewbar/charger01"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手 01"
+
+msgctxt "crewbar/charger02"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手 02"
+
+msgctxt "crewbar/charger03"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手 03"
+
+msgctxt "crewbar/charger04"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手 04"
+
+msgctxt "crewbar/charger05"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手 05"
+
+msgctxt "crewbar/charger06"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手 06"
+
+msgctxt "crewbar/charger07"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手 07"
+
+msgctxt "crewbar/charger08"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手 08"
+
+msgctxt "crewbar/charger09"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手 09"
+
+msgctxt "crewbar/charger10"
+msgid   "<f(roboto_mono)>Charger"
+msgstr  "<f(roboto_mono)>装填手 10"
+
+# 无线电通讯员
+msgctxt "crewbar/radioer"
+msgid   "<f(roboto_mono)>Radioer"
+msgstr  "<f(roboto_mono)>无线电通讯员"
+
+msgctxt "crewbar/radioer01"
+msgid   "<f(roboto_mono)>Radioer 01"
+msgstr  "<f(roboto_mono)>无线电通讯员 01"
+
+msgctxt "crewbar/radioer02"
+msgid   "<f(roboto_mono)>Radioer 02"
+msgstr  "<f(roboto_mono)>无线电通讯员 02"
+
+msgctxt "crewbar/radioer03"
+msgid   "<f(roboto_mono)>Radioer 03"
+msgstr  "<f(roboto_mono)>无线电通讯员 03"
+
+msgctxt "crewbar/radioer04"
+msgid   "<f(roboto_mono)>Radioer 04"
+msgstr  "<f(roboto_mono)>无线电通讯员 04"
+
+msgctxt "crewbar/radioer05"
+msgid   "<f(roboto_mono)>Radioer 05"
+msgstr  "<f(roboto_mono)>无线电通讯员 05"
+
+msgctxt "crewbar/radioer06"
+msgid   "<f(roboto_mono)>Radioer 06"
+msgstr  "<f(roboto_mono)>无线电通讯员 06"
+
+msgctxt "crewbar/radioer07"
+msgid   "<f(roboto_mono)>Radioer 07"
+msgstr  "<f(roboto_mono)>无线电通讯员 07"
+
+msgctxt "crewbar/radioer08"
+msgid   "<f(roboto_mono)>Radioer 08"
+msgstr  "<f(roboto_mono)>无线电通讯员 08"
+
+msgctxt "crewbar/radioer09"
+msgid   "<f(roboto_mono)>Radioer 09"
+msgstr  "<f(roboto_mono)>无线电通讯员 09"
+
+msgctxt "crewbar/radioer10"
+msgid   "<f(roboto_mono)>Radioer 10"
+msgstr  "<f(roboto_mono)>无线电通讯员 10"
+
+# 乘员
+msgctxt "crewbar/passenger"
+msgid   "<f(roboto_mono)>Passenger"
+msgstr  "<f(roboto_mono)>乘员"
+
+msgctxt "crewbar/passenger01"
+msgid   "<f(roboto_mono)>Passenger 01"
+msgstr  "<f(roboto_mono)>乘员 01"
+
+msgctxt "crewbar/passenger02"
+msgid   "<f(roboto_mono)>Passenger 02"
+msgstr  "<f(roboto_mono)>乘员 02"
+
+msgctxt "crewbar/passenger03"
+msgid   "<f(roboto_mono)>Passenger 03"
+msgstr  "<f(roboto_mono)>乘员 03"
+
+
+msgctxt "crewbar/passenger04"
+msgid   "<f(roboto_mono)>Passenger 04"
+msgstr  "<f(roboto_mono)>乘员 04"
+
+msgctxt "crewbar/passenger05"
+msgid   "<f(roboto_mono)>Passenger 05"
+msgstr  "<f(roboto_mono)>乘员 05"
+
+msgctxt "crewbar/passenger06"
+msgid   "<f(roboto_mono)>Passenger 06"
+msgstr  "<f(roboto_mono)>乘员 06"
+
+msgctxt "crewbar/passenger07"
+msgid   "<f(roboto_mono)>Passenger 07"
+msgstr  "<f(roboto_mono)>乘员 07"
+
+msgctxt "crewbar/passenger08"
+msgid   "<f(roboto_mono)>Passenger 08"
+msgstr  "<f(roboto_mono)>乘员 08"
+
+msgctxt "crewbar/passenger09"
+msgid   "<f(roboto_mono)>Passenger 09"
+msgstr  "<f(roboto_mono)>乘员 09"
+
+msgctxt "crewbar/passenger10"
+msgid   "<f(roboto_mono)>Passenger 10"
+msgstr  "<f(roboto_mono)>乘员 10"

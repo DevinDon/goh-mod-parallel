@@ -11,6 +11,7 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 
+# 模组信息
 msgctxt "mod/parallel/name"
 msgid   "Parallel World"
 msgstr  "平行世界 Parallel World"
