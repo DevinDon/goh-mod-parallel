@@ -4,6 +4,9 @@
 
   (include "/properties/standard/gun/define.ext")
 
+  ; 无模型
+  ; 无重量
+
   {FireSound "gun/gun_auto"} ; 开火音效
   {FireSoundclose "gun/gun_auto"} ; 车内视角开火音效
   {ReloadSound "tank/reload_small"} ; 装弹音效
@@ -151,5 +154,7 @@
     ; 无穿深修正表配置
     {FalloffStrength 0} ; 防空炮配置
   }
+
+  ; 无额外配置
 
 }
