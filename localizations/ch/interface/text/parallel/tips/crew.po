@@ -22,6 +22,22 @@ msgctxt "crewbar/driver"
 msgid   "<f(roboto_mono)>Driver"
 msgstr  "<f(roboto_mono)>驾驶员"
 
+msgctxt "crewbar/driver01"
+msgid   "<f(roboto_mono)>Driver 01"
+msgstr  "<f(roboto_mono)>驾驶员 01"
+
+msgctxt "crewbar/driver02"
+msgid   "<f(roboto_mono)>Driver 02"
+msgstr  "<f(roboto_mono)>驾驶员 02"
+
+msgctxt "crewbar/driver03"
+msgid   "<f(roboto_mono)>Driver 03"
+msgstr  "<f(roboto_mono)>驾驶员 03"
+
+msgctxt "crewbar/driver04"
+msgid   "<f(roboto_mono)>Driver 04"
+msgstr  "<f(roboto_mono)>驾驶员 04"
+
 # 炮手
 msgctxt "crewbar/gunner"
 msgid   "<f(roboto_mono)>Gunner"
@@ -31,6 +47,14 @@ msgstr  "<f(roboto_mono)>炮手"
 msgctxt "crewbar/charger"
 msgid   "<f(roboto_mono)>Charger"
 msgstr  "<f(roboto_mono)>装填手"
+
+msgctxt "crewbar/charger01"
+msgid   "<f(roboto_mono)>Charger 01"
+msgstr  "<f(roboto_mono)>装填手 01"
+
+msgctxt "crewbar/charger02"
+msgid   "<f(roboto_mono)>Charger 02"
+msgstr  "<f(roboto_mono)>装填手 02"
 
 # 无线电通讯员
 msgctxt "crewbar/radioer"
