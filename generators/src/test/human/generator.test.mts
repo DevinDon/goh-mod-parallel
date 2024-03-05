@@ -1,46 +1,42 @@
 import { equal } from 'node:assert';
 import { it } from 'node:test';
 import { generateHuman } from '../../human/generators/generator.mjs';
-import { options } from '../../human/options/ger-late-mgun-1.mjs';
+import options from '../../human/options/ger-late-mgun-1.mjs';
 
 const want = `; 人员配置
-{Breed
+{breed
 
-  {Tags "soldier"} ; 标签
+  {tags "soldier"} ; 标签
 
-  {Behaviour soldier} ; 行为类别
-  {Skin "ger_wh_43_mg"} ; 外观
-  {Portrait "ger-regular"} ; 肖像
-  {Icon "mg"} ; 图标
-  {Icon_priority 0} ; 图标优先级
-  {Nationality ger} ; 国籍
+  {behaviour soldier} ; 行为类别
+  {skin "ger_wh_43_mg"} ; 外观
+  {portrait "ger_regular"} ; 肖像
+  {icon "mg"} ; 图标
+  {icon_priority 0} ; 图标优先级
+  {nationality ger} ; 国籍
 
-  {Armors ; 防护装置
+  {armors ; 防护装置
       {head ger_m40_helmet}
       ; 无防弹衣
     }
 
-  {Perks ; 能力
+  {perks ; 能力
     (include "ability.inc")
-    ("mg_skill_rank_2")
-    ("tier2_standard")
+    ("mg_skill_rank_4")
+    ("tier4_defense")
   }
 
-  {Veterancy ; 体力
+  {veterancy ; 体力
     (include "ability.inc")
-    ("veterancy_lvl_0")
+    ("veterancy_lvl_8")
   }
 
-  {Inventory ; 背包
-    {Size 10 10}
-    {Weight 200}
-
-    {Item "mg42_belt" filling "mgun_ger belt ammo" 100}
-    {Item "mgun_ger belt ammo" 600}
-    {Item "m24 grenade" 0.25 0.5}
-    {Item "m24_smoke grenade" 0.25 0.5}
-    {Item "bandage_ger" 3.5 0.5}
-    {Item "shovel_ger"}
+  {inventory ; 背包
+    {Item "weapon ger-mg42" filled} ; MG42
+    {Item "ammo ger-mgun" 500} ; MG42 弹链
+    {Item "m24 grenade" 1} ; 手榴弹
+    {Item "m24_smoke grenade" 1} ; 烟雾弹
+    {Item "bandage_ger" 5} ; 绷带
 
     {in_hands 0}
   }

@@ -21,7 +21,7 @@ export const generateHuman = ({
   const tagsLine = tags.map(tag => `"${tag}"`).join(' ');
 
   const armorsLinesRaw = (armors?.head || armors?.body)
-    ? `{Armors ; 防护装置
+    ? `{armors ; 防护装置
   ${armors?.head ? `{head ${armors.head}}` : '; 无防弹头盔'}
   ${armors?.body ? `{body ${armors.body}}` : '; 无防弹衣'}
 }`
@@ -49,33 +49,30 @@ export const generateHuman = ({
   const extraLines = setIndent(extraLinesRaw, { indent: 4, indentFirstLine: false });
 
   return `; 人员配置
-{Breed
+{breed
 
-  {Tags ${tagsLine}} ; 标签
+  {tags ${tagsLine}} ; 标签
 
-  {Behaviour ${behaviour}} ; 行为类别
-  {Skin "${skin}"} ; 外观
-  {Portrait "${portrait}"} ; 肖像
-  {Icon "${icon}"} ; 图标
-  {Icon_priority ${iconPriority}} ; 图标优先级
-  {Nationality ${nationality}} ; 国籍
+  {behaviour ${behaviour}} ; 行为类别
+  {skin "${skin}"} ; 外观
+  {portrait "${portrait}"} ; 肖像
+  {icon "${icon}"} ; 图标
+  {icon_priority ${iconPriority}} ; 图标优先级
+  {nationality ${nationality}} ; 国籍
 
   ${armorsLines}
 
-  {Perks ; 能力
+  {perks ; 能力
     (include "ability.inc")
     ${perksLines}
   }
 
-  {Veterancy ; 体力
+  {veterancy ; 体力
     (include "ability.inc")
     ${veterancyLines}
   }
 
-  {Inventory ; 背包
-    {Size 10 10}
-    {Weight 200}
-
+  {inventory ; 背包
     ${inventoryLines}
 
     {in_hands 0}
