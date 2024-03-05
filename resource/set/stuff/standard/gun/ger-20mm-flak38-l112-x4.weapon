@@ -4,6 +4,8 @@
 
   (include "/properties/standard/gun/define.ext")
 
+  ; 无标签
+
   ; 无模型
   ; 无重量
 
