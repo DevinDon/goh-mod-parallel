@@ -3,7 +3,7 @@ import { it } from 'node:test';
 import { generateCrewAndPassenger } from '../../crew-and-passenger/generators/generator.mjs';
 import options from '../../crew-and-passenger/options/bmw-r71.mjs';
 
-const output = `; crew and passenger
+const want = `; crew and passenger
 
 ; set visors
 {Sensor
@@ -127,6 +127,6 @@ const output = `; crew and passenger
 `;
 
 it('generate crew and passenger', () => {
-  const weapon = generateCrewAndPassenger(options);
-  equal(weapon, output);
+  const output = generateCrewAndPassenger(options);
+  equal(output, want);
 });
