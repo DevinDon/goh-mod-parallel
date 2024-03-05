@@ -27,11 +27,11 @@
   }
 
   {inventory ; 背包
-    {Item "shovel_ger"} ; 工兵铲
-    {Item "ammo ger-mgun" 1000} ; MG42 弹链
-    {Item "m24 grenade" 5} ; 手榴弹
+    {Item "ammo ger-mgun" 900} ; MG42 弹链
+    {Item "m24 grenade" 3} ; 手榴弹
     {Item "m24_smoke grenade" 5} ; 烟雾弹
-    {Item "bandage_ger" 10} ; 绷带
+    {Item "bandage_ger" 9} ; 绷带
+    {Item "shovel_ger"} ; 工兵铲
 
     {in_hands 0}
   }
