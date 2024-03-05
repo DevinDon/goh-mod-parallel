@@ -18,7 +18,9 @@ export const generateHuman = ({
   extra,
 }: HumanOptions) => {
 
-  const tagsLine = tags.map(tag => `"${tag}"`).join(' ');
+  const tagsLine = tags?.length
+    ? `{tags ${tags.map(tag => `"${tag}"`).join(' ')}} ; 标签`
+    : '; 无标签';
 
   const armorsLinesRaw = (armors?.head || armors?.body)
     ? `{armors ; 防护装置
@@ -46,12 +48,12 @@ export const generateHuman = ({
   const extraLinesRaw = extra?.length
     ? extra.join('\n')
     : '; 无额外配置';
-  const extraLines = setIndent(extraLinesRaw, { indent: 4, indentFirstLine: false });
+  const extraLines = setIndent(extraLinesRaw, { indent: 2, indentFirstLine: false });
 
   return `; 人员配置
 {breed
 
-  {tags ${tagsLine}} ; 标签
+  ${tagsLine}
 
   {behaviour ${behaviour}} ; 行为类别
   {skin "${skin}"} ; 外观

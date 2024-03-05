@@ -19,6 +19,8 @@ const options: HumanOptions = {
   perks: [
     'mg_skill_rank_4',
     'tier4_defense',
+    'stealth',
+    'sniper_vision',
   ],
 
   veterancy: [
@@ -26,10 +28,12 @@ const options: HumanOptions = {
   ],
 
   inventory: [
+    '{Item "weapon ger-karabiner-98k-sniper" filled} ; Karabiner 98k',
+    '{Item "ammo ger-sniper clip" 55} ; Karabiner 98k 弹夹',
     '{Item "ammo ger-mgun" 900} ; MG42 弹链',
-    '{Item "m24 grenade" 3} ; 手榴弹',
-    '{Item "m24_smoke grenade" 5} ; 烟雾弹',
-    '{Item "bandage_ger" 9} ; 绷带',
+    '{Item "m24 grenade" 1} ; 手榴弹',
+    '{Item "m24_smoke grenade" 3} ; 烟雾弹',
+    '{Item "bandage_ger" 7} ; 绷带',
     '{Item "shovel_ger"} ; 工兵铲',
   ],
 

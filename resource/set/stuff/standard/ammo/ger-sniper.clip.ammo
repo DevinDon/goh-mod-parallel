@@ -1,0 +1,24 @@
+{bullet
+
+  {tag "bullet small_arms stackable pierce bullet_fx size2"}
+
+  {entity "rifle_clip_ger"}
+  {mass 0.03}
+
+  {inventory
+    {weight 20}
+    {block 5}
+    {size 1 1}
+    {fsm "belt"}
+  }
+
+  {Trace
+    {View "/texture/fx/tracers/line/green/tracer.mtl"
+      {ScaleX 1.25}
+      {ScaleY 0.20}
+      {Light  1.25}
+    }
+    {Length 10}
+  }
+
+}

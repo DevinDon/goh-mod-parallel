@@ -5,6 +5,18 @@ import { generateBulletParameter } from './bullet-parameter-generator.mjs';
 /** 生成武器配置 */
 export const generateWeapon = (options: WeaponOptions) => {
 
+  const tagsLine = options.tags?.length
+    ? `{Tag ${options.tags.map(tag => `"${tag}"`).join(' ')}} ; 标签`
+    : '; 无标签';
+
+  const entityLine = options.entity
+    ? `{Entity "${options.entity}"}`
+    : '; 无模型';
+
+  const massLine = options.mass
+    ? `{Mass ${options.mass}}`
+    : '; 无重量';
+
   const curved = options.curved === true ? '{Aimtype curved} ; 曲射模式' : '; 不启用曲射模式';
 
   const burst = options.burst
@@ -22,11 +34,21 @@ export const generateWeapon = (options: WeaponOptions) => {
     ? setIndent(bulletsLines.join('\n\n'), { indent: 2, indentFirstLine: false })
     : '; 无炮弹模式';
 
+  const extraLinesRaw = options.extra?.length
+    ? options.extra.join('\n')
+    : '; 无额外配置';
+  const extraLines = setIndent(extraLinesRaw, { indent: 2, indentFirstLine: false });
+
   return `; ${options.name}
 ; ${options.description}
 {from "${options.from ?? 'pattern gun'}"
 
   (include "/properties/standard/gun/define.ext")
+
+  ${tagsLine}
+
+  ${entityLine}
+  ${massLine}
 
   {FireSound "${options.fireSound}"} ; 开火音效
   {FireSoundclose "${options.fireSoundClose}"} ; 车内视角开火音效
@@ -77,6 +99,8 @@ export const generateWeapon = (options: WeaponOptions) => {
   }
 
   ${bullets}
+
+  ${extraLines}
 
 }
 `;

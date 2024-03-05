@@ -17,6 +17,8 @@ export const BulletReloadingCursors = {
   wp: 'gun_wp',
   ic: 'gun_ic',
   api: 'gun_api',
+  // 步枪弹
+  clip: 'carbine_reload',
 } as const;
 
 /** 炮弹类型 */
@@ -90,6 +92,14 @@ export type WeaponOptions = {
   /** 继承自哪个武器或模板，默认为 `pattern gun` */
   from?: string;
 
+  /** 标签，可选 */
+  tags?: string[];
+
+  /** 模型名称，可选 */
+  entity?: string;
+  /** 质量，可选 */
+  mass?: number;
+
   /** 开火音效 */
   fireSound: string;
   /** 车内视角开火音效 */
@@ -100,6 +110,7 @@ export type WeaponOptions = {
   cursor?: 'ironsights/aa'
   | 'ironsights/bazooka'
   | 'ironsights/binoculars'
+  | 'ironsights/mg'
   | 'ironsights/mortar'
   | 'ironsights/grenade'
   | 'ironsights/rifle'
@@ -168,5 +179,8 @@ export type WeaponOptions = {
 
   /** 弹种配置 */
   bullets: WeaponBulletOptions[];
+
+  /** 额外的自定义参数，需要包含花括号或大括号，一项为一行 */
+  extra?: string[];
 
 };

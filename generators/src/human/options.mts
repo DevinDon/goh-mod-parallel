@@ -7,8 +7,8 @@ export type HumanOptions = {
   /** 要保存到的路径，相对于当前模组的根目录 */
   destination: string;
 
-  /** 标签 */
-  tags: string[];
+  /** 标签，可选 */
+  tags?: string[];
   /** 行为类别 */
   behaviour: 'soldier';
   /** 外观 */

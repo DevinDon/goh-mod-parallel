@@ -1,0 +1,50 @@
+{from "pattern bullet"
+
+  {tag "weapon rifle rifle_slap_melee bullet to_hand mountable shoot_walking_manual -shoot_walking sniper rifle_shell"}
+
+  {inventory
+    {size 6 2}
+    {link_bone "gun_back"}
+    {weight 100}
+  }
+
+  {special
+    {mode aim}
+    {PrepareTime 4.5}
+    {PrepareCursor "aimed_shot"}
+    {PrepareCursorScene "aimed_shot_scene"}
+    {accuracy 2.25}
+    {damage 5}
+  }
+
+  {states
+    {reload "reload"}
+    {unload "unload"}
+    {fire "fire"}
+    {aim "aim"}
+    {can_aim "can-aim-bolt"}
+  }
+
+  {cursor "ironsights/mg"}
+  {foresight "foresight12"}
+
+  {curve "bullet_sniper"}
+
+  {ZeroingAccuracy 0.9 0.8 0.7 0.6 0.5}
+
+  {RelaxationTime 2}
+  {FiringTimeout 3.5 0.5}
+
+  {recoil
+    {shoot {1.50 0.25} {0 0.75}} ; pitch / +- random and yaw / +- random, per shot, degree
+    {maxAngle 8 8} ; max recoil angle (pitch/yaw), degree
+    {restoreTime 1.00 0.025} ; recoil restore time, first -> minimum time, second -> additional time per shot, sec
+    {restoreDelay 0.20} ; delay before restore, sec
+  }
+
+  {swayparams
+    {bounds -0.35 0.25 -0.45 0.35} ; x -> negativeYaw, y -> positiveYaw, z -> negativePitch, w -> positive Pitch (in degree)
+    {speed 0.2} ; sway speed coef
+  }
+
+}
