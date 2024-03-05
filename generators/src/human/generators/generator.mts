@@ -26,7 +26,7 @@ export const generateHuman = ({
   ${armors?.body ? `{body ${armors.body}}` : '; 无防弹衣'}
 }`
     : '; 无防护装置';
-  const armorsLines = setIndent(armorsLinesRaw, { indent: 4, indentFirstLine: false });
+  const armorsLines = setIndent(armorsLinesRaw, { indent: 2, indentFirstLine: false });
 
   const perksLinesRaw = perks?.length
     ? perks.map(perk => `("${perk}")`).join('\n')

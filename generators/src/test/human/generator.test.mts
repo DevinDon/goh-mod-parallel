@@ -16,9 +16,9 @@ const want = `; 人员配置
   {nationality ger} ; 国籍
 
   {armors ; 防护装置
-      {head ger_m40_helmet}
-      ; 无防弹衣
-    }
+    {head ger_m40_helmet}
+    ; 无防弹衣
+  }
 
   {perks ; 能力
     (include "ability.inc")
