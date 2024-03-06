@@ -21,7 +21,12 @@ const options: CrewAndPassengerOptions = {
       bone: 'visor2',
       preset: 'standard-vision-none',
     },
-    // 使用成员视野
+    // 重新定义视野
+    {
+      name: 'standard-visor-commander',
+      bone: 'visor',
+      preset: 'standard-vision-around',
+    },
   ],
 
   animations: [
@@ -107,7 +112,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit4', animation: 'commander' },
       ],
       bone: 'commander',
-      visor: 'standard-visor-none',
+      visor: 'standard-visor-commander',
       extra: [ '{openForCrush}' ],
     },
     {

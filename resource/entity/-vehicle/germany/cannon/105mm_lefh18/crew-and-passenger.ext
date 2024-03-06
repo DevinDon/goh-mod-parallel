@@ -17,6 +17,11 @@
     {Bone "visor2"}
     {Vision "standard-vision-none"}
   }
+  ; visor standard-visor-commander
+  {Visor "standard-visor-commander"
+    {Bone "visor"}
+    {Vision "standard-vision-around"}
+  }
 }
 
 ; set animations
@@ -138,7 +143,7 @@
     {group "crew"}
     {linkbone "commander"}
     ; no turnoff
-    {visor "standard-visor-none"}
+    {visor "standard-visor-commander"}
     {openForCrush}
   }
 }
