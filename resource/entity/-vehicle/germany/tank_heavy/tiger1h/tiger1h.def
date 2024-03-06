@@ -43,7 +43,7 @@
 
   {Sensor
     {Visor "main"
-      {Vision "standard-vision-narrow"}
+      {Vision "standard-vehicle-vision-narrow"}
     }
   }
 

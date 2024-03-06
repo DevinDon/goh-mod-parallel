@@ -25,7 +25,7 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'standard-visor-commander',
       bone: 'visor',
-      preset: 'standard-vision-around',
+      preset: 'standard-vehicle-vision-around',
     },
   ],
 
@@ -33,73 +33,73 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'driver01',
       forward: {
-        end: [ 'cannon_pak40_pusher_left', 10 ],
+        end: ['cannon_pak40_pusher_left', 10],
       },
     },
     {
       name: 'driver02',
       forward: {
-        end: [ 'cannon_pak40_pusher_right', 10 ],
+        end: ['cannon_pak40_pusher_right', 10],
       },
     },
     {
       name: 'driver03',
       forward: {
-        end: [ 'mgun_browning_driver_l', 10 ],
+        end: ['mgun_browning_driver_l', 10],
       },
     },
     {
       name: 'driver04',
       forward: {
-        end: [ 'mgun_browning_driver_r', 10 ],
+        end: ['mgun_browning_driver_r', 10],
       },
     },
     {
       name: 'seat01',
       forward: {
-        end: [ 'pose_seat_cannon_left', 10 ],
+        end: ['pose_seat_cannon_left', 10],
       },
     },
     {
       name: 'seat02',
       forward: {
-        end: [ 'pose_seat_cannon_right', 10 ],
+        end: ['pose_seat_cannon_right', 10],
       },
     },
     {
       name: 'seat03',
       forward: {
-        end: [ 'pose_seat_cannon_right', 10 ],
+        end: ['pose_seat_cannon_right', 10],
       },
     },
     {
       name: 'seat04',
       forward: {
-        end: [ 'pose_seat_cannon_left', 10 ],
+        end: ['pose_seat_cannon_left', 10],
       },
     },
     {
       name: 'gunner',
       forward: {
-        end: [ 'pose_m5_gunlayer', 10 ],
+        end: ['pose_m5_gunlayer', 10],
       },
     },
     {
       name: 'charger01',
       forward: {
-        end: [ 'pose_pdr25_charger', 10 ],
+        end: ['pose_pdr25_charger', 10],
       },
     },
     {
       name: 'charger02',
       forward: {
-        end: [ 'pose_squat_empty', 10 ],
+        end: ['pose_squat_empty', 10],
       },
     },
     {
       name: 'commander',
       forward: {
-        end: [ 'pose_squat_watch_binocular', 10 ],
+        end: ['pose_squat_watch_binocular', 10],
       },
     },
   ],
@@ -113,7 +113,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'commander',
       visor: 'standard-visor-commander',
-      extra: [ '{openForCrush}' ],
+      extra: ['{openForCrush}'],
     },
     {
       name: 'gunner',
@@ -122,7 +122,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'gunner',
       visor: 'standard-visor-none',
-      extra: [ '{openForCrush}' ],
+      extra: ['{openForCrush}'],
     },
     {
       name: 'charger01',
@@ -131,7 +131,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'charger',
       visor: 'standard-visor-none',
-      extra: [ '{openForCrush}' ],
+      extra: ['{openForCrush}'],
     },
     {
       name: 'charger02',
@@ -140,7 +140,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'charger2',
       visor: 'standard-visor-none',
-      extra: [ '{openForCrush}' ],
+      extra: ['{openForCrush}'],
     },
     // 移动模式
     {

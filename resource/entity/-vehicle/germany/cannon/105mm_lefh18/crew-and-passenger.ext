@@ -20,7 +20,7 @@
   ; visor standard-visor-commander
   {Visor "standard-visor-commander"
     {Bone "visor"}
-    {Vision "standard-vision-around"}
+    {Vision "standard-vehicle-vision-around"}
   }
 }
 

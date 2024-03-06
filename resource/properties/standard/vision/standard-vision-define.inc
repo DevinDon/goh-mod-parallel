@@ -261,32 +261,32 @@
 }
 
 ; 载具视野定义
-; standard-vision-narrow 前方窄视角 120
-{"standard-vision-narrow"
+; standard-vehicle-vision-narrow 前方窄视角 120
+{"standard-vehicle-vision-narrow"
   {uncover  15}
   {h_fov    30} ; 水平
   {v_fov    30} ; 垂直
   ("set-spotting" radius(10.95))
 }
 
-; standard-vision-medium 前方中视角 150
-{"standard-vision-medium"
+; standard-vehicle-vision-medium 前方中视角 150
+{"standard-vehicle-vision-medium"
   {uncover  15}
   {h_fov    60} ; 水平
   {v_fov    90} ; 垂直
   ("set-spotting" radius(12.24))
 }
 
-; standard-vision-wide 前方宽视角 180
-{"standard-vision-wide"
+; standard-vehicle-vision-wide 前方宽视角 180
+{"standard-vehicle-vision-wide"
   {uncover  20}
   {h_fov    120} ; 水平
   {v_fov    180} ; 垂直
   ("set-spotting" radius(13.41))
 }
 
-; standard-vision-around 全景环绕视角 200
-{"standard-vision-around"
+; standard-vehicle-vision-around 全景环绕视角 200
+{"standard-vehicle-vision-around"
   {uncover  25}
   {h_fov   240} ; 水平
   {v_fov   180} ; 垂直

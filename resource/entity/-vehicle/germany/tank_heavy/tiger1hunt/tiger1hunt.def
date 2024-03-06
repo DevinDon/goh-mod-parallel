@@ -42,7 +42,7 @@
 
   {Sensor
     {Visor "main"
-      {Vision "standard-vision-wide"}
+      {Vision "standard-vehicle-vision-wide"}
     }
   }
 

@@ -20,7 +20,7 @@
   ; visor standard-visor-driver
   {Visor "standard-visor-driver"
     {Bone "driver"}
-    {Vision "standard-vision-around"}
+    {Vision "standard-vehicle-vision-around"}
   }
 }
 

@@ -22,7 +22,7 @@ actor
 
 {sensor
   {visor "main"
-    {vision "standard-vision-around"}
+    {vision "standard-vehicle-vision-around"}
     {bone "visor"}
   }
 }

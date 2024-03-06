@@ -5,10 +5,10 @@ export type VisorOptions = {
   /** 视角绑定点 */
   bone: string;
   /** 视角预设参数 */
-  preset: 'standard-vision-narrow'
-  | 'standard-vision-medium'
-  | 'standard-vision-wide'
-  | 'standard-vision-around'
+  preset: 'standard-vehicle-vision-narrow'
+  | 'standard-vehicle-vision-medium'
+  | 'standard-vehicle-vision-wide'
+  | 'standard-vehicle-vision-around'
   | 'standard-vision-noise-detection'
   | 'standard-vision-none';
 };

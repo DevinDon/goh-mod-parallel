@@ -33,7 +33,7 @@
       {Bone "visor"}
     }
     {Visor "top"
-      {Vision "standard-vision-around"}
+      {Vision "standard-vehicle-vision-around"}
       {Bone "mgun"}
     }
   }

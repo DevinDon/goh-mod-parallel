@@ -39,15 +39,15 @@
   }
   {Visor "main"
     {Bone "foresight1"}
-    {Vision "standard-vision-narrow"}
+    {Vision "standard-vehicle-vision-narrow"}
   }
   {Visor "around"
     {Bone "visor1"}
-    {Vision "standard-vision-wide"}
+    {Vision "standard-vehicle-vision-wide"}
   }
   {Visor "driver"
     {Bone "visor2"}
-    {Vision "standard-vision-narrow"}
+    {Vision "standard-vehicle-vision-narrow"}
   }
 }
 

@@ -9,7 +9,7 @@
 
 {sensor
   {visor "main"
-    {vision "standard-vision-wide"}
+    {vision "standard-vehicle-vision-wide"}
     {bone "visor"}
   }
 }

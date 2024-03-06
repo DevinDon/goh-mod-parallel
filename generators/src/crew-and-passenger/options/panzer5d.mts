@@ -25,17 +25,17 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'standard-visor-driver',
       bone: 'visor2',
-      preset: 'standard-vision-narrow',
+      preset: 'standard-vehicle-vision-narrow',
     },
     {
       name: 'standard-visor-gunner',
       bone: 'foresight1',
-      preset: 'standard-vision-narrow',
+      preset: 'standard-vehicle-vision-narrow',
     },
     {
       name: 'standard-visor-commander',
       bone: 'visor1',
-      preset: 'standard-vision-around',
+      preset: 'standard-vehicle-vision-around',
     },
   ],
 
@@ -43,43 +43,43 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'driver',
       forward: {
-        base: [ 'open_driver', 1 ],
-        begin: [ 'board_pz4_driver', 1 ],
-        end: [ 'pose_mgun_pz6', 1 ],
+        base: ['open_driver', 1],
+        begin: ['board_pz4_driver', 1],
+        end: ['pose_mgun_pz6', 1],
       },
       reverse: {
-        base: [ 'open_driver', -1 ],
-        end: [ 'board_pz4_driver', -1 ],
+        base: ['open_driver', -1],
+        end: ['board_pz4_driver', -1],
       },
     },
     {
       name: 'left',
       forward: {
-        begin: [ 'board_cromwell', 1 ],
-        end: [ 'pose_mgun_pz6', 1 ],
+        begin: ['board_cromwell', 1],
+        end: ['pose_mgun_pz6', 1],
       },
       reverse: {
-        end: [ 'board_cromwell', -1 ],
+        end: ['board_cromwell', -1],
       },
     },
     {
       name: 'right',
       forward: {
-        begin: [ 'board_cromwell', 1 ],
-        end: [ 'pose_mgun_pz6', 1 ],
+        begin: ['board_cromwell', 1],
+        end: ['pose_mgun_pz6', 1],
       },
       reverse: {
-        end: [ 'board_cromwell', -1 ],
+        end: ['board_cromwell', -1],
       },
     },
     {
       name: 'armor',
       forward: {
-        begin: [ 'board_HighArmor', 1 ],
-        end: [ 'pose_seat_armor_1', 1 ],
+        begin: ['board_HighArmor', 1],
+        end: ['pose_seat_armor_1', 1],
       },
       reverse: {
-        end: [ 'emit_tank_1', 1 ],
+        end: ['emit_tank_1', 1],
       },
     },
   ],
@@ -92,7 +92,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-commander',
-      turnoff: [ 'shadow', 'sensor' ],
+      turnoff: ['shadow', 'sensor'],
     },
     {
       name: 'driver',
@@ -102,7 +102,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-driver',
-      turnoff: [ 'shadow', 'sensor' ],
+      turnoff: ['shadow', 'sensor'],
     },
     {
       name: 'gunner',
@@ -111,7 +111,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-gunner',
-      turnoff: [ 'shadow', 'sensor' ],
+      turnoff: ['shadow', 'sensor'],
     },
     {
       name: 'gunner3',
@@ -120,7 +120,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-driver',
-      turnoff: [ 'shadow', 'sensor' ],
+      turnoff: ['shadow', 'sensor'],
     },
     {
       name: 'charger',
@@ -129,7 +129,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor' ],
+      turnoff: ['shadow', 'sensor'],
     },
   ],
 

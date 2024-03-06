@@ -65,7 +65,7 @@
 (define "set-open-crew"
   {sensor
     {visor "top"
-      {vision "standard-vision-wide"}
+      {vision "standard-vehicle-vision-wide"}
       {bone "%visorbone"}
     }
   }

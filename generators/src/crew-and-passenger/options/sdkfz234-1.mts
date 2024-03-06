@@ -25,17 +25,17 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'standard-visor-driver',
       bone: 'visor2',
-      preset: 'standard-vision-narrow',
+      preset: 'standard-vehicle-vision-narrow',
     },
     {
       name: 'standard-visor-gunner',
       bone: 'foresight1',
-      preset: 'standard-vision-narrow',
+      preset: 'standard-vehicle-vision-narrow',
     },
     {
       name: 'standard-visor-commander',
       bone: 'visor1',
-      preset: 'standard-vision-around',
+      preset: 'standard-vehicle-vision-around',
     },
   ],
 
@@ -43,41 +43,41 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'commander',
       forward: {
-        begin: [ 'board_sd222_driver', 1 ],
-        end: [ 'seat_driver_car', 1 ],
+        begin: ['board_sd222_driver', 1],
+        end: ['seat_driver_car', 1],
       },
       reverse: {
-        end: [ 'emit_sd222_driver', 1 ],
+        end: ['emit_sd222_driver', 1],
       },
     },
     {
       name: 'driver',
       forward: {
-        begin: [ 'board_sd222_driver', 1 ],
-        end: [ 'seat_sdkfz234_driver', 1 ],
+        begin: ['board_sd222_driver', 1],
+        end: ['seat_sdkfz234_driver', 1],
       },
       reverse: {
-        end: [ 'emit_sd222_driver', 1 ],
+        end: ['emit_sd222_driver', 1],
       },
     },
     {
       name: 'gunner',
       forward: {
-        begin: [ 'board_sd222_driver', 1 ],
-        end: [ 'seat_driver_car', 1 ],
+        begin: ['board_sd222_driver', 1],
+        end: ['seat_driver_car', 1],
       },
       reverse: {
-        end: [ 'emit_sd222_driver', 1 ],
+        end: ['emit_sd222_driver', 1],
       },
     },
     {
       name: 'charger',
       forward: {
-        begin: [ 'board_sd222_driver', 1 ],
-        end: [ 'seat_sdkfz234_driver', 1 ],
+        begin: ['board_sd222_driver', 1],
+        end: ['seat_sdkfz234_driver', 1],
       },
       reverse: {
-        end: [ 'emit_sd222_driver', 1 ],
+        end: ['emit_sd222_driver', 1],
       },
     },
   ],
@@ -90,7 +90,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'commander',
       visor: 'standard-visor-commander',
-      turnoff: [ 'shadow', 'sensor' ],
+      turnoff: ['shadow', 'sensor'],
     },
     {
       name: 'driver',
@@ -99,7 +99,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'driver',
       visor: 'standard-visor-driver',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      turnoff: ['shadow', 'sensor', 'targetable'],
     },
     {
       name: 'gunner',
@@ -108,7 +108,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'gunner',
       visor: 'standard-visor-gunner',
-      turnoff: [ 'shadow', 'sensor' ],
+      turnoff: ['shadow', 'sensor'],
     },
     {
       name: 'charger',
@@ -117,7 +117,7 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'charger',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      turnoff: ['shadow', 'sensor', 'targetable'],
     },
   ],
 

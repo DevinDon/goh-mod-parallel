@@ -40,11 +40,11 @@
 
   {Sensor
     {Visor "main"
-      {Vision "standard-vision-narrow"}
+      {Vision "standard-vehicle-vision-narrow"}
       {Bone "foresight1"}
     }
     {Visor "around"
-      {Vision "standard-vision-around"}
+      {Vision "standard-vehicle-vision-around"}
     }
   }
 

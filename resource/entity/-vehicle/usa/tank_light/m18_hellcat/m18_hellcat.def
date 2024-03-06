@@ -30,7 +30,7 @@
 
   {Sensor
     {Visor "around"
-      {Vision "standard-vision-around"}
+      {Vision "standard-vehicle-vision-around"}
     }
   }
 
