@@ -156,8 +156,8 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation a-driver1
-  {Anm "a-driver1"
+  ; animation a-driver01
+  {Anm "a-driver01"
     {forward
       ; no forward animation base
       ; no forward animation begin
@@ -169,8 +169,8 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation a-driver2
-  {Anm "a-driver2"
+  ; animation a-driver02
+  {Anm "a-driver02"
     {forward
       ; no forward animation base
       ; no forward animation begin
@@ -182,8 +182,8 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation a-driver3
-  {Anm "a-driver3"
+  ; animation a-driver03
+  {Anm "a-driver03"
     {forward
       ; no forward animation base
       ; no forward animation begin
@@ -195,8 +195,8 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation a-driver4
-  {Anm "a-driver4"
+  ; animation a-driver04
+  {Anm "a-driver04"
     {forward
       ; no forward animation base
       ; no forward animation begin
@@ -208,8 +208,8 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation a-driver5
-  {Anm "a-driver5"
+  ; animation a-driver05
+  {Anm "a-driver05"
     {forward
       ; no forward animation base
       ; no forward animation begin
@@ -221,8 +221,8 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation b-driver1
-  {Anm "b-driver1"
+  ; animation b-driver01
+  {Anm "b-driver01"
     {forward
       ; no forward animation base
       ; no forward animation begin
@@ -234,8 +234,8 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation b-driver2
-  {Anm "b-driver2"
+  ; animation b-driver02
+  {Anm "b-driver02"
     {forward
       ; no forward animation base
       ; no forward animation begin
@@ -247,8 +247,8 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation b-driver3
-  {Anm "b-driver3"
+  ; animation b-driver03
+  {Anm "b-driver03"
     {forward
       ; no forward animation base
       ; no forward animation begin
@@ -260,8 +260,8 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation b-driver4
-  {Anm "b-driver4"
+  ; animation b-driver04
+  {Anm "b-driver04"
     {forward
       ; no forward animation base
       ; no forward animation begin
@@ -273,8 +273,8 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation b-driver5
-  {Anm "b-driver5"
+  ; animation b-driver05
+  {Anm "b-driver05"
     {forward
       ; no forward animation base
       ; no forward animation begin
@@ -379,9 +379,9 @@
   {door "emit3"}
   {link "emit3" "commander" {anm "b-commander"} {forward putoff} {reverse puton}}
 }
-; crew driver1
+; crew driver01
 {Placer
-  {Place "driver1"
+  {Place "driver01"
     {group "crew"}
     {linkbone "driver1"}
     ; no turnoff
@@ -391,15 +391,15 @@
 }
 {Boarder
   {door "emit1"}
-  {link "emit1" "driver1" {anm "a-driver1"} {forward putoff} {reverse puton}}
+  {link "emit1" "driver01" {anm "a-driver01"} {forward putoff} {reverse puton}}
   {door "emit2"}
-  {link "emit2" "driver1" {anm "b-driver1"} {forward putoff} {reverse puton}}
+  {link "emit2" "driver01" {anm "b-driver01"} {forward putoff} {reverse puton}}
   {door "emit3"}
-  {link "emit3" "driver1" {anm "b-driver1"} {forward putoff} {reverse puton}}
+  {link "emit3" "driver01" {anm "b-driver01"} {forward putoff} {reverse puton}}
 }
-; crew driver2
+; crew driver02
 {Placer
-  {Place "driver2"
+  {Place "driver02"
     {group "crew"}
     {linkbone "driver2"}
     ; no turnoff
@@ -409,15 +409,15 @@
 }
 {Boarder
   {door "emit1"}
-  {link "emit1" "driver2" {anm "a-driver2"} {forward putoff} {reverse puton}}
+  {link "emit1" "driver02" {anm "a-driver02"} {forward putoff} {reverse puton}}
   {door "emit2"}
-  {link "emit2" "driver2" {anm "b-driver2"} {forward putoff} {reverse puton}}
+  {link "emit2" "driver02" {anm "b-driver02"} {forward putoff} {reverse puton}}
   {door "emit3"}
-  {link "emit3" "driver2" {anm "b-driver2"} {forward putoff} {reverse puton}}
+  {link "emit3" "driver02" {anm "b-driver02"} {forward putoff} {reverse puton}}
 }
-; crew driver3
+; crew driver03
 {Placer
-  {Place "driver3"
+  {Place "driver03"
     {group "crew"}
     {linkbone "driver3"}
     ; no turnoff
@@ -427,15 +427,15 @@
 }
 {Boarder
   {door "emit1"}
-  {link "emit1" "driver3" {anm "a-driver3"} {forward putoff} {reverse puton}}
+  {link "emit1" "driver03" {anm "a-driver03"} {forward putoff} {reverse puton}}
   {door "emit2"}
-  {link "emit2" "driver3" {anm "b-driver3"} {forward putoff} {reverse puton}}
+  {link "emit2" "driver03" {anm "b-driver03"} {forward putoff} {reverse puton}}
   {door "emit3"}
-  {link "emit3" "driver3" {anm "b-driver3"} {forward putoff} {reverse puton}}
+  {link "emit3" "driver03" {anm "b-driver03"} {forward putoff} {reverse puton}}
 }
-; crew driver4
+; crew driver04
 {Placer
-  {Place "driver4"
+  {Place "driver04"
     {group "crew"}
     {linkbone "driver4"}
     ; no turnoff
@@ -445,15 +445,15 @@
 }
 {Boarder
   {door "emit1"}
-  {link "emit1" "driver4" {anm "a-driver4"} {forward putoff} {reverse puton}}
+  {link "emit1" "driver04" {anm "a-driver04"} {forward putoff} {reverse puton}}
   {door "emit2"}
-  {link "emit2" "driver4" {anm "b-driver4"} {forward putoff} {reverse puton}}
+  {link "emit2" "driver04" {anm "b-driver04"} {forward putoff} {reverse puton}}
   {door "emit3"}
-  {link "emit3" "driver4" {anm "b-driver4"} {forward putoff} {reverse puton}}
+  {link "emit3" "driver04" {anm "b-driver04"} {forward putoff} {reverse puton}}
 }
-; crew driver5
+; crew driver05
 {Placer
-  {Place "driver5"
+  {Place "driver05"
     {group "crew"}
     {linkbone "driver5"}
     ; no turnoff
@@ -463,11 +463,11 @@
 }
 {Boarder
   {door "emit1"}
-  {link "emit1" "driver5" {anm "a-driver5"} {forward putoff} {reverse puton}}
+  {link "emit1" "driver05" {anm "a-driver05"} {forward putoff} {reverse puton}}
   {door "emit2"}
-  {link "emit2" "driver5" {anm "b-driver5"} {forward putoff} {reverse puton}}
+  {link "emit2" "driver05" {anm "b-driver05"} {forward putoff} {reverse puton}}
   {door "emit3"}
-  {link "emit3" "driver5" {anm "b-driver5"} {forward putoff} {reverse puton}}
+  {link "emit3" "driver05" {anm "b-driver05"} {forward putoff} {reverse puton}}
 }
 
 ; set passengers
@@ -475,9 +475,9 @@
 
 ; set extra
 {Boarder
-  {link "driver1" "gunner"}
-  {link "driver2" "gunner2"}
-  {link "driver3" "charger"}
-  {link "driver4" "charger2"}
-  {link "driver5" "commander"}
+  {link "driver01" "gunner"}
+  {link "driver02" "gunner2"}
+  {link "driver03" "charger"}
+  {link "driver04" "charger2"}
+  {link "driver05" "commander"}
 }
