@@ -29,6 +29,14 @@ msgctxt "info/special/bmw_r71"
 msgid   "<c(c3baae)>Motorcycle</c>"
 msgstr  "<c(c3baae)>摩托车</c>"
 
+msgctxt "desc/entity/kubelwagen_mg"
+msgid   "VW82 Kubelwagen mit MG42"
+msgstr  "VW82 桶车 加装 MG42"
+
+msgctxt "info/special/kubelwagen_mg"
+msgid   "<c(c3baae)>Armed Transport</c>"
+msgstr  "<c(c3baae)>武装运输车辆</c>"
+
 msgctxt "desc/entity/blitz3_6"
 msgid   "Opel Blitz Transportation"
 msgstr  "欧宝 闪电 运输"
