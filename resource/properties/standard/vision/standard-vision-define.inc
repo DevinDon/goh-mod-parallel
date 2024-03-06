@@ -229,39 +229,71 @@
 
 ; vision define
 
-; standard-vision-narrow 前方窄视角
+; standard-vision-human 人类裸眼标准视力 100
+{"standard-vision-human"
+  {uncover  20}
+  {h_fov   100} ; 水平
+  {v_fov   180} ; 垂直
+  ("set-spotting" radius(10))
+}
+
+; standard-vision-human-elite 人类裸眼精英视力 125
+{"standard-vision-human"
+  {uncover  20}
+  {h_fov   100} ; 水平
+  {v_fov   180} ; 垂直
+  ("set-spotting" radius(11.18))
+}
+
+; standard-vision-human-recon 人类裸眼侦查视力 150
+{"standard-vision-human"
+  {uncover  30}
+  {h_fov   150} ; 水平
+  {v_fov   180} ; 垂直
+  ("set-spotting" radius(12.24))
+}
+
+; standard-vision-sniper 人类裸眼狙击视力 200
+{"standard-vision-human"
+  {uncover  50}
+  {h_fov    90} ; 水平
+  {v_fov   120} ; 垂直
+  ("set-spotting" radius(14.14))
+}
+
+; standard-vision-narrow 前方窄视角 120
 {"standard-vision-narrow"
-  {uncover  25}
+  {uncover  15}
   {h_fov    30} ; 水平
   {v_fov    30} ; 垂直
-  ("set-spotting" radius(16))
+  ("set-spotting" radius(10.95))
 }
 
-; standard-vision-medium 前方中视角
+; standard-vision-medium 前方中视角 150
 {"standard-vision-medium"
-  {uncover  25}
+  {uncover  15}
   {h_fov    60} ; 水平
   {v_fov    90} ; 垂直
-  ("set-spotting" radius(15))
+  ("set-spotting" radius(12.24))
 }
 
-; standard-vision-wide 前方宽视角
+; standard-vision-wide 前方宽视角 180
 {"standard-vision-wide"
   {uncover  20}
   {h_fov    120} ; 水平
   {v_fov    180} ; 垂直
-  ("set-spotting" radius(14))
+  ("set-spotting" radius(13.41))
 }
 
-; standard-vision-around 全景环绕视角
+; standard-vision-around 全景环绕视角 200
 {"standard-vision-around"
-  {uncover  15}
+  {uncover  25}
   {h_fov   240} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(12))
+  ("set-spotting" radius(14.14))
 }
 
-; standard-vision-noise-detection 环境噪音检测视角
+; standard-vision-noise-detection 环境噪音检测视角 1
 {"standard-vision-noise-detection"
   {uncover   5}
   {h_fov   360} ; 水平

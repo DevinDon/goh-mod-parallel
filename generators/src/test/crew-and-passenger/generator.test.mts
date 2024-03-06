@@ -22,16 +22,6 @@ const want = `; crew and passenger
     {Bone "visor2"}
     {Vision "standard-vision-none"}
   }
-  ; visor standard-visor-driver
-  {Visor "standard-visor-driver"
-    {Bone "driver"}
-    {Vision "standard-vision-around"}
-  }
-  ; visor standard-visor-gunner
-  {Visor "standard-visor-gunner"
-    {Bone "gunner"}
-    {Vision "standard-vision-medium"}
-  }
 }
 
 ; set animations
@@ -83,8 +73,8 @@ const want = `; crew and passenger
   {Place "driver"
     {group "crew"}
     {linkbone "driver"}
-    {turnoff {shadow} {sensor}}
-    {visor "standard-visor-driver"}
+    ; no turnoff
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
@@ -97,8 +87,8 @@ const want = `; crew and passenger
   {Place "gunner"
     {group "crew"}
     {linkbone "gunner"}
-    {turnoff {shadow} {sensor}}
-    {visor "standard-visor-gunner"}
+    ; no turnoff
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
@@ -113,7 +103,7 @@ const want = `; crew and passenger
   {Place "passenger"
     {group "passenger"}
     {linkbone "seat1"}
-    {turnoff {shadow} {sensor}}
+    ; no turnoff
     ; no extra
   }
 }
