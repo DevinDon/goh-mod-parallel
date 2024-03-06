@@ -1,0 +1,483 @@
+; crew and passenger
+
+; set visors
+{Sensor
+  ; visor main
+  {Visor "main"
+    {Bone "foresight1"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor around
+  {Visor "around"
+    {Bone "visor1"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor driver
+  {Visor "driver"
+    {Bone "visor2"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor standard-visor-commander
+  {Visor "standard-visor-commander"
+    {Bone "visor"}
+    {Vision "standard-vehicle-vision-around"}
+  }
+}
+
+; set animations
+{Boarder
+  ; animation a-gunner
+  {Anm "a-gunner"
+    {forward
+      ; no forward animation base
+      {begin "board_thor_front" 1}
+      {end "pose_thor_gunner_animation" 10}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation a-gunner2
+  {Anm "a-gunner2"
+    {forward
+      ; no forward animation base
+      {begin "board_thor_front" 1}
+      {end "pose_thor_gunner2_animation" 10}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation a-charger
+  {Anm "a-charger"
+    {forward
+      ; no forward animation base
+      {begin "board_thor_front" 1}
+      {end "pose_thor_charger_animation" 10}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation a-charger2
+  {Anm "a-charger2"
+    {forward
+      ; no forward animation base
+      {begin "board_thor_front" 1}
+      {end "pose_thor_charger2_animation" 10}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation a-commander
+  {Anm "a-commander"
+    {forward
+      ; no forward animation base
+      {begin "board_thor_front" 1}
+      {end "pose_watch_binocular" 10}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation b-gunner
+  {Anm "b-gunner"
+    {forward
+      ; no forward animation base
+      {begin "board_thor_rear" 1}
+      {end "pose_thor_gunner_animation" 10}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation b-gunner2
+  {Anm "b-gunner2"
+    {forward
+      ; no forward animation base
+      {begin "board_thor_rear" 1}
+      {end "pose_thor_gunner2_animation" 10}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation b-charger
+  {Anm "b-charger"
+    {forward
+      ; no forward animation base
+      {begin "board_thor_rear" 1}
+      {end "pose_thor_charger_animation" 10}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation b-charger2
+  {Anm "b-charger2"
+    {forward
+      ; no forward animation base
+      {begin "board_thor_rear" 1}
+      {end "pose_thor_charger2_animation" 10}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation b-commander
+  {Anm "b-commander"
+    {forward
+      ; no forward animation base
+      {begin "board_thor_rear" 1}
+      {end "pose_watch_binocular" 10}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation a-driver1
+  {Anm "a-driver1"
+    {forward
+      ; no forward animation base
+      ; no forward animation begin
+      {end "seat_thor_driver1" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation a-driver2
+  {Anm "a-driver2"
+    {forward
+      ; no forward animation base
+      ; no forward animation begin
+      {end "seat_thor_driver2" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation a-driver3
+  {Anm "a-driver3"
+    {forward
+      ; no forward animation base
+      ; no forward animation begin
+      {end "seat_thor_driver3" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation a-driver4
+  {Anm "a-driver4"
+    {forward
+      ; no forward animation base
+      ; no forward animation begin
+      {end "seat_thor_driver4" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation a-driver5
+  {Anm "a-driver5"
+    {forward
+      ; no forward animation base
+      ; no forward animation begin
+      {end "pose_watch_binocular" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation b-driver1
+  {Anm "b-driver1"
+    {forward
+      ; no forward animation base
+      ; no forward animation begin
+      {end "seat_thor_driver1" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation b-driver2
+  {Anm "b-driver2"
+    {forward
+      ; no forward animation base
+      ; no forward animation begin
+      {end "seat_thor_driver2" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation b-driver3
+  {Anm "b-driver3"
+    {forward
+      ; no forward animation base
+      ; no forward animation begin
+      {end "seat_thor_driver3" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation b-driver4
+  {Anm "b-driver4"
+    {forward
+      ; no forward animation base
+      ; no forward animation begin
+      {end "seat_thor_driver4" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+  ; animation b-driver5
+  {Anm "b-driver5"
+    {forward
+      ; no forward animation base
+      ; no forward animation begin
+      {end "pose_watch_binocular" 1}
+    }
+    {reverse
+      ; no reverse animation base
+      ; no reverse animation begin
+      {end "emit_tank_2_hold" 1}
+    }
+  }
+}
+
+; set crews
+; crew gunner
+{Placer
+  {Place "gunner"
+    {group "crew"}
+    {linkbone "gunner"}
+    ; no turnoff
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "gunner" {anm "a-gunner"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "gunner" {anm "b-gunner"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "gunner" {anm "b-gunner"} {forward putoff} {reverse puton}}
+}
+; crew gunner2
+{Placer
+  {Place "gunner2"
+    {group "crew"}
+    {linkbone "gunner2"}
+    ; no turnoff
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "gunner2" {anm "a-gunner2"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "gunner2" {anm "b-gunner2"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "gunner2" {anm "b-gunner2"} {forward putoff} {reverse puton}}
+}
+; crew charger
+{Placer
+  {Place "charger"
+    {group "crew"}
+    {linkbone "charger"}
+    ; no turnoff
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "charger" {anm "a-charger"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "charger" {anm "b-charger"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "charger" {anm "b-charger"} {forward putoff} {reverse puton}}
+}
+; crew charger2
+{Placer
+  {Place "charger2"
+    {group "crew"}
+    {linkbone "charger2"}
+    ; no turnoff
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "charger2" {anm "a-charger2"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "charger2" {anm "b-charger2"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "charger2" {anm "b-charger2"} {forward putoff} {reverse puton}}
+}
+; crew commander
+{Placer
+  {Place "commander"
+    {group "crew"}
+    {linkbone "commander"}
+    {turnoff {sensor}}
+    {visor "standard-visor-commander"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "commander" {anm "a-commander"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "commander" {anm "b-commander"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "commander" {anm "b-commander"} {forward putoff} {reverse puton}}
+}
+; crew driver1
+{Placer
+  {Place "driver1"
+    {group "crew"}
+    {linkbone "driver1"}
+    ; no turnoff
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "driver1" {anm "a-driver1"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "driver1" {anm "b-driver1"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "driver1" {anm "b-driver1"} {forward putoff} {reverse puton}}
+}
+; crew driver2
+{Placer
+  {Place "driver2"
+    {group "crew"}
+    {linkbone "driver2"}
+    ; no turnoff
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "driver2" {anm "a-driver2"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "driver2" {anm "b-driver2"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "driver2" {anm "b-driver2"} {forward putoff} {reverse puton}}
+}
+; crew driver3
+{Placer
+  {Place "driver3"
+    {group "crew"}
+    {linkbone "driver3"}
+    ; no turnoff
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "driver3" {anm "a-driver3"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "driver3" {anm "b-driver3"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "driver3" {anm "b-driver3"} {forward putoff} {reverse puton}}
+}
+; crew driver4
+{Placer
+  {Place "driver4"
+    {group "crew"}
+    {linkbone "driver4"}
+    ; no turnoff
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "driver4" {anm "a-driver4"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "driver4" {anm "b-driver4"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "driver4" {anm "b-driver4"} {forward putoff} {reverse puton}}
+}
+; crew driver5
+{Placer
+  {Place "driver5"
+    {group "crew"}
+    {linkbone "driver5"}
+    ; no turnoff
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "driver5" {anm "a-driver5"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "driver5" {anm "b-driver5"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "driver5" {anm "b-driver5"} {forward putoff} {reverse puton}}
+}
+
+; set passengers
+; no passenger
+
+; set extra
+{Boarder
+  {link "driver1" "gunner"}
+  {link "driver2" "gunner2"}
+  {link "driver3" "charger"}
+  {link "driver4" "charger2"}
+  {link "driver5" "commander"}
+}

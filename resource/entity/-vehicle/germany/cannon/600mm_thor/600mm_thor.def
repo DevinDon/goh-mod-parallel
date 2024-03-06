@@ -5,7 +5,7 @@
 
   {Extension "600mm_thor.mdl"}
   (include   "600mm_thor.ext")
-  (include   "crew-and-seat.ext")
+  (include   "crew-and-passenger.ext")
 
   {Props "with_gun" "cannon" "heavy" "-hatch" "-engine" "motorized" "vision_lev05_can" "muzzle_600mm" "no_sandbags" "no_shell" "detect_artillery" "artillery_minimap_heavy" "c_how_s_hvy"}
 
