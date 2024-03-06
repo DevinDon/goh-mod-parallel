@@ -227,40 +227,40 @@
   ("hearing" args 1)
 )
 
-; vision define
-
-; standard-vision-human 人类裸眼标准视力 100
-{"standard-vision-human"
+; 人员视野定义
+; standard-human-vision 人类裸眼标准视力 100
+{"standard-human-vision"
   {uncover  20}
   {h_fov   100} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(10))
+  ("set-spotting" radius(100))
 }
 
-; standard-vision-human-elite 人类裸眼精英视力 125
-{"standard-vision-human"
-  {uncover  20}
+; standard-human-vision-elite 人类裸眼精英视力 125
+{"standard-human-vision-elite"
+  {uncover  25}
   {h_fov   100} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(11.18))
+  ("set-spotting" radius(125))
 }
 
-; standard-vision-human-recon 人类裸眼侦查视力 150
-{"standard-vision-human"
+; standard-human-vision-recon 人类裸眼侦查视力 150
+{"standard-human-vision-recon"
   {uncover  30}
   {h_fov   150} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(12.24))
+  ("set-spotting" radius(150))
 }
 
-; standard-vision-sniper 人类裸眼狙击视力 200
-{"standard-vision-human"
+; standard-human-vision-sniper 人类裸眼狙击视力 200
+{"standard-human-vision-sniper"
   {uncover  50}
   {h_fov    90} ; 水平
   {v_fov   120} ; 垂直
-  ("set-spotting" radius(14.14))
+  ("set-spotting" radius(200))
 }
 
+; 载具视野定义
 ; standard-vision-narrow 前方窄视角 120
 {"standard-vision-narrow"
   {uncover  15}
