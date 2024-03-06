@@ -33,25 +33,25 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'driver',
       forward: {
-        base: ['doorleft', 1],
-        begin: ['board_opel_driver', 1],
-        end: ['seat_opel_driver', 1],
+        base: [ 'doorleft', 1 ],
+        begin: [ 'board_opel_driver', 1 ],
+        end: [ 'seat_opel_driver', 1 ],
       },
       reverse: {
-        base: ['doorleft', 1],
-        end: ['board_opel_driver', -1],
+        base: [ 'doorleft', 1 ],
+        end: [ 'board_opel_driver', -1 ],
       },
     },
     {
       name: 'passenger',
       forward: {
-        base: ['doorright', 1],
-        begin: ['board_big-midcar', 1],
-        end: ['seat_opel_commander', 1],
+        base: [ 'doorright', 1 ],
+        begin: [ 'board_big-midcar', 1 ],
+        end: [ 'seat_opel_commander', 1 ],
       },
       reverse: {
-        base: ['doorright', 1],
-        end: ['board_big-midcar', -1],
+        base: [ 'doorright', 1 ],
+        end: [ 'board_big-midcar', -1 ],
       },
     },
   ],

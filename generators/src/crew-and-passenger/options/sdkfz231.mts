@@ -43,23 +43,23 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'left',
       forward: {
-        base: ['', 1],
-        begin: ['board_sd222_driver', 1],
+        base: [ '', 1 ],
+        begin: [ 'board_sd222_driver', 1 ],
       },
       reverse: {
-        base: ['', -1],
-        end: ['emit_sd222_driver', 1],
+        base: [ '', -1 ],
+        end: [ 'emit_sd222_driver', 1 ],
       },
     },
     {
       name: 'right',
       forward: {
-        base: ['', 1],
-        begin: ['board_sd222_driver', 1],
+        base: [ '', 1 ],
+        begin: [ 'board_sd222_driver', 1 ],
       },
       reverse: {
-        base: ['', -1],
-        end: ['emit_sd222_driver', 1],
+        base: [ '', -1 ],
+        end: [ 'emit_sd222_driver', 1 ],
       },
     },
   ],
@@ -72,7 +72,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-commander',
-      turnoff: ['shadow', 'sensor', 'targetable'],
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'driver',
@@ -81,7 +81,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-driver',
-      turnoff: ['shadow', 'sensor', 'targetable'],
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'gunner',
@@ -90,7 +90,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-gunner',
-      turnoff: ['shadow', 'sensor', 'targetable'],
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'charger',
@@ -99,7 +99,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-none',
-      turnoff: ['shadow', 'sensor', 'targetable'],
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
   ],
 

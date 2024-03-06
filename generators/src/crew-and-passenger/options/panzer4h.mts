@@ -43,53 +43,53 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'driver',
       forward: {
-        base: ['open_driver', 1],
-        begin: ['board_pz4_driver', 1],
-        end: ['pose_mgun_pz6', 1],
+        base: [ 'open_driver', 1 ],
+        begin: [ 'board_pz4_driver', 1 ],
+        end: [ 'pose_mgun_pz6', 1 ],
       },
       reverse: {
-        base: ['open_driver', -1],
-        end: ['board_pz4_driver', -1],
+        base: [ 'open_driver', -1 ],
+        end: [ 'board_pz4_driver', -1 ],
       },
     },
     {
       name: 'left',
       forward: {
-        begin: ['board_cromwell', 1],
-        end: ['pose_mgun_pz6', 1],
+        begin: [ 'board_cromwell', 1 ],
+        end: [ 'pose_mgun_pz6', 1 ],
       },
       reverse: {
-        end: ['board_cromwell', -1],
+        end: [ 'board_cromwell', -1 ],
       },
     },
     {
       name: 'right',
       forward: {
-        begin: ['board_cromwell', 1],
-        end: ['pose_mgun_pz6', 1],
+        begin: [ 'board_cromwell', 1 ],
+        end: [ 'pose_mgun_pz6', 1 ],
       },
       reverse: {
-        end: ['board_cromwell', -1],
+        end: [ 'board_cromwell', -1 ],
       },
     },
     {
       name: 'armor01',
       forward: {
-        begin: ['board_MiddleArmor', 1],
-        end: ['pose_seat_armor_1', 1],
+        begin: [ 'board_MiddleArmor', 1 ],
+        end: [ 'pose_seat_armor_1', 1 ],
       },
       reverse: {
-        end: ['emit_tank_1', 1],
+        end: [ 'emit_tank_1', 1 ],
       },
     },
     {
       name: 'armor02',
       forward: {
-        begin: ['board_MiddleArmor', 1],
-        end: ['pose_seat_armor_2', 1],
+        begin: [ 'board_MiddleArmor', 1 ],
+        end: [ 'pose_seat_armor_2', 1 ],
       },
       reverse: {
-        end: ['emit_tank_1', 1],
+        end: [ 'emit_tank_1', 1 ],
       },
     },
   ],
@@ -103,8 +103,8 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'gunner2',
       visor: 'standard-visor-commander',
-      turnoff: ['shadow', 'sensor'],
-      extra: ['{sealable}'],
+      turnoff: [ 'shadow', 'sensor' ],
+      extra: [ '{sealable}' ],
     },
     {
       name: 'driver',
@@ -114,7 +114,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-driver',
-      turnoff: ['shadow', 'sensor'],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'gunner',
@@ -123,7 +123,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-gunner',
-      turnoff: ['shadow', 'sensor'],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'gunner3',
@@ -132,7 +132,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-driver',
-      turnoff: ['shadow', 'sensor'],
+      turnoff: [ 'shadow', 'sensor' ],
     },
     {
       name: 'charger',
@@ -141,7 +141,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-none',
-      turnoff: ['shadow', 'sensor'],
+      turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 

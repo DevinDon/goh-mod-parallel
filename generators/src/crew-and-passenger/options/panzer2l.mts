@@ -43,29 +43,29 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'left',
       forward: {
-        begin: ['board_tank', 1],
+        begin: [ 'board_tank', 1 ],
       },
       reverse: {
-        end: ['emit_tank_1_hold', 1],
+        end: [ 'emit_tank_1_hold', 1 ],
       },
     },
     {
       name: 'right',
       forward: {
-        begin: ['board_tank', 1],
+        begin: [ 'board_tank', 1 ],
       },
       reverse: {
-        end: ['emit_tank_1_hold', 1],
+        end: [ 'emit_tank_1_hold', 1 ],
       },
     },
     {
       name: 'armor',
       forward: {
-        begin: ['board_MiddleArmor', 1],
-        end: ['pose_seat_armor_1', 1],
+        begin: [ 'board_MiddleArmor', 1 ],
+        end: [ 'pose_seat_armor_1', 1 ],
       },
       reverse: {
-        end: ['emit_tank_1', 1],
+        end: [ 'emit_tank_1', 1 ],
       },
     },
   ],
@@ -78,7 +78,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-commander',
-      turnoff: ['shadow', 'sensor', 'targetable'],
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'driver',
@@ -87,7 +87,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-driver',
-      turnoff: ['shadow', 'sensor', 'targetable'],
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'gunner',
@@ -96,7 +96,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-gunner',
-      turnoff: ['shadow', 'sensor', 'targetable'],
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'charger',
@@ -105,7 +105,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'right' },
       ],
       visor: 'standard-visor-none',
-      turnoff: ['shadow', 'sensor', 'targetable'],
+      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
   ],
 
