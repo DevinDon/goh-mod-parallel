@@ -19,8 +19,6 @@
     (include "ability.inc")
     ("mg_skill_rank_4")
     ("tier4_defense")
-    ("stealth")
-    ("sniper_vision")
   }
 
   {veterancy ; 体力
