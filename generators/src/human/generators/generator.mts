@@ -37,7 +37,7 @@ export const generateHuman = ({
 
   const veterancyLinesRaw = veterancy?.length
     ? veterancy.map(item => `("${item}")`).join('\n')
-    : '; 无体力配置';
+    : '; 无经验配置';
   const veterancyLines = setIndent(veterancyLinesRaw, { indent: 4, indentFirstLine: false });
 
   const inventoryLinesRaw = inventory?.length

@@ -28,7 +28,7 @@ const want = `; 人员配置
 
   {veterancy ; 体力
     (include "ability.inc")
-    ("veterancy_lvl_8")
+    ("veterancy_lvl_0")
   }
 
   {inventory ; 背包
@@ -36,7 +36,7 @@ const want = `; 人员配置
     {Item "ammo ger-mgun" 500} ; MG42 弹链
     {Item "m24 grenade" 1} ; 手榴弹
     {Item "m24_smoke grenade" 1} ; 烟雾弹
-    {Item "bandage_ger" 5} ; 绷带
+    {Item "bandage_ger" 2} ; 绷带
 
     {in_hands 0}
   }

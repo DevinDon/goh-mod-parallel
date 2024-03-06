@@ -28,7 +28,7 @@ export type HumanOptions = {
   };
   /** 能力 */
   perks: string[];
-  /** 体力 */
+  /** 经验 */
   veterancy: string[];
   /** 背包 */
   inventory: InventoryItem[];

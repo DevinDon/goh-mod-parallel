@@ -24,7 +24,7 @@ const options: HumanOptions = {
   ],
 
   veterancy: [
-    'veterancy_lvl_8',
+    'veterancy_lvl_0',
   ],
 
   inventory: [

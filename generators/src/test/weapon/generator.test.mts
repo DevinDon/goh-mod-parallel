@@ -9,6 +9,11 @@ const want = `; ger-20mm-flak30-l65
 
   (include "/properties/standard/gun/define.ext")
 
+  ; 无标签
+
+  ; 无模型
+  ; 无重量
+
   {FireSound "gun/gun_auto"} ; 开火音效
   {FireSoundclose "gun/gun_auto"} ; 车内视角开火音效
   {ReloadSound "tank/reload_small"} ; 装弹音效
@@ -156,6 +161,8 @@ const want = `; ger-20mm-flak30-l65
     ; 无穿深修正表配置
     {FalloffStrength 0} ; 防空炮配置
   }
+
+  ; 无额外配置
 
 }
 `;
