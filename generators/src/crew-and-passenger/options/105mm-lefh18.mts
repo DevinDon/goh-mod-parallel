@@ -21,17 +21,7 @@ const options: CrewAndPassengerOptions = {
       bone: 'visor2',
       preset: 'standard-vision-none',
     },
-    // 重新定义视野
-    {
-      name: 'standard-visor-gunner',
-      bone: 'foresight1',
-      preset: 'standard-vision-narrow',
-    },
-    {
-      name: 'standard-visor-commander',
-      bone: 'visor',
-      preset: 'standard-vision-around',
-    },
+    // 使用成员视野
   ],
 
   animations: [
@@ -117,8 +107,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit4', animation: 'commander' },
       ],
       bone: 'commander',
-      visor: 'standard-visor-commander',
-      turnoff: [ 'shadow', 'sensor' ],
+      visor: 'standard-visor-none',
       extra: [ '{openForCrush}' ],
     },
     {
@@ -127,8 +116,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'gunner' },
       ],
       bone: 'gunner',
-      visor: 'standard-visor-gunner',
-      turnoff: [ 'shadow', 'sensor' ],
+      visor: 'standard-visor-none',
       extra: [ '{openForCrush}' ],
     },
     {
@@ -138,7 +126,6 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'charger',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor' ],
       extra: [ '{openForCrush}' ],
     },
     {
@@ -148,7 +135,6 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'charger2',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor' ],
       extra: [ '{openForCrush}' ],
     },
     // 移动模式
@@ -158,8 +144,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'driver01' },
       ],
       bone: 'driver1',
-      visor: 'standard-visor-commander',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      visor: 'standard-visor-none',
     },
     {
       name: 'driver02',
@@ -168,7 +153,6 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'driver2',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'driver03',
@@ -177,7 +161,6 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'driver3',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'driver04',
@@ -186,7 +169,6 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'driver4',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     // 牵引模式
     {
@@ -195,8 +177,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'seat01' },
       ],
       bone: 'seat1',
-      visor: 'standard-visor-commander',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
+      visor: 'standard-visor-none',
     },
     {
       name: 'seat02',
@@ -205,7 +186,6 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'seat2',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'seat03',
@@ -214,7 +194,6 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'seat3',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
     {
       name: 'seat04',
@@ -223,7 +202,6 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'seat4',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor', 'targetable' ],
     },
   ],
 

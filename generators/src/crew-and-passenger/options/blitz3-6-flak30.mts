@@ -21,17 +21,7 @@ const options: CrewAndPassengerOptions = {
       bone: 'visor2',
       preset: 'standard-vision-none',
     },
-    // 重新定义视野
-    {
-      name: 'standard-visor-driver',
-      bone: 'driver',
-      preset: 'standard-vision-around',
-    },
-    {
-      name: 'standard-visor-gunner',
-      bone: 'gunner',
-      preset: 'standard-vision-wide',
-    },
+    // 使用成员视野
   ],
 
   animations: [
@@ -92,8 +82,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'driver' },
       ],
       bone: 'driver',
-      visor: 'standard-visor-driver',
-      turnoff: [ 'shadow', 'sensor' ],
+      visor: 'standard-visor-none',
     },
     {
       name: 'gunner',
@@ -101,8 +90,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit3', animation: 'gunner' },
       ],
       bone: 'gunner',
-      visor: 'standard-visor-gunner',
-      turnoff: [ 'shadow', 'sensor' ],
+      visor: 'standard-visor-none',
     },
     {
       name: 'charger',
@@ -111,26 +99,16 @@ const options: CrewAndPassengerOptions = {
       ],
       bone: 'charger',
       visor: 'standard-visor-none',
-      turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 
   passengers: [
     {
-      name: 'passenger01',
+      name: 'passenger',
       animations: [
         { door: 'emit2', animation: 'passenger' },
       ],
       bone: 'commander',
-      turnoff: [ 'shadow', 'sensor' ],
-    },
-    {
-      name: 'passenger02',
-      animations: [
-        { door: 'emit2', animation: 'passenger' },
-      ],
-      bone: 'commander',
-      turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 

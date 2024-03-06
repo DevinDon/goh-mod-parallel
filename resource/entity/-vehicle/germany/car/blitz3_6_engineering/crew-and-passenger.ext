@@ -60,8 +60,8 @@
   {Place "driver"
     {group "crew"}
     {linkbone "driver"}
-    {turnoff {shadow} {sensor}}
-    {visor "standard-visor-driver"}
+    ; no turnoff
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
@@ -71,31 +71,18 @@
 }
 
 ; set passengers
-; passenger passenger01
+; passenger passenger
 {Placer
-  {Place "passenger01"
+  {Place "passenger"
     {group "passenger"}
     {linkbone "commander"}
-    {turnoff {shadow} {sensor}}
+    ; no turnoff
     ; no extra
   }
 }
 {Boarder
   {door "emit2"}
-  {link "emit2" "passenger01" {anm "passenger"} {forward putoff} {reverse puton}}
-}
-; passenger passenger02
-{Placer
-  {Place "passenger02"
-    {group "passenger"}
-    {linkbone "commander"}
-    {turnoff {shadow} {sensor}}
-    ; no extra
-  }
-}
-{Boarder
-  {door "emit2"}
-  {link "emit2" "passenger02" {anm "passenger"} {forward putoff} {reverse puton}}
+  {link "emit2" "passenger" {anm "passenger"} {forward putoff} {reverse puton}}
 }
 
 ; set extra

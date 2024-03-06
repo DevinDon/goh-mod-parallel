@@ -63,27 +63,17 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'driver' },
       ],
       bone: 'driver',
-      visor: 'standard-visor-driver',
-      turnoff: [ 'shadow', 'sensor' ],
+      visor: 'standard-visor-none',
     },
   ],
 
   passengers: [
     {
-      name: 'passenger01',
+      name: 'passenger',
       animations: [
         { door: 'emit2', animation: 'passenger' },
       ],
       bone: 'commander',
-      turnoff: [ 'shadow', 'sensor' ],
-    },
-    {
-      name: 'passenger02',
-      animations: [
-        { door: 'emit2', animation: 'passenger' },
-      ],
-      bone: 'commander',
-      turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 

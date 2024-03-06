@@ -21,17 +21,7 @@ const options: CrewAndPassengerOptions = {
       bone: 'visor2',
       preset: 'standard-vision-none',
     },
-    // 重新定义视野
-    {
-      name: 'standard-visor-driver',
-      bone: 'driver',
-      preset: 'standard-vision-around',
-    },
-    {
-      name: 'standard-visor-gunner',
-      bone: 'gunner',
-      preset: 'standard-vision-medium',
-    },
+    // 使用成员视野
   ],
 
   animations: [
@@ -76,7 +66,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'driver' },
       ],
       bone: 'driver',
-      visor: 'standard-visor-driver',
+      visor: 'standard-visor-none',
     },
     {
       name: 'gunner',
@@ -84,7 +74,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'gunner' },
       ],
       bone: 'gunner',
-      visor: 'standard-visor-gunner',
+      visor: 'standard-visor-none',
     },
   ],
 

@@ -17,16 +17,6 @@
     {Bone "visor2"}
     {Vision "standard-vision-none"}
   }
-  ; visor standard-visor-driver
-  {Visor "standard-visor-driver"
-    {Bone "driver"}
-    {Vision "standard-vision-around"}
-  }
-  ; visor standard-visor-gunner
-  {Visor "standard-visor-gunner"
-    {Bone "gunner"}
-    {Vision "standard-vision-medium"}
-  }
 }
 
 ; set animations
@@ -79,7 +69,7 @@
     {group "crew"}
     {linkbone "driver"}
     ; no turnoff
-    {visor "standard-visor-driver"}
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
@@ -93,7 +83,7 @@
     {group "crew"}
     {linkbone "gunner"}
     ; no turnoff
-    {visor "standard-visor-gunner"}
+    {visor "standard-visor-none"}
     ; no extra
   }
 }
