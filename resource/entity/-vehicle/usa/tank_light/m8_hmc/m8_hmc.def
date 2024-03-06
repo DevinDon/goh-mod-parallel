@@ -79,7 +79,7 @@
   }
 
   {Weaponry
-    {RestoreIKTime 5}
+    {RestoreIKTime 2}
     {Place "gun"
       {RestoreIKAfterAim}
       {Weapon "weapon usa-75mm-m2-how" filling "ammo usa-75x272 he" 1}

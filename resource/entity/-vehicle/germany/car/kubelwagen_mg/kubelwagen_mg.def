@@ -31,7 +31,7 @@
   }
 
   {Weaponry
-    {RestoreIKTime 10}
+    {RestoreIKTime 5}
     {Place "mgun"
       {Type "main"}
       {Charger "gunner"}

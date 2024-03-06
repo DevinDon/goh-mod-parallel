@@ -36,7 +36,7 @@
   }
 
   {Weaponry
-    {RestoreIKTime 10}
+    {RestoreIKTime 5}
     {Place "gun"
       {Weapon "weapon ger-20mm-flak30-l65" filling "ammo ger-20l55 he" 20}
       {AccuracyByMotion
