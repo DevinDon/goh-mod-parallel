@@ -1,0 +1,34 @@
+; armor notes
+
+
+
+
+
+
+
+
+("set-basic-durability" body(200) engine(80) turret(100) mantlet(100) gun(150) track(100) ammo(100))
+("set-basic-armor"      ammo(10))
+("set-car-thickness"    body(3) engine(5))
+
+("set-bodyback"             repair(15))
+("set-turret"               repair(10))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(10) repair(10))
+("set-body"                 repair(15))
+("set-engine"               repair(10))
+("set-tracks" thickness(10) repair(10))
+
+("set-wheel" name("wheelright1"))
+("set-wheel" name("wheelleft1"))
+("set-wheel" name("wheelright2"))
+("set-wheel" name("wheelleft2"))
+
+("set-glass" name("glass"))
+
+("set-internal-components" name("fuel")  type("fuel") repair(3))
+
+{volume "wheelspare"
+  {thickness 0.5}
+  {able {NoWoundDecal}}
+}

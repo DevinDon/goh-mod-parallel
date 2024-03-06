@@ -2,7 +2,7 @@ import type { CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 
-  destination: 'resource/entity/-vehicle/germany/car/bmw_r71/crew-and-passenger.ext',
+  destination: 'resource/entity/-vehicle/germany/car/kubelwagen_mg/crew-and-passenger.ext',
 
   visors: [
     // 覆盖默认视野，需要同名且占用该连接点才能覆盖
@@ -39,32 +39,48 @@ const options: CrewAndPassengerOptions = {
       name: 'driver',
       forward: {
         base: [ 'doorleft1', 1 ],
-        begin: [ 'board_moto_driver', 1 ],
-        end: [ 'pose_moto_driver', 1 ],
+        begin: [ 'board_Kubel_driver', 1 ],
+        end: [ 'seat_kubel_driver', 1 ],
       },
       reverse: {
         base: [ 'doorleft1', -1 ],
-        end: [ 'board_moto_driver', -1 ],
+        end: [ 'board_Kubel_driver', -1 ],
       },
     },
     {
-      name: 'gunner',
+      name: 'leader',
       forward: {
-        begin: [ 'board_moto_sidecar', 1 ],
-        end: [ 'pose_moto_sidecar', 1 ],
+        base: [ 'doorright1', 1 ],
+        begin: [ 'board_Kubel_commander', 1 ],
+        end: [ 'seat_kubel_commander', 1 ],
       },
       reverse: {
-        end: [ 'board_moto_sidecar', -1 ],
+        base: [ 'doorright1', -1 ],
+        end: [ 'board_Kubel_commander', -1 ],
       },
     },
     {
-      name: 'passenger',
+      name: 'left',
       forward: {
-        begin: [ 'board_moto_passenger', 1 ],
-        end: [ 'pose_moto_passenger', 1 ],
+        base: [ 'doorleft2', 1 ],
+        begin: [ 'board_Kubel_leftpassenger', 1 ],
+        end: [ 'seat_kubel_gunner2', 1 ],
       },
       reverse: {
-        end: [ 'board_moto_passenger', -1 ],
+        base: [ 'doorleft2', -1 ],
+        end: [ 'board_Kubel_leftpassenger', -1 ],
+      },
+    },
+    {
+      name: 'right',
+      forward: {
+        base: [ 'doorright2', 1 ],
+        begin: [ 'board_Kubel_rightpassenger', 1 ],
+        end: [ 'seat_kubel_gunner2', 1 ],
+      },
+      reverse: {
+        base: [ 'doorright2', -1 ],
+        end: [ 'board_Kubel_rightpassenger', -1 ],
       },
     },
   ],
@@ -81,7 +97,8 @@ const options: CrewAndPassengerOptions = {
     {
       name: 'gunner',
       animations: [
-        { door: 'emit2', animation: 'gunner' },
+        { door: 'emit3', animation: 'left' },
+        { door: 'emit4', animation: 'right' },
       ],
       bone: 'gunner',
       visor: 'standard-visor-gunner',
@@ -90,11 +107,11 @@ const options: CrewAndPassengerOptions = {
 
   passengers: [
     {
-      name: 'passenger',
+      name: 'leader',
       animations: [
-        { door: 'emit3', animation: 'passenger' },
+        { door: 'emit2', animation: 'leader' },
       ],
-      bone: 'seat1',
+      bone: 'commander',
     },
   ],
 

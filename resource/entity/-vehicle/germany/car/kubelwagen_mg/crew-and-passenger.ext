@@ -35,39 +35,52 @@
   {Anm "driver"
     {forward
       {base "doorleft1" 1}
-      {begin "board_moto_driver" 1}
-      {end "pose_moto_driver" 1}
+      {begin "board_Kubel_driver" 1}
+      {end "seat_kubel_driver" 1}
     }
     {reverse
       {base "doorleft1" -1}
       ; no reverse animation begin
-      {end "board_moto_driver" -1}
+      {end "board_Kubel_driver" -1}
     }
   }
-  ; animation gunner
-  {Anm "gunner"
+  ; animation leader
+  {Anm "leader"
     {forward
-      ; no forward animation base
-      {begin "board_moto_sidecar" 1}
-      {end "pose_moto_sidecar" 1}
+      {base "doorright1" 1}
+      {begin "board_Kubel_commander" 1}
+      {end "seat_kubel_commander" 1}
     }
     {reverse
-      ; no reverse animation base
+      {base "doorright1" -1}
       ; no reverse animation begin
-      {end "board_moto_sidecar" -1}
+      {end "board_Kubel_commander" -1}
     }
   }
-  ; animation passenger
-  {Anm "passenger"
+  ; animation left
+  {Anm "left"
     {forward
-      ; no forward animation base
-      {begin "board_moto_passenger" 1}
-      {end "pose_moto_passenger" 1}
+      {base "doorleft2" 1}
+      {begin "board_Kubel_leftpassenger" 1}
+      {end "seat_kubel_gunner2" 1}
     }
     {reverse
-      ; no reverse animation base
+      {base "doorleft2" -1}
       ; no reverse animation begin
-      {end "board_moto_passenger" -1}
+      {end "board_Kubel_leftpassenger" -1}
+    }
+  }
+  ; animation right
+  {Anm "right"
+    {forward
+      {base "doorright2" 1}
+      {begin "board_Kubel_rightpassenger" 1}
+      {end "seat_kubel_gunner2" 1}
+    }
+    {reverse
+      {base "doorright2" -1}
+      ; no reverse animation begin
+      {end "board_Kubel_rightpassenger" -1}
     }
   }
 }
@@ -98,23 +111,25 @@
   }
 }
 {Boarder
-  {door "emit2"}
-  {link "emit2" "gunner" {anm "gunner"} {forward putoff} {reverse puton}}
+  {door "emit3"}
+  {link "emit3" "gunner" {anm "left"} {forward putoff} {reverse puton}}
+  {door "emit4"}
+  {link "emit4" "gunner" {anm "right"} {forward putoff} {reverse puton}}
 }
 
 ; set passengers
-; passenger passenger
+; passenger leader
 {Placer
-  {Place "passenger"
+  {Place "leader"
     {group "passenger"}
-    {linkbone "seat1"}
+    {linkbone "commander"}
     ; no turnoff
     ; no extra
   }
 }
 {Boarder
-  {door "emit3"}
-  {link "emit3" "passenger" {anm "passenger"} {forward putoff} {reverse puton}}
+  {door "emit2"}
+  {link "emit2" "leader" {anm "leader"} {forward putoff} {reverse puton}}
 }
 
 ; set extra
