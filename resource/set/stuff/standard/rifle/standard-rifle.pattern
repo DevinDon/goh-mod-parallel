@@ -18,12 +18,12 @@
 
   {FiringTimeout 2.5 0.5}
 
+  {thirdpersonparams inherit "human default"}
+  {SyncedProjectiles 1}
+
   {swayparams
     {bounds -0.3 0.2 -0.4 0.3} ; x -> negativeYaw, y -> positiveYaw, z -> negativePitch, w -> positive Pitch (in degree)
     {speed 0.2} ; sway speed coef
   }
-
-  {thirdpersonparams inherit "human default"}
-  {SyncedProjectiles 1}
 
 }
