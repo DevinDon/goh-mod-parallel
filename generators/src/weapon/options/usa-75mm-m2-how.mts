@@ -31,8 +31,8 @@ const options: WeaponOptions = {
     {
       name: 'heat',
       minRange: 0,
-      aimRange: 300,
-      maxRange: 300,
+      aimRange: 275,
+      maxRange: 275,
       speed: 305,
       gravity: 5,
       projectile: {
@@ -57,8 +57,8 @@ const options: WeaponOptions = {
     {
       name: 'he',
       minRange: 0,
-      aimRange: 300,
-      maxRange: 300,
+      aimRange: 275,
+      maxRange: 275,
       speed: 381,
       gravity: 5,
       spreading: {
@@ -76,8 +76,8 @@ const options: WeaponOptions = {
     {
       name: 'sm',
       minRange: 0,
-      aimRange: 350,
-      maxRange: 350,
+      aimRange: 325,
+      maxRange: 325,
       speed: 381,
       gravity: 5,
       damageToArmor: 310,

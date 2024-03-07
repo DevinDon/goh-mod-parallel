@@ -43,8 +43,8 @@
   {Parameters "apcbche"
     {CursorReloading "gun_apcbc"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 350} ; AI 最长射击距离 m
-    {MaxRange 350} ; 玩家最长射击距离 m
+    {AimRange 325} ; AI 最长射击距离 m
+    {MaxRange 325} ; 玩家最长射击距离 m
     {Speed 975} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {100 202} {500 171} {1000 0}} ; 穿深表
@@ -80,8 +80,8 @@
   {Parameters "hvap"
     {CursorReloading "gun_hvap"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 350} ; AI 最长射击距离 m
-    {MaxRange 350} ; 玩家最长射击距离 m
+    {AimRange 325} ; AI 最长射击距离 m
+    {MaxRange 325} ; 玩家最长射击距离 m
     {Speed 1143} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {100 258} {500 185} {1000 0}} ; 穿深表
@@ -115,8 +115,8 @@
   {Parameters "he"
     {CursorReloading "gun_he"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 350} ; AI 最长射击距离 m
-    {MaxRange 350} ; 玩家最长射击距离 m
+    {AimRange 325} ; AI 最长射击距离 m
+    {MaxRange 325} ; 玩家最长射击距离 m
     {Speed 975} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     ; 无穿深表配置

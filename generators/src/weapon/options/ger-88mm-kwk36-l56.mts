@@ -31,8 +31,8 @@ const options: WeaponOptions = {
     {
       name: 'apcbche',
       minRange: 0,
-      aimRange: 350,
-      maxRange: 350,
+      aimRange: 325,
+      maxRange: 325,
       speed: 780,
       gravity: 5,
       projectile: {
@@ -57,8 +57,8 @@ const options: WeaponOptions = {
     {
       name: 'apcr',
       minRange: 0,
-      aimRange: 350,
-      maxRange: 350,
+      aimRange: 325,
+      maxRange: 325,
       speed: 930,
       gravity: 5,
       projectile: {
@@ -83,8 +83,8 @@ const options: WeaponOptions = {
     {
       name: 'he',
       minRange: 0,
-      aimRange: 350,
-      maxRange: 350,
+      aimRange: 325,
+      maxRange: 325,
       speed: 820,
       gravity: 5,
       damageToArmor: 420,

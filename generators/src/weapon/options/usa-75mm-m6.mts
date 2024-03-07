@@ -31,8 +31,8 @@ const options: WeaponOptions = {
     {
       name: 'ap',
       minRange: 0,
-      aimRange: 300,
-      maxRange: 300,
+      aimRange: 275,
+      maxRange: 275,
       speed: 619,
       gravity: 5,
       projectile: {
@@ -57,8 +57,8 @@ const options: WeaponOptions = {
     {
       name: 'apcbc',
       minRange: 0,
-      aimRange: 300,
-      maxRange: 300,
+      aimRange: 275,
+      maxRange: 275,
       speed: 619,
       gravity: 5,
       projectile: {
@@ -83,8 +83,8 @@ const options: WeaponOptions = {
     {
       name: 'apcbche',
       minRange: 0,
-      aimRange: 300,
-      maxRange: 300,
+      aimRange: 275,
+      maxRange: 275,
       speed: 619,
       gravity: 5,
       projectile: {
@@ -109,8 +109,8 @@ const options: WeaponOptions = {
     {
       name: 'he',
       minRange: 0,
-      aimRange: 300,
-      maxRange: 300,
+      aimRange: 275,
+      maxRange: 275,
       speed: 603,
       gravity: 5,
       damageToArmor: 200,
@@ -130,8 +130,8 @@ const options: WeaponOptions = {
     {
       name: 'sm',
       minRange: 0,
-      aimRange: 350,
-      maxRange: 350,
+      aimRange: 325,
+      maxRange: 325,
       speed: 603,
       gravity: 5,
       spreading: {

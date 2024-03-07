@@ -43,8 +43,8 @@
   {Parameters "heat"
     {CursorReloading "gun_heat"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 500} ; AI 最长射击距离 m
-    {MaxRange 500} ; 玩家最长射击距离 m
+    {AimRange 450} ; AI 最长射击距离 m
+    {MaxRange 450} ; 玩家最长射击距离 m
     {Speed 496} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {100 115} {500 115} {1000 115}} ; 穿深表
@@ -67,8 +67,8 @@
   {Parameters "he"
     {CursorReloading "gun_he"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 500} ; AI 最长射击距离 m
-    {MaxRange 500} ; 玩家最长射击距离 m
+    {AimRange 450} ; AI 最长射击距离 m
+    {MaxRange 450} ; 玩家最长射击距离 m
     {Speed 470} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     ; 无穿深表配置

@@ -47,8 +47,8 @@
   {Parameters "magazine"
     {CursorReloading "carbine_reload"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 225} ; AI 最长射击距离 m
-    {MaxRange 225} ; 玩家最长射击距离 m
+    {AimRange 200} ; AI 最长射击距离 m
+    {MaxRange 200} ; 玩家最长射击距离 m
     {Speed 685} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {100 6} {500 2} {1000 0}} ; 穿深表

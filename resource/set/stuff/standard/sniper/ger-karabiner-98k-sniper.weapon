@@ -43,8 +43,8 @@
   {Parameters "clip"
     {CursorReloading "carbine_reload"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 300} ; AI 最长射击距离 m
-    {MaxRange 300} ; 玩家最长射击距离 m
+    {AimRange 250} ; AI 最长射击距离 m
+    {MaxRange 250} ; 玩家最长射击距离 m
     {Speed 760} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {100 7} {500 3} {1000 0}} ; 穿深表

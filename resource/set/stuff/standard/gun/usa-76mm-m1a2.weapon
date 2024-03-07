@@ -135,8 +135,8 @@
   {Parameters "wp"
     {CursorReloading "gun_wp"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 350} ; AI 最长射击距离 m
-    {MaxRange 350} ; 玩家最长射击距离 m
+    {AimRange 325} ; AI 最长射击距离 m
+    {MaxRange 325} ; 玩家最长射击距离 m
     {Speed 270} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     ; 无穿深表配置
