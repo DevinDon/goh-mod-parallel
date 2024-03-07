@@ -18,7 +18,7 @@ const options: HumanOptions = {
 
   perks: [
     'mg_skill_rank_4',
-    'tier4_defense',
+    'tier4_standard',
   ],
 
   veterancy: [

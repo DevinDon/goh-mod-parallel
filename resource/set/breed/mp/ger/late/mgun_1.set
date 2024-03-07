@@ -18,7 +18,7 @@
   {perks ; 能力
     (include "ability.inc")
     ("mg_skill_rank_4")
-    ("tier4_defense")
+    ("tier4_standard")
   }
 
   {veterancy ; 体力
