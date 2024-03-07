@@ -251,7 +251,7 @@
 
   ; custom
   ; usa
-  {Item "usa-hmgun"             "ammo" 100 {Value 20}}
+  {Item "usa-hmgun"   "api"     "ammo" 100 {Value 30}}
   {Item "usa-37"      "apcbc"   "ammo"   1 {Value  3}}
   {Item "usa-37"      "he"      "ammo"   1 {Value  3}}
   {Item "usa-75x272"  "he"      "ammo"   1 {Value  7}}
@@ -276,8 +276,11 @@
 
   ; custom
   ; ger
-  {Item "ger-mgun"                 "ammo" 100 {Value 10}}
-  {Item "ger-sniper" "clip"        "ammo"   5 {Value  5}}
+  {Item "ger-mgun"   "api"         "ammo" 100 {Value 15}}
+  {Item "ger-sniper" "clip"        "ammo"   5 {Value  1}}
+  {Item "ger-stg44"  "magazine"    "ammo"  30 {Value  7}}
+  {Item "ger-panzershreck" "heat"  "ammo"   1 {Value  8}}
+  {Item "ger-panzerfaust-100"    "weapon"   1 {Value 10}}
   {Item "ger-20l55"  "ap"          "ammo"  10 {Value 20}}
   {Item "ger-20l55"  "apcr"        "ammo"  10 {Value 20}}
   {Item "ger-20l55"  "he"          "ammo"  10 {Value 20}}
