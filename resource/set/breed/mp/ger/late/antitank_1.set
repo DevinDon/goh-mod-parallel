@@ -1,0 +1,43 @@
+; 人员配置
+{breed
+
+  {tags "soldier_pzscheck"} ; 标签
+
+  {behaviour soldier} ; 行为类别
+  {skin "ger_wh_43_smock_rfl_at"} ; 外观
+  {portrait "ger_regular"} ; 肖像
+  {icon "bazooka"} ; 图标
+  {icon_priority 0} ; 图标优先级
+  {nationality ger} ; 国籍
+
+  {armors ; 防护装置
+    {head ger_m42_helmet_splinter}
+    ; 无防弹衣
+  }
+
+  {perks ; 能力
+    (include "ability.inc")
+    ("rifle_skill_rank_2")
+    ("tier4_recon")
+    ("at_rank_6")
+  }
+
+  {veterancy ; 体力
+    (include "ability.inc")
+    ("veterancy_lvl_0")
+  }
+
+  {inventory ; 背包
+    {Item "weapon ger-stg44" filled} ; StG 44 突击步枪
+    {Item "ammo ger-stg44 magazine" 60} ; StG 44 突击步枪弹
+    {Item "weapon ger-panzershreck-54" filled} ; 坦克杀手 54 反坦克火箭筒
+    {Item "ammo ger-panzershreck heat" 9} ; 坦克杀手火箭弹
+    {Item "m24_smoke grenade" 1} ; 烟雾弹
+    {Item "bandage_ger" 3} ; 绷带
+
+    {in_hands 0}
+  }
+
+  ; 无额外配置
+
+}
