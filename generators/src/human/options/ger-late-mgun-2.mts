@@ -17,7 +17,7 @@ const options: HumanOptions = {
   },
 
   perks: [
-    'mg_skill_rank_4',
+    'rifle_skill_rank_4',
     'tier4_standard',
   ],
 

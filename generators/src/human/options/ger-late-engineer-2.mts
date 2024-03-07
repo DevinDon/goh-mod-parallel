@@ -17,7 +17,7 @@ const options: HumanOptions = {
   },
 
   perks: [
-    'rifle_skill_rank_2',
+    'rifle_skill_rank_4',
     'tier4_defense',
     'engineer',
   ],
@@ -31,7 +31,7 @@ const options: HumanOptions = {
     '{Item "ammo ger-stg44 magazine" 180} ; StG 44 突击步枪弹',
     '{Item "m24 grenade" 2} ; 手榴弹',
     '{Item "nbk39 grenade" 2} ; 烟雾弹',
-    '{Item "geballteladung_3kg" 2} ; 炸药',
+    '{Item "geballteladung_3kg" 1} ; 炸药',
     '{Item "bandage_ger" 6} ; 绷带',
     '{Item "mine_detector"} ; 扫雷器',
     '{Item "wirecutters"} ; 剪线钳',
