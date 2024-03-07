@@ -1,4 +1,4 @@
-{from "pattern rpg_ammo"
+{from "pattern standard-bazooka-ammo"
 
   {tag "no_ricochet"}
 
