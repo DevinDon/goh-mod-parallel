@@ -12,7 +12,7 @@ msgstr ""
 "Language-Team: \n"
 
 # 子弹
-msgctxt "desc/ammo/usa-hmgun"
+msgctxt "desc/ammo/usa-hmgun api"
 msgid   ".50 cal API M8 Rounds"
 msgstr  ".50 口径 M8 穿甲爆破燃烧弹"
 

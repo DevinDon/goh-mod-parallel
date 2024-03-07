@@ -1,43 +1,102 @@
-{from "pattern mgun"
+; ger-mg42
+; 德国 MG42 通用机枪
+{from "pattern standard-machine-gun"
 
-  {Tag "aa" "gun"}
+  (include "/properties/standard/gun/define.ext")
+
+  {Tag "aa" "gun"} ; 标签
 
   {Entity "mg42_belt"}
-  {FireSound "smallarms/s3/d1/GER/MG42/"}
-  {FireSoundclose "smallarms/s3/3p/GER/MG42/"}
-  {ReloadSound "mg42"}
-
   {Mass 11.57}
-  {Inventory {size 7 2}}
 
-  {Calibre 7.92}
-  {Filling "ammo ger-mgun" 100}
+  {FireSound "smallarms/s3/d1/GER/MG42/"} ; 开火音效
+  {FireSoundclose "smallarms/s3/3p/GER/MG42/"} ; 车内视角开火音效
+  {ReloadSound "mg42"} ; 装弹音效
 
-  {TraceFreq 3}
-  {Range 275 275}
-  {SpreadTolerance 0.10} ; 瞄准到 10% 就可以开火
+  {Cursor "ironsights/mg"} ; 即时战略模式下的瞄准图标
+  {CursorReloading "carbine_reload"} ; 即时战略模式下的装填图标
+  {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
+  {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
 
-  ("velocity" mps(740))
-  ("fire rate" rpm(1200))
-  ("reload time" seconds(7))
-  ("human health" damage(100)) ; 对人员伤害
-  {Gravity 5}
+  {Filling "ammo ger-mgun api" 250} ; 弹种及弹链内炮弹数量
+  {Calibre 7.92} ; 口径
+  {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
+  {Preloaded}
 
-  {ProjectileDamageTable {10 14} {500 5} {1000 0}} ; 穿深
-  {MinimumDamageModifier 5} ; 对载具伤害
+  {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
+  {AimingTolerance 1.5} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
+  {SpreadTolerance 0.2} ; 瞄准到一定精度就可以开火
+  {ZeroingAccuracy 0.95 0.9 0.85 0.8 0.75} ; 归零精度？不确定
+  {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
+  {DisableRicochet 0} ; 是否禁用跳弹模式
+  ; 不启用曲射模式
+
+  {RechargeTime 7} ; 装填时间（秒）
+  {RecoveryTime 0.040} ; 短射间隔（秒）, 适用于弹链
+  {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
 
   {Burst
-    {Short 5 1}
-    {Long  12 3}
-    {RangeKoef 0.5}
+    {Short 12 3} ; 远距离短连发，基数 +- 随机数
+    {Long  7 2} ; 近距离长连发，基数 +- 随机数
+    {RangeKoef 0.5} ; 该系数乘以 AimRange = 分界距离，大于分界距离为远距离，小于分界距离为近距离
   }
 
-  {Spreading
-    {RadiusTable {0 0} {100 0.7} {500 6} {1000 19}} ; 散布
-    {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
-    {BurstAccuracy     100 98 95 90} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
-    {SpreadPower       1.20} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
-    {SpreadXYRatio     0.80} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+  {Automatic} ; 自动武器
+
+  {RicochetEnergyDamping ; 跳弹后的能量衰减，距离和比例
+    {0  1.00}
+    {10 0.90}
+    {25 0.70}
+    {45 0.30}
+    {60 0.00}
   }
+
+  {OvermatchDamping ; 过度穿透后的阻尼，角度和值
+    {0  1.00}
+    {30 1.10}
+    {55 1.15}
+    {60 1.45}
+    {70 4.00}
+    {90 6.00}
+  }
+
+  {Parameters "api"
+    {CursorReloading "gun_api"} ; 装填图标
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 250} ; AI 最长射击距离 m
+    {MaxRange 250} ; 玩家最长射击距离 m
+    {Speed 740} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {100 14} {500 5} {1000 0}} ; 穿深表
+    {MinimumDamageModifier 8} ; 弹种对装甲的击穿伤害
+    {HealthDamage 125} ; 弹种对人员的击穿伤害
+    {Spreading
+      {RadiusTable {0 0} {100 0.5} {500 4.2} {1000 14.70}} ; 散布
+      {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.4} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.9} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    }
+    {OvermatchCalibre
+      {0  1.0000 0.0000}
+      {10 1.0370 0.0100}
+      {20 1.1000 0.0200}
+      {30 1.4350 0.1500}
+      {40 2.1900 0.1000}
+      {45 2.7900 0.1200}
+      {50 3.8600 0.1200}
+      {60 6.2300 0.1500}
+      {65 7.7000 0.1500}
+      {70 9.9300 0.1500}
+      {75 14.300 0.1700}
+      {80 22.900 0.1700}
+      {85 62.700 0.2420}
+      {90 99.000 0.0000}
+    }
+    ; 无防空炮配置
+  }
+
+  ; 无额外配置
 
 }

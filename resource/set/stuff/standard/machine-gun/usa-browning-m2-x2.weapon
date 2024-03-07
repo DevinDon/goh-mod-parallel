@@ -1,8 +1,102 @@
-{from "usa-browning-m2"
+; usa-browning-m2-x2
+; 美国双联 Browning M2 重机枪
+{from "pattern standard-machine-gun"
 
-  {filling "ammo usa-hmgun" 200}
+  (include "/properties/standard/gun/define.ext")
 
-  ("fire rate" rpm(1200))
-  ("reload time" seconds(10))
+  {Tag "aa" "gun"} ; 标签
+
+  {Entity "browning_m2"}
+  {Mass 38}
+
+  {FireSound "smallarms/s4/d1/USA/M2HB/"} ; 开火音效
+  {FireSoundclose "smallarms/s4/d1/USA/M2HB/"} ; 车内视角开火音效
+  {ReloadSound "dt"} ; 装弹音效
+
+  {Cursor "ironsights/mg"} ; 即时战略模式下的瞄准图标
+  {CursorReloading "carbine_reload"} ; 即时战略模式下的装填图标
+  {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
+  {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
+
+  {Filling "ammo usa-hmgun api" 200} ; 弹种及弹链内炮弹数量
+  {Calibre 12.7} ; 口径
+  {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
+  {Preloaded}
+
+  {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
+  {AimingTolerance 2.5} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
+  {SpreadTolerance 0.2} ; 瞄准到一定精度就可以开火
+  {ZeroingAccuracy 0.95 0.9 0.85 0.8 0.75} ; 归零精度？不确定
+  {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
+  {DisableRicochet 0} ; 是否禁用跳弹模式
+  ; 不启用曲射模式
+
+  {RechargeTime 18} ; 装填时间（秒）
+  {RecoveryTime 0.050} ; 短射间隔（秒）, 适用于弹链
+  {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
+
+  {Burst
+    {Short 15 5} ; 远距离短连发，基数 +- 随机数
+    {Long  15 3} ; 近距离长连发，基数 +- 随机数
+    {RangeKoef 0.5} ; 该系数乘以 AimRange = 分界距离，大于分界距离为远距离，小于分界距离为近距离
+  }
+
+  {Automatic} ; 自动武器
+
+  {RicochetEnergyDamping ; 跳弹后的能量衰减，距离和比例
+    {0  1.00}
+    {10 0.90}
+    {25 0.70}
+    {45 0.30}
+    {60 0.00}
+  }
+
+  {OvermatchDamping ; 过度穿透后的阻尼，角度和值
+    {0  1.00}
+    {30 1.10}
+    {55 1.15}
+    {60 1.45}
+    {70 4.00}
+    {90 6.00}
+  }
+
+  {Parameters "api"
+    {CursorReloading "gun_api"} ; 装填图标
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 225} ; AI 最长射击距离 m
+    {MaxRange 225} ; 玩家最长射击距离 m
+    {Speed 894} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {100 30} {500 9} {1000 0}} ; 穿深表
+    {MinimumDamageModifier 12} ; 弹种对装甲的击穿伤害
+    {HealthDamage 175} ; 弹种对人员的击穿伤害
+    {Spreading
+      {RadiusTable {0 0} {100 0.8} {500 7.2} {1000 25.20}} ; 散布
+      {BurstRecoveryTime 0.2} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    }
+    {OvermatchCalibre
+      {0  1.0000 0.0000}
+      {10 1.0370 0.0100}
+      {20 1.1000 0.0200}
+      {30 1.4350 0.1500}
+      {40 2.1900 0.1000}
+      {45 2.7900 0.1200}
+      {50 3.8600 0.1200}
+      {60 6.2300 0.1500}
+      {65 7.7000 0.1500}
+      {70 9.9300 0.1500}
+      {75 14.300 0.1700}
+      {80 22.900 0.1700}
+      {85 62.700 0.2420}
+      {90 99.000 0.0000}
+    }
+    ; 无防空炮配置
+  }
+
+  ; 无额外配置
 
 }

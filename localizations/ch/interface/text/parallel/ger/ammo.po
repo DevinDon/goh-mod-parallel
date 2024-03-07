@@ -12,8 +12,8 @@ msgstr ""
 "Language-Team: \n"
 
 # 子弹
-msgctxt "desc/ammo/ger-mgun"
-msgid   "7.92mm Rounds"
+msgctxt "desc/ammo/ger-mgun api"
+msgid   "7.92mm API Rounds"
 msgstr  "7.92mm 穿甲爆破燃烧弹"
 
 msgctxt "desc/ammo/ger-sniper clip"
