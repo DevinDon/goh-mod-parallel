@@ -224,7 +224,9 @@ msgctxt "desc/ammo/ger-600l8 he"
 msgid   "60cm schwere Betongranate 040"
 msgstr  "60cm 040 重型混凝土侵彻弹"
 
-
 # 迫击炮
 
 # 火箭弹
+msgctxt "desc/ammo/ger-panzershreck heat"
+msgid   "Panzershreck Rocket [<c(c9a6ff)>HEAT</c>]"
+msgstr  "坦克杀手火箭弹 [<c(c9a6ff)>破甲弹</c>]"

@@ -1,0 +1,69 @@
+; ger-panzershreck-54
+; 德国 PanzerShreck 54 反坦克火箭筒
+{from "pattern standard-bazooka"
+
+  (include "/properties/standard/gun/define.ext")
+
+  ; 无标签
+
+  {Entity "panzershreck_54"}
+  {Mass 11}
+
+  {FireSound "reactive/d1/Shared/Rocket_Launcher/"} ; 开火音效
+  {FireSoundclose "reactive/d1/Shared/Rocket_Launcher/"} ; 车内视角开火音效
+  {ReloadSound "panzershreck"} ; 装弹音效
+
+  {Cursor "ironsights/rifle"} ; 即时战略模式下的瞄准图标
+  {CursorReloading "carbine_reload"} ; 即时战略模式下的装填图标
+  {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
+  {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
+
+  {Filling "ammo ger-panzershreck heat" 1} ; 弹种及弹链内炮弹数量
+  {Calibre 88} ; 口径
+  {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
+  {Preloaded}
+
+  {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
+  {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
+  {AimingTolerance 0.5} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
+  {SpreadTolerance 0.9} ; 瞄准到一定精度就可以开火
+  {ZeroingAccuracy 0.95 0.9 0.85 0.8 0.75} ; 归零精度？不确定
+  {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
+  {DisableRicochet 0} ; 是否禁用跳弹模式
+  ; 不启用曲射模式
+
+  {RechargeTime 7} ; 装填时间（秒）
+  {RecoveryTime 1.000} ; 短射间隔（秒）, 适用于弹链
+  {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
+
+  ; 无连发模式
+
+  ; 非自动武器
+
+  {Parameters "heat"
+    {CursorReloading "gun_heat"} ; 装填图标
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 150} ; AI 最长射击距离 m
+    {MaxRange 150} ; 玩家最长射击距离 m
+    {Speed 110} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {100 185} {500 185} {1000 185}} ; 穿深表
+    {MinimumDamageModifier 300} ; 弹种对装甲的击穿伤害
+    {HealthDamage 500} ; 弹种对人员的击穿伤害
+    {Spreading
+      {RadiusTable {0 0} {100 0.7} {500 8.6} {1000 38.70}} ; 散布
+      {BurstRecoveryTime 0.5} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.55} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    }
+    {OvermatchSlope
+      {0  1.0000}
+      {90 1.0000}
+    }
+    ; 无防空炮配置
+  }
+
+  ; 无额外配置
+
+}
