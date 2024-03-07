@@ -40,7 +40,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo ger-mgun" 4500}
+      {Item "ammo ger-mgun api" 4500}
 
       {Item "ammo ger-75l43 apcbche" 49}
       {Item "ammo ger-75l43 apcr" 5}

@@ -55,7 +55,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo usa-hmgun" 1900}
+      {Item "ammo usa-hmgun api" 1900}
       {Item "ammo usa-90x1270 apcbche" 15}
       {Item "ammo usa-90x1270 hvap" 7}
       {Item "ammo usa-90x1270 he" 19}

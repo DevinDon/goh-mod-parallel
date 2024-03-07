@@ -71,7 +71,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo usa-hmgun" 900}
+      {Item "ammo usa-hmgun api" 900}
       {Item "ammo usa-75x272 he" 29}
       {Item "ammo usa-75x272 heat" 9}
       {Item "ammo usa-75x272 wp" 9}

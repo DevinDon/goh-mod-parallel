@@ -45,7 +45,7 @@
 
       {Item "weapon usa-browning-m2" filled {user "mgun"}}
 
-      {Item "ammo usa-hmgun" 900}
+      {Item "ammo usa-hmgun api" 900}
       {Item "ammo usa-76x539 apcbche" 29}
       {Item "ammo usa-76x539 hvap" 3}
       {Item "ammo usa-76x539 he" 9}

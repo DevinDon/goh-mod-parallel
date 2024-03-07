@@ -64,7 +64,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo usa-hmgun" 900}
+      {Item "ammo usa-hmgun api" 900}
       {Item "ammo usa-37 apcbc" 39}
       {Item "ammo usa-37 he" 59}
     }

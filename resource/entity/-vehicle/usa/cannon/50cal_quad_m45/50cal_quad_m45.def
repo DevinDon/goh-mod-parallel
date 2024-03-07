@@ -70,7 +70,7 @@
 
   {Extender "inventory"
     {Box
-      {Item "ammo usa-hmgun" 1500}
+      {Item "ammo usa-hmgun api" 1500}
       {Item "sandbag_vehicle" 1}
     }
   }

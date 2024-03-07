@@ -34,7 +34,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo ger-mgun" 1900}
+      {Item "ammo ger-mgun api" 1900}
 
       {Item "ammo ger-20l55 ap"   80}
       {Item "ammo ger-20l55 apcr" 20}
