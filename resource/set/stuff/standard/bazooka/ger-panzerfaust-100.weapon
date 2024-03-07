@@ -48,7 +48,7 @@
     {Speed 60} ; 炮弹速度
     {Gravity 3} ; 炮弹重力
     {ProjectileDamageTable {100 200} {500 200} {1000 200}} ; 穿深表
-    {MinimumDamageModifier 300} ; 弹种对装甲的击穿伤害
+    {MinimumDamageModifier 200} ; 弹种对装甲的击穿伤害
     {HealthDamage 500} ; 弹种对人员的击穿伤害
     {Spreading
       {RadiusTable {0 0} {100 3.9} {500 37.9} {1000 284.25}} ; 散布
