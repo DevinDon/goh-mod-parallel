@@ -11,6 +11,11 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 
+# 突击步枪
+msgctxt "desc/weapon/ger-stg44"
+msgid   "StG 44"
+msgstr  "StG 44 突击步枪"
+
 # 狙击枪
 msgctxt "desc/weapon/ger-karabiner-98k-sniper"
 msgid   "Karabiner 98k Sniper"
@@ -28,7 +33,7 @@ msgctxt "desc/weapon/ger-panzershreck-54"
 msgid   "Panzershreck 54"
 msgstr  "坦克杀手 54 反坦克火箭筒"
 
-msgctxt "desc/weapon/panzerfaust_100"
+msgctxt "desc/weapon/ger-panzerfaust-100"
 msgid   "Panzerfaust 100"
 msgstr  "铁拳 100 反坦克火箭筒"
 

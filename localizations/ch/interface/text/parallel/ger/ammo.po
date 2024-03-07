@@ -20,6 +20,10 @@ msgctxt "desc/ammo/ger-sniper clip"
 msgid   "7.92mm Mauser Rounds"
 msgstr  "7.92mm 毛瑟步枪弹夹"
 
+msgctxt "desc/ammo/ger-stg44 magazine"
+msgid   "7.92mm StG-44 Magazine"
+msgstr  "7.92mm StG 44 弹匣"
+
 # 炮弹
 # 20mm
 msgctxt "desc/ammo/ger-20l55 ap"
@@ -231,6 +235,6 @@ msgctxt "desc/ammo/ger-panzershreck heat"
 msgid   "Panzershreck Rocket [<c(c9a6ff)>HEAT</c>]"
 msgstr  "坦克杀手火箭弹 [<c(c9a6ff)>破甲弹</c>]"
 
-msgctxt "desc/ammo/panzerfaust100"
+msgctxt "desc/ammo/ger-panzerfaust-100 heat"
 msgid   "Panzerfaust 100 Rocket [<c(c9a6ff)>HEAT</c>]"
 msgstr  "铁拳 100 火箭弹 [<c(c9a6ff)>破甲弹</c>]"

@@ -18,7 +18,7 @@
   {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
   {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
 
-  {Filling "ammo ger-panzerfaust heat" 1} ; 弹种及弹链内炮弹数量
+  {Filling "ammo ger-panzerfaust-100 heat" 1} ; 弹种及弹链内炮弹数量
   {Calibre 100} ; 口径
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}

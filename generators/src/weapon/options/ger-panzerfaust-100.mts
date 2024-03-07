@@ -19,7 +19,7 @@ const options: WeaponOptions = {
   reloadSound: 'panzershreck',
   cursor: 'ironsights/rifle',
 
-  ammo: 'ger-panzerfaust heat',
+  ammo: 'ger-panzerfaust-100 heat',
   amout: 1,
   calibre: 100,
   syncedProjectiles: true,
