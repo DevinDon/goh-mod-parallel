@@ -2,30 +2,32 @@ import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/bazooka/ger-panzershreck-54.weapon',
+  destination: 'resource/set/stuff/standard/bazooka/ger-panzerfaust-100.weapon',
 
-  name: 'ger-panzershreck-54',
-  description: '德国 PanzerShreck 54 "坦克杀手" 反坦克火箭筒',
+  name: 'ger-panzerfaust-100',
+  description: '德国 Panzerfaust 100 "铁拳" 反坦克火箭筒',
 
-  entity: 'panzershreck_54',
+  entity: 'panzerfaust_100',
   mass: 11,
 
   from: 'pattern standard-bazooka',
 
-  fireSound: 'reactive/d1/Shared/Rocket_Launcher/',
-  fireSoundClose: 'reactive/d1/Shared/Rocket_Launcher/',
+  tags: [ 'nokeep' ],
+
+  fireSound: 'reactive/d1/GER/Panzerfaust/',
+  fireSoundClose: 'reactive/3p/GER/Panzerfaust/',
   reloadSound: 'panzershreck',
   cursor: 'ironsights/rifle',
 
-  ammo: 'ger-panzershreck heat',
+  ammo: 'ger-panzerfaust heat',
   amout: 1,
-  calibre: 88,
+  calibre: 100,
   syncedProjectiles: true,
 
   aimingTolerance: 0.5,
   spreadTolerance: 0.9,
 
-  rechargeTime: 7,
+  rechargeTime: 1,
   recoveryTime: 60 / 60,
 
   automatic: false,
@@ -34,29 +36,35 @@ const options: WeaponOptions = {
     {
       name: 'heat',
       minRange: 0,
-      aimRange: 150,
-      maxRange: 150,
-      speed: 110,
+      aimRange: 100,
+      maxRange: 100,
+      speed: 60,
       gravity: 5,
       projectile: {
-        nearest: 185,
-        farthest: 185,
+        nearest: 200,
+        farthest: 200,
       },
       damageToArmor: 300,
       damageToHuman: 500,
       spreading: {
         radiusTable: {
-          nearest: 0.7,
-          farthest: 8.6,
-          factor: 4.5,
+          nearest: 0.8,
+          farthest: 9.9,
+          factor: 5.5,
         },
         burstRecoveryTime: 0.5,
         burstAccuracy: 100,
-        spreadPower: 1.25,
+        spreadPower: 1.15,
         spreadXYRatio: 0.55,
       },
       overmatch: 'heat',
     },
+  ],
+
+  extra: [
+    '{Inventory {Size 7 1}}',
+    '{FillingVisible "faustrocket"}',
+    '{AmmoLocked}',
   ],
 
 };

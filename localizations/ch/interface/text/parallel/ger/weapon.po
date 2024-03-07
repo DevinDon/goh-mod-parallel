@@ -26,7 +26,11 @@ msgstr  "MG 42 通用机抢"
 # 火箭筒
 msgctxt "desc/weapon/ger-panzershreck-54"
 msgid   "Panzershreck 54"
-msgstr  "坦克杀手 54 式火箭筒"
+msgstr  "坦克杀手 54 反坦克火箭筒"
+
+msgctxt "desc/weapon/panzerfaust_100"
+msgid   "Panzerfaust 100"
+msgstr  "铁拳 100 反坦克火箭筒"
 
 # 迫击炮
 

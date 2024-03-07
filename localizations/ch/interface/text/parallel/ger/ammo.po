@@ -230,3 +230,7 @@ msgstr  "60cm 040 重型混凝土侵彻弹"
 msgctxt "desc/ammo/ger-panzershreck heat"
 msgid   "Panzershreck Rocket [<c(c9a6ff)>HEAT</c>]"
 msgstr  "坦克杀手火箭弹 [<c(c9a6ff)>破甲弹</c>]"
+
+msgctxt "desc/ammo/panzerfaust100"
+msgid   "Panzerfaust 100 Rocket [<c(c9a6ff)>HEAT</c>]"
+msgstr  "铁拳 100 火箭弹 [<c(c9a6ff)>破甲弹</c>]"
