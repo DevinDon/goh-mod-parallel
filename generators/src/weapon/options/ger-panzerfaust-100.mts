@@ -21,7 +21,7 @@ const options: WeaponOptions = {
 
   ammo: 'ger-panzerfaust-100 heat',
   amout: 1,
-  calibre: 100,
+  calibre: 149,
   syncedProjectiles: true,
 
   aimingTolerance: 0.5,
@@ -39,7 +39,7 @@ const options: WeaponOptions = {
       aimRange: 100,
       maxRange: 100,
       speed: 60,
-      gravity: 5,
+      gravity: 3,
       projectile: {
         nearest: 200,
         farthest: 200,

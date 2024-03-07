@@ -19,7 +19,7 @@
   {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
 
   {Filling "ammo ger-panzerfaust-100 heat" 1} ; 弹种及弹链内炮弹数量
-  {Calibre 100} ; 口径
+  {Calibre 149} ; 口径
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
 
@@ -46,7 +46,7 @@
     {AimRange 100} ; AI 最长射击距离 m
     {MaxRange 100} ; 玩家最长射击距离 m
     {Speed 60} ; 炮弹速度
-    {Gravity 5} ; 炮弹重力
+    {Gravity 3} ; 炮弹重力
     {ProjectileDamageTable {100 200} {500 200} {1000 200}} ; 穿深表
     {MinimumDamageModifier 300} ; 弹种对装甲的击穿伤害
     {HealthDamage 500} ; 弹种对人员的击穿伤害
