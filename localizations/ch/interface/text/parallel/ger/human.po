@@ -12,10 +12,18 @@ msgstr ""
 "Language-Team: \n"
 
 # 后期人员
+msgctxt "desc/human/mp/ger/late/antitank_1"
+msgid   "AT Inf. [Heer]"
+msgstr  "反坦克步兵 [德国]"
+
+msgctxt "desc/human/mp/ger/late/antitank_2"
+msgid   "AT support Inf. [Heer]"
+msgstr  "反坦克支援手 [德国]"
+
 msgctxt "desc/human/mp/ger/late/mgun_1"
 msgid   "MG Operator [Heer]"
-msgstr  "机枪手 [纳粹德国陆军]"
+msgstr  "机枪手 [德国]"
 
 msgctxt "desc/human/mp/ger/late/mgun_2"
 msgid   "MG Support [Heer]"
-msgstr  "机枪观察手 [纳粹德国陆军]"
+msgstr  "机枪观察手 [德国]"
