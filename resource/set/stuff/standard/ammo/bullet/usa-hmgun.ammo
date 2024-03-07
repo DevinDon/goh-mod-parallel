@@ -2,8 +2,10 @@
 
   (include "/properties/standard/ammo/hmgun.ext")
 
-  {Tag "bullet hmgun stackable pierce api"}
-  {Tag "bullet_fx size3 ap"}
+  {Tag "bullet hmgun stackable pierce api bullet_fx size3 ap"}
+
+  {Entity "hmgun_usa_api"}
+  {Mass 0.2}
 
   {Inventory
     {Weight 1}
@@ -11,8 +13,6 @@
     {Size 3 2}
     {Fsm "belt"}
   }
-  {Entity "hmgun_usa_api"}
-  {Mass 0.2}
 
   {Trace
     {View "/texture/fx/tracers/line/blue/tracer.mtl"

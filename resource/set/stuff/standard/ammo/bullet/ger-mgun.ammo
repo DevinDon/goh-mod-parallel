@@ -2,8 +2,10 @@
 
   (include "/properties/standard/ammo/mgun.ext")
 
-  {Tag "bullet small_arms stackable pierce api"}
-  {Tag "bullet_fx size2"}
+  {Tag "bullet small_arms stackable pierce api bullet_fx size2"}
+
+  {Entity "ger_mg_box_ammo"}
+  {Mass 0.0367}
 
   {Inventory
     {weight 0.5}
@@ -11,8 +13,6 @@
     {size 3 2}
     {fsm "belt"}
   }
-  {Entity "ger_mg_box_ammo"}
-  {Mass 0.0367}
 
   {Trace
     {View "/texture/fx/tracers/line/green/tracer.mtl"

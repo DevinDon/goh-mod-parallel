@@ -1,11 +1,11 @@
 {bullet
 
-  {tag "bullet small_arms stackable pierce bullet_fx size2"}
+  {Tag "bullet small_arms stackable pierce bullet_fx size2"}
 
-  {entity "rifle_clip_ger"}
-  {mass 0.03}
+  {Entity "rifle_clip_ger"}
+  {Mass 0.03}
 
-  {inventory
+  {Inventory
     {weight 20}
     {block 5}
     {size 1 1}
