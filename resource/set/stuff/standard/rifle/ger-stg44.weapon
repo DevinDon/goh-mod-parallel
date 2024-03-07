@@ -97,7 +97,7 @@
       {mouse_speed_factor 0.6}
       {ManualAccuracyZoom}
 
-      {camera "human_zoom8"} ; magnification x8
+      {camera "human_zoom4"} ; magnification x4
       {scope_vignette "/texture/common/environment/lens_effects/zoom_vignette_scope_ger_k98"}
       {blur_mask "/texture/common/environment/lens_effects/zoom_vignette_scope_01_mask"}
       {bump_spec_mask "/texture/common/environment/lens_effects/zoom_vignette_scope_ger_k98"}
@@ -114,7 +114,6 @@
       }
       {hide_crosshair}
       {weapon_sway_active}
-      {drop_zoom_after_shot}
       {aimer_type "sniper"}
     }
   }
