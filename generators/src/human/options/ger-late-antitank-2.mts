@@ -29,8 +29,7 @@ const options: HumanOptions = {
   inventory: [
     '{Item "weapon ger-stg44" filled} ; StG 44 突击步枪',
     '{Item "ammo ger-stg44 magazine" 180} ; StG 44 突击步枪弹',
-    '{Item "weapon ger-panzerfaust-100" filled} ; 铁拳 100 反坦克火箭筒',
-    '{Item "weapon ger-panzerfaust-100" filled} ; 铁拳 100 反坦克火箭筒',
+    '{Item "weapon ger-panzershreck-54" filled} ; 坦克杀手 54 反坦克火箭筒',
     '{Item "ammo ger-panzershreck heat" 4} ; 坦克杀手火箭弹',
     '{Item "m24_smoke grenade" 2} ; 烟雾弹',
     '{Item "bandage_ger" 6} ; 绷带',
