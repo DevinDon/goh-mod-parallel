@@ -1,0 +1,11 @@
+{from "pattern rpg_ammo"
+
+  {tag "no_ricochet"}
+
+  {entity "panzerfaust_100_ammo"}
+
+  {mass 0.6}
+
+  {view "panzerfaust_100_ammo"}
+
+}
