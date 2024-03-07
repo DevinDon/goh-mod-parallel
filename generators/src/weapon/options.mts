@@ -19,6 +19,7 @@ export const BulletReloadingCursors = {
   api: 'gun_api',
   // 步枪弹
   clip: 'carbine_reload',
+  magazine: 'carbine_reload',
 } as const;
 
 /** 炮弹类型 */
