@@ -33,7 +33,7 @@
 
   {Extender "inventory"
     {Box
-      {Size 10 7}
+      {Size 10 10}
       {Weight 1000}
       {Item "repair_kit" 10}
 
