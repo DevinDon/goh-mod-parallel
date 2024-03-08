@@ -87,36 +87,68 @@ msgid   "<c(c3baae)>Armored Vehicle</c>"
 msgstr  "<c(c3baae)>装甲车</c>"
 
 msgctxt "desc/entity/sdkfz234_1"
-msgid   "Sd.Kfz 234/1"
-msgstr  "Sd.Kfz 234/1 侦察装甲车"
+msgid   "Sd.Kfz 234/1 mit 2cm KwK 38"
+msgstr  "Sd.Kfz 234/1 加装 2cm KwK 38"
 
 msgctxt "info/special/sdkfz234_1"
 msgid   "<c(c3baae)>Armored Vehicle</c>"
 msgstr  "<c(c3baae)>装甲车</c>"
 
 msgctxt "desc/entity/sdkfz234_2"
-msgid   "Sd.Kfz 234/2"
-msgstr  "Sd.Kfz 234/2 美洲豹"
+msgid   "Sd.Kfz 234/2 mit 5cm KwK 39"
+msgstr  "Sd.Kfz 234/2 美洲豹 加装 5cm KwK 39"
 
 msgctxt "info/special/sdkfz234_2"
 msgid   "<c(c3baae)>Armored Vehicle</c>"
 msgstr  "<c(c3baae)>装甲车</c>"
 
 msgctxt "desc/entity/sdkfz234_3"
-msgid   "Sd.Kfz 234/3"
-msgstr  "Sd.Kfz 234/3 支援装甲车"
+msgid   "Sd.Kfz 234/3 mit K51"
+msgstr  "Sd.Kfz 234/3 加装 7.5cm K51"
 
 msgctxt "info/special/sdkfz234_3"
 msgid   "<c(c3baae)>Armored Vehicle</c>"
 msgstr  "<c(c3baae)>装甲车</c>"
 
 msgctxt "desc/entity/sdkfz234_4"
-msgid   "Sd.Kfz 234/4"
-msgstr  "Sd.Kfz 234/4 反坦克装甲车"
+msgid   "Sd.Kfz 234/4 mit 7.5cm PaK 40"
+msgstr  "Sd.Kfz 234/4 加装 7.5cm PaK 40"
 
 msgctxt "info/special/sdkfz234_4"
 msgid   "<c(c3baae)>Armored Vehicle</c>"
 msgstr  "<c(c3baae)>装甲车</c>"
+
+msgctxt "desc/entity/sdkfz251d_16"
+msgid   "Sd.Kfz 251/16 Ausf. D mit 14mm Flamm"
+msgstr  "Sd.Kfz 251/16 D 型 加装 14mm 喷火器"
+
+msgctxt "info/special/sdkfz251d_16"
+msgid   "<c(c3baae)>Halftrack Armored Vehicle</c>"
+msgstr  "<c(c3baae)>半履带装甲车</c>"
+
+msgctxt "desc/entity/sdkfz251d_17"
+msgid   "Sd.Kfz 251/17 Ausf. D mit 2cm KwK 38"
+msgstr  "Sd.Kfz 251/17 D 型 加装 2cm KwK 38"
+
+msgctxt "info/special/sdkfz251d_17"
+msgid   "<c(c3baae)>Halftrack Armored Vehicle</c>"
+msgstr  "<c(c3baae)>半履带装甲车</c>"
+
+msgctxt "desc/entity/sdkfz251d_21"
+msgid   "Sd.Kfz 251/21 Ausf. D mit 3 x 1.5cm MG151"
+msgstr  "Sd.Kfz 251/21 D 型 加装三联装 1.5cm MG151"
+
+msgctxt "info/special/sdkfz251d_21"
+msgid   "<c(c3baae)>Halftrack Armored Vehicle</c>"
+msgstr  "<c(c3baae)>半履带装甲车</c>"
+
+msgctxt "desc/entity/sdkfz251d_22"
+msgid   "Sd.Kfz 251/22 Ausf. D mit 7.5cm Pak 40"
+msgstr  "Sd.Kfz 251/22 D 型 加装 7.5cm Pak 40"
+
+msgctxt "info/special/sdkfz251d_22"
+msgid   "<c(c3baae)>Halftrack Armored Vehicle</c>"
+msgstr  "<c(c3baae)>半履带装甲车</c>"
 
 # 轻型坦克
 msgctxt "desc/entity/panzer2l"
@@ -263,6 +295,14 @@ msgid   "Jagdtiger Sd. Kfz. 186"
 msgstr  "\"猎虎\" 重型坦克歼击车"
 
 msgctxt "info/special/jagdtiger"
+msgid   "<c(c3baae)>Tank Destroyer</c>"
+msgstr  "<c(c3baae)>坦克歼击车</c>"
+
+msgctxt "desc/entity/nashorn"
+msgid   "Nashorn"
+msgstr  "\"犀牛\" 坦克歼击车"
+
+msgctxt "info/special/nashorn"
 msgid   "<c(c3baae)>Tank Destroyer</c>"
 msgstr  "<c(c3baae)>坦克歼击车</c>"
 
