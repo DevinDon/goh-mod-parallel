@@ -13,6 +13,17 @@
   {Targetclass "armoredcar"}
   {TargetSelector "tank_bullet"}
 
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail6}
+    {detail7}
+    {detail8}
+    {detail10}
+  }
+
   {Able "emit_passengers_on_enemy"}
 
   {Extender "enumerator"
@@ -22,7 +33,7 @@
   {Extender "inventory"
     {Weapon "mgun" {mask "mountable"}}
     {Box
-      {Size 15 8}
+      {Size 15 6}
       {Weight 1000}
       {Item "repair_kit" 10}
 

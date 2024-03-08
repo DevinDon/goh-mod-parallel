@@ -13,6 +13,16 @@
   {Targetclass "armoredcar"}
   {TargetSelector "cannon_zenite"}
 
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail6}
+  }
+
   {Able "emit_passengers_on_enemy"}
 
   {Extender "enumerator"
