@@ -33,7 +33,7 @@
     {Normal                                                           (/ %speed 1)} ; Standard speed. Single click movement order
     {Fast                                                             (/ %speed 1)} ; Sprint speed. Double click movement order
     {MaxSpeed                                                         (/ %speed 1)} ; Max speed.
-    {MaxSpeedAtMaxTurn                            (* (/ %speed 1.75) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
+    {MaxSpeedAtMaxTurn                            (* (/ %speed 2.00) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
     {SteerOn                                                   (* %performance 60)} ; Steering wheel's turn speed, degrees per second.
     {SteerOff                                                  (* %performance 60)} ; Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second.
     {TurnRadius                                                 (/ 8 %performance)} ; AI turning radius, lower = able to turn more without stopping.
@@ -59,7 +59,7 @@
     {Normal                                                           (/ %speed 1)} ; Standard speed. Single click movement order
     {Fast                                                             (/ %speed 1)} ; Sprint speed. Double click movement order
     {MaxSpeed                                                         (/ %speed 1)} ; Max speed.
-    {MaxSpeedAtMaxTurn                            (* (/ %speed 2.25) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
+    {MaxSpeedAtMaxTurn                            (* (/ %speed 2.00) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
     {SteerOn                                                   (* %performance 15)} ; Steering wheel's turn speed, degrees per second.
     {SteerOff                                                  (* %performance 30)} ; Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second.
     {TurnRadius                                                 (/ 8 %performance)} ; AI turning radius, lower = able to turn more without stopping.
@@ -85,7 +85,7 @@
     {Normal                                                           (/ %speed 1)} ; Standard speed. Single click movement order
     {Fast                                                             (/ %speed 1)} ; Sprint speed. Double click movement order
     {MaxSpeed                                                         (/ %speed 1)} ; Max speed.
-    {MaxSpeedAtMaxTurn                            (* (/ %speed 2.75) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
+    {MaxSpeedAtMaxTurn                            (* (/ %speed 2.25) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
     {SteerOn                                                   (* %performance 10)} ; Steering wheel's turn speed, degrees per second.
     {SteerOff                                                  (* %performance 20)} ; Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second.
     {TurnRadius                                                 (/ 9 %performance)} ; AI turning radius, lower = able to turn more without stopping.
@@ -111,7 +111,7 @@
     {Normal                                                              (/ %speed 1)} ; Standard speed. Single click movement order
     {Fast                                                                (/ %speed 1)} ; Sprint speed. Double click movement order
     {MaxSpeed                                                            (/ %speed 1)} ; Max speed.
-    {MaxSpeedAtMaxTurn                               (* (/ %speed 3.25) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
+    {MaxSpeedAtMaxTurn                               (* (/ %speed 2.50) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
     {TurnTime                                                (/ (/ %mass 3.8) %power)} ; Direct Control, Time it takes to do a full 360 degree at max turn speed, fetching custom define
     {TurnStart                                 (+ 0.50 (* (/ (/ %mass 1000) 6) 0.04))} ; Direct Control, Time for vehicle to from 0°/s rotation speed to max rotation speed.
     {TurnStop                 (/ (+ 0.50 (* (/ (/ %mass 1000) 6) 0.04)) %performance)} ; Direct Control, Time for vehicle to from max rotation speed to 0°/s rotation speed to max rotation speed.
