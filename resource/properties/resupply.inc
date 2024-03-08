@@ -276,6 +276,7 @@
 
   ; custom
   ; ger
+  {Item "ger-fuel"   "ic"          "ammo" 100 {Value 50}}
   {Item "ger-mgun"   "api"         "ammo" 100 {Value 15}}
   {Item "ger-sniper" "clip"        "ammo"   5 {Value  1}}
   {Item "ger-stg44"  "magazine"    "ammo"  30 {Value  7}}
