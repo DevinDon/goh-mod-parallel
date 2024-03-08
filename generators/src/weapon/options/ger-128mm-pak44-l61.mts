@@ -19,7 +19,7 @@ const options: WeaponOptions = {
   calibre: 128,
   syncedProjectiles: true,
 
-  aimingTolerance: 1,
+  aimingTolerance: 0.2,
   spreadTolerance: 0.5,
 
   rechargeTime: 19.15,
