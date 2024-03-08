@@ -930,7 +930,7 @@
   cost(300)) ;// +20 for crew
 }
 {"panzer2l"
-  ("vehicle2" period(late) cd(0) ci(60) t(doctrineonly light) side(ger) crew1(tankman_scout:3) crew2(tank_commander_scout:1) g(light2) b(tanks) cw(4) cp(-100)
+  ("vehicle2" period(late) cd(0) ci(60) t(doctrineonly light) side(ger) crew1(tankman_scout:3) crew2(tank_commander_scout:1) g(light2) b(tanks) cw(4) cp(0)
   cost(300)) ;// +30 for crew
 }
 
