@@ -111,7 +111,7 @@
     {speed2 6}
   }
   {Bone "turret"
-    {limits -20 20}
+    {limits -25 25}
     {speed2 10}
   }
   {Bone "mgun_a2_rot1" ; 机枪射界

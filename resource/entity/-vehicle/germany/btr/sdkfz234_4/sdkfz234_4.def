@@ -91,7 +91,7 @@
   }
   {Bone "turret" ; 炮塔射界
     {speed2 8}
-    {limits -10 10} ; 右左
+    {limits -20 20} ; 右左
   }
   {Bone "mgun_a_rot1" ; 机枪射界
     {speed2 60}
