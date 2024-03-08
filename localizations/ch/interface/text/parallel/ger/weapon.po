@@ -124,6 +124,10 @@ msgctxt "desc/weapon/ger-88mm-kwk43-l71"
 msgid   "8.8cm KwK 43 L/71"
 msgstr  "8.8cm KwK 43 L/71 坦克炮"
 
+msgctxt "desc/weapon/ger-88mm-pak43-l71"
+msgid   "8.8cm PaK 43 L/71"
+msgstr  "8.8cm PaK 43 L/71 反坦克炮"
+
 msgctxt "desc/weapon/ger-105mm-lefh18-l28"
 msgid   "10.5cm leFH 18 L/28"
 msgstr  "10.5cm leFH 18 L/28 榴弹炮"
