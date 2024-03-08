@@ -663,18 +663,18 @@
 ;|________________________________________________|
 
 
-("squad_with1types" side(ger) name(single_rifle)        period(late) cd(0)   ci(3)   g(single_1)       c1(rifleman_1:1)                      b(inf2) t())
-("squad_with1types" side(ger) name(single_smg)          period(late) cd(0)   ci(5)   g(single_1)       c1(smg_1:1)                           b(inf2) t())
+("squad_with1types" side(ger) name(single_rifle)        period(late) cd(0)   ci(10)  g(single_1)       c1(rifleman_1:1)                      b(inf2) t())
+("squad_with1types" side(ger) name(single_smg)          period(late) cd(0)   ci(20)  g(single_1)       c1(smg_1:1)                           b(inf2) t())
 ("squad_with1types" side(ger) name(single_sa)           period(late) cd(0)   ci(10)  g(single_1)       c1(rifleman_3:1)                      b(inf2) t())
 ("squad_with2types" side(ger) name(single_mg)           period(late) cd(0)   ci(60)  g(single_mg)      c1(mgun_1:1)         c2(mgun_2:1)     b(inf2) t())
-("squad_with2types" side(ger) name(single_bazooker)     period(late) cd(0)   ci(0)   g(single_at)      c1(antitank_1:1)     c2(antitank_2:1) b(inf2) t())
+("squad_with2types" side(ger) name(single_bazooker)     period(late) cd(0)   ci(60)  g(single_at)      c1(antitank_1:1)     c2(antitank_2:1) b(inf2) t())
 ("squad_with2types" side(ger) name(single_riflegrenade) period(late) cd(0)   ci(60)  g(single_rifleg)  c1(antitank_4:1)     c2(antitank_5:1) b(inf2) t())
 ("squad_with1types" side(ger) name(single_ap_miner)     period(late) cd(0)   ci(60)  g(single_apmine)  c1(miner-ap:2)                        b(inf2) t(engineer))
 ("squad_with1types" side(ger) name(single_at_miner)     period(late) cd(0)   ci(60)  g(single_atmine)  c1(miner-at:2)                        b(inf2) t(engineer))
 ("squad_with2types" side(ger) name(single_engineer)     period(late) cd(0)   ci(60)  g(single_eng)     c1(engineer_1:1)     c2(engineer_2:1) b(inf2) t(engineer))
 ("squad_with1types" side(ger) name(single_flamer)       period(late) cd(0)   ci(60)  g(single_flamer)  c1(flamer:1)                          b(inf2) t(flamer))
 ("squad_with2types" side(ger) name(single_tankman)      period(late) cd(150) ci(150) g(single_crew)    c1(tank_commander:1) c2(tankman:4)    b(inf2) t())
-("squad_with1types" side(ger) name(single_medic)        period(late) cd(0)   ci(0)   g(single_medic)   c1(medic:2)                           b(inf2) t(medic))
+("squad_with1types" side(ger) name(single_medic)        period(late) cd(0)   ci(30)  g(single_medic)   c1(medic:2)                           b(inf2) t(medic))
 ("squad_with1types" side(ger) name(single_sniper)       period(late) cd(120) ci(180) g(single_sniper)  c1(sniper:1)                          b(inf2) t(sniper))
 ("squad_with1types" side(ger) name(single_officer)      period(late) cd(120) ci(180) g(single_officer) c1(officer:1)                         b(inf2) t(officer))
 

@@ -302,7 +302,7 @@
 
 ; // T26E4 Super Pershing
 {"doctrine_t26e4_late"
-  ("squad_vehicle2_doctrine" side(usa) period(late) vehicle(t26e4) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+  ("squad_vehicle2_doctrine" side(usa) period(late) vehicle(t26e4) crew1(tankman_m3:5) crew2(tank_com_m3:1))
   ("doctrine_t3" cool(480) d(late_usa_offensive) cost(110))
 }
 
@@ -667,7 +667,7 @@
   cost(310)) ;// +25 for crew
 }
 {"m24_chaffee"
-  ("vehicle2" period(late) cd(240) ci(60) t(light) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(light3) b(tanks) cw(4) cp(0)
+  ("vehicle2" period(late) cd(240) ci(60) t(light) side(usa) crew1(tankman_m3:5) crew2(tank_com_m3:1) g(light3) b(tanks) cw(4) cp(0)
   cost(380)) ;// +30 for crew
 }
 
