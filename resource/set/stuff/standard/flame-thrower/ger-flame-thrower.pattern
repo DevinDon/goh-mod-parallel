@@ -1,0 +1,27 @@
+{weapon_bullet
+
+  {tag "weapon special_weapon_view flame_thrower fx_thrower bullet to_hand shoot_walking shoot_walking_ai shoot_walking_manual"}
+
+  {clickSound "empty_gun_shot"}
+
+  {inventory
+    {size 5 3}
+    {link_bone "backpacks"}
+    {handle_bone "tank_back"}  ;// when weapon is shouldered (not equipped) this bone on the weapon is linked to the {link_bone} defined above
+    {weight 100}
+    {fsm "smg"}
+  }
+
+  {states
+    {reload ""}
+    {unload "unload"}
+    {fire "fire"}
+    {aim "aim"}
+    {can_aim "can-aim"}
+  }
+
+  {FiringTimeout 0.8 0.2}
+
+  {foresight "foresight3"}
+
+}

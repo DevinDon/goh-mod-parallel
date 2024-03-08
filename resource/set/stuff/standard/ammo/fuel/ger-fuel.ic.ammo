@@ -1,0 +1,16 @@
+{bullet
+
+  {tag "flame"}
+
+  {entity "flame_thrower_ammo"}
+
+  {inventory
+    {weight 1}
+    {block 100}
+    {size 3 3}
+    {fsm "belt"}
+  }
+
+  {mass 0.006}
+
+}
