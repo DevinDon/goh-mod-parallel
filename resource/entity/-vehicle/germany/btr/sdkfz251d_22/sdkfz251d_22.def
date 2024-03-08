@@ -1,65 +1,43 @@
-; TODO
 {game_entity
-  (include "/properties/armoredcar.ext")
-  (include "/properties/selection/vehicle.inc" scale(1.0))
-  {props "tank" "halftrack" "wheeled" "multi_board" "turret" "with_gun" "shell_eject" "muzzle_75mm_76mm_sides" "explosion_throw_crew" "vision_lev02" "tractor" "tractor_heavy" "detect_td_light" "open_death_fx_low" "open_top"}
-  {able "emit_passengers_on_enemy"}
-  {extension "sdkfz251d_22.mdl"}
-  (include "sdkfz251d_22.ext")
-  {patherId "sdkfz251"}
-  {targetclass "armoredcar"}
-  {targetSelector "tank_medium"}
 
-  {extender "enumerator"
+  (include "/properties/standard/vehicle/armored-car-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(1.0))
+
+  {Extension "sdkfz251d_22.mdl"}
+  (include   "sdkfz251d_22.ext")
+  (include   "crew-and-passenger.ext")
+
+  {Props "tank" "halftrack" "wheeled" "multi_board" "turret" "with_gun" "shell_eject" "muzzle_75mm_76mm_sides" "explosion_throw_crew" "vision_lev02" "tractor" "tractor_heavy" "detect_td_light" "open_death_fx_low" "open_top"}
+
+  {PatherId "sdkfz251"}
+  {Targetclass "armoredcar"}
+  {TargetSelector "tank_medium"}
+
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail8}
+    {detail7}
+    {detail6}
+  }
+
+  {Able "emit_passengers_on_enemy"}
+
+  {Extender "enumerator"
     {digit_folder "np"}
   }
 
-  {boarder
-    {anm "passenger1"
-      {forward {begin "halftrack_commander_board"} {end "halftrack_commander_board_seat"} {base "board"}}
-      {reverse {end "emit_sd222_driver"} {base "board"}}
-    }
-    {anm "driver"
-      {forward {begin "halftrack_driver_board"} {end "halftrack_driver_board_seat"} {base "board"}}
-      {reverse {end "emit_sd222_driver"} {base "board"}}
-    }
-    {anm "gunner2"
-      {forward {begin "board_sd232_driver"} {end "pose_mgun_251"} {base "board"}}
-      {reverse {end "emit_sd222_driver"} {base "board"}}
-    }
-    {anm "gunner"
-      {forward {begin "board_sd232_driver"} {end "pose_m5_gunlayer"} {base "board"}}
-      {reverse {end "emit_sd222_driver" 1} {base "board"}}
-    }
-    {anm "charger"
-      {forward {begin "board_sd232_driver"} {end "pose_pdr25_charger"} {base "board"}}
-      {reverse {end "emit_sd222_driver" 1} {base "board"}}
-    }
-    {anm "commander"
-      {forward {begin "board_sd232_driver"} {end "seat_m7_com"} {base "board"}}
-      {reverse {end "emit_sd222_driver" 1} {base "board"}}
-    }
-  }
-
-  ("crew" place(driver)    bone(driver)  door(emit1)    animation(driver)    visor(driver)  off({sensor}))
-  ("crew" place(gunner)    bone(gunner)  door(emit2)    animation(gunner)    visor(none)    off())
-  ("crew" place(charger)    bone(charger)  door(emit1)    animation(charger)    visor(none)   off())
-  ("crew" place(commander)  bone(commander)  door(emit2)    animation(commander)  visor(none)    off())
-
-  ("passenger" place(seat1) bone(seat1) door(emit1)  animation(passenger1)  off({sensor}))
-
-  {sensor
-    {visor "human"
-      {vision "none"}
-    }
-    {visor "around"
-      {vision "none"}
-    }
-  }
-
-  {extender "inventory"
+  {Extender "inventory"
     {Weapon "mgun2" {mask "mountable"}}
     {Box
+      {Size 15 8}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
       {Item "ammo ger-mgun api" 1900}
       {Item "weapon ger-mg42" filled {user "mgun2"}}
 
@@ -70,50 +48,53 @@
   }
 
   {Weaponry
-    ("restore_ik_time")
-    {place "gun"
+    {RestoreIKTime 2}
+    {Place "gun"
       {RestoreIKAfterAim}
       {Weapon "weapon ger-75mm-pak40-l46" filling "ammo ger-75l43 apcbche" 1}
       {Gunner "gunner"}
       {Charger "charger"}
-      ("abm_dymamic_gun"
-        zeroing(2.0)
-        dispersion(0.35)
-      )
+      {AccuracyByMotion
+        {MaxLinearSpeed  10.00} ; km/h
+        {ByLinearSpeed    0.25} ; km/h
+        {MaxAngularSpeed  5.00} ; deg/s
+        {ByAngularSpeed   0.35} ; deg/s
+        {DisorderTime     0.35} ; s
+        {OrderTime        2.25} ; s
+      }
     }
-    {place "mgun2"
+    {Place "mgun2"
       {type "rear"}
-      {gunner "commander"}
-      {charger "commander"}
+      {Gunner "charger"}
+      {Charger "charger"}
       {LinkBone "mgun2"}
       {LinkAnimation "off"}
-      ("abm_mgun")
+      {Basic}
       {ai_in_manual}
-      {basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
     }
   }
 
-  {mass 7810}
+  {Mass 7810}
   {Chassis "wheel"
-    ("tank_trace_ex" fx("tracks_sm2") step(0.2) len(0.49) boneleft("FXtraceL3") boneright("FXtraceR3"))
-    ("car_trace" fx("tracewheel03a") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
-    ("mobility_car"
-      speed(53) ;----------------------------------Max speed.
-      speedatmaxturn(14) ;-------------------------Max speed at max turn.
-      reverse(9) ;---------------------------------Max speed in Reverse.
-      weight(7.81) ;--------------------------------Weight in Tonnes.
-      power(100) ;---------------------------------Horse Power.
-      fuel(160) ;----------------------------------Fuel capacity in Litres.
-      type(fuel) ;---------------------------------Fuel type.
-      range(150) ;---------------------------------Range in Kilometers.
-    )
+    ("set-tank-trace" fx("tracks_sm2") step(0.2) length(0.49) boneleft("FXtraceL3") boneright("FXtraceR3"))
+    ("set-car-trace" fx("tracewheel03a") step(0.09) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-armored-car" speed(53) power(100) mass(7810) performance(1.53))
+    ("set-fuel-bag" volume(160) power(100) mass(7810))
   }
 
-  {bone "gun_rot"
+  {Bone "gun_rot"
     {limits -3 22}
     {speed2 8}
   }
-  {bone "turret"
+  {Bone "turret"
     {limits -20 20}
     {speed2 6}
   }
