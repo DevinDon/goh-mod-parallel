@@ -25,7 +25,8 @@
 ("set-wheel" name("wheelleft1"))
 ("set-wheel" name("wheelright1"))
 
-("set-internal-components" name("fuel")  type("fuel") repair(3))
+("set-internal-components" name("fuel") type("fuel") repair(3))
+("set-internal-components" name("magazine") type("ammo") repair(3))
 ("set-internal-components" name("transmission") type("transmission") repair(10))
 
 {volume "gun_shield"
