@@ -400,13 +400,13 @@
 ; // Sdkfz251/17 + lehr pz recon
 {"doctrine_sdkfz251d_17"
   ("squad_vehicle6_doctrine" side(ger) period(late) vehicle(sdkfz251d_17) crew1(artilleryman:3) crew2(lehr_pz_recon_sl:1) crew3(lehr_pz_recon_sl_asst_Sa:1) crew4(lehr_pz_recon_rifle_pzf:1) crew5(lehr_pz_recon_mg:1) crew6(lehr_pz_recon_mg_asst:1))
-  ("doctrine_t1" cool(180) d(late_ger_allround2) cost(15))
+  ("doctrine_t1" cool(180) d(late_ger_allround2) cost(10))
 }
 
 ; // Sdkfz251/16 Flamer + lehr pz pioniers
 {"doctrine_sdkfz251d_16"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sdkfz251d_16) crew1(lehr_pzgren_rifle:4) crew2(lehr_pzgren_sl:1))
-  ("doctrine_t1" cool(180) d(late_ger_allround2) cost(15))
+  ("doctrine_t1" cool(180) d(late_ger_allround2) cost(20))
 }
 
 ; // Sdkfz251/21 drilling
@@ -421,7 +421,7 @@
 ; // Sdkfz251/22 pak40
 {"doctrine_sdkfz251d_22"
   ("squad_vehicle_doctrine" side(ger) period(late) vehicle(sdkfz251d_22) crew(artilleryman:4))
-  ("doctrine_t2" cool(300) d(late_ger_allround2) cost(40))
+  ("doctrine_t2" cool(300) d(late_ger_allround2) cost(30))
 }
 
 ; // Artillery Signaller
@@ -437,13 +437,13 @@
 ; // Nashorn
 {"doctrine_nashorn_late"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(nashorn) crew1(tankman_pzjag:4) crew2(tank_commander_pzjag:1))
-  ("doctrine_t3" cool(480) d(late_ger_allround2) cost(85))
+  ("doctrine_t3" cool(480) d(late_ger_allround2) cost(80))
 }
 
 ; // Hummel
 {"doctrine_hummel_late"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(hummel) crew1(tankman_stug:5) crew2(tank_commander_stug:1))
-  ("doctrine_t3" cool(480) d(late_ger_allround2) cost(95))
+  ("doctrine_t3" cool(480) d(late_ger_allround2) cost(80))
 }
 
 ; // Panzerwerfer 42
@@ -456,7 +456,7 @@
 ; // Tiger II P
 {"doctrine_tiger2p"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(tiger2p) crew1(tankman:4) crew2(tank_commander:1))
-  ("doctrine_t3" cool(480) d(late_ger_allround2) cost(115))
+  ("doctrine_t3" cool(480) d(late_ger_allround2) cost(100))
 }
 
 
