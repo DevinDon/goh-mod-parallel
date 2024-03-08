@@ -74,9 +74,13 @@
   }
 
   {extender "inventory"
+    {Weapon "mgun2" {mask "mountable"}}
     {Box
-      {item "bulletger_20_auto ap" 300}    ; 600 rds total
-      {item "bulletger_20_auto he" 300}
+      {Item "ammo ger-mgun api" 1900}
+      {Item "weapon ger-mg42" filled {user "mgun2"}}
+
+      {Item "ammo ger-20l55 ap" 300}
+      {Item "ammo ger-20l55 he" 300}
     }
   }
 
@@ -84,7 +88,7 @@
     ("restore_ik_time")
     {place "gun"
       {RestoreIKAfterAim}
-      {weapon "20mm_kwk38" filling "bulletger_20_auto ap" 10}
+      {Weapon "weapon ger-20mm-kwk38-l55" filling "ammo ger-20l55 ap" 10}
       {gunner "gunner"}
       {charger "charger"}
       ("abm_dymamic_autocannon"
@@ -92,10 +96,10 @@
         dispersion(0.15)
       )
     }
-    {##place "mgun2"
+    {place "mgun2"
       {type "rear"}
-      {gunner "gunner4"}
-      {charger "gunner4"}
+      {gunner "charger"}
+      {charger "charger"}
       {LinkBone "mgun2"}
       {LinkAnimation "off"}
       ("abm_mgun")
@@ -126,10 +130,14 @@
   {bone "turret"
     {speed2 25}
   }
-  {bone "mgun_a2_rot1"
+
+  {Bone "mgun_a2_rot1" ; 机枪射界
     {speed2 60}
+    {limits -20 45} ; 右左
   }
-  {bone "mgun_a2_rot2"
+  {Bone "mgun_a2_rot2" ; 机枪俯仰角
     {speed2 60}
+    {limits -90 0} ; 俯仰角不是从 0 开始的，需要 + 75 度
   }
+
 }
