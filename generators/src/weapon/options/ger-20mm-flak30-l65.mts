@@ -17,12 +17,12 @@ const options: WeaponOptions = {
   ammo: 'ger-20l55',
   amout: 20,
   calibre: 20,
-  syncedProjectiles: false,
+  syncedProjectiles: true,
 
-  aimingTolerance: 12,
+  aimingTolerance: 6,
   spreadTolerance: 0.1,
 
-  rechargeTime: 2,
+  rechargeTime: 3,
   recoveryTime: 60 / 280,
 
   automatic: true,
