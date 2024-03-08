@@ -85,18 +85,19 @@
     ("set-fuel-bag" volume(360) power(220) mass(12000))
   }
 
-  {Bone "gun_rot"
-    {limits -5 22}
+  {Bone "gun_rot" ; 主炮俯仰角
     {speed2 6}
+    {limits -5 22}
   }
-  {Bone "turret"
-    {limits -20 20}
+  {Bone "turret" ; 炮塔射界
     {speed2 8}
+    {limits -10 10} ; 右左
   }
-  {Bone "mgun_a_rot1"
+  {Bone "mgun_a_rot1" ; 机枪射界
     {speed2 60}
+    {limits -35 20} ; 右左
   }
-  {Bone "mgun_a_rot2"
+  {Bone "mgun_a_rot2" ; 机枪俯仰角
     {speed2 60}
   }
 

@@ -33,7 +33,7 @@
   {Extender "inventory"
     {Weapon "mgun" {mask "mountable"}}
     {Box
-      {Size 12 5}
+      {Size 12 6}
       {Weight 1000}
       {Item "repair_kit" 10}
 
@@ -78,10 +78,11 @@
         {OrderTime        1.00} ; s
       }
     }
-    {##Place "mgun2"
+    {Place "mgun2"
       {Type "rear"}
-      {Gunner "gunner2"}
-      {Charger "gunner2"}
+      {Weapon "weapon ger-mg42" filled}
+      {Gunner "commander"}
+      {Charger "commander"}
       {LinkBone "mgun2"}
       {LinkAnimation "off"}
       {Basic}
@@ -112,6 +113,14 @@
   {Bone "turret"
     {limits -20 20}
     {speed2 10}
+  }
+  {Bone "mgun_a2_rot1" ; 机枪射界
+    {speed2 60}
+    {limits -20 45} ; 右左
+  }
+  {Bone "mgun_a2_rot2" ; 机枪俯仰角
+    {speed2 60}
+    {limits -60 0} ; 俯仰角不是从 0 开始的，需要 + 50 度
   }
 
 }
