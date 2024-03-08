@@ -1,0 +1,148 @@
+; crew and passenger
+
+; set visors
+{Sensor
+  ; visor main
+  {Visor "main"
+    {Bone "foresight1"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor around
+  {Visor "around"
+    {Bone "visor1"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor driver
+  {Visor "driver"
+    {Bone "visor2"}
+    {Vision "standard-vision-none"}
+  }
+  ; visor standard-visor-driver
+  {Visor "standard-visor-driver"
+    {Bone "visor2"}
+    {Vision "standard-vehicle-vision-narrow"}
+  }
+  ; visor standard-visor-gunner
+  {Visor "standard-visor-gunner"
+    {Bone "foresight1"}
+    {Vision "standard-vehicle-vision-narrow"}
+  }
+}
+
+; set animations
+{Boarder
+  ; animation driver
+  {Anm "driver"
+    {forward
+      {base "board" 1}
+      {begin "halftrack_driver_board" 1}
+      {end "halftrack_driver_board_seat" 1}
+    }
+    {reverse
+      {base "board" 1}
+      ; no reverse animation begin
+      {end "emit_sd222_driver" 1}
+    }
+  }
+  ; animation gunner
+  {Anm "gunner"
+    {forward
+      {base "board" 1}
+      {begin "board_sd232_driver" 1}
+      {end "seat_251_21_gunner" 1}
+    }
+    {reverse
+      {base "board" 1}
+      ; no reverse animation begin
+      {end "emit_sd222_driver" 1}
+    }
+  }
+  ; animation charger
+  {Anm "charger"
+    {forward
+      {base "board" 1}
+      {begin "board_sd232_driver" 1}
+      {end "seat_251_21_charger" 1}
+    }
+    {reverse
+      {base "board" 1}
+      ; no reverse animation begin
+      {end "emit_sd222_driver" 1}
+    }
+  }
+  ; animation passenger
+  {Anm "passenger"
+    {forward
+      {base "board" 1}
+      {begin "halftrack_commander_board" 1}
+      {end "halftrack_commander_board_seat" 1}
+    }
+    {reverse
+      {base "board" 1}
+      ; no reverse animation begin
+      {end "emit_sd222_driver" 1}
+    }
+  }
+}
+
+; set crews
+; crew driver
+{Placer
+  {Place "driver"
+    {group "crew"}
+    {linkbone "driver"}
+    {turnoff {shadow} {sensor}}
+    {visor "standard-visor-driver"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+}
+; crew gunner
+{Placer
+  {Place "gunner"
+    {group "crew"}
+    {linkbone "gunner"}
+    {turnoff {shadow} {sensor}}
+    {visor "standard-visor-gunner"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "gunner" {anm "gunner"} {forward putoff} {reverse puton}}
+}
+; crew charger
+{Placer
+  {Place "charger"
+    {group "crew"}
+    {linkbone "charger"}
+    {turnoff {shadow} {sensor}}
+    {visor "standard-visor-none"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "charger" {anm "charger"} {forward putoff} {reverse puton}}
+}
+
+; set passengers
+; passenger passenger
+{Placer
+  {Place "passenger"
+    {group "passenger"}
+    {linkbone "seat1"}
+    {turnoff {shadow} {sensor}}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit1"}
+  {link "emit1" "passenger" {anm "passenger"} {forward putoff} {reverse puton}}
+}
+
+; set extra
+; no extra
