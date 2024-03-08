@@ -56,22 +56,12 @@
   {extender "inventory"
     {weapon "mgun" {mask "mountable"}}
     {Box
-      {item "mg42_belt_long" filling "ammo mgun_ger belt ap" 300 {user "mgun"}}
-      {item "ammo mgun_ger belt ap" 2010}
-      {item "ammo flame_thrower" 680}          ;// 700 liters total
+      {item "weapon ger-mg42" filled {user "mgun"}}
+      {item "ammo ger-fuel ic" 700}
     }
   }
 
   {Weaponry
-    {place "gun"
-      {type "left_flamer"}
-      {weapon "14mm_flammenwerfer_251_16_L" filled}
-      {foresight "foresight1"}
-      {gunner "gunner"}
-      {charger "gunner"}
-      {basic}
-      {ai_in_manual}
-    }
     {place "mgun"
       {type "main"}
       {gunner "gunner2"}
@@ -82,9 +72,18 @@
       {ai_in_manual}
       {basic}
     }
+    {place "gun"
+      {type "left_flamer"}
+      {weapon "weapon ger-14mm-flammenwerfer-left" filled}
+      {foresight "foresight1"}
+      {gunner "gunner"}
+      {charger "gunner"}
+      {basic}
+      {ai_in_manual}
+    }
     {place "gun1"
       {type "right_flamer"}
-      {weapon "14mm_flammenwerfer_251_16_R" filled}
+      {weapon "weapon ger-14mm-flammenwerfer-right" filled}
       {foresight "foresight2"}
       {gunner "gunner1"}
       {charger "gunner1"}

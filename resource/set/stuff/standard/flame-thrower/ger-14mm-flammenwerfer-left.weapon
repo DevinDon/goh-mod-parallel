@@ -4,7 +4,7 @@
 
   (include "/properties/standard/gun/define.ext")
 
-  ; 无标签
+  {Tag "gun"} ; 标签
 
   {Entity "14mm_flammenwerfer_251_16_L"}
   {Mass 150}
@@ -47,8 +47,8 @@
   {Parameters "ic"
     {CursorReloading "gun_ic"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 100} ; AI 最长射击距离 m
-    {MaxRange 100} ; 玩家最长射击距离 m
+    {AimRange 60} ; AI 最长射击距离 m
+    {MaxRange 60} ; 玩家最长射击距离 m
     {Speed 40} ; 炮弹速度
     {Gravity 0.5} ; 炮弹重力
     ; 无穿深表配置

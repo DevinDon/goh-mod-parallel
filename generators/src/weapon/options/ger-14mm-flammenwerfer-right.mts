@@ -9,6 +9,8 @@ const options: WeaponOptions = {
 
   from: 'pattern standard-flame-thrower',
 
+  tags: [ 'gun' ],
+
   entity: '14mm_flammenwerfer_251_16_R',
   mass: 150,
 
@@ -46,8 +48,8 @@ const options: WeaponOptions = {
     {
       name: 'ic',
       minRange: 0,
-      aimRange: 100,
-      maxRange: 100,
+      aimRange: 60,
+      maxRange: 60,
       speed: 40,
       gravity: 0.5,
       damageToArmor: 1,
