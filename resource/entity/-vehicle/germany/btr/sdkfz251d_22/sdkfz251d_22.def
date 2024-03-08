@@ -58,31 +58,33 @@
   }
 
   {extender "inventory"
-    ;{weapon "mgun2" {mask "mountable"}}
+    {Weapon "mgun2" {mask "mountable"}}
     {Box
-      ;{item "mg42_drum" filling "ammo mgun_ger belt ap" 50 {user "mgun2"}} ;// doesn't work if same mg34_belt weapon is in both MG places
-      ;{item "ammo mgun_ger belt ap" 2010}
-      {item "bulletger_75_l43 apcbche" 17}    ;50 rounds
-      {item "bulletger_75_l43 he" 25}
-      {item "bulletger_75_l43 apcr" 2}
-      {item "bulletger_75_l43 heatb" 5}
+      {Item "ammo ger-mgun api" 1900}
+      {Item "weapon ger-mg42" filled {user "mgun2"}}
+
+      {Item "ammo ger-75l43 apcbche" 19}
+      {Item "ammo ger-75l43 heat"     5}
+      {Item "ammo ger-75l43 he"      19}
     }
   }
 
   {Weaponry
     ("restore_ik_time")
     {place "gun"
-      {weapon "75mm_pak40" filling "bulletger_75_l43 apcbche" 1}
       {RestoreIKAfterAim}
+      {Weapon "weapon ger-75mm-pak40-l46" filling "ammo ger-75l43 apcbche" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
       ("abm_dymamic_gun"
         zeroing(2.0)
         dispersion(0.35)
       )
     }
-    {##place "mgun2"
+    {place "mgun2"
       {type "rear"}
-      {gunner "gunner4"}
-      {charger "gunner4"}
+      {gunner "commander"}
+      {charger "commander"}
       {LinkBone "mgun2"}
       {LinkAnimation "off"}
       ("abm_mgun")
@@ -106,12 +108,7 @@
       range(150) ;---------------------------------Range in Kilometers.
     )
   }
-  {bone "mgun_a2_rot1"
-    {speed2 60}
-  }
-  {bone "mgun_a2_rot2"
-    {speed2 60}
-  }
+
   {bone "gun_rot"
     {limits -3 22}
     {speed2 8}
@@ -120,4 +117,14 @@
     {limits -20 20}
     {speed2 6}
   }
+
+  {Bone "mgun_a2_rot1" ; 机枪射界
+    {speed2 60}
+    {limits -20 45} ; 右左
+  }
+  {Bone "mgun_a2_rot2" ; 机枪俯仰角
+    {speed2 60}
+    {limits -90 0} ; 俯仰角不是从 0 开始的，需要 + 75 度
+  }
+
 }
