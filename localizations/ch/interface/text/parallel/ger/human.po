@@ -34,4 +34,4 @@ msgstr  "野战工程兵 [德国]"
 
 msgctxt "desc/human/mp/ger/late/engineer_2"
 msgid   "Field Engineer [Heer]"
-msgstr  "野战工程兵 [德国]"
+msgstr  "野战工程兵副手 [德国]"

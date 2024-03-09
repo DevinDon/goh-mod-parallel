@@ -4,7 +4,7 @@
   {tags "soldier"} ; 标签
 
   {behaviour soldier} ; 行为类别
-  {skin "ger_wh_43_pio_smg"} ; 外观
+  {skin "ger_wh_43_pio_rfl"} ; 外观
   {portrait "ger_engineer"} ; 肖像
   {icon "tech"} ; 图标
   {icon_priority 0} ; 图标优先级
