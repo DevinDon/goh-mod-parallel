@@ -28,7 +28,7 @@ const options: HumanOptions = {
   inventory: [
     '{Item "weapon ger-karabiner-98k" filled} ; Karabiner 98k',
     '{Item "ammo ger-rifle clip" 55} ; Karabiner 98k 弹夹',
-    '{Item "ammo ger-mgun" 500} ; MG42 弹链',
+    '{Item "ammo ger-mgun api" 500} ; MG42 弹链',
     '{Item "m24 grenade" 1} ; 手榴弹',
     '{Item "m24_smoke grenade" 3} ; 烟雾弹',
     '{Item "bandage_ger" 7} ; 绷带',
