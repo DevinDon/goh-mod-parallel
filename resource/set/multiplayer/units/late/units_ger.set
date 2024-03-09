@@ -420,7 +420,7 @@
 
 ; // Sdkfz251/22 pak40
 {"doctrine_sdkfz251d_22"
-  ("squad_vehicle_doctrine" side(ger) period(late) vehicle(sdkfz251d_22) crew(artilleryman:4))
+  ("squad_vehicle_doctrine" side(ger) period(late) vehicle(sdkfz251d_22) crew(artilleryman:5))
   ("doctrine_t2" cool(300) d(late_ger_allround2) cost(30))
 }
 
