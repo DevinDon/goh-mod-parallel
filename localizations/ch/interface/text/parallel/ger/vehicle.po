@@ -118,6 +118,22 @@ msgctxt "info/special/sdkfz234_4"
 msgid   "<c(c3baae)>Armored Vehicle</c>"
 msgstr  "<c(c3baae)>装甲车</c>"
 
+msgctxt "desc/entity/sdkfz251d_1"
+msgid   "Sd.Kfz 251/1 Ausf. D"
+msgstr  "Sd.Kfz 251/1 D 型"
+
+msgctxt "info/special/sdkfz251d_1"
+msgid   "<c(c3baae)>Medium Halftrack</c>"
+msgstr  "<c(c3baae)>半履带装甲车</c>"
+
+msgctxt "desc/entity/sdkfz251d_1_stuka"
+msgid   "Sd.Kfz 251/1 Ausf. D mit Wurfrahmen 40"
+msgstr  "Sd.Kfz 251/1 D 型 加装 40 式火箭发射架"
+
+msgctxt "info/special/sdkfz251d_1_stuka"
+msgid   "<c(c3baae)>Rocket Halftrack</c>"
+msgstr  "<c(c3baae)>半履带装甲车</c>"
+
 msgctxt "desc/entity/sdkfz251d_16"
 msgid   "Sd.Kfz 251/16 Ausf. D mit 14mm Flamm"
 msgstr  "Sd.Kfz 251/16 D 型 加装 14mm 喷火器"
