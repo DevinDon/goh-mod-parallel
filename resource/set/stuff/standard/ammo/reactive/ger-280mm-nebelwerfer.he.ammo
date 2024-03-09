@@ -1,0 +1,43 @@
+{from "pattern standard-reactive-ammo"
+
+  {tag "big bomb size2 fg itemin2hands"}
+
+  {detonationThickness 0.5}
+
+  {entity "280mm_nebelwerfer"}
+  {mass 82}
+
+  {inventory
+    {size 6 2}
+    {weight 100}
+  }
+
+  {view "280mm_nebelwerfer"
+    {tail "rocket_smoke_nebel" "tail"}
+  }
+
+  {possibleDamageRadius 30}
+
+  ; define rocket_level_6
+  ; Rocket mass 25 - 100kg
+  (define "set-rocket-level-6"
+    {damage blastwave
+      {energy (* %filler 0.75)}
+      {area 1 2.00}
+      {ground_interaction_radius 0.8}
+    }
+    {damage add blastwave
+      {energy (+ (* %weight 0.005) (+ 7 (* 0.07 %filler)))}
+      {area 2  (+ (* %weight 0.005) (+ 14 (* 0.05 %filler)))}
+      {ground_interaction_radius 0}    ;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+    }
+    {damage add blastwave
+      {energy (+ 0.7 (- 1 (/ %filler %weight)))}
+      {area (+ (* %weight 0.004) (+ 13 (* 0.104 %filler)))    (+ (* %weight 0.004) (+ 22 (* 0.11 %filler)))}
+      {ground_interaction_radius 0}    ;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+    }
+  )
+
+  ("set-rocket-level-6" weight(82) filler(50))
+
+}

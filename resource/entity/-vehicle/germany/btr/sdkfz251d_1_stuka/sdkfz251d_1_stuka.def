@@ -92,6 +92,7 @@
     {weapon "mgun" {mask "mountable"}}
     {weapon "mgun2" {mask "mountable"}}
     {Box
+      {Item "ammo ger-280mm-nebelwerfer he" 12}
       {item "mg42_belt_long" filling "ammo mgun_ger belt ap" 300 {user "mgun"}}
       {item "mg42_drum" filling "ammo mgun_ger belt ap" 50 {user "mgun2"}} ;// doesn't work if same mg34_belt weapon is in both MG places
       {item "ammo 280mm_nebelwerfer" 12}
@@ -103,7 +104,7 @@
     ("restore_ik_time")
     {place "gun"
       {RestoreIKAfterAim}
-      {weapon "280mm_w40_x6" filled}
+      {weapon "weapon ger-280mm-w40-x6" filled}
       {barrels 6}
       {foresight "foresight"}
       {shooter "shooter"}

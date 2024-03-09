@@ -1,0 +1,17 @@
+{weapon_bullet
+
+  {tag "mrl"}
+
+  {foresight "foresight"}
+  {AimingTolerance 0.5}
+  {curve "gun_std"}
+
+  {overmatchSlope
+    {0 1}
+    {90 1}
+  }
+
+  {fillingVisible "rocket"}
+  {inventory {noView}}
+
+}

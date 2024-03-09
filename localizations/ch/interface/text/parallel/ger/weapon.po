@@ -178,6 +178,13 @@ msgid   "60 cm Mörser L/8.4"
 msgstr  "60 cm 卡尔臼炮 L/8.4"
 
 # 火箭炮
+msgctxt "desc/weapon/ger-280mm-w40"
+msgid   "28 cm Wurfrahmen 40"
+msgstr  "28 cm 40 型火箭发射器"
+
+msgctxt "desc/weapon/ger-280mm-w40-x6"
+msgid   "28 cm Wurfrahmen 40 x 6"
+msgstr  "28 cm 40 型六联装火箭发射器"
 
 # 喷火器
 

@@ -325,6 +325,7 @@
   {Item "ger-150l12" "he"          "ammo"   1 {Value 15}}
   {Item "ger-150l30" "heat"        "ammo"   1 {Value 15}}
   {Item "ger-150l30" "he"          "ammo"   1 {Value 15}}
+  {Item "ger-280mm-nebelwerfer" "he" "ammo" 1 {Value 38}}
   {Item "ger-380mm-rw61-l5"        "ammo"   1 {Value 38}}
   {Item "ger-600l8"  "he"          "ammo"   1 {Value 60}}
 )
