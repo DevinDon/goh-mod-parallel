@@ -28,8 +28,8 @@
   }
 
   {inventory ; 背包
-    {Item "weapon ger-stg44" filled} ; StG 44 突击步枪
-    {Item "ammo ger-stg44 magazine" 180} ; StG 44 突击步枪弹
+    {Item "weapon ger-karabiner-98k" filled} ; Karabiner 98k
+    {Item "ammo ger-rifle clip" 95} ; Karabiner 98k 弹夹
     {Item "m24 grenade" 2} ; 手榴弹
     {Item "nbk39 grenade" 2} ; 烟雾弹
     {Item "geballteladung_3kg" 1} ; 炸药
