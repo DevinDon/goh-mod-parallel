@@ -1,112 +1,140 @@
-; TODO
 {game_entity
-  (include "/properties/armoredcar.ext")
-  (include "/properties/selection/vehicle.inc" scale(1.0))
-  {props "tank" "halftrack" "rocket" "wheeled" "multi_board" "explosion_throw_crew" "vision_lev02" "tractor" "tractor_heavy" "detect_tank_mg" "open_death_fx_low" "artillery_minimap_medium"}
-  {able "emit_passengers_on_enemy"}
-  {extension "sdkfz251d_1_stuka.mdl"}
-  (include "sdkfz251d_1_stuka.ext")
-  {patherId "sdkfz251"}
-  {targetclass "armoredcar"}
-  {targetSelector "tank_bullet"}
 
-  {extender "enumerator"
+  (include "/properties/standard/vehicle/armored-car-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(1.0))
+
+  {Extension "sdkfz251d_1_stuka.mdl"}
+  (include   "sdkfz251d_1_stuka.ext")
+  (include   "crew-and-passenger.ext")
+
+  {Props "tank" "halftrack" "rocket" "wheeled" "multi_board" "explosion_throw_crew" "vision_lev02" "tractor" "tractor_heavy" "detect_tank_mg" "open_death_fx_low" "artillery_minimap_medium"}
+
+  {PatherId "sdkfz251"}
+  {Targetclass "armoredcar"}
+  {TargetSelector "tank_bullet"}
+
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail6}
+    {detail7}
+    {detail8}
+    {detail10}
+    {detail11}
+  }
+
+  {Able "emit_passengers_on_enemy"}
+
+  {Extender "enumerator"
     {digit_folder "np"}
   }
 
-  {extender "inventory"
+  {Extender "inventory"
     {weapon "mgun" {mask "mountable"}}
-    {weapon "mgun2" {mask "mountable"}}
     {Box
-      {Item "ammo ger-280mm-nebelwerfer he" 12}
-      {item "mg42_belt_long" filling "ammo mgun_ger belt ap" 300 {user "mgun"}}
-      {item "mg42_drum" filling "ammo mgun_ger belt ap" 50 {user "mgun2"}} ;// doesn't work if same mg34_belt weapon is in both MG places
-      {item "ammo 280mm_nebelwerfer" 12}
-      {item "ammo mgun_ger belt ap" 2010}
+      {Size 15 8}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun api" 1750}
+      {Item "weapon ger-mg42" filled {user "mgun"}}
+
+      {Item "ammo ger-280mm-nebelwerfer he" 6}
     }
   }
 
   {Weaponry
-    ("restore_ik_time")
-    {place "gun"
+    {Place "gun"
       {RestoreIKAfterAim}
-      {weapon "weapon ger-280mm-w40-x6" filled}
-      {barrels 6}
-      {foresight "foresight"}
-      {shooter "shooter"}
-      {gunner "driver"}
-      {charger "driver"}
-      ("abm_dymamic_rocket"
-        zeroing(10.0)  ; // time it takes to aim until the reticle shrinks. Bigger values, more control.
-        dispersion(1)   ; // time it takes to distort the reticle when you move the gun (how abrupt it loses zeroing). Bigger values, more control.
-      )
+      {Weapon "weapon ger-280mm-w40-x6" filled}
+      {Barrels 6}
+      {Foresight "foresight"}
+      {Shooter "shooter"}
+      {Gunner "driver"}
+      {Charger "driver"}
       {StationaryFiring}
-      {rotate}
-      {basic}
+      {Rotate}
+      {Basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed  10.00} ; km/h
+        {ByLinearSpeed    0.25} ; km/h
+        {MaxAngularSpeed  5.00} ; deg/s
+        {ByAngularSpeed   0.35} ; deg/s
+        {DisorderTime     0.35} ; s
+        {OrderTime        2.25} ; s
+      }
     }
-    {place "mgun"
-      {type "main"}
-      {gunner "gunner2"}
-      {charger "gunner2"}
+    {Place "mgun"
+      {Type "main"}
+      {Gunner "gunner2"}
+      {Charger "gunner2"}
       {LinkBone "mgun"}
       {LinkAnimation "off"}
-      ("abm_mgun")
+      {Basic}
       {ai_in_manual}
-      {basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
     }
-    {place "mgun2"
-      {type "rear"}
-      {gunner "gunner4"}
-      {charger "gunner4"}
+    {Place "mgun2"
+      {Type "rear"}
+      {Weapon "weapon ger-mg42" filled}
+      {Gunner "gunner4"}
+      {Charger "gunner4"}
       {LinkBone "mgun2"}
       {LinkAnimation "off"}
-      ("abm_mgun")
+      {Basic}
       {ai_in_manual}
-      {basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
     }
   }
 
-  {mass 8770}  ;7810+966 rockets
+  {Mass 8770}  ; 7810 + 966 rockets
   {Chassis "wheel"
-    ("tank_trace_ex" fx("tracks_sm2") step(0.2) len(0.49) boneleft("FXtraceL3") boneright("FXtraceR3"))
-    ("car_trace" fx("tracewheel03a") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
-    ("mobility_car"
-      speed(53) ;----------------------------------Max speed.
-      speedatmaxturn(14) ;-------------------------Max speed at max turn.
-      reverse(9) ;---------------------------------Max speed in Reverse.
-      weight(8.77) ;-------------------------------Weight in Tonnes.
-      power(100) ;---------------------------------Horse Power.
-      fuel(160) ;----------------------------------Fuel capacity in Litres.
-      type(fuel) ;---------------------------------Fuel type.
-      range(150) ;---------------------------------Range in Kilometers.
-    )
+    ("set-tank-trace" fx("tracks_sm2") step(0.2) length(0.49) boneleft("FXtraceL3") boneright("FXtraceR3"))
+    ("set-car-trace" fx("tracewheel03a") step(0.09) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-armored-car" speed(53) power(100) mass(8770) performance(1.43))
+    ("set-fuel-bag" volume(160) power(100) mass(8770))
     {DisableMoveWhileFiring}
   }
-  {bone "mgun_a_rot1"
+
+  {Bone "mgun_a_rot1"
     {speed2 60}
   }
-  {bone "mgun_a_rot2"
+  {Bone "mgun_a_rot2"
     {speed2 60}
   }
-  {bone "mgun_a2_rot1"
+
+  {Bone "mgun_a2_rot1"
     {speed2 60}
   }
-  {bone "mgun_a2_rot2"
+  {Bone "mgun_a2_rot2"
     {speed2 60}
   }
-  {bone "rocket_rot1"
+
+  {Bone "rocket_rot1"
     {limits -5 5}
     {speed2 10}
   }
-  {bone "rocket_rot2"
+  {Bone "rocket_rot2"
     {limits -0 52}
     {speed2 10}
   }
-  (mod "mp"
-    {brain
-      {properties
-        {fire_mode hold}
-      }
-    }
-  )
+
 }

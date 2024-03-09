@@ -8,8 +8,8 @@
   {mass 82}
 
   {inventory
-    {size 6 2}
-    {weight 100}
+    {size 15 3}
+    {weight 200}
   }
 
   {view "280mm_nebelwerfer"

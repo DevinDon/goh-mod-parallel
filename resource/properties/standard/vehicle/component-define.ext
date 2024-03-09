@@ -988,3 +988,19 @@
     {able {Visible 0} {nolook 1}}
   }
 )
+
+; define rocket
+; args = name
+(define "set-rocket"
+  {volume %name
+    {thickness 2}
+    {tags "rocket"}
+    {able {visible 0}{obstacle 0}}
+    {component %name}
+  }
+  {component %name
+    {RepairTime 1}
+    {tags "rocket"}
+    {RepairOrder 11}
+  }
+)
