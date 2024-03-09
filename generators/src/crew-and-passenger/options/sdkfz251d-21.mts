@@ -32,9 +32,31 @@ const options: CrewAndPassengerOptions = {
       bone: 'foresight1',
       preset: 'standard-vehicle-vision-narrow',
     },
+    {
+      name: 'standard-visor-rear-gunner',
+      bone: 'mgun2',
+      preset: 'standard-vehicle-vision-narrow',
+    },
+    {
+      name: 'standard-visor-commander',
+      bone: 'seat1',
+      preset: 'standard-vehicle-vision-around',
+    },
   ],
 
   animations: [
+    {
+      name: 'commander',
+      forward: {
+        base: [ 'board', 1 ],
+        begin: [ 'halftrack_commander_board', 1 ],
+        end: [ 'halftrack_commander_board_seat', 1 ],
+      },
+      reverse: {
+        base: [ 'board', 1 ],
+        end: [ 'emit_sd222_driver', 1 ],
+      },
+    },
     {
       name: 'driver',
       forward: {
@@ -71,21 +93,18 @@ const options: CrewAndPassengerOptions = {
         end: [ 'emit_sd222_driver', 1 ],
       },
     },
-    {
-      name: 'passenger',
-      forward: {
-        base: [ 'board', 1 ],
-        begin: [ 'halftrack_commander_board', 1 ],
-        end: [ 'halftrack_commander_board_seat', 1 ],
-      },
-      reverse: {
-        base: [ 'board', 1 ],
-        end: [ 'emit_sd222_driver', 1 ],
-      },
-    },
   ],
 
   crews: [
+    {
+      name: 'commander',
+      animations: [
+        { door: 'emit1', animation: 'commander' },
+      ],
+      bone: 'seat1',
+      visor: 'standard-visor-commander',
+      turnoff: [ 'shadow', 'sensor' ],
+    },
     {
       name: 'driver',
       animations: [
@@ -110,21 +129,12 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'charger' },
       ],
       bone: 'charger',
-      visor: 'standard-visor-none',
+      visor: 'standard-visor-rear-gunner',
       turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 
-  passengers: [
-    {
-      name: 'passenger',
-      animations: [
-        { door: 'emit1', animation: 'passenger' },
-      ],
-      bone: 'seat1',
-      turnoff: [ 'shadow', 'sensor' ],
-    },
-  ],
+  passengers: [],
 
 };
 
