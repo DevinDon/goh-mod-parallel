@@ -278,7 +278,8 @@
   ; ger
   {Item "ger-fuel"   "ic"          "ammo" 100 {Value 50}}
   {Item "ger-mgun"   "api"         "ammo" 100 {Value 15}}
-  {Item "ger-sniper" "clip"        "ammo"   5 {Value  1}}
+  {Item "ger-rifle"  "clip"        "ammo"   5 {Value  1}}
+  {Item "ger-sniper" "clip"        "ammo"   5 {Value  2}}
   {Item "ger-stg44"  "magazine"    "ammo"  30 {Value  7}}
   {Item "ger-panzershreck" "heat"  "ammo"   1 {Value  8}}
   {Item "ger-20l55"  "ap"          "ammo"  10 {Value 20}}

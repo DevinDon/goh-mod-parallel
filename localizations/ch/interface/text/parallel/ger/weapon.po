@@ -11,6 +11,11 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 
+# 步枪
+msgctxt "desc/weapon/ger-karabiner-98k"
+msgid   "Karabiner 98k"
+msgstr  "Karabiner 98k 栓动步枪"
+
 # 突击步枪
 msgctxt "desc/weapon/ger-stg44"
 msgid   "StG 44"
