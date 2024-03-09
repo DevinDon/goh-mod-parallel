@@ -48,7 +48,6 @@
   }
 
   {Weaponry
-    {RestoreIKTime 2}
     {Place "gun"
       {RestoreIKAfterAim}
       {Weapon "weapon ger-75mm-pak40-l46" filling "ammo ger-75l43 apcbche" 1}
