@@ -25,7 +25,7 @@ const options: WeaponOptions = {
   syncedProjectiles: true,
 
   aimingTolerance: 0.2,
-  spreadTolerance: 0.5,
+  spreadTolerance: 0.1,
 
   rechargeTime: 4,
   recoveryTime: 60 / 500,
@@ -48,8 +48,8 @@ const options: WeaponOptions = {
     {
       name: 'magazine',
       minRange: 0,
-      aimRange: 200,
-      maxRange: 200,
+      aimRange: 175,
+      maxRange: 175,
       speed: 685,
       gravity: 5,
       projectile: {
