@@ -133,12 +133,12 @@
     {"sdkfz251c" inherit "vehicle vehicle.hanomag"}
     {"sdkfz251c_2" inherit "vehicle mortar.common"}
 
-    {"sdkfz251d_1" inherit "vehicle vehicle.hanomag"}
-    {"sdkfz251d_1_stuka" inherit "vehicle vehicle.hanomag"}
-    {"sdkfz251d_16" inherit "vehicle vehicle.hanomag"}
-    {"sdkfz251d_17" inherit "vehicle vehicle.sdkfz251.17"}
-    {"sdkfz251d_21" inherit "vehicle vehicle.sdkfz251.21"}
-    {"sdkfz251d_22" inherit "vehicle vehicle.sdkfz251.22"}
+    {"sdkfz251d_1"       inherit "vehicle custom.armored-car.sdkfz251"} ; custom
+    {"sdkfz251d_1_stuka" inherit "vehicle custom.armored-car.sdkfz251"} ; custom
+    {"sdkfz251d_16"      inherit "vehicle custom.armored-car.sdkfz251"} ; custom
+    {"sdkfz251d_17"      inherit "vehicle custom.armored-car.sdkfz251.17"} ; custom
+    {"sdkfz251d_21"      inherit "vehicle custom.armored-car.sdkfz251.21"} ; custom
+    {"sdkfz251d_22"      inherit "vehicle custom.armored-car.sdkfz251.22"} ; custom
 
     {"sdkfz221" inherit "vehicle vehicle.221"}
     {"sdkfz222a" inherit "vehicle vehicle.222"}
