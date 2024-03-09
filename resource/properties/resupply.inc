@@ -282,11 +282,11 @@
   {Item "ger-sniper" "clip"        "ammo"   5 {Value  2}}
   {Item "ger-stg44"  "magazine"    "ammo"  30 {Value  7}}
   {Item "ger-panzershreck" "heat"  "ammo"   1 {Value  8}}
-  {Item "ger-20l55"  "ap"          "ammo"  10 {Value 20}}
-  {Item "ger-20l55"  "apcr"        "ammo"  10 {Value 20}}
-  {Item "ger-20l55"  "he"          "ammo"  10 {Value 20}}
-  {Item "ger-30l38"  "apcr"        "ammo"  10 {Value 30}}
-  {Item "ger-30l38"  "he"          "ammo"  10 {Value 30}}
+  {Item "ger-20l55"  "ap"          "ammo"  40 {Value 80}}
+  {Item "ger-20l55"  "apcr"        "ammo"  40 {Value 80}}
+  {Item "ger-20l55"  "he"          "ammo"  40 {Value 80}}
+  {Item "ger-30l38"  "apcr"        "ammo"  20 {Value 60}}
+  {Item "ger-30l38"  "he"          "ammo"  20 {Value 60}}
   {Item "ger-37l45"  "aphe"        "ammo"   2 {Value  8}}
   {Item "ger-37l45"  "apcr"        "ammo"   2 {Value  8}}
   {Item "ger-37l45"  "he"          "ammo"   2 {Value  8}}
