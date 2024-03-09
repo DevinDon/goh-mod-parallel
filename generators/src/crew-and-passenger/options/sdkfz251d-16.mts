@@ -32,9 +32,36 @@ const options: CrewAndPassengerOptions = {
       bone: 'foresight1',
       preset: 'standard-vehicle-vision-narrow',
     },
+    {
+      name: 'standard-visor-gunner1',
+      bone: 'foresight2',
+      preset: 'standard-vehicle-vision-narrow',
+    },
+    {
+      name: 'standard-visor-gunner2',
+      bone: 'mgun',
+      preset: 'standard-vehicle-vision-narrow',
+    },
+    {
+      name: 'standard-visor-commander',
+      bone: 'visor1',
+      preset: 'standard-vehicle-vision-around',
+    },
   ],
 
   animations: [
+    {
+      name: 'commander',
+      forward: {
+        base: [ 'board', 1 ],
+        begin: [ 'halftrack_commander_board', 1 ],
+        end: [ 'halftrack_commander_board_seat', 1 ],
+      },
+      reverse: {
+        base: [ 'board', 1 ],
+        end: [ 'emit_sd222_driver', 1 ],
+      },
+    },
     {
       name: 'driver',
       forward: {
@@ -83,21 +110,18 @@ const options: CrewAndPassengerOptions = {
         end: [ 'emit_sd222_driver', 1 ],
       },
     },
-    {
-      name: 'passenger',
-      forward: {
-        base: [ 'board', 1 ],
-        begin: [ 'halftrack_commander_board', 1 ],
-        end: [ 'halftrack_commander_board_seat', 1 ],
-      },
-      reverse: {
-        base: [ 'board', 1 ],
-        end: [ 'emit_sd222_driver', 1 ],
-      },
-    },
   ],
 
   crews: [
+    {
+      name: 'commander',
+      animations: [
+        { door: 'emit1', animation: 'commander' },
+      ],
+      bone: 'seat9',
+      visor: 'standard-visor-commander',
+      turnoff: [ 'shadow', 'sensor' ],
+    },
     {
       name: 'driver',
       animations: [
@@ -122,7 +146,7 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'gunner1' },
       ],
       bone: 'gunner1',
-      visor: 'standard-visor-gunner',
+      visor: 'standard-visor-gunner1',
       turnoff: [ 'shadow', 'sensor' ],
     },
     {
@@ -131,21 +155,12 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit2', animation: 'gunner2' },
       ],
       bone: 'gunner2',
-      visor: 'standard-visor-gunner',
+      visor: 'standard-visor-gunner2',
       turnoff: [ 'shadow', 'sensor' ],
     },
   ],
 
-  passengers: [
-    {
-      name: 'passenger',
-      animations: [
-        { door: 'emit1', animation: 'passenger' },
-      ],
-      bone: 'seat9',
-      turnoff: [ 'shadow', 'sensor' ],
-    },
-  ],
+  passengers: [],
 
 };
 
