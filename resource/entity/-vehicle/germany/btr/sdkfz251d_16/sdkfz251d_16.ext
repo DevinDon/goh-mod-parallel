@@ -12,7 +12,7 @@
 
 ("set-turret"                repair(10))
 ("set-mantlet"               repair(5))
-("set-gun"     thickness(20) repair(10))
+("set-gun"     thickness(15) repair(10))
 
 ("set-body"                  repair(15))
 ("set-engine"                repair(10))

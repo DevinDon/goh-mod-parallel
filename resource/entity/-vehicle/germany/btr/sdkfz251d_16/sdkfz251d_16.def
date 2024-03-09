@@ -64,7 +64,7 @@
     }
     {Place "gun"
       {Type "left_flamer"}
-      {weapon "weapon ger-14mm-flammenwerfer-left" filled}
+      {Weapon "weapon ger-14mm-flammenwerfer-left" filled}
       {Foresight "foresight1"}
       {Gunner "gunner"}
       {Charger "gunner"}
@@ -73,7 +73,7 @@
     }
     {Place "gun1"
       {Type "right_flamer"}
-      {weapon "weapon ger-14mm-flammenwerfer-right" filled}
+      {Weapon "weapon ger-14mm-flammenwerfer-right" filled}
       {Foresight "foresight2"}
       {Gunner "gunner1"}
       {Charger "gunner1"}
