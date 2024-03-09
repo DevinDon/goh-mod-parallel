@@ -397,16 +397,16 @@
 
 ; ======Tier1======
 
+; // Sdkfz251/16 Flamer + lehr pz pioniers
+{"doctrine_sdkfz251d_16"
+  ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sdkfz251d_16) crew1(lehr_pzgren_rifle:4) crew2(lehr_pzgren_sl:1))
+  ("doctrine_t1" cool(180) d(late_ger_allround2) cost(10))
+}
+
 ; // Sdkfz251/17 + lehr pz recon
 {"doctrine_sdkfz251d_17"
   ("squad_vehicle6_doctrine" side(ger) period(late) vehicle(sdkfz251d_17) crew1(artilleryman:3) crew2(lehr_pz_recon_sl:1) crew3(lehr_pz_recon_sl_asst_Sa:1) crew4(lehr_pz_recon_rifle_pzf:1) crew5(lehr_pz_recon_mg:1) crew6(lehr_pz_recon_mg_asst:1))
   ("doctrine_t1" cool(180) d(late_ger_allround2) cost(10))
-}
-
-; // Sdkfz251/16 Flamer + lehr pz pioniers
-{"doctrine_sdkfz251d_16"
-  ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sdkfz251d_16) crew1(lehr_pzgren_rifle:4) crew2(lehr_pzgren_sl:1))
-  ("doctrine_t1" cool(180) d(late_ger_allround2) cost(20))
 }
 
 ; // Sdkfz251/21 drilling

@@ -272,9 +272,9 @@ Purchases["late.ger"] = {
 
         --  All-Round 2 (WEST) Doctrine
           ---[[
+          {priority = 1.0, type = {"Class3", "Doctrine", "Tier1", "Armored", "MG",}, unit = "doctrine_sdkfz251d_16"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Armored", "AA",}, unit = "doctrine_sdkfz251d_17"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Armored", "AA",}, unit = "doctrine_sdkfz251d_21"},
-          {priority = 1.0, type = {"Class3", "Doctrine", "Tier1", "Armored", "MG",}, unit = "doctrine_sdkfz251d_16"},
 
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Armored", "AT",}, unit = "doctrine_sdkfz251d_22"},
           --{priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Infantry",}, unit = "doctrine_squad_ger_signaller_2_late(ger)"},
