@@ -64,8 +64,8 @@
     }
     {Place "mgun2"
       {type "rear"}
-      {Gunner "charger"}
-      {Charger "charger"}
+      {Gunner "gunner4"}
+      {Charger "gunner4"}
       {LinkBone "mgun2"}
       {LinkAnimation "off"}
       {Basic}

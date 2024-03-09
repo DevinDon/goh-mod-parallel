@@ -27,9 +27,14 @@
     {Bone "foresight1"}
     {Vision "standard-vehicle-vision-narrow"}
   }
+  ; visor standard-visor-rear-gunner
+  {Visor "standard-visor-rear-gunner"
+    {Bone "mgun2"}
+    {Vision "standard-vehicle-vision-narrow"}
+  }
   ; visor standard-visor-commander
   {Visor "standard-visor-commander"
-    {Bone "visor1"}
+    {Bone "commander"}
     {Vision "standard-vehicle-vision-around"}
   }
 }
@@ -40,8 +45,8 @@
   {Anm "commander"
     {forward
       {base "board" 1}
-      {begin "board_sd232_driver" 1}
-      {end "seat_m7_com" 1}
+      {begin "halftrack_commander_board" 1}
+      {end "halftrack_commander_board_seat" 1}
     }
     {reverse
       {base "board" 1}
@@ -75,12 +80,12 @@
       {end "emit_sd222_driver" 1}
     }
   }
-  ; animation charger
-  {Anm "charger"
+  ; animation gunner4
+  {Anm "gunner4"
     {forward
       {base "board" 1}
       {begin "board_sd232_driver" 1}
-      {end "pose_pdr25_charger" 1}
+      {end "seat_m7_com" 1}
     }
     {reverse
       {base "board" 1}
@@ -88,12 +93,12 @@
       {end "emit_sd222_driver" 1}
     }
   }
-  ; animation passenger
-  {Anm "passenger"
+  ; animation charger
+  {Anm "charger"
     {forward
       {base "board" 1}
-      {begin "halftrack_commander_board" 1}
-      {end "halftrack_commander_board_seat" 1}
+      {begin "board_sd232_driver" 1}
+      {end "pose_pdr25_charger" 1}
     }
     {reverse
       {base "board" 1}
@@ -108,15 +113,15 @@
 {Placer
   {Place "commander"
     {group "crew"}
-    {linkbone "commander"}
+    {linkbone "seat1"}
     {turnoff {shadow} {sensor}}
     {visor "standard-visor-commander"}
     ; no extra
   }
 }
 {Boarder
-  {door "emit2"}
-  {link "emit2" "commander" {anm "commander"} {forward putoff} {reverse puton}}
+  {door "emit1"}
+  {link "emit1" "commander" {anm "commander"} {forward putoff} {reverse puton}}
 }
 ; crew driver
 {Placer
@@ -146,6 +151,20 @@
   {door "emit2"}
   {link "emit2" "gunner" {anm "gunner"} {forward putoff} {reverse puton}}
 }
+; crew gunner4
+{Placer
+  {Place "gunner4"
+    {group "crew"}
+    {linkbone "commander"}
+    {turnoff {shadow} {sensor}}
+    {visor "standard-visor-rear-gunner"}
+    ; no extra
+  }
+}
+{Boarder
+  {door "emit2"}
+  {link "emit2" "gunner4" {anm "gunner4"} {forward putoff} {reverse puton}}
+}
 ; crew charger
 {Placer
   {Place "charger"
@@ -162,19 +181,7 @@
 }
 
 ; set passengers
-; passenger passenger
-{Placer
-  {Place "passenger"
-    {group "passenger"}
-    {linkbone "seat1"}
-    {turnoff {shadow} {sensor}}
-    ; no extra
-  }
-}
-{Boarder
-  {door "emit1"}
-  {link "emit1" "passenger" {anm "passenger"} {forward putoff} {reverse puton}}
-}
+; no passenger
 
 ; set extra
 ; no extra
