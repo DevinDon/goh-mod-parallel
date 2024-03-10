@@ -4,7 +4,7 @@
 (define "set-explosive"
   {Mass %weight}
   {damage blastwave
-    {energy (* 5 %filler)}
+    {energy (* 10 %filler)}
     {area 0.2 0.5}
     {ground_interaction_radius 0.25}
   }
