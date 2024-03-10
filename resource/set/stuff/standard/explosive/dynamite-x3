@@ -1,0 +1,20 @@
+{from "pattern standard-explosive"
+
+  {Entity "dynamite_ger_x3"}
+
+  {Inventory {size 3 1}}
+
+  {Special
+    {PrepareTime 10}
+    {PrepareCursor "grenade"}
+    {Mode detonate}
+  }
+
+  {Throw
+    {Range 12}
+    {StartAngle 60}
+  }
+
+  ("set-explosive" weight(3) filler(2.7))
+
+}

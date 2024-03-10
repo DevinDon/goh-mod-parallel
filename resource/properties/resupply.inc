@@ -250,6 +250,11 @@
   {Item "repair_kit" 1 {Value 10}}
 
   ; custom
+  ; all
+  {Item "dynamite-x3" 1 {value  9}}
+  {Item "dynamite-x7" 1 {value 21}}
+
+  ; custom
   ; usa
   {Item "usa-hmgun"   "api"     "ammo" 100 {Value 30}}
   {Item "usa-37"      "apcbc"   "ammo"   1 {Value  3}}
