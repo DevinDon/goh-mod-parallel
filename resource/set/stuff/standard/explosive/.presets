@@ -1,0 +1,22 @@
+; standard explosive presets
+; define he_level_1
+; args = weight filler
+(define "set-explosive"
+  {Mass %weight}
+  {damage blastwave
+    {energy (+ 10 %filler)}
+    {area 1 2}
+    {ground_interaction_radius 0.55}
+  }
+  {damage add blastwave
+    {energy (+ (/ %weight 2.5) (+ 1.5 %filler))}
+    {area (* 0.5 (+ (/ %weight 10) (* 5 (+ %filler 0.25)))) (+ (/ %weight 10) (* 5 (+ %filler 0.25)))}
+    {ground_interaction_radius 0.25}
+  }
+  {damage add blastwave
+    {energy (+ 2 (* 0.75 %filler))}
+    {area (+ (* %weight 0.25) (+ 1 (* 5 %filler))) (+ (* %weight 0.5) (+ 4.5 (* 5 %filler)))}
+    {ground_interaction_radius 0}
+  }
+  {PossibleDamageRadius (+ (* %weight 0.5) (+ 4.5 (* 5 %filler)))}
+)
