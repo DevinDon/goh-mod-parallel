@@ -36,7 +36,8 @@
       {Item "mine_detector" 10}
       {Item "shovel_ger" 10}
       {Item "pickaxe" 10}
-      {Item "geballteladung_3kg" 20}
+      {Item "dynamite-x3" 50}
+      {Item "dynamite-x7" 50}
       {Item "s" "mine" 300}
       {Item "wirecutters" 10}
     }

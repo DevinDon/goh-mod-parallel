@@ -33,6 +33,11 @@
       {Size 15 15}
       {Weight 2000}
       {Item "repair_kit" 20}
+
+      {Item "weapon ger-mg42" 2}
+      {Item "ammo ger-mgun api" 5000}
+      {Item "dynamite-x3" 50}
+      {Item "dynamite-x7" 50}
     }
   }
 
