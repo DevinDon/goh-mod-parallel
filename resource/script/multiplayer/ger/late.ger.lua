@@ -176,19 +176,18 @@ Purchases["late.ger"] = {
         {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer3n"}, -- short 75mm
         {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer4g"},
         {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer4h"},
-        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5a"},
-
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",}, unit = "tiger1e"},
+        -- {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5a"},
+        -- {priority = 1.0, type = {"Class2", "Tank", "Heavy",}, unit = "tiger1e"},
 
         -- custom additional tanks
-        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "standard-panzer5a"},
-        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "standard-panzer5d"},
-        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "standard-panzer5g"},
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "standard-tiger1e"},
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "standard-tiger1h"},
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "standard-tiger2p"},
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "standard-tiger2h"},
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "standard-e-100"},
+        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5a"},
+        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5d"},
+        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5g"},
+        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger1e"},
+        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger1h"},
+        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger2p"},
+        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger2h"},
+        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "e-100"},
         -- custom additional tanks
         --]]
 

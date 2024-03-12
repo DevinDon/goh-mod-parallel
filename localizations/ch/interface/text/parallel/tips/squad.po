@@ -12,37 +12,6 @@ msgstr ""
 "Language-Team: \n"
 
 # 允许增援的额外单位
-msgctxt "desc/squad/standard-panzer5a"
-msgid   "Pz.Kpfw Panther Ausf.A"
-msgstr  "五号 A 型 \"黑豹\""
-
-msgctxt "desc/squad/standard-panzer5d"
-msgid   "Pz.Kpfw Panther Ausf.D"
-msgstr  "五号 D 型 \"黑豹\""
-
-msgctxt "desc/squad/standard-panzer5g"
-msgid   "Pz.Kpfw Panther Ausf.G"
-msgstr  "五号 G 型 \"黑豹\""
-
-msgctxt "desc/squad/standard-tiger1e"
-msgid   "Pz.Kpfw VI 'Tiger' Ausf.E"
-msgstr  "六号 E 型 \"虎式\""
-
-msgctxt "desc/squad/standard-tiger1h"
-msgid   "Pz.Kpfw VI 'Tiger' Ausf.H"
-msgstr  "六号 H 型 \"虎式\""
-
-msgctxt "desc/squad/standard-tiger2p"
-msgid   "Pz.Kpfw VI/B 'Königstiger' Early Production"
-msgstr  "六号 II B 早期型 \"虎王\""
-
-msgctxt "desc/squad/standard-tiger2h"
-msgid   "Pz.Kpfw VI Ausf.B 'Königstiger'"
-msgstr  "六号 II H 型 \"虎王\""
-
-msgctxt "desc/squad/standard-e-100"
-msgid   "E-100 Heavy Tank"
-msgstr  "E-100 重型坦克"
 
 # 特殊单位
 msgctxt "desc/squad/doctrine_sdkfz251d_16"
