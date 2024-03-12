@@ -8,7 +8,7 @@
     {fogOfWar      fog_realistic}
     {floraRespawn    0}
     {friendlyfire    1}
-    {enableBots      1}
+    {enableBots      0}
     {enableManualControlMode dc_mode}
   }
   {teamSettings
