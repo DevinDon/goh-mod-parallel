@@ -123,12 +123,16 @@
   }
 
   {Bone "turret"
-    {limits}
     {speed2 8}
   }
   {Bone "gun_rot"
-    {limits 24 -5}
     {speed2 5}
+    {limits 24 -8}
+  }
+
+  {Bone "mgun_rot1"
+    {speed2 18}
+    {limits 8 -45} ; 俯角 仰角
   }
 
 }
