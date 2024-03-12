@@ -281,6 +281,14 @@ msgctxt "info/special/tiger2p"
 msgid   "<c(c3baae)>Heavy Tank</c>"
 msgstr  "<c(c3baae)>重型坦克</c>"
 
+msgctxt "desc/entity/e-100"
+msgid   "E-100 Heavy Tank"
+msgstr  "E-100 重型坦克"
+
+msgctxt "info/special/tiger2p"
+msgid   "<c(c3baae)>E-Series Heavy Tank</c>"
+msgstr  "<c(c3baae)>E 系列重型坦克</c>"
+
 # 坦克歼击车
 msgctxt "desc/entity/hetzer"
 msgid   "Jagdpanzer 38(t)"

@@ -1,0 +1,7 @@
+{material bump
+  {diffuse "e-100_guns_am_hd"}
+  {bump "e-100_guns_anm_hd"}
+  {specular "e-100_guns_cm_hd"}
+  {color "229 229 229 125"}
+  {blend test}
+}

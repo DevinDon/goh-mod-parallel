@@ -242,6 +242,8 @@
     {"tiger2p" inherit "vehicle custom.tank.tiger2-p"} ; custom
     {"tiger2h" inherit "vehicle custom.tank.tiger2-h"} ; custom
 
+		{"e-100" inherit "vehicle custom.tank.ferdinand"} ; custom
+
     {"jagdpanther" inherit "vehicle custom.tank.jagdpanther"} ; custom
 
     {"ferdinand" inherit "vehicle custom.tank.ferdinand"} ; custom
