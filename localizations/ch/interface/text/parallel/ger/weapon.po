@@ -169,6 +169,10 @@ msgctxt "desc/weapon/ger-150mm-stuh43-l12"
 msgid   "15 cm StuH 43 L/12"
 msgstr  "15 cm StuH 43 L/12 榴弹炮"
 
+msgctxt "desc/weapon/ger-150mm-kwk44-l38"
+msgid   "15 cm KwK 44 L/38"
+msgstr  "15 cm KwK 44 L/38 坦克炮"
+
 msgctxt "desc/weapon/ger-380mm-rw61-l5"
 msgid   "38 cm StuM Raketenwerfer 61 L/5.4"
 msgstr  "38 cm StuM Raketenwerfer 61 L/5.4 火箭炮"

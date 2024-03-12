@@ -222,6 +222,18 @@ msgctxt "desc/ammo/ger-150l30 he"
 msgid   "15 cm Gr.19 [<c(ff1200)>HE</c>]"
 msgstr  "15 cm Gr.19 [<c(ff1200)>高爆弹</c>]"
 
+msgctxt "desc/ammo/ger-150l38 apcbche"
+msgid   "15 cm PzGr.101 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/38</c>"
+msgstr  "15 cm PzGr.101 [<c(ff6a00)>被帽风帽穿甲榴弹</c>] <c(65696d)>L/38</c>"
+
+msgctxt "desc/ammo/ger-150l38 heat"
+msgid   "15 cm Gr.102 [<c(c9a6ff)>HEAT</c>]"
+msgstr  "15 cm Gr.102 [<c(c9a6ff)>破甲弹</c>]"
+
+msgctxt "desc/ammo/ger-150l38 he"
+msgid   "15 cm Gr.103 [<c(ff1200)>HE</c>]"
+msgstr  "15 cm Gr.103 [<c(ff1200)>高爆弹</c>]"
+
 # 280mm
 msgctxt "desc/ammo/ger-280mm-nebelwerfer he"
 msgid   "28 cm Wurfgranate [<c(ff1200)>HE</c>]"

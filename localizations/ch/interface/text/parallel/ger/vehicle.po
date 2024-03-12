@@ -13,8 +13,8 @@ msgstr ""
 
 # 牵引火炮
 msgctxt "desc/entity/105mm_lefh18"
-msgid   "10.5cm leFH 18 L/28"
-msgstr  "10.5cm leFH 18 L/28 牵引式榴弹炮"
+msgid   "10.5 cm leFH 18 L/28"
+msgstr  "10.5 cm leFH 18 L/28 牵引式榴弹炮"
 
 msgctxt "info/special/105mm_lefh18"
 msgid   "<c(c3baae)>Towed Howitzer</c>"
@@ -70,8 +70,8 @@ msgid   "<c(c3baae)>Supply Truck</c>"
 msgstr  "<c(c3baae)>补给卡车</c>"
 
 msgctxt "desc/entity/blitz3_6_flak30"
-msgid   "Opel Blitz mit 2cm FlaK 30"
-msgstr  "欧宝 闪电 加装 2cm FlaK 30"
+msgid   "Opel Blitz mit 2 cm FlaK 30"
+msgstr  "欧宝 闪电 加装 2 cm FlaK 30"
 
 msgctxt "info/special/blitz3_6_flak30"
 msgid   "<c(c3baae)>Anti-Air Truck</c>"
@@ -87,16 +87,16 @@ msgid   "<c(c3baae)>Armored Vehicle</c>"
 msgstr  "<c(c3baae)>装甲车</c>"
 
 msgctxt "desc/entity/sdkfz234_1"
-msgid   "Sd.Kfz 234/1 mit 2cm KwK 38"
-msgstr  "Sd.Kfz 234/1 加装 2cm KwK 38"
+msgid   "Sd.Kfz 234/1 mit 2 cm KwK 38"
+msgstr  "Sd.Kfz 234/1 加装 2 cm KwK 38"
 
 msgctxt "info/special/sdkfz234_1"
 msgid   "<c(c3baae)>Armored Vehicle</c>"
 msgstr  "<c(c3baae)>装甲车</c>"
 
 msgctxt "desc/entity/sdkfz234_2"
-msgid   "Sd.Kfz 234/2 mit 5cm KwK 39"
-msgstr  "Sd.Kfz 234/2 美洲豹 加装 5cm KwK 39"
+msgid   "Sd.Kfz 234/2 mit 5 cm KwK 39"
+msgstr  "Sd.Kfz 234/2 美洲豹 加装 5 cm KwK 39"
 
 msgctxt "info/special/sdkfz234_2"
 msgid   "<c(c3baae)>Armored Vehicle</c>"
@@ -104,15 +104,15 @@ msgstr  "<c(c3baae)>装甲车</c>"
 
 msgctxt "desc/entity/sdkfz234_3"
 msgid   "Sd.Kfz 234/3 mit K51"
-msgstr  "Sd.Kfz 234/3 加装 7.5cm K51"
+msgstr  "Sd.Kfz 234/3 加装 7.5 cm K51"
 
 msgctxt "info/special/sdkfz234_3"
 msgid   "<c(c3baae)>Armored Vehicle</c>"
 msgstr  "<c(c3baae)>装甲车</c>"
 
 msgctxt "desc/entity/sdkfz234_4"
-msgid   "Sd.Kfz 234/4 mit 7.5cm PaK 40"
-msgstr  "Sd.Kfz 234/4 加装 7.5cm PaK 40"
+msgid   "Sd.Kfz 234/4 mit 7.5 cm PaK 40"
+msgstr  "Sd.Kfz 234/4 加装 7.5 cm PaK 40"
 
 msgctxt "info/special/sdkfz234_4"
 msgid   "<c(c3baae)>Armored Vehicle</c>"
@@ -143,24 +143,24 @@ msgid   "<c(c3baae)>Halftrack Armored Vehicle</c>"
 msgstr  "<c(c3baae)>半履带装甲车</c>"
 
 msgctxt "desc/entity/sdkfz251d_17"
-msgid   "Sd.Kfz 251/17 Ausf. D mit 2cm KwK 38"
-msgstr  "Sd.Kfz 251/17 D 型 加装 2cm KwK 38"
+msgid   "Sd.Kfz 251/17 Ausf. D mit 2 cm KwK 38"
+msgstr  "Sd.Kfz 251/17 D 型 加装 2 cm KwK 38"
 
 msgctxt "info/special/sdkfz251d_17"
 msgid   "<c(c3baae)>Halftrack Armored Vehicle</c>"
 msgstr  "<c(c3baae)>半履带装甲车</c>"
 
 msgctxt "desc/entity/sdkfz251d_21"
-msgid   "Sd.Kfz 251/21 Ausf. D mit 3 x 2cm MG151"
-msgstr  "Sd.Kfz 251/21 D 型 加装三联装 2cm MG151"
+msgid   "Sd.Kfz 251/21 Ausf. D mit 3 x 2 cm MG151"
+msgstr  "Sd.Kfz 251/21 D 型 加装三联装 2 cm MG151"
 
 msgctxt "info/special/sdkfz251d_21"
 msgid   "<c(c3baae)>Halftrack Armored Vehicle</c>"
 msgstr  "<c(c3baae)>半履带装甲车</c>"
 
 msgctxt "desc/entity/sdkfz251d_22"
-msgid   "Sd.Kfz 251/22 Ausf. D mit 7.5cm Pak 40"
-msgstr  "Sd.Kfz 251/22 D 型 加装 7.5cm Pak 40"
+msgid   "Sd.Kfz 251/22 Ausf. D mit 7.5 cm Pak 40"
+msgstr  "Sd.Kfz 251/22 D 型 加装 7.5 cm Pak 40"
 
 msgctxt "info/special/sdkfz251d_22"
 msgid   "<c(c3baae)>Halftrack Armored Vehicle</c>"
@@ -332,24 +332,24 @@ msgid   "<c(c3baae)>Self-propelled Gun</c>"
 msgstr  "<c(c3baae)>自行火炮</c>"
 
 msgctxt "desc/entity/hummel"
-msgid   "Hummel mit 15cm sFH 18 L/30"
-msgstr  "\"野蜂\" 加装 15cm sFH 18 L/30"
+msgid   "Hummel mit 15 cm sFH 18 L/30"
+msgstr  "\"野蜂\" 加装 15 cm sFH 18 L/30"
 
 msgctxt "info/special/hummel"
 msgid   "<c(c3baae)>Self-propelled Gun</c>"
 msgstr  "<c(c3baae)>自行火炮</c>"
 
 msgctxt "desc/entity/grille_k"
-msgid "Grille Ausf.K mit 15cm sIG 33"
-msgstr "\"蟋蟀\" K 型 加装 15cm sIG 33"
+msgid "Grille Ausf.K mit 15 cm sIG 33"
+msgstr "\"蟋蟀\" K 型 加装 15 cm sIG 33"
 
 msgctxt "info/special/grille_k"
 msgid   "<c(c3baae)>Self-propelled Gun</c>"
 msgstr  "<c(c3baae)>自行火炮</c>"
 
 msgctxt "desc/entity/600mm_thor"
-msgid   "60cm Gerät Nr. III"
-msgstr  "60cm 卡尔臼炮 Nr. III"
+msgid   "60 cm Gerät Nr. III"
+msgstr  "60 cm 卡尔臼炮 Nr. III"
 
 msgctxt "info/special/600mm_thor"
 msgid   "<c(c3baae)>Self-propelled Gun</c>"
@@ -382,8 +382,8 @@ msgstr  "<c(c3baae)>自行突击炮</c>"
 
 # 自行防空炮
 msgctxt "desc/entity/grille_m"
-msgid   "Grille Ausf.M mit 3cm MK 103"
-msgstr  "\"蟋蟀\" M 型 加装 3cm MK 103"
+msgid   "Grille Ausf.M mit 3 cm MK 103"
+msgstr  "\"蟋蟀\" M 型 加装 3 cm MK 103"
 
 msgctxt "info/special/grille_m"
 msgid   "<c(c3baae)>Self-propelled Anti-Air Gun</c>"
