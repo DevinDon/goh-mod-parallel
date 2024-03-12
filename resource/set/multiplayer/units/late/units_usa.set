@@ -596,7 +596,7 @@
   cost(210))
 }
 {"m8_greyhound"
-  ("vehicle2" period(late) cd(90) ci(30) g(wheel9) side(usa) t(vehicle) crew1(vehicle_crew_m3:3) crew2(vehicle_com_m3:1) b(vehicles) cw(2) cp(0)
+  ("vehicle2" period(late) cd(90) ci(30) g(wheel9) side(usa) t(vehicle) crew1(vehicle_crew_m3:4) crew2(vehicle_com_m3:1) b(vehicles) cw(2) cp(0)
   cost(310))
 }
 {"cckw_art_ammo"

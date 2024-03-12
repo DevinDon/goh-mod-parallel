@@ -91,7 +91,7 @@
 
 ; // 251/1 wurfrahmen
 {"doctrine_sdkfz251d_1_stuka"
-  ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sdkfz251d_1_stuka) crew1(tankman:2) crew2(tank_commander:1))
+  ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sdkfz251d_1_stuka) crew1(tankman:3) crew2(tank_commander:1))
   ("doctrine_t3" cool(480) d(late_ger_allround) cost(100))
 }
 
