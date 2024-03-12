@@ -1024,7 +1024,7 @@
     {delay %cd}
     {interval %ci}
   }
-  {tags "all %tags"}
+  {tags "all %tags %side %period"}
   {group "%group"}
   {button "%button"}
   {cost %cost}
