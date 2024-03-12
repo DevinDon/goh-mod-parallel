@@ -1002,6 +1002,65 @@
   cost(1750)) ;// +35 for crew
 }
 
+; custom start
+; vehicle with 2 types of crew, crew adds to MP
+(define "set-standard-single-unit"
+  {charge
+    {delay %cd}
+    {interval %ci}
+  }
+  {tags "all %t"}
+  {group "%g"}
+  {button "%b"}
+  {cost %cost}
+  {score (* %cost 0.05)}
+  {cw %cw}
+  {cp %cp}
+)
+; define from vehicle2
+; args = vehicle cost cd ci cw cp tags period side crew1 crew2 group button
+(define "set-standard-vehicle"
+  {charge
+    {delay %cd}
+    {interval %ci}
+  }
+  {tags "all %tags"}
+  {group "%group"}
+  {button "%button"}
+  {cost %cost}
+  {score (* %cost 0.05)}
+  {cw %cw}
+  {cp %cp}
+  {content "%vehicle ( mp/%side/%period/%crew1 mp/%side/%period/%crew2 )"}
+  {squad_cost_factor 1}
+  {round_multiple 5.0}
+)
+
+{"standard-panzer5a"
+  ("set-standard-vehicle" vehicle(panzer5a) cost(900)  cd(600)  ci(60) cw(6) cp(0) tags(medium) period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy1) button(tanks))
+}
+{"standard-panzer5d"
+  ("set-standard-vehicle" vehicle(panzer5d) cost(950)  cd(600)  ci(60) cw(6) cp(0) tags(medium) period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy1) button(tanks))
+}
+{"standard-panzer5g"
+  ("set-standard-vehicle" vehicle(panzer5g) cost(1050) cd(600)  ci(60) cw(6) cp(0) tags(medium) period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy1) button(tanks))
+}
+{"standard-tiger1e"
+  ("set-standard-vehicle" vehicle(tiger1e)  cost(1250) cd(900)  ci(90) cw(7) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy2) button(tanks))
+}
+{"standard-tiger1h"
+  ("set-standard-vehicle" vehicle(tiger1h)  cost(1350) cd(900)  ci(90) cw(7) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy2) button(tanks))
+}
+{"standard-tiger2p"
+  ("set-standard-vehicle" vehicle(tiger2p)  cost(1650) cd(1200) ci(90) cw(8) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy3) button(tanks))
+}
+{"standard-tiger2h"
+  ("set-standard-vehicle" vehicle(tiger2h)  cost(1750) cd(1200) ci(90) cw(8) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy3) button(tanks))
+}
+{"standard-e-100"
+  ("set-standard-vehicle" vehicle(e-100)    cost(2000) cd(1500) ci(90) cw(9) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy3) button(tanks))
+}
+; custom end
 
 ;SPG
 {"marder3m"
