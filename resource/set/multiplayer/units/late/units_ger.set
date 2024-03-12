@@ -80,7 +80,7 @@
 ; // 10cm SK18
 {"doctrine_105mm_sk18_late"
   ("towed_gun_doctrine" side(ger) period(late) vehicle(sdkfz7) crew_v(rifleman_1:1) cannon(105mm_sk18) crew_c(artilleryman:5))
-  ("doctrine_t3" cool(480) d(late_ger_allround) cost(90))
+  ("doctrine_t3" cool(480) d(late_ger_allround) cost(60))
 }
 
 ; // Jagdpanther
@@ -92,7 +92,7 @@
 ; // 251/1 wurfrahmen
 {"doctrine_sdkfz251d_1_stuka"
   ("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sdkfz251d_1_stuka) crew1(tankman:2) crew2(tank_commander:1))
-  ("doctrine_t3" cool(480) d(late_ger_allround) cost(115))
+  ("doctrine_t3" cool(480) d(late_ger_allround) cost(100))
 }
 
 
