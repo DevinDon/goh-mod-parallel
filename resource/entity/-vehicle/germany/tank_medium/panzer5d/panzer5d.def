@@ -81,7 +81,6 @@
       {Gunner "gunner"}
       {Charger "charger"}
       {Basic}
-      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
         {ByLinearSpeed    0.40} ; km/h

@@ -4,7 +4,7 @@
     {resource
       {start    %s}
       {finish    %f}
-      {growTime  2400}    ; in seconds
+      {growTime  1200}    ; in seconds
       {growTable  "0.80 0.80 0.80 0.80 0.80 0.80 0.80 0.80 0.80 0.82 0.84 0.86 0.88 0.9 0.90 0.9 0.85 0.8 0.75 0.7"}
       {payback
         {cp      "0    80    95    110    125    200"} ; source code only supports 6 values
