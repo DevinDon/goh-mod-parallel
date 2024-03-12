@@ -10,6 +10,6 @@
     {tail "shell_tracer_75_heat" "tail"}
   }
 
-  ("he_level_2" weight(5) filler(0.536))
+  ("he_level_2" weight(7.96) filler(0.275))
 
 }

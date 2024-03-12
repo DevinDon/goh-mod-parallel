@@ -1,6 +1,6 @@
 {from "pattern heat"
 
-  {tag "shell size3 size3_heat_shell steilgr heat_high"}
+  {tag "shell size3 size3_heat_shell steilgr heat_low"}
 
   {inventory {size 4 1}}
   {entity "50mm_ger_l60_heat"}
@@ -8,6 +8,6 @@
 
   {view "50mm_ger_l60_heat"}
 
-  ("heat_blast" args 0.4)
+  ("he_level_2" weight(8.6) filler(0.177))
 
 }

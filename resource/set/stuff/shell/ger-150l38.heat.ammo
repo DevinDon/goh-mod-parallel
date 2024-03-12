@@ -11,6 +11,6 @@
     {tail "shell_tracer_150_heat" "tail"}
   }
 
-  ("heat_blast" args 1.5)
+  ("he_level_3" weight(45.71) filler(2.222))
 
 }
