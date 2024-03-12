@@ -70,26 +70,6 @@ const options: CrewAndPassengerOptions = {
         end: [ 'emit_tank_2_hold', 1 ],
       },
     },
-    {
-      name: 'armor01',
-      forward: {
-        begin: [ 'board_HighArmor', 1 ],
-        end: [ 'seat_armor', 1 ],
-      },
-      reverse: {
-        end: [ 'emit_tank_2', 1 ],
-      },
-    },
-    {
-      name: 'armor02',
-      forward: {
-        begin: [ 'board_HighArmor', 1 ],
-        end: [ 'seat_armor', 1 ],
-      },
-      reverse: {
-        end: [ 'emit_body', 1 ],
-      },
-    },
   ],
 
   crews: [
@@ -141,36 +121,7 @@ const options: CrewAndPassengerOptions = {
     },
   ],
 
-  passengers: [
-    {
-      name: 'passenger01',
-      animations: [
-        { door: 'emit3', animation: 'armor02' },
-      ],
-      bone: 'seat06',
-    },
-    {
-      name: 'passenger02',
-      animations: [
-        { door: 'emit4', animation: 'armor02' },
-      ],
-      bone: 'seat05',
-    },
-    {
-      name: 'passenger03',
-      animations: [
-        { door: 'emit5', animation: 'armor01' },
-      ],
-      bone: 'seat04',
-    },
-    {
-      name: 'passenger04',
-      animations: [
-        { door: 'emit6', animation: 'armor01' },
-      ],
-      bone: 'seat03',
-    },
-  ],
+  passengers: [],
 
 };
 

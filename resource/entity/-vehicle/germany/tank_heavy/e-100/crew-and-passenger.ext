@@ -75,32 +75,6 @@
       {end "emit_tank_2_hold" 1}
     }
   }
-  ; animation armor01
-  {Anm "armor01"
-    {forward
-      ; no forward animation base
-      {begin "board_HighArmor" 1}
-      {end "seat_armor" 1}
-    }
-    {reverse
-      ; no reverse animation base
-      ; no reverse animation begin
-      {end "emit_tank_2" 1}
-    }
-  }
-  ; animation armor02
-  {Anm "armor02"
-    {forward
-      ; no forward animation base
-      {begin "board_HighArmor" 1}
-      {end "seat_armor" 1}
-    }
-    {reverse
-      ; no reverse animation base
-      ; no reverse animation begin
-      {end "emit_body" 1}
-    }
-  }
 }
 
 ; set crews
@@ -188,58 +162,7 @@
 }
 
 ; set passengers
-; passenger passenger01
-{Placer
-  {Place "passenger01"
-    {group "passenger"}
-    {linkbone "seat06"}
-    ; no turnoff
-    ; no extra
-  }
-}
-{Boarder
-  {door "emit3"}
-  {link "emit3" "passenger01" {anm "armor02"} {forward putoff} {reverse puton}}
-}
-; passenger passenger02
-{Placer
-  {Place "passenger02"
-    {group "passenger"}
-    {linkbone "seat05"}
-    ; no turnoff
-    ; no extra
-  }
-}
-{Boarder
-  {door "emit4"}
-  {link "emit4" "passenger02" {anm "armor02"} {forward putoff} {reverse puton}}
-}
-; passenger passenger03
-{Placer
-  {Place "passenger03"
-    {group "passenger"}
-    {linkbone "seat04"}
-    ; no turnoff
-    ; no extra
-  }
-}
-{Boarder
-  {door "emit5"}
-  {link "emit5" "passenger03" {anm "armor01"} {forward putoff} {reverse puton}}
-}
-; passenger passenger04
-{Placer
-  {Place "passenger04"
-    {group "passenger"}
-    {linkbone "seat03"}
-    ; no turnoff
-    ; no extra
-  }
-}
-{Boarder
-  {door "emit6"}
-  {link "emit6" "passenger04" {anm "armor01"} {forward putoff} {reverse puton}}
-}
+; no passenger
 
 ; set extra
 ; no extra
