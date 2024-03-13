@@ -108,10 +108,10 @@
   }
 
   {Bone "turret"
-    {speed2 8}
+    {speed2 6}
   }
   {Bone "gun_rot"
-    {speed2 5}
+    {speed2 2}
     {limits 24 -8}
   }
 

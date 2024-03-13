@@ -12,11 +12,11 @@
 
 ("set-turret"               repair(30))
 ("set-mantlet"              repair(30))
-("set-gun"    thickness(30) repair(30))
+("set-gun"    thickness(50) repair(30))
 
 ("set-body"                 repair(45))
 ("set-engine"               repair(30))
-("set-tracks" thickness(30) repair(30))
+("set-tracks" thickness(60) repair(30))
 
 ("set-shield-track" name("shieldl1") thickness(50))
 ("set-shield-track" name("shieldl2") thickness(50))

@@ -74,4 +74,12 @@
     ("set-fuel-bag" volume(1200) power(900) mass(62160))
   }
 
+  {Bone "turret"
+    {speed2 12}
+  }
+  {Bone "gun_rot"
+    {speed2 5}
+    {limits 6 -16} ; 俯角 仰角
+  }
+
 }

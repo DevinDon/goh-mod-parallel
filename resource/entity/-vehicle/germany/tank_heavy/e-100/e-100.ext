@@ -16,7 +16,7 @@
 
 ("set-body"                 repair(50))
 ("set-engine"               repair(30))
-("set-tracks" thickness(30) repair(30))
+("set-tracks" thickness(90) repair(30))
 
 ("set-shield-tear" name("shieldl1") thickness(100))
 ("set-shield-tear" name("shieldl2") thickness(100))

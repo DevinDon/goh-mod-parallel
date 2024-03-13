@@ -16,7 +16,7 @@
 
 ("set-body"                 repair(45))
 ("set-engine"               repair(30))
-("set-tracks" thickness(20) repair(25))
+("set-tracks" thickness(30) repair(25))
 
 ("set-internal-components" name("ammo") type("ammo") repair(3))
 
