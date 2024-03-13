@@ -103,8 +103,8 @@
   {Mass 129860}
   {Chassis "track"
     ("set-tank-trace" fx("tracks_big") step(0.47) length(0.8) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(30) power(1200) mass(129860) performance(1.05))
-    ("set-fuel-bag" volume(1000) power(1200) mass(129860))
+    ("set-maneuverability-of-tank" speed(30) power(1500) mass(129860) performance(1.05))
+    ("set-fuel-bag" volume(1200) power(1500) mass(129860))
   }
 
   {Bone "turret"

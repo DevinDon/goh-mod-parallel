@@ -36,7 +36,7 @@ const options: WeaponOptions = {
       speed: 975,
       gravity: 5,
       projectile: {
-        nearest: 285,
+        nearest: 265,
         farthest: 221,
       },
       damageToArmor: 750,
@@ -62,8 +62,8 @@ const options: WeaponOptions = {
       speed: 550,
       gravity: 5,
       projectile: {
-        nearest: 254,
-        farthest: 254,
+        nearest: 251,
+        farthest: 251,
       },
       damageToArmor: 600,
       damageToHuman: 6000,
