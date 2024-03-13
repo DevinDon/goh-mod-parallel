@@ -1197,12 +1197,12 @@
 }
 
 {"standard-doctrine-e-50"
-  ("set-standard-doctrine-vehicle" vehicle(e-50) side(ger) period(late) crew1(tank_commander:1) crew2(tankman:3))
+  ("set-standard-doctrine-vehicle" vehicle(e-50) side(ger) period(late) crew1(tank_commander:1) crew2(tankman:4))
   ("set-standard-doctrine-level-2" doctrine(late_ger_e_series) cost(50))
 }
 
 {"standard-doctrine-e-75"
-  ("set-standard-doctrine-vehicle" vehicle(e-75) side(ger) period(late) crew1(tank_commander:1) crew2(tankman:3))
+  ("set-standard-doctrine-vehicle" vehicle(e-75) side(ger) period(late) crew1(tank_commander:1) crew2(tankman:4))
   ("set-standard-doctrine-level-3" doctrine(late_ger_e_series) cost(75))
 }
 
