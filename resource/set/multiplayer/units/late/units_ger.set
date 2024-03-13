@@ -1114,22 +1114,22 @@
 )
 
 {"panzer5a"
-  ("set-standard-vehicle" vehicle(panzer5a) cost(1000) cd(600)  ci(60) cw(6) cp(0) tags(medium) period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy1) button(tanks))
+  ("set-standard-vehicle" vehicle(panzer5a) cost(1000) cd(540)  ci(60) cw(6) cp(0) tags(medium) period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy1) button(tanks))
 }
 {"panzer5d"
   ("set-standard-vehicle" vehicle(panzer5d) cost(1100) cd(600)  ci(60) cw(6) cp(0) tags(medium) period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy1) button(tanks))
 }
 {"panzer5g"
-  ("set-standard-vehicle" vehicle(panzer5g) cost(1200) cd(600)  ci(60) cw(6) cp(0) tags(medium) period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy1) button(tanks))
+  ("set-standard-vehicle" vehicle(panzer5g) cost(1200) cd(660)  ci(60) cw(6) cp(0) tags(medium) period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy1) button(tanks))
 }
 {"tiger1e"
-  ("set-standard-vehicle" vehicle(tiger1e)  cost(1500) cd(900)  ci(90) cw(7) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy2) button(tanks))
+  ("set-standard-vehicle" vehicle(tiger1e)  cost(1500) cd(840)  ci(90) cw(7) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy2) button(tanks))
 }
 {"tiger1h"
   ("set-standard-vehicle" vehicle(tiger1h)  cost(1600) cd(900)  ci(90) cw(7) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy2) button(tanks))
 }
 {"tiger2p"
-  ("set-standard-vehicle" vehicle(tiger2p)  cost(1850) cd(1200) ci(90) cw(8) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy3) button(tanks))
+  ("set-standard-vehicle" vehicle(tiger2p)  cost(1850) cd(1100) ci(90) cw(8) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy3) button(tanks))
 }
 {"tiger2h"
   ("set-standard-vehicle" vehicle(tiger2h)  cost(2050) cd(1200) ci(90) cw(8) cp(0) tags(heavy)  period(late) side(ger) crew1(tankman:4) crew2(tank_commander:1) group(heavy3) button(tanks))
