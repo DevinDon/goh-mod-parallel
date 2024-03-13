@@ -75,10 +75,10 @@
   }
 
   {Bone "turret"   ; gun horizontal
-    {speed 0.5}
+    {speed 0.005}
   }
   {Bone "gun_rot"  ; gun vertical
-    {speed2 6}
+    {speed2 3}
   }
 
   {Bone "turret1"  ; mgun horizontal
