@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "destroyed e-25"}
+	{blend none}
+}
