@@ -1,0 +1,79 @@
+;Exported by: Administrator
+;Date:        Thu Aug 17 09:59:22 2017
+;File:        C:\Users\Administrator\Desktop\E75\Pz4G_xx.max
+{Skeleton
+  {bone "basis"
+    {Orientation
+      1  0  0
+      0  -1  0
+      0  0  1
+    }
+    {bone "body"
+      {parameters "CommonMesh;ID=body;"}
+      {animation
+        {sequence "break" {file "body_b.anm"}}
+      }
+      {Position 0.0168302  0.873796  7.27718}
+      {VolumeView "body.ply"}
+      {bone revolute "turret"
+        {parameters "ID=turret;"}
+        {animation
+          {sequence "break" {file "turret_b.anm"} {speed 0.9}}
+        }
+        {Matrix34
+          1  0  0
+          0  1  0
+          0  0  1
+          0.0113411  -1.02389  30.255
+        }
+        {VolumeView "turret.ply"}
+        {bone revolute "gun_rot"
+          {parameters "ID=turret;"}
+          {Matrix34
+            1  0  0
+            0  0  -1
+            0  1  0
+            26.2133  0.0725136  10.0314
+          }
+          {VolumeView "gun_rot2.ply"}
+          {bone "gun"
+            {parameters "ID=gun;"}
+            {Matrix34
+              -1  0  0
+              0  0  -1
+              0  -1  0
+              17.1421  0.896652  0.199992
+            }
+            {VolumeView "gun2.ply"}
+          }
+        }
+      }
+    }
+    {bone "wheelsl"
+      {Position -8.53983  25.0577  11.0188}
+      {bone "trackl"
+        {parameters "ID=trackleft;"}
+        {Matrix34
+          1  0  0
+          0  0  1
+          0  -1  0
+          8.10218  2.10732  1.52367
+        }
+        {VolumeView "trackl.ply"}
+      }
+    }
+    {bone "wheelsr"
+      {Position -8.53982  -25.0072  11.0188}
+      {bone "trackr"
+        {parameters "ID=trackright;"}
+        {Matrix34
+          1  0  0
+          0  0  1
+          0  1  0
+          8.10218  -2.10734  1.52367
+        }
+        {VolumeView "trackr.ply"}
+      }
+    }
+  }
+}

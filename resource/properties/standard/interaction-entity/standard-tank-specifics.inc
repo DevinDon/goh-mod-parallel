@@ -1,4 +1,3 @@
-
 {"e-25 tank"
   {on "add_movement_sound" overload
     {link_sound "engine_start"  "vehicle/engine/pz4/start"}

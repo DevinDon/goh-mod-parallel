@@ -1,0 +1,82 @@
+import type { WeaponOptions } from '../options.mjs';
+
+const options: WeaponOptions = {
+
+  destination: 'resource/set/stuff/standard/gun/ger-128mm-kwk44-l61.weapon',
+
+  name: 'ger-128mm-kwk44-l61',
+  description: '德国 12.8cm KwK 44 L/61 坦克炮',
+
+  from: 'pattern standard-gun',
+
+  fireSound: 'gun/gun_122_152',
+  fireSoundClose: 'gun/gun_interior/size4',
+  reloadSound: 'interior/large/howitzer_reload_interior',
+  cursor: 'ironsights/tank2',
+
+  ammo: 'ger-128l61',
+  amout: 1,
+  calibre: 128,
+  syncedProjectiles: true,
+
+  aimingTolerance: 0.2,
+  spreadTolerance: 0.5,
+
+  rechargeTime: 19.15,
+  recoveryTime: 1,
+
+  automatic: false,
+
+  bullets: [
+    {
+      name: 'apcbche',
+      minRange: 0,
+      aimRange: 400,
+      maxRange: 400,
+      speed: 920,
+      gravity: 5,
+      projectile: {
+        nearest: 267,
+        farthest: 208,
+      },
+      damageToArmor: 490,
+      damageToHuman: 4900,
+      spreading: {
+        radiusTable: {
+          nearest: 0.57,
+          farthest: 3.322,
+          factor: 3.5,
+        },
+        burstRecoveryTime: 1.28,
+        burstAccuracy: 100,
+        spreadPower: 1.50,
+        spreadXYRatio: 0.75,
+      },
+      overmatch: 'ger-128mm-apcbc',
+    },
+    {
+      name: 'he',
+      minRange: 0,
+      aimRange: 400,
+      maxRange: 400,
+      speed: 750,
+      gravity: 5,
+      damageToArmor: 990,
+      damageToHuman: 9900,
+      spreading: {
+        radiusTable: {
+          nearest: 0.769,
+          farthest: 4.55,
+          factor: 4.0,
+        },
+        burstRecoveryTime: 1.28,
+        burstAccuracy: 100,
+        spreadPower: 1.25,
+        spreadXYRatio: 0.75,
+      },
+    },
+  ],
+
+};
+
+export default options;

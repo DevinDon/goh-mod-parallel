@@ -157,9 +157,13 @@ msgctxt "desc/weapon/ger-105mm-kwspzk-l68"
 msgid   "10.5 cm KwsPz.K L/68"
 msgstr  "10.5 cm KwsPz.K L/68 实验性坦克炮"
 
+msgctxt "desc/weapon/ger-128mm-kwk44-l61"
+msgid   "12.8 cm KwK 44 L/61"
+msgstr  "12.8 cm KwK 44 L/61 坦克炮"
+
 msgctxt "desc/weapon/ger-128mm-pak44-l61"
-msgid   "12.8 cm PaK44 L/61"
-msgstr  "12.8 cm PaK44 L/61 反坦克炮"
+msgid   "12.8 cm PaK 44 L/61"
+msgstr  "12.8 cm PaK 44 L/61 反坦克炮"
 
 msgctxt "desc/weapon/ger-150mm-sfh18-l30"
 msgid   "15 cm sFH 18 L/30"

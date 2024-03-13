@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "e-75"}
+	{bump "e-75_nm"}
+	{specular "e-75_cm"}
+	{color "230 230 230 128"}
+	{blend none}
+}

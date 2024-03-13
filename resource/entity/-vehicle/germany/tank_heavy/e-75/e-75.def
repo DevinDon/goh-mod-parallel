@@ -1,0 +1,77 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/selection/vehicle_big.inc" scale(1.0))
+
+  {Extension "e-75.mdl"}
+  (include   "e-75.ext")
+  (include   "crew-and-passenger.ext")
+
+  {Props "heavy" "vision_lev05" "muzzle_85mm_93mm_sides" "shield" "smoke" "nvw" "detect_tank_heavy"}
+
+  {PatherId "tiger2"}
+  {Collider "tank.heavy"}
+  {Targetclass "tank_heavy"}
+  {TargetSelector "tank_heavy"}
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
+
+  {Extender "shield" {on}}
+
+  {Extender "inventory"
+    {Box
+      {Size 12 16}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun api" 5800}
+
+      {Item "ammo ger-128l61 apcbche" 29}
+      {Item "ammo ger-128l61 he" 19}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 2}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "weapon ger-128mm-kwk44-l61" filling "ammo ger-128l61 apcbche" 1}
+      {Gunner "gunner"}
+      {Charger "charger charger2" MinWorkers 1}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.75} ; s
+        {OrderTime       3.00} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "coaxial"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight5"}
+      {Gunner "gunner"}
+      {Charger "charger charger2" MinWorkers 1}
+      {Basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 91600}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_big") step(0.47) length(1.16) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(40) power(1200) mass(91600) performance(1.15))
+    ("set-fuel-bag" volume(1000) power(1200) mass(91600))
+  }
+
+}
