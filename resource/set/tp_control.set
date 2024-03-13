@@ -256,6 +256,8 @@
 
     ; E-Series
     {"e-25"  inherit "vehicle custom.tank.e-25"}  ; custom
+    {"e-50"  inherit "vehicle custom.tank.e-50"}  ; custom
+    {"e-75"  inherit "vehicle custom.tank.e-75"}  ; custom
     {"e-100" inherit "vehicle custom.tank.e-100"} ; custom
 
 ;=================== Ger airborne ===================

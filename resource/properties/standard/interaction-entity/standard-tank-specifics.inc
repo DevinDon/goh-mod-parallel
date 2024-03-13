@@ -14,6 +14,18 @@
     {link_sound "close_driver"  "vehicle/doors/pz4/close_driver"}
   }
 }
+
+{"e-50 tank"
+  ("pz5_sound")
+  {on "add_weapon_sound" overload
+    ("MG34")
+  }
+}
+
+{"e75 tank"
+  ("pz6b_sound")
+}
+
 {"e-100 tank"
   ("pz6b_sound")
   {on "commander_hatch_open" overload

@@ -296,7 +296,9 @@ Purchases["late.ger"] = {
 
         -- E-Series Doctrine
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Tank", "Light", "AT",}, unit = "standard-doctrine-e-25"},
-          {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Heavy",}, unit = "standard-doctrine-e-100"},
+          {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Medium",},      unit = "standard-doctrine-e-50"},
+          -- {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Tank", "Heavy",},       unit = "standard-doctrine-e-75"},
+          {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Heavy",},       unit = "standard-doctrine-e-100"},
       --]====]
     }
   }

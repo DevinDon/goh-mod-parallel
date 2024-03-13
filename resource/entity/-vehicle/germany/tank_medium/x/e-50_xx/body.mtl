@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "e-50_crash_hd"}
+	{bump "e-50_nm_hd"}
+	{specular "e-50_sm_hd"}
+	{color "229 229 229 25"}
+	{blend none}
+}

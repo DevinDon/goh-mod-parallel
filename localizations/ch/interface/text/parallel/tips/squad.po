@@ -34,9 +34,17 @@ msgctxt "desc/squad/standard-doctrine-e-25"
 msgid   "<c(006494)>( I )</c> E-25 Light Tank Destroyer"
 msgstr  "<c(006494)>( I )</c> E-25 轻型坦克歼击车"
 
+msgctxt "desc/squad/standard-doctrine-e-50"
+msgid   "<c(006494)>( II )</c> E-50 Medium Tank"
+msgstr  "<c(006494)>( II )</c> E-50 中型坦克"
+
+msgctxt "desc/squad/standard-doctrine-e-75"
+msgid   "<c(006494)>( III )</c> E-75 Heavy Tank"
+msgstr  "<c(006494)>( III )</c> E-75 重型坦克"
+
 msgctxt "desc/squad/standard-doctrine-e-100"
-msgid   "<c(006494)>( III )</c> E-100 Heavy Tank"
-msgstr  "<c(006494)>( III )</c> E-100 重型坦克"
+msgid   "<c(006494)>( IV )</c> E-100 Heavy Tank"
+msgstr  "<c(006494)>( IV )</c> E-100 重型坦克"
 
 # 增援类型
 msgctxt "mp/lobby/doctrine/late_ger_e_series"

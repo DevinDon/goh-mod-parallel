@@ -1,0 +1,52 @@
+; armor notes
+
+
+
+
+
+
+
+
+("set-basic-durability" body(750) engine(450) turret(550) mantlet(300) gun(300) track(350) ammo(400))
+("set-basic-armor"      ammo(30))
+
+("set-turret"               repair(25))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(25) repair(20))
+
+("set-body"                 repair(45))
+("set-engine"               repair(30))
+("set-tracks" thickness(20) repair(25))
+
+("set-internal-components" name("ammo") type("ammo") repair(3))
+
+{volume "body"
+  {thickness 80
+    {front 150}
+  }
+}
+{volume "body1"
+  {thickness 80
+    {front 150}
+    {bottom 40}
+  }
+}
+{volume "turret"
+  {thickness 130
+    {front 215}
+    {top 40}
+    {rear 80}
+  }
+}
+{volume "mantlet"
+  {thickness 150
+  }
+}
+{volume "engine1"
+  {thickness 80
+    {front 25}
+    {rear 80}
+    {top 25}
+    {bottom 25}
+  }
+}
