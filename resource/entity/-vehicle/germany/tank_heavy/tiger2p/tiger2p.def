@@ -64,7 +64,7 @@
 
   {Weaponry
     {RestoreIKTime 2}
-    {place "gun"
+    {Place "gun"
       {RestoreIKAfterAim}
       {Weapon "weapon ger-88mm-kwk43-l71" filling "ammo ger-88l71 apcbche" 1}
       {Gunner "gunner"}
@@ -74,7 +74,7 @@
         {ByLinearSpeed   0.25} ; km/h
         {MaxAngularSpeed 3.00} ; deg/s
         {ByAngularSpeed  0.35} ; deg/s
-        {DisorderTime    0.25} ; s
+        {DisorderTime    0.55} ; s
         {OrderTime       2.00} ; s
       }
     }
