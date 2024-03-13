@@ -246,7 +246,7 @@
 
     {"jagdpanther" inherit "vehicle custom.tank.jagdpanther"} ; custom
 
-    {"ferdinand" inherit "vehicle custom.tank.ferdinand"} ; custom
+    {"ferdinand" inherit "vehicle custom.tank.e-100"} ; custom
 
     {"sig33b" inherit "vehicle td.sig33b"}
     {"sturmpanzer4" inherit "vehicle td.sig33b"}
