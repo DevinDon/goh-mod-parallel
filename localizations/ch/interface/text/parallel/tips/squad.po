@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 
-# 允许增援的额外单位
+# 标准单位
 
 # 特殊单位
 msgctxt "desc/squad/doctrine_sdkfz251d_16"
@@ -29,3 +29,16 @@ msgstr  "<c(B29557)>( I )</c> Sd.Kfz 251/21 D 型 加装三联装 2cm MG151"
 msgctxt "desc/squad/doctrine_sdkfz251d_22"
 msgid   "<c(B29557)>( II )</c> Sd.Kfz 251/22 Ausf. D mit 7.5cm Pak 40"
 msgstr  "<c(B29557)>( II )</c> Sd.Kfz 251/22 D 型 加装 7.5cm Pak 40"
+
+msgctxt "desc/squad/standard-doctrine-e-100"
+msgid   "<c(B29557)>( III )</c> E-100 Heavy Tank"
+msgstr  "<c(B29557)>( III )</c> E-100 重型坦克"
+
+# 增援类型
+msgctxt "mp/lobby/doctrine/late_ger_e_series"
+msgid   "E-Series<c(006494)>[E-Series DLC]</c>"
+msgstr  "未来系列 <c(006494)>[未来系列 DLC]</c>"
+
+msgctxt "mp/lobby/doctrine/late_ger_e_series#hint"
+msgid   "E-Series<c(006494)>[E-Series DLC]</c>"
+msgstr  "未来系列 <c(006494)>[未来系列 DLC]</c>"

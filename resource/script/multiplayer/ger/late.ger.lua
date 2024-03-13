@@ -187,7 +187,6 @@ Purchases["late.ger"] = {
         {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger1h"},
         {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger2p"},
         {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger2h"},
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "e-100"},
         -- custom additional tanks
         --]]
 
@@ -294,6 +293,9 @@ Purchases["late.ger"] = {
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Armored", "Artillery",}, unit = "doctrine_panzerwerfer42_late"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Heavy",}, unit = "doctrine_tiger2p"},
           --]]
+
+        --  E-Series Doctrine
+          {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Heavy",}, unit = "standard-doctrine-e-100"},
       --]====]
     }
   }
