@@ -18,7 +18,8 @@
   (include "tank/tank-main.inc")
   (include "tank/tank-specifics.inc")
 
-  (include "tank/standard-tank-specifics.inc") ; custom
+  ; custom
+  (include "/properties/standard/interaction-entity/standard-tank-specifics.inc")
 
   (include "cannon.inc")
   (include "airborne.inc")

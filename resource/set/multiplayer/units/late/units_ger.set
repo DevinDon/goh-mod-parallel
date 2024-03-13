@@ -1180,9 +1180,14 @@
   {cost %cost}
 )
 
+{"standard-doctrine-e-25"
+  ("set-standard-doctrine-vehicle" vehicle(e-25) side(ger) period(late) crew1(tank_commander:1) crew2(tankman:3))
+  ("set-standard-doctrine-level-1" doctrine(late_ger_e_series) cost(25))
+}
+
 {"standard-doctrine-e-100"
   ("set-standard-doctrine-vehicle" vehicle(e-100) side(ger) period(late) crew1(tank_commander:1) crew2(tankman:4))
-  ("set-standard-doctrine-level-3" doctrine(late_ger_e_series) cost(1000))
+  ("set-standard-doctrine-level-3" doctrine(late_ger_e_series) cost(100))
 }
 
 ; custom end
