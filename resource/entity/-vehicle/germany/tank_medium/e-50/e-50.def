@@ -7,7 +7,7 @@
   (include   "e-50.ext")
   (include   "crew-and-passenger.ext")
 
-  {Props "heavy" "vision_lev04" "muzzle_85mm_93mm" "shield" "smoke" "nvw" "detect_tank_heavy"}
+  {Props "medium" "vision_lev04" "muzzle_85mm_93mm" "shield" "smoke" "nvw" "detect_tank_heavy"}
 
   {PatherId "panzer5"}
   {Targetclass "tank_heavy"}

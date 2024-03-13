@@ -7,7 +7,7 @@
   (include   "e-25.ext")
   (include   "crew-and-passenger.ext")
 
-  {Props "td" "medium" "-turret" "mantlet" "vision_lev03" "muzzle_75mm_76mm_sides" "shield"}
+  {Props "td" "light" "-turret" "mantlet" "vision_lev03" "muzzle_75mm_76mm" "shield" "detect_td_medium"}
 
   {PatherId "panzer3"}
   {Targetclass "tank_medium"}
@@ -53,6 +53,7 @@
       {Foresight "foresight3"}
       {Gunner "commander"}
       {Charger "commander"}
+      {LinkAnimation "off"}
       {Basic}
       {ai_in_manual}
       {AccuracyByMotion
@@ -74,17 +75,17 @@
   }
 
   {Bone "turret"   ; gun horizontal
-    {speed 0.0042}
+    {speed 0.5}
   }
   {Bone "gun_rot"  ; gun vertical
     {speed2 6}
   }
 
-  {Bone "turret1"  ; gun horizontal
-    {speed2 16}
+  {Bone "turret1"  ; mgun horizontal
+    {speed2 18}
   }
-  {Bone "mgun_rot" ; gun vertical
-    {speed 0.0045}
+  {Bone "mgun_rot" ; mgun vertical
+    {speed 0.5}
   }
 
 }
