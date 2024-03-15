@@ -1,20 +1,6 @@
 ;SDL
 {units
 
-  ; custom
-  {"e-25"
-    {vehicle_view "hetzer"}
-  }
-  {"e-50"
-    {vehicle_view "panzer5"}
-  }
-  {"e-75"
-    {vehicle_view "tiger2h"}
-  }
-  {"e-100"
-    {vehicle_view "tiger2h"}
-  }
-
   ;Boxes
   {"inf_crate_ger"
     {vehicle_view "inf_crate_ger"}
@@ -1450,6 +1436,9 @@
   {"renault_agr_civ"
     {vehicle_view "renault_agr_civ"}
   }
+  {"ford_gpa"
+    {vehicle_view "ford_gpa"}
+  }
 
   ;USA BTRs
   {"m2_halftrack"
@@ -1695,6 +1684,10 @@
   {"m4a3e2_76"
     {vehicle_view "m4a3e2_76"}
   }
+  {"m4a1_75_dd"
+    {vehicle_view "m4a1_75_dd"}
+  }
+
 
   ;USA Heavy Tanks
   {"m26_pershing"
@@ -1710,4 +1703,8 @@
   {"lca_grh"
     {vehicle_view "lca_grh"}
   }
+
+  ; custom
+  (include "/properties/standard/registry/additional-units.inc")
+
 }
