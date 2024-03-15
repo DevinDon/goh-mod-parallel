@@ -176,18 +176,9 @@ Purchases["late.ger"] = {
         {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer3n"}, -- short 75mm
         {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer4g"},
         {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer4h"},
-        -- {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5a"},
-        -- {priority = 1.0, type = {"Class2", "Tank", "Heavy",}, unit = "tiger1e"},
-
-        -- custom additional tanks
         {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5a"},
-        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5d"},
-        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5g"},
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger1e"},
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger1h"},
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger2p"},
-        {priority = 1.0, type = {"Class2", "Tank", "Heavy",},  unit = "tiger2h"},
-        -- custom additional tanks
+
+        {priority = 1.0, type = {"Class2", "Tank", "Heavy",}, unit = "tiger1e"},
         --]]
 
       -- Self-Propelled Guns
@@ -281,9 +272,9 @@ Purchases["late.ger"] = {
 
         --  All-Round 2 (WEST) Doctrine
           ---[[
-          {priority = 1.0, type = {"Class3", "Doctrine", "Tier1", "Armored", "MG",}, unit = "doctrine_sdkfz251d_16"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Armored", "AA",}, unit = "doctrine_sdkfz251d_17"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Armored", "AA",}, unit = "doctrine_sdkfz251d_21"},
+          {priority = 1.0, type = {"Class3", "Doctrine", "Tier1", "Armored", "MG",}, unit = "doctrine_sdkfz251d_16"},
 
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Armored", "AT",}, unit = "doctrine_sdkfz251d_22"},
           --{priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Infantry",}, unit = "doctrine_squad_ger_signaller_2_late(ger)"},
@@ -293,7 +284,6 @@ Purchases["late.ger"] = {
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Armored", "Artillery",}, unit = "doctrine_panzerwerfer42_late"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Heavy",}, unit = "doctrine_tiger2p"},
           --]]
-
         -- E-Series Doctrine
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Tank", "Light", "AT",}, unit = "standard-doctrine-e-25"},
           {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Medium",},      unit = "standard-doctrine-e-50"},

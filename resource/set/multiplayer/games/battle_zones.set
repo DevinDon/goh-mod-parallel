@@ -9,7 +9,7 @@
     {difficulty      multiplayer}
     {scoreMin        500}
     {scoreMax        10000}
-    {scoreFinal      2000}
+    {scoreFinal      5000}
     {preparationTimeMin  0}
     {preparationTimeMax  60}
     {preparationTime     0}
