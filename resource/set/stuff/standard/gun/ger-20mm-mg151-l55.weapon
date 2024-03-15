@@ -9,8 +9,8 @@
   ; 无模型
   {Mass 42.7}
 
-  {FireSound "gun/gun_auto"} ; 开火音效
-  {FireSoundclose "gun/gun_auto"} ; 车内视角开火音效
+  {FireSound "cannon/s1/d1/Shared/Autocannon_20to30mm/"} ; 开火音效
+  {FireSoundclose "cannon/s1/1p/Shared/Autocannon_20to30mm/"} ; 车内视角开火音效
   {ReloadSound "interior/large/auto_reload_interior"} ; 装弹音效
 
   {Cursor "ironsights/aa"} ; 即时战略模式下的瞄准图标

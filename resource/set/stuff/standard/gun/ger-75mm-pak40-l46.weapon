@@ -9,9 +9,9 @@
   ; 无模型
   ; 无重量
 
-  {FireSound "gun/gun_75_105"} ; 开火音效
-  {FireSoundclose "gun/gun_75_105"} ; 车内视角开火音效
-  {ReloadSound "interior/reload_medium"} ; 装弹音效
+  {FireSound "cannon/s3/d1/Shared/Cannon_75to76mm/"} ; 开火音效
+  {FireSoundclose "cannon/s3/3p/Shared/Cannon_75to76mm/"} ; 车内视角开火音效
+  {ReloadSound "utility/"} ; 装弹音效
 
   {Cursor "ironsights/tank2"} ; 即时战略模式下的瞄准图标
   {CursorReloading "carbine_reload"} ; 即时战略模式下的装填图标

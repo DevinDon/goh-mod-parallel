@@ -9,9 +9,9 @@ const options: WeaponOptions = {
 
   from: 'pattern standard-gun',
 
-  fireSound: 'gun/gun_75_105',
-  fireSoundClose: 'gun/gun_interior/size3',
-  reloadSound: 'interior/large/medium_reload_interior',
+  fireSound: 'cannon/s3/d1/Shared/Cannon_75to76mm/',
+  fireSoundClose: 'cannon/s3/3p/Shared/Cannon_75to76mm/',
+  reloadSound: 'utility/',
   cursor: 'ironsights/tank2',
 
   ammo: 'ger-75l70',
@@ -22,7 +22,7 @@ const options: WeaponOptions = {
   aimingTolerance: 0.2,
   spreadTolerance: 0.5,
 
-  rechargeTime: 7.50,
+  rechargeTime: 7.25,
   recoveryTime: 1,
 
   automatic: false,

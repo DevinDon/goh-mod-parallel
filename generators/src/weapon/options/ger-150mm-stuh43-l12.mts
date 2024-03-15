@@ -9,9 +9,9 @@ const options: WeaponOptions = {
 
   from: 'pattern standard-gun',
 
-  fireSound: 'gun/gun_122_152_short',
-  fireSoundClose: 'gun/gun_interior/size4',
-  reloadSound: 'interior/large/howitzer_reload_interior',
+  fireSound: 'cannon/s5/d1/Shared/Cannon_150to210mm/',
+  fireSoundClose: 'cannon/s3/1p/Shared/',
+  reloadSound: 'tank/1p/large/',
   cursor: 'ironsights/tank2',
 
   ammo: 'ger-150l12',

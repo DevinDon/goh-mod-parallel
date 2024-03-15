@@ -9,8 +9,8 @@
   ; 无模型
   ; 无重量
 
-  {FireSound "gun/gun_37_57_short"} ; 开火音效
-  {FireSoundclose "gun/gun_interior/size2"} ; 车内视角开火音效
+  {FireSound "cannon/s1/d1/Shared/Cannon_37to40mm/"} ; 开火音效
+  {FireSoundclose "cannon/s1/1p/Shared/Cannon/"} ; 车内视角开火音效
   {ReloadSound "interior/large/small_reload_interior"} ; 装弹音效
 
   {Cursor "ironsights/tank2"} ; 即时战略模式下的瞄准图标

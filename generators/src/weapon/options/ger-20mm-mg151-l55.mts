@@ -11,8 +11,8 @@ const options: WeaponOptions = {
 
   mass: 42.7,
 
-  fireSound: 'gun/gun_auto',
-  fireSoundClose: 'gun/gun_auto',
+  fireSound: 'cannon/s1/d1/Shared/Autocannon_20to30mm/',
+  fireSoundClose: 'cannon/s1/1p/Shared/Autocannon_20to30mm/',
   reloadSound: 'interior/large/auto_reload_interior',
   cursor: 'ironsights/aa',
 
