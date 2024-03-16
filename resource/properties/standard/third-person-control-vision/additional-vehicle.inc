@@ -50,8 +50,8 @@
 {"sturmtiger" inherit "vehicle custom.tank.sturmtiger"}
 {"jagdtiger" inherit "vehicle custom.tank.jagdtiger"}
 
-; E-Series
-{"e-25"  inherit "vehicle custom.tank.e-25"}
-{"e-50"  inherit "vehicle custom.tank.e-50"}
-{"e-75"  inherit "vehicle custom.tank.e-75"}
-{"e-100" inherit "vehicle custom.tank.e-100"}
+; IInfinity Series
+{"tank-e-25"  inherit "vehicle custom.tank.e-25"}
+{"tank-e-50"  inherit "vehicle custom.tank.e-50"}
+{"tank-e-75"  inherit "vehicle custom.tank.e-75"}
+{"tank-e-100" inherit "vehicle custom.tank.e-100"}
