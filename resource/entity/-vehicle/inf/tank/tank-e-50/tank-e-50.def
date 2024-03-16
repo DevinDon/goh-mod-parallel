@@ -43,6 +43,7 @@
       {Weapon "weapon ger-88mm-kwk43-l71" filling "ammo ger-88l71 apcbche" 1}
       {Gunner "gunner"}
       {Charger "charger charger2" MinWorkers 1}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed  7.00} ; km/h
         {ByLinearSpeed   0.25} ; km/h
@@ -53,12 +54,14 @@
       }
     }
     {Place "mgun1"
+      {RestoreIKAfterAim}
       {Type "coaxial"}
       {Weapon "weapon ger-mg42" filled}
       {Foresight "foresight4"}
       {Gunner "gunner"}
       {Charger "charger charger2" MinWorkers 1}
       {Basic}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
         {ByLinearSpeed    0.40} ; km/h
