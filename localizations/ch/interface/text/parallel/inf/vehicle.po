@@ -1,0 +1,45 @@
+msgid  ""
+msgstr ""
+"Project-Id-Version: Parallel World - INF - Vehicle\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+# 坦克
+msgctxt "desc/entity/tank-e-25"
+msgid   "E-25 Light Tank Destroyer"
+msgstr  "E-25 轻型坦克歼击车"
+
+msgctxt "info/special/tank-e-25"
+msgid   "<c(33c0ee)>IInfinity Series Light Tank</c>"
+msgstr  "<c(33c0ee)>无尽系列轻型坦克</c>"
+
+msgctxt "desc/entity/tank-e-50"
+msgid   "E-50 Medium Tank"
+msgstr  "E-50 中型坦克"
+
+msgctxt "info/special/tank-e-50"
+msgid   "<c(33c0ee)>IInfinity Series Medium Tank</c>"
+msgstr  "<c(33c0ee)>无尽系列中型坦克</c>"
+
+msgctxt "desc/entity/tank-e-75"
+msgid   "E-75 Heavy Tank"
+msgstr  "E-75 重型坦克"
+
+msgctxt "info/special/tank-e-75"
+msgid   "<c(33c0ee)>IInfinity Series Heavy Tank</c>"
+msgstr  "<c(33c0ee)>无尽系列重型坦克</c>"
+
+msgctxt "desc/entity/tank-e-100"
+msgid   "E-100 Heavy Tank"
+msgstr  "E-100 重型坦克"
+
+msgctxt "info/special/tank-e-100"
+msgid   "<c(33c0ee)>IInfinity Series Heavy Tank</c>"
+msgstr  "<c(33c0ee)>无尽系列重型坦克</c>"

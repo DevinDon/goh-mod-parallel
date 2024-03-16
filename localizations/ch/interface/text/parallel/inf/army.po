@@ -1,0 +1,31 @@
+msgid  ""
+msgstr ""
+"Project-Id-Version: Parallel World - INF - Army\n"
+"Language: zh-CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+# 阵营名称
+msgctxt "mp/alliance/ascension"
+msgid   "Ascension"
+msgstr  "飞升"
+
+# 军队名称
+msgctxt "mp/army/inf"
+msgid   "IInfinity"
+msgstr  "无尽"
+
+# 增援类型
+msgctxt "mp/lobby/doctrine/ascension_inf_tank"
+msgid   "IInfinity Heavy Armored <c(33c0ee)>[IInfinity Heavy Armored]</c>"
+msgstr  "无尽重装军团 <c(33c0ee)>[无尽重装军团]</c>"
+
+msgctxt "mp/lobby/doctrine/ascension_inf_tank#hint"
+msgid   "IInfinity Heavy Armored <c(33c0ee)>[IInfinity Heavy Armored]</c>"
+msgstr  "无尽重装军团 <c(33c0ee)>[无尽重装军团]</c>"

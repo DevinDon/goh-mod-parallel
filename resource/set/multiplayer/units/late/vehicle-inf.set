@@ -1,0 +1,93 @@
+; define from vehicle2
+; args = vehicle cost cd ci cw cp tags period crew1 crew2 group button
+(define "set-standard-vehicle"
+  {charge
+    {delay %cd}
+    {interval %ci}
+  }
+  {tags "all %tags inf %period"}
+  {cost %cost}
+  {group "%group"}
+  {button "%button"}
+  {score (* %cost 0.05)}
+  {cw %cw}
+  {cp %cp}
+  {content "%vehicle ( mp/inf/%period/%crew1 mp/inf/%period/%crew2 )"}
+  {squad_cost_factor 1}
+  {round_multiple 5.0}
+)
+
+{"tank-e-25"
+  ("set-standard-vehicle" vehicle(tank-e-25)  cost(500)  cd(300)  ci(120) cw(4) cp(0) tags(light) period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(light3) button(tanks))
+}
+
+{"tank-e-50"
+  ("set-standard-vehicle" vehicle(tank-e-50)  cost(1000) cd(600)  ci(240) cw(6) cp(0) tags(medium) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(medium3) button(tanks))
+}
+
+{"tank-e-75"
+  ("set-standard-vehicle" vehicle(tank-e-75)  cost(1500) cd(1000) ci(480) cw(8) cp(0) tags(heavy)  period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(heavy2) button(tanks))
+}
+
+{"tank-e-100"
+  ("set-standard-vehicle" vehicle(tank-e-100) cost(2000) cd(1500) ci(900) cw(9) cp(0) tags(heavy)  period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(heavy3) button(tanks))
+}
+
+; define from squad_vehicle2_doctrine
+; args = vehicle period crew1 crew2
+(define "set-standard-doctrine-vehicle"
+  {level 1}
+  {research_stage 1}
+  {squad_cost_factor 0}
+  {tags "all doctrine inf %period"}
+  {button "doctrine"}
+  {content "%vehicle ( mp/inf/%period/%crew1 mp/inf/%period/%crew2 )"}
+)
+
+; args = doctrine cost
+(define "set-standard-doctrine-level-1"
+  {charge
+    {delay 300}
+    {interval 120}
+  }
+  {group "doctrine_t1"}
+  {doctrine %doctrine}
+  {cost %cost}
+  {score (* %cost 0.05)}
+)
+
+; args = doctrine cost
+(define "set-standard-doctrine-level-2"
+  {charge
+    {delay 900}
+    {interval 180}
+  }
+  {group "doctrine_t2"}
+  {doctrine %doctrine}
+  {cost %cost}
+  {score (* %cost 0.05)}
+)
+
+; args = doctrine cost
+(define "set-standard-doctrine-level-3"
+  {charge
+    {delay 1500}
+    {interval 240}
+  }
+  {group "doctrine_t3"}
+  {doctrine %doctrine}
+  {cost %cost}
+  {score (* %cost 0.05)}
+)
+
+; args = doctrine cost
+(define "set-standard-doctrine-level-4"
+  {charge
+    {delay 1800}
+    {interval 300}
+  }
+  {group "doctrine_t3"}
+  {doctrine %doctrine}
+  {cost %cost}
+  {score (* %cost 0.05)}
+)

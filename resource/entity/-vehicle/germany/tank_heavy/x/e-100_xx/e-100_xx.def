@@ -1,4 +1,0 @@
-{game_entity
-  (include "/properties/vehicle_xx.ext")
-  {extension "e-100_xx.mdl"}
-}

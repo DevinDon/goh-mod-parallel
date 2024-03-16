@@ -1,0 +1,94 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-assaultgun-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(1.1))
+  (include "/properties/standard/resupply/standard-resupply-define.inc")
+
+  {Extension "tank-e-25.mdl"}
+  (include   "tank-e-25.ext")
+  (include   "crew-and-passenger.ext")
+
+  {Props "td" "light" "-turret" "mantlet" "vision_lev03" "muzzle_75mm_76mm" "shield" "detect_td_medium"}
+
+  {PatherId "panzer3"}
+  {Targetclass "tank_medium"}
+  {TargetSelector "tank_medium"}
+
+  ("set-self-resupply" amount(1000))
+
+  {Extender "enumerator"}
+
+  {Extender "inventory"
+    {Box
+      {Size 15 8}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun api" 3750}
+
+      {Item "ammo ger-75l70 apcbche" 39}
+      {Item "ammo ger-75l70 apcr" 5}
+      {Item "ammo ger-75l70 he" 39}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 2}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "weapon ger-75mm-pak42-l70" filling "ammo ger-75l70 apcbche" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {Rotate}
+      {Basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.55} ; s
+        {OrderTime       1.75} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "aa"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight3"}
+      {Gunner "commander"}
+      {Charger "commander"}
+      {LinkAnimation "off"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 26300}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_big") step(0.47) length(0.94) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(65) power(700) mass(26300) performance(1.35))
+    ("set-fuel-bag" volume(1000) power(700) mass(26300))
+  }
+
+  {Bone "turret"   ; gun horizontal
+    {speed 0.005}
+  }
+  {Bone "gun_rot"  ; gun vertical
+    {speed2 3}
+  }
+
+  {Bone "turret1"  ; mgun horizontal
+    {speed2 18}
+  }
+  {Bone "mgun_rot" ; mgun vertical
+    {speed 0.5}
+  }
+
+}

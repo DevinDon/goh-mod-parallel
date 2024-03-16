@@ -1,0 +1,30 @@
+; args = %cost
+(define "set-soldier"
+  {tags "late inf infantry man lvl1"}
+  {cp 2}
+  {basic}
+  {breed}
+  {cw 1.0}
+  {score_factor 0.04}
+  {cost %cost}
+)
+{"mp/inf/late/engineer-1" ("set-soldier" cost(50))}
+{"mp/inf/late/engineer-2" ("set-soldier" cost(50))}
+
+; args = name cd ci crew1 crew2 period tags group button
+(define "set-soldier-team"
+  {"%name(inf)"
+    {charge
+      {delay %cd}
+      {interval %ci}
+    }
+    {content "mp/inf/%period/%crew1 mp/inf/%period/%crew2"}
+    {tags "all infantry inf %tags %period"}
+    {group "%group"}
+    {button "%button"}
+    {level 1}
+    {squad_cost_factor 1}
+  }
+)
+
+("set-soldier-team" name(soldier-engineer-team) period(late) cd(0) ci(60) crew1(engineer-1:1) crew2(engineer-2:1) group(single_eng) button(inf2) tags(engineer))
