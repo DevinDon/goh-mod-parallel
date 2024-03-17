@@ -1,3 +1,4 @@
+; 通用载具
 ; define from vehicle2
 ; args = vehicle cost cd ci cw cp tags period crew1 crew2 group button
 (define "set-standard-vehicle"
@@ -29,6 +30,7 @@
   ("set-standard-vehicle" vehicle(tank-e-75) cost(1500) cd(1000) ci(480) cw(8) cp(0) tags(heavy)  period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(heavy2)  button(tanks))
 }
 
+; 学说载具
 ; define from squad_vehicle2_doctrine
 ; args = vehicle period crew1 crew2
 (define "set-standard-doctrine-vehicle"

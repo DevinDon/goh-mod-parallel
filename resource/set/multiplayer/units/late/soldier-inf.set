@@ -11,8 +11,31 @@
 {"mp/inf/late/engineer-1" ("set-soldier" cost(30))}
 {"mp/inf/late/engineer-2" ("set-soldier" cost(20))}
 
+; 步兵排
+; args = name period doctrine cd ci crew1 crew2 group button tags
+(define "set-soldier-platoon"
+  {"%name(inf)"
+    {charge
+      {delay %cd}
+      {interval %ci}
+    }
+    {content "mp/inf/%period/%crew1 mp/inf/%period/%crew2"}
+    {tags "all infantry inf %tags %period"}
+    {group "%group"}
+    {button "%button"}
+    {doctrine %doctrine}
+    {level 1}
+    {squad_cost_factor 1}
+    {round_multiple 1}
+  }
+)
+
+; 步兵排 8 至 12 人
+("set-soldier-platoon" name(soldier-engineer-platoon) period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(engineer-1:4) crew2(engineer-2:8) group(platoon-1) button(inf1) tags(engineer))
+
+; 步兵班
 ; args = name cd ci crew1 crew2 period tags group button
-(define "set-soldier-team"
+(define "set-soldier-squad"
   {"%name(inf)"
     {charge
       {delay %cd}
@@ -27,8 +50,5 @@
   }
 )
 
-; 步兵排 8 至 12 人
-("set-soldier-team" name(soldier-engineer-platoon) period(late) cd(0) ci(60) crew1(engineer-1:4) crew2(engineer-2:8) group(platoon-1) button(inf1) tags(engineer))
-
 ; 步兵班 2 至 5 人
-("set-soldier-team" name(soldier-engineer-squad)   period(late) cd(0) ci(60) crew1(engineer-1:1) crew2(engineer-2:2) group(squad-1)   button(inf2) tags(engineer))
+("set-soldier-squad" name(soldier-engineer-squad) period(late) cd(0) ci(60) crew1(engineer-1:1) crew2(engineer-2:2) group(squad-1) button(inf2) tags(engineer))

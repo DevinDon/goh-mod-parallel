@@ -26,6 +26,6 @@ msgid   "Engineer Squad 3 Soldiers"
 msgstr  "工程班 3 人"
 
 # 步兵排
-msgctxt "desc/platoon/soldier-engineer-platoon(inf)"
+msgctxt "desc/squad/soldier-engineer-platoon(inf)"
 msgid   "Engineer Platoon 12 Soldiers"
 msgstr  "工程排 12 人"
