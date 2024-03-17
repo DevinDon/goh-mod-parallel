@@ -1,25 +1,24 @@
 ; 人员配置
 {breed
 
-  {tags "soldier"} ; 标签
+  {tags "soldier_pzfaust"} ; 标签
 
   {behaviour soldier} ; 行为类别
-  {skin "ger_wh_43_pio_rfl"} ; 外观
-  {portrait "ger_engineer"} ; 肖像
-  {icon "tech"} ; 图标
+  {skin "ger_wh_43_smock_at_rocket"} ; 外观
+  {portrait "ger_regular"} ; 肖像
+  {icon "smg"} ; 图标
   {icon_priority 0} ; 图标优先级
   {nationality inf} ; 国籍
 
   {armors ; 防护装置
-    {head ger_m40_helmet_goggles}
+    {head ger_m42_helmet_splinter}
     ; 无防弹衣
   }
 
   {perks ; 能力
     (include "ability.inc")
     ("rifle_skill_rank_4")
-    ("tier3_defense")
-    ("engineer")
+    ("tier3_recon")
   }
 
   {veterancy ; 体力
@@ -30,13 +29,9 @@
   {inventory ; 背包
     {Item "weapon ger-stg44" filled} ; StG 44 突击步枪
     {Item "ammo ger-stg44 magazine" 180} ; StG 44 突击步枪弹
-    {Item "m24 grenade" 1} ; 手榴弹
-    {Item "nbk39 grenade" 1} ; 烟雾弹
-    {Item "dynamite-x7" 2} ; 炸药
-    {Item "bandage_ger" 2} ; 绷带
-    {Item "mine_detector"} ; 扫雷器
-    {Item "wirecutters"} ; 剪线钳
-    {Item "pickaxe"} ; 堑壕镐
+    {Item "ammo ger-panzershreck heat" 4} ; 坦克杀手火箭弹
+    {Item "m24_smoke grenade" 2} ; 烟雾弹
+    {Item "bandage_ger" 6} ; 绷带
     {Item "shovel_ger"} ; 工兵铲
 
     {in_hands 0}
