@@ -2,7 +2,7 @@ import type { CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 
-  destination: 'resource/entity/-vehicle/germany/tank_light/e-25/crew-and-passenger.ext',
+  destination: 'resource/entity/-vehicle/inf/tank/tank-e-25/crew-and-passenger.ext',
 
   visors: [
     // 覆盖默认视野，需要同名且占用该连接点才能覆盖

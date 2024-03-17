@@ -20,7 +20,7 @@ export type HumanOptions = {
   /** 图标优先级 */
   iconPriority: number;
   /** 国籍 */
-  nationality: 'ger' | 'usa' | 'fin' | 'rus';
+  nationality: 'ger' | 'usa' | 'fin' | 'rus' | 'inf';
   /** 防护装置 */
   armors?: {
     head?: string;
