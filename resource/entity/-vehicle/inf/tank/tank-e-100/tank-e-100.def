@@ -15,7 +15,7 @@
   {TargetSelector "tank_heavy"}
   {Collider "tank.heavy"}
 
-  ("set-self-resupply" amount(1000))
+  ("set-self-resupply" amount(4000))
 
   {Extender "detail"
     {random 0}

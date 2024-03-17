@@ -14,7 +14,7 @@
   {Targetclass "tank_heavy"}
   {TargetSelector "tank_heavy"}
 
-  ("set-self-resupply" amount(1000))
+  ("set-self-resupply" amount(2000))
 
   {Extender "enumerator"
     {digit_folder "ger"}
