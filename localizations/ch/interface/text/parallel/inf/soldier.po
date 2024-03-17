@@ -20,7 +20,12 @@ msgctxt "desc/human/mp/inf/late/engineer-2"
 msgid   "Engineer [Inf]"
 msgstr  "副工程师 [无尽军团]"
 
-# 小队
-msgctxt "desc/squad/soldier-engineer-team(inf)"
-msgid   "Engineer Team"
-msgstr  "工程师小队"
+# 步兵班
+msgctxt "desc/squad/soldier-engineer-squad(inf)"
+msgid   "Engineer Squad 3 Soldiers"
+msgstr  "工程班 3 人"
+
+# 步兵排
+msgctxt "desc/platoon/soldier-engineer-platoon(inf)"
+msgid   "Engineer Platoon 12 Soldiers"
+msgstr  "工程排 12 人"

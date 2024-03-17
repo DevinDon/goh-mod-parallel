@@ -8,8 +8,8 @@
   {score_factor 0.04}
   {cost %cost}
 )
-{"mp/inf/late/engineer-1" ("set-soldier" cost(50))}
-{"mp/inf/late/engineer-2" ("set-soldier" cost(50))}
+{"mp/inf/late/engineer-1" ("set-soldier" cost(30))}
+{"mp/inf/late/engineer-2" ("set-soldier" cost(20))}
 
 ; args = name cd ci crew1 crew2 period tags group button
 (define "set-soldier-team"
@@ -27,4 +27,8 @@
   }
 )
 
-("set-soldier-team" name(soldier-engineer-team) period(late) cd(0) ci(60) crew1(engineer-1:1) crew2(engineer-2:1) group(single_eng) button(inf2) tags(engineer))
+; 步兵排 8 至 12 人
+("set-soldier-team" name(soldier-engineer-platoon) period(late) cd(0) ci(60) crew1(engineer-1:4) crew2(engineer-2:8) group(platoon-1) button(inf1) tags(engineer))
+
+; 步兵班 2 至 5 人
+("set-soldier-team" name(soldier-engineer-squad)   period(late) cd(0) ci(60) crew1(engineer-1:1) crew2(engineer-2:2) group(squad-1)   button(inf2) tags(engineer))
