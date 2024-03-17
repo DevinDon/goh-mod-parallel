@@ -8,8 +8,12 @@
   {score_factor 0.04}
   {cost %cost}
 )
+{"mp/inf/late/antitank-1" ("set-soldier" cost(40))}
+{"mp/inf/late/antitank-2" ("set-soldier" cost(10))}
 {"mp/inf/late/engineer-1" ("set-soldier" cost(30))}
 {"mp/inf/late/engineer-2" ("set-soldier" cost(20))}
+{"mp/inf/late/mgun-1"     ("set-soldier" cost(40))}
+{"mp/inf/late/mgun-2"     ("set-soldier" cost(10))}
 
 ; 步兵排
 ; args = name period doctrine cd ci crew1 crew2 group button tags
