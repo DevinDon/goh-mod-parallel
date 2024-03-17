@@ -12,6 +12,14 @@ msgstr ""
 "Language-Team: \n"
 
 # 士兵
+msgctxt "desc/human/mp/inf/late/antitank-1"
+msgid   "Anti Tank [Inf]"
+msgstr  "反坦克射手 [无尽军团]"
+
+msgctxt "desc/human/mp/inf/late/antitank-2"
+msgid   "Anti Tank [Inf]"
+msgstr  "反坦克副射手 [无尽军团]"
+
 msgctxt "desc/human/mp/inf/late/engineer-1"
 msgid   "Engineer [Inf]"
 msgstr  "工程师 [无尽军团]"
@@ -20,12 +28,36 @@ msgctxt "desc/human/mp/inf/late/engineer-2"
 msgid   "Engineer [Inf]"
 msgstr  "副工程师 [无尽军团]"
 
+msgctxt "desc/human/mp/inf/late/mgun-1"
+msgid   "Machine Gun [Inf]"
+msgstr  "机枪射手 [无尽军团]"
+
+msgctxt "desc/human/mp/inf/late/mgun-2"
+msgid   "Machine Gun [Inf]"
+msgstr  "机枪副射手 [无尽军团]"
+
 # 步兵班
+msgctxt "desc/squad/soldier-antitank-squad(inf)"
+msgid   "Anti Tank Squad 3 Soldiers"
+msgstr  "反坦克班 3 人"
+
 msgctxt "desc/squad/soldier-engineer-squad(inf)"
 msgid   "Engineer Squad 3 Soldiers"
 msgstr  "工程班 3 人"
 
+msgctxt "desc/squad/soldier-mgun-squad(inf)"
+msgid   "Machine Gun Squad 3 Soldiers"
+msgstr  "机枪班 3 人"
+
 # 步兵排
+msgctxt "desc/squad/soldier-antitank-platoon(inf)"
+msgid   "Anti Tank Platoon 12 Soldiers"
+msgstr  "反坦克排 12 人"
+
 msgctxt "desc/squad/soldier-engineer-platoon(inf)"
 msgid   "Engineer Platoon 12 Soldiers"
 msgstr  "工程排 12 人"
+
+msgctxt "desc/squad/soldier-mgun-platoon(inf)"
+msgid   "Machine Gun Platoon 12 Soldiers"
+msgstr  "机枪排 12 人"

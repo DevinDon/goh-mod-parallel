@@ -31,7 +31,9 @@
 )
 
 ; 步兵排 8 至 12 人
-("set-soldier-platoon" name(soldier-engineer-platoon) period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(engineer-1:4) crew2(engineer-2:8) group(platoon-1) button(inf1) tags(engineer))
+("set-soldier-platoon" name(soldier-antitank-platoon) period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(antitank-1:4) crew2(antitank-2:8) group(platoon) button(inf1) tags())
+("set-soldier-platoon" name(soldier-engineer-platoon) period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(engineer-1:4) crew2(engineer-2:8) group(platoon) button(inf1) tags(engineer))
+("set-soldier-platoon" name(soldier-mgun-platoon)     period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(mgun-1:4)     crew2(mgun-2:8)     group(platoon) button(inf1) tags())
 
 ; 步兵班
 ; args = name cd ci crew1 crew2 period tags group button
@@ -51,4 +53,6 @@
 )
 
 ; 步兵班 2 至 5 人
-("set-soldier-squad" name(soldier-engineer-squad) period(late) cd(0) ci(60) crew1(engineer-1:1) crew2(engineer-2:2) group(squad-1) button(inf2) tags(engineer))
+("set-soldier-squad" name(soldier-antitank-squad) period(late) cd(0) ci(30) crew1(antitank-1:1) crew2(antitank-2:2) group(squad) button(inf2) tags())
+("set-soldier-squad" name(soldier-engineer-squad) period(late) cd(0) ci(30) crew1(engineer-1:1) crew2(engineer-2:2) group(squad) button(inf2) tags(engineer))
+("set-soldier-squad" name(soldier-mgun-squad)     period(late) cd(0) ci(30) crew1(mgun-1:1)     crew2(mgun-2:2)     group(squad) button(inf2) tags())
