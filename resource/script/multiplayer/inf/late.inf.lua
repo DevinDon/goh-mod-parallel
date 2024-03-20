@@ -3,9 +3,9 @@ Purchases["late.inf"] = {
     Repeat = 0,
     Units = {
       -- 排
-      {priority = 1.0, type = {"Class3", "Infantry", "Squad",}, unit = "soldier-antitank-platoon(inf)"},
-      {priority = 1.0, type = {"Class3", "Infantry", "Squad",}, unit = "soldier-engineer-platoon(inf)"},
-      {priority = 1.0, type = {"Class3", "Infantry", "Squad",}, unit = "soldier-mgun-platoon(inf)"},
+      {priority = 1.0, type = {"Class3", "Infantry", "Squad", "Team",}, unit = "soldier-antitank-platoon(inf)"},
+      {priority = 1.0, type = {"Class3", "Infantry", "Squad", "Team",}, unit = "soldier-engineer-platoon(inf)"},
+      {priority = 1.0, type = {"Class3", "Infantry", "Squad", "Team",}, unit = "soldier-mgun-platoon(inf)"},
       -- 班
       {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-antitank-squad(inf)"},
       {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-engineer-squad(inf)"},

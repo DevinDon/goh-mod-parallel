@@ -44,13 +44,13 @@ const options: WeaponOptions = {
         nearest: 200,
         farthest: 200,
       },
-      damageToArmor: 200,
+      damageToArmor: 150,
       damageToHuman: 500,
       spreading: {
         radiusTable: {
-          nearest: 3.9,
-          farthest: 37.9,
-          factor: 7.5,
+          nearest: 5.1,
+          farthest: 40.9,
+          factor: 9,
         },
         burstRecoveryTime: 0.5,
         burstAccuracy: 100,
