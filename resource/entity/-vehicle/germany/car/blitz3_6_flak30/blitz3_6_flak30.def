@@ -63,7 +63,7 @@
     {speed2 60}
   }
   {Bone "turret"
-    {limits -145 145}
+    ; {limits -145 145}
     {speed2 60}
   }
 
