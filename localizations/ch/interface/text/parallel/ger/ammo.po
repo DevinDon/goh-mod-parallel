@@ -34,6 +34,10 @@ msgctxt "desc/ammo/ger-20l55 ap"
 msgid   "2 cm PzGr. [<c(ff6a00)>AP</c>]"
 msgstr  "2 cm PzGr. [<c(ff6a00)>穿甲弹</c>]"
 
+msgctxt "desc/ammo/ger-20l55 aphe"
+msgid   "2 cm PzGr. [<c(ff6a00)>APHE</c>]"
+msgstr  "2 cm PzGr. [<c(ff6a00)>穿甲高爆弹</c>]"
+
 msgctxt "desc/ammo/ger-20l55 apcr"
 msgid   "2 cm PzGr.40 [<c(48c445)>APCR</c>]"
 msgstr  "2 cm PzGr.40 [<c(48c445)>硬芯穿甲弹</c>]"

@@ -21,7 +21,7 @@ const options: WeaponOptions = {
   calibre: 20,
   syncedProjectiles: true,
 
-  aimingTolerance: 3,
+  aimingTolerance: 0.5,
   spreadTolerance: 0.1,
 
   rechargeTime: 5,
@@ -43,7 +43,7 @@ const options: WeaponOptions = {
 
   bullets: [
     {
-      name: 'ap',
+      name: 'aphe',
       minRange: 0,
       aimRange: 275,
       maxRange: 275,
@@ -53,8 +53,8 @@ const options: WeaponOptions = {
         nearest: 36,
         farthest: 7,
       },
-      damageToArmor: 30,
-      damageToHuman: 300,
+      damageToArmor: 50,
+      damageToHuman: 500,
       spreading: {
         radiusTable: {
           nearest: 0.29,
@@ -67,28 +67,6 @@ const options: WeaponOptions = {
         spreadXYRatio: 0.75,
       },
       overmatch: 'ger-20mm-ap',
-    },
-    {
-      name: 'he',
-      minRange: 0,
-      aimRange: 275,
-      maxRange: 275,
-      speed: 705,
-      gravity: 5,
-      damageToArmor: 60,
-      damageToHuman: 600,
-      spreading: {
-        radiusTable: {
-          nearest: 0.39,
-          farthest: 2.4,
-          factor: 4.0,
-        },
-        burstRecoveryTime: 0.2,
-        burstAccuracy: 100,
-        spreadPower: 1.00,
-        spreadXYRatio: 1.25,
-      },
-      falloffStrength: 0,
     },
   ],
 
