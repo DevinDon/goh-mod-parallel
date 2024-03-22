@@ -50,7 +50,7 @@ const options: WeaponOptions = {
       speed: 805,
       gravity: 5,
       projectile: {
-        nearest: 65,
+        nearest: 99,
         farthest: 39,
       },
       damageToArmor: 50,
