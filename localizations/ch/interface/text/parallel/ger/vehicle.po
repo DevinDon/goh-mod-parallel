@@ -166,6 +166,18 @@ msgctxt "info/special/sdkfz251d_22"
 msgid   "<c(c3baae)>Halftrack Armored Vehicle</c>"
 msgstr  "<c(c3baae)>半履带装甲车</c>"
 
+msgctxt "desc/entity/panzerwerfer42"
+msgid   "Panzerwerfer 42"
+msgstr  "42 型自走火箭炮"
+
+msgctxt "info/special/panzerwerfer42"
+msgid   "<c(c3baae)>Rocket Artillery</c>"
+msgstr  "<c(c3baae)>自行火箭炮</c>"
+
+msgctxt "desc/squad/doctrine_panzerwerfer42_late"
+msgid   "<c(B29557)>( III )</c> Panzerwerfer 42"
+msgstr  "<c(B29557)>( III )</c> 42 型自走火箭炮"
+
 # 轻型坦克
 msgctxt "desc/entity/panzer2l"
 msgid   "Pz.Kpfw II Ausf.L"

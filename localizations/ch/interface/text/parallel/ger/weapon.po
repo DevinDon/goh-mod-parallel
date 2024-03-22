@@ -190,6 +190,14 @@ msgid   "60 cm Mörser L/8.4"
 msgstr  "60 cm 卡尔臼炮 L/8.4"
 
 # 火箭炮
+msgctxt "desc/weapon/ger-150mm-panzerwerfer"
+msgid   "15cm Panzerwerfer"
+msgstr  "15cm Panzerwerfer 自行火箭炮"
+
+msgctxt "desc/weapon/ger-150mm-panzerwerfer-x10"
+msgid   "15cm Panzerwerfer x 10"
+msgstr  "15cm Panzerwerfer 十联装自行火箭炮"
+
 msgctxt "desc/weapon/ger-280mm-w40"
 msgid   "28 cm Wurfrahmen 40"
 msgstr  "28 cm 40 型火箭发射器"
@@ -199,7 +207,6 @@ msgid   "28 cm Wurfrahmen 40 x 6"
 msgstr  "28 cm 40 型六联装火箭发射器"
 
 # 喷火器
-
 msgctxt "desc/weapon/ger-14mm-flammenwerfer-left"
 msgid   "1.4 cm Flammenwerfer"
 msgstr  "1.4 cm 喷火器 左侧"

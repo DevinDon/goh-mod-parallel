@@ -1,0 +1,43 @@
+{from "pattern standard-reactive-ammo"
+
+  {tag "big bomb mortar fg itemin2hands"}
+
+  {detonationThickness 0.5}
+
+  {entity "150mm_nebelwerfer"}
+  {mass 31.75}
+
+  {inventory
+    {size 10 2}
+    {weight 100}
+  }
+
+  {view "150mm_nebelwerfer"
+    {tail "rocket_smoke_nebel" "tail"}
+  }
+
+  {possibleDamageRadius 30}
+
+  ; define rocket_level_3
+  ; Rocket mass 14 - 35kg and Fill mass 1 - 5kg
+  (define "set-rocket-level-3" ;
+    {damage blastwave
+      {energy (+ (/ %weight 20) (+ 5 (* %filler 1)))}
+      {area 0.5 1.00}
+      {ground_interaction_radius 1.25}
+    }
+    {damage add blastwave
+      {energy (+ 2 (+ (/ %weight 20) (* 1 (- 1 (/ %filler %weight)))))}
+      {area 2      (+ (* %weight 0.2) (+ 0 (* 0.1 %filler)))}
+      {ground_interaction_radius 0}    ;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+    }
+    {damage add blastwave
+      {energy (+ 0.55 (- 1 (/ %filler %weight)))}
+      {area (+ (* %weight 0.1) (+ 5.5 (* 0.75 %filler)))      (+ (* %weight 0.11) (+ 9 (* 1 %filler)))}
+      {ground_interaction_radius 0}    ;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+    }
+  )
+
+  ("set-rocket-level-3" weight(31.75) filler(5))
+
+}
