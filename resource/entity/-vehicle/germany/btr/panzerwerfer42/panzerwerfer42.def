@@ -25,7 +25,7 @@
       {Item "ammo ger-mgun api" 1500}
       {Item "weapon ger-mg42" filled {user "mgun"}}
 
-      {Item "ammo ger-150mm-nebelwerfer he" 30}
+      {Item "ammo ger-150mm-nebelwerfer he" 20}
     }
   }
 
