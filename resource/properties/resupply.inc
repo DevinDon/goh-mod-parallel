@@ -288,6 +288,7 @@
   {Item "ger-stg44"  "magazine"    "ammo"  30 {Value  7}}
   {Item "ger-panzershreck" "heat"  "ammo"   1 {Value  8}}
   {Item "ger-20l55"  "ap"          "ammo"  40 {Value 80}}
+  {Item "ger-20l55"  "aphe"          "ammo"  40 {Value 80}}
   {Item "ger-20l55"  "apcr"        "ammo"  40 {Value 80}}
   {Item "ger-20l55"  "he"          "ammo"  40 {Value 80}}
   {Item "ger-30l38"  "apcr"        "ammo"  30 {Value 90}}
