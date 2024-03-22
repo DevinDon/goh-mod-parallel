@@ -1,25 +1,35 @@
 ; armor notes
 ; wheels 0.5mm
 
-("armoredcar_tier1")
 
-("wheel" args "wheelright1")
-("wheel" args "wheelleft1")
 
-("fuel" args "fuel")
-("transmission" args "transmission")
+
+
+
+
+("set-basic-durability" body(175) engine(150) turret(150) mantlet(100) gun(150) track(150) ammo(120))
+("set-basic-armor"      ammo(10))
+
+("set-turret"                repair(15))
+("set-mantlet"               repair(10))
+("set-gun"     thickness(10) repair(30))
+
+("set-body"                  repair(15))
+("set-engine"                repair(10))
+("set-tracks"  thickness(15) repair(20))
+
+("set-wheel" name("wheelright1"))
+("set-wheel" name("wheelleft1"))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("ammo3") type("ammo") repair(3))
+("set-internal-components" name("ammo4") type("ammo") repair(3))
+("set-internal-components" name("fuel")  type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
 
 {volume "fuel" {able {NoWoundDecal 0}}}
 {volume "transmission" {able {NoWoundDecal 0}}}
-
-("tracks" repair(30) thickness(15))
-("gun" repair(30) thickness(10))
-("turret" repair(45))
-
-("ammo" args "ammo1")
-("ammo" args "ammo2")
-("ammo" args "ammo3")
-("ammo" args "ammo4")
 
 {volume "body1"
   {thickness 8

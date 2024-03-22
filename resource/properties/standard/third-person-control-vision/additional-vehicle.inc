@@ -18,6 +18,7 @@
 {"sdkfz234_2" inherit "vehicle custom.armored-car.sdkfz234-2"}
 {"sdkfz234_3" inherit "vehicle custom.armored-car.sdkfz234-3"}
 {"sdkfz234_4" inherit "vehicle custom.armored-car.sdkfz234-4"}
+{"panzerwerfer42" inherit "vehicle custom.spg"}
 
 ; tank
 {"panzer2l" inherit "vehicle custom.tank.panzer2l"}

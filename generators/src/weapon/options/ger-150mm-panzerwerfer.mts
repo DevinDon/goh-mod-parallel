@@ -55,13 +55,6 @@ const options: WeaponOptions = {
     },
   ],
 
-  extra: [
-    `{Burst
-  {min 10}
-  {noaiming}
-}`,
-  ],
-
 };
 
 export default options;
