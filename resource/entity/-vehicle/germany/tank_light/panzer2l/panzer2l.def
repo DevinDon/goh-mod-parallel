@@ -91,15 +91,15 @@
   {Chassis "track"
     ("set-tank-trace" fx("tracks_sm2") step(0.2) length(0.76) boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-maneuverability-of-tank" speed(60) power(360) mass(11700) performance(1.45))
-    ("set-fuel-bag" volume(235) power(360) mass(11700))
+    ("set-fuel-bag" volume(200) power(360) mass(11700))
   }
 
   {Bone "gun_rot"
     {limits -10 20}
-    {speed2 15}
+    {speed2 20}
   }
   {Bone "turret"
-    {speed2 12}
+    {speed2 20}
   }
 
 }

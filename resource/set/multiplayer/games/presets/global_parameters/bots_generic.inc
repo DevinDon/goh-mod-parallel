@@ -4,13 +4,13 @@
   }
   {balancingFactorBonus
     {cp 0.80}
-    {mpStart 1.10}
+    {mpStart 0.8}
     {mpFinish 0.8}
     {payback 0.8}
     {chargeDelay 1.0}  ;// adjusts the inital delay only
     {charge 1.0}    ;// adjusts the interval only
   }
-  {unitScore 1.2}
+  {unitScore 1.0}
 }
 {normal
   {unitset
@@ -18,9 +18,9 @@
   }
   {balancingFactorBonus
     {cp 0.90}
-    {mpStart 1.10}
-    {mpFinish 0.90}
-    {payback 0.90}
+    {mpStart 1.0}
+    {mpFinish 1.0}
+    {payback 1.0}
     {chargeDelay 1.0}  ;// adjusts the inital delay only
     {charge 1.0}    ;// adjusts the interval only
   }
@@ -32,13 +32,13 @@
   }
   {balancingFactorBonus
     {cp 1.25}
-    {mpStart 1.10}
-    {mpFinish 2.25}
-    {payback 3.50}
+    {mpStart 1.2}
+    {mpFinish 1.5}
+    {payback 2.0}
     {chargeDelay 1.0}  ;// adjusts the inital delay only
     {charge 1.0}    ;// adjusts the interval only
   }
-  {unitScore 0.8}
+  {unitScore 1.0}
 }
 {heroic
   {unitset
@@ -46,11 +46,11 @@
   }
   {balancingFactorBonus
     {cp 1.55}
-    {mpStart 1.10}
-    {mpFinish 3.25}
-    {payback 4.00}
+    {mpStart 1.5}
+    {mpFinish 2.0}
+    {payback 3.0}
     {chargeDelay 1.0}  ;// adjusts the inital delay only
     {charge 1.0}    ;// adjusts the interval only
   }
-  {unitScore 0.5}
+  {unitScore 1.0}
 }
