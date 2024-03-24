@@ -31,33 +31,33 @@
   {thickness 20
     {front 30}
     {top 20}         ; Glacis
-    {rear 5.5}
-    {bottom 5.5}
+    {rear 10}
+    {bottom 10}
   }
 }
 {volume "body2"      ; Superstructure
   {thickness 20
     {front 30}
     {top 10}
-    {bottom 5.5}
+    {bottom 10}
   }
 }
 {volume "engine"
   {thickness 20
-    {front 5.5}
+    {front 10}
     {top 10}
-    {bottom 5.5}
+    {bottom 10}
   }
 }
 {volume "turret1"
   {thickness 20
-    {front 30}
+    {front 35}
     {top 10}
-    {bottom 5.5}
+    {bottom 10}
   }
 }
 {volume "turret2"
-  {thickness 30}
+  {thickness 35}
 }
 {volume "mantlet"
   {thickness 50}

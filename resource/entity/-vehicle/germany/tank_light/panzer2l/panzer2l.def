@@ -46,7 +46,7 @@
 
       {Item "ammo ger-mgun api" 1750}
 
-      {Item "ammo ger-30l38 apcr" 320}
+      {Item "ammo ger-30l38 apcr" 400}
     }
   }
 
@@ -63,7 +63,7 @@
         {ByLinearSpeed    0.25} ; km/h
         {MaxAngularSpeed  5.00} ; deg/s
         {ByAngularSpeed   0.35} ; deg/s
-        {DisorderTime     0.20} ; s
+        {DisorderTime     0.75} ; s
         {OrderTime        2.25} ; s
       }
     }
@@ -81,7 +81,7 @@
         {ByLinearSpeed    0.40} ; km/h
         {MaxAngularSpeed 30.00} ; deg/s
         {ByAngularSpeed   0.50} ; deg/s
-        {DisorderTime     0.60} ; s
+        {DisorderTime     0.75} ; s
         {OrderTime        1.00} ; s
       }
     }
