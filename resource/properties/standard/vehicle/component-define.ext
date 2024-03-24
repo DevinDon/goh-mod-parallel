@@ -75,39 +75,39 @@
     }
     {component "shield_cover"
       {health
-        {hp 400}
+        {hp %ammo}
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
     {component tag "wheel"
       {health
-        {hp 125}
+        {hp (* %ammo 0.5)}
       }
       {armor_damage_modifier 5}
     }
     {component tag "glass"
       {health
-        {hp 60}
-        {hp_broken 60}  ; destroys component and cannot be repaired
+        {hp (* %ammo 0.5)}
+        {hp_broken (* %ammo 0.5)}  ; destroys component and cannot be repaired
       }
     }
     {component tag "lamp"
       {health
-        {hp 60}
-        {hp_broken 60}  ; destroys component and cannot be repaired
+        {hp (* %ammo 0.5)}
+        {hp_broken (* %ammo 0.5)}  ; destroys component and cannot be repaired
       }
     }
     {component tag "shield"
       {health
-        {hp 100}
-        ; {hp_broken 100}  ; destroys component and cannot be repaired
+        {hp %ammo}
+        {hp_broken %ammo}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
     {component tag "cut_part"
       {health
-        {hp 100}
-        {hp_broken 100}  ; destroys component and cannot be repaired
+        {hp %ammo}
+        {hp_broken %ammo}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
