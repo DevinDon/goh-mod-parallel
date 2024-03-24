@@ -156,10 +156,10 @@ Purchases["late.ger"] = {
         {priority = 1.0, type = {"Class3", "Armored", "AA",}, unit = "sdkfz222a"},
         {priority = 1.0, type = {"Class1", "Armored", "AA",}, unit = "sdkfz231"},
 
-        {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",}, unit = "blitz3_6"},
-        {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Ammo",}, unit = "blitz3_6_art_ammo"},
-        {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Fuel",}, unit = "blitz3_6_fuel"},
-        {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Engineer",}, unit = "blitz3_6_engineering"},
+        -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",}, unit = "blitz3_6"},
+        -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Ammo",}, unit = "blitz3_6_art_ammo"},
+        -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Fuel",}, unit = "blitz3_6_fuel"},
+        -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Engineer",}, unit = "blitz3_6_engineering"},
         --]]
 
       -- Half Tracks
