@@ -7,7 +7,7 @@
     {component "body"
       {health
         {hp %body}
-        {hp_broken (+ 1500 (* %body 5))}  ; destroys component and cannot be repaired
+        {hp_broken (* %body 5)}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
@@ -27,7 +27,7 @@
     {component "engine"
       {health
         {hp %engine}
-        {hp_broken (* %engine 1.5)}  ; destroys component and cannot be repaired
+        {hp_broken %engine}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
@@ -88,47 +88,47 @@
     {component tag "glass"
       {health
         {hp 60}
-        {hp_broken 1}  ; destroys component and cannot be repaired
+        {hp_broken 60}  ; destroys component and cannot be repaired
       }
     }
     {component tag "lamp"
       {health
         {hp 60}
-        {hp_broken 1}  ; destroys component and cannot be repaired
+        {hp_broken 60}  ; destroys component and cannot be repaired
       }
     }
     {component tag "shield"
       {health
         {hp 100}
-        {hp_broken 1}  ; destroys component and cannot be repaired
+        {hp_broken 100}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
     {component tag "cut_part"
       {health
         {hp 100}
-        {hp_broken 1}  ; destroys component and cannot be repaired
+        {hp_broken 100}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
     {component tag "fuel"
       {health
         {hp %ammo}
-        {hp_broken 1}  ; destroys component and cannot be repaired
+        {hp_broken %ammo}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
     {component tag "ammo"
       {health
         {hp %ammo}
-        {hp_broken 1}  ; destroys component and cannot be repaired
+        {hp_broken %ammo}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
     {component tag "rocket"
       {health
         {hp 100}
-        {hp_broken 1}  ; destroys component and cannot be repaired
+        {hp_broken 100}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
@@ -828,32 +828,32 @@
     {component tag "glass"
       {health
         {hp 60}
-        {hp_broken 1}  ;// destroys component and cannot be repaired
+        {hp_broken 60}  ;// destroys component and cannot be repaired
       }
     }
     {component tag "shield"
       {health
         {hp 100}
-        {hp_broken 1}  ;// destroys component and cannot be repaired
+        {hp_broken 100}  ;// destroys component and cannot be repaired
       }
     }
     {component tag "cut_part"
       {health
         {hp 100}
-        {hp_broken 1}  ;// destroys component and cannot be repaired
+        {hp_broken 100}  ;// destroys component and cannot be repaired
       }
     }
     {component tag "fuel"
       {health
         {hp 100}
-        {hp_broken 1}  ;// destroys component and cannot be repaired
+        {hp_broken 100}  ;// destroys component and cannot be repaired
       }
       {armor_damage_modifier 3}
     }
     {component tag "ammo"
       {health
         {hp 100}
-        {hp_broken 1}  ;// destroys component and cannot be repaired
+        {hp_broken 100}  ;// destroys component and cannot be repaired
       }
       {armor_damage_modifier 3}
     }
