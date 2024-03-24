@@ -57,6 +57,7 @@
       {Weapon "weapon ger-30mm-mk103-l38" filling "ammo ger-30l38 apcr" 80}
       {Gunner "gunner"}
       {Charger "charger"}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed  10.00} ; km/h
         {ByLinearSpeed    0.25} ; km/h
@@ -67,12 +68,14 @@
       }
     }
     {Place "mgun"
+      {RestoreIKAfterAim}
       {Type "coaxial"}
       {Weapon "weapon ger-mg42" filled}
       {Foresight "foresight3"}
       {Gunner "gunner"}
       {Charger "charger"}
       {Basic}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
         {ByLinearSpeed    0.40} ; km/h
