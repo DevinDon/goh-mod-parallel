@@ -1,6 +1,24 @@
 import type { OvermatchTables } from './type.mjs';
 
 export const ger30mmOvermatchTables: OvermatchTables = {
+  'ger-30mm-ap': {
+    type: 'OvermatchCalibre',
+    lines: [
+      [ 0, 1.0, 0.00 ],
+      [ 20, 1.174, -0.005 ],
+      [ 30, 1.301, -0.038 ],
+      [ 40, 1.503, -0.038 ],
+      [ 50, 1.946, -0.029 ],
+      [ 55, 2.221, -0.039 ],
+      [ 60, 2.575, -0.053 ],
+      [ 65, 3.062, -0.053 ],
+      [ 70, 3.783, -0.053 ],
+      [ 75, 4.965, -0.053 ],
+      [ 80, 7.29, -0.053 ],
+      [ 85, 14.05, -0.053 ],
+      [ 90, 99.0000, 0.00000 ],
+    ],
+  },
   'ger-30mm-apcr': {
     type: 'OvermatchCalibre',
     lines: [

@@ -25,15 +25,15 @@
 
   {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
-  {AimingTolerance 3} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
+  {AimingTolerance 0.1} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
   {SpreadTolerance 0.1} ; 瞄准到一定精度就可以开火
   {ZeroingAccuracy 0.95 0.9 0.85 0.8 0.75} ; 归零精度？不确定
   {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
   {DisableRicochet 0} ; 是否禁用跳弹模式
   ; 不启用曲射模式
 
-  {RechargeTime 9} ; 装填时间（秒）
-  {RecoveryTime 0.158} ; 短射间隔（秒）, 适用于弹链
+  {RechargeTime 8} ; 装填时间（秒）
+  {RecoveryTime 0.143} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
 
   {Burst
@@ -47,11 +47,11 @@
   {Parameters "apcr"
     {CursorReloading "gun_apcr"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 275} ; AI 最长射击距离 m
-    {MaxRange 275} ; 玩家最长射击距离 m
+    {AimRange 300} ; AI 最长射击距离 m
+    {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 960} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 111} {500 12} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {100 111} {500 45} {1000 0}} ; 穿深表
     {MinimumDamageModifier 30} ; 弹种对装甲的击穿伤害
     {HealthDamage 300} ; 弹种对人员的击穿伤害
     {Spreading
@@ -82,8 +82,8 @@
   {Parameters "he"
     {CursorReloading "gun_he"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 275} ; AI 最长射击距离 m
-    {MaxRange 275} ; 玩家最长射击距离 m
+    {AimRange 300} ; AI 最长射击距离 m
+    {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 860} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     ; 无穿深表配置

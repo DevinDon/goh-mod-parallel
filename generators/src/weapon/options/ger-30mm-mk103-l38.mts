@@ -19,11 +19,11 @@ const options: WeaponOptions = {
   calibre: 30,
   syncedProjectiles: true,
 
-  aimingTolerance: 3,
+  aimingTolerance: 0.1,
   spreadTolerance: 0.1,
 
-  rechargeTime: 9,
-  recoveryTime: 60 / 380,
+  rechargeTime: 8,
+  recoveryTime: 60 / 420,
 
   automatic: true,
 
@@ -43,13 +43,13 @@ const options: WeaponOptions = {
     {
       name: 'apcr',
       minRange: 0,
-      aimRange: 275,
-      maxRange: 275,
+      aimRange: 300,
+      maxRange: 300,
       speed: 960,
       gravity: 5,
       projectile: {
         nearest: 111,
-        farthest: 12,
+        farthest: 45,
       },
       damageToArmor: 30,
       damageToHuman: 300,
@@ -69,8 +69,8 @@ const options: WeaponOptions = {
     {
       name: 'he',
       minRange: 0,
-      aimRange: 275,
-      maxRange: 275,
+      aimRange: 300,
+      maxRange: 300,
       speed: 860,
       gravity: 5,
       damageToArmor: 75,

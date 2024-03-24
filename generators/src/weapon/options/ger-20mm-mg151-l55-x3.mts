@@ -21,7 +21,7 @@ const options: WeaponOptions = {
   calibre: 20,
   syncedProjectiles: true,
 
-  aimingTolerance: 0.5,
+  aimingTolerance: 0.1,
   spreadTolerance: 0.1,
 
   rechargeTime: 20,
@@ -53,8 +53,8 @@ const options: WeaponOptions = {
         nearest: 56,
         farthest: 31,
       },
-      damageToArmor: 50,
-      damageToHuman: 500,
+      damageToArmor: 40,
+      damageToHuman: 400,
       spreading: {
         radiusTable: {
           nearest: 0.29,

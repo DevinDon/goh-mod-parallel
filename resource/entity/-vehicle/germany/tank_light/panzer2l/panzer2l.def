@@ -42,13 +42,11 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo ger-mgun api" 1900}
+      {Item "nbks grenade" 3}
 
-      {Item "nbks grenade" 2}
+      {Item "ammo ger-mgun api" 1750}
 
-      {Item "ammo ger-37l45 aphe" 39}
-      {Item "ammo ger-37l45 apcr"  9}
-      {Item "ammo ger-37l45 he"   69}
+      {Item "ammo ger-30l38 apcr" 320}
     }
   }
 
@@ -56,7 +54,7 @@
     {RestoreIKTime 2}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-37mm-kwk36-l45" filling "ammo ger-37l45 aphe" 1}
+      {Weapon "weapon ger-30mm-mk103-l38" filling "ammo ger-30l38 apcr" 80}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion
