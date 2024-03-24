@@ -44,6 +44,41 @@
 
   {Automatic} ; 自动武器
 
+  {Parameters "aphe"
+    {CursorReloading "gun_aphe"} ; 装填图标
+    {MinRange 0} ; 最短射击距离 m
+    {AimRange 300} ; AI 最长射击距离 m
+    {MaxRange 300} ; 玩家最长射击距离 m
+    {Speed 860} ; 炮弹速度
+    {Gravity 5} ; 炮弹重力
+    {ProjectileDamageTable {100 100} {500 59} {1000 0}} ; 穿深表
+    {MinimumDamageModifier 50} ; 弹种对装甲的击穿伤害
+    {HealthDamage 500} ; 弹种对人员的击穿伤害
+    {Spreading
+      {RadiusTable {0 0} {100 0.4} {500 2.1} {1000 6.30}} ; 散布
+      {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
+      {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+      {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.75} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    }
+    {OvermatchCalibre
+      {0  1.0000 0.0000}
+      {20 1.1740 -0.005}
+      {30 1.3010 -0.038}
+      {40 1.5030 -0.038}
+      {50 1.9460 -0.029}
+      {55 2.2210 -0.039}
+      {60 2.5750 -0.053}
+      {65 3.0620 -0.053}
+      {70 3.7830 -0.053}
+      {75 4.9650 -0.053}
+      {80 7.2900 -0.053}
+      {85 14.050 -0.053}
+      {90 99.000 0.0000}
+    }
+    ; 无防空炮配置
+  }
+
   {Parameters "apcr"
     {CursorReloading "gun_apcr"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m

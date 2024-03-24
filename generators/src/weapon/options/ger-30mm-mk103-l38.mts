@@ -41,6 +41,32 @@ const options: WeaponOptions = {
 
   bullets: [
     {
+      name: 'aphe',
+      minRange: 0,
+      aimRange: 300,
+      maxRange: 300,
+      speed: 860,
+      gravity: 5,
+      projectile: {
+        nearest: 100,
+        farthest: 59,
+      },
+      damageToArmor: 50,
+      damageToHuman: 500,
+      spreading: {
+        radiusTable: {
+          nearest: 0.4,
+          farthest: 2.1,
+          factor: 3.0,
+        },
+        burstRecoveryTime: 0.1,
+        burstAccuracy: 100,
+        spreadPower: 1.25,
+        spreadXYRatio: 0.75,
+      },
+      overmatch: 'ger-30mm-ap',
+    },
+    {
       name: 'apcr',
       minRange: 0,
       aimRange: 300,
