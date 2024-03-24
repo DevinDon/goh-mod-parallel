@@ -18,7 +18,7 @@
 ("set-engine"               repair(20))
 ("set-tracks" thickness(15) repair(15))
 
-("set-shield" name("shield1") thickness(20))
+("set-shield" name("shield1") thickness(50))
 
 ("set-internal-components" name("ammo1") type("ammo") repair(3))
 ("set-internal-components" name("ammo2") type("ammo") repair(3))
@@ -60,5 +60,5 @@
   {thickness 30}
 }
 {volume "mantlet"
-  {thickness 30}
+  {thickness 50}
 }
