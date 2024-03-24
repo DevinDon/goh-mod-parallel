@@ -100,7 +100,7 @@
     {component tag "shield"
       {health
         {hp 100}
-        {hp_broken 100}  ; destroys component and cannot be repaired
+        ; {hp_broken 100}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
