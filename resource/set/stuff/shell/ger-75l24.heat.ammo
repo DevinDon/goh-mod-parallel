@@ -1,4 +1,4 @@
-{from "pattern heatc"
+{from "pattern heat"
 
   {tag "shell size2 size2_heat_shell heat_low"}
 
@@ -10,6 +10,6 @@
     {tail "shell_tracer_75_heat" "tail"}
   }
 
-  ("he_level_2" weight(6.44) filler(0.255))
+  ("he_level_2" weight(6.44) filler(0.1))
 
 }
