@@ -15,6 +15,28 @@
 {"mp/inf/late/mgun-1"     ("set-soldier" cost(40))}
 {"mp/inf/late/mgun-2"     ("set-soldier" cost(10))}
 
+; 步兵班
+; args = name cd ci crew1 crew2 period tags group button
+(define "set-soldier-squad"
+  {"%name(inf)"
+    {charge
+      {delay %cd}
+      {interval %ci}
+    }
+    {content "mp/inf/%period/%crew1 mp/inf/%period/%crew2"}
+    {tags "all infantry inf %tags %period"}
+    {group "%group"}
+    {button "%button"}
+    {level 1}
+    {squad_cost_factor 1}
+  }
+)
+
+; 步兵班 2 至 5 人
+("set-soldier-squad" name(soldier-antitank-squad) period(late) cd(0) ci(30) crew1(antitank-1:1) crew2(antitank-2:2) group(squad) button(inf2) tags())
+("set-soldier-squad" name(soldier-engineer-squad) period(late) cd(0) ci(30) crew1(engineer-1:1) crew2(engineer-2:2) group(squad) button(inf2) tags(engineer))
+("set-soldier-squad" name(soldier-mgun-squad)     period(late) cd(0) ci(30) crew1(mgun-1:1)     crew2(mgun-2:2)     group(squad) button(inf2) tags())
+
 ; 步兵排
 ; args = name period doctrine cd ci crew1 crew2 group button tags
 (define "set-soldier-platoon"
@@ -38,25 +60,3 @@
 ("set-soldier-platoon" name(soldier-antitank-platoon) period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(antitank-1:4) crew2(antitank-2:8) group(platoon) button(inf1) tags())
 ("set-soldier-platoon" name(soldier-engineer-platoon) period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(engineer-1:4) crew2(engineer-2:8) group(platoon) button(inf1) tags(engineer))
 ("set-soldier-platoon" name(soldier-mgun-platoon)     period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(mgun-1:4)     crew2(mgun-2:8)     group(platoon) button(inf1) tags())
-
-; 步兵班
-; args = name cd ci crew1 crew2 period tags group button
-(define "set-soldier-squad"
-  {"%name(inf)"
-    {charge
-      {delay %cd}
-      {interval %ci}
-    }
-    {content "mp/inf/%period/%crew1 mp/inf/%period/%crew2"}
-    {tags "all infantry inf %tags %period"}
-    {group "%group"}
-    {button "%button"}
-    {level 1}
-    {squad_cost_factor 1}
-  }
-)
-
-; 步兵班 2 至 5 人
-("set-soldier-squad" name(soldier-antitank-squad) period(late) cd(0) ci(30) crew1(antitank-1:1) crew2(antitank-2:2) group(squad) button(inf2) tags())
-("set-soldier-squad" name(soldier-engineer-squad) period(late) cd(0) ci(30) crew1(engineer-1:1) crew2(engineer-2:2) group(squad) button(inf2) tags(engineer))
-("set-soldier-squad" name(soldier-mgun-squad)     period(late) cd(0) ci(30) crew1(mgun-1:1)     crew2(mgun-2:2)     group(squad) button(inf2) tags())
