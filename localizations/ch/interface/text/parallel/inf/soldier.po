@@ -36,6 +36,14 @@ msgctxt "desc/human/mp/inf/late/mgun-2"
 msgid   "Machine Gun [Inf]"
 msgstr  "机枪副射手 [无尽军团]"
 
+msgctxt "desc/human/mp/inf/late/officer-1"
+msgid   "Officer [Inf]"
+msgstr  "指挥官 [无尽军团]"
+
+msgctxt "desc/human/mp/inf/late/officer-2"
+msgid   "Officer [Inf]"
+msgstr  "参谋长 [无尽军团]"
+
 # 步兵班
 msgctxt "desc/squad/soldier-antitank-squad(inf)"
 msgid   "Anti Tank Squad 3 Soldiers"
@@ -48,6 +56,10 @@ msgstr  "工程班 3 人"
 msgctxt "desc/squad/soldier-mgun-squad(inf)"
 msgid   "Machine Gun Squad 3 Soldiers"
 msgstr  "机枪班 3 人"
+
+msgctxt "desc/squad/soldier-officer-squad(inf)"
+msgid   "Officer [Inf]"
+msgstr  "指挥小队 2 人 [无尽军团]"
 
 # 步兵排
 msgctxt "desc/squad/soldier-antitank-platoon(inf)"
