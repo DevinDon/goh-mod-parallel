@@ -42,8 +42,6 @@
       {Gunner "gunner"}
       {Charger "charger"}
       {Rotate}
-      {Basic}
-      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed  7.00} ; km/h
         {ByLinearSpeed   0.25} ; km/h
@@ -54,7 +52,6 @@
       }
     }
     {Place "mgun"
-      {RestoreIKAfterAim}
       {Type "aa"}
       {Foresight "foresight3"}
       {Gunner "commander"}

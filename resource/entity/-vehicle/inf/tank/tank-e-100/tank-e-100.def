@@ -33,20 +33,19 @@
   {Extender "inventory"
     {Weapon "mgun" {mask "mountable"}}
     {Box
-      {Size 12 16}
+      {Size 12 18}
       {Weight 2000}
       {Item "repair_kit" 20}
 
-      {Item "ammo ger-mgun api" 4750}
-      {Item "weapon ger-mg42" filled {user "mgun"}}
+      {Item "ammo ger-30l38 he" 1500}
+      {Item "weapon ger-30mm-mk108-l19" filling "ammo ger-30l38 he" 100 {user "mgun"}}
 
       {Item "ammo ger-150l38 apcbche" 19}
       {Item "ammo ger-150l38 heat" 5}
       {Item "ammo ger-150l38 he" 19}
 
-      {Item "ammo ger-75l43 apcbche" 39}
-      {Item "ammo ger-75l43 apcr" 5}
-      {Item "ammo ger-75l43 he" 39}
+      {Item "ammo ger-75l24 heat" 39}
+      {Item "ammo ger-75l24 he" 39}
     }
   }
 
@@ -57,8 +56,6 @@
       {Weapon "weapon ger-150mm-kwk44-l38" filling "ammo ger-150l38 apcbche" 1}
       {Gunner "gunner"}
       {Charger "charger"}
-      {Basic}
-      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed  7.00} ; km/h
         {ByLinearSpeed   0.25} ; km/h
@@ -68,14 +65,13 @@
         {OrderTime       3.00} ; s
       }
     }
-    {Place "gun2"
+    {Place "gun1"
       {RestoreIKAfterAim}
-      {Type "secondary-gun"}
-      {Weapon "weapon ger-75mm-kwk40-l43" filling "ammo ger-75l43 apcbche" 1}
+      {Weapon "weapon ger-75mm-kwk37-l24" filling "ammo ger-75l24 heat" 1}
       {Foresight "foresight2"}
       {Gunner "gunner3"}
       {Charger "charger"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed  7.00} ; km/h
@@ -87,13 +83,12 @@
       }
     }
     {Place "mgun"
-      {RestoreIKAfterAim}
       {Type "aa"}
       {gunner "commander"}
       {charger "commander"}
       {LinkBone "mgun_rot"}
       {LinkAnimation "off"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h

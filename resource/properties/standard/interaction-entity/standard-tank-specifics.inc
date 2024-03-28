@@ -1,4 +1,8 @@
 {"e-25 tank"
+  {on "add_weapon_sound" overload
+    ("Cannon_75to76mm_HV")
+    ("Autocannon_s1")
+  }
   {on "add_movement_sound" overload
     {link_sound "engine_start"  "vehicle/engine/pz4/start"}
     {link_sound "engine_stop"   "vehicle/engine/pz4/stop"}
@@ -17,16 +21,25 @@
 {"e-50 tank"
   ("pz5_sound")
   {on "add_weapon_sound" overload
-    ("MG34")
+    ("Cannon_85to100mm_HV")
+    ("MG42")
   }
 }
 
 {"e75 tank"
   ("pz6b_sound")
+  {on "add_weapon_sound" overload
+    ("Cannon_105to130mm")
+    ("MG42")
+  }
 }
 
 {"e-100 tank"
   ("pz6b_sound")
+  {on "add_weapon_sound" overload
+    ("Cannon_150to210mm")
+    ("Autocannon_s1")
+  }
   {on "commander_hatch_open" overload
     {ani_wind "open" end}
     {ani_play "mgun_aa" +1.0 resume}

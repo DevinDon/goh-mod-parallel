@@ -47,7 +47,6 @@
       }
     }
     {Place "mgun"
-      {RestoreIKAfterAim}
       {Type "main"}
       {Gunner "commander"}
       {Charger "commander"}
