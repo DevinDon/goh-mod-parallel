@@ -12,17 +12,17 @@ msgstr ""
 "Language-Team: \n"
 
 # AI 系列坦克
-msgctxt "desc/entity/tank-ai-bomb"
-msgid   "AI Bomb Remote Control Tank"
-msgstr  "智能遥控炸弹坦克"
+msgctxt "desc/entity/tank-ai-robot"
+msgid   "AI Robot Remote Control Tank"
+msgstr  "智能遥控坦克"
 
-msgctxt "info/special/tank-ai-bomb"
+msgctxt "info/special/tank-ai-robot"
 msgid   "<c(33c0ee)>IInfinity Series Light Tank</c>"
 msgstr  "<c(33c0ee)>智能系列轻型坦克</c>"
 
-msgctxt "desc/squad/tank-ai-bomb"
-msgid   "<c(03A9F4)>( I )</c> AI Bomb Remote Control Tank"
-msgstr  "<c(03A9F4)>( I )</c> 智能遥控炸弹坦克"
+msgctxt "desc/squad/tank-ai-robot"
+msgid   "<c(03A9F4)>( I )</c> AI Robot Remote Control Tank"
+msgstr  "<c(03A9F4)>( I )</c> 智能遥控坦克"
 
 # E 系列坦克
 msgctxt "desc/entity/tank-e-25"

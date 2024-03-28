@@ -1559,7 +1559,7 @@
   }
 }
 
-{"custom.tank.ai-bomb"
+{"custom.tank.ai-robot"
   {clip
     {viewMin     -15}  ; camera rotate upward limit (looking down)
     {viewMax      35}  ; camera rotate downward limit (looking up)

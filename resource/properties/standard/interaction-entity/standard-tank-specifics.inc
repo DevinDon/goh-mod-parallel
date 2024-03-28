@@ -1,4 +1,4 @@
-{"tank-ai-bomb"
+{"tank-ai-robot"
   ("sdkfz303_sound")
   {on "crew_stunned" overload}
   {on "crew_revive" overload}
