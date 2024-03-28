@@ -22,7 +22,7 @@ const options: WeaponOptions = {
   aimingTolerance: 0.05,
   spreadTolerance: 0.5,
 
-  rechargeTime: 5,
+  rechargeTime: 4,
   recoveryTime: 1,
 
   automatic: false,
