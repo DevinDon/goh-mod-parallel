@@ -91,7 +91,142 @@
 
 ; custom override component durability
 (define "general_durability"
-  ("set-basic-durability" body(%body) engine(%engine) turret(%turret) mantlet(%mantlet) gun(%gun) track(%track) ammo(%ammo))
+  {perks
+    {component "body"
+      {health
+        {hp %body}
+        {hp_broken (* %body 0.5)}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+    }
+    {component "bodyback"
+      {health
+        {hp %body}
+      }
+      ("global_damage_mod")
+    }
+    {component "cabin"
+      {health
+        {hp %body}
+        {hp_broken %body}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+    }
+    {component "engine"
+      {health
+        {hp %engine}
+        {hp_broken %engine}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+    }
+    {component "mantlet"
+      {health
+        {hp %mantlet}
+      }
+      ("global_damage_mod")
+    }
+    {component "turret"
+      {health
+        {hp %turret}
+      }
+      ("global_damage_mod")
+    }
+    {component "aux_turret1"
+      {health
+        {hp %turret}
+      }
+      ("global_damage_mod")
+    }
+    {component "aux_turret2"
+      {health
+        {hp %turret}
+      }
+      ("global_damage_mod")
+    }
+    {component "gun"
+      {health
+        {hp %gun}
+      }
+      ("global_damage_mod")
+    }
+    {component "trackleft"
+      {health
+        {hp %track}
+      }
+      ("global_damage_mod")
+    }
+    {component "trackright"
+      {health
+        {hp %track}
+      }
+      ("global_damage_mod")
+    }
+    {component "shield_cover"
+      {health
+        {hp 400}
+      }
+      ("global_damage_mod")
+    }
+    {component tag "wheel"
+      {health
+        {hp 125}
+      }
+      {armor_damage_modifier 5}
+    }
+    {component tag "glass"
+      {health
+        {hp 60}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+    }
+    {component tag "lamp"
+      {health
+        {hp 60}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+    }
+    {component tag "shield"
+      {health
+        {hp 100}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+    }
+    {component tag "cut_part"
+      {health
+        {hp 100}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+    }
+    {component tag "fuel"
+      {health
+        {hp %ammo}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+    }
+    {component tag "ammo"
+      {health
+        {hp %ammo}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+    }
+    {component tag "rocket"
+      {health
+        {hp 100}
+        {hp_broken 1}  ;// destroys component and cannot be repaired
+      }
+      ("global_damage_mod")
+    }
+    {component tag "transmission"
+      {health
+        {hp 50}
+      }
+      ("global_damage_mod")
+    }
+  }
 )
 
 (define "cannon_durability"

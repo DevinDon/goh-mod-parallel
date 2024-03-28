@@ -1,0 +1,15 @@
+{bullet
+
+  {tag "flame"}
+
+  {entity "sturmtiger_ammo"}
+  {mass 500}
+
+  {inventory
+    {size 10 3}
+    {weight 500}
+  }
+
+  ("set-explosive" weight(500) filler(500))
+
+}

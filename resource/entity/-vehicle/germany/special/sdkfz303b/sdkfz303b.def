@@ -73,7 +73,7 @@
 
   {Weaponry
     {Place "explosive"
-      {Weapon "weapon goliath" filling "ammo goliath 100kg" 1}
+      {Weapon "weapon bomb" filling "ammo bomb 100kg" 1}
       {Gunner "driver"}
       {Charger "driver"}
       {Rotate}
