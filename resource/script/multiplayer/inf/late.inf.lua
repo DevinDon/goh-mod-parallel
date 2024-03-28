@@ -13,6 +13,7 @@ Purchases["late.inf"] = {
       {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-mgun-platoon(inf)"},
       -- 装甲车
       -- 坦克
+      {priority = 1.5, type = {"Class", "Vehicle", "Unarmed", "Support", "Engineer",}, unit = "tank-ai-bomb"},
       {priority = 1.0, type = {"Class1", "Tank", "Light", "AT",}, unit = "tank-e-25"},
       {priority = 2.0, type = {"Class2", "Tank", "Medium",},      unit = "tank-e-50"},
       {priority = 2.0, type = {"Class3", "Tank", "Heavy",},       unit = "tank-e-75"},

@@ -17,17 +17,20 @@
   {squad_cost_factor 1}
   {round_multiple 5.0}
 )
+{"tank-ai-bomb"
+  ("set-standard-vehicle" vehicle(tank-ai-bomb) cost(100) cd(60) ci(30) cw(0) cp(10) tags(light)  period(late) crew1(engineer-1:0) crew2(engineer-2:0) group(bomb)   button(tanks))
+}
 
 {"tank-e-25"
-  ("set-standard-vehicle" vehicle(tank-e-25) cost(500)  cd(300)  ci(120) cw(4) cp(0) tags(light)  period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(light3)  button(tanks))
+  ("set-standard-vehicle" vehicle(tank-e-25) cost(500)  cd(300)  ci(120) cw(4) cp(0) tags(light)  period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(light)  button(tanks))
 }
 
 {"tank-e-50"
-  ("set-standard-vehicle" vehicle(tank-e-50) cost(1000) cd(600)  ci(240) cw(6) cp(0) tags(medium) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(medium3) button(tanks))
+  ("set-standard-vehicle" vehicle(tank-e-50) cost(1000) cd(600)  ci(240) cw(6) cp(0) tags(medium) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(medium) button(tanks))
 }
 
 {"tank-e-75"
-  ("set-standard-vehicle" vehicle(tank-e-75) cost(1500) cd(1000) ci(480) cw(8) cp(0) tags(heavy)  period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(heavy2)  button(tanks))
+  ("set-standard-vehicle" vehicle(tank-e-75) cost(1500) cd(1000) ci(480) cw(8) cp(0) tags(heavy)  period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(heavy)  button(tanks))
 }
 
 ; 学说载具

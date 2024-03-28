@@ -3,7 +3,7 @@
   (include "/properties/standard/vehicle/tank-config.ext")
   (include "/properties/selection/vehicle_small.inc" scale(0.9))
 
-  {Extension "sdkfz303b.mdl"}
+  {Extension "/entity/-vehicle/germany/special/sdkfz303b/sdkfz303b.mdl"}
 
   {Props "armored_car" "vision_lev00" "tank" "goliath" "detect_tank_light"}
 
@@ -80,11 +80,11 @@
     }
   }
 
-  {Mass 365}
+  {Mass 765}
   {Chassis "track"
     ("set-tank-trace" fx("tracks_sm2") step(0.3) length(0.28) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(50) power(20) mass(365) performance(1.9))
-    ("set-fuel-bag" volume(10) power(20) mass(365))
+    ("set-maneuverability-of-tank" speed(60) power(30) mass(765) performance(1.9))
+    ("set-fuel-bag" volume(10) power(30) mass(765))
   }
 
   {Bone "gun_rot"

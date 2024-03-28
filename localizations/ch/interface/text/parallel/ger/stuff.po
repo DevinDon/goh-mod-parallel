@@ -19,20 +19,3 @@ msgstr  "炸药 3 根"
 msgctxt "desc/stuff/dynamite-x7"
 msgid   "Dynamite 7 Sticks"
 msgstr  "炸药 7 根"
-
-# 炸弹
-msgctxt "desc/weapon/bomb"
-msgid   "Bomb"
-msgstr  "炸弹"
-
-msgctxt "desc/ammo/bomb 100kg"
-msgid   "100kg Bomb"
-msgstr  "100kg 炸弹"
-
-msgctxt "desc/ammo/bomb 500kg"
-msgid   "500kg Bomb"
-msgstr  "500kg 炸弹"
-
-msgctxt "desc/ammo/bomb 1000kg"
-msgid   "1000kg Bomb"
-msgstr  "1000kg 炸弹"
