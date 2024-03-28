@@ -293,12 +293,36 @@
   ("set-spotting" radius(14.14))
 }
 
-; standard-vision-noise-detection 环境噪音检测视角 1
+; standard-vision-noise-detection 环境噪音检测视角
 {"standard-vision-noise-detection"
   {uncover   5}
   {h_fov   360} ; 水平
   {v_fov   180} ; 垂直
   ("set-hearing-spotting")
+}
+
+; standard-vision-short-range-radar-detection 短距雷达检测视角
+{"standard-vision-short-range-radar-detection"
+  {uncover   5}
+  {h_fov   360} ; 水平
+  {v_fov   180} ; 垂直
+  ("set-spotting" radius(5))
+}
+
+; standard-vision-medium-range-radar-detection 中距雷达检测视角
+{"standard-vision-medium-range-radar-detection"
+  {uncover   5}
+  {h_fov   360} ; 水平
+  {v_fov   180} ; 垂直
+  ("set-spotting" radius(7))
+}
+
+; standard-vision-long-range-radar-detection 远距雷达检测视角
+{"standard-vision-long-range-radar-detection"
+  {uncover   5}
+  {h_fov   360} ; 水平
+  {v_fov   180} ; 垂直
+  ("set-spotting" radius(9))
 }
 
 ; standard-vision-none 无视角

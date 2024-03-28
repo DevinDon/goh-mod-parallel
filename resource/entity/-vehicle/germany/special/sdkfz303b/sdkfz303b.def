@@ -1,0 +1,97 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/selection/vehicle_small.inc" scale(0.9))
+
+  {Extension "sdkfz303b.mdl"}
+
+  {Props "armored_car" "vision_lev00" "tank" "goliath" "detect_tank_light"}
+
+  {PatherId "goliath"}
+  {Targetclass "car"}
+  {TargetSelector "tank_light"}
+  {Collider "car"}
+
+  {volume "body1"
+    {thickness 10}
+  }
+  {volume "body2"
+    {thickness 10}
+  }
+  {volume "engine"
+    {thickness 2}
+  }
+
+  ("set-basic-durability" body(200) engine(200) turret(100) mantlet(100) gun(100) track(200) ammo(200))
+  ("set-basic-armor"      ammo(30))
+
+  ("set-body"                 repair(10))
+  ("set-engine"               repair(10))
+  ("set-tracks" thickness(5)  repair(10))
+
+  ; set visors
+  {Sensor
+    ; visor main
+    {Visor "main"
+      {Bone "foresight1"}
+      {Vision "standard-vision-none"}
+    }
+    ; visor around
+    {Visor "around"
+      {Bone "visor1"}
+      {Vision "standard-vision-none"}
+    }
+    ; visor driver
+    {Visor "driver"
+      {Bone "visor2"}
+      {Vision "standard-vision-none"}
+    }
+    ; visor noise
+    {Visor "standard-visor-hearing"
+      {Bone "hearing"}
+      {Vision "standard-vision-none"}
+    }
+    ; visor radar
+    {Visor "standard-visor-radar"
+      {Bone "radar"}
+      {Vision "standard-vision-short-range-radar-detection"}
+    }
+  }
+
+  {Placer
+    {Crew 0}
+    {Place "driver" remove}
+  }
+
+  {Extender "inventory"
+    {Box
+      {Size 3 2}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+    }
+  }
+
+  {Weaponry
+    {Place "explosive"
+      {Weapon "weapon goliath" filling "ammo goliath 100kg" 1}
+      {Gunner "driver"}
+      {Charger "driver"}
+      {Rotate}
+    }
+  }
+
+  {Mass 365}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_sm2") step(0.3) length(0.28) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(50) power(20) mass(365) performance(1.9))
+    ("set-fuel-bag" volume(10) power(20) mass(365))
+  }
+
+  {Bone "gun_rot"
+    {speed2 360}
+  }
+  {Bone "turret"
+    {speed2 360}
+  }
+
+}

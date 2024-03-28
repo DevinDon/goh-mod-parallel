@@ -20,6 +20,9 @@
   {Bone "hearing"
     {Position 0 0 40}
   }
+  {Bone "radar"
+    {Position 0 0 40}
+  }
 }
 
 {Sensor
@@ -29,6 +32,10 @@
   {Visor "standard-visor-hearing"
     {Bone "hearing"}
     {Vision "standard-vision-noise-detection"}
+  }
+  {Visor "standard-visor-radar"
+    {Bone "radar"}
+    {Vision "standard-vision-none"}
   }
   {Visor "standard-visor-none"
     {Vision "standard-vision-none"}
