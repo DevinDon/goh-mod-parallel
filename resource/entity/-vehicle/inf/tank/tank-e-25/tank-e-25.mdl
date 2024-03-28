@@ -219,7 +219,7 @@
             }
             {VolumeView "mgun.ply"}
             {bone revolute "foresight3"
-              {limits 0 0}
+              ; {limits 0 0}
               {Matrix34
                 0  1  0
                 -1  0  0

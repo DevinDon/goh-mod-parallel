@@ -19,12 +19,14 @@
   {Extender "enumerator"}
 
   {Extender "inventory"
+    {Weapon "mgun" {mask "mountable"}}
     {Box
-      {Size 15 8}
+      {Size 14 9}
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo ger-mgun api" 3750}
+      {Item "ammo ger-30l38 he" 900}
+      {Item "weapon ger-30mm-mk108-l19" filling "ammo ger-30l38 he" 100 {user "mgun"}}
 
       {Item "ammo ger-75l70 apcbche" 39}
       {Item "ammo ger-75l70 apcr" 5}
@@ -54,7 +56,6 @@
     {Place "mgun"
       {RestoreIKAfterAim}
       {Type "aa"}
-      {Weapon "weapon ger-mg42" filled}
       {Foresight "foresight3"}
       {Gunner "commander"}
       {Charger "commander"}
@@ -87,10 +88,12 @@
   }
 
   {Bone "turret1"  ; mgun horizontal
-    {speed2 18}
+    {speed2 6}
+    {limits}
   }
   {Bone "mgun_rot" ; mgun vertical
-    {speed 0.5}
+    {speed 12}
+    {limits}
   }
 
 }
