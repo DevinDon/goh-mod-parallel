@@ -77,6 +77,10 @@ msgctxt "desc/weapon/ger-30mm-mk103-l38"
 msgid   "3 cm MK 103 L/38"
 msgstr  "3 cm MK 103 L/38 防空炮"
 
+msgctxt "desc/weapon/ger-30mm-mk108-l19"
+msgid   "3 cm MK 108 L/19"
+msgstr  "3 cm MK 108 L/19 防空炮"
+
 msgctxt "desc/weapon/ger-37mm-flak37-l87"
 msgid   "3.7 cm FlaK 37 L/87"
 msgstr  "3.7 cm FlaK 37 L/87 防空炮"

@@ -7,10 +7,10 @@ const options: WeaponOptions = {
   name: 'ger-mg42',
   description: '德国 MG42 通用机枪',
 
+  from: 'pattern standard-machine-gun',
+
   entity: 'mg42_belt',
   mass: 11.57,
-
-  from: 'pattern standard-machine-gun',
 
   tags: [ 'aa', 'gun' ],
 
