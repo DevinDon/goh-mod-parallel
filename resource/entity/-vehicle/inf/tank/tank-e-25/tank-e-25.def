@@ -28,9 +28,9 @@
       {Item "ammo ger-30l38 he" 900}
       {Item "weapon ger-30mm-mk108-l19" filling "ammo ger-30l38 he" 100 {user "mgun"}}
 
-      {Item "ammo ger-75l70 apcbche" 39}
+      {Item "ammo ger-75l70 apcbche" 37}
       {Item "ammo ger-75l70 apcr" 5}
-      {Item "ammo ger-75l70 he" 39}
+      {Item "ammo ger-75l70 he" 37}
     }
   }
 
@@ -38,7 +38,7 @@
     {RestoreIKTime 2}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-75mm-pak42-l70" filling "ammo ger-75l70 apcbche" 1}
+      {Weapon "weapon ger-75mm-pak42-l70" filling "ammo ger-75l70 apcbche" 3}
       {Gunner "gunner"}
       {Charger "charger"}
       {Rotate}

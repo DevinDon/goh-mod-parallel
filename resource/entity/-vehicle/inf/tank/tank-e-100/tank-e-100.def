@@ -44,8 +44,8 @@
       {Item "ammo ger-150l38 heat" 5}
       {Item "ammo ger-150l38 he" 19}
 
-      {Item "ammo ger-75l24 heat" 59}
-      {Item "ammo ger-75l24 he" 59}
+      {Item "ammo ger-75l24 heat" 57}
+      {Item "ammo ger-75l24 he" 57}
     }
   }
 
@@ -67,7 +67,7 @@
     }
     {Place "gun1"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-75mm-kwk37-l24" filling "ammo ger-75l24 heat" 1}
+      {Weapon "weapon ger-75mm-kwk37-l24" filling "ammo ger-75l24 heat" 3}
       {Foresight "foresight2"}
       {Gunner "gunner3"}
       {Charger "charger"}
