@@ -14,8 +14,8 @@
 {"mp/inf/late/engineer-2" ("set-soldier" cp(2)   cost(20))}
 {"mp/inf/late/mgun-1"     ("set-soldier" cp(3)   cost(30))}
 {"mp/inf/late/mgun-2"     ("set-soldier" cp(2)   cost(20))}
-{"mp/inf/late/officer-1"  ("set-soldier" cp(-50) cost(90))}
-{"mp/inf/late/officer-2"  ("set-soldier" cp(-50) cost(90))}
+{"mp/inf/late/officer-1"  ("set-soldier" cp(-50) cost(-500))}
+{"mp/inf/late/officer-2"  ("set-soldier" cp(-50) cost(-500))}
 
 ; 步兵班
 ; args = name cd ci crew1 crew2 period tags group button
