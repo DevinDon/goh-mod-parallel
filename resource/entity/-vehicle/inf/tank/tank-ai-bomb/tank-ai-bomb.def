@@ -64,10 +64,14 @@
   }
 
   {Extender "inventory"
+    {Weapon "mgun" {mask "mountable"}}
     {Box
-      {Size 3 2}
+      {Size 8 6}
       {Weight 1000}
       {Item "repair_kit" 10}
+
+      {Item "ammo ger-30l38 he" 700}
+      {Item "weapon ger-30mm-mk108-l19" filling "ammo ger-30l38 he" 100 {user "mgun"}}
     }
   }
 
@@ -78,6 +82,24 @@
       {Charger "driver"}
       {Rotate}
     }
+    {Place "mgun"
+      {Type "aa"}
+      {Foresight "foresight1"}
+      {Gunner "driver"}
+      {Charger "driver"}
+      {LinkBone "mgunrot"}
+      {LinkAnimation "off"}
+      {basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
   }
 
   {Mass 365}
@@ -85,6 +107,27 @@
     ("set-tank-trace" fx("tracks_sm2") step(0.3) length(0.28) boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-maneuverability-of-tank" speed(60) power(30) mass(365) performance(1.9))
     ("set-fuel-bag" volume(10) power(30) mass(365))
+  }
+
+  {Skeleton
+    {Bone revolute "mgun"
+      {Limits} ; - 左 + 右
+      {Position 0 0 12.7} ; - 后 + 前, - 左 + 右, - 下 + 上
+      {Orientation ; 水平旋转
+        1    0    0
+        0    1    0
+        0    0    1
+      }
+      {Bone revolute "mgunrot"
+        {Limits -10 30} ; - 俯角 + 仰角
+        {Position 0 0 0}
+        {Orientation ; 垂直旋转，用于正确绑定骨骼
+          1    0    0
+          0    0    1
+          0    1    0
+        }
+      }
+    }
   }
 
   {Bone "gun_rot"

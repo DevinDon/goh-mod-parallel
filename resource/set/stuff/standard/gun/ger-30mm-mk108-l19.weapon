@@ -6,7 +6,7 @@
 
   {Tag "mountable"} ; 标签
 
-  {Entity "mg42_belt"}
+  {Entity "mg42_drum"}
   {Mass 11.57}
 
   {FireSound "cannon/s1/d1/Shared/Autocannon_20to30mm/"} ; 开火音效

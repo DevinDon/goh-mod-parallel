@@ -52,6 +52,7 @@
 {"jagdtiger" inherit "vehicle custom.tank.jagdtiger"}
 
 ; IInfinity Series
+{"tank-ai-bomb" inherit "vehicle custom.tank.ai-bomb"}
 {"tank-e-25"  inherit "vehicle custom.tank.e-25"}
 {"tank-e-50"  inherit "vehicle custom.tank.e-50"}
 {"tank-e-75"  inherit "vehicle custom.tank.e-75"}
