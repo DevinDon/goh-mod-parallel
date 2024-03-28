@@ -5,7 +5,7 @@ const options: WeaponOptions = {
   destination: 'resource/set/stuff/standard/gun/ger-75mm-pak42-l70.weapon',
 
   name: 'ger-75mm-pak42-l70',
-  description: '德国 7.5cm Pak 42 L/70 反坦克炮',
+  description: '德国 7.5cm Pak 42 L/70 反坦克炮，适用于 E-25 轻型坦克歼击车',
 
   from: 'pattern standard-gun',
 
@@ -15,15 +15,15 @@ const options: WeaponOptions = {
   cursor: 'ironsights/tank2',
 
   ammo: 'ger-75l70',
-  amout: 1,
+  amout: 3,
   calibre: 75,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,
   spreadTolerance: 0.5,
 
-  rechargeTime: 6.5,
-  recoveryTime: 1,
+  rechargeTime: 9,
+  recoveryTime: 3,
 
   automatic: false,
 
