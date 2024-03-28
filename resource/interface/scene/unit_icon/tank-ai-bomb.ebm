@@ -1,0 +1,6 @@
+{bitmap
+  {frame "ascension/inf/tank-ai-bomb.00.tga"}
+  {frame "ascension/inf/tank-ai-bomb.01.tga"}
+  {frame "ascension/inf/tank-ai-bomb.02.tga"}
+  {frame "ascension/inf/tank-ai-bomb.03.tga"}
+}
