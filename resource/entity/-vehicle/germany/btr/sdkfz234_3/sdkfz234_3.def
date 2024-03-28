@@ -67,7 +67,7 @@
       {Charger "charger"}
       {LinkBone "mgun"}
       {LinkAnimation "off"}
-      {Basic}
+      {basic}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
         {ByLinearSpeed    0.40} ; km/h
@@ -84,7 +84,7 @@
       {Charger "commander"}
       {LinkBone "mgun2"}
       {LinkAnimation "off"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h

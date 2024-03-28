@@ -72,7 +72,7 @@
       {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {Rotate}
       {AccuracyByMotion

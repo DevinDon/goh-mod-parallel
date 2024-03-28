@@ -93,7 +93,7 @@
       {Foresight "foresight5"}
       {Gunner "gunner"}
       {Charger "charger"}
-      {Basic}
+      {basic}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
         {ByLinearSpeed    0.40} ; km/h
@@ -109,7 +109,7 @@
       {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
@@ -125,7 +125,7 @@
       {Weapon "commander_vision"}
       {Foresight "vision_rot"}
       {Gunner "commander"}
-      {Basic}
+      {basic}
       {ai_in_manual}
     }
   }

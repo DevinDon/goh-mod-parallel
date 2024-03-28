@@ -87,7 +87,7 @@
       {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
@@ -104,7 +104,7 @@
       {Charger "charger2"}
       {LinkBone "mgun_rot"}
       {LinkAnimation "off"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h

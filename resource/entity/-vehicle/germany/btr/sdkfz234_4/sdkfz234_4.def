@@ -63,7 +63,7 @@
       {Charger "charger"}
       {LinkBone "mgun"}
       {LinkAnimation "off"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h

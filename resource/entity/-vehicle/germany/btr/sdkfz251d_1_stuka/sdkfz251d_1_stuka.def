@@ -58,7 +58,7 @@
       {Charger "driver"}
       {StationaryFiring}
       {Rotate}
-      {Basic}
+      {basic}
       {AccuracyByMotion
         {MaxLinearSpeed  10.00} ; km/h
         {ByLinearSpeed    0.25} ; km/h
@@ -74,7 +74,7 @@
       {Charger "gunner2"}
       {LinkBone "mgun"}
       {LinkAnimation "off"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
@@ -92,7 +92,7 @@
       {Charger "gunner4"}
       {LinkBone "mgun2"}
       {LinkAnimation "off"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h

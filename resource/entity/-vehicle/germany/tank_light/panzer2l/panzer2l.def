@@ -74,7 +74,7 @@
       {Foresight "foresight3"}
       {Gunner "gunner"}
       {Charger "charger"}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h

@@ -58,7 +58,7 @@
       {Foresight "foresight5"}
       {Gunner "gunner"}
       {Charger "charger charger2" MinWorkers 1}
-      {Basic}
+      {basic}
       {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h

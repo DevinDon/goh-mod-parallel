@@ -41,7 +41,7 @@
     {Place "gun"
       {RestoreIKAfterAim}
       {Weapon "weapon ger-600mm-karl-l8" filling "ammo ger-600l8 he" 1}
-      {Basic}
+      {basic}
       {Rotate}
       {AccuracyByMotion
         {MaxLinearSpeed  7.00} ; km/h

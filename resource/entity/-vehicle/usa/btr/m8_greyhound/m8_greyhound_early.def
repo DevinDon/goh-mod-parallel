@@ -88,7 +88,7 @@
       {Foresight "foresight4"}
       {Gunner "gunner"}
       {Charger "charger"}
-      {Basic}
+      {basic}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
         {ByLinearSpeed    0.40} ; km/h
