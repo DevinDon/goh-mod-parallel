@@ -1,3 +1,7 @@
+; AI 系列
+{"tank-ai-bomb"
+  {vehicle_view "sdkfz302"}
+}
 ; E-Series
 {"tank-e-25"
   {vehicle_view "hetzer"}

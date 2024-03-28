@@ -6,7 +6,7 @@ Purchases["late.inf"] = {
       {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-antitank-squad(inf)"},
       {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-engineer-squad(inf)"},
       {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-mgun-squad(inf)"},
-      {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-officer-squad(inf)"},
+      {priority = 2.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-officer-squad(inf)"},
       -- 排
       {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-antitank-platoon(inf)"},
       {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-engineer-platoon(inf)"},

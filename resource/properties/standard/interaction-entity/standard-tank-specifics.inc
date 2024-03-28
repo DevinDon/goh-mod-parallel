@@ -4,7 +4,13 @@
   {on "crew_revive" overload}
   {on "driver_revive" overload}
 
-  {on "explosion_blastwave" overload
+  {on "hull_destroyed" overload ; 被击毁时触发爆炸
+    {call "explosion"}
+  }
+  {on "vehicle_destroyed" overload ; 被击毁时触发爆炸
+    {call "explosion"}
+  }
+  {on "explosion_blastwave" overload ; 手动触发爆炸或者被殉爆弹药架
     {start_sound "detonation/he_size5/bkg/"}
     {blastwave c4 95 r0 3 r1 6}
     {blastwave c4 30.325 r0 12.33 r1 27.23}
@@ -23,6 +29,7 @@
       {spawn "tank_die_dust"}
     }
   }
+
 }
 
 {"e-25 tank"

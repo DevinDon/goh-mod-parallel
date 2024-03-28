@@ -22,7 +22,7 @@
     {thickness 2}
   }
 
-  ("set-basic-durability" body(200) engine(200) turret(100) mantlet(100) gun(100) track(200) ammo(200))
+  ("set-basic-durability" body(111) engine(111) turret(100) mantlet(100) gun(100) track(111) ammo(111))
   ("set-basic-armor"      ammo(30))
 
   ("set-body"                 repair(10))
@@ -80,11 +80,11 @@
     }
   }
 
-  {Mass 765}
+  {Mass 365}
   {Chassis "track"
     ("set-tank-trace" fx("tracks_sm2") step(0.3) length(0.28) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(60) power(30) mass(765) performance(1.9))
-    ("set-fuel-bag" volume(10) power(30) mass(765))
+    ("set-maneuverability-of-tank" speed(60) power(30) mass(365) performance(1.9))
+    ("set-fuel-bag" volume(10) power(30) mass(365))
   }
 
   {Bone "gun_rot"
