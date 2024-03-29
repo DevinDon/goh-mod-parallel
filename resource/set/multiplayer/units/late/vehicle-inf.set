@@ -19,7 +19,7 @@
 )
 
 {"tank-ai-robot"
-  ("set-standard-vehicle" vehicle(tank-ai-robot) cost(100) cd(60) ci(30) cw(0) cp(10) tags(light)  period(late) crew1(engineer-1:0) crew2(engineer-2:0) group(robot)   button(tanks))
+  ("set-standard-vehicle" vehicle(tank-ai-robot) cost(100) cd(60) ci(30) cw(1) cp(10) tags(light)  period(late) crew1(engineer-1:0) crew2(engineer-2:0) group(robot)   button(tanks))
 }
 
 {"tank-e-25"
