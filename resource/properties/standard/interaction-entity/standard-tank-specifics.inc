@@ -7,12 +7,6 @@
   {on fire "explosive"
     {components "body" destroy}
   }
-  {on "hull_destroyed" overload ; 被击毁时触发爆炸
-    {call "explosion"}
-  }
-  {on "vehicle_destroyed" overload ; 被击毁时触发爆炸
-    {call "explosion"}
-  }
   {on "explosion_blastwave" overload ; 手动触发爆炸或者被殉爆弹药架
     {start_sound "detonation/he_size5/bkg/"}
     {blastwave c4 95 r0 3 r1 6}
