@@ -5,7 +5,7 @@
 
   {Extension "/entity/-vehicle/germany/special/sdkfz303b/sdkfz303b.mdl"}
 
-  {Props "armored_car" "vision_lev00" "tank" "goliath" "detect_tank_light"}
+  {Props "armored_car" "vision_lev00" "tank" "detect_tank_light"}
 
   {PatherId "goliath"}
   {Targetclass "car"}

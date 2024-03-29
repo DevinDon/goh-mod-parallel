@@ -4,6 +4,9 @@
   {on "crew_revive" overload}
   {on "driver_revive" overload}
 
+  {on fire "explosive"
+    {components "body" destroy}
+  }
   {on "hull_destroyed" overload ; 被击毁时触发爆炸
     {call "explosion"}
   }
