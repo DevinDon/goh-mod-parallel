@@ -3,30 +3,6 @@
   {on "crew_stunned" overload}
   {on "crew_revive" overload}
   {on "driver_revive" overload}
-
-  {on fire "explosive"
-    {components "body" destroy}
-  }
-  {on "explosion_blastwave" overload ; 手动触发爆炸或者被殉爆弹药架
-    {start_sound "detonation/he_size5/bkg/"}
-    {blastwave c4 95 r0 3 r1 6}
-    {blastwave c4 30.325 r0 12.33 r1 27.23}
-    {blastwave c4 2.476 r0 28.33 r1 39.83}
-
-    {spawn "shockwave_sphere"}
-    {spawn "ex_he_size6"}
-
-    {spawn "crater_massive" "basis" x terrain_texmod}
-
-    {if terrain_fx "snow"
-      {spawn "tank_die_snow"}
-    else terrain_fx "ice"
-      {spawn "tank_die_snow"}
-    else
-      {spawn "tank_die_dust"}
-    }
-  }
-
 }
 
 {"e-25 tank"
