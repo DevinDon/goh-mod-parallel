@@ -95,7 +95,7 @@
     {component "body"
       {health
         {hp %body}
-        {hp_broken (* %body 0.5)}  ;// destroys component and cannot be repaired
+        {hp_broken (* %body 2)}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
     }
@@ -202,21 +202,21 @@
     {component tag "fuel"
       {health
         {hp %ammo}
-        {hp_broken 1}  ;// destroys component and cannot be repaired
+        {hp_broken %ammo}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
     }
     {component tag "ammo"
       {health
         {hp %ammo}
-        {hp_broken 1}  ;// destroys component and cannot be repaired
+        {hp_broken %ammo}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
     }
     {component tag "rocket"
       {health
         {hp 100}
-        {hp_broken 1}  ;// destroys component and cannot be repaired
+        {hp_broken %ammo}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
     }
