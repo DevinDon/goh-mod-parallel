@@ -1608,8 +1608,8 @@
 
 {"custom.tank.e-25"
   {clip
-    {viewMin     -15}  ; camera rotate upward limit (looking down)
-    {viewMax      20}  ; camera rotate downward limit (looking up)
+    {viewMin     -20}  ; camera rotate upward limit (looking down)
+    {viewMax      30}  ; camera rotate downward limit (looking up)
     {distanceMin  200}  ; camera min distance from object. value / 20 = meters
     {distanceMax  400}  ; camera max distance from object. value / 20 = meters
   }
@@ -1640,12 +1640,15 @@
     {blur_strength 5}
     {disable_fow 0}
     {soundEffect "enclosed_vehicle"}
-    {camera "zoom2"}
+    {camera "zoom1"}
   }
   {level ; 2
-    {camera "zoom4"}
+    {camera "zoom2"}
   }
   {level ; 3
+    {camera "zoom4"}
+  }
+  {level ; 4
     {camera "zoom8"}
   }
 }
