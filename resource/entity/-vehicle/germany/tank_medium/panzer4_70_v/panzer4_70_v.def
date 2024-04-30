@@ -1,0 +1,95 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-assaultgun-config.ext")
+  (include "/properties/selection/vehicle_elongated.inc" scale(1.1))
+
+  {Extension "panzer4_70_v.mdl"}
+  (include   "panzer4_70_v.ext")
+  (include   "crew-and-passenger.ext")
+
+  {Props "td" "medium" "-turret" "smoke" "nvw" "vision_lev03" "muzzle_75mm_76mm" "shield"}
+
+  {PatherId "panzer3"}
+  {Targetclass "tank_medium"}
+  {TargetSelector "tank_medium"}
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
+
+  {texmod "camo"}
+
+  {Extender "shield" {on}}
+
+  {Extender "smokescreen"
+    {cooldown 5}
+    {itemTags "grenade nbks"}
+  }
+
+  {Extender "inventory"
+    {Box
+      {Size 12 10}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+      {Item "nbks grenade" 6}
+
+      {Item "ammo ger-mgun api" 4500}
+
+      {Item "ammo ger-75l70 apcbche" 37}
+      {Item "ammo ger-75l70 apcr" 5}
+      {Item "ammo ger-75l70 he" 37}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 2}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "weapon ger-75mm-pak42-l70" filling "ammo ger-75l70 apcbche" 1}
+      {Gunner "gunner"}
+      {Charger "charger commander" minWorkers 1}
+      {AccuracyByMotion
+        {MaxLinearSpeed  8.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 4.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.20} ; s
+        {OrderTime       1.50} ; s
+      }
+    }
+    {Place "mgun1"
+      {Type "hull"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight4"}
+      {Gunner "charger"}
+      {Charger "charger"}
+      {Basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 24000}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_mid") step(0.52) length(-0.5) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(40) power(265) mass(24000) performance(1.35))
+    ("set-fuel-bag" volume(500) power(265) mass(24000))
+  }
+
+  {Bone "gun_rot"
+    {limits -8 15}
+    {speed2 6}
+  }
+  {Bone "turret"
+    {limits -15 12}
+    {speed2 8}
+  }
+
+}

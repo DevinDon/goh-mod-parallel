@@ -26,7 +26,7 @@
     {commandPoints "*=%cp"}
     (include "global_parameters/unitlimits.inc")
     {chargeFactors
-      {value "*=1.00"}
+      {value "*=2.00"}
       {customize "0;0.25;0.5;1;2"}
     }
     (include "global_parameters/budget_custom.inc" s(%start) f(%finish) d(%doctrine))
