@@ -912,6 +912,53 @@
   }
 }
 
+{"custom.tank.jagdpanther4"
+  {clip
+    {viewMin    -15}  ; camera rotate upward limit (looking down)
+    {viewMax    20 }  ; camera rotate downward limit (looking up)
+    {distanceMin  200}  ; camera min distance from object. value / 20 = meters
+    {distanceMax  400}  ; camera max distance from object. value / 20 = meters
+  }
+  {level ; 0
+    {linkBone "basis"}
+    {faroffset 0 0 65}
+    {nearoffset -25 0 55}
+    {camera "zoom1"}
+    ;{hide_hitmarker 1}
+    {blur_strength 2}
+    {disable_fow 0}
+    {no_grain}
+  }
+  {level ; 1
+    {zoom}
+    {vision_modes_active}
+    {linkBone "visor1"}
+    {offset 3 0 3}
+    {scope_vignette "/texture/common/environment/lens_effects/vehicle_telescope_ger_sflz5a"}
+    {blur_mask "/texture/common/environment/lens_effects/vehicle_telescope_mask"}
+    {refraction_mask "/texture/common/environment/lens_effects/vehicle_telescope_base_bp"}
+    {lens_dirt_mask "/texture/common/environment/lens_effects/dirty_lens_scope_02"}
+    {distance 5}
+    {distanceSet 0}
+    {delta 0}
+    {no_rim_light}
+    {ManualAccuracyZoom}
+    {blur_strength 5}
+    {disable_fow 0}
+    {soundEffect "enclosed_vehicle"}
+    {camera "zoom1"}
+  }
+  {level ; 1
+    {camera "zoom2"}
+  }
+  {level ; 2
+    {camera "zoom4"}
+  }
+  {level ; 3
+    {camera "zoom8"}
+  }
+}
+
 {"custom.tank.panzer3-m"
   {clip
     {viewMin    -12}  ; camera rotate upward limit (looking down)

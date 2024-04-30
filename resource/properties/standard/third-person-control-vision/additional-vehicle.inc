@@ -34,6 +34,7 @@
 {"panzer3n" inherit "vehicle custom.tank.panzer3-n"}
 {"panzer4g" inherit "vehicle custom.tank.panzer4-g"}
 {"panzer4h" inherit "vehicle custom.tank.panzer4-h"}
+{"panzer4_70_v" inherit "vehicle custom.tank.jagdpanther4"}
 {"wirbelwind" inherit "vehicle custom.tank.wirbelwind"}
 {"ostwind" inherit "vehicle custom.tank.ostwind"}
 {"wespe" inherit "vehicle custom.spg"}

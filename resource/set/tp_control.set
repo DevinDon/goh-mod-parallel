@@ -222,7 +222,7 @@
 
     {"jagdpanzer4_l48_early" inherit "vehicle td.stug3"}
     {"jagdpanzer4_l48" inherit "vehicle td.stug3"}
-    {"panzer4_70_v" inherit "vehicle td.stug3"}
+    ; {"panzer4_70_v" inherit "vehicle td.stug3"}
 
     ; {"wespe" inherit "vehicle spa.common"}
     ; {"hummel" inherit "vehicle spa.common"}
