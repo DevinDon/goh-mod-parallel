@@ -1022,7 +1022,7 @@
 {"panzer4_70_v"
   ("vehicle2" period(late) cd(720) ci(120) t(medium) side(ger) crew1(tankman_pzjag:3) crew2(tank_commander_pzjag:1) g(spg2) b(tanks) cw(6) cp(30)
   cost(1000)) ;// +25 for crew
-  {doctrine late_ger_allround2}
+  ; {doctrine late_ger_allround2}
 }
 {"stuh42"
   ("vehicle2" period(late) cd(360) ci(180) t(medium) side(ger) crew1(tankman_stug:3) crew2(tank_commander_stug:1) g(spg4) b(tanks) cw(6) cp(30)
