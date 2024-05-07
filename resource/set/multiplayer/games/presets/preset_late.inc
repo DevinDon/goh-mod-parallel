@@ -7,7 +7,7 @@
     {commandPoints "*=%cp"}
     (include "global_parameters/unitlimits.inc")
     {chargeFactors
-      {value "*=1.00"}
+      {value "*=2.00"}
       {customize "0;0.25;0.5;0.75;1;1.5;2"}
     }
     (include "global_parameters/budget.inc" s(%start) f(%finish) d(%doctrine))
@@ -27,7 +27,7 @@
     (include "global_parameters/unitlimits.inc")
     {chargeFactors
       {value "*=2.00"}
-      {customize "0;0.25;0.5;1;2"}
+      {customize "0;0.25;0.5;0.75;1;1.5;2"}
     }
     (include "global_parameters/budget_custom.inc" s(%start) f(%finish) d(%doctrine))
   }
@@ -44,7 +44,7 @@
     {unitMode "late"}
     {specMode "all_normal"}
     {apply "only_roster_late"}
-    ("standard_all" start(100) finish(20000) doctrine(1000) cp(0:200,900:200,1500:200))
+    ("standard_all" start(200) finish(20000) doctrine(1000) cp(0:200,10000:200,20000:200))
     {ranked}
   }
 ;------------------------------------------------------------------------------------------------------------
