@@ -974,20 +974,21 @@
 }
 
 ;HEAVY
+{"tiger1e"
+  ("vehicle2" period(late) cd(600) ci(120) t(heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy2) b(tanks) cw(8) cp(30)
+  cost(1280)) ;// +35 for crew
+}
 {"panzer5a"
-  ("vehicle2" period(late) cd(600) ci(120) t(medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy1) b(tanks) cw(6) cp(30)
+  ("vehicle2" period(late) cd(720) ci(120) t(medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy1) b(tanks) cw(6) cp(30)
   cost(1200)) ;// +35 for crew
 }
-{"tiger1e"
-  ("vehicle2" period(late) cd(720) ci(120) t(heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy2) b(tanks) cw(8) cp(30)
-  cost(1280)) ;// +35 for crew
+{"panzer5d"
+  ("vehicle2" period(late) cd(800) ci(400) t(medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy1) b(tanks) cw(6) cp(30)
+  cost(1500)) ;// +35 for crew
+  {doctrine late_ger_offensive}
 }
 
 ;// Doctrine Units
-{"panzer5d"
-  ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy1) b(tanks) cw(6) cp(30)
-  cost(1150)) ;// +35 for crew
-}
 {"panzer5g"
   ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy1) b(tanks) cw(6) cp(30)
   cost(1200)) ;// +35 for crew

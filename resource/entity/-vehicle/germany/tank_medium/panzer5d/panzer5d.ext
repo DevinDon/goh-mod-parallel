@@ -7,14 +7,14 @@
 
 
 
-("set-basic-durability" body(750) engine(450) turret(550) mantlet(300) gun(300) track(350) ammo(400))
+("set-basic-durability" body(750) engine(300) turret(500) mantlet(300) gun(300) track(500) ammo(400))
 ("set-basic-armor"      ammo(30))
 
-("set-turret" repair(20))
+("set-turret"  repair(20))
 ("set-mantlet" repair(10))
 ("set-gun" thickness(30) repair(10))
 
-("set-body" repair(30))
+("set-body"   repair(20))
 ("set-engine" repair(10))
 ("set-tracks" thickness(30) repair(10))
 
@@ -48,7 +48,7 @@
 ("set-internal-components" name("fuel2") type("fuel") repair(3))
 ("set-internal-components" name("fuel3") type("fuel") repair(3))
 ("set-internal-components" name("fuel4") type("fuel") repair(3))
-("set-internal-components" name("transmission") type("transmission") repair(10))
+("set-internal-components" name("transmission") type("transmission") repair(20))
 
 {component "fenderl" {tags "cut_part"}}
 {component "fenderl2" {tags "cut_part"}}
@@ -72,19 +72,22 @@
 
 {volume "body1"      ; Hull
   {thickness 40
-    {front 60}    ; Lower Nose
+    {front 80}    ; Lower Nose
     {top 80}    ; Glacis
     {rear 16}
     {bottom 30}
   }
+  {CastSteel 1.25}
+  {able {holed}}
 }
 {volume "body2"      ; Superstructure
   {thickness 40
-    {front 80}
+    {front 100}
     {top 16}
     {rear 16}
     {bottom 16}
   }
+  {CastSteel 1.25}
   {able {holed}}
 }
 {volume "engine1"
@@ -93,6 +96,8 @@
     {top 16}
     {bottom 16}
   }
+  {CastSteel 1.25}
+  {able {holed}}
 }
 {volume "engine2"
   {thickness 40
@@ -100,12 +105,16 @@
     {top 16}
     {bottom 16}
   }
+  {CastSteel 1.25}
+  {able {holed}}
 }
 {volume "turret"
   {thickness 45
     {front 100}
     {top 17}
   }
+  {CastSteel 1.25}
+  {able {holed}}
 }
 {volume "turret2"
   {thickness 45
@@ -113,22 +122,27 @@
     {top 17}
     {bottom 100}
   }
+  {CastSteel 1.25}
+  {able {holed}}
 }
 {volume "mantlet"
   {thickness 100}
-  {CastSteel 0.8063}
   {component "turret"}
   {tags "turret"}
+  {CastSteel 1.25}
+  {able {holed}}
 }
 {volume "mantlet2"
   {thickness 100}
-  {CastSteel 0.8063}
   {component "gun"}
   {tags "gun"}
+  {CastSteel 1.25}
+  {able {holed}}
 }
 {volume "cupola"
   {thickness 80
     {top 16}
   }
-  {CastSteel 0.8063}
+  {CastSteel 1.25}
+  {able {holed}}
 }

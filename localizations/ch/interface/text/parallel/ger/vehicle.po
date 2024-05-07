@@ -238,7 +238,7 @@ msgstr  "<c(c3baae)>中型坦克</c>"
 
 msgctxt "desc/entity/panzer5d"
 msgid   "Pz.Kpfw Panther Ausf.D"
-msgstr  "五号 D 型 \"黑豹\""
+msgstr  "五号 D 型 \"黑豹\" 试验车"
 
 msgctxt "info/special/panzer5d"
 msgid   "<c(c3baae)>Medium Tank</c>"

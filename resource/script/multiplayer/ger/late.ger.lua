@@ -176,9 +176,9 @@ Purchases["late.ger"] = {
         {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer3n"}, -- short 75mm
         {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer4g"},
         {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer4h"},
-        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5a"},
-
         {priority = 1.0, type = {"Class2", "Tank", "Heavy",}, unit = "tiger1e"},
+        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5a"},
+        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5d"},
         --]]
 
       -- Self-Propelled Guns
