@@ -207,7 +207,7 @@
     {near_start 100}
     {near_end 120}
     {far_start 3000}
-    {far_end 6000}
+    {far_end 4000}
     {"3rd_Person"
       {"3rdP_blur_strength" 3}
     }
