@@ -10,3 +10,4 @@
 6. CP 是指挥点数
 7. `gunner2` 是防空机枪手
 8. `gunner3` 是车体机枪手
+9. `resource/set/environment/*.set` 中设置 far_end 可以控制雾的最远距离，6000 可以达到最远渲染距离（约 500 游戏单位）
