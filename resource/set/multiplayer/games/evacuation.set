@@ -18,17 +18,17 @@
     {impregnableTimeout  5}      ; sec
     {floraRespawn    0}
 
-    {preparationTime  15}      ; default time in seconds game is in "paused state" before game starts
-    {preparationTimeMin  0}
-    {preparationTimeMax  60}
+    {preparationTime    0}      ; default time in seconds game is in "paused state" before game starts
+    {preparationTimeMin 0}
+    {preparationTimeMax 60}
 
-    {firstWaveTime    120}    ; default time in seconds before 1st attack wave starts
-    {firstWaveTimeMin  0}
-    {firstWaveTimeMax  900}
+    {firstWaveTime      120}    ; default time in seconds before 1st attack wave starts
+    {firstWaveTimeMin   0}
+    {firstWaveTimeMax   300}
 
-    {waveTime      300}    ; default time in seconds between each attack wave after 1st wave
-    {waveTimeMin    120}
-    {waveTimeMax    600}
+    {waveTime           120}    ; default time in seconds between each attack wave after 1st wave
+    {waveTimeMin        120}
+    {waveTimeMax        300}
 
     {friendlyFire}
     {showPiercing}
