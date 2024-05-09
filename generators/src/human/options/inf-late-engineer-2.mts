@@ -6,7 +6,7 @@ const options: HumanOptions = {
 
   tags: [ 'soldier' ],
   behaviour: 'soldier',
-  skin: 'ger_wh_43_pio_rfl',
+  skin: 'ger_heer_43_engi_smg_1',
   portrait: 'ger_engineer',
   icon: 'tech',
   iconPriority: 0,

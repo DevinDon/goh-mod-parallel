@@ -4,7 +4,7 @@
   {tags "soldier"} ; 标签
 
   {behaviour soldier} ; 行为类别
-  {skin "ger_wh_43_mg"} ; 外观
+  {skin "ger_heer_43_mg_1"} ; 外观
   {portrait "ger_regular"} ; 肖像
   {icon "mg"} ; 图标
   {icon_priority 0} ; 图标优先级

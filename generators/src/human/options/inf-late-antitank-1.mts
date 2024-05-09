@@ -6,7 +6,7 @@ const options: HumanOptions = {
 
   tags: [ 'soldier_pzscheck' ],
   behaviour: 'soldier',
-  skin: 'ger_wh_43_smock_rfl_at',
+  skin: 'ger_heer_43_at_rkt',
   portrait: 'ger_regular',
   icon: 'bazooka',
   iconPriority: 0,

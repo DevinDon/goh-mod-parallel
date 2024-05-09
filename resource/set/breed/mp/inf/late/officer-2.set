@@ -4,7 +4,7 @@
   {tags "soldier"} ; 标签
 
   {behaviour soldier} ; 行为类别
-  {skin "ger_wh_off_major_coat"} ; 外观
+  {skin "ger_luft_43_fielddiv_co_major"} ; 外观
   {portrait "ger_officer"} ; 肖像
   {icon "smg"} ; 图标
   {icon_priority 5} ; 图标优先级
