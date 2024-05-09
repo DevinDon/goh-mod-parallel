@@ -46,7 +46,7 @@
 
       {Item "ammo ger-mgun api" 1750}
 
-      {Item "ammo ger-30l38 aphe" 400}
+      {Item "ammo ger-20l55 aphe" 300}
     }
   }
 
@@ -54,7 +54,7 @@
     {RestoreIKTime 2}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-30mm-mk103-l38" filling "ammo ger-30l38 aphe" 80}
+      {Weapon "weapon ger-20mm-mg151-l55" filling "ammo ger-20l55 aphe" 150}
       {Gunner "gunner"}
       {Charger "charger"}
       {ai_in_manual}
