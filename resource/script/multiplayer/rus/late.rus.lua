@@ -251,7 +251,7 @@ Purchases["late.rus"] = {
           {priority = 1.0, type = {"Class3", "Doctrine", "Tier1", "Tank", "Light", "Support",}, unit = "doctrine_bt7a_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Tank", "Light",}, unit = "doctrine_t50_late"},
 
-          {priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Recon",}, unit = "doctrine_po2_late"},
+          -- {priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Recon",}, unit = "doctrine_po2_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Tank", "Medium", "AT",}, unit = "doctrine_su85m"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Tank", "Medium",}, unit = "doctrine_t3485_44b"},
 

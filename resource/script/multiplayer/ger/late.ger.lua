@@ -260,7 +260,7 @@ Purchases["late.ger"] = {
           {priority = 1.0, type = {"Class3", "Doctrine3", "Tier1", "Tank", "Medium", "AA",}, unit = "doctrine_ostwind"},
           {priority = 1.0, type = {"Class2", "Doctrine2", "Tier1", "Armored", "AT",}, unit = "doctrine_sdkfz234_3"},
 
-          {priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Recon",}, unit = "doctrine_fi156_late"},
+          -- {priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Recon",}, unit = "doctrine_fi156_late"},
           {priority = 1.0, type = {"Class3", "Doctrine3", "Tier1", "Armored", "AT",}, unit = "doctrine_sdkfz234_4"},
           {priority = 1.0, type = {"Class2", "Doctrine2", "Tier2", "Tank", "Light", "Artillery",}, unit = "doctrine_grille"},
 
