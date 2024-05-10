@@ -173,11 +173,11 @@ Purchases["late.fin"] = {
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier1", "Infantry",}, unit = "doctrine_white_death_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Cannon", "Mortar",}, unit = "doctrine_170mm_minewerfer_late"},
 
-          {priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Airstrike",}, unit = "doctrine_blenheim_small_late"},
+          -- {priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Airstrike",}, unit = "doctrine_blenheim_small_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Tank", "Heavy",}, unit = "doctrine_kv1e_fin"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier2", "Cannon", "AT",}, unit = "doctrine_75mm_k44"},
 
-          {priority = 1.0, type = {"Class", "Doctrine", "Tier3", "Plane", "Airstrike",}, unit = "doctrine_blenheim_late"},
+          -- {priority = 1.0, type = {"Class", "Doctrine", "Tier3", "Plane", "Airstrike",}, unit = "doctrine_blenheim_late"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_210mm_nebelwerfer42_fin_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_105mm_k34_late"},
           --]]

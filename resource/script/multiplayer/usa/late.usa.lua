@@ -205,11 +205,11 @@ Purchases["late.usa"] = {
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Cannon", "Support",}, unit = "doctrine_75mm_m1a1_late"},
           {priority = 1.0, type = {"Class3", "Doctrine", "Tier1", "Vehicle", "MG", "Supply", "Ammo",}, unit = "doctrine_cckw_redball_late"},
 
-          {priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Airstrike",}, unit = "doctrine_p47_250_late"},
+          -- {priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Airstrike",}, unit = "doctrine_p47_250_late"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier2", "Tank", "Medium", "AT",}, unit = "doctrine_m4a3_75w_e4_5_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Cannon", "Artillery",}, unit = "doctrine_105mm_m3_late"},
 
-          {priority = 1.0, type = {"Class", "Doctrine", "Tier3", "Plane", "Airstrike",}, unit = "doctrine_p47_500_late"},
+          -- {priority = 1.0, type = {"Class", "Doctrine", "Tier3", "Plane", "Airstrike",}, unit = "doctrine_p47_500_late"},
           {priority = 1.0, type = {"Class3", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_114mm_m1_late"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Medium", "Artillery",}, unit = "doctrine_m4a3_calliope_late"},
           --]]

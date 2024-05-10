@@ -229,11 +229,11 @@ Purchases["late.ger"] = {
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Tank", "Light",}, unit = "doctrine_panzer1f"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier1", "Tank", "Medium",}, unit = "doctrine_panzer3flamm_late"},
 
-          {priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Airstrike",}, unit = "doctrine_bf109_late"},
+          -- {priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Airstrike",}, unit = "doctrine_bf109_late"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier2", "Cannon", "Support",}, unit = "doctrine_150mm_sig33_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Tank", "Medium",}, unit = "doctrine_panzer4j"},
 
-          {priority = 1.0, type = {"Class", "Doctrine", "Tier3", "Plane", "Airstrike",}, unit = "doctrine_bf110_late"},
+          -- {priority = 1.0, type = {"Class", "Doctrine", "Tier3", "Plane", "Airstrike",}, unit = "doctrine_bf110_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_300mm_nebelwerfer42"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Heavy",}, unit = "doctrine_tiger1hunt"},
           --]]

@@ -22,13 +22,13 @@
     {preparationTimeMin 0}
     {preparationTimeMax 60}
 
-    {firstWaveTime      120}    ; default time in seconds before 1st attack wave starts
+    {firstWaveTime      180}    ; default time in seconds before 1st attack wave starts
     {firstWaveTimeMin   0}
-    {firstWaveTimeMax   300}
+    {firstWaveTimeMax   900}
 
-    {waveTime           120}    ; default time in seconds between each attack wave after 1st wave
+    {waveTime           300}    ; default time in seconds between each attack wave after 1st wave
     {waveTimeMin        120}
-    {waveTimeMax        300}
+    {waveTimeMax        600}
 
     {friendlyFire}
     {showPiercing}
