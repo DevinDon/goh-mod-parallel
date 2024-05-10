@@ -22,7 +22,7 @@ const options: WeaponOptions = {
   aimingTolerance: 0.01,
   spreadTolerance: 0.5,
 
-  rechargeTime: 5,
+  rechargeTime: 7,
   recoveryTime: 1,
 
   automatic: false,
@@ -33,11 +33,11 @@ const options: WeaponOptions = {
       minRange: 0,
       aimRange: 375,
       maxRange: 400,
-      speed: 1279,
+      speed: 1075,
       gravity: 5,
       projectile: {
-        nearest: 221,
-        farthest: 171,
+        nearest: 187,
+        farthest: 151,
       },
       damageToArmor: 250,
       damageToHuman: 2500,
@@ -62,8 +62,8 @@ const options: WeaponOptions = {
       speed: 1571,
       gravity: 5,
       projectile: {
-        nearest: 296,
-        farthest: 178,
+        nearest: 239,
+        farthest: 167,
       },
       damageToArmor: 200,
       damageToHuman: 2000,

@@ -1,7 +1,7 @@
 ; armor notes
-; tracks and wheels 20mm
+; tracks and wheels 30mm
 ; gun 25mm
-; spare tracks 20mm
+; spare tracks 30mm
 ; schürzen 5mm
 
 
@@ -18,9 +18,9 @@
 ("set-engine" repair(10))
 ("set-tracks" thickness(30) repair(10))
 
-("set-shield-track" name("detail6") thickness(25))
-("set-shield-track" name("detail7") thickness(25))
-("set-shield-track" name("detail8") thickness(25))
+("set-shield-track" name("detail6") thickness(30))
+("set-shield-track" name("detail7") thickness(30))
+("set-shield-track" name("detail8") thickness(30))
 
 ("set-shield" name("fenderl")  thickness(9))
 ("set-shield" name("fenderl2") thickness(9))
