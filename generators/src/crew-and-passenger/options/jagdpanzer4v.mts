@@ -47,7 +47,7 @@ const options: CrewAndPassengerOptions = {
         end: [ 'pose_mgun_pz6', 1 ],
       },
       reverse: {
-        end: [ 'emit_tank_1', -1 ],
+        end: [ 'emit_tank_1', 1 ],
       },
     },
     {
@@ -57,7 +57,7 @@ const options: CrewAndPassengerOptions = {
         end: [ 'pose_mgun_pz6', 1 ],
       },
       reverse: {
-        end: [ 'emit_tank_2_hold', -1 ],
+        end: [ 'emit_tank_2_hold', 1 ],
       },
     },
     {

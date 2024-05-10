@@ -46,7 +46,7 @@
     {reverse
       ; no reverse animation base
       ; no reverse animation begin
-      {end "emit_tank_1" -1}
+      {end "emit_tank_1" 1}
     }
   }
   ; animation right
@@ -59,7 +59,7 @@
     {reverse
       ; no reverse animation base
       ; no reverse animation begin
-      {end "emit_tank_2_hold" -1}
+      {end "emit_tank_2_hold" 1}
     }
   }
   ; animation armor01
