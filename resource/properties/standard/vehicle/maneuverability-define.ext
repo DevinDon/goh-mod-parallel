@@ -36,13 +36,13 @@
     {MaxSpeedAtMaxTurn                            (* (/ %speed 1.90) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
     {SteerOn                                                   (* %performance 60)} ; Steering wheel's turn speed, degrees per second.
     {SteerOff                                                  (* %performance 60)} ; Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second.
-    {TurnRadius                                                 (/ 8 %performance)} ; AI turning radius, lower = able to turn more without stopping.
+    {TurnRadius                                                 (/ 4 %performance)} ; AI turning radius, lower = able to turn more without stopping.
     {StartTime                          (* 5 (/ %speed (/ %power (/ %mass 1000))))} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
-    {StopTime                           (/ (+ 1.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
-    {BrakeTime                          (/ (+ 0.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
+    {StopTime                           (/ (+ 1.25 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
+    {BrakeTime                          (/ (+ 0.45 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
     {Gears                                                                 0.2 1.0} ; Gearing affects acceleration curve.
     {RearGears                                                (* %performance 0.1)} ; Reverse max speed.
-    {GearSwitchDelay                                          (/ 0.5 %performance)} ; Time to switch between forward and reverse.
+    {GearSwitchDelay                                          (/ 0.3 %performance)} ; Time to switch between forward and reverse.
     {SplineRadius                                                             0.45} ; limit turning radius on the splines (path planner parameter), meters
     {MaxSlope                                                                   75} ; Maximum slope to drive up hill
     {FallSlope                                                                  75} ; Maximum slope before physics kick in
@@ -62,13 +62,13 @@
     {MaxSpeedAtMaxTurn                            (* (/ %speed 2.00) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
     {SteerOn                                                   (* %performance 15)} ; Steering wheel's turn speed, degrees per second.
     {SteerOff                                                  (* %performance 30)} ; Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second.
-    {TurnRadius                                                 (/ 8 %performance)} ; AI turning radius, lower = able to turn more without stopping.
+    {TurnRadius                                                 (/ 5 %performance)} ; AI turning radius, lower = able to turn more without stopping.
     {StartTime                          (* 5 (/ %speed (/ %power (/ %mass 1000))))} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
-    {StopTime                           (/ (+ 1.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
-    {BrakeTime                          (/ (+ 0.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
+    {StopTime                           (/ (+ 1.25 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
+    {BrakeTime                          (/ (+ 0.45 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
     {Gears                                                                 0.2 1.0} ; Gearing affects acceleration curve.
     {RearGears                                                (* %performance 0.5)} ; Reverse max speed.
-    {GearSwitchDelay                                          (/ 0.5 %performance)} ; Time to switch between forward and reverse.
+    {GearSwitchDelay                                          (/ 0.3 %performance)} ; Time to switch between forward and reverse.
     {SplineRadius                                                             0.45} ; limit turning radius on the splines (path planner parameter), meters
     {MaxSlope                                                                   75} ; Maximum slope to drive up hill
     {FallSlope                                                                  75} ; Maximum slope before physics kick in
@@ -88,12 +88,12 @@
     {MaxSpeedAtMaxTurn                            (* (/ %speed 2.10) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
     {SteerOn                                                   (* %performance 10)} ; Steering wheel's turn speed, degrees per second.
     {SteerOff                                                  (* %performance 20)} ; Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second.
-    {TurnRadius                                                 (/ 9 %performance)} ; AI turning radius, lower = able to turn more without stopping.
-    {StartTime                          (* 4 (/ %speed (/ %power (/ %mass 1000))))} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
-    {StopTime                           (/ (+ 1.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
-    {BrakeTime                          (/ (+ 0.50 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
+    {TurnRadius                                                 (/ 6 %performance)} ; AI turning radius, lower = able to turn more without stopping.
+    {StartTime                          (* 3 (/ %speed (/ %power (/ %mass 1000))))} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
+    {StopTime                           (/ (+ 1.15 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
+    {BrakeTime                          (/ (+ 0.41 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
     {Gears                                                             0.5 0.8 1.0} ; Gearing affects acceleration curve.
-    {RearGears                                                (* %performance 0.4)} ; Reverse max speed.
+    {RearGears                                                (* %performance 0.3)} ; Reverse max speed.
     {GearSwitchDelay                                          (/ 0.5 %performance)} ; Time to switch between forward and reverse.
     {SplineRadius                                                             0.75} ; limit turning radius on the splines (path planner parameter), meters
     {MaxSlope                                                                   75} ; Maximum slope to drive up hill
@@ -111,17 +111,17 @@
     {Normal                                                              (/ %speed 1)} ; Standard speed. Single click movement order
     {Fast                                                                (/ %speed 1)} ; Sprint speed. Double click movement order
     {MaxSpeed                                                            (/ %speed 1)} ; Max speed.
-    {MaxSpeedAtMaxTurn                               (* (/ %speed 2.25) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
-    {TurnTime                                                (/ (/ %mass 3.8) %power)} ; Direct Control, Time it takes to do a full 360 degree at max turn speed, fetching custom define
-    {TurnStart                                 (+ 0.50 (* (/ (/ %mass 1000) 6) 0.04))} ; Direct Control, Time for vehicle to from 0°/s rotation speed to max rotation speed.
-    {TurnStop                 (/ (+ 0.50 (* (/ (/ %mass 1000) 6) 0.04)) %performance)} ; Direct Control, Time for vehicle to from max rotation speed to 0°/s rotation speed to max rotation speed.
-    {TurnRadius        (/ (+ 1 (+ (/ %speed 14) (/ (/ %mass 1000) 60))) %performance)} ; AI turning radius, lower = able to turn more without stopping.
-    {StartTime                             (* 4 (/ %speed (/ %power (/ %mass 1000))))} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
-    {StopTime                       (/ (+ 2.30 (* (/ %mass 1000) 0.04)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
-    {BrakeTime                      (/ (+ 0.95 (* (/ %mass 1000) 0.04)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
+    {MaxSpeedAtMaxTurn                               (* (/ %speed 2.00) %performance)} ; Max speed the vehicle is limited to when executing a tight turn.
+    {TurnTime                                                (/ (/ %mass 4.5) %power)} ; Direct Control, Time it takes to do a full 360 degree at max turn speed, fetching custom define
+    {TurnStart                                 (+ 0.45 (* (/ (/ %mass 1000) 6) 0.04))} ; Direct Control, Time for vehicle to from 0°/s rotation speed to max rotation speed.
+    {TurnStop                 (/ (+ 0.45 (* (/ (/ %mass 1000) 6) 0.04)) %performance)} ; Direct Control, Time for vehicle to from max rotation speed to 0°/s rotation speed to max rotation speed.
+    {TurnRadius        (/ (+ 1 (+ (/ %speed 15) (/ (/ %mass 1000) 90))) %performance)} ; AI turning radius, lower = able to turn more without stopping.
+    {StartTime                             (* 3 (/ %speed (/ %power (/ %mass 1000))))} ; = mass(kg) / power. Time for vehicle to accelerate from 0kph to max speed.
+    {StopTime                       (/ (+ 2.05 (* (/ %mass 1000) 0.04)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
+    {BrakeTime                      (/ (+ 0.75 (* (/ %mass 1000) 0.04)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
     {Gears                                                                0.5 0.8 1.0} ; Gearing affects acceleration curve.
     {RearGears                                                   (* %performance 0.3)} ; Reverse max speed.
-    {GearSwitchDelay                                             (/ 0.4 %performance)} ; Time to switch between forward and reverse.
+    {GearSwitchDelay                                             (/ 0.3 %performance)} ; Time to switch between forward and reverse.
     {MaxSlope                                                                      75} ; Maximum slope to drive up hill
     {FallSlope                                                                     75} ; Maximum slope before physics kick in
   }
