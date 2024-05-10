@@ -52,9 +52,9 @@
 
       {Item "nbks grenade" 5}
 
-      {Item "ammo ger-75l70 apcbche" 29}
-      {Item "ammo ger-75l70 apcr" 9}
-      {Item "ammo ger-75l70 he" 29}
+      {Item "ammo ger-75l70 apcbche" 28}
+      {Item "ammo ger-75l70 apcr" 8}
+      {Item "ammo ger-75l70 he" 28}
     }
   }
 
@@ -62,7 +62,7 @@
     {RestoreIKTime 2}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-75mm-kwspzk-l70" filling "ammo ger-75l70 apcbche" 1}
+      {Weapon "weapon ger-75mm-kwspzk-l70" filling "ammo ger-75l70 apcbche" 2}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion

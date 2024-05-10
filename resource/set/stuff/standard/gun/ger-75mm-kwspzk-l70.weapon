@@ -18,7 +18,7 @@
   {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
   {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
 
-  {Filling "ammo ger-75l70" 1} ; 弹种及弹链内炮弹数量
+  {Filling "ammo ger-75l70" 2} ; 弹种及弹链内炮弹数量
   {Calibre 75} ; 口径
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
@@ -32,8 +32,8 @@
   {DisableRicochet 0} ; 是否禁用跳弹模式
   ; 不启用曲射模式
 
-  {RechargeTime 7} ; 装填时间（秒）
-  {RecoveryTime 1.000} ; 短射间隔（秒）, 适用于弹链
+  {RechargeTime 9} ; 装填时间（秒）
+  {RecoveryTime 3.000} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
 
   ; 无连发模式
