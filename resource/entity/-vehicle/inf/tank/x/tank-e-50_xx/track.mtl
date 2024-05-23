@@ -1,7 +1,0 @@
-{material bump
-	{diffuse "tiger_ii_track_hd"}
-	{bump "tiger_ii_track_nm_hd"}
-	{specular "tiger_ii_track_sm_hd"}
-	{color "229 229 229 25"}
-	{blend test}
-}

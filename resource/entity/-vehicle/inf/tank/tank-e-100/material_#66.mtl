@@ -1,7 +1,0 @@
-{material bump
-  {diffuse "e-100_turret_02_am_hd"}
-  {bump "e-100_turret_02_anm_hd"}
-  {specular "e-100_turret_02_cm_hd"}
-  {color "229 229 229 125"}
-  {blend none}
-}

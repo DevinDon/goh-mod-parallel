@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 
-# AI 系列坦克
+# 坦克
 msgctxt "desc/entity/tank-ai-robot"
 msgid   "AI Robot Remote Control Tank"
 msgstr  "智能遥控坦克"
@@ -23,52 +23,3 @@ msgstr  "<c(33c0ee)>智能系列轻型坦克</c>"
 msgctxt "desc/squad/tank-ai-robot"
 msgid   "<c(03A9F4)>( I )</c> AI Robot Remote Control Tank"
 msgstr  "<c(03A9F4)>( I )</c> 智能遥控坦克"
-
-# E 系列坦克
-msgctxt "desc/entity/tank-e-25"
-msgid   "E-25 Light Tank Destroyer"
-msgstr  "E-25 轻型坦克歼击车"
-
-msgctxt "info/special/tank-e-25"
-msgid   "<c(33c0ee)>IInfinity Series Light Tank</c>"
-msgstr  "<c(33c0ee)>无尽系列轻型坦克</c>"
-
-msgctxt "desc/squad/tank-e-25"
-msgid   "<c(03A9F4)>( I )</c> E-25 Light Tank Destroyer"
-msgstr  "<c(03A9F4)>( I )</c> E-25 轻型坦克歼击车"
-
-msgctxt "desc/entity/tank-e-50"
-msgid   "E-50 Medium Tank"
-msgstr  "E-50 中型坦克"
-
-msgctxt "info/special/tank-e-50"
-msgid   "<c(33c0ee)>IInfinity Series Medium Tank</c>"
-msgstr  "<c(33c0ee)>无尽系列中型坦克</c>"
-
-msgctxt "desc/squad/tank-e-50"
-msgid   "<c(03A9F4)>( II )</c> E-50 Medium Tank"
-msgstr  "<c(03A9F4)>( II )</c> E-50 中型坦克"
-
-msgctxt "desc/entity/tank-e-75"
-msgid   "E-75 Heavy Tank"
-msgstr  "E-75 重型坦克"
-
-msgctxt "info/special/tank-e-75"
-msgid   "<c(33c0ee)>IInfinity Series Heavy Tank</c>"
-msgstr  "<c(33c0ee)>无尽系列重型坦克</c>"
-
-msgctxt "desc/squad/tank-e-75"
-msgid   "<c(03A9F4)>( III )</c> E-75 Heavy Tank"
-msgstr  "<c(03A9F4)>( III )</c> E-75 重型坦克"
-
-msgctxt "desc/entity/tank-e-100"
-msgid   "E-100 Heavy Tank"
-msgstr  "E-100 重型坦克"
-
-msgctxt "info/special/tank-e-100"
-msgid   "<c(33c0ee)>IInfinity Series Heavy Tank</c>"
-msgstr  "<c(33c0ee)>无尽系列重型坦克</c>"
-
-msgctxt "desc/squad/tank-e-100"
-msgid   "<c(3F51B5)>( III )</c> E-100 Heavy Tank"
-msgstr  "<c(3F51B5)>( III )</c> E-100 重型坦克"

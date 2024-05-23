@@ -1,7 +1,0 @@
-{material bump
-	{diffuse "panther_ii_crash"}
-	{bump "panther_ii_nm"}
-	{specular "panther_ii_sm"}
-	{color "255 255 255 127"}
-	{blend none}
-}

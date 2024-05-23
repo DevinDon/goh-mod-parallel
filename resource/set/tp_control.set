@@ -718,11 +718,10 @@
     {"p47_d22_recon" inherit "vehicle aircraft.common"}
     {"p47_d22" inherit "vehicle aircraft.common"}
 
-    ; custom define
+    ; custom define and vehicle
     (include "/properties/standard/third-person-control-vision/ger.inc")
+    (include "/properties/standard/third-person-control-vision/inf.inc")
     (include "/properties/standard/third-person-control-vision/usa.inc")
-    ; custom vehicle
-    (include "/properties/standard/third-person-control-vision/additional-vehicle.inc")
   }
   {human
     ;{disabled}

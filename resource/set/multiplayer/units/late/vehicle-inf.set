@@ -18,21 +18,21 @@
   {round_multiple 5.0}
 )
 
-{"tank-ai-robot"
-  ("set-standard-vehicle" vehicle(tank-ai-robot) cost(100) cd(60) ci(30) cw(1) cp(10) tags(light)  period(late) crew1(engineer-1:0) crew2(engineer-2:0) group(robot)   button(tanks))
-}
-
-{"tank-e-25"
-  ("set-standard-vehicle" vehicle(tank-e-25) cost(500)  cd(300)  ci(120) cw(4) cp(0) tags(light)  period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(light)  button(tanks))
-}
-
-{"tank-e-50"
-  ("set-standard-vehicle" vehicle(tank-e-50) cost(1000) cd(600)  ci(240) cw(6) cp(0) tags(medium) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(medium) button(tanks))
-}
-
-{"tank-e-75"
-  ("set-standard-vehicle" vehicle(tank-e-75) cost(1500) cd(1000) ci(480) cw(8) cp(0) tags(heavy)  period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(heavy)  button(tanks))
-}
+; {"tank-ai-robot"
+;   ("set-standard-vehicle" vehicle(tank-ai-robot) cost(100) cd(60) ci(30) cw(1) cp(10) tags(light) period(late) crew1(engineer-1:0) crew2(engineer-2:0) group(robot)   button(tanks))
+; }
+;
+; {"tank-e-25"
+;   ("set-standard-vehicle" vehicle(tank-e-25) cost(500)  cd(300)  ci(120) cw(4) cp(0) tags(light)  period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(light)  button(tanks))
+; }
+;
+; {"tank-e-50"
+;   ("set-standard-vehicle" vehicle(tank-e-50) cost(1000) cd(600)  ci(240) cw(6) cp(0) tags(medium) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(medium) button(tanks))
+; }
+;
+; {"tank-e-75"
+;   ("set-standard-vehicle" vehicle(tank-e-75) cost(1500) cd(1000) ci(480) cw(8) cp(0) tags(heavy)  period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(heavy)  button(tanks))
+; }
 
 ; 学说载具
 ; define from squad_vehicle2_doctrine
@@ -50,7 +50,7 @@
 (define "set-standard-doctrine-level-1"
   {charge
     {delay 300}
-    {interval 120}
+    {interval 100}
   }
   {group "doctrine_t1"}
   {doctrine %doctrine}
@@ -82,7 +82,7 @@
   {score (* %cost 0.05)}
 )
 
-{"tank-e-100"
-  ("set-standard-doctrine-vehicle" vehicle(tank-e-100) period(late) crew1(engineer-1:1) crew2(engineer-2:4))
-  ("set-standard-doctrine-level-3" doctrine(ascension_inf_tank) cost(100))
-}
+; {"tank-e-100"
+;   ("set-standard-doctrine-vehicle" vehicle(tank-e-100) period(late) crew1(engineer-1:1) crew2(engineer-2:4))
+;   ("set-standard-doctrine-level-3" doctrine(ascension_inf_tank) cost(100))
+; }
