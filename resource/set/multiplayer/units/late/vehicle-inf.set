@@ -37,16 +37,16 @@
 
 ; 轮式装甲车
 {"sdkfz-234-1"
-  ("set-standard-vehicle" vehicle(sdkfz-234-1) cost(300) cd(100) ci(60)  cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(sdkfz234) button(vehicles))
+  ("set-standard-vehicle" vehicle(sdkfz-234-1) cost(300) cd(100) ci(60)  cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(sdkfz234) button(vehicles))
 }
 {"sdkfz-234-2"
-  ("set-standard-vehicle" vehicle(sdkfz-234-2) cost(350) cd(150) ci(90)  cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(sdkfz234) button(vehicles))
+  ("set-standard-vehicle" vehicle(sdkfz-234-2) cost(350) cd(150) ci(90)  cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(sdkfz234) button(vehicles))
 }
 {"sdkfz-234-3"
-  ("set-standard-vehicle" vehicle(sdkfz-234-3) cost(350) cd(150) ci(90)  cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(sdkfz234) button(vehicles))
+  ("set-standard-vehicle" vehicle(sdkfz-234-3) cost(350) cd(150) ci(90)  cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(sdkfz234) button(vehicles))
 }
 {"sdkfz-234-4"
-  ("set-standard-vehicle" vehicle(sdkfz-234-4) cost(450) cd(300) ci(150) cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(sdkfz234) button(vehicles))
+  ("set-standard-vehicle" vehicle(sdkfz-234-4) cost(450) cd(300) ci(150) cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(sdkfz234) button(vehicles))
 }
 
 ; 履带式装甲车
