@@ -1,0 +1,60 @@
+{game_entity
+  (include "/properties/vehicle_xx.ext")
+  {extension "/entity/-vehicle/germany/tank_medium/x/panzer5a_xx/panzer5a_xx.mdl"}
+  {volume "barrel"
+  }
+  {volume "body1"
+  }
+  {volume "body2"
+  }
+  {volume "body3"
+  }
+  {volume "breach"
+  }
+  {volume "cupola"
+  }
+  {volume "detail7"
+  }
+  {volume "detail8"
+  }
+  {volume "engine1"
+  }
+  {volume "engine2"
+  }
+  {volume "mantlet2"
+  }
+  {volume "mantlet"
+  }
+  {volume "part1"
+  }
+  {volume "part2"
+  }
+  {volume "part3"
+  }
+  {volume "part4"
+  }
+  {volume "part5"
+  }
+  {volume "part6"
+  }
+  {volume "part7"
+  }
+  {volume "part8"
+  }
+  {volume "shieldl3"
+  }
+  {volume "shieldl4"
+  }
+  {volume "shieldl7"
+  }
+  {volume "shieldr1"
+  }
+  {volume "trackleft"
+  }
+  {volume "trackright"
+  }
+  {volume "turret2"
+  }
+  {volume "turret"
+  }
+}

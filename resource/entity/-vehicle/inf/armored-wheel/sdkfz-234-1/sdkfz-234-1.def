@@ -1,0 +1,95 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/armored-car-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(1.1))
+
+  {Extension "/entity/-vehicle/germany/btr/sdkfz234_1/sdkfz234_1.mdl"}
+  (include   "/entity/-vehicle/germany/btr/sdkfz234_1/sdkfz234_1.ext")
+  (include   "/entity/-vehicle/germany/btr/sdkfz234_1/crew-and-passenger.ext")
+
+  {Props "tank" "turret" "-hatch" "vision_lev02" "muzzle_20mm_25mm_auto" "wheeled" "8_wheels" "with_gun" "open_top"}
+
+  {PatherId "sdkfz232"}
+  {Targetclass "armoredcar"}
+  {TargetSelector "tank_zenite"}
+
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail6}
+    {detail7}
+    {detail8}
+    {detail11}
+  }
+
+  {Extender "shield" {on}}
+
+  {Extender "inventory"
+    {Weapon "mgun" {mask "mountable"}}
+    {Box
+      {Size 12 6}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun api" 1900}
+      {Item "weapon ger-mg42" filled {user "mgun"}}
+
+      {Item "ammo ger-20l55 ap" 200}
+      {Item "ammo ger-20l55 he" 200}
+    }
+  }
+
+  {Weaponry
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "weapon ger-20mm-kwk38-l55" filling "ammo ger-20l55 ap" 10}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  10.00} ; km/h
+        {ByLinearSpeed    0.25} ; km/h
+        {MaxAngularSpeed  5.00} ; deg/s
+        {ByAngularSpeed   0.35} ; deg/s
+        {DisorderTime     0.15} ; s
+        {OrderTime        1.95} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "coaxial"}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {LinkBone "mgun"}
+      {LinkAnimation "off"}
+      {basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 11500}
+  {Chassis "wheel"
+    ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
+    ("set-maneuverability-of-armored-car" speed(80) power(220) mass(11500) performance(1.45))
+    ("set-fuel-bag" volume(360) power(220) mass(11500))
+  }
+
+  {Bone "gun_rot"
+    {limits -4 70}
+    {speed2 20}
+  }
+  {Bone "turret"
+    {speed2 25}
+  }
+
+}

@@ -1,0 +1,40 @@
+{game_entity
+  (include "/properties/vehicle_xx.ext")
+  {extension "/entity/-vehicle/germany/tank_medium/x/panzer4h_xx/panzer4h_xx.mdl"}
+  {volume "body1"
+    {thickness 21}
+  }
+  {volume "body2"
+    {thickness 21}
+  }
+  {volume "cupola"
+    {thickness 21}
+  }
+  {volume "engine"
+    {thickness 21}
+  }
+  {volume "part2"
+    {thickness 21}
+  }
+  {volume "part3"
+    {thickness 21}
+  }
+  {volume "part4"
+    {thickness 21}
+  }
+  {volume "part5"
+    {thickness 21}
+  }
+  {volume "part6"
+    {thickness 21}
+  }
+  {volume "trackleft"
+    {thickness 21}
+  }
+  {volume "trackright"
+    {thickness 21}
+  }
+  {volume "turret"
+    {thickness 21}
+  }
+}

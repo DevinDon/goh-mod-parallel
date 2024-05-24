@@ -1,0 +1,70 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/car-config.ext")
+  (include "/properties/selection/vehicle_elongated.inc" scale(1.15))
+
+  {Extension "/entity/-vehicle/germany/car/blitz3_6_flak30/blitz3_6_flak30.mdl"}
+  (include   "/entity/-vehicle/germany/car/blitz3_6_flak30/blitz3_6_flak30.ext")
+  (include   "/entity/-vehicle/germany/car/blitz3_6_flak30/crew-and-passenger.ext")
+
+  {Props "turret" "with_gun" "open_top" "automatic" "multi_board" "truck" "vision_lev02" "muzzle_20mm_25mm_auto" "tractor" "tractor_heavy" "detect_tank_light"}
+
+  {PatherId "blitz36"}
+  {TargetSelector "tank_zenite"}
+  {Collider "truck"}
+
+  {Extender "detail"
+    {random 0}
+    {detail6}
+    {detail2}
+    {detail5}
+    {detail8}
+    {detail9}
+  }
+
+  {Able "emit_on_attack"}
+
+  {Extender "inventory"
+    {Box
+      {Size 9 9}
+      {Weight 2000}
+      {Item "repair_kit" 20}
+
+      {Item "ammo ger-20l55 ap" 100}
+      {Item "ammo ger-20l55 he" 380}
+    }
+  }
+
+  {Weaponry
+    ; {RestoreIKTime 5}
+    {Place "gun"
+      {Weapon "weapon ger-20mm-flak30-l65" filling "ammo ger-20l55 he" 20}
+      {AccuracyByMotion
+        {MaxLinearSpeed  10.00} ; km/h
+        {ByLinearSpeed    0.25} ; km/h
+        {MaxAngularSpeed  5.00} ; deg/s
+        {ByAngularSpeed   0.35} ; deg/s
+        {DisorderTime     0.35} ; s
+        {OrderTime        2.95} ; s
+      }
+    }
+  }
+
+  {Mass 3200}
+  {Chassis "wheel"
+    ("set-car-trace" fx("tracewheel03")  step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-car-trace" fx("tracewheel03d") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
+    ("set-maneuverability-of-car" speed(80) power(68) mass(3200) performance(1.50))
+    ("set-fuel-bag" volume(80) power(68) mass(3200))
+  }
+
+  {Bone "gun_rot"
+    {limits -5 88}
+    {speed2 60}
+  }
+  {Bone "turret"
+    ; {limits -145 145}
+    {speed2 60}
+  }
+
+}

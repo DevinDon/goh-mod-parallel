@@ -11,15 +11,33 @@ Purchases["late.inf"] = {
       {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-antitank-platoon(inf)"},
       {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-engineer-platoon(inf)"},
       {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-mgun-platoon(inf)"},
-      -- -- 装甲车
-      -- -- 坦克
-      -- {priority = 1.5, type = {"Class", "Vehicle", "Unarmed", "Support", "Engineer",}, unit = "tank-ai-robot"},
-      -- {priority = 1.0, type = {"Class1", "Tank", "Light", "AT",}, unit = "tank-e-25"},
-      -- {priority = 2.0, type = {"Class2", "Tank", "Medium",},      unit = "tank-e-50"},
-      -- {priority = 2.0, type = {"Class3", "Tank", "Heavy",},       unit = "tank-e-75"},
-      -- -- 学说
-      -- -- 无尽重装军团
-      -- {priority = 1.0, type = {"Class3", "Doctrine", "Tier3", "Tank", "Heavy",}, unit = "tank-e-100"},
-    }
-  }
+      -- 卡车
+      -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",},          unit = "sdkfz-305-1"},
+      {priority = 1.0, type = {"Class1", "Vehicle", "AA",},                           unit = "sdkfz-305-2"},
+      -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Ammo",},     unit = "sdkfz-305-3"},
+      -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Fuel",},     unit = "sdkfz-305-4"},
+      -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Engineer",}, unit = "sdkfz-305-5"},
+      -- 轮式装甲车
+      {priority = 1.0, type = {"Class2", "Armored", "AA",}, unit = "sdkfz-234-1"},
+      {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-2"},
+      {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-3"},
+      {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-4"},
+      -- 履带式装甲车
+      -- {priority = 1.0, type = {"Class3", "Armored", "MG", "Transport",}, unit = "sdkfz-251-1"},
+      {priority = 1.0, type = {"Class3", "Armored", "MG",},              unit = "sdkfz-251-16"},
+      {priority = 1.0, type = {"Class3", "Armored", "AA",},              unit = "sdkfz-251-17"},
+      {priority = 1.0, type = {"Class3", "Armored", "AA",},              unit = "sdkfz-251-21"},
+      {priority = 1.0, type = {"Class3", "Armored", "AT",},              unit = "sdkfz-251-22"},
+      -- 坦克
+      {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-4-h"},
+      {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-4-j"},
+      {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-5-a"},
+      {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-5-g"},
+      {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-e"},
+      {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-h"},
+      -- 学说
+      -- 无尽重装军团
+      {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Medium",}, unit = "panzer-5-d"},
+    },
+  },
 }

@@ -1,0 +1,85 @@
+{game_entity
+  (include "/properties/vehicle_xx.ext")
+  {extension "/entity/-vehicle/germany/tank_medium/x/panzer5g_xx/panzer5g_xx.mdl"}
+  {Volume "barrel"
+    {thickness 21}
+  }
+  {Volume "body1"
+    {thickness 21}
+  }
+  {Volume "body2"
+    {thickness 21}
+  }
+  {Volume "body3"
+    {thickness 21}
+  }
+  {Volume "body4"
+    {thickness 21}
+  }
+  {Volume "breach"
+    {thickness 21}
+  }
+  {Volume "cupola"
+    {thickness 21}
+  }
+  {Volume "engine1"
+    {thickness 21}
+  }
+  {Volume "engine2"
+    {thickness 21}
+  }
+  {Volume "mantlet2"
+    {thickness 21}
+  }
+  {Volume "mantlet"
+    {thickness 21}
+  }
+  {Volume "part1"
+    {thickness 21}
+  }
+  {Volume "part2"
+    {thickness 21}
+  }
+  {Volume "part3"
+    {thickness 21}
+  }
+  {Volume "part4"
+    {thickness 21}
+  }
+  {Volume "part5"
+    {thickness 21}
+  }
+  {Volume "part6"
+    {thickness 21}
+  }
+  {Volume "part7"
+    {thickness 21}
+  }
+  {Volume "part8"
+    {thickness 21}
+  }
+  {Volume "shieldl3"
+    {thickness 21}
+  }
+  {Volume "shieldl5"
+    {thickness 21}
+  }
+  {Volume "shieldr4"
+    {thickness 21}
+  }
+  {Volume "shieldr5"
+    {thickness 21}
+  }
+  {Volume "trackleft"
+    {thickness 21}
+  }
+  {Volume "trackright"
+    {thickness 21}
+  }
+  {Volume "turret2"
+    {thickness 21}
+  }
+  {Volume "turret"
+    {thickness 21}
+  }
+}

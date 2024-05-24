@@ -1,0 +1,28 @@
+{game_entity
+  {extension "/entity/-vehicle/germany/btr/x/sdkfz234_2_x/sdkfz234_2_x.mdl"}
+  {RimLight}
+  {Volume "wheelleft1"
+    {able {obstacle 0}}
+  }
+  {Volume "wheelleft2"
+    {able {obstacle 0}}
+  }
+  {Volume "wheelleft3"
+    {able {obstacle 0}}
+  }
+  {Volume "wheelleft4"
+    {able {obstacle 0}}
+  }
+  {Volume "wheelright1"
+    {able {obstacle 0}}
+  }
+  {Volume "wheelright2"
+    {able {obstacle 0}}
+  }
+  {Volume "wheelright3"
+    {able {obstacle 0}}
+  }
+  {Volume "wheelright4"
+    {able {obstacle 0}}
+  }
+}

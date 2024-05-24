@@ -1,0 +1,41 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/car-config.ext")
+  (include "/properties/selection/vehicle_elongated.inc" scale(1.15))
+  (include "/properties/resupply.inc")
+
+  {Extension "/entity/-vehicle/germany/car/blitz3_6_fuel/blitz3_6_fuel.mdl"}
+  (include   "/entity/-vehicle/germany/car/blitz3_6_fuel/blitz3_6_fuel.ext")
+  (include   "/entity/-vehicle/germany/car/blitz3_6_fuel/crew-and-passenger.ext")
+
+  {Props "truck" "vision_lev02" "tractor" "tractor_heavy" "fuel_tank"}
+
+  {PatherId "blitz36"}
+  {Collider "truck"}
+
+  {Extender "detail"
+    {random 0}
+    {detail9}
+  }
+
+  ("set-fuel-resupply")
+
+  {Able "emit_on_attack"}
+
+  {Extender "inventory"
+    {Box
+      {Size 5 5}
+      {Weight 1000}
+      {Item "repair_kit" 20}
+    }
+  }
+
+  {Mass 4100}
+  {Chassis "wheel"
+    ("set-car-trace" fx("tracewheel03")  step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-car-trace" fx("tracewheel03d") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
+    ("set-maneuverability-of-car" speed(55) power(68) mass(4100) performance(1.40))
+    ("set-fuel-bag" volume(80) power(68) mass(4100))
+  }
+
+}

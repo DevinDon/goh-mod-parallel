@@ -11,15 +11,258 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 
+# 卡车
+msgctxt "desc/entity/sdkfz-305-1"
+msgid   "Sd.Kfz 305/1 Transportation"
+msgstr  "Sd.Kfz 305/1 运兵卡车"
+
+msgctxt "info/special/sdkfz-305-1"
+msgid   "<c(33c0ee)>Transportation</c>"
+msgstr  "<c(33c0ee)>运兵卡车</c>"
+
+msgctxt "desc/squad/sdkfz-305-1"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 305/1 Transportation"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 305/1 运兵卡车"
+
+msgctxt "desc/entity/sdkfz-305-2"
+msgid   "Sd.Kfz 305/2 mit FlaK 30"
+msgstr  "Sd.Kfz 305/2 防空卡车 加装 FlaK 30"
+
+msgctxt "info/special/sdkfz-305-2"
+msgid   "<c(33c0ee)>Anti-Aircraft Truck</c>"
+msgstr  "<c(33c0ee)>防空卡车</c>"
+
+msgctxt "desc/squad/sdkfz-305-2"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 305/2 mit FlaK 30"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 305/2 防空卡车 加装 FlaK 30"
+
+msgctxt "desc/entity/sdkfz-305-3"
+msgid   "Sd.Kfz 305/3 Ammo Supply"
+msgstr  "Sd.Kfz 305/3 弹药补给车"
+
+msgctxt "info/special/sdkfz-305-3"
+msgid   "<c(33c0ee)>Ammo Supply</c>"
+msgstr  "<c(33c0ee)>弹药补给车</c>"
+
+msgctxt "desc/squad/sdkfz-305-3"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 305/3 Ammo Supply"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 305/3 弹药补给车"
+
+msgctxt "desc/entity/sdkfz-305-4"
+msgid   "Sd.Kfz 305/4 Fuel Supply"
+msgstr  "Sd.Kfz 305/4 燃油补给车"
+
+msgctxt "info/special/sdkfz-305-4"
+msgid   "<c(33c0ee)>Fuel Supply</c>"
+msgstr  "<c(33c0ee)>燃油补给车</c>"
+
+msgctxt "desc/squad/sdkfz-305-4"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 305/4 Fuel Supply"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 305/4 燃油补给车"
+
+msgctxt "desc/entity/sdkfz-305-5"
+msgid   "Sd.Kfz 305/5 Engineering Supply"
+msgstr  "Sd.Kfz 305/5 工程补给车"
+
+msgctxt "info/special/sdkfz-305-5"
+msgid   "<c(33c0ee)>Engineering Supply</c>"
+msgstr  "<c(33c0ee)>工程补给车</c>"
+
+msgctxt "desc/squad/sdkfz-305-5"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 305/5 Engineering Supply"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 305/5 工程补给车"
+
+# 轮式装甲车
+msgctxt "desc/entity/sdkfz-234-1"
+msgid   "Sd.Kfz 234/1 mit 2 cm KwK 38"
+msgstr  "Sd.Kfz 234/1 加装 2 cm KwK 38"
+
+msgctxt "info/special/sdkfz-234-1"
+msgid   "<c(33c0ee)>Armored Wheel</c>"
+msgstr  "<c(33c0ee)>轮式装甲车</c>"
+
+msgctxt "desc/squad/sdkfz-234-1"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 234/1 mit 2 cm KwK 38"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 234/1 加装 2 cm KwK 38"
+
+msgctxt "desc/entity/sdkfz-234-2"
+msgid   "Sd.Kfz 234/2 mit 5 cm KwK 39"
+msgstr  "Sd.Kfz 234/2 美洲豹 加装 5 cm KwK 39"
+
+msgctxt "info/special/sdkfz-234-2"
+msgid   "<c(33c0ee)>Armored Wheel</c>"
+msgstr  "<c(33c0ee)>轮式装甲车</c>"
+
+msgctxt "desc/squad/sdkfz-234-2"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 234/2 mit 5 cm KwK 39"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 234/2 美洲豹 加装 5 cm KwK 39"
+
+msgctxt "desc/entity/sdkfz-234-3"
+msgid   "Sd.Kfz 234/3 mit K51"
+msgstr  "Sd.Kfz 234/3 加装 7.5 cm K51"
+
+msgctxt "info/special/sdkfz-234-3"
+msgid   "<c(33c0ee)>Armored Wheel</c>"
+msgstr  "<c(33c0ee)>轮式装甲车</c>"
+
+msgctxt "desc/squad/sdkfz-234-3"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 234/3 mit K51"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 234/3 加装 7.5 cm K51"
+
+msgctxt "desc/entity/sdkfz-234-4"
+msgid   "Sd.Kfz 234/4 mit 7.5 cm PaK 40"
+msgstr  "Sd.Kfz 234/4 加装 7.5 cm PaK 40"
+
+msgctxt "info/special/sdkfz-234-4"
+msgid   "<c(33c0ee)>Armored Wheel</c>"
+msgstr  "<c(33c0ee)>轮式装甲车</c>"
+
+msgctxt "desc/squad/sdkfz-234-4"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 234/4 mit 7.5 cm PaK 40"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 234/4 加装 7.5 cm PaK 40"
+
+# 履带式装甲车
+msgctxt "desc/entity/sdkfz-251-1"
+msgid   "Sd.Kfz 251/1 Transportation"
+msgstr  "Sd.Kfz 251/1 装甲运兵车"
+
+msgctxt "info/special/sdkfz-251-1"
+msgid   "<c(33c0ee)>Armored Half-Track</c>"
+msgstr  "<c(33c0ee)>半履带式装甲车</c>"
+
+msgctxt "desc/squad/sdkfz-251-1"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 251/1 Transportation"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 251/1 装甲运兵车"
+
+msgctxt "desc/entity/sdkfz-251-16"
+msgid   "Sd.Kfz 251/16 mit 14mm Flamm"
+msgstr  "Sd.Kfz 251/16 加装 14mm 喷火器"
+
+msgctxt "info/special/sdkfz-251-16"
+msgid   "<c(33c0ee)>Armored Half-Track</c>"
+msgstr  "<c(33c0ee)>半履带式装甲车</c>"
+
+msgctxt "desc/squad/sdkfz-251-16"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 251/16 mit 14mm Flamm"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 251/16 加装 14mm 喷火器"
+
+msgctxt "desc/entity/sdkfz-251-17"
+msgid   "Sd.Kfz 251/17 mit 2 cm KwK 38"
+msgstr  "Sd.Kfz 251/17 加装 2 cm KwK 38"
+
+msgctxt "info/special/sdkfz-251-17"
+msgid   "<c(33c0ee)>Armored Half-Track</c>"
+msgstr  "<c(33c0ee)>半履带式装甲车</c>"
+
+msgctxt "desc/squad/sdkfz-251-17"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 251/17 mit 2 cm KwK 38"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 251/17 加装 2 cm KwK 38"
+
+msgctxt "desc/entity/sdkfz-251-21"
+msgid   "Sd.Kfz 251/21 mit 3 x 2 cm MG151"
+msgstr  "Sd.Kfz 251/21 加装 三联装 2 cm MG151"
+
+msgctxt "info/special/sdkfz-251-21"
+msgid   "<c(33c0ee)>Armored Half-Track</c>"
+msgstr  "<c(33c0ee)>半履带式装甲车</c>"
+
+msgctxt "desc/squad/sdkfz-251-21"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 251/21 mit 3 x 2 cm MG151"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 251/21 加装 三联装 2 cm MG151"
+
+msgctxt "desc/entity/sdkfz-251-22"
+msgid   "Sd.Kfz 251/22 mit 7.5 cm Pak 40"
+msgstr  "Sd.Kfz 251/22 加装 7.5 cm Pak 40"
+
+msgctxt "info/special/sdkfz-251-22"
+msgid   "<c(33c0ee)>Armored Half-Track</c>"
+msgstr  "<c(33c0ee)>半履带式装甲车</c>"
+
+msgctxt "desc/squad/sdkfz-251-22"
+msgid   "<c(03A9F4)>( I )</c> Sd.Kfz 251/22 mit 7.5 cm Pak 40"
+msgstr  "<c(03A9F4)>( I )</c> Sd.Kfz 251/22 加装 7.5 cm Pak 40"
+
 # 坦克
-msgctxt "desc/entity/tank-ai-robot"
-msgid   "AI Robot Remote Control Tank"
-msgstr  "智能遥控坦克"
+msgctxt "desc/entity/panzer-4-h"
+msgid   "Pz.Kpfw IV Ausf.H"
+msgstr  "四号坦克 H 型"
 
-msgctxt "info/special/tank-ai-robot"
-msgid   "<c(33c0ee)>IInfinity Series Light Tank</c>"
-msgstr  "<c(33c0ee)>智能系列轻型坦克</c>"
+msgctxt "info/special/panzer-4-h"
+msgid   "<c(33c0ee)>Medium Tank</c>"
+msgstr  "<c(33c0ee)>中型坦克</c>"
 
-msgctxt "desc/squad/tank-ai-robot"
-msgid   "<c(03A9F4)>( I )</c> AI Robot Remote Control Tank"
-msgstr  "<c(03A9F4)>( I )</c> 智能遥控坦克"
+msgctxt "desc/squad/panzer-4-h"
+msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw IV Ausf.H"
+msgstr  "<c(03A9F4)>( I )</c> 四号坦克 H 型"
+
+msgctxt "desc/entity/panzer-4-j"
+msgid   "Pz.Kpfw IV Ausf.J"
+msgstr  "四号坦克 J 型"
+
+msgctxt "info/special/panzer-4-j"
+msgid   "<c(33c0ee)>Medium Tank</c>"
+msgstr  "<c(33c0ee)>中型坦克</c>"
+
+msgctxt "desc/squad/panzer-4-j"
+msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw IV Ausf.J"
+msgstr  "<c(03A9F4)>( I )</c> 四号坦克 J 型"
+
+msgctxt "desc/entity/panzer-5-a"
+msgid   "Pz.Kpfw V Ausf.A"
+msgstr  "五号坦克 A 型"
+
+msgctxt "info/special/panzer-5-a"
+msgid   "<c(33c0ee)>Medium Tank</c>"
+msgstr  "<c(33c0ee)>中型坦克</c>"
+
+msgctxt "desc/squad/panzer-5-a"
+msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw V Ausf.A"
+msgstr  "<c(03A9F4)>( I )</c> 五号坦克 A 型"
+
+msgctxt "desc/entity/panzer-5-d"
+msgid   "Pz.Kpfw V Ausf.D"
+msgstr  "五号坦克 D 型"
+
+msgctxt "info/special/panzer-5-d"
+msgid   "<c(33c0ee)>Medium Tank</c>"
+msgstr  "<c(33c0ee)>中型坦克</c>"
+
+msgctxt "desc/squad/panzer-5-d"
+msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw V Ausf.D"
+msgstr  "<c(03A9F4)>( I )</c> 五号坦克 D 型"
+
+msgctxt "desc/entity/panzer-5-g"
+msgid   "Pz.Kpfw V Ausf.G"
+msgstr  "五号坦克 G 型"
+
+msgctxt "info/special/panzer-5-g"
+msgid   "<c(33c0ee)>Medium Tank</c>"
+msgstr  "<c(33c0ee)>中型坦克</c>"
+
+msgctxt "desc/squad/panzer-5-g"
+msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw V Ausf.G"
+msgstr  "<c(03A9F4)>( I )</c> 五号坦克 G 型"
+
+msgctxt "desc/entity/panzer-6-e"
+msgid   "Pz.Kpfw VI Ausf.E"
+msgstr  "六号坦克 E 型"
+
+msgctxt "info/special/panzer-6-e"
+msgid   "<c(33c0ee)>Heavy Tank</c>"
+msgstr  "<c(33c0ee)>重型坦克</c>"
+
+msgctxt "desc/squad/panzer-6-e"
+msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw VI Ausf.E"
+msgstr  "<c(03A9F4)>( I )</c> 六号坦克 E 型"
+
+msgctxt "desc/entity/panzer-6-h"
+msgid   "Pz.Kpfw VI Ausf.H"
+msgstr  "六号坦克 H 型"
+
+msgctxt "info/special/panzer-6-h"
+msgid   "<c(33c0ee)>Heavy Tank</c>"
+msgstr  "<c(33c0ee)>重型坦克</c>"
+
+msgctxt "desc/squad/panzer-6-h"
+msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw VI Ausf.H"
+msgstr  "<c(03A9F4)>( I )</c> 六号坦克 H 型"

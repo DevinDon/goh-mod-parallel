@@ -1,0 +1,150 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(1.2))
+
+  {Extension "/entity/-vehicle/germany/tank_medium/panzer5a/panzer5a_armor.mdl"}
+  (include   "/entity/-vehicle/germany/tank_medium/panzer5a/panzer5a.ext")
+  (include   "/entity/-vehicle/germany/tank_medium/panzer5a/crew-and-passenger.ext")
+
+  {Props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nvw" "detect_tank_heavy" "panzer5a"}
+
+  {PatherId "panzer5"}
+  {Targetclass "tank_heavy"}
+  {TargetSelector "tank_heavy"}
+
+  {Extender "detail"
+    {random 0}
+    {detail9}
+    {detail1}
+    {detail2}
+    {detail3}
+    {detail4}
+    {detail5}
+    {detail6}
+    {detail11}
+    {detail12}
+    {detail13}
+    {detail14}
+    {detail10}
+    {detail8}
+    {detail7}
+    {detail16}
+    {detail17}
+    {detail18}
+    {detail19}
+  }
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
+
+  {Extender "shield" {on}}
+
+  {Extender "smokescreen"
+    {cooldown 5}
+    {itemTags "grenade nbks"}
+  }
+
+  {Extender "inventory"
+    {Weapon "mgun" {mask "mountable"}}
+    {Box
+      {Size 14 10}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun api" 4500}
+      {Item "weapon ger-mg42" filled {user "mgun"}}
+
+      {Item "nbks grenade" 2}
+
+      {Item "ammo ger-75l70 apcbche" 39}
+      {Item "ammo ger-75l70 apcr" 5}
+      {Item "ammo ger-75l70 he" 29}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 2}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "weapon ger-75mm-kwk42-l70" filling "ammo ger-75l70 apcbche" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.15} ; s
+      }
+    }
+    {Place "mgun2"
+      {Type "coaxial"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight5"}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun1"
+      {Type "hull"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight4"}
+      {Gunner "gunner3"}
+      {Charger "gunner3"}
+      {basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "aa"}
+      {Gunner "commander"}
+      {Charger "commander"}
+      {LinkBone "mgun"}
+      {LinkAnimation "off"}
+      {basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 45500}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_big") step(0.47) length(0.94) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(50) power(600) mass(45500) performance(1.29))
+    ("set-fuel-bag" volume(730) power(600) mass(45500))
+  }
+
+  {Bone "gun_rot"
+    {limits -8 18}
+    {speed2 4}
+  }
+  {Bone "turret"
+    {speed2 12}
+  }
+
+}

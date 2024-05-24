@@ -167,7 +167,7 @@ Purchases["late.ger"] = {
         --{priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",}, unit = "kettenkrad"},
         --{priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",}, unit = "sdkfz10"},
         --{priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",}, unit = "sdkfz7"},
-        {priority = 1.0, type = {"Class3", "Armored", "MG", "Transport",}, unit = "sdkfz251d_1"},
+        -- {priority = 1.0, type = {"Class3", "Armored", "MG", "Transport",}, unit = "sdkfz251d_1"},
         --]]
 
       -- Tanks

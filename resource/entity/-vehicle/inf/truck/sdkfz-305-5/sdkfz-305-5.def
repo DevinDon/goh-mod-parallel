@@ -1,0 +1,54 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/car-config.ext")
+  (include "/properties/selection/vehicle_elongated.inc" scale(1.15))
+  (include "/properties/resupply.inc")
+
+  {Extension "/entity/-vehicle/germany/car/blitz3_6_engineering/blitz3_6_engineering.mdl"}
+  (include   "/entity/-vehicle/germany/car/blitz3_6_engineering/blitz3_6_engineering.ext")
+  (include   "/entity/-vehicle/germany/car/blitz3_6_engineering/crew-and-passenger.ext")
+
+  {Props "truck" "vision_lev02" "tractor" "tractor_heavy"}
+
+  {PatherId "blitz36"}
+  {Collider "truck"}
+
+  {Extender "detail"
+    {random 0}
+    {detail1}
+    {detail2}
+    {detail9}
+  }
+
+  ("set-engineer-resupply")
+
+  {Able "emit_on_attack"}
+
+  {Extender "shield" {on}}
+
+  {Extender "inventory"
+    {Box
+      {Size 15 15}
+      {Weight 2000}
+      {Item "repair_kit" 20}
+
+      {Item "tmi_35" "mine" 100}
+      {Item "mine_detector" 10}
+      {Item "shovel_ger" 10}
+      {Item "pickaxe" 10}
+      {Item "dynamite-x3" 50}
+      {Item "dynamite-x7" 50}
+      {Item "s" "mine" 300}
+      {Item "wirecutters" 10}
+    }
+  }
+
+  {mass 3600}
+  {Chassis "wheel"
+    ("set-car-trace" fx("tracewheel03")  step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-car-trace" fx("tracewheel03d") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
+    ("set-maneuverability-of-car" speed(80) power(68) mass(3600) performance(1.45))
+    ("set-fuel-bag" volume(80) power(68) mass(3600))
+  }
+
+}
