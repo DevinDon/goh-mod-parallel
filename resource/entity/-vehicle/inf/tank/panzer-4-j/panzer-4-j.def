@@ -3,30 +3,15 @@
   (include "/properties/standard/vehicle/tank-config.ext")
   (include "/properties/selection/vehicle.inc" scale(1.2))
 
-  {Extension "/entity/-vehicle/germany/tank_medium/panzer4h/panzer4h.mdl"}
-  (include   "/entity/-vehicle/germany/tank_medium/panzer4h/panzer4h.ext")
-  (include   "/entity/-vehicle/germany/tank_medium/panzer4h/crew-and-passenger.ext")
+  {Extension "/entity/-vehicle/germany/tank_medium/panzer4j/panzer4j.mdl"}
+  (include   "/entity/-vehicle/germany/tank_medium/panzer4j/panzer4j.ext")
+  (include   "/entity/-vehicle/germany/tank_medium/panzer4j/crew-and-passenger.ext")
 
-  {Props "medium" "vision_lev04" "muzzle_75mm_76mm_sides" "shield"}
+  {Props "medium" "vision_lev04" "muzzle_75mm_76mm_sides" "shield" "smoke" "nvw"}
 
   {PatherId "panzer4"}
   {Targetclass "tank_medium"}
   {TargetSelector "tank_medium"}
-
-  {Extender "detail"
-    {random 0}
-    {detail1}
-    {detail2}
-    {detail3}
-    {detail4}
-    {detail5}
-    {detail6}
-    {detail7}
-    {detail8}
-    {detail9}
-    {detail10}
-    {detail11}
-  }
 
   {Extender "enumerator"
     {digit_folder "ger"}
@@ -34,12 +19,18 @@
 
   {Extender "shield" {on}}
 
+  {Extender "smokescreen"
+    {cooldown 5}
+    {itemTags "grenade nbks"}
+  }
+
   {Extender "inventory"
     {Weapon "mgun" {mask "mountable"}}
     {Box
       {Size 12 10}
       {Weight 1000}
       {Item "repair_kit" 10}
+      {Item "nbks grenade" 6}
 
       {Item "ammo ger-mgun api" 4500}
       {Item "weapon ger-mg42" filled {user "mgun"}}
@@ -70,7 +61,7 @@
     {Place "mgun2"
       {Type "coaxial"}
       {Weapon "weapon ger-mg42" filled}
-      {foresight "foresight5"}
+      {Foresight "foresight5"}
       {Gunner "gunner"}
       {Charger "charger"}
       {basic}
@@ -86,7 +77,7 @@
     {Place "mgun1"
       {Type "hull"}
       {Weapon "weapon ger-mg42" filled}
-      {foresight "foresight4"}
+      {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}
       {basic}
@@ -119,11 +110,11 @@
     }
   }
 
-  {Mass 25100}
+  {Mass 25000}
   {Chassis "track"
     ("set-tank-trace" fx("tracks_mid") step(0.52) length(0.45) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(40) power(440) mass(25100) performance(1.35))
-    ("set-fuel-bag" volume(470) power(440) mass(25100))
+    ("set-maneuverability-of-tank" speed(38) power(265) mass(25000) performance(1.31))
+    ("set-fuel-bag" volume(680) power(265) mass(25000))
   }
 
   {Bone "gun_rot"
@@ -131,7 +122,7 @@
     {speed2 5}
   }
   {Bone "turret"
-    {speed2 18}
+    {speed2 9}
   }
 
   {texmod "2"}

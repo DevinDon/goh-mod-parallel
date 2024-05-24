@@ -2,7 +2,7 @@ import type { CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 
-  destination: 'resource/entity/-vehicle/inf/tank/tank-e-25/crew-and-passenger.ext',
+  destination: 'resource/entity/-vehicle/germany/tank_medium/panzer4j/crew-and-passenger.ext',
 
   visors: [
     // 覆盖默认视野，需要同名且占用该连接点才能覆盖
@@ -41,21 +41,55 @@ const options: CrewAndPassengerOptions = {
 
   animations: [
     {
-      name: 'left',
+      name: 'driver',
       forward: {
-        begin: [ 'board_tank', 1 ],
+        base: [ 'open_driver', 1 ],
+        begin: [ 'board_pz4_driver', 1 ],
+        end: [ 'pose_mgun_pz6', 1 ],
       },
       reverse: {
-        end: [ 'emit_tank_1_hold', 1 ],
+        base: [ 'open_driver', -1 ],
+        end: [ 'board_pz4_driver', -1 ],
+      },
+    },
+    {
+      name: 'left',
+      forward: {
+        begin: [ 'board_cromwell', 1 ],
+        end: [ 'pose_mgun_pz6', 1 ],
+      },
+      reverse: {
+        end: [ 'board_cromwell', -1 ],
       },
     },
     {
       name: 'right',
       forward: {
-        begin: [ 'board_tank', 1 ],
+        begin: [ 'board_cromwell', 1 ],
+        end: [ 'pose_mgun_pz6', 1 ],
       },
       reverse: {
-        end: [ 'emit_tank_1_hold', 1 ],
+        end: [ 'board_cromwell', -1 ],
+      },
+    },
+    {
+      name: 'armor01',
+      forward: {
+        begin: [ 'board_MiddleArmor', 1 ],
+        end: [ 'pose_seat_armor_1', 1 ],
+      },
+      reverse: {
+        end: [ 'emit_tank_1', 1 ],
+      },
+    },
+    {
+      name: 'armor02',
+      forward: {
+        begin: [ 'board_MiddleArmor', 1 ],
+        end: [ 'pose_seat_armor_2', 1 ],
+      },
+      reverse: {
+        end: [ 'emit_tank_1', 1 ],
       },
     },
   ],
@@ -67,8 +101,10 @@ const options: CrewAndPassengerOptions = {
         { door: 'emit1', animation: 'left' },
         { door: 'emit2', animation: 'right' },
       ],
+      bone: 'gunner2',
       visor: 'standard-visor-commander',
       turnoff: [ 'shadow', 'sensor' ],
+      extra: [ '{sealable}' ],
     },
     {
       name: 'driver',
@@ -90,6 +126,15 @@ const options: CrewAndPassengerOptions = {
       turnoff: [ 'shadow', 'sensor' ],
     },
     {
+      name: 'gunner3',
+      animations: [
+        { door: 'emit1', animation: 'left' },
+        { door: 'emit2', animation: 'right' },
+      ],
+      visor: 'standard-visor-driver',
+      turnoff: [ 'shadow', 'sensor' ],
+    },
+    {
       name: 'charger',
       animations: [
         { door: 'emit1', animation: 'left' },
@@ -100,7 +145,36 @@ const options: CrewAndPassengerOptions = {
     },
   ],
 
-  passengers: [],
+  passengers: [
+    {
+      name: 'passenger01',
+      animations: [
+        { door: 'emit3', animation: 'armor01' },
+      ],
+      bone: 'seat01',
+    },
+    {
+      name: 'passenger02',
+      animations: [
+        { door: 'emit4', animation: 'armor01' },
+      ],
+      bone: 'seat02',
+    },
+    {
+      name: 'passenger03',
+      animations: [
+        { door: 'emit5', animation: 'armor02' },
+      ],
+      bone: 'seat03',
+    },
+    {
+      name: 'passenger04',
+      animations: [
+        { door: 'emit6', animation: 'armor01' },
+      ],
+      bone: 'seat04',
+    },
+  ],
 
 };
 
