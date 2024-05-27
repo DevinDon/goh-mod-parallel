@@ -1,2 +1,63 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# game package files
 *.zip
 *.pak
+
+# compiled output
+dist/
+tmp/
+temp/
+out-tsc/
+log/
+logs/
+*.tsbuildinfo
+coverage/
+/esbuild-kit
+/v8-compile-cache-0
+*.db
+.clinic
+.pnpm-store/
+outputs/
+
+# dependencies
+node_modules/
+.pnpm-debug.log
+
+# Env
+*.env*
+!*.env.example
+environment.*.mts
+!environment.example.mts
+.npmrc
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
