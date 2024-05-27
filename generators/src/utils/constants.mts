@@ -5,4 +5,10 @@ import { resolve } from 'node:path';
 export const GeneratorDistDir = resolve(getExecDirPath(import.meta.url), '..');
 
 /** 当前模组的根目录 */
-export const ModRootDir = resolve(getExecDirPath(import.meta.url), '../../..');
+export const CurrentModDir = resolve(getExecDirPath(import.meta.url), '../../..');
+
+/** 游戏模组所在的 `mods` 目录 */
+export const ModsRootDir = resolve(getExecDirPath(import.meta.url), '../../../..');
+
+/** 游戏根目录 */
+export const GameRootDir = resolve(getExecDirPath(import.meta.url), '../../../../..');
