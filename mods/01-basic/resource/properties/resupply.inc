@@ -335,6 +335,7 @@
   {Item "ger-150l38" "apcbche"     "ammo"   1 {Value 15}}
   {Item "ger-150l38" "heat"        "ammo"   1 {Value 15}}
   {Item "ger-150l38" "he"          "ammo"   1 {Value 15}}
+  {Item "ger-155l52" "he"          "ammo"   1 {Value 20}}
   {Item "ger-150mm-nebelwerfer" "he" "ammo" 1 {Value 15}}
   {Item "ger-280mm-nebelwerfer" "he" "ammo" 1 {Value 38}}
   {Item "ger-380mm-rw61-l5"        "ammo"   1 {Value 38}}
