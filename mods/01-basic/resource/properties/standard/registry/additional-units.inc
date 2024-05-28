@@ -70,3 +70,8 @@
 {"panzer-6-h"
   {vehicle_view "tiger_1h"}
 }
+
+; 自行榴弹炮
+{"pzh2000"
+  {vehicle_view "pzh2000"}
+}
