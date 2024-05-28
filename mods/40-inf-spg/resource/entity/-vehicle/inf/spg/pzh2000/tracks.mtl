@@ -1,0 +1,8 @@
+{material bump
+	{diffuse "$/vehicle2/puma_track_dif"}
+	{bump "$/vehicle2/puma_track_nm"}
+	{specular "$/vehicle2/puma_track_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+	{emitsheat}
+}

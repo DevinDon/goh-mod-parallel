@@ -1,0 +1,8 @@
+{material bump
+  {diffuse "pzh2000_dif"}
+  {bump "pzh2000_nm"}
+  {specular "pzh2000_sp"}
+  {color "255 255 255 25"}
+  {blend none}
+  {emitsheat}
+}

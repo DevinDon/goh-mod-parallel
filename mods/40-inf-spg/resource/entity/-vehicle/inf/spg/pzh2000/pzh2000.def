@@ -1,0 +1,100 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/shadow/tank.inc" scale(1.3))
+  (include "/properties/selection/vehicle.inc" scale(1.2))
+
+  {Extension "pzh2000.mdl"}
+  (include   "pzh2000.ext")
+  (include   "crew-and-passenger.ext")
+
+  {Props "spg" "medium" "turret_rotator" "vision_lev06" "nwg" "muzzle_150mm_155mm_sides" "diesel" "detect_spg"}
+
+  {PatherId "t34"}
+  {Targetclass "tank_light"}
+  {TargetSelector "tank_spg"}
+
+  {Extender "enumerator"
+    {digit_folder "nato"}
+  }
+
+  {Extender "smokescreen"
+    {cooldown 10}
+    {itemTags "grenade nbk39"}
+  }
+
+  {Extender "inventory"
+    {Box
+      {Size 17 8}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun api" 4500}
+
+      {Item "nbk39 grenade" 12}
+
+      {Item "ammo ger-155l52 he" 12}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 2}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "weapon ger-155mm-rheinmetall-l52" filling "ammo ger-155l52 he" 12}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed  9.00} ; km/h
+        {ByLinearSpeed   0.55} ; km/h
+        {MaxAngularSpeed 9.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.75} ; s
+        {OrderTime       2.21} ; s
+      }
+    }
+    {Place "mgun"
+      {Type "aa"}
+      {Weapon "weapon ger-mg42" filled}
+      {Gunner "commander"}
+      {Charger "commander"}
+      {LinkBone "mgun_help"}
+      {LinkAnimation  "off"}
+      {basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+  }
+
+  {Mass 55300}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_mid") step(0.52) length(0.7) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(60) power(986) mass(55300) performance(1.75))
+    ("set-fuel-bag" volume(980) power(986) mass(55300))
+  }
+
+  {Bone "turret"      ; gun horizontal
+    {speed2 18}
+  }
+  {Bone "gun_rot"      ; gun vertical
+    {speed2 3}
+    {limits -2.5 65}  ; min down to max up
+  }
+  {Bone "turret_mgun"    ; mgun horizontal
+    {speed2 36}
+    {terminator}    ; stop rotating beyond this bone
+  }
+  {Bone "mgun_rot"    ; mgun vertical
+    {speed2 6}
+    {limits -10 50}    ; min down to max up - no original values available
+  }
+
+}
