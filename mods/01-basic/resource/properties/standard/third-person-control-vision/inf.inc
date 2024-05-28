@@ -32,4 +32,4 @@
 {"panzer-6-h" inherit "vehicle custom.tank.tiger-h"}
 
 ; 自行榴弹炮
-{"pzh2000" inherit "vehicle custom.spg"}
+{"pzh2000" inherit "vehicle custom.tank.e-100"}

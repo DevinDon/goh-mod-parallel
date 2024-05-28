@@ -41,7 +41,7 @@
     {unitMode "late"}
     {specMode "all_normal"}
     {apply "only_roster_late"}
-    ("standard_all" start_a(1000) finish_a(20000) start_b(2000) finish_b(40000) doctrine(1000) cp_a(0:100,2000:100,5000:100) cp_b(0:200,2000:200,10000:200))
+    ("standard_all" start_a(1000) finish_a(10000) start_b(2000) finish_b(20000) doctrine(1000) cp_a(0:100,2000:100,5000:100) cp_b(0:200,2000:200,10000:200))
     {ranked}
   }
 ;------------------------------------------------------------------------------------------------------------
