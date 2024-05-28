@@ -104,7 +104,7 @@
 (define "set-standard-doctrine-level-1"
   {charge
     {delay 300}
-    {interval 100}
+    {interval 60}
   }
   {group "doctrine_t1"}
   {doctrine %doctrine}
@@ -116,7 +116,7 @@
 (define "set-standard-doctrine-level-2"
   {charge
     {delay 900}
-    {interval 300}
+    {interval 240}
   }
   {group "doctrine_t2"}
   {doctrine %doctrine}
@@ -128,13 +128,18 @@
 (define "set-standard-doctrine-level-3"
   {charge
     {delay 1800}
-    {interval 600}
+    {interval 480}
   }
   {group "doctrine_t3"}
   {doctrine %doctrine}
   {cost %cost}
   {score (* %cost 0.05)}
 )
+
+{"pzh2000"
+  ("set-standard-doctrine-vehicle" vehicle(pzh2000) period(late) crew1(engineer-1:1) crew2(engineer-2:3))
+  ("set-standard-doctrine-level-1" doctrine(ascension_inf_tank) cost(100))
+}
 
 {"panzer-5-d"
   ("set-standard-doctrine-vehicle" vehicle(panzer-5-d) period(late) crew1(engineer-1:1) crew2(engineer-2:4))

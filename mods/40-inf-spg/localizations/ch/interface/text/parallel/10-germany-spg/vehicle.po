@@ -19,3 +19,7 @@ msgstr  "PzH 2000 自行榴弹炮"
 msgctxt "info/special/pzh2000"
 msgid   "<c(33c0ee)>Self-Propelled Artillery Gun</c>"
 msgstr  "<c(33c0ee)>自行榴弹炮</c>"
+
+msgctxt "desc/squad/pzh2000"
+msgid   "<c(03A9F4)>( I )</c> PzH 2000 Self-Propelled Artillery Gun"
+msgstr  "<c(03A9F4)>( I )</c> PzH 2000 自行榴弹炮"
