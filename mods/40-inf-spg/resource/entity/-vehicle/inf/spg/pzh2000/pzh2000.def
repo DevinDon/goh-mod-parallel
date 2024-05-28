@@ -20,12 +20,12 @@
 
   {Extender "smokescreen"
     {cooldown 10}
-    {itemTags "grenade nbk39"}
+    {itemTags "grenade nbks"}
   }
 
   {Extender "inventory"
     {Box
-      {Size 17 8}
+      {Size 14 11}
       {Weight 1000}
       {Item "repair_kit" 10}
 

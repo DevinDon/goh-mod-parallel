@@ -45,7 +45,7 @@
     {MinRange 0} ; 最短射击距离 m
     {AimRange 750} ; AI 最长射击距离 m
     {MaxRange 750} ; 玩家最长射击距离 m
-    {Speed 876} ; 炮弹速度
+    {Speed 777} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     ; 无穿深表配置
     {MinimumDamageModifier 180} ; 弹种对装甲的击穿伤害

@@ -34,7 +34,7 @@ const options: WeaponOptions = {
       minRange: 0,
       aimRange: 750,
       maxRange: 750,
-      speed: 876,
+      speed: 777,
       gravity: 5,
       damageToArmor: 180,
       damageToHuman: 1800,
