@@ -1,14 +1,17 @@
 import { getExecDirPath } from '@pipers/toolbox/environment';
 import { resolve } from 'node:path';
 
+/** 当前目录 */
+const currentDir = getExecDirPath(import.meta.url);
+
 /** `main.mjs` 所在的 `dist` 目录 */
-export const GeneratorDistDir = resolve(getExecDirPath(import.meta.url), '..');
+export const DistDir = resolve(currentDir, '..');
 
 /** 当前模组的根目录 */
-export const CurrentModDir = resolve(getExecDirPath(import.meta.url), '../../..');
+export const ProjectRootDir = resolve(currentDir, '../..');
 
 /** 游戏模组所在的 `mods` 目录 */
-export const ModsRootDir = resolve(getExecDirPath(import.meta.url), '../../../..');
+export const GameModsRootDir = resolve(currentDir, '../../..');
 
 /** 游戏根目录 */
-export const GameRootDir = resolve(getExecDirPath(import.meta.url), '../../../../..');
+export const GameRootDir = resolve(currentDir, '../../../..');

@@ -2,7 +2,7 @@ import { logger } from '@pipers/logger';
 import { saveFile } from '@pipers/toolbox/filesystem';
 import { TaskQueue } from '@pipers/toolbox/task-queue';
 import { resolve } from 'node:path';
-import { CurrentModDir } from './constants.mjs';
+import { ProjectRootDir } from './constants.mjs';
 
 export type GeneratedOptions = {
   /** 要保存到的路径，相对于当前模组的根目录 */
@@ -16,7 +16,7 @@ export const saveGenerated = async (options: GeneratedOptions[]) => {
   // 生成保存任务
   const tasks = options.map(
     ({ destination, content }) => async () => {
-      const path = resolve(CurrentModDir, destination);
+      const path = resolve(ProjectRootDir, destination);
       await saveFile(path, content);
       logger.info(`已保存配置文件到 "${destination}"`);
     },
