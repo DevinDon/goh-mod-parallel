@@ -1,4 +1,4 @@
 {material simple
-	{diffuse "$/vehicle/enumerator/1"}
-	{blend blend}
+  {diffuse "$/vehicle/enumerator/1"}
+  {blend blend}
 }

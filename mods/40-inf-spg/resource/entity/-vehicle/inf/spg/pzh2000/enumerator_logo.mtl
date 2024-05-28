@@ -1,4 +1,4 @@
 {material bump
-	{diffuse "team_logo"}
-	{blend test}
+  {diffuse "team_logo"}
+  {blend test}
 }
