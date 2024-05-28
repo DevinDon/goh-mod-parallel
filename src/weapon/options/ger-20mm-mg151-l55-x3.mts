@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/gun/ger-20mm-mg151-l55-x3.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-20mm-mg151-l55-x3.weapon`,
 
   name: 'ger-20mm-mg151-l55-x3',
   description: '德国 三联 2cm MG 151 L/55 机炮',

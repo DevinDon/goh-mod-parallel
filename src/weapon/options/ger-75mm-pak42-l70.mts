@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/gun/ger-75mm-pak42-l70.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-75mm-pak42-l70.weapon`,
 
   name: 'ger-75mm-pak42-l70',
   description: '德国 7.5cm Pak 42 L/70 反坦克炮，适用于 E-25 轻型坦克歼击车',

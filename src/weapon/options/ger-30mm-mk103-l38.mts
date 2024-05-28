@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/gun/ger-30mm-mk103-l38.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-30mm-mk103-l38.weapon`,
 
   name: 'ger-30mm-mk103-l38',
   description: '德国 3cm MK 103 L/38 防空炮，适用于蟋蟀 M 型',

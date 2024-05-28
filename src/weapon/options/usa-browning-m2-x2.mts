@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/machine-gun/usa-browning-m2-x2.weapon',
+  destination: `${ProjectModConfigDir}/39-usa/resource/set/stuff/standard/machine-gun/usa-browning-m2-x2.weapon`,
 
   name: 'usa-browning-m2-x2',
   description: '美国双联 Browning M2 重机枪',

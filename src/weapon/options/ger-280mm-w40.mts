@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/reactive/ger-280mm-w40.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/reactive/ger-280mm-w40.weapon`,
 
   name: 'ger-280mm-w40',
   description: '德国 28 cm Wurfrahmen 40 火箭发射器',

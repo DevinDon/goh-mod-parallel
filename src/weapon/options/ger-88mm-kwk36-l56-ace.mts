@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/gun/ger-88mm-kwk36-l56-ace.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-88mm-kwk36-l56-ace.weapon`,
 
   name: 'ger-88mm-kwk36-l56-ace',
   description: '德国 8.8cm KwK 36 L/56 王牌坦克炮',

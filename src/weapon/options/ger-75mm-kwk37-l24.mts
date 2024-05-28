@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/gun/ger-75mm-kwk37-l24.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-75mm-kwk37-l24.weapon`,
 
   name: 'ger-75mm-kwk37-l24',
   description: '德国 7.5cm KwK 37 L/24 坦克炮，适用于三号 N 型',

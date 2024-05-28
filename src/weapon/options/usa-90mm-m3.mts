@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/gun/usa-90mm-m3.weapon',
+  destination: `${ProjectModConfigDir}/39-usa/resource/set/stuff/standard/gun/usa-90mm-m3.weapon`,
 
   name: 'usa-90mm-m3',
   description: '美国 90mm M3 坦克炮',

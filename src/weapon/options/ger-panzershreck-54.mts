@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/bazooka/ger-panzershreck-54.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/bazooka/ger-panzershreck-54.weapon`,
 
   name: 'ger-panzershreck-54',
   description: '德国 PanzerShreck 54 "坦克杀手" 反坦克火箭筒',

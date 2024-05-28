@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/machine-gun/ger-mg42.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/machine-gun/ger-mg42.weapon`,
 
   name: 'ger-mg42',
   description: '德国 MG42 通用机枪',

@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/reactive/ger-150mm-panzerwerfer-x10.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/reactive/ger-150mm-panzerwerfer-x10.weapon`,
 
   name: 'ger-150mm-panzerwerfer-x10',
   description: '德国 15cm 十联装火箭发射器',

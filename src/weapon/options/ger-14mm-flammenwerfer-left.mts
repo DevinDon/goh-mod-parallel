@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/flame-thrower/ger-14mm-flammenwerfer-left.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/flame-thrower/ger-14mm-flammenwerfer-left.weapon`,
 
   name: 'ger-14mm-flammenwerfer-left',
   description: '德国 1.4 cm 喷火器 左侧',

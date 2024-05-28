@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/bazooka/ger-panzerfaust-100.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/bazooka/ger-panzerfaust-100.weapon`,
 
   name: 'ger-panzerfaust-100',
   description: '德国 Panzerfaust 100 "铁拳" 反坦克火箭筒',

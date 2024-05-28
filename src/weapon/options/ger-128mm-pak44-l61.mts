@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/gun/ger-128mm-pak44-l61.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-128mm-pak44-l61.weapon`,
 
   name: 'ger-128mm-pak44-l61',
   description: '德国 12.8cm PaK 44 L/61 反坦克炮',

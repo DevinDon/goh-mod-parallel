@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/gun/ger-105mm-lefh18-l28.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-105mm-lefh18-l28.weapon`,
 
   name: 'ger-105mm-lefh18-l28',
   description: '德国 10.5cm leFH 18 L/28 榴弹炮',

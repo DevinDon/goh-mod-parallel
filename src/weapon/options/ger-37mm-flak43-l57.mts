@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/gun/ger-37mm-flak43-l57.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-37mm-flak43-l57.weapon`,
 
   name: 'ger-37mm-flak43-l57',
   description: '德国 3.7cm FlaK 43 L/57 防空炮，适用于东风自行防空炮',

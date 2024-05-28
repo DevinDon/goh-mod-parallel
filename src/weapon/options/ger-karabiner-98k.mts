@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/rifle/ger-karabiner-98k.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/rifle/ger-karabiner-98k.weapon`,
 
   name: 'ger-karabiner-98k',
   description: '德国 Karabiner 98k 栓动步枪',

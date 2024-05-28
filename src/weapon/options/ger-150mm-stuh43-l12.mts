@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: 'resource/set/stuff/standard/gun/ger-150mm-stuh43-l12.weapon',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-150mm-stuh43-l12.weapon`,
 
   name: 'ger-150mm-stuh43-l12',
   description: '德国 15cm StuH 43 L/11 突击步兵炮',
