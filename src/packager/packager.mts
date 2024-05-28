@@ -2,7 +2,7 @@ import { logger } from '@pipers/logger';
 import { copy } from '@pipers/toolbox/filesystem';
 import { TaskQueue } from '@pipers/toolbox/task-queue';
 import { resolve } from 'node:path';
-import { GameModsRootDir, ProjectRootDir } from '../utils/constants.mjs';
+import { GameModsRootDir, ProjectModConfigDir } from '../utils/constants.mjs';
 import { archive } from './utils/zip.mjs';
 
 /** 打包游戏模组 */
@@ -25,18 +25,18 @@ export const pack = async () => {
       .map(
         name => [
           () => archive(
-            resolve(ProjectRootDir, 'mods', `${name}/localizations`),
+            resolve(ProjectModConfigDir, `${name}/localizations`),
             resolve(GameModsRootDir, ModName, `localizations/${name}-localizations.pak`),
           ),
           () => archive(
-            resolve(ProjectRootDir, 'mods', `${name}/resource`),
+            resolve(ProjectModConfigDir, `${name}/resource`),
             resolve(GameModsRootDir, ModName, `resource/${name}-resource.pak`),
           ),
         ],
       )
       .flat(),
     () => copy(
-      resolve(ProjectRootDir, 'mods', 'mod.info'),
+      resolve(ProjectModConfigDir, 'mod.info'),
       resolve(GameModsRootDir, ModName, 'mod.info'),
     ),
   ];

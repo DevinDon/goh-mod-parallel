@@ -1,8 +1,9 @@
+import { ProjectModConfigDir } from '../../utils/constants.mjs';
 import type { HumanOptions } from '../options.mjs';
 
 const options: HumanOptions = {
 
-  destination: 'resource/set/breed/mp/ger/late/mgun_1.set',
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/breed/mp/ger/late/mgun_1.set`,
 
   tags: [ 'soldier' ],
   behaviour: 'soldier',
