@@ -32,23 +32,23 @@ msgctxt "mission/multi/4v4-land/night_weather"
 msgid "Nighttime"
 msgstr "夜晚"
 
-# 4v4 long
-msgctxt "mission/multi/4v4-long/name"
-msgid "Long <c(7e5be4)>[Ascension]</c>"
-msgstr "长廊 <c(7e5be4)>[飞升]</c>"
+# 4v4 farm
+msgctxt "mission/multi/4v4-farm/name"
+msgid "Farm <c(7e5be4)>[Ascension]</c>"
+msgstr "农田 <c(7e5be4)>[飞升]</c>"
 
-msgctxt "mission/multi/4v4-long/weather_options_choices"
+msgctxt "mission/multi/4v4-farm/weather_options_choices"
 msgid "Select the weather conditions for the battle:"
 msgstr "选择这场战局的天气情况："
 
-msgctxt "mission/multi/4v4-long/any_weather"
+msgctxt "mission/multi/4v4-farm/any_weather"
 msgid "Any weather conditions"
 msgstr "任何天气"
 
-msgctxt "mission/multi/4v4-long/day_weather"
+msgctxt "mission/multi/4v4-farm/day_weather"
 msgid "Daytime"
 msgstr "白天"
 
-msgctxt "mission/multi/4v4-long/night_weather"
+msgctxt "mission/multi/4v4-farm/night_weather"
 msgid "Nighttime"
 msgstr "夜晚"
