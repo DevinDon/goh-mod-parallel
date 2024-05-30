@@ -31,7 +31,7 @@
 
       {Item "ammo ger-mgun api" 4500}
 
-      {Item "nbk39 grenade" 12}
+      {Item "nbks grenade" 12}
 
       {Item "ammo ger-155l52 he" 12}
     }

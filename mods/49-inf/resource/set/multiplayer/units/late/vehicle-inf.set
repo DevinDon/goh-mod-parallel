@@ -136,12 +136,12 @@
   {score (* %cost 0.05)}
 )
 
-{"pzh2000"
-  ("set-standard-doctrine-vehicle" vehicle(pzh2000) period(late) crew1(engineer-1:1) crew2(engineer-2:3))
-  ("set-standard-doctrine-level-1" doctrine(ascension_inf_tank) cost(100))
-}
-
 {"panzer-5-d"
   ("set-standard-doctrine-vehicle" vehicle(panzer-5-d) period(late) crew1(engineer-1:1) crew2(engineer-2:4))
   ("set-standard-doctrine-level-2" doctrine(ascension_inf_tank) cost(100))
+}
+
+{"pzh2000"
+  ("set-standard-doctrine-vehicle" vehicle(pzh2000) period(late) crew1(engineer-1:1) crew2(engineer-2:3))
+  ("set-standard-doctrine-level-3" doctrine(ascension_inf_tank) cost(200))
 }
