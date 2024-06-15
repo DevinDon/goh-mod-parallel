@@ -61,9 +61,9 @@
 
       {Item "nbks grenade" 5}
 
-      {Item "ammo ger-88l71 apcbche" 32}
-      {Item "ammo ger-88l71 apcr" 5}
-      {Item "ammo ger-88l71 he" 39}
+      {Item "ammo ger-105l68 apcbche" 19}
+      {Item "ammo ger-105l68 apcr" 5}
+      {Item "ammo ger-105l68 he" 19}
     }
   }
 
@@ -71,7 +71,7 @@
     {RestoreIKTime 2}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-88mm-kwk43-l71" filling "ammo ger-88l71 apcbche" 1}
+      {Weapon "weapon ger-105mm-kwspzk-l68" filling "ammo ger-105l68 apcbche" 1}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion
@@ -135,11 +135,11 @@
     }
   }
 
-  {Mass 70040}
+  {Mass 70940}
   {Chassis "track"
     ("set-tank-trace" fx("tracks_big") step(0.47) length(1.16) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(42) power(900) mass(70940) performance(1.09))
-    ("set-fuel-bag" volume(860) power(900) mass(70940))
+    ("set-maneuverability-of-tank" speed(45) power(1200) mass(70940) performance(1.15))
+    ("set-fuel-bag" volume(900) power(1200) mass(70940))
   }
 
   {Bone "gun_rot"
@@ -147,7 +147,7 @@
     {speed2 3}
   }
   {Bone "turret"
-    {speed2 15}
+    {speed2 12}
   }
 
   {texmod "camo"}

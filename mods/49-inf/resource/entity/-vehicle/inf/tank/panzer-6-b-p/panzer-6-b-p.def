@@ -3,9 +3,9 @@
   (include "/properties/standard/vehicle/tank-config.ext")
   (include "/properties/selection/vehicle_big.inc" scale(1.0))
 
-  {Extension "tiger2h.mdl"}
-  (include   "tiger2h.ext")
-  (include   "crew-and-seat.ext")
+  {Extension "/entity/-vehicle/germany/tank_heavy/tiger2p/tiger2p.mdl"}
+  (include   "/entity/-vehicle/germany/tank_heavy/tiger2p/tiger2p.ext")
+  (include   "/entity/-vehicle/germany/tank_heavy/tiger2p/crew-and-seat.ext")
 
   {Props "heavy" "vision_lev05" "muzzle_85mm_93mm_sides" "shield" "smoke" "nvw" "detect_tank_heavy"}
 
@@ -24,11 +24,6 @@
     {detail16}
     {detail17}
     {detail18}
-    {detail19}
-    {detail20 0}
-    {detail21 0}
-    {detail22 0}
-    {detail30}
     {detail31}
   }
 
@@ -45,8 +40,8 @@
   {Extender "shield" {on}}
 
   {Extender "smokescreen"
-    {Cooldown 5}
-    {ItemTags "grenade nbks"}
+    {cooldown 5}
+    {itemTags "grenade nbks"}
   }
 
   {Extender "inventory"
@@ -56,7 +51,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo ger-mgun api" 5800}
+      {Item "ammo ger-mgun api" 4500}
       {Item "weapon ger-mg42" filled {user "mgun"}}
 
       {Item "nbks grenade" 5}
@@ -79,7 +74,7 @@
         {ByLinearSpeed   0.25} ; km/h
         {MaxAngularSpeed 3.00} ; deg/s
         {ByAngularSpeed  0.35} ; deg/s
-        {DisorderTime    0.25} ; s
+        {DisorderTime    0.55} ; s
         {OrderTime       2.00} ; s
       }
     }
@@ -135,11 +130,11 @@
     }
   }
 
-  {Mass 70040}
+  {Mass 69800}
   {Chassis "track"
     ("set-tank-trace" fx("tracks_big") step(0.47) length(1.16) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(42) power(900) mass(70940) performance(1.09))
-    ("set-fuel-bag" volume(860) power(900) mass(70940))
+    ("set-maneuverability-of-tank" speed(35) power(690) mass(69800) performance(1.06))
+    ("set-fuel-bag" volume(860) power(690) mass(69800))
   }
 
   {Bone "gun_rot"
@@ -147,9 +142,7 @@
     {speed2 3}
   }
   {Bone "turret"
-    {speed2 15}
+    {speed2 16}
   }
-
-  {texmod "camo"}
 
 }

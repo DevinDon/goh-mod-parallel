@@ -35,11 +35,14 @@ Purchases["late.inf"] = {
       {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-5-g"},
       {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-e"},
       {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-h"},
+      {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-b-h"},
+      {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-b-p"},
       -- 学说
       -- 无尽重装军团
       -- {priority = 1.0, type = {"Class3", "Doctrine", "Tier1", "Tank", "Medium", "Artillery"}, unit = "pzh2000"},
       {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Medium",}, unit = "panzer-5-d"},
       {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Heavy",}, unit = "panzer-6-e-ace"},
+      {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Heavy",}, unit = "panzer-6-b-h-ace"},
     },
   },
 }

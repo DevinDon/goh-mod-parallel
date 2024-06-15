@@ -74,6 +74,16 @@
   {vehicle_view "tiger_1h"}
 }
 
+{"panzer-6-b-h"
+  {vehicle_view "tiger2h"}
+}
+{"panzer-6-b-h-ace"
+  {vehicle_view "tiger2h"}
+}
+{"panzer-6-b-p"
+  {vehicle_view "tiger2h"}
+}
+
 ; 自行榴弹炮
 {"pzh2000"
   {vehicle_view "pzh2000"}

@@ -1,0 +1,4 @@
+{game_entity
+  {extension "/entity/-vehicle/germany/tank_heavy/x/tiger2h_x/tiger2h_x.mdl"}
+  {RimLight}
+}

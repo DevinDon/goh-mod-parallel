@@ -82,10 +82,17 @@
 }
 
 {"panzer-6-e"
-  ("set-standard-vehicle" vehicle(panzer-6-e) cost(1400) cd(600) ci(360) cw(9) cp(0) tags(heavy)  period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(panzer6)  button(tanks))
+  ("set-standard-vehicle" vehicle(panzer-6-e) cost(1400) cd(600) ci(360) cw(9) cp(0) tags(heavy) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(panzer6) button(tanks))
 }
 {"panzer-6-h"
-  ("set-standard-vehicle" vehicle(panzer-6-h) cost(1150) cd(700) ci(300) cw(9) cp(0) tags(heavy)  period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(panzer6)  button(tanks))
+  ("set-standard-vehicle" vehicle(panzer-6-h) cost(1150) cd(700) ci(300) cw(9) cp(0) tags(heavy) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(panzer6) button(tanks))
+}
+
+{"panzer-6-b-h"
+  ("set-standard-vehicle" vehicle(panzer-6-b-h) cost(2000) cd(900) ci(480) cw(9) cp(0) tags(heavy) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(panzer6b) button(tanks))
+}
+{"panzer-6-b-p"
+  ("set-standard-vehicle" vehicle(panzer-6-b-p) cost(1750) cd(900) ci(420) cw(9) cp(0) tags(heavy) period(late) crew1(engineer-1:1) crew2(engineer-2:4) group(panzer6b) button(tanks))
 }
 
 ; 学说载具
@@ -144,6 +151,11 @@
 {"panzer-6-e-ace"
   ("set-standard-doctrine-vehicle" vehicle(panzer-6-e-ace) period(late) crew1(engineer-1:1) crew2(engineer-2:4))
   ("set-standard-doctrine-level-2" doctrine(ascension_inf_tank) cost(100))
+}
+
+{"panzer-6-e-ace"
+  ("set-standard-doctrine-vehicle" vehicle(panzer-6-b-h-ace) period(late) crew1(engineer-1:1) crew2(engineer-2:4))
+  ("set-standard-doctrine-level-3" doctrine(ascension_inf_tank) cost(200))
 }
 
 ; {"pzh2000"

@@ -28,9 +28,13 @@
 {"panzer-5-d" inherit "vehicle custom.tank"}
 {"panzer-5-g" inherit "vehicle custom.tank"}
 
-{"panzer-6-e" inherit "vehicle custom.tank.tiger-e"}
+{"panzer-6-e"     inherit "vehicle custom.tank.tiger-e"}
 {"panzer-6-e-ace" inherit "vehicle custom.tank.tiger-e"}
-{"panzer-6-h" inherit "vehicle custom.tank.tiger-h"}
+{"panzer-6-h"     inherit "vehicle custom.tank.tiger-h"}
+
+{"panzer-6-b-h"     inherit "vehicle custom.tank.tiger2-h"}
+{"panzer-6-b-h-ace" inherit "vehicle custom.tank.tiger2-h"}
+{"panzer-6-b-p"     inherit "vehicle custom.tank.tiger2-p"}
 
 ; 自行榴弹炮
 {"pzh2000" inherit "vehicle custom.tank.e-100"}
