@@ -218,6 +218,21 @@
     {ani_play "mgun_aa" -1.0 resume}
   }
 }
+{"panzer-6-e-ace tank"
+  ("pz6_sound")
+  {on "add_weapon_sound" overload
+    ("Cannon_85to100mm")
+    ("MG34")
+  }
+  {on "commander_hatch_open" overload
+    {ani_wind "open" end}
+    {ani_play "mgun_aa" +1.0 resume}
+  }
+  {on "commander_hatch_close" overload
+    {ani_play "open" -1.0 resume}
+    {ani_play "mgun_aa" -1.0 resume}
+  }
+}
 {"panzer-6-h tank"
   ("pz6_sound")
   {on "add_weapon_sound" overload
@@ -229,5 +244,52 @@
   }
   {on "commander_hatch_close" overload
     {ani_play "open" -1.0 resume}
+  }
+}
+
+
+{"panzer-6-b-h tank"
+  ("pz6b_sound")
+  {on "add_weapon_sound" overload
+    ("Cannon_85to100mm_HV")
+    ("MG34")
+  }
+  {on "commander_hatch_open" overload
+    {ani_wind "open" end}
+    {ani_play "mgun_aa" +1.0 resume}
+  }
+  {on "commander_hatch_close" overload
+    {ani_play "open" -1.0 resume}
+    {ani_play "mgun_aa" -1.0 resume}
+  }
+}
+{"panzer-6-b-h-ace tank"
+  ("pz6b_sound")
+  {on "add_weapon_sound" overload
+    ("Cannon_85to100mm_HV")
+    ("MG34")
+  }
+  {on "commander_hatch_open" overload
+    {ani_wind "open" end}
+    {ani_play "mgun_aa" +1.0 resume}
+  }
+  {on "commander_hatch_close" overload
+    {ani_play "open" -1.0 resume}
+    {ani_play "mgun_aa" -1.0 resume}
+  }
+}
+{"panzer-6-b-p tank"
+  ("pz6b_sound")
+  {on "add_weapon_sound" overload
+    ("Cannon_85to100mm_HV")
+    ("MG34")
+  }
+  {on "commander_hatch_open" overload
+    {ani_wind "open" end}
+    {ani_play "mgun_aa" +1.0 resume}
+  }
+  {on "commander_hatch_close" overload
+    {ani_play "open" -1.0 resume}
+    {ani_play "mgun_aa" -1.0 resume}
   }
 }
