@@ -67,6 +67,9 @@
 {"panzer-6-e"
   {vehicle_view "tiger_1h"}
 }
+{"panzer-6-e-ace"
+  {vehicle_view "tiger_1h"}
+}
 {"panzer-6-h"
   {vehicle_view "tiger_1h"}
 }

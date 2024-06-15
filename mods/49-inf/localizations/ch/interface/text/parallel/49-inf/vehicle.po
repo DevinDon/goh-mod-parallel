@@ -266,3 +266,39 @@ msgstr  "<c(33c0ee)>重型坦克</c>"
 msgctxt "desc/squad/panzer-6-h"
 msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw VI Ausf.H"
 msgstr  "<c(03A9F4)>( I )</c> 六号坦克 H 型"
+
+msgctxt "desc/entity/panzer-6-e-ace"
+msgid   "Pz.Kpfw VI Ausf.E ACE"
+msgstr  "六号坦克 E 型 王牌虎式"
+
+msgctxt "info/special/panzer-6-e-ace"
+msgid   "<c(33c0ee)>Heavy Tank</c>"
+msgstr  "<c(33c0ee)>王牌坦克</c>"
+
+msgctxt "desc/squad/panzer-6-e-ace"
+msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw VI Ausf.E ACE"
+msgstr  "<c(03A9F4)>( I )</c> 六号坦克 E 型 王牌虎式"
+
+msgctxt "desc/entity/panzer-6-b-h"
+msgid   "Pz.Kpfw VI Ausf.B Henschel"
+msgstr  "六号坦克 B 型 亨舍尔设计"
+
+msgctxt "info/special/panzer-6-b-h"
+msgid   "<c(c3baae)>Heavy Tank</c>"
+msgstr  "<c(c3baae)>重型坦克</c>"
+
+msgctxt "desc/squad/panzer-6-b-h"
+msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw VI Ausf.B Henschel"
+msgstr  "<c(03A9F4)>( I )</c> 六号坦克 B 型 亨舍尔设计"
+
+msgctxt "desc/entity/panzer-6-b-p"
+msgid   "Pz.Kpfw VI Ausf.B Porsche"
+msgstr  "六号坦克 B 型 保时捷设计"
+
+msgctxt "info/special/panzer-6-b-p"
+msgid   "<c(c3baae)>Heavy Tank</c>"
+msgstr  "<c(c3baae)>重型坦克</c>"
+
+msgctxt "desc/squad/panzer-6-b-p"
+msgid   "<c(03A9F4)>( I )</c> Pz.Kpfw VI Ausf.B Porsche"
+msgstr  "<c(03A9F4)>( I )</c> 六号坦克 B 型 保时捷设计"

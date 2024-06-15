@@ -29,6 +29,7 @@
 {"panzer-5-g" inherit "vehicle custom.tank"}
 
 {"panzer-6-e" inherit "vehicle custom.tank.tiger-e"}
+{"panzer-6-e-ace" inherit "vehicle custom.tank.tiger-e"}
 {"panzer-6-h" inherit "vehicle custom.tank.tiger-h"}
 
 ; 自行榴弹炮
