@@ -27,11 +27,6 @@
     {Bone "foresight1"}
     {Vision "standard-vehicle-vision-narrow"}
   }
-  ; visor standard-visor-rear-gunner
-  {Visor "standard-visor-rear-gunner"
-    {Bone "mgun2"}
-    {Vision "standard-vehicle-vision-narrow"}
-  }
   ; visor standard-visor-commander
   {Visor "standard-visor-commander"
     {Bone "commander"}
@@ -73,19 +68,6 @@
       {base "board" 1}
       {begin "board_sd232_driver" 1}
       {end "pose_m5_gunlayer" 1}
-    }
-    {reverse
-      {base "board" 1}
-      ; no reverse animation begin
-      {end "emit_sd222_driver" 1}
-    }
-  }
-  ; animation gunner4
-  {Anm "gunner4"
-    {forward
-      {base "board" 1}
-      {begin "board_sd232_driver" 1}
-      {end "seat_m7_com" 1}
     }
     {reverse
       {base "board" 1}
@@ -150,20 +132,6 @@
 {Boarder
   {door "emit2"}
   {link "emit2" "gunner" {anm "gunner"} {forward putoff} {reverse puton}}
-}
-; crew gunner4
-{Placer
-  {Place "gunner4"
-    {group "crew"}
-    {linkbone "commander"}
-    {turnoff {shadow} {sensor}}
-    {visor "standard-visor-rear-gunner"}
-    ; no extra
-  }
-}
-{Boarder
-  {door "emit2"}
-  {link "emit2" "gunner4" {anm "gunner4"} {forward putoff} {reverse puton}}
 }
 ; crew charger
 {Placer

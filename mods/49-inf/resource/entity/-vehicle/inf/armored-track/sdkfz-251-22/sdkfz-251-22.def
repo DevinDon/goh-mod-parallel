@@ -32,14 +32,14 @@
   }
 
   {Extender "inventory"
-    {Weapon "mgun2" {mask "mountable"}}
+    ; {Weapon "mgun2" {mask "mountable"}}
     {Box
       {Size 15 8}
       {Weight 1000}
       {Item "repair_kit" 10}
 
       {Item "ammo ger-mgun api" 1900}
-      {Item "weapon ger-mg42" filled {user "mgun2"}}
+      ; {Item "weapon ger-mg42" filled {user "mgun2"}}
 
       {Item "ammo ger-75l43 apcbche" 19}
       {Item "ammo ger-75l43 heat"     5}
@@ -62,23 +62,23 @@
         {OrderTime        2.25} ; s
       }
     }
-    {Place "mgun2"
-      {type "rear"}
-      {Gunner "gunner4"}
-      {Charger "gunner4"}
-      {LinkBone "mgun2"}
-      {LinkAnimation "off"}
-      {basic}
-      {ai_in_manual}
-      {AccuracyByMotion
-        {MaxLinearSpeed   8.00} ; km/h
-        {ByLinearSpeed    0.40} ; km/h
-        {MaxAngularSpeed 30.00} ; deg/s
-        {ByAngularSpeed   0.50} ; deg/s
-        {DisorderTime     0.60} ; s
-        {OrderTime        1.00} ; s
-      }
-    }
+    ; {Place "mgun2"
+    ;   {type "rear"}
+    ;   {Gunner "gunner4"}
+    ;   {Charger "gunner4"}
+    ;   {LinkBone "mgun2"}
+    ;   {LinkAnimation "off"}
+    ;   {basic}
+    ;   {ai_in_manual}
+    ;   {AccuracyByMotion
+    ;     {MaxLinearSpeed   8.00} ; km/h
+    ;     {ByLinearSpeed    0.40} ; km/h
+    ;     {MaxAngularSpeed 30.00} ; deg/s
+    ;     {ByAngularSpeed   0.50} ; deg/s
+    ;     {DisorderTime     0.60} ; s
+    ;     {OrderTime        1.00} ; s
+    ;   }
+    ; }
   }
 
   {Mass 7810}
@@ -94,17 +94,18 @@
     {speed2 8}
   }
   {Bone "turret"
-    {limits -20 20}
+    ; {limits -20 20}
+    {limits -35 35}
     {speed2 6}
   }
 
-  {Bone "mgun_a2_rot1" ; 机枪射界
-    {speed2 60}
-    {limits -20 45} ; 右左
-  }
-  {Bone "mgun_a2_rot2" ; 机枪俯仰角
-    {speed2 60}
-    {limits -90 0} ; 俯仰角不是从 0 开始的，需要 + 75 度
-  }
+  ; {Bone "mgun_a2_rot1" ; 机枪射界
+  ;   {speed2 60}
+  ;   {limits -20 45} ; 右左
+  ; }
+  ; {Bone "mgun_a2_rot2" ; 机枪俯仰角
+  ;   {speed2 60}
+  ;   {limits -90 0} ; 俯仰角不是从 0 开始的，需要 + 75 度
+  ; }
 
 }
