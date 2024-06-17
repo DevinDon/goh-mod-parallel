@@ -178,7 +178,6 @@ Purchases["late.ger"] = {
         {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer4h"},
         {priority = 1.0, type = {"Class2", "Tank", "Heavy",}, unit = "tiger1e"},
         {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5a"},
-        {priority = 1.0, type = {"Class3", "Tank", "Medium",}, unit = "panzer5d"},
         --]]
 
       -- Self-Propelled Guns
@@ -283,6 +282,7 @@ Purchases["late.ger"] = {
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Medium", "Artillery",}, unit = "doctrine_hummel_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Armored", "Artillery",}, unit = "doctrine_panzerwerfer42_late"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Heavy",}, unit = "doctrine_tiger2p"},
+          {priority = 1.0, type = {"Class3", "Doctrine", "Tier3", "Tank", "Medium",}, unit = "panzer5d"},
           --]]
       --]====]
     }
