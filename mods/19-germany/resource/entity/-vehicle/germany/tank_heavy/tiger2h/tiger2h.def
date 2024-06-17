@@ -3,9 +3,9 @@
   (include "/properties/standard/vehicle/tank-config.ext")
   (include "/properties/selection/vehicle_big.inc" scale(1.0))
 
-  {Extension "tiger2h.mdl"}
-  (include   "tiger2h.ext")
-  (include   "crew-and-seat.ext")
+  {Extension "/entity/-vehicle/germany/tank_heavy/tiger2h/tiger2h.mdl"}
+  (include   "/entity/-vehicle/germany/tank_heavy/tiger2h/tiger2h.ext")
+  (include   "/entity/-vehicle/germany/tank_heavy/tiger2h/crew-and-seat.ext")
 
   {Props "heavy" "vision_lev05" "muzzle_85mm_93mm_sides" "shield" "smoke" "nvw" "detect_tank_heavy"}
 
