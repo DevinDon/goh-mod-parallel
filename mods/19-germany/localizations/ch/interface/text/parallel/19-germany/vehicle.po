@@ -188,6 +188,14 @@ msgid   "<c(c3baae)>Light Tank</c>"
 msgstr  "<c(c3baae)>轻型坦克</c>"
 
 # 中型坦克
+msgctxt "desc/entity/panzer3f"
+msgid   "Pz.Kpfw III Ausf.F"
+msgstr  "三号 F 型"
+
+msgctxt "info/special/panzer3f"
+msgid   "<c(c3baae)>Medium Tank</c>"
+msgstr  "<c(c3baae)>中型坦克</c>"
+
 msgctxt "desc/entity/panzer3m"
 msgid   "Pz.Kpfw III Ausf.M"
 msgstr  "三号 M 型"

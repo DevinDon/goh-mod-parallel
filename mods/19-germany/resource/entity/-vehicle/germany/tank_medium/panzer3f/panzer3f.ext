@@ -1,0 +1,77 @@
+;SDL
+; armor notes
+; tracks and wheels 20mm
+; gun 20mm
+; spare tracks 20mm
+
+
+
+
+("set-basic-durability" body(440) engine(300) turret(400) mantlet(200) gun(300) track(300) ammo(300))
+("set-basic-armor"      ammo(20))
+
+("set-turret"               repair(15))
+("set-mantlet"              repair(10))
+("set-gun"    thickness(20) repair(10))
+
+("set-body"                 repair(25))
+("set-engine"               repair(20))
+("set-tracks" thickness(20) repair(15))
+
+("set-internal-components" name("ammo1") type("ammo") repair(3))
+("set-internal-components" name("ammo2") type("ammo") repair(3))
+("set-internal-components" name("fuel")  type("fuel") repair(3))
+("set-internal-components" name("transmission") type("transmission") repair(10))
+
+{component "shieldw1" {tags "cut_part"}}
+{component "shieldw2" {tags "cut_part"}}
+
+{volume "body1"      ; Hull
+  {thickness  30
+    {front 30}
+    {top 25}    ; Glacis
+    {rear 10}
+    {bottom 16}
+  }
+}
+
+{volume "body2"      ; Superstructure
+  {thickness 30
+    {top 16}
+    {rear 10}
+  }
+}
+
+{volume "engine"
+  {thickness 30
+    {front 10}
+    {top 16}
+    {rear 20}
+    {bottom 16}
+  }
+}
+
+{volume "turret"
+  {thickness 30
+    {top 10}
+  }
+}
+
+{volume "turret1"
+  {thickness 30}
+}
+
+{volume "mantlet1"
+  {thickness 20
+    {front 30}
+  }
+  {tags "gun"}
+  {component "gun"}
+}
+
+
+{volume "cupola"
+  {thickness 30
+    {top 10}
+  }
+}

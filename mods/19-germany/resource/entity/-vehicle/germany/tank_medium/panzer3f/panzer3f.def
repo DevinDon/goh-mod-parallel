@@ -1,0 +1,114 @@
+{game_entity
+
+  (include "/properties/standard/vehicle/tank-config.ext")
+  (include "/properties/selection/vehicle.inc" scale(1.1))
+
+  {Extension "panzer3f.mdl"}
+  (include   "panzer3f.ext")
+  (include   "crew-and-passenger.ext")
+
+  {Props "medium" "vision_lev04" "muzzle_50mm_57mm" "shield"}
+
+  {PatherId "panzer3"}
+  {Targetclass "tank_medium"}
+  {TargetSelector "tank_medium"}
+
+  {Extender "enumerator"
+    {digit_folder "ger"}
+  }
+
+  {Extender "shield" {on}}
+
+  {Extender "inventory"
+    {Weapon "mgun" {mask "mountable"}}
+    {Box
+      {Size 12 10}
+      {Weight 1000}
+      {Item "repair_kit" 10}
+
+      {Item "ammo ger-mgun api" 3000}
+
+      {Item "ammo ger-50l42 apche" 59}
+      {Item "ammo ger-50l42 apcr" 9}
+      {Item "ammo ger-50l42 he" 59}
+    }
+  }
+
+  {Weaponry
+    {RestoreIKTime 2}
+    {Place "gun"
+      {RestoreIKAfterAim}
+      {Weapon "weapon ger-50mm-kwk38-l42" filling "ammo ger-50l42 apche" 1}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {AccuracyByMotion
+        {MaxLinearSpeed  7.00} ; km/h
+        {ByLinearSpeed   0.25} ; km/h
+        {MaxAngularSpeed 3.00} ; deg/s
+        {ByAngularSpeed  0.35} ; deg/s
+        {DisorderTime    0.25} ; s
+        {OrderTime       2.00} ; s
+      }
+    }
+    {Place "mgun2"
+      {Type "coaxial"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight5"}
+      {Gunner "gunner"}
+      {Charger "charger"}
+      {basic}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {Place "mgun1"
+      {Type "hull"}
+      {Weapon "weapon ger-mg42" filled}
+      {Foresight "foresight4"}
+      {Gunner "gunner3"}
+      {Charger "gunner3"}
+      {basic}
+      {ai_in_manual}
+      {AccuracyByMotion
+        {MaxLinearSpeed   8.00} ; km/h
+        {ByLinearSpeed    0.40} ; km/h
+        {MaxAngularSpeed 30.00} ; deg/s
+        {ByAngularSpeed   0.50} ; deg/s
+        {DisorderTime     0.60} ; s
+        {OrderTime        1.00} ; s
+      }
+    }
+    {##Place "mgun"
+      {Type "commander"}
+      {Weapon "commander_vision"}
+      {foresight "vision_rot"}
+      {Gunner "commander"}
+      {basic}
+      {ai_in_manual}
+    }
+  }
+
+  {Mass 19500}
+  {Chassis "track"
+    ("set-tank-trace" fx("tracks_mid") step(0.52) length(1.05) boneleft("FXtraceL1") boneright("FXtraceR1"))
+    ("set-maneuverability-of-tank" speed(40) power(265) mass(19500) performance(1.24))
+    ("set-fuel-bag" volume(320) power(265) mass(19500))
+  }
+
+  {Bone "gun_rot"
+    {limits -10 20}
+    {speed2 8}
+  }
+  {Bone "turret"
+    {speed2 20}
+  }
+  {##Bone "commander_rot"
+    {speed2 180}
+  }
+
+}

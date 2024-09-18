@@ -97,6 +97,23 @@ msgctxt "desc/ammo/ger-50l60 heat"
 msgid   "5 cm Stiel.Gr.42 [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/60</c>"
 msgstr  "5 cm Stiel.Gr.42 [<c(c9a6ff)>破甲弹</c>] <c(65696d)>L/60</c>"
 
+
+msgctxt "desc/ammo/ger-50l42 apche"
+msgid   "5 cm PzGr.39 [<c(ff6a00)>APC-HE</c>] <c(65696d)>L/42</c>"
+msgstr  "5 cm PzGr.39 [<c(ff6a00)>被帽穿甲榴弹</c>] <c(65696d)>L/42</c>"
+
+msgctxt "desc/ammo/ger-50l42 he"
+msgid   "5 cm SprGr.38 [<c(ff1200)>HE</c>] <c(65696d)>L/42</c>"
+msgstr  "5 cm SprGr.38 [<c(ff1200)>高爆弹</c>] <c(65696d)>L/42</c>"
+
+msgctxt "desc/ammo/ger-50l42 apcr"
+msgid   "5 cm PzGr.40 [<c(48c445)>APCR</c>] <c(65696d)>L/42</c>"
+msgstr  "5 cm PzGr.40 [<c(48c445)>硬芯穿甲弹</c>] <c(65696d)>L/42</c>"
+
+msgctxt "desc/ammo/ger-50l42 heat"
+msgid   "5 cm Stiel.Gr.42 [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/42</c>"
+msgstr  "5 cm Stiel.Gr.42 [<c(c9a6ff)>破甲弹</c>] <c(65696d)>L/42</c>"
+
 # 75mm
 msgctxt "desc/ammo/ger-75l24 apcbche"
 msgid   "7.5 cm K.Gr.rot.Pz. [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/24</c>"

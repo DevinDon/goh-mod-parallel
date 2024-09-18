@@ -93,6 +93,10 @@ msgctxt "desc/weapon/ger-37mm-kwk36-l45"
 msgid   "3.7 cm KwK 36 L/45"
 msgstr  "3.7 cm KwK 36 L/45 坦克炮"
 
+msgctxt "desc/weapon/ger-50mm-kwk38-l42"
+msgid   "5 cm KwK 38 L/42"
+msgstr  "5 cm KwK 38 L/42 坦克炮"
+
 msgctxt "desc/weapon/ger-50mm-kwk39-l60"
 msgid   "5 cm KwK 39 L/60"
 msgstr  "5 cm KwK 39 L/60 坦克炮"
