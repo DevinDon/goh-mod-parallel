@@ -16,7 +16,7 @@
 
   {Trace
     {View "/texture/fx/tracers/line/green/tracer.mtl"
-      {ScaleX 1.00}
+      {ScaleX 0.10}
       {ScaleY 0.10}
       {Light  1.00}
     }
