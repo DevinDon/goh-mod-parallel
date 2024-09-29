@@ -171,16 +171,16 @@ msgid   "<c(03a9f4)>( I )</c> Sd.Kfz 251/21 mit 3 x 2 cm MG151"
 msgstr  "<c(03a9f4)>( I )</c> Sd.Kfz 251/21 加装 三联装 2 cm MG151"
 
 msgctxt "desc/entity/sdkfz-251-22"
-msgid   "Sd.Kfz 251/22 mit 7.5 cm Pak 40"
-msgstr  "Sd.Kfz 251/22 加装 7.5 cm Pak 40"
+msgid   "Sd.Kfz 251/22 mit 8.8 cm Pak 40"
+msgstr  "Sd.Kfz 251/22 加装 8.8 cm Pak 40"
 
 msgctxt "info/special/sdkfz-251-22"
 msgid   "<c(33c0ee)>Armored Half-Track</c>"
 msgstr  "<c(33c0ee)>半履带式装甲车</c>"
 
 msgctxt "desc/squad/sdkfz-251-22"
-msgid   "<c(03a9f4)>( I )</c> Sd.Kfz 251/22 mit 7.5 cm Pak 40"
-msgstr  "<c(03a9f4)>( I )</c> Sd.Kfz 251/22 加装 7.5 cm Pak 40"
+msgid   "<c(03a9f4)>( I )</c> Sd.Kfz 251/22 mit 8.8 cm Pak 40"
+msgstr  "<c(03a9f4)>( I )</c> Sd.Kfz 251/22 加装 8.8 cm Pak 40"
 
 # 坦克
 msgctxt "desc/entity/panzer-4-h"
