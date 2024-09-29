@@ -63,7 +63,7 @@
   ("set-standard-vehicle" vehicle(sdkfz-251-21) cost(350) cd(150) ci(100) cw(3) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(sdkfz251) button(vehicles))
 }
 {"sdkfz-251-22"
-  ("set-standard-vehicle" vehicle(sdkfz-251-22) cost(470) cd(240) ci(120) cw(3) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(sdkfz251) button(vehicles))
+  ("set-standard-vehicle" vehicle(sdkfz-251-22) cost(500) cd(240) ci(120) cw(3) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-2:3) group(sdkfz251) button(vehicles))
 }
 
 ; 坦克
