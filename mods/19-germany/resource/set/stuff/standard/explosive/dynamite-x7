@@ -11,7 +11,7 @@
   }
 
   {Throw
-    {Range 7}
+    {Range 15}
     {StartAngle 60}
   }
 
