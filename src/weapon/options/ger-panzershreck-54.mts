@@ -35,8 +35,8 @@ const options: WeaponOptions = {
     {
       name: 'heat',
       minRange: 0,
-      aimRange: 125,
-      maxRange: 150,
+      aimRange: 50,
+      maxRange: 75,
       speed: 110,
       gravity: 5,
       projectile: {
@@ -47,8 +47,8 @@ const options: WeaponOptions = {
       damageToHuman: 500,
       spreading: {
         radiusTable: {
-          nearest: 4,
-          farthest: 20,
+          nearest: 5,
+          farthest: 12,
           factor: 7,
         },
         burstRecoveryTime: 0.5,
