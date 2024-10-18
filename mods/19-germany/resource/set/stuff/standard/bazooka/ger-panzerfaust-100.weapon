@@ -43,7 +43,7 @@
   {Parameters "heat"
     {CursorReloading "gun_heat"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 60} ; AI 最长射击距离 m
+    {AimRange 80} ; AI 最长射击距离 m
     {MaxRange 80} ; 玩家最长射击距离 m
     {Speed 60} ; 炮弹速度
     {Gravity 3} ; 炮弹重力

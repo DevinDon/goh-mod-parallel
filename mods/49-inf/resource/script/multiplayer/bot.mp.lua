@@ -50,9 +50,8 @@ function GameModeSpawnCooldown()
   end
 
   return math.random(SpawnCooldownTime.Min, SpawnCooldownTime.Max)
-
-
 end
+
 
 gameModeSpawnTimer = 0
 function SetSpawnCooldownTimer()
@@ -121,6 +120,7 @@ end
 
 local spawnPoint = BotApi.Instance.spawnPointName
 local spawnSide = string.sub(spawnPoint,1,1)
+
 function GetRandomItem(items, getRate)
   local item_rates = {}
 
@@ -199,8 +199,8 @@ function GetFlagLocation(flag)
       f3 = side == 'a' and FlagLocation.Enemy or FlagLocation.Friendly, --C--
       f4 = FlagLocation.Center, --D--
       f5 = FlagLocation.Center, --E--
-      f6 = FlagLocation.Center, --F-- f9 B+F
-      f7 = FlagLocation.Center, --G-- f8 C+G
+      f6 = FlagLocation.Center, --F--
+      f7 = FlagLocation.Center, --G--
       f8 = side == 'a' and FlagLocation.Enemy or FlagLocation.Friendly, --H--
       f9 = side == 'a' and FlagLocation.Friendly or FlagLocation.Enemy, --I--
 
@@ -283,7 +283,7 @@ function GetFlagLocations()
       enemySide = enemySide + 1
     end
   end
-  if printDebug then print("centerSide:", centerSide, "friendlySide:", friendlySide, "enemySide:", enemySide) end
+  -- if printDebug then print("centerSide:", centerSide, "friendlySide:", friendlySide, "enemySide:", enemySide) end
 
   -- Some maps are only middle flags
   if friendlySide == 0 then
@@ -302,7 +302,6 @@ end
 
 function GetFlagToCapture(flagPoints, getPriority, getPosition)
   local alliedFlags, opponentFlags, neutralFlags, totalFlags = 0, 0, 0, 0
-
   local teamIsLosing
 
   for i, flag in pairs(BotApi.Scene.Flags) do
@@ -324,9 +323,9 @@ function GetFlagToCapture(flagPoints, getPriority, getPosition)
 
   local capturableFlags = totalFlags - alliedFlags
 
+  --if printDebug then print("alliedFlags:", alliedFlags, "opponentFlags:", opponentFlags, "neutralFlags:", neutralFlags, "totalFlags:", totalFlags, "capturableFlags:", capturableFlags) end
+  --if printDebug then print("teamIsLosing:", teamIsLosing) end
 
-  if printDebug then print("alliedFlags:", alliedFlags, "opponentFlags:", opponentFlags, "neutralFlags:", neutralFlags, "totalFlags:", totalFlags, "capturableFlags:", capturableFlags) end
-  if printDebug then print("teamIsLosing:", teamIsLosing) end
   if capturableFlags > alliedFlags then
     searchDestroy = 0.60
   elseif capturableFlags == opponentFlags then
@@ -413,6 +412,7 @@ function GetCurrentSpawnWaitTime()
         return UnitSpawnWaitTime
     end
 end
+
 function GetUnitToSpawn(units)
   if not units then
     return nil
@@ -430,16 +430,9 @@ function GetUnitToSpawn(units)
   for i, unit in pairs(units) do
     local min_team = unit.min_team  -- not used
     local min_income = unit.min_income -- not used
-    local tts = 0
-    local available = false
-    if BotApi.Commands:IsUnitAvailable(unit.unit)~= nil then
-      available =BotApi.Commands:IsUnitAvailable(unit.unit)
-      if available then
-        tts = BotApi.Commands:TimeToSpawnUnit(unit.unit)
-      end
-    end
+    local tts = BotApi.Commands:TimeToSpawnUnit(unit.unit)
     local min_tts = currentUnitSpawnWaitTime + gameModeSpawnTimer
-
+    local available = BotApi.Commands:IsUnitAvailable(unit.unit)
 
     if not min_income then min_income = -1 end
     if not min_team then min_team = 0 end
@@ -530,11 +523,9 @@ function GetUnitToSpawn(units)
       if UnitType("Infantry") and not UnitType("AT") then
         priorityMultiplier = priorityMultiplier * 0.1
       end
-
     end
 
     if unitCounts.BotInfantry > 10 and unitCounts.BotATInfantry <= 2 then
-
       if UnitType("Infantry") and UnitType("AT") then
         priorityMultiplier = priorityMultiplier * 4
       end
@@ -714,17 +705,18 @@ end
 function GotoNextWaypoint(squad)
   local waypoints = BotApi.Scene.Waypoints
   BotApi.Commands:CaptureFlag(squad, waypoints[math.random(#waypoints)]) --captureflag is basically gothereandattack
-  if printDebug then print("Print: #captureFlag call inside GoToNextWaypoint") end
+  --if printDebug then print("Print: #captureFlag call inside GoToNextWaypoint") end
 end
 
 function OnWaypoint(args)
-  if printDebug then print("Print: #GotoNextWaypoint call inside OnWaypoint") end
+  --if printDebug then print("Print: #GotoNextWaypoint call inside OnWaypoint") end
   GotoNextWaypoint(args.squadId)
 end
 
   -- NOTE: Returns true if squad tagged "_lua_mi" or "_lua_alert".
   -- NOTE: "_lua_mi" = reserved for mission script use.
   -- NOTE: "_lua_alert" = squad abruptly runs into enemy force seek&destroy.
+
 function IsSquadInScript(squad)
   if BotApi.Scene:IsSquadTagged(squad, "_lua_mi") then
     --if printDebug then print("Print: SQUADinSCRIPT thus no action squad", squad, "Player#",BotApi.Instance.playerId, "Team", BotApi.Instance.team) end
@@ -750,13 +742,12 @@ function CaptureFlag(squad)
   local flag = GetFlagToCapture(BotApi.Scene.Flags, GetFlagPriority, GetFlagPosition)
 
   if not flag then
-    if printDebug then print("Print: No Flags so SeekAndDestroy by squad", squad, "Player#",BotApi.Instance.playerIdon, "Team", BotApi.Instance.team) end
+    --if printDebug then print("Print: No Flags so SeekAndDestroy by squad", squad, "Player#",BotApi.Instance.playerIdon, "Team", BotApi.Instance.team) end
     BotApi.Commands:SeekAndDestroy(squad)
     return
   end
 
   if IsSquadInScript(squad) then
-
     return
   end
 
@@ -765,15 +756,16 @@ function CaptureFlag(squad)
     if isEvacDefender then
       return
     end
+
     if searchDestroy > rndAI then
-      if printDebug then print("Print: [see_enemy] seek by squad", squad, "Player#",BotApi.Instance.playerId, "Team", BotApi.Instance.team) end
+      --if printDebug then print("Print: [see_enemy] seek by squad", squad, "Player#",BotApi.Instance.playerId, "Team", BotApi.Instance.team) end
       BotApi.Commands:SeekAndDestroy(squad)
     else
-      if printDebug then print("Print: [see_enemy] donothing by squad", squad, "Player#",BotApi.Instance.playerId, "Team", BotApi.Instance.team) end
+      --if printDebug then print("Print: [see_enemy] donothing by squad", squad, "Player#",BotApi.Instance.playerId, "Team", BotApi.Instance.team) end
       return
     end
   else
-    if printDebug then print("Print: [notags] ctf by squad", squad, "Player#",BotApi.Instance.playerId, "Team", BotApi.Instance.team, "Flag name: ", flag.name) end
+    --if printDebug then print("Print: [notags] ctf by squad", squad, "Player#",BotApi.Instance.playerId, "Team", BotApi.Instance.team, "Flag name: ", flag.name) end
     BotApi.Commands:CaptureFlag(squad, flag.name)
   end
 end
@@ -800,7 +792,7 @@ function OnGameSpawn(args)
     SetSquadOrder(CaptureFlag, args.squadId, OrderRotationPeriod.MP)
   else
     GotoNextWaypoint(args.squadId)
-    if printDebug then print("Print: #waypoints != 0") end
+    --if printDebug then print("Print: #waypoints != 0") end
   end
 end
 

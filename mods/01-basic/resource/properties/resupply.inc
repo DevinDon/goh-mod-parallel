@@ -1,11 +1,11 @@
 (define "items_light_ger"
 
-  ; pistol
+;// pistol
 
-  ; smg
+;// smg
   {item "mp40"          "ammo" 32 {value 2}}
 
-  ; mg
+;// mg
   {item "mgun_ger" "belt" "ap"  "ammo" 50 {value 5}}
   {item "mgun_ger" "belt" "ap2"  "ammo" 50 {value 5}}
   {item "mgun_ger" "belt"      "ammo" 50 {value 5}}
@@ -16,28 +16,28 @@
   {item "mgun_ger" "doubledrum" "ap2" "ammo" 50 {value 5}}
   {item "zb26_mag"          "ammo" 20 {value 2}}
 
-  ; rifle
+;// rifle
   {item "atrifle_ger"        "ammo" 5  {value 5}}
-  {item "rifle_ger" "clip"    "ammo" 10 {value 2}}
-  {item "rifle_ger" "gewehr"    "ammo" 10 {value 2}}
+  {item "rifle_ger" "clip"    "ammo" 10 {value 1}}
+  {item "rifle_ger" "gewehr"    "ammo" 10 {value 1}}
   {item "stg44"          "ammo" 30 {value 2}}
   {item "fg42"          "ammo" 20 {value 2}}
 
-  ; AT
+;// AT
   {item "k98_antitank"      "ammo" 1  {value 5}}
   {item "k98_grenade"  "he"    "ammo" 1  {value 5}}
   {item "k98_grenade"  "heat"    "ammo" 1  {value 5}}
   {item "k98_grenade"  "heata"    "ammo" 1  {value 5}}
   {item "panzershreck"      "ammo" 1  {value 10}}
 
-  ; Light weaponry
+;// Light weaponry
   {item "mortarger_80" "he"    "ammo" 1  {value 5}}
   {item "mortarger_80" "sm"    "ammo" 1  {value 5}}
   {item "mortarger_100" "he"    "ammo" 1  {value 5}}
   {item "mortarger_100" "sm"    "ammo" 1  {value 5}}
   {item "mortarger_120" "he"    "ammo" 1  {value 15}}
 
-  ; Grenade
+;// Grenade
   {item "grenade" "m24"          1  {value 5}}
   {item "grenade" "m24_splinter"      1  {value 5}}
 
@@ -53,17 +53,17 @@
 
 (define "items_light_rus"
 
-  ; pistol
+;// pistol
   {item "tt33"          "ammo" 16 {value 1}}
   {item "revolver_clip"      "ammo" 14 {value 1}}
 
-  ; smg
+;// smg
   {item "ppd_drum"        "ammo" 71 {value 4}}
   {item "pps_stick"        "ammo" 35 {value 2}}
   {item "ppsh_drum"        "ammo" 71 {value 4}}
   {item "ppsh_stick"        "ammo" 35 {value 2}}
 
-  ; mg
+;// mg
   {item "hmgun_rus" "ap"      "ammo" 50 {value 5}}
   {item "hmgun_rus" "api"      "ammo" 50 {value 5}}
   {item "mgun_rus" "dp"      "ammo" 47 {value 5}}
@@ -72,25 +72,25 @@
   {item "mgun_rus" "belt" "ap"  "ammo" 50 {value 5}}
   {item "mgun_rus" "belt"  "api"  "ammo" 50 {value 5}}
 
-  ; rifle
+;// rifle
   {item "atrifle_rus"        "ammo" 5  {value 5}}
-  {item "rifle_rus" "clip"    "ammo" 10 {value 2}}
-  {item "rifle_rus" "svt"      "ammo" 10 {value 2}}
-  {item "shotgun"          "ammo" 10 {value 2}}
+  {item "rifle_rus" "clip"    "ammo" 10 {value 1}}
+  {item "rifle_rus" "svt"      "ammo" 10 {value 1}}
+  {item "shotgun"          "ammo" 10 {value 1}}
 
-  ; AT
+;// AT
   {item "dyakonov"        "ammo" 1  {value 5}}
   {item "vpgs41"          "ammo" 1  {value 5}}
 
-  ; Light weaponry
+;// Light weaponry
   {item "mortarrus_50" "he"    "ammo" 1  {value 3}}
   {item "mortarrus_82" "he"    "ammo" 1  {value 5}}
-  {item "mortarrus_82" "sm"    "ammo" 1  {value 5}}
+  {item "mortarrus_82" "sm"    "ammo" 1  {value 10}} ;// is actually "ic"
   {item "mortarrus_120" "he"    "ammo" 1  {value 15}}
-  {item "mortarrus_120" "sm"    "ammo" 1  {value 5}}
-  {item "mortarrus_120" "ic"    "ammo" 1  {value 10}}
+  {item "mortarrus_120" "sm"    "ammo" 1  {value 15}}
+  {item "mortarrus_120" "ic"    "ammo" 1  {value 15}}
 
-  ; Grenade
+;// Grenade
   {item "grenade" "f1"           1  {value 5}}
   {item "grenade" "rgd33"         1  {value 5}}
 
@@ -103,23 +103,23 @@
 
 (define "items_light_fin"
 
-  ; smg
+;// smg
   {item "suomi_drum"        "ammo" 72 {value 4}}
   {item "suomi_stick"        "ammo" 50 {value 3}}
   {item "bergmann_stick"      "ammo" 50 {value 3}}
 
-  ; mg
+;// mg
   {item "chauchat"        "ammo" 20 {value 2}}
   {item "m26"            "ammo" 20 {value 2}}
   {item "madsen"          "ammo" 30 {value 3}}
+  {item "mgun_rus" "l33_36"    "ammo" 75 {value 5}}
 
-
-  ; Light weaponry
+;// Light weaponry
   {item "mortarfin_81" "he"    "ammo" 1  {value 5}}
   {item "mortarfin_81" "sm"    "ammo" 1  {value 5}}
   {item "mortarfin_120" "he"    "ammo" 1  {value 10}}
 
-  ; Grenade
+;// Grenade
   {item "grenade" "m32"          1  {value 5}}
   {item "grenade" "m32_stick"        1  {value 5}}
   {item "grenade" "m36"          1  {value 5}}
@@ -134,33 +134,33 @@
 
 (define "items_light_usa"
 
-  ; pistol
+;// pistol
   {item "m1911_mag"        "ammo" 14 {value 1}}
   {item "hdm_mag"          "ammo" 10 {value 1}}
 
-  ; smg
+;// smg
   {item "thompson_mag" "stick" "20" "ammo" 20 {value 1}}
   {item "m3_grease_mag"      "ammo" 30 {value 2}}
   {item "thompson_mag" "stick" "30" "ammo" 30 {value 2}}
   {item "thompson_mag" "drum"    "ammo" 50 {value 3}}
 
-  ; mg
+;// mg
   {item "bar_mag"          "ammo" 20 {value 2}}
   {item "mgun_usa" "belt"      "ammo" 50 {value 5}}
-  {item "usa-hmgun"        "ammo" 50 {value 5}}
-  {item "usa-hmgun" "api"      "ammo" 50 {value 5}}
+  {item "hmgun_usa"        "ammo" 50 {value 5}}
+  {item "hmgun_usa" "api"      "ammo" 50 {value 5}}
 
-  ; rifle
-  {item "rifle_usa" "clip"    "ammo" 10 {value 2}}
-  {item "rifle_usa" "clip" "ap"  "ammo" 10 {value 2}}
-  {item "rifle_usa" "clip" "trace" "ammo" 10 {value 2}}
-  {item "rifle_usa" "garand_clip" "ammo" 8 {value 2}}
-  {item "rifle_usa" "garand_clip" "ap" "ammo" 8 {value 2}}
-  {item "rifle_usa" "garand_clip" "trace" "ammo" 8 {value 2}}
+;// rifle
+  {item "rifle_usa" "clip"    "ammo" 10 {value 1}}
+  {item "rifle_usa" "clip" "ap"  "ammo" 10 {value 1}}
+  {item "rifle_usa" "clip" "trace" "ammo" 10 {value 1}}
+  {item "rifle_usa" "garand_clip" "ammo" 8 {value 1}}
+  {item "rifle_usa" "garand_clip" "ap" "ammo" 8 {value 1}}
+  {item "rifle_usa" "garand_clip" "trace" "ammo" 8 {value 1}}
 
-  {item "m1_carbine_mag"      "ammo" 15 {value 2}}
+  {item "m1_carbine_mag"      "ammo" 15 {value 1}}
 
-  ; AT
+;// AT
   {item "usa_grenade"  "he"    "ammo" 1  {value 5}}
   {item "usa_grenade"  "he2"    "ammo" 1  {value 5}}
   {item "usa_grenade"  "heat"    "ammo" 1  {value 5}}
@@ -176,18 +176,18 @@
   {item "recoilless" "heat"    "ammo" 1  {value 10}}
   {item "recoilless" "wp"      "ammo" 1  {value 10}}
 
-  ; Light weaponry
+;// Light weaponry
   {item "mortarusa_60" "he"    "ammo" 1  {value 3}}
-  {item "mortarusa_60" "wp"    "ammo" 1  {value 3}}
+  {item "mortarusa_60" "wp"    "ammo" 1  {value 8}}
   {item "mortarusa_81" "he"    "ammo" 1  {value 5}}
   {item "mortarusa_81" "he2"    "ammo" 1  {value 5}}
   {item "mortarusa_81" "sm"    "ammo" 1  {value 5}}
-  {item "mortarusa_81" "wp"    "ammo" 1  {value 5}}
+  {item "mortarusa_81" "wp"    "ammo" 1  {value 10}}
   {item "mortarusa_107" "he"    "ammo" 1  {value 15}}
-  {item "mortarusa_107" "sm"    "ammo" 1  {value 5}}
-  {item "mortarusa_107" "wp"    "ammo" 1  {value 10}}
+  {item "mortarusa_107" "sm"    "ammo" 1  {value 15}}
+  {item "mortarusa_107" "wp"    "ammo" 1  {value 15}}
 
-  ; Grenade
+;// Grenade
   {item "grenade" "mk2"           1  {value 5}}
 
   {item "grenade" "m7"          1  {value 10}}
@@ -199,19 +199,19 @@
 
 (define "items_light_eng"
 
-  ; mg
+;// mg
   {item "bren_mag"        "ammo" 30 {value 3}}
   {item "mgun_ger" "belt" "mk2"  "ammo" 50 {value 5}}
 
-  ; rifle
+;// rifle
   {item "atrifle_eng"  "ap"    "ammo" 5  {value 5}}
   {item "atrifle_eng"  "ap2"    "ammo" 5  {value 5}}
 
-  ; Light weaponry
+;// Light weaponry
   {item "mortareng_50" "sm"    "ammo" 1  {value 3}}
   {item "mortareng_50" "wp"    "ammo" 1  {value 3}}
 
-  ; Grenade
+;// Grenade
   {item "grenade" "no73"          1  {value 10}}
   {item "grenade" "no75"          1  {value 10}}
 
@@ -220,7 +220,7 @@
 
 
 (define "items_light_generic"
-  ; flame
+;// flame
   (mod not "mp"
     {item "flame_thrower"      "ammo" 50 {value 10}}
   )
@@ -228,10 +228,10 @@
     {item "flame_thrower"      "ammo" 50 {value 100}}
   )
 
-  ; pistol
+;// pistol
   {item "pistol"          "ammo" 20 {value 1}}
 
-  ; other
+;// other
   {item "bandage_ger"            1 {value 1}}
   {item "bandage_rus"            1 {value 1}}
   {item "bandage_fin"            1 {value 1}}
@@ -347,7 +347,7 @@
 )
 
 (define "items_medic"
-  ; other
+;// other
   {item "bandage_ger"            1 {value 1}}
   {item "bandage_rus"            1 {value 1}}
   {item "bandage_fin"            1 {value 1}}
@@ -456,10 +456,10 @@
 
   {item "bulletger_210"    "he"    "ammo" 1 {value 100}}
 
-  {item "150mm_nebelwerfer"        "ammo" 1 {value 40}} ;// 6 rockets costs ~250 per salvo
+  {item "150mm_nebelwerfer"        "ammo" 1 {value 40}} ;// 6 rockets costs 240 per salvo
   {item "210mm_nebelwerfer"        "ammo" 1 {value 50}} ;// 5 rockets costs 250 per salvo
-  {item "280mm_nebelwerfer"        "ammo" 1 {value 60}} ;// 6 rockets costs ~500 per salvo
-  {item "300mm_nebelwerfer"        "ammo" 1 {value 60}} ;// 6 rockets costs ~500 per salvo
+  {item "280mm_nebelwerfer"        "ammo" 1 {value 60}} ;// 6 rockets costs 360 per salvo
+  {item "300mm_nebelwerfer"        "ammo" 1 {value 60}} ;// 6 rockets costs 360 per salvo
   {item "380mm_rw61"            "ammo" 1 {value 200}}
 
   {item "bulletger_600"    "he"    "ammo" 1 {value 350}}
@@ -677,6 +677,10 @@
   {item "bullet_57x441" "eng"  "apds"    "ammo" 1 {value 5}}
   {item "bullet_57x441" "eng"  "he"    "ammo" 1 {value 5}}
 
+  {item "bulleteng_76"  "apcbc"      "ammo" 1 {value 5}}
+  {item "bulleteng_76"  "apds"      "ammo" 1 {value 10}}
+  {item "bulleteng_76"  "he"      "ammo" 1 {value 5}}
+
   {item "bulleteng_114"    "he"    "ammo" 1 {value 10}}
 
   {item "50mm_rocket_grapnel"        "ammo" 1 {value 10}}
@@ -687,7 +691,7 @@
 )
 
 (define "items_engineer"
-  ; fortification tools
+;// fortification tools
   {item "shovel_ger"              1 {value 5}}
   {item "shovel_rus"              1 {value 5}}
   {item "shovel_fin"              1 {value 5}}
@@ -696,25 +700,26 @@
   {item "tent_kit"              1 {value 5}}
   {item "sandbag_vehicle"            1 {value 10}}
 
-  ; general tools
+;// general tools
   {item "mine_detector"            1 {value 20}}
   {item "repair_kit"              1 {value 20}}
 
-  ; special ammo
+;// special ammo
   {item "flame_thrower"        "ammo"  10 {value 10}}
 )
 
 (define "items_explosives"
-  ; explosives
+;// explosives
   {item "geballteladung_3kg"          1 {value 15}}
   {item "satchel_charge_rus"          1 {value 15}}
   {item "satchel_charge_usa"          1 {value 15}}
+  {item "compositionb_x4"            1 {value 15}}
 
-  ; grenade mine hybrid
+;// grenade mine hybrid
   {item "grenade" "m7"            1 {value 10}}
   {item "grenade" "no75"            1 {value 10}}
 
-  ; mines
+;// mines
   {item "s" "mine"               1 {value 5}}
   {item "pmd" "mine"               1 {value 5}}
   {item "m2" "mine"               1 {value 5}}
@@ -741,9 +746,9 @@
     {resupply
       ("items_medic")
     }
-    {radius       20}    ;// resupply radius in meter
-    {resupplyPeriod 3}    ;// resupply period in seconds
-    {regenerationPeriod 1}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {radius       5}    ;// resupply radius in meter
+    {resupplyPeriod   1}    ;// resupply period in seconds
+    {regenerationPeriod 2}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
     {limit         50}    ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
@@ -771,9 +776,9 @@
       ("items_heavy_fin")
       ("items_heavy_usa")
     }
-    {radius        20}    ;// resupply radius in meter
-    {resupplyPeriod 3}    ;// resupply period in seconds
-    {regenerationPeriod 0}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {radius        10}    ;// resupply radius in meter
+    {resupplyPeriod    2}    ;// resupply period in seconds
+    {regenerationPeriod 10}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
     {limit         %supply}  ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
@@ -795,10 +800,10 @@
       ("items_light_usa")
       ("items_light_fin")
     }
-    {radius               25} ;// resupply radius in meter
-    {resupplyPeriod 3} ;// resupply period in seconds
-    {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 10000} ;// max number of resupplies (0 = unlimited)
+    {radius        15}    ;// resupply radius in meter
+    {resupplyPeriod   5}    ;// resupply period in seconds
+    {regenerationPeriod 10}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {limit        250}  ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -825,10 +830,10 @@
       ("items_heavy_fin")
       ("items_heavy_usa")
     }
-    {radius               25} ;// resupply radius in meter
-    {resupplyPeriod 3} ;// resupply period in seconds
-    {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 10000} ;// max number of resupplies (0 = unlimited)
+    {radius       15}    ;// resupply radius in meter
+    {resupplyPeriod   10}    ;// resupply period in seconds
+    {regenerationPeriod 10}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {limit         500}  ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -855,10 +860,10 @@
       ("items_heavy_fin")
       ("items_heavy_usa")
     }
-    {radius               25} ;// resupply radius in meter
-    {resupplyPeriod 3} ;// resupply period in seconds
-    {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 10000} ;// max number of resupplies (0 = unlimited)
+    {radius       15}    ;// resupply radius in meter
+    {resupplyPeriod   10}    ;// resupply period in seconds
+    {regenerationPeriod 10}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {limit         100}  ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -869,7 +874,7 @@
   }
 )
 
-(define "truck_ammo"
+(define "truck_ammo" ;// not used
   {extender "supply_zone"
     {resupply
       ("items_light_generic")
@@ -879,11 +884,11 @@
       ("items_light_usa")
       ("items_light_fin")
     }
-    {mechanicResources {amount 10} {value 10}}
-    {radius 25}    ;// resupply radius in meter
-    {resupplyPeriod 2}    ;// resupply period in seconds
-    {regenerationPeriod 0}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 1000}  ;// max number of resupplies (0 = unlimited)
+    {mechanicResources {amount 10}{value 10}}
+    {radius        12}    ;// resupply radius in meter
+    {resupplyPeriod    2}    ;// resupply period in seconds
+    {regenerationPeriod  10}    ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {limit        500}  ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -909,10 +914,10 @@
       ("items_heavy_fin")
       ("items_heavy_usa")
     }
-    {radius 50} ;// resupply radius in meter
-    {resupplyPeriod 3} ;// resupply period in seconds
-    {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 10000} ;// max number of resupplies (0 = unlimited)
+    {radius       12}      ;// resupply radius in meter
+    {resupplyPeriod   2}      ;// resupply period in seconds
+    {regenerationPeriod  5}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {limit        1000}    ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -937,13 +942,11 @@
       ("items_heavy_eng")
       ("items_heavy_fin")
       ("items_heavy_usa")
-      ("items_engineer")
-      ("items_explosives")
     }
-    {radius 50} ;// resupply radius in meter
-    {resupplyPeriod 3} ;// resupply period in seconds
-    {regenerationPeriod 0} ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 10000} ;// max number of resupplies (0 = unlimited)
+    {radius       12}      ;// resupply radius in meter
+    {resupplyPeriod   2}      ;// resupply period in seconds
+    {regenerationPeriod 5}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
+    {limit         2000}    ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -960,10 +963,10 @@
     {resupply
       {item "flame_thrower" "ammo" 50 {value 1}}
     }
-    {radius 30}      ;// resupply radius in meter
-    {resupplyPeriod 3}      ;// resupply period in seconds
+    {radius       12}      ;// resupply radius in meter
+    {resupplyPeriod   1}      ;// resupply period in seconds
     {regenerationPeriod 0}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit %liters}  ;// max number of resupplies (0 = unlimited)
+    {limit         %liters}  ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -981,10 +984,10 @@
       ("items_explosives")
     }
     {mechanicResources {amount 10}{value 10}}
-    {radius 30}      ;// resupply radius in meter
-    {resupplyPeriod 3}      ;// resupply period in seconds
+    {radius       12}      ;// resupply radius in meter
+    {resupplyPeriod   2}      ;// resupply period in seconds
     {regenerationPeriod 0}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 5000}    ;// max number of resupplies (0 = unlimited)
+    {limit         200}    ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"
@@ -1002,10 +1005,10 @@
       ("items_explosives")
     }
     {mechanicResources {amount 10}{value 10}}
-    {radius 40}      ;// resupply radius in meter
-    {resupplyPeriod 3}      ;// resupply period in seconds
+    {radius       12}      ;// resupply radius in meter
+    {resupplyPeriod   2}      ;// resupply period in seconds
     {regenerationPeriod 0}      ;// regeneration period in seconds, +1 supply every x seconds (0 = no regeneration)
-    {limit 5000}    ;// max number of resupplies (0 = unlimited)
+    {limit         500}    ;// max number of resupplies (0 = unlimited)
   }
   {DecalView supply_zone
     {Sprite "supply_zone.ebm"

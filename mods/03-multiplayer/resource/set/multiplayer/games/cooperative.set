@@ -3,13 +3,12 @@
   {minPlayers  1}
   {maxPlayers  8}
   {settings
-    {options      fogOfWar difficulty friendlyFire enableManualControlMode showPiercing showDamageReports enableHardcore enableSpectators}
+    {options      fogOfWar difficulty friendlyFire showPiercing showDamageReports enableHardcore enableSpectators}
     {difficulty      normal}
     {fogOfWar      fog_realistic}
     {floraRespawn    0}
     {friendlyfire    1}
-    {enableBots      0}
-    {enableManualControlMode dc_mode}
+    ;{enableManualControlMode dc_mode}
   }
   {teamSettings
     {teamsMode normal}

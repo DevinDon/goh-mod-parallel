@@ -1,6 +1,9 @@
 ;SDL
 {units
 
+  ; custom
+  (include "/properties/standard/registry/additional-units.inc")
+
   ;Boxes
   {"inf_crate_ger"
     {vehicle_view "inf_crate_ger"}
@@ -165,6 +168,9 @@
   {"105mm_lefh18m"
     {vehicle_view "cannon"}
   }
+  {"105mm_lefh18_40"
+    {vehicle_view "105mm_lefh18_40"}
+  }
   {"105mm_sk18"
     {vehicle_view "cannon_105mm_sk18"}
   }
@@ -195,6 +201,9 @@
   {"200mm_ldgw40"
     {vehicle_view "cannon_200mm_ldgw40"}
   }
+  {"210mm_k39"
+    {vehicle_view "210mm_k39"}
+  }
   {"210mm_morser18"
     {vehicle_view "cannon_170mm_k18"}
   }
@@ -219,7 +228,13 @@
   {"50mm_kwk39_platform"
     {vehicle_view "50mm_kwk39_platform"}
   }
+  {"20mm_flakvierling38"
+    {vehicle_view "20mm_flakvierling38"}
+  }
   ;German Cars
+  {"citroen_7_ger"
+    {vehicle_view "citroen_7_ger"}
+  }
   {"blitz3_6"
     {vehicle_view "car"}
   }
@@ -287,6 +302,9 @@
   }
   {"sdkfz7"
     {vehicle_view "sdkfz7"}
+  }
+  {"sdkfz7_1"
+    {vehicle_view "sdkfz7_1"}
   }
   {"sdkfz7_2"
     {vehicle_view "sdkfz7_2"}
@@ -754,7 +772,7 @@
     {vehicle_view "gaz"}
   }
   {"gaz_fuel"
-    {vehicle_view "gaz"}
+    {vehicle_view "gaz_fuel"}
   }
   {"zis5eng"
     {vehicle_view "zis5"}
@@ -1033,24 +1051,11 @@
   {"su152"
     {vehicle_view "isu152"}
   }
-  {"isu152"
+  {"su152_late"
     {vehicle_view "isu152"}
   }
-
-  ;British Light Tanks
-  {"valentine2"
-    {vehicle_view "valentine2"}
-  }
-  {"valentine7"
-    {vehicle_view "valentine2"}
-  }
-  {"valentine9"
-    {vehicle_view "valentine2"}
-  }
-
-  ;British Heavy Tanks
-  {"churchill3"
-    {vehicle_view "churchill3"}
+  {"isu152"
+    {vehicle_view "isu152"}
   }
 
   ;Finnish Cannons
@@ -1285,6 +1290,9 @@
   }
   {"p47_d22_recon"
     {vehicle_view "p47_d22"}
+  }
+  {"c47_d"
+    {vehicle_view "c47_d"}
   }
   ;USA special
   {"usa_stretcher"
@@ -1688,7 +1696,6 @@
     {vehicle_view "m4a1_75_dd"}
   }
 
-
   ;USA Heavy Tanks
   {"m26_pershing"
     {vehicle_view "m26_pershing"}
@@ -1696,6 +1703,41 @@
   {"t26e4"
     {vehicle_view "t26e4"}
   }
+
+  ;British Cars
+  {"bedford_oyd"
+    {vehicle_view "bedford_oyd"}
+  }
+
+  ;British BTR's
+  {"universal_carrier_mk2"
+    {vehicle_view "universal_carrier_mk2"}
+  }
+
+  ;British Light Tanks
+  {"valentine2"
+    {vehicle_view "valentine2"}
+  }
+  {"valentine7"
+    {vehicle_view "valentine2"}
+  }
+  {"valentine9"
+    {vehicle_view "valentine2"}
+  }
+
+  ;British Medium Tanks
+  {"sherman3_late"
+    {vehicle_view "sherman3_late"}
+  }
+  {"sherman5c"
+    {vehicle_view "sherman5c"}
+  }
+
+  ;British Heavy Tanks
+  {"churchill3"
+    {vehicle_view "churchill3"}
+  }
+
   ;ENG Ships
   {"lca"
     {vehicle_view "lca"}
@@ -1703,8 +1745,8 @@
   {"lca_grh"
     {vehicle_view "lca_grh"}
   }
-
-  ; custom
-  (include "/properties/standard/registry/additional-units.inc")
+  {"goatley_boat"
+    {vehicle_view "goatley_boat"}
+  }
 
 }
