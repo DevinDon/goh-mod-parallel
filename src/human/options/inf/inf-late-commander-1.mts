@@ -29,7 +29,7 @@ const options: HumanOptions = {
 
   inventory: [
     '{Item "weapon inf-infantry-bolt-action-rifle" filling "ammo inf-10mm-clip ap" 5} ; 栓动步枪',
-    '{Item "ammo inf-5mm-clip ap" 50} ; 栓动步枪弹夹',
+    '{Item "ammo inf-10mm-clip ap" 50} ; 栓动步枪弹夹',
     '{Item "m24_smoke grenade" 2} ; 烟雾弹',
     '{Item "bandage_ger" 5} ; 绷带',
     '{Item "binocular"} ; 望远镜',
