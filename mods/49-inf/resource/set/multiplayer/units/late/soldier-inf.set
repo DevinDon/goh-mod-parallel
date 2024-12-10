@@ -1,3 +1,4 @@
+; 步兵
 ; args = %cp %cost
 (define "set-soldier"
   {tags "late inf infantry man lvl1"}
