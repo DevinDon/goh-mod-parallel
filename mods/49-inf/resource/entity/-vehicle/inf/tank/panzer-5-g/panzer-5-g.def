@@ -49,7 +49,7 @@
       {Item "repair_kit" 10}
 
       {Item "ammo inf-10mm-chain ap" 4500}
-      {Item "weapon ger-mg42" filled {user "mgun"}}
+      {Item "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240 {user "mgun"}}
 
       {Item "nbks grenade" 2}
 
