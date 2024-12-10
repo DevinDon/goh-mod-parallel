@@ -31,7 +31,7 @@
     {Item "weapon inf-infantry-assault-rifle" filling "ammo inf-5mm-magazine ap" 30} ; 突击步枪
     {Item "ammo inf-5mm-magazine ap" 120} ; 突击步枪弹匣
     {Item "m24 grenade" 1} ; 手榴弹
-    {Item "m24_smoke grenade" 2} ; 烟雾弹
+    {Item "m24_smoke grenade" 1} ; 烟雾弹
     {Item "bandage_ger" 5} ; 绷带
     {Item "dynamite-x7" 2} ; 雷管
     {Item "mine_detector"} ; 扫雷器

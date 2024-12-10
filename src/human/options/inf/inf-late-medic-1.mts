@@ -32,7 +32,6 @@ const options: HumanOptions = {
     '{Item "ammo inf-10mm-clip ap" 50} ; 栓动步枪弹夹',
     '{Item "m24_smoke grenade" 5} ; 烟雾弹',
     '{Item "bandage_ger" 20} ; 绷带',
-    '{Item "ger_sidecap_m39_var2_med"}; 医疗箱',
     '{Item "tent_kit" 1} ; 医疗帐篷',
   ],
 

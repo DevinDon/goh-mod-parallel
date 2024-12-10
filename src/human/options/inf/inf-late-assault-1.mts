@@ -14,7 +14,7 @@ const options: HumanOptions = {
   nationality: 'inf',
 
   armors: {
-    head: 'ger_fieldcap_m43_luft_var1',
+    head: 'ger_m40_helmet',
   },
 
   perks: [
