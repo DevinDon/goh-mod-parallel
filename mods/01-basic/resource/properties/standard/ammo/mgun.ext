@@ -1,4 +1,4 @@
-; standard hmgun ammo define
+; standard mgun ammo define
 
 ; args = calibre
 (define "api"

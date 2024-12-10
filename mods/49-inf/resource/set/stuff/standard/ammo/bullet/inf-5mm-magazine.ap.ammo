@@ -1,5 +1,7 @@
 {bullet
 
+  (include "/properties/standard/ammo/mgun.ext")
+
   {Tag "bullet small_arms stackable pierce bullet_fx size2 intermediate"}
 
   {Entity "stg44_ammo"}
@@ -20,5 +22,7 @@
     }
     {Length 5}
   }
+
+  ("api" calibre(5))
 
 }

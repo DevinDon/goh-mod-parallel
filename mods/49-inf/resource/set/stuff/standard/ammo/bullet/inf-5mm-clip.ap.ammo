@@ -1,5 +1,7 @@
 {bullet
 
+  (include "/properties/standard/ammo/mgun.ext")
+
   {Tag "bullet small_arms stackable pierce bullet_fx size2"}
 
   {Entity "rifle_clip_ger"}
@@ -20,5 +22,7 @@
     }
     {Length 10}
   }
+
+  ("api" calibre(5))
 
 }
