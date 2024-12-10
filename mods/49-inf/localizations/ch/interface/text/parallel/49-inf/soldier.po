@@ -26,7 +26,7 @@ msgstr  "医疗兵 [无尽军团]"
 
 msgctxt "desc/human/mp/inf/late/sniper-1"
 msgid   "Sniper [Inf]"
-msgstr  "精准射手 [无尽军团]"
+msgstr  "狙击手 [无尽军团]"
 
 
 
