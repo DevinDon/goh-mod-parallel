@@ -34,10 +34,12 @@ export type WeaponBulletOptions = {
   name: BulletType;
   /** 最短射击距离 m */
   minRange: number;
-  /** AI 最长射击距离 m */
-  aimRange: number;
-  /** 玩家最长射击距离 m */
+  /** AI 最长射击距离 m，默认为 maxRange 的 90% */
+  aimRange?: number;
+  /** 玩家最长射击距离 m，同时用于指定 farthest 距离 */
   maxRange: number;
+  /** 有效精准射击距离 m，仅用于指定 nearest 距离 */
+  effectiveRange: number;
   /** 弹种速度 m/s */
   speed: number;
   /** 弹种重力 m/s，默认为 5，曲射模式推荐为 9 */
@@ -61,7 +63,7 @@ export type WeaponBulletOptions = {
       nearest: number;
       /** 最远距离散布 500m */
       farthest: number;
-      /** 系数，默认为 3.5 */
+      /** 1000m 处散布系数，默认为 5，即 1000m 处的散布为 farthest 的 5 倍 */
       factor?: number;
     };
     /** 开火后恢复到正常精度的时间 s，默认 1 秒 */

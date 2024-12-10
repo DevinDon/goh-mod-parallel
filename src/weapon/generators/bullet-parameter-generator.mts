@@ -37,7 +37,7 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
   return `{Parameters "${name}"
   {CursorReloading "${reloading}"} ; 装填图标
   {MinRange ${bullet.minRange}} ; 最短射击距离 m
-  {AimRange ${bullet.aimRange}} ; AI 最长射击距离 m
+  {AimRange ${bullet.aimRange ?? bullet.maxRange * 0.9}} ; AI 最长射击距离 m
   {MaxRange ${bullet.maxRange}} ; 玩家最长射击距离 m
   {Speed ${bullet.speed}} ; 炮弹速度
   {Gravity ${bullet.gravity ?? 5}} ; 炮弹重力
@@ -45,7 +45,7 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
   ${damageToArmor}
   ${damageToHuman}
   {Spreading
-    {RadiusTable {0 0} {100 ${bullet.spreading.radiusTable.nearest}} {500 ${bullet.spreading.radiusTable.farthest}} {1000 ${(bullet.spreading.radiusTable.farthest * (bullet.spreading.radiusTable.factor ?? 3.5)).toFixed(2)}}} ; 散布
+    {RadiusTable {0 0} {${bullet.effectiveRange} ${bullet.spreading.radiusTable.nearest}} {${bullet.maxRange} ${bullet.spreading.radiusTable.farthest}} {1000 ${(bullet.spreading.radiusTable.farthest * (bullet.spreading.radiusTable.factor ?? 5)).toFixed(2)}}} ; 散布
     {BurstRecoveryTime ${bullet.spreading.burstRecoveryTime ?? 1}} ; 开火后恢复到正常精度的时间
     {BurstAccuracy     ${bullet.spreading.burstAccuracy ?? 100}} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
     {SpreadPower       ${bullet.spreading.spreadPower ?? 1}} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
