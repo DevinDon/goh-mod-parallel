@@ -1,17 +1,17 @@
 ; 人员配置
 {breed
 
-  {tags "soldier_pzscheck"} ; 标签
+  {tags "soldier"} ; 标签
 
   {behaviour soldier} ; 行为类别
-  {skin "ger_heer_43_at_rkt"} ; 外观
-  {portrait "ger_regular"} ; 肖像
+  {skin "ger_luft_44_fielddiv_nco_smg"} ; 外观
+  {portrait "ger_luftwaffe_recon"} ; 肖像
   {icon "smg"} ; 图标
   {icon_priority 0} ; 图标优先级
   {nationality inf} ; 国籍
 
   {armors ; 防护装置
-    {head ger_m40_helmet}
+    {head ger_fieldcap_m43_luft_var1}
     ; 无防弹衣
   }
 

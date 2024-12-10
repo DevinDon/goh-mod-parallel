@@ -16,6 +16,14 @@ msgctxt "desc/human/mp/inf/late/assault-1"
 msgid   "Assault [Inf]"
 msgstr  "突击兵 [无尽军团]"
 
+msgctxt "desc/human/mp/inf/late/engineer-1"
+msgid   "Engineer [Inf]"
+msgstr  "工程兵 [无尽军团]"
+
+msgctxt "desc/human/mp/inf/late/medic-1"
+msgid   "Medic [Inf]"
+msgstr  "医疗兵 [无尽军团]"
+
 
 
 

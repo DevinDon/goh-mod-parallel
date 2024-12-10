@@ -1,0 +1,43 @@
+; 人员配置
+{breed
+
+  {tags "soldier"} ; 标签
+
+  {behaviour soldier} ; 行为类别
+  {skin "ger_heer_43_medic_1"} ; 外观
+  {portrait "ger_medic"} ; 肖像
+  {icon "tech"} ; 图标
+  {icon_priority 0} ; 图标优先级
+  {nationality inf} ; 国籍
+
+  {armors ; 防护装置
+    {head ger_stalhelm_m43_medic_var2}
+    ; 无防弹衣
+  }
+
+  {perks ; 能力
+    (include "ability.inc")
+    ("rifle_skill_rank_4")
+    ("tier4_defense")
+    ("medic")
+  }
+
+  {veterancy ; 体力
+    (include "ability.inc")
+    ("veterancy_lvl_0")
+  }
+
+  {inventory ; 背包
+    {Item "weapon inf-infantry-bolt-action-rifle" filling "ammo inf-10mm-clip ap" 5} ; 栓动步枪
+    {Item "ammo inf-5mm-magazine ap" 50} ; 栓动步枪弹夹
+    {Item "m24_smoke grenade" 5} ; 烟雾弹
+    {Item "bandage_ger" 20} ; 绷带
+    {Item "ger_sidecap_m39_var2_med"}; 医疗箱
+    {Item "tent_kit" 1} ; 医疗帐篷
+
+    {in_hands 0}
+  }
+
+  ; 无额外配置
+
+}
