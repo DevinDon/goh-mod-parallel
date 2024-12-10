@@ -1,11 +1,13 @@
 {from "pattern standard-bazooka-ammo"
 
-  {tag "no_ricochet"}
+  {Tag "no_ricochet shell size2 88to105 he fg"}
 
-  {entity "panzerfaust_100_ammo"}
+  {Entity "panzershreck_ammo"}
 
-  {mass 0.6}
+  {Mass 3.3}
 
-  {view "panzerfaust_100_ammo"}
+  {view "panzershreck_ammo"
+    {tail "bazooka_tail_rpzb" "tail"}
+  }
 
 }

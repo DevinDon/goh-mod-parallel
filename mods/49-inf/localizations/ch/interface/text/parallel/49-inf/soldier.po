@@ -36,6 +36,13 @@ msgctxt "desc/human/mp/inf/late/machine-gunner-2"
 msgid   "Machine Assistant Gunner [Inf]"
 msgstr  "机枪副射手 [无尽军团]"
 
+msgctxt "desc/human/mp/inf/late/antiarmor-gunner-1"
+msgid   "Anti-Armor Gunner [Inf]"
+msgstr  "反装甲射手 [无尽军团]"
+
+msgctxt "desc/human/mp/inf/late/antiarmor-gunner-2"
+msgid   "Anti-Armor Assistant Gunner [Inf]"
+msgstr  "反装甲副射手 [无尽军团]"
 
 
 
