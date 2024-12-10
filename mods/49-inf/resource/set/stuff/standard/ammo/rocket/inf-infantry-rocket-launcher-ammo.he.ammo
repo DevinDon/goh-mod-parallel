@@ -10,6 +10,6 @@
     {tail "bazooka_tail_rpzb" "tail"}
   }
 
-  ("rocket_level_2" weight(3.3) filler(0.7))
+  ("set-rocket-he-ammo-explosive" weight(3.3) filler(0.7))
 
 }
