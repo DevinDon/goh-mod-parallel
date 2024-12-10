@@ -45,7 +45,7 @@ const options: WeaponOptions = {
       spreading: {
         radiusTable: {
           nearest: 0.27,
-          farthest: 1.555,
+          farthest: 1.555 * 2,
           factor: 3.5,
         },
         burstRecoveryTime: 0.75,
@@ -71,7 +71,7 @@ const options: WeaponOptions = {
       spreading: {
         radiusTable: {
           nearest: 0.25,
-          farthest: 1.477,
+          farthest: 1.477 * 2,
           factor: 3.0,
         },
         burstRecoveryTime: 0.75,
@@ -93,7 +93,7 @@ const options: WeaponOptions = {
       spreading: {
         radiusTable: {
           nearest: 0.435,
-          farthest: 2.22,
+          farthest: 2.22 * 2,
           factor: 4.0,
         },
         burstRecoveryTime: 0.75,

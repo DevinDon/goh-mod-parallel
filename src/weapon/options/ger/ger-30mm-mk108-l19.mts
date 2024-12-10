@@ -58,7 +58,7 @@ const options: WeaponOptions = {
       spreading: {
         radiusTable: {
           nearest: 0.7,
-          farthest: 4.5,
+          farthest: 4.5 * 2,
           factor: 4.0,
         },
         burstRecoveryTime: 0.1,
