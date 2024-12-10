@@ -49,8 +49,8 @@ const options: WeaponOptions = {
     {
       name: 'ic',
       minRange: 0,
-      aimRange: 60,
       maxRange: 60,
+      effectiveRange: 60,
       speed: 40,
       gravity: 0.5,
       damageToArmor: 1,

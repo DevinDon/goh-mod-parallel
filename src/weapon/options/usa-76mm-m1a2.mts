@@ -32,8 +32,8 @@ const options: WeaponOptions = {
     {
       name: 'apcbche',
       minRange: 0,
-      aimRange: 300,
       maxRange: 300,
+      effectiveRange: 300,
       speed: 792,
       gravity: 5,
       projectile: {
@@ -58,8 +58,8 @@ const options: WeaponOptions = {
     {
       name: 'hvap',
       minRange: 0,
-      aimRange: 300,
       maxRange: 300,
+      effectiveRange: 300,
       speed: 1036,
       gravity: 5,
       projectile: {
@@ -84,8 +84,8 @@ const options: WeaponOptions = {
     {
       name: 'he',
       minRange: 0,
-      aimRange: 300,
       maxRange: 300,
+      effectiveRange: 300,
       speed: 820,
       gravity: 5,
       spreading: {
@@ -103,8 +103,8 @@ const options: WeaponOptions = {
     {
       name: 'wp',
       minRange: 0,
-      aimRange: 325,
       maxRange: 325,
+      effectiveRange: 325,
       speed: 270,
       gravity: 5,
       damageToArmor: 330,

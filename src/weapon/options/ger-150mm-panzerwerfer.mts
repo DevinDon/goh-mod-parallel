@@ -36,8 +36,8 @@ const options: WeaponOptions = {
     {
       name: 'he',
       minRange: 25,
-      aimRange: 500,
       maxRange: 500,
+      effectiveRange: 500,
       speed: 340,
       gravity: 5,
       damageToArmor: 1000,

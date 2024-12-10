@@ -49,8 +49,8 @@ const options: WeaponOptions = {
     {
       name: 'api',
       minRange: 0,
-      aimRange: 250,
       maxRange: 250,
+      effectiveRange: 250,
       speed: 740,
       gravity: 5,
       projectile: {
