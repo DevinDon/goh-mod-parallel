@@ -9,14 +9,17 @@
   {score_factor 0.04}
   {cost %cost}
 )
-{"mp/inf/late/antitank-1" ("set-soldier" cp(5)    cost(30))}
-{"mp/inf/late/antitank-2" ("set-soldier" cp(5)    cost(20))}
-{"mp/inf/late/engineer-1" ("set-soldier" cp(5)    cost(30))}
-{"mp/inf/late/engineer-2" ("set-soldier" cp(5)    cost(20))}
-{"mp/inf/late/mgun-1"     ("set-soldier" cp(5)    cost(30))}
-{"mp/inf/late/mgun-2"     ("set-soldier" cp(5)    cost(20))}
-{"mp/inf/late/officer-1"  ("set-soldier" cp(-100) cost(-1000))}
-{"mp/inf/late/officer-2"  ("set-soldier" cp(-100) cost(-1000))}
+{"mp/inf/late/antiarmor-gunner-1" ("set-soldier" cp(5)    cost(30))}
+{"mp/inf/late/antiarmor-gunner-2" ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/assault-1"          ("set-soldier" cp(5)    cost(25))}
+{"mp/inf/late/commander-1"        ("set-soldier" cp(-20)  cost(50))}
+{"mp/inf/late/engineer-1"         ("set-soldier" cp(5)    cost(30))}
+{"mp/inf/late/machine-gunner-1"   ("set-soldier" cp(5)    cost(30))}
+{"mp/inf/late/machine-gunner-2"   ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/medic-2"            ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/sniper-1"           ("set-soldier" cp(5)    cost(50))}
+{"mp/inf/late/officer-1"          ("set-soldier" cp(-100) cost(-1000))}
+{"mp/inf/late/officer-2"          ("set-soldier" cp(-100) cost(-1000))}
 
 ; 步兵班
 ; args = name cd ci crew1 crew2 period tags group button
@@ -35,21 +38,24 @@
   }
 )
 
-; 步兵班 2 至 5 人
-("set-soldier-squad" name(soldier-antitank-squad) period(late) cd(0)   ci(30)  crew1(antitank-1:2) crew2(antitank-2:1) group(antitank-squad) button(inf2) tags())
-("set-soldier-squad" name(soldier-engineer-squad) period(late) cd(0)   ci(30)  crew1(engineer-1:2) crew2(engineer-2:1) group(engineer-squad) button(inf2) tags(engineer))
-("set-soldier-squad" name(soldier-mgun-squad)     period(late) cd(0)   ci(30)  crew1(mgun-1:2)     crew2(mgun-2:1)     group(mgun-squad)     button(inf2) tags())
-("set-soldier-squad" name(soldier-officer-squad)  period(late) cd(300) ci(600) crew1(officer-1:1)  crew2(officer-2:1)  group(officer-squad)  button(inf2) tags(officer))
+; 步兵班 2 至 4 人
+("set-soldier-squad" name(soldier-assault-squad)     period(late) cd(0)   ci(15)  crew1(assault-1:2)          crew2(assault-1:1)          group(assault-squad)   button(inf2) tags())
+("set-soldier-squad" name(soldier-engineer-squad)    period(late) cd(0)   ci(15)  crew1(engineer-1:2)         crew2(engineer-1:1)         group(engineer-squad)  button(inf2) tags(engineer))
+("set-soldier-squad" name(soldier-medic-squad)       period(late) cd(0)   ci(15)  crew1(medic-1:2)            crew2(medic-1:1)            group(medic-squad)     button(inf2) tags())
+("set-soldier-squad" name(soldier-sniper-squad)      period(late) cd(0)   ci(15)  crew1(sniper-1:2)           crew2(sniper-1:1)           group(sniper-squad)    button(inf2) tags(sniper))
+("set-soldier-squad" name(soldier-machine-gun-squad) period(late) cd(0)   ci(15)  crew1(machine-gunner-1:2)   crew2(machine-gunner-2:2)   group(machine-squad)   button(inf2) tags())
+("set-soldier-squad" name(soldier-antiarmor-squad)   period(late) cd(0)   ci(15)  crew1(antiarmor-gunner-1:2) crew2(antiarmor-gunner-2:2) group(antiarmor-squad) button(inf2) tags())
+("set-soldier-squad" name(soldier-officer-squad)     period(late) cd(600) ci(120) crew1(officer-1:1)          crew2(officer-2:1)          group(officer-squad)   button(inf2) tags(officer))
 
 ; 步兵排
-; args = name period doctrine cd ci crew1 crew2 group button tags
+; args = name period doctrine cd ci crews group button tags
 (define "set-soldier-platoon"
   {"%name(inf)"
     {charge
       {delay %cd}
       {interval %ci}
     }
-    {content "mp/inf/%period/%crew1 mp/inf/%period/%crew2"}
+    {content "%crews"}
     {tags "all infantry inf %tags %period"}
     {group "%group"}
     {button "%button"}
@@ -61,6 +67,38 @@
 )
 
 ; 步兵排 8 至 12 人
-("set-soldier-platoon" name(soldier-antitank-platoon) period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(antitank-1:8) crew2(antitank-2:4) group(antitank-platoon) button(inf1) tags())
-("set-soldier-platoon" name(soldier-engineer-platoon) period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(engineer-1:8) crew2(engineer-2:4) group(engineer-platoon) button(inf1) tags(engineer))
-("set-soldier-platoon" name(soldier-mgun-platoon)     period(late) doctrine(ascension_inf_tank) cd(0) ci(60) crew1(mgun-1:8)     crew2(mgun-2:4)     group(mgun-platoon)     button(inf1) tags())
+("set-soldier-platoon"
+  name(soldier-assault-platoon)
+  period(late)
+  doctrine(ascension_inf_tank)
+  cd(0)
+  ci(30)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:5 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:1 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:1 mp/inf/late/antiarmor-gunner-2:1)
+  group(assault-platoon)
+  button(inf1)
+  tags()
+)
+
+("set-soldier-platoon"
+  name(soldier-supply-platoon)
+  period(late)
+  doctrine(ascension_inf_tank)
+  cd(0)
+  ci(30)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:3 mp/inf/late/engineer-1:2 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:1 mp/inf/late/antiarmor-gunner-1:2 mp/inf/late/antiarmor-gunner-2:2)
+  group(supply-platoon)
+  button(inf1)
+  tags()
+)
+
+("set-soldier-platoon"
+  name(soldier-defence-platoon)
+  period(late)
+  doctrine(ascension_inf_tank)
+  cd(0)
+  ci(30)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:1 mp/inf/late/machine-gunner-1:2 mp/inf/late/machine-gunner-2:2 mp/inf/late/antiarmor-gunner-1:2 mp/inf/late/antiarmor-gunner-2:2)
+  group(defence-platoon)
+  button(inf1)
+  tags()
+)

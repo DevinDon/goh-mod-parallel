@@ -1,5 +1,5 @@
-import { ProjectModConfigDir } from '../../utils/constants.mjs';
-import { type HumanOptions } from '../options.mjs';
+import { ProjectModConfigDir } from '../../../utils/constants.mjs';
+import { type HumanOptions } from '../../options.mjs';
 
 const options: HumanOptions = {
 
@@ -28,10 +28,10 @@ const options: HumanOptions = {
   ],
 
   inventory: [
-    '{Item "weapon ger-stg44" filled} ; StG 44 突击步枪',
-    '{Item "ammo ger-stg44 magazine" 240} ; StG 44 突击步枪弹',
-    '{Item "m24_smoke grenade" 3} ; 烟雾弹',
-    '{Item "bandage_ger" 3} ; 绷带',
+    '{Item "weapon inf-infantry-bolt-action-rifle" filling "ammo inf-10mm-clip ap" 5} ; 栓动步枪',
+    '{Item "ammo inf-10mm-clip ap" 50} ; 栓动步枪弹夹',
+    '{Item "m24_smoke grenade" 2} ; 烟雾弹',
+    '{Item "bandage_ger" 5} ; 绷带',
     '{Item "binocular"} ; 望远镜',
   ],
 
