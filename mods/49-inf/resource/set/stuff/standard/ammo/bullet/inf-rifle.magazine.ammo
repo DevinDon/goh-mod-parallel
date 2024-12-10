@@ -1,0 +1,24 @@
+{bullet
+
+  {Tag "bullet small_arms stackable pierce bullet_fx size2 intermediate"}
+
+  {Entity "stg44_ammo"}
+  {Mass 0.03}
+
+  {Inventory
+    {weight 3.33}
+    {block 30}
+    {size 1 2}
+    {fsm "belt"}
+  }
+
+  {Trace
+    {View "/texture/fx/tracers/wave/green/tracer.mtl"
+      {ScaleX 1.25}
+      {ScaleY 0.20}
+      {Light  0.75}
+    }
+    {Length 5}
+  }
+
+}
