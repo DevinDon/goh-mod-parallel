@@ -12,14 +12,45 @@ msgstr ""
 "Language-Team: \n"
 
 # 子弹
-msgctxt "desc/ammo/inf-mgun api"
-msgid   "General Purpose Machine Gun API Rounds"
-msgstr  "通用机枪穿甲爆破燃烧弹"
+# 5mm
+msgctxt "desc/ammo/inf-5mm ap-clip"
+msgid   "5mm AP Clip"
+msgstr  "5mm 穿甲弹夹"
 
-msgctxt "desc/ammo/inf-rifle clip"
-msgid   "Mauser Rounds"
-msgstr  "栓动步枪弹夹"
+msgctxt "desc/ammo/inf-5mm ap-magazine"
+msgid   "5mm AP Magazine"
+msgstr  "5mm 穿甲弹匣"
 
-msgctxt "desc/ammo/inf-rifle magazine"
-msgid   "Assault Rifle Magazine"
-msgstr  "突击步枪弹匣"
+msgctxt "desc/ammo/inf-5mm ap-drum"
+msgid   "5mm AP Drum"
+msgstr  "5mm 穿甲弹鼓"
+
+msgctxt "desc/ammo/inf-5mm ap-chain"
+msgid   "5mm AP Chain"
+msgstr  "5mm 穿甲弹链"
+
+# 10mm
+msgctxt "desc/ammo/inf-10mm ap-clip"
+msgid   "10mm AP Clip"
+msgstr  "10mm 穿甲弹夹"
+
+msgctxt "desc/ammo/inf-10mm ap-magazine"
+msgid   "10mm AP Magazine"
+msgstr  "10mm 穿甲弹匣"
+
+msgctxt "desc/ammo/inf-10mm ap-drum"
+msgid   "10mm AP Drum"
+msgstr  "10mm 穿甲弹鼓"
+
+msgctxt "desc/ammo/inf-10mm ap-chain"
+msgid   "10mm AP Chain"
+msgstr  "10mm 穿甲弹链"
+
+# 火箭弹
+msgctxt "desc/ammo/inf-infantry-rocket-launcher-ammo he"
+msgid   "Infantry Rocket Launcher Ammo [<c(ff1200)>HE</c>]"
+msgstr  "步兵火箭筒弹药 [<c(ff1200)>高爆弹</c>]"
+
+msgctxt "desc/ammo/inf-infantry-rocket-launcher-ammo heat"
+msgid   "Infantry Rocket Launcher Ammo [<c(c9a6ff)>HEAT</c>]"
+msgstr  "步兵火箭筒弹药 [<c(c9a6ff)>破甲弹</c>]"

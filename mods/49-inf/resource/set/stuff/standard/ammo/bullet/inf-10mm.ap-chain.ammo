@@ -5,11 +5,11 @@
   {Tag "bullet small_arms stackable pierce api bullet_fx size2"}
 
   {Entity "ger_mg_box_ammo"}
-  {Mass 0.0367}
+  {Mass 0.1}
 
   {Inventory
-    {weight 0.5}
-    {block 300}
+    {weight 0.1}
+    {block 240}
     {size 3 2}
     {fsm "belt"}
   }
@@ -23,6 +23,6 @@
     {Length 15}
   }
 
-  ("api" calibre(7.92))
+  ("api" calibre(10))
 
 }

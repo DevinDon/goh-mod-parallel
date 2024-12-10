@@ -3,10 +3,10 @@
   {Tag "bullet small_arms stackable pierce bullet_fx size2"}
 
   {Entity "rifle_clip_ger"}
-  {Mass 0.03}
+  {Mass 0.1}
 
   {Inventory
-    {weight 20}
+    {weight 0.1}
     {block 5}
     {size 1 1}
     {fsm "belt"}

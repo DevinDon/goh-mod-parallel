@@ -1,0 +1,11 @@
+{from "pattern standard-bazooka-ammo"
+
+  {Entity "panzershreck_ammo"}
+
+  {Mass 3.3}
+
+  {view "panzershreck_ammo"
+    {tail "bazooka_tail_rpzb" "tail"}
+  }
+
+}

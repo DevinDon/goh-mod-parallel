@@ -3,10 +3,10 @@
   {Tag "bullet small_arms stackable pierce bullet_fx size2 intermediate"}
 
   {Entity "stg44_ammo"}
-  {Mass 0.03}
+  {Mass 0.05}
 
   {Inventory
-    {weight 3.33}
+    {weight 0.05}
     {block 30}
     {size 1 2}
     {fsm "belt"}
