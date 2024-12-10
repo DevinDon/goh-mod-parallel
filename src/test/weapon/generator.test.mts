@@ -1,7 +1,7 @@
 import { equal } from 'node:assert';
 import { it } from 'node:test';
 import { generateWeapon } from '../../weapon/generators/generator.mjs';
-import options from '../../weapon/options/ger-20mm-flak30-l65.mjs';
+import options from '../../weapon/options/ger/ger-20mm-flak30-l65.mjs';
 
 const want = `; ger-20mm-flak30-l65
 ; 德国 2cm FlaK 30 L/65 防空炮，适用于欧宝闪电
