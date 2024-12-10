@@ -28,6 +28,14 @@ msgctxt "desc/human/mp/inf/late/sniper-1"
 msgid   "Sniper [Inf]"
 msgstr  "狙击手 [无尽军团]"
 
+msgctxt "desc/human/mp/inf/late/machine-gunner-1"
+msgid   "Machine Gunner [Inf]"
+msgstr  "机枪手 [无尽军团]"
+
+msgctxt "desc/human/mp/inf/late/machine-gunner-2"
+msgid   "Machine Assistant Gunner [Inf]"
+msgstr  "机枪副射手 [无尽军团]"
+
 
 
 
