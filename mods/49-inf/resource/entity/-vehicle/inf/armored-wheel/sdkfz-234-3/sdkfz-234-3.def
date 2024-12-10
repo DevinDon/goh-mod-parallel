@@ -37,7 +37,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo ger-mgun api" 1900}
+      {Item "ammo inf-10mm-chain ap" 1900}
       {Item "weapon ger-mg42" filled {user "mgun"}}
 
       {Item "ammo ger-75l24 heat"  9}
