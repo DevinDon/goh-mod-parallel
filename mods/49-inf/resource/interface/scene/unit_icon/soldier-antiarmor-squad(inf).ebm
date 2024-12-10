@@ -1,0 +1,6 @@
+{bitmap
+  {frame "ascension/inf/antiarmor-gunner.00.tga"}
+  {frame "ascension/inf/antiarmor-gunner.01.tga"}
+  {frame "ascension/inf/antiarmor-gunner.02.tga"}
+  {frame "ascension/inf/antiarmor-gunner.03.tga"}
+}

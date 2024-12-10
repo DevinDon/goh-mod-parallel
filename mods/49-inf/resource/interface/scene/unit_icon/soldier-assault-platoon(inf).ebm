@@ -1,6 +1,6 @@
 {bitmap
-  {frame "ascension/inf/machine-gunner.00.tga"}
-  {frame "ascension/inf/machine-gunner.01.tga"}
-  {frame "ascension/inf/machine-gunner.02.tga"}
-  {frame "ascension/inf/machine-gunner.03.tga"}
+  {frame "ascension/inf/assault.00.tga"}
+  {frame "ascension/inf/assault.01.tga"}
+  {frame "ascension/inf/assault.02.tga"}
+  {frame "ascension/inf/assault.03.tga"}
 }

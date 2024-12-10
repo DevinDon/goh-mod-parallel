@@ -1,6 +1,6 @@
 {bitmap
-  {frame "ascension/inf/engineer.00.tga"}
-  {frame "ascension/inf/engineer.01.tga"}
-  {frame "ascension/inf/engineer.02.tga"}
-  {frame "ascension/inf/engineer.03.tga"}
+  {frame "ascension/inf/supply.00.tga"}
+  {frame "ascension/inf/supply.01.tga"}
+  {frame "ascension/inf/supply.02.tga"}
+  {frame "ascension/inf/supply.03.tga"}
 }
