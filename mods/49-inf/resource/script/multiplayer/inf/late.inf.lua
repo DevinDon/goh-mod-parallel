@@ -34,10 +34,10 @@ Purchases["late.inf"] = {
       -- 坦克
       {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-4-h"},
       {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-4-j"},
-      -- {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-5-a"},
-      -- {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-5-g"},
-      -- {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-e"},
-      -- {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-h"},
+      {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-5-a"},
+      {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-5-g"},
+      {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-e"},
+      {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-h"},
       -- {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-b-h"},
       -- {priority = 1.0, type = {"Class3", "Tank", "Heavy",},  unit = "panzer-6-b-p"},
       -- 学说
