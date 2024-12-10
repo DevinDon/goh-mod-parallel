@@ -10,6 +10,19 @@
     {tail "bazooka_tail_rpzb" "tail"}
   }
 
+  (define "set-rocket-he-ammo-explosive"
+    {damage blastwave
+      {energy (+ (/ %weight 5) (* 3 (+ %filler 0.25)))}
+      {area 0.5 1.0}
+      {ground_interaction_radius 0.5}
+    }
+    {damage add blastwave
+      {energy (+ 0.55 (- 1 (/ %filler %weight)))}
+      {area (+ (* %weight 0.25) (+ 2 (* 3 %filler))) (+ (* %weight 0.5) (+ 3.5 (* 3 %filler)))}
+      {ground_interaction_radius 0}
+    }
+  )
+
   ("set-rocket-he-ammo-explosive" weight(3.3) filler(0.7))
 
 }
