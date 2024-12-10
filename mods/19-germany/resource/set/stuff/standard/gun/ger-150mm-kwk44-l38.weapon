@@ -43,7 +43,7 @@
   {Parameters "apcbche"
     {CursorReloading "gun_apcbc"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 425} ; AI 最长射击距离 m
+    {AimRange 382.5} ; AI 最长射击距离 m
     {MaxRange 425} ; 玩家最长射击距离 m
     {Speed 975} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
@@ -51,7 +51,7 @@
     {MinimumDamageModifier 750} ; 弹种对装甲的击穿伤害
     {HealthDamage 7500} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {100 0.68} {500 3.953} {1000 13.84}} ; 散布
+      {RadiusTable {0 0} {213 0.23} {425 1.98} {1000 6.92}} ; 散布
       {BurstRecoveryTime 1.5} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.5} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -78,7 +78,7 @@
   {Parameters "heat"
     {CursorReloading "gun_heat"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 425} ; AI 最长射击距离 m
+    {AimRange 382.5} ; AI 最长射击距离 m
     {MaxRange 425} ; 玩家最长射击距离 m
     {Speed 550} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
@@ -86,7 +86,7 @@
     {MinimumDamageModifier 600} ; 弹种对装甲的击穿伤害
     {HealthDamage 6000} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {100 0.776} {500 4.55} {1000 18.20}} ; 散布
+      {RadiusTable {0 0} {213 0.26} {425 2.27} {1000 9.10}} ; 散布
       {BurstRecoveryTime 1.5} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.75} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -102,7 +102,7 @@
   {Parameters "he"
     {CursorReloading "gun_he"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 425} ; AI 最长射击距离 m
+    {AimRange 382.5} ; AI 最长射击距离 m
     {MaxRange 425} ; 玩家最长射击距离 m
     {Speed 720} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
@@ -110,7 +110,7 @@
     {MinimumDamageModifier 990} ; 弹种对装甲的击穿伤害
     {HealthDamage 9900} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {100 0.888} {500 4.99} {1000 19.96}} ; 散布
+      {RadiusTable {0 0} {213 0.30} {425 2.50} {1000 9.98}} ; 散布
       {BurstRecoveryTime 1.5} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心

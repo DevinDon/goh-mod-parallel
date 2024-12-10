@@ -43,7 +43,7 @@
   {Parameters "clip"
     {CursorReloading "carbine_reload"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 200} ; AI 最长射击距离 m
+    {AimRange 180} ; AI 最长射击距离 m
     {MaxRange 200} ; 玩家最长射击距离 m
     {Speed 760} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
@@ -51,7 +51,7 @@
     {MinimumDamageModifier 5} ; 弹种对装甲的击穿伤害
     {HealthDamage 150} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {100 0.2} {500 0.9} {1000 2.70}} ; 散布
+      {RadiusTable {0 0} {40 0.07} {200 0.45} {1000 1.35}} ; 散布
       {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.75} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心

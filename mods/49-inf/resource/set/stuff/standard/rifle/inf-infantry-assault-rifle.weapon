@@ -1,61 +1,65 @@
-; ger-karabiner-98k-sniper
-; 德国 Karabiner 98k 栓动狙击步枪
-{from "pattern standard-sniper"
+; inf-infantry-assault-rifle
+; 突击步枪
+{from "pattern standard-rifle"
 
   (include "/properties/standard/gun/define.ext")
 
-  {Tag "bolt_action"} ; 标签
+  {Tag "-rifle" "smg" "inter_shell" "assaultrifle" "autorifle_sup" "auto_eject"} ; 标签
 
-  {Entity "k98_scope"}
-  {Mass 3.9}
+  {Entity "stg44_scope"}
+  {Mass 4.6}
 
-  {FireSound "smallarms/s3/d1/GER/K98k/"} ; 开火音效
-  {FireSoundclose "smallarms/s3/3p/GER/K98k/"} ; 车内视角开火音效
-  {ReloadSound "weapon_reload_loose_rifle_cartridges"} ; 装弹音效
+  {FireSound "smallarms/s2/d1/GER/StG44/"} ; 开火音效
+  {FireSoundclose "smallarms/s2/3p/GER/StG44/"} ; 车内视角开火音效
+  {ReloadSound "stg"} ; 装弹音效
 
   {Cursor "ironsights/rifle"} ; 即时战略模式下的瞄准图标
   {CursorReloading "carbine_reload"} ; 即时战略模式下的装填图标
   {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
   {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
 
-  {Filling "ammo ger-sniper clip" 5} ; 弹种及弹链内炮弹数量
-  {Calibre 7.92} ; 口径
+  {Filling "ammo inf-5mm-magazine" 30} ; 弹种及弹链内炮弹数量
+  {Calibre 5} ; 口径
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
 
   {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance 0.05} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
-  {SpreadTolerance 0.5} ; 瞄准到一定精度就可以开火
+  {SpreadTolerance 0.1} ; 瞄准到一定精度就可以开火
   {ZeroingAccuracy 0.95 0.9 0.85 0.8 0.75} ; 归零精度？不确定
   {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
   {DisableRicochet 0} ; 是否禁用跳弹模式
   ; 不启用曲射模式
 
-  {RechargeTime 4} ; 装填时间（秒）
-  {RecoveryTime 1.200} ; 短射间隔（秒）, 适用于弹链
+  {RechargeTime 5} ; 装填时间（秒）
+  {RecoveryTime 0.120} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
 
-  ; 无连发模式
+  {Burst
+    {Short 5 1} ; 远距离短连发，基数 +- 随机数
+    {Long  3 1} ; 近距离长连发，基数 +- 随机数
+    {RangeKoef 0.5} ; 该系数乘以 AimRange = 分界距离，大于分界距离为远距离，小于分界距离为近距离
+  }
 
-  ; 非自动武器
+  {Automatic} ; 自动武器
 
-  {Parameters "clip"
-    {CursorReloading "carbine_reload"} ; 装填图标
+  {Parameters "ap"
+    {CursorReloading "gun_ap"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 225} ; AI 最长射击距离 m
-    {MaxRange 250} ; 玩家最长射击距离 m
-    {Speed 760} ; 炮弹速度
+    {AimRange 180} ; AI 最长射击距离 m
+    {MaxRange 200} ; 玩家最长射击距离 m
+    {Speed 700} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 7} {500 3} {1000 0}} ; 穿深表
-    {MinimumDamageModifier 5} ; 弹种对装甲的击穿伤害
-    {HealthDamage 150} ; 弹种对人员的击穿伤害
+    {ProjectileDamageTable {100 5} {500 1} {1000 0}} ; 穿深表
+    {MinimumDamageModifier 2} ; 弹种对装甲的击穿伤害
+    {HealthDamage 75} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {50 0.03} {250 0.30} {1000 0.75}} ; 散布
-      {BurstRecoveryTime 0.2} ; 开火后恢复到正常精度的时间
+      {RadiusTable {0 0} {38 0.30} {200 4.00} {1000 20.00}} ; 散布
+      {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
-      {SpreadPower       1.75} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
-      {SpreadXYRatio     0.95} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+      {SpreadPower       1.55} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+      {SpreadXYRatio     0.85} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
     }
     {OvermatchCalibre
       {0  1.0000 0.0000}
@@ -93,7 +97,7 @@
       {mouse_speed_factor 0.6}
       {ManualAccuracyZoom}
 
-      {camera "human_zoom8"} ; magnification x8
+      {camera "human_zoom4"} ; magnification x4
       {scope_vignette "/texture/common/environment/lens_effects/zoom_vignette_scope_ger_k98"}
       {blur_mask "/texture/common/environment/lens_effects/zoom_vignette_scope_01_mask"}
       {bump_spec_mask "/texture/common/environment/lens_effects/zoom_vignette_scope_ger_k98"}
@@ -110,7 +114,6 @@
       }
       {hide_crosshair}
       {weapon_sway_active}
-      {drop_zoom_after_shot}
       {aimer_type "sniper"}
     }
   }

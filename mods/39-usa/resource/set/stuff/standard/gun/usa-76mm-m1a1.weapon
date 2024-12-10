@@ -43,7 +43,7 @@
   {Parameters "apcbche"
     {CursorReloading "gun_apcbc"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 300} ; AI 最长射击距离 m
+    {AimRange 270} ; AI 最长射击距离 m
     {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 792} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
@@ -51,7 +51,7 @@
     {MinimumDamageModifier 165} ; 弹种对装甲的击穿伤害
     {HealthDamage 1650} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {100 0.49} {500 3.71} {1000 12.98}} ; 散布
+      {RadiusTable {0 0} {150 0.16} {300 1.85} {1000 6.49}} ; 散布
       {BurstRecoveryTime 0.76} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.15} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -79,7 +79,7 @@
   {Parameters "hvap"
     {CursorReloading "gun_hvap"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 300} ; AI 最长射击距离 m
+    {AimRange 270} ; AI 最长射击距离 m
     {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 1036} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
@@ -87,7 +87,7 @@
     {MinimumDamageModifier 130} ; 弹种对装甲的击穿伤害
     {HealthDamage 1300} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {100 0.412} {500 2.99} {1000 10.46}} ; 散布
+      {RadiusTable {0 0} {150 0.14} {300 1.50} {1000 5.23}} ; 散布
       {BurstRecoveryTime 0.76} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -114,7 +114,7 @@
   {Parameters "he"
     {CursorReloading "gun_he"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 300} ; AI 最长射击距离 m
+    {AimRange 270} ; AI 最长射击距离 m
     {MaxRange 300} ; 玩家最长射击距离 m
     {Speed 820} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
@@ -122,7 +122,7 @@
     ; 无装甲伤害配置
     ; 无人员伤害配置
     {Spreading
-      {RadiusTable {0 0} {100 1.6} {500 4.8} {1000 19.20}} ; 散布
+      {RadiusTable {0 0} {150 0.53} {300 2.40} {1000 9.60}} ; 散布
       {BurstRecoveryTime 0.76} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -135,7 +135,7 @@
   {Parameters "wp"
     {CursorReloading "gun_wp"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 325} ; AI 最长射击距离 m
+    {AimRange 292.5} ; AI 最长射击距离 m
     {MaxRange 325} ; 玩家最长射击距离 m
     {Speed 270} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
@@ -143,7 +143,7 @@
     {MinimumDamageModifier 330} ; 弹种对装甲的击穿伤害
     {HealthDamage 3300} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {100 1.5} {500 4.67} {1000 18.68}} ; 散布
+      {RadiusTable {0 0} {163 0.50} {325 2.33} {1000 9.34}} ; 散布
       {BurstRecoveryTime 0.76} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
