@@ -28,7 +28,7 @@ const options: HumanOptions = {
 
   inventory: [
     '{Item "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240} ; 通用机枪',
-    '{Item "ammo inf-10mm-clip ap" 480} ; 通用机枪弹链',
+    '{Item "ammo inf-10mm-chain ap" 480} ; 通用机枪弹链',
     '{Item "bandage_ger" 5} ; 绷带',
   ],
 
