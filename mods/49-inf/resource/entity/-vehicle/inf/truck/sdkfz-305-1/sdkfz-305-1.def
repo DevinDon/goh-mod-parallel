@@ -30,7 +30,7 @@
       {Weight 2000}
       {Item "repair_kit" 20}
 
-      {Item "weapon ger-mg42" 1}
+      {Item "weapon inf-infantry-general-purpose-machine-gun" 1}
       {Item "ammo inf-10mm-chain ap" 5000}
       {Item "dynamite-x3" 50}
       {Item "dynamite-x7" 50}
