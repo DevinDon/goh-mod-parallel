@@ -1,5 +1,5 @@
-import { getExecDirPath } from '@pipers/toolbox/node/environment';
 import { resolve } from 'node:path';
+import { getExecDirPath } from '@pipers/toolbox/node/environment';
 
 /** 当前目录 */
 const currentDir = getExecDirPath(import.meta.url);

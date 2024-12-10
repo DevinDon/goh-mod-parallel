@@ -1,7 +1,7 @@
+import { dirname } from 'node:path';
 import { logger } from '@pipers/logger';
 import { createWriteStream, ensureDir, ensureFile } from '@pipers/toolbox/node/filesystem';
 import archiver from 'archiver';
-import { dirname } from 'node:path';
 
 const { create } = archiver;
 
@@ -27,7 +27,7 @@ export const archive = async (source: string, target: string) => {
       });
       output.once('error', () => {
         logger.error(`压缩目录 "${source}" 到 "${target}" 失败`);
-        reject();
+        reject(new Error(`压缩目录 "${source}" 到 "${target}" 失败`));
       });
     },
   );

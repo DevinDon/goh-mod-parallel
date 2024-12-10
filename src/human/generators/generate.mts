@@ -1,8 +1,8 @@
 import { logger } from '@pipers/logger';
 import { loadOptions } from '../../utils/load-options.mjs';
-import type { GeneratedOptions } from '../../utils/save-generated.mjs';
+import { type GeneratedOptions } from '../../utils/save-generated.mjs';
 import { saveGenerated } from '../../utils/save-generated.mjs';
-import type { HumanOptions } from '../options.mjs';
+import { type HumanOptions } from '../options.mjs';
 import { generateHuman } from './generator.mjs';
 
 /** 生成所有人员配置 */

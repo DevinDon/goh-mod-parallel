@@ -1,5 +1,5 @@
 import { ProjectModConfigDir } from '../../utils/constants.mjs';
-import type { CrewAndPassengerOptions } from '../options.mjs';
+import { type CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 

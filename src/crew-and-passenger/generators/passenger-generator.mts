@@ -1,5 +1,5 @@
 import { setIndent } from '../../utils/set-indent.mjs';
-import type { PassengerOptions } from '../options.mjs';
+import { type PassengerOptions } from '../options.mjs';
 
 /** 生成乘客配置 */
 export const generatePassenger = ({ name, animations, bone, turnoff, extra }: PassengerOptions) => {

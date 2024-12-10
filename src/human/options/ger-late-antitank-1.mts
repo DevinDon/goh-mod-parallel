@@ -1,5 +1,5 @@
 import { ProjectModConfigDir } from '../../utils/constants.mjs';
-import type { HumanOptions } from '../options.mjs';
+import { type HumanOptions } from '../options.mjs';
 
 const options: HumanOptions = {
 

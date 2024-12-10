@@ -1,11 +1,11 @@
-import { listPaths } from '@pipers/toolbox/node/filesystem';
-import { loadDefaultExportFromPath } from '@pipers/toolbox/universal/promise';
 import { platform } from 'node:os';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { loadDefaultExportFromPath } from '@pipers/toolbox/universal/promise';
+import { listPaths } from '@pipers/toolbox/node/filesystem';
 import { type CrewAndPassengerOptions } from '../crew-and-passenger/options.mjs';
-import type { HumanOptions } from '../human/options.mjs';
-import type { WeaponOptions } from '../weapon/options.mjs';
+import { type HumanOptions } from '../human/options.mjs';
+import { type WeaponOptions } from '../weapon/options.mjs';
 import { DistDir } from './constants.mjs';
 
 /** 加载指定目录下的所有配置文件，该目录路径相对于 `main.mjs` 所在的 `dist` 目录 */

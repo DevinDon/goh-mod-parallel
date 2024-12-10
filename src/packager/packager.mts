@@ -1,7 +1,7 @@
+import { resolve } from 'node:path';
 import { logger } from '@pipers/logger';
 import { copy } from '@pipers/toolbox/node/filesystem';
 import { createTaskQueue$ } from '@pipers/toolbox/universal/task-queue';
-import { resolve } from 'node:path';
 import { GameModsRootDir, ProjectModConfigDir } from '../utils/constants.mjs';
 import { archive } from './utils/zip.mjs';
 

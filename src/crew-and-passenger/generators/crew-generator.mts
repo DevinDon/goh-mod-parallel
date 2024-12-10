@@ -1,5 +1,5 @@
 import { setIndent } from '../../utils/set-indent.mjs';
-import type { CrewOptions } from '../options.mjs';
+import { type CrewOptions } from '../options.mjs';
 
 /** 生成乘员配置 */
 export const generateCrew = ({ name, animations, bone, visor, turnoff, extra }: CrewOptions) => {

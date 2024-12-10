@@ -12,7 +12,7 @@ export const setIndent = (input: string, { indent, indentFirstLine }: SetIndentO
     ? ' '.repeat(indent) + firstLine
     : firstLine;
   const part = lines
-    .map(line => line === '' ? line : ' '.repeat(indent) + line)
+    .map(line => (line === '' ? line : ' '.repeat(indent) + line))
     .join('\n');
   return part
     ? `${firstLinePart}\n${part}`

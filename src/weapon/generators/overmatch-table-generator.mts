@@ -10,7 +10,7 @@ import { ger75mmOvermatchTables } from './overmatch-tables/ger-75mm.mjs';
 import { ger88mmOvermatchTables } from './overmatch-tables/ger-88mm.mjs';
 import { gerRifleOvermatchTables } from './overmatch-tables/ger-rifle.mjs';
 import { heatOvermatchTables } from './overmatch-tables/heat.mjs';
-import type { OvermatchTables } from './overmatch-tables/type.mjs';
+import { type OvermatchTables } from './overmatch-tables/type.mjs';
 import { usa37mmOvermatchTables } from './overmatch-tables/usa-37mm.mjs';
 import { usa75mmOvermatchTables } from './overmatch-tables/usa-75mm.mjs';
 import { usa76mmOvermatchTables } from './overmatch-tables/usa-76mm.mjs';

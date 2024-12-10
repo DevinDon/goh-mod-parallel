@@ -1,8 +1,8 @@
 import { logger } from '@pipers/logger';
 import { loadOptions } from '../../utils/load-options.mjs';
-import type { GeneratedOptions } from '../../utils/save-generated.mjs';
+import { type GeneratedOptions } from '../../utils/save-generated.mjs';
 import { saveGenerated } from '../../utils/save-generated.mjs';
-import type { CrewAndPassengerOptions } from '../options.mjs';
+import { type CrewAndPassengerOptions } from '../options.mjs';
 import { generateCrewAndPassenger } from './generator.mjs';
 
 /** 生成所有载具乘员及乘客配置 */

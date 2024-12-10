@@ -1,5 +1,5 @@
 import { setIndent } from '../../utils/set-indent.mjs';
-import type { CrewAndPassengerOptions } from '../options.mjs';
+import { type CrewAndPassengerOptions } from '../options.mjs';
 import { generateAnimation } from './animation-generator.mjs';
 import { generateCrew } from './crew-generator.mjs';
 import { generatePassenger } from './passenger-generator.mjs';

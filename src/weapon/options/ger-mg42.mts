@@ -1,5 +1,5 @@
 import { ProjectModConfigDir } from '../../utils/constants.mjs';
-import type { WeaponOptions } from '../options.mjs';
+import { type WeaponOptions } from '../options.mjs';
 
 const options: WeaponOptions = {
 
@@ -34,11 +34,11 @@ const options: WeaponOptions = {
   automatic: true,
 
   burst: {
-    short: {
+    'short': {
       standard: 7,
       random: 2,
     },
-    long: {
+    'long': {
       standard: 12,
       random: 3,
     },

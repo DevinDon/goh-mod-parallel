@@ -1,4 +1,4 @@
-import type { OvermatchTables } from './type.mjs';
+import { type OvermatchTables } from './type.mjs';
 
 export const ger20mmOvermatchTables: OvermatchTables = {
   'ger-20mm-ap': {

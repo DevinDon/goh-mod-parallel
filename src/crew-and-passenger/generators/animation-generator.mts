@@ -1,4 +1,4 @@
-import type { AnimationOptions } from '../options.mjs';
+import { type AnimationOptions } from '../options.mjs';
 
 /** 生成动画配置 */
 export const generateAnimation = ({ name, forward, reverse }: AnimationOptions) => {

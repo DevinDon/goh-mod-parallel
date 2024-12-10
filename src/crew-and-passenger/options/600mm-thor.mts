@@ -1,5 +1,5 @@
 import { ProjectModConfigDir } from '../../utils/constants.mjs';
-import type { CrewAndPassengerOptions } from '../options.mjs';
+import { type CrewAndPassengerOptions } from '../options.mjs';
 
 const options: CrewAndPassengerOptions = {
 
@@ -134,7 +134,8 @@ const options: CrewAndPassengerOptions = {
     },
     // 移动模式
     {
-      name: 'a-driver01', // gunner
+      // gunner
+      name: 'a-driver01',
       forward: {
         end: [ 'seat_thor_driver1', 1 ],
       },
@@ -143,7 +144,8 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'a-driver02', // gunner2
+      // gunner2
+      name: 'a-driver02',
       forward: {
         end: [ 'seat_thor_driver2', 1 ],
       },
@@ -152,7 +154,8 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'a-driver03', // charger
+      // charger
+      name: 'a-driver03',
       forward: {
         end: [ 'seat_thor_driver3', 1 ],
       },
@@ -161,7 +164,8 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'a-driver04', // charger2
+      // charger2
+      name: 'a-driver04',
       forward: {
         end: [ 'seat_thor_driver4', 1 ],
       },
@@ -170,7 +174,8 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'a-driver05', // commander
+      // commander
+      name: 'a-driver05',
       forward: {
         end: [ 'pose_watch_binocular', 1 ],
       },
@@ -179,7 +184,8 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'b-driver01', // gunner
+      // gunner
+      name: 'b-driver01',
       forward: {
         end: [ 'seat_thor_driver1', 1 ],
       },
@@ -188,7 +194,8 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'b-driver02', // gunner2
+      // gunner2
+      name: 'b-driver02',
       forward: {
         end: [ 'seat_thor_driver2', 1 ],
       },
@@ -197,7 +204,8 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'b-driver03', // charger
+      // charger
+      name: 'b-driver03',
       forward: {
         end: [ 'seat_thor_driver3', 1 ],
       },
@@ -206,7 +214,8 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'b-driver04', // charger2
+      // charger2
+      name: 'b-driver04',
       forward: {
         end: [ 'seat_thor_driver4', 1 ],
       },
@@ -215,7 +224,8 @@ const options: CrewAndPassengerOptions = {
       },
     },
     {
-      name: 'b-driver05', // commander
+      // commander
+      name: 'b-driver05',
       forward: {
         end: [ 'pose_watch_binocular', 1 ],
       },

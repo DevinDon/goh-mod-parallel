@@ -161,14 +161,14 @@ export type WeaponOptions = {
   /** 点射模式配置 */
   burst?: {
     /** 远距离短连发 */
-    short: {
+    'short': {
       /** 标准射击次数 */
       standard: number;
       /** 随机增减 */
       random: number;
     };
     /** 近距离长连发 */
-    long: {
+    'long': {
       /** 标准射击次数 */
       standard: number;
       /** 随机增减 */

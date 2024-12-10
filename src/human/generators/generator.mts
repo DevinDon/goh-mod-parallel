@@ -1,9 +1,8 @@
 import { setIndent } from '../../utils/set-indent.mjs';
-import type { HumanOptions } from '../options.mjs';
+import { type HumanOptions } from '../options.mjs';
 
 /** 生成人员配置 */
 export const generateHuman = ({
-  destination,
   tags,
   behaviour,
   skin,
