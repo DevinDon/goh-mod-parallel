@@ -11,20 +11,20 @@
     "watch": "pcc watch --clean",
     "test": "node --test"
   },
-  "devDependencies": {
-    "@pipers/compiler": "https://npm.iinfinity.io/@pipers/compiler/0.29.13",
-    "@pipers/eslint-config": "https://npm.iinfinity.io/@pipers/eslint-config/0.29.13",
-    "@pipers/logger": "https://npm.iinfinity.io/@pipers/logger/0.29.13",
-    "@pipers/toolbox": "https://npm.iinfinity.io/@pipers/toolbox/0.29.13",
-    "@types/archiver": "6.0.2",
-    "@types/node": "20.11.20",
+  "dependencies": {
+    "@pipers/logger": "https://npm.iinfinity.io/@pipers/logger/0.50.23",
+    "@pipers/toolbox": "https://npm.iinfinity.io/@pipers/toolbox/0.50.23",
+    "archiver": "7.0.1",
     "commander": "12.0.0",
-    "ts-node": "10.9.2",
-    "tslib": "2.6.2",
-    "typescript": "5.3.3",
     "zx": "7.2.3"
   },
-  "dependencies": {
-    "archiver": "7.0.1"
+  "devDependencies": {
+    "@pipers/compiler": "https://npm.iinfinity.io/@pipers/compiler/0.50.23",
+    "@pipers/eslint-config": "https://npm.iinfinity.io/@pipers/eslint-config/0.50.23",
+    "@types/archiver": "6.0.2",
+    "@types/node": "20.11.20",
+    "tslib": "2.6.2",
+    "tsx": "4.19.2",
+    "typescript": "5.3.3"
   }
 }
