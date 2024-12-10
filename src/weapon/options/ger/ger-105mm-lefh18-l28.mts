@@ -33,7 +33,7 @@ const options: WeaponOptions = {
       name: 'aphe',
       minRange: 0,
       maxRange: 500,
-      effectiveRange: 500 / 2,
+      effectiveRange: 500,
       speed: 390,
       gravity: 5,
       projectile: {
@@ -44,8 +44,8 @@ const options: WeaponOptions = {
       damageToHuman: 4100,
       spreading: {
         radiusTable: {
-          nearest: 1.123 / 3,
-          farthest: 4.557 / 2,
+          nearest: 1.123,
+          farthest: 4.557,
           factor: 3.5,
         },
         burstRecoveryTime: 1.05,
@@ -59,7 +59,7 @@ const options: WeaponOptions = {
       name: 'heat',
       minRange: 0,
       maxRange: 500,
-      effectiveRange: 500 / 2,
+      effectiveRange: 500,
       speed: 496,
       gravity: 5,
       projectile: {
@@ -70,8 +70,8 @@ const options: WeaponOptions = {
       damageToHuman: 3550,
       spreading: {
         radiusTable: {
-          nearest: 1.456 / 3,
-          farthest: 6.125 / 2,
+          nearest: 1.456,
+          farthest: 6.125,
           factor: 4.0,
         },
         burstRecoveryTime: 1.05,
@@ -85,15 +85,15 @@ const options: WeaponOptions = {
       name: 'he',
       minRange: 0,
       maxRange: 500,
-      effectiveRange: 500 / 2,
+      effectiveRange: 500,
       speed: 196,
       gravity: 5,
       damageToArmor: 650,
       damageToHuman: 6500,
       spreading: {
         radiusTable: {
-          nearest: 1.678 / 3,
-          farthest: 6.905 / 2,
+          nearest: 1.678,
+          farthest: 6.905,
           factor: 4.0,
         },
         burstRecoveryTime: 1.05,

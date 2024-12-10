@@ -33,7 +33,7 @@ const options: WeaponOptions = {
       name: 'ap',
       minRange: 0,
       maxRange: 275,
-      effectiveRange: 275 / 2,
+      effectiveRange: 275,
       speed: 619,
       gravity: 5,
       projectile: {
@@ -44,8 +44,8 @@ const options: WeaponOptions = {
       damageToHuman: 1350,
       spreading: {
         radiusTable: {
-          nearest: 0.37 / 3,
-          farthest: 2.73 / 2,
+          nearest: 0.37,
+          farthest: 2.73,
           factor: 3.5,
         },
         burstRecoveryTime: 0.75,
@@ -59,7 +59,7 @@ const options: WeaponOptions = {
       name: 'apcbc',
       minRange: 0,
       maxRange: 275,
-      effectiveRange: 275 / 2,
+      effectiveRange: 275,
       speed: 619,
       gravity: 5,
       projectile: {
@@ -70,8 +70,8 @@ const options: WeaponOptions = {
       damageToHuman: 1350,
       spreading: {
         radiusTable: {
-          nearest: 0.33 / 3,
-          farthest: 2.43 / 2,
+          nearest: 0.33,
+          farthest: 2.43,
           factor: 3.5,
         },
         burstRecoveryTime: 0.75,
@@ -85,7 +85,7 @@ const options: WeaponOptions = {
       name: 'apcbche',
       minRange: 0,
       maxRange: 275,
-      effectiveRange: 275 / 2,
+      effectiveRange: 275,
       speed: 619,
       gravity: 5,
       projectile: {
@@ -96,8 +96,8 @@ const options: WeaponOptions = {
       damageToHuman: 1350,
       spreading: {
         radiusTable: {
-          nearest: 0.33 / 3,
-          farthest: 2.43 / 2,
+          nearest: 0.33,
+          farthest: 2.43,
           factor: 3.5,
         },
         burstRecoveryTime: 0.75,
@@ -111,15 +111,15 @@ const options: WeaponOptions = {
       name: 'he',
       minRange: 0,
       maxRange: 275,
-      effectiveRange: 275 / 2,
+      effectiveRange: 275,
       speed: 603,
       gravity: 5,
       damageToArmor: 200,
       damageToHuman: 2000,
       spreading: {
         radiusTable: {
-          nearest: 1.5 / 3,
-          farthest: 4.67 / 2,
+          nearest: 1.5,
+          farthest: 4.67,
           factor: 4.0,
         },
         burstRecoveryTime: 0.75,
@@ -132,13 +132,13 @@ const options: WeaponOptions = {
       name: 'sm',
       minRange: 0,
       maxRange: 325,
-      effectiveRange: 325 / 2,
+      effectiveRange: 325,
       speed: 603,
       gravity: 5,
       spreading: {
         radiusTable: {
-          nearest: 1.5 / 3,
-          farthest: 4.67 / 2,
+          nearest: 1.5,
+          farthest: 4.67,
           factor: 4.0,
         },
         burstRecoveryTime: 0.75,

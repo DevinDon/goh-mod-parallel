@@ -33,7 +33,7 @@ const options: WeaponOptions = {
       name: 'apcbche',
       minRange: 0,
       maxRange: 400,
-      effectiveRange: 400 / 2,
+      effectiveRange: 400,
       speed: 920,
       gravity: 5,
       projectile: {
@@ -44,8 +44,8 @@ const options: WeaponOptions = {
       damageToHuman: 4900,
       spreading: {
         radiusTable: {
-          nearest: 0.55 / 3,
-          farthest: 3.128 / 2,
+          nearest: 0.55,
+          farthest: 3.128,
           factor: 3.5,
         },
         burstRecoveryTime: 1.28,
@@ -59,15 +59,15 @@ const options: WeaponOptions = {
       name: 'he',
       minRange: 0,
       maxRange: 400,
-      effectiveRange: 400 / 2,
+      effectiveRange: 400,
       speed: 750,
       gravity: 5,
       damageToArmor: 990,
       damageToHuman: 9900,
       spreading: {
         radiusTable: {
-          nearest: 0.728 / 3,
-          farthest: 4.33 / 2,
+          nearest: 0.728,
+          farthest: 4.33,
           factor: 4.0,
         },
         burstRecoveryTime: 1.28,

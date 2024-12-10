@@ -33,15 +33,15 @@ const options: WeaponOptions = {
       name: 'he',
       minRange: 0,
       maxRange: 750,
-      effectiveRange: 750 / 2,
+      effectiveRange: 750,
       speed: 777,
       gravity: 9.81,
       damageToArmor: 180,
       damageToHuman: 1800,
       spreading: {
         radiusTable: {
-          nearest: 1.375 / 3,
-          farthest: 5.122 / 2,
+          nearest: 1.375,
+          farthest: 5.122,
           factor: 4.0,
         },
         burstRecoveryTime: 1.25,

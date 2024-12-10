@@ -33,7 +33,7 @@ const options: WeaponOptions = {
       name: 'apche',
       minRange: 0,
       maxRange: 300,
-      effectiveRange: 300 / 2,
+      effectiveRange: 300,
       speed: 835,
       gravity: 5,
       projectile: {
@@ -44,8 +44,8 @@ const options: WeaponOptions = {
       damageToHuman: 110 * 10,
       spreading: {
         radiusTable: {
-          nearest: 0.35 / 3,
-          farthest: 1.9 / 2,
+          nearest: 0.35,
+          farthest: 1.9,
           factor: 3.5,
         },
         burstRecoveryTime: 0.5,
@@ -59,7 +59,7 @@ const options: WeaponOptions = {
       name: 'apcr',
       minRange: 0,
       maxRange: 300,
-      effectiveRange: 300 / 2,
+      effectiveRange: 300,
       speed: 1150,
       gravity: 5,
       projectile: {
@@ -70,8 +70,8 @@ const options: WeaponOptions = {
       damageToHuman: 750,
       spreading: {
         radiusTable: {
-          nearest: 0.25 / 3,
-          farthest: 1.6 / 2,
+          nearest: 0.25,
+          farthest: 1.6,
           factor: 3.0,
         },
         burstRecoveryTime: 0.5,
@@ -85,15 +85,15 @@ const options: WeaponOptions = {
       name: 'he',
       minRange: 0,
       maxRange: 300,
-      effectiveRange: 300 / 2,
+      effectiveRange: 300,
       speed: 550,
       gravity: 5,
       damageToArmor: 175,
       damageToHuman: 1750,
       spreading: {
         radiusTable: {
-          nearest: 0.5 / 3,
-          farthest: 2.3 / 2,
+          nearest: 0.5,
+          farthest: 2.3,
           factor: 4.0,
         },
         burstRecoveryTime: 0.5,

@@ -33,7 +33,7 @@ const options: WeaponOptions = {
       name: 'apcbche',
       minRange: 0,
       maxRange: 275,
-      effectiveRange: 275 / 2,
+      effectiveRange: 275,
       speed: 385,
       gravity: 5,
       projectile: {
@@ -44,8 +44,8 @@ const options: WeaponOptions = {
       damageToHuman: 1500,
       spreading: {
         radiusTable: {
-          nearest: 0.6 / 3,
-          farthest: 3.8 / 2,
+          nearest: 0.6,
+          farthest: 3.8,
           factor: 3.5,
         },
         burstRecoveryTime: 0.75,
@@ -59,7 +59,7 @@ const options: WeaponOptions = {
       name: 'heat',
       minRange: 0,
       maxRange: 275,
-      effectiveRange: 275 / 2,
+      effectiveRange: 275,
       speed: 450,
       gravity: 5,
       projectile: {
@@ -70,8 +70,8 @@ const options: WeaponOptions = {
       damageToHuman: 1300,
       spreading: {
         radiusTable: {
-          nearest: 0.75 / 3,
-          farthest: 4.2 / 2,
+          nearest: 0.75,
+          farthest: 4.2,
           factor: 4.0,
         },
         burstRecoveryTime: 0.75,
@@ -85,15 +85,15 @@ const options: WeaponOptions = {
       name: 'he',
       minRange: 0,
       maxRange: 275,
-      effectiveRange: 275 / 2,
+      effectiveRange: 275,
       speed: 450,
       gravity: 5,
       damageToArmor: 300,
       damageToHuman: 3000,
       spreading: {
         radiusTable: {
-          nearest: 0.75 / 3,
-          farthest: 4.2 / 2,
+          nearest: 0.75,
+          farthest: 4.2,
           factor: 4.0,
         },
         burstRecoveryTime: 0.75,
@@ -106,13 +106,13 @@ const options: WeaponOptions = {
       name: 'sm',
       minRange: 0,
       maxRange: 275,
-      effectiveRange: 275 / 2,
+      effectiveRange: 275,
       speed: 520,
       gravity: 5,
       spreading: {
         radiusTable: {
-          nearest: 0.9 / 3,
-          farthest: 4.7 / 2,
+          nearest: 0.9,
+          farthest: 4.7,
           factor: 4.0,
         },
         burstRecoveryTime: 0.75,
