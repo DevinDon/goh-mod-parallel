@@ -3,9 +3,9 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/bazooka/inf-infantry-disposable-heat-rocket-launcher.weapon`,
+  destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/bazooka/inf-infantry-disposable-he-rocket-launcher.weapon`,
 
-  name: 'inf-infantry-disposable-heat-rocket-launcher',
+  name: 'inf-infantry-disposable-he-rocket-launcher',
   description: '一次性高爆火箭筒',
 
   entity: 'panzerfaust_100',

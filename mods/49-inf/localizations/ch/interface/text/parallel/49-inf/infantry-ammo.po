@@ -13,38 +13,38 @@ msgstr ""
 
 # 子弹
 # 5mm
-msgctxt "desc/ammo/inf-5mm-clip ap
-msgid   "5mm Clip AP
-msgstr  "5mm 弹夹 穿甲弹
+msgctxt "desc/ammo/inf-5mm-clip ap"
+msgid   "5mm Clip AP"
+msgstr  "5mm 弹夹 穿甲弹"
 
-msgctxt "desc/ammo/inf-5mm-magazine ap
-msgid   "5mm Magazine AP
-msgstr  "5mm 弹匣 穿甲弹
+msgctxt "desc/ammo/inf-5mm-magazine ap"
+msgid   "5mm Magazine AP"
+msgstr  "5mm 弹匣 穿甲弹"
 
-msgctxt "desc/ammo/inf-5mm-drum ap
-msgid   "5mm Drum AP
-msgstr  "5mm 弹鼓 穿甲弹
+msgctxt "desc/ammo/inf-5mm-drum ap"
+msgid   "5mm Drum AP"
+msgstr  "5mm 弹鼓 穿甲弹"
 
-msgctxt "desc/ammo/inf-5mm-chain ap
-msgid   "5mm Chain AP
-msgstr  "5mm 弹链 穿甲弹
+msgctxt "desc/ammo/inf-5mm-chain ap"
+msgid   "5mm Chain AP"
+msgstr  "5mm 弹链 穿甲弹"
 
 # 10mm
-msgctxt "desc/ammo/inf-10mm-clip ap
-msgid   "10mm Clip AP
-msgstr  "10mm 弹夹 穿甲弹
+msgctxt "desc/ammo/inf-10mm-clip ap"
+msgid   "10mm Clip AP"
+msgstr  "10mm 弹夹 穿甲弹"
 
-msgctxt "desc/ammo/inf-10mm-magazine ap
-msgid   "10mm Magazine AP
-msgstr  "10mm 弹匣 穿甲弹
+msgctxt "desc/ammo/inf-10mm-magazine ap"
+msgid   "10mm Magazine AP"
+msgstr  "10mm 弹匣 穿甲弹"
 
-msgctxt "desc/ammo/inf-10mm-drum ap
-msgid   "10mm Drum AP
-msgstr  "10mm 弹鼓 穿甲弹
+msgctxt "desc/ammo/inf-10mm-drum ap"
+msgid   "10mm Drum AP"
+msgstr  "10mm 弹鼓 穿甲弹"
 
-msgctxt "desc/ammo/inf-10mm-chain ap
-msgid   "10mm Chain AP
-msgstr  "10mm 弹链 穿甲弹
+msgctxt "desc/ammo/inf-10mm-chain ap"
+msgid   "10mm Chain AP"
+msgstr  "10mm 弹链 穿甲弹"
 
 # 火箭弹
 msgctxt "desc/ammo/inf-infantry-rocket-launcher-ammo he"
