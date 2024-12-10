@@ -44,8 +44,8 @@ const options: WeaponOptions = {
       damageToHuman: 3000,
       spreading: {
         radiusTable: {
-          nearest: 0.39,
-          farthest: 2.59,
+          nearest: 0.39 / 3,
+          farthest: 2.59 / 2,
           factor: 3.5,
         },
         burstRecoveryTime: 0.9,
@@ -70,8 +70,8 @@ const options: WeaponOptions = {
       damageToHuman: 2250,
       spreading: {
         radiusTable: {
-          nearest: 0.345,
-          farthest: 2.24,
+          nearest: 0.345 / 3,
+          farthest: 2.24 / 2,
           factor: 3.5,
         },
         burstRecoveryTime: 0.9,
@@ -92,8 +92,8 @@ const options: WeaponOptions = {
       damageToHuman: 4300,
       spreading: {
         radiusTable: {
-          nearest: 1.32,
-          farthest: 4.67,
+          nearest: 1.32 / 3,
+          farthest: 4.67 / 2,
           factor: 4.0,
         },
         burstRecoveryTime: 0.9,
