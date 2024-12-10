@@ -44,6 +44,10 @@ msgctxt "desc/human/mp/inf/late/antiarmor-gunner-2"
 msgid   "Anti-Armor Assistant Gunner [Inf]"
 msgstr  "反装甲副射手 [无尽军团]"
 
+msgctxt "desc/human/mp/inf/late/commander-1"
+msgid   "Commander [Inf]"
+msgstr  "指挥官 [无尽军团]"
+
 
 
 # 归档
