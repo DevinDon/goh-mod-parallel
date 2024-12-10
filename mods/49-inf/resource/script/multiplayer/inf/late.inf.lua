@@ -3,14 +3,17 @@ Purchases["late.inf"] = {
     Repeat = 0,
     Units = {
       -- 班
-      {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-antitank-squad(inf)"},
+      {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-assault-squad(inf)"},
       {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-engineer-squad(inf)"},
-      {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-mgun-squad(inf)"},
+      {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-medic-squad(inf)"},
+      {priority = 2.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-sniper-squad(inf)"},
+      {priority = 2.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-machine-gun-squad(inf)"},
+      {priority = 2.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-antiarmor-squad(inf)"},
       {priority = 2.0, type = {"Class3", "Infantry", "Team",}, unit = "soldier-officer-squad(inf)"},
       -- 排
-      {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-antitank-platoon(inf)"},
-      {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-engineer-platoon(inf)"},
-      {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-mgun-platoon(inf)"},
+      {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-assault-platoon(inf)"},
+      {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-supply-platoon(inf)"},
+      {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-defence-platoon(inf)"},
       -- 卡车
       -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",},          unit = "sdkfz-305-1"},
       -- {priority = 1.0, type = {"Class1", "Vehicle", "AA",},                           unit = "sdkfz-305-2"},
@@ -18,10 +21,10 @@ Purchases["late.inf"] = {
       -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Fuel",},     unit = "sdkfz-305-4"},
       -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Engineer",}, unit = "sdkfz-305-5"},
       -- 轮式装甲车
-      -- {priority = 1.0, type = {"Class2", "Armored", "AA",}, unit = "sdkfz-234-1"},
-      -- {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-2"},
-      -- {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-3"},
-      -- {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-4"},
+      {priority = 1.0, type = {"Class2", "Armored", "AA",}, unit = "sdkfz-234-1"},
+      {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-2"},
+      {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-3"},
+      {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-4"},
       -- 履带式装甲车
       -- {priority = 1.0, type = {"Class3", "Armored", "MG", "Transport",}, unit = "sdkfz-251-1"},
       {priority = 1.0, type = {"Class3", "Armored", "MG",},              unit = "sdkfz-251-16"},
