@@ -21,15 +21,15 @@ const options: WeaponOptions = {
   cursor: 'ironsights/mg',
 
   ammo: 'inf-10mm-chain',
-  amout: 250,
+  amout: 240,
   calibre: 10,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,
   spreadTolerance: 0.1,
 
-  rechargeTime: 7,
-  recoveryTime: 60 / 1500,
+  rechargeTime: 10,
+  recoveryTime: 60 / 1200,
 
   automatic: true,
 
@@ -49,21 +49,20 @@ const options: WeaponOptions = {
     {
       name: 'ap',
       minRange: 0,
-      maxRange: 250,
-      effectiveRange: 250,
-      speed: 740,
+      maxRange: 1500 / 4,
+      effectiveRange: 300 / 4,
+      speed: 1000,
       gravity: 5,
       projectile: {
         nearest: 14,
         farthest: 5,
       },
-      damageToArmor: 8,
-      damageToHuman: 125,
+      damageToArmor: 10,
+      damageToHuman: 200,
       spreading: {
         radiusTable: {
-          nearest: 0.5 / 3,
-          farthest: 4.2 / 2,
-          factor: 3.5,
+          nearest: 0.3,
+          farthest: 3,
         },
         burstRecoveryTime: 0.1,
         burstAccuracy: 100,

@@ -28,7 +28,7 @@ const options: WeaponOptions = {
   aimingTolerance: 0.05,
   spreadTolerance: 0.1,
 
-  rechargeTime: 4,
+  rechargeTime: 5,
   recoveryTime: 60 / 50,
 
   automatic: false,
@@ -37,21 +37,20 @@ const options: WeaponOptions = {
     {
       name: 'ap',
       minRange: 0,
-      maxRange: 200,
-      effectiveRange: 200,
-      speed: 760,
+      maxRange: 1200 / 4,
+      effectiveRange: 200 / 4,
+      speed: 1000,
       gravity: 5,
       projectile: {
-        nearest: 7,
+        nearest: 15,
         farthest: 3,
       },
-      damageToArmor: 5,
-      damageToHuman: 150,
+      damageToArmor: 10,
+      damageToHuman: 200,
       spreading: {
         radiusTable: {
-          nearest: 0.2 / 3,
-          farthest: 0.9 / 2,
-          factor: 3.0,
+          nearest: 0.2,
+          farthest: 3,
         },
         burstRecoveryTime: 0.1,
         burstAccuracy: 100,
