@@ -1,6 +1,6 @@
 import { logger } from '@pipers/logger';
-import { copy } from '@pipers/toolbox/filesystem';
-import { TaskQueue } from '@pipers/toolbox/task-queue';
+import { copy } from '@pipers/toolbox/node/filesystem';
+import { createTaskQueue$ } from '@pipers/toolbox/universal/task-queue';
 import { resolve } from 'node:path';
 import { GameModsRootDir, ProjectModConfigDir } from '../utils/constants.mjs';
 import { archive } from './utils/zip.mjs';
@@ -43,7 +43,7 @@ export const pack = async () => {
   ];
 
   logger.info(`开始打包到目录 "${ModName}"`);
-  await new TaskQueue(tasks).start();
+  await createTaskQueue$(tasks).start();
   logger.info(`已打包到目录 "${ModName}"`);
 
 };

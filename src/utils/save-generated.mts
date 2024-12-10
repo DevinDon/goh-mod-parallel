@@ -1,7 +1,7 @@
-import { logger } from '@pipers/logger';
-import { saveFile } from '@pipers/toolbox/filesystem';
-import { TaskQueue } from '@pipers/toolbox/task-queue';
 import { resolve } from 'node:path';
+import { logger } from '@pipers/logger';
+import { saveFile } from '@pipers/toolbox/node/filesystem';
+import { createTaskQueue$ } from '@pipers/toolbox/universal/task-queue';
 import { ProjectRootDir } from './constants.mjs';
 
 export type GeneratedOptions = {
@@ -23,6 +23,6 @@ export const saveGenerated = async (options: GeneratedOptions[]) => {
   );
 
   // 执行保存任务
-  new TaskQueue(tasks).start();
+  await createTaskQueue$(tasks).start();
 
 };

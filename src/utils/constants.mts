@@ -1,4 +1,4 @@
-import { getExecDirPath } from '@pipers/toolbox/environment';
+import { getExecDirPath } from '@pipers/toolbox/node/environment';
 import { resolve } from 'node:path';
 
 /** 当前目录 */
