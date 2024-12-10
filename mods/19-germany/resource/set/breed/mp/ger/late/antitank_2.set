@@ -6,7 +6,7 @@
   {behaviour soldier} ; 行为类别
   {skin "ger_heer_43_at_rkt_asst"} ; 外观
   {portrait "ger_regular"} ; 肖像
-  {icon "smg"} ; 图标
+  {icon "bazooka"} ; 图标
   {icon_priority 0} ; 图标优先级
   {nationality ger} ; 国籍
 

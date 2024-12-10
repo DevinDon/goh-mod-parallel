@@ -1,17 +1,17 @@
 ; 人员配置
 {breed
 
-  {tags "soldier_pzfaust"} ; 标签
+  {tags "soldier_pzscheck"} ; 标签
 
   {behaviour soldier} ; 行为类别
-  {skin "ger_heer_43_at_rkt_asst"} ; 外观
+  {skin "ger_heer_43_at_rkt"} ; 外观
   {portrait "ger_regular"} ; 肖像
-  {icon "bazooka"} ; 图标
+  {icon "smg"} ; 图标
   {icon_priority 0} ; 图标优先级
   {nationality inf} ; 国籍
 
   {armors ; 防护装置
-    {head ger_m42_helmet_splinter}
+    {head ger_m40_helmet}
     ; 无防弹衣
   }
 
@@ -19,6 +19,7 @@
     (include "ability.inc")
     ("rifle_skill_rank_4")
     ("tier4_recon")
+    ("at_rank_4")
   }
 
   {veterancy ; 体力
@@ -27,12 +28,12 @@
   }
 
   {inventory ; 背包
-    {Item "weapon ger-stg44" filled} ; StG 44 突击步枪
-    {Item "ammo ger-stg44 magazine" 180} ; StG 44 突击步枪弹
-    {Item "ammo ger-panzershreck heat" 4} ; 坦克杀手火箭弹
+    {Item "weapon inf-infantry-assault-rifle" filling "ammo inf-5mm-magazine ap" 30} ; 突击步枪
+    {Item "ammo inf-5mm-magazine ap" 8} ; 突击步枪弹匣
+    {Item "m24 grenade" 4} ; 手榴弹
     {Item "m24_smoke grenade" 2} ; 烟雾弹
-    {Item "bandage_ger" 6} ; 绷带
-    {Item "shovel_ger"} ; 工兵铲
+    {Item "bandage_ger" 5} ; 绷带
+    {Item "weapon inf-infantry-disposable-heat-rocket-launcher" filled} ; 一次性破甲火箭筒
 
     {in_hands 0}
   }

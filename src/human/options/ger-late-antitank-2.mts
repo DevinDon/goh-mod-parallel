@@ -9,7 +9,7 @@ const options: HumanOptions = {
   behaviour: 'soldier',
   skin: 'ger_heer_43_at_rkt_asst',
   portrait: 'ger_regular',
-  icon: 'smg',
+  icon: 'bazooka',
   iconPriority: 0,
   nationality: 'ger',
 

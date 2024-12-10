@@ -11,7 +11,15 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 
-# 士兵
+# 步兵
+msgctxt "desc/human/mp/inf/late/assault-1"
+msgid   "Assault [Inf]"
+msgstr  "突击兵 [无尽军团]"
+
+
+
+
+# 归档
 msgctxt "desc/human/mp/inf/late/antitank-1"
 msgid   "Anti Tank [Inf]"
 msgstr  "反坦克射手 [无尽军团]"
