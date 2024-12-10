@@ -60,7 +60,7 @@
     }
     {Place "mgun2"
       {Type "coaxial"}
-      {Weapon "weapon ger-mg42" filled}
+      {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240}
       {Foresight "foresight5"}
       {Gunner "gunner"}
       {Charger "charger"}
@@ -76,7 +76,7 @@
     }
     {Place "mgun1"
       {Type "hull"}
-      {Weapon "weapon ger-mg42" filled}
+      {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240}
       {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}

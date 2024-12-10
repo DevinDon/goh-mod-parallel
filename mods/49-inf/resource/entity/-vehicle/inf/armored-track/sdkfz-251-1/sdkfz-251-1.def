@@ -70,7 +70,7 @@
     }
     {Place "mgun2"
       {Type "rear"}
-      {Weapon "weapon ger-mg42" filled}
+      {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240}
       {Gunner "gunner4"}
       {Charger "gunner4"}
       {LinkBone "mgun2"}
