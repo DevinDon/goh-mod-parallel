@@ -33,7 +33,7 @@ const options: WeaponOptions = {
       name: 'apcbche',
       minRange: 0,
       maxRange: 325,
-      effectiveRange: 325,
+      effectiveRange: 325 / 4,
       speed: 780,
       gravity: 5,
       projectile: {
@@ -59,7 +59,7 @@ const options: WeaponOptions = {
       name: 'apcr',
       minRange: 0,
       maxRange: 325,
-      effectiveRange: 325,
+      effectiveRange: 325 / 4,
       speed: 930,
       gravity: 5,
       projectile: {
@@ -85,7 +85,7 @@ const options: WeaponOptions = {
       name: 'he',
       minRange: 0,
       maxRange: 325,
-      effectiveRange: 325,
+      effectiveRange: 325 / 4,
       speed: 820,
       gravity: 5,
       damageToArmor: 500,
