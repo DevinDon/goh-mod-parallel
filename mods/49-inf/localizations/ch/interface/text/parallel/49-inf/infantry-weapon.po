@@ -38,12 +38,12 @@ msgstr  "重机枪"
 # 火箭筒
 msgctxt "desc/weapon/inf-infantry-rocket-launcher"
 msgid   "Rocket Launcher"
-msgstr  "火箭筒"
-
-msgctxt "desc/weapon/inf-infantry-disposable-heat-rocket-launcher"
-msgid   "Disposable HEAT Rocket Launcher"
-msgstr  "一次性破甲火箭筒"
+msgstr  "多用途火箭筒"
 
 msgctxt "desc/weapon/inf-infantry-disposable-he-rocket-launcher"
 msgid   "Disposable HE Rocket Launcher"
 msgstr  "一次性高爆火箭筒"
+
+msgctxt "desc/weapon/inf-infantry-disposable-heat-rocket-launcher"
+msgid   "Disposable HEAT Rocket Launcher"
+msgstr  "一次性破甲火箭筒"
