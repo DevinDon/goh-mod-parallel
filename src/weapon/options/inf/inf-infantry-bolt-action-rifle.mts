@@ -3,10 +3,10 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/rifle/ger-karabiner-98k.weapon`,
+  destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/rifle/inf-infantry-bolt-action-rifle.weapon`,
 
-  name: 'ger-karabiner-98k',
-  description: '德国 Karabiner 98k 栓动步枪',
+  name: 'inf-infantry-bolt-action-rifle',
+  description: '栓动步枪',
 
   entity: 'k98',
   mass: 3.9,
@@ -20,9 +20,9 @@ const options: WeaponOptions = {
   reloadSound: 'weapon_reload_loose_rifle_cartridges',
   cursor: 'ironsights/rifle',
 
-  ammo: 'ger-rifle clip',
+  ammo: 'inf-10mm-clip',
   amout: 5,
-  calibre: 7.92,
+  calibre: 10,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,
@@ -35,10 +35,10 @@ const options: WeaponOptions = {
 
   bullets: [
     {
-      name: 'clip',
+      name: 'ap',
       minRange: 0,
       maxRange: 200,
-      effectiveRange: 200 / 5,
+      effectiveRange: 200,
       speed: 760,
       gravity: 5,
       projectile: {

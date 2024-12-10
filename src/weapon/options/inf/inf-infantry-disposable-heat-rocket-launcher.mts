@@ -3,10 +3,10 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/bazooka/ger-panzerfaust-100.weapon`,
+  destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/bazooka/inf-infantry-disposable-heat-rocket-launcher.weapon`,
 
-  name: 'ger-panzerfaust-100',
-  description: '德国 Panzerfaust 100 "铁拳" 反坦克火箭筒',
+  name: 'inf-infantry-disposable-heat-rocket-launcher',
+  description: '一次性破甲火箭筒',
 
   entity: 'panzerfaust_100',
   mass: 11,
@@ -20,9 +20,9 @@ const options: WeaponOptions = {
   reloadSound: 'panzershreck',
   cursor: 'ironsights/rifle',
 
-  ammo: 'ger-panzerfaust-100 heat',
+  ammo: 'inf-infantry-rocket-launcher-ammo heat',
   amout: 1,
-  calibre: 149,
+  calibre: 100,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,
@@ -38,7 +38,7 @@ const options: WeaponOptions = {
       name: 'heat',
       minRange: 0,
       maxRange: 80,
-      effectiveRange: 80 / 5,
+      effectiveRange: 80,
       speed: 60,
       gravity: 3,
       projectile: {

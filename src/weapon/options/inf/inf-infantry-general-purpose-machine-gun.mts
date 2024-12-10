@@ -3,10 +3,10 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/machine-gun/ger-mg42.weapon`,
+  destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/machine-gun/inf-infantry-general-purpose-machine-gun.weapon`,
 
-  name: 'ger-mg42',
-  description: '德国 MG42 通用机枪',
+  name: 'inf-infantry-general-purpose-machine-gun',
+  description: '通用机枪',
 
   from: 'pattern standard-machine-gun',
 
@@ -20,9 +20,9 @@ const options: WeaponOptions = {
   reloadSound: 'mg42',
   cursor: 'ironsights/mg',
 
-  ammo: 'ger-mgun api',
+  ammo: 'inf-10mm-chain',
   amout: 250,
-  calibre: 7.92,
+  calibre: 10,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,
@@ -47,10 +47,10 @@ const options: WeaponOptions = {
 
   bullets: [
     {
-      name: 'api',
+      name: 'ap',
       minRange: 0,
       maxRange: 250,
-      effectiveRange: 250 / 5,
+      effectiveRange: 250,
       speed: 740,
       gravity: 5,
       projectile: {

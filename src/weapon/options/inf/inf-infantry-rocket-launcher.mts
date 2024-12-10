@@ -3,10 +3,10 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/bazooka/ger-panzershreck-54.weapon`,
+  destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/bazooka/inf-infantry-rocket-launcher.weapon`,
 
-  name: 'ger-panzershreck-54',
-  description: '德国 PanzerShreck 54 "坦克杀手" 反坦克火箭筒',
+  name: 'inf-infantry-rocket-launcher',
+  description: '多用途火箭筒',
 
   entity: 'panzershreck_54',
   mass: 11,
@@ -18,26 +18,47 @@ const options: WeaponOptions = {
   reloadSound: 'panzershreck',
   cursor: 'ironsights/rifle',
 
-  ammo: 'ger-panzershreck heat',
+  ammo: 'inf-infantry-rocket-launcher-ammo',
   amout: 1,
-  calibre: 88,
+  calibre: 100,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,
   spreadTolerance: 0.5,
 
-  rechargeTime: 7,
+  rechargeTime: 10,
   recoveryTime: 60 / 60,
 
   automatic: false,
 
   bullets: [
     {
+      name: 'he',
+      minRange: 0,
+      maxRange: 75,
+      effectiveRange: 75,
+      speed: 100,
+      gravity: 5,
+      damageToArmor: 100,
+      damageToHuman: 1000,
+      spreading: {
+        radiusTable: {
+          nearest: 5,
+          farthest: 12,
+          factor: 7,
+        },
+        burstRecoveryTime: 0.5,
+        burstAccuracy: 100,
+        spreadPower: 1.25,
+        spreadXYRatio: 0.55,
+      },
+    },
+    {
       name: 'heat',
       minRange: 0,
       maxRange: 75,
-      effectiveRange: 75 / 5,
-      speed: 110,
+      effectiveRange: 75,
+      speed: 100,
       gravity: 5,
       projectile: {
         nearest: 185,

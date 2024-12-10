@@ -3,72 +3,60 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/rifle/ger-stg44.weapon`,
+  destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/sniper/inf-infantry-bolt-action-sniper-rifle.weapon`,
 
-  name: 'ger-stg44',
-  description: '德国 StG44 突击步枪',
+  name: 'inf-infantry-bolt-action-sniper-rifle',
+  description: '栓动狙击步枪',
 
-  entity: 'stg44_scope',
-  mass: 4.6,
+  entity: 'k98_scope',
+  mass: 3.9,
 
-  from: 'pattern standard-rifle',
+  from: 'pattern standard-sniper',
 
-  tags: [ '-rifle', 'smg', 'inter_shell', 'assaultrifle', 'autorifle_sup', 'auto_eject' ],
+  tags: [ 'bolt_action' ],
 
-  fireSound: 'smallarms/s2/d1/GER/StG44/',
-  fireSoundClose: 'smallarms/s2/3p/GER/StG44/',
-  reloadSound: 'stg',
+  fireSound: 'smallarms/s3/d1/GER/K98k/',
+  fireSoundClose: 'smallarms/s3/3p/GER/K98k/',
+  reloadSound: 'weapon_reload_loose_rifle_cartridges',
   cursor: 'ironsights/rifle',
 
-  ammo: 'ger-stg44 magazine',
-  amout: 30,
-  calibre: 7.92,
+  ammo: 'inf-10mm-clip',
+  amout: 5,
+  calibre: 10,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,
-  spreadTolerance: 0.1,
+  spreadTolerance: 0.5,
 
   rechargeTime: 4,
-  recoveryTime: 60 / 500,
+  recoveryTime: 60 / 50,
 
-  automatic: true,
-
-  burst: {
-    'short': {
-      standard: 3,
-      random: 1,
-    },
-    'long': {
-      standard: 5,
-      random: 1,
-    },
-    rangeKoef: 0.5,
-  },
+  automatic: false,
 
   bullets: [
     {
-      name: 'magazine',
+      name: 'ap',
       minRange: 0,
-      maxRange: 175,
-      effectiveRange: 175 / 5,
-      speed: 685,
+      maxRange: 250,
+      effectiveRange: 250,
+      speed: 760,
       gravity: 5,
       projectile: {
-        nearest: 6,
-        farthest: 2,
+        nearest: 7,
+        farthest: 3,
       },
-      damageToArmor: 4,
-      damageToHuman: 125,
+      damageToArmor: 5,
+      damageToHuman: 150,
       spreading: {
         radiusTable: {
-          nearest: 0.5,
-          farthest: 3.9,
+          nearest: 0.1,
+          farthest: 0.6,
           factor: 2.5,
         },
-        burstRecoveryTime: 0.1,
+        burstRecoveryTime: 0.2,
         burstAccuracy: 100,
-        spreadPower: 1.55,
-        spreadXYRatio: 0.85,
+        spreadPower: 1.75,
+        spreadXYRatio: 0.95,
       },
       overmatch: 'ger-rifle',
     },
@@ -92,7 +80,7 @@ const options: WeaponOptions = {
     {mouse_speed_factor 0.6}
     {ManualAccuracyZoom}
 
-    {camera "human_zoom4"} ; magnification x4
+    {camera "human_zoom8"} ; magnification x8
     {scope_vignette "/texture/common/environment/lens_effects/zoom_vignette_scope_ger_k98"}
     {blur_mask "/texture/common/environment/lens_effects/zoom_vignette_scope_01_mask"}
     {bump_spec_mask "/texture/common/environment/lens_effects/zoom_vignette_scope_ger_k98"}
@@ -109,6 +97,7 @@ const options: WeaponOptions = {
     }
     {hide_crosshair}
     {weapon_sway_active}
+    {drop_zoom_after_shot}
     {aimer_type "sniper"}
   }
 }

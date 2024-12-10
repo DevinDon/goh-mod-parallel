@@ -3,10 +3,10 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/rifle/ger-stg44.weapon`,
+  destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/rifle/inf-infantry-assault-rifle.weapon`,
 
-  name: 'ger-stg44',
-  description: '德国 StG44 突击步枪',
+  name: 'inf-infantry-assault-rifle',
+  description: '突击步枪',
 
   entity: 'stg44_scope',
   mass: 4.6,
@@ -20,9 +20,9 @@ const options: WeaponOptions = {
   reloadSound: 'stg',
   cursor: 'ironsights/rifle',
 
-  ammo: 'ger-stg44 magazine',
+  ammo: 'inf-5mm-magazine',
   amout: 30,
-  calibre: 7.92,
+  calibre: 5,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,
@@ -47,10 +47,10 @@ const options: WeaponOptions = {
 
   bullets: [
     {
-      name: 'magazine',
+      name: 'ap',
       minRange: 0,
       maxRange: 175,
-      effectiveRange: 175 / 5,
+      effectiveRange: 175,
       speed: 685,
       gravity: 5,
       projectile: {
