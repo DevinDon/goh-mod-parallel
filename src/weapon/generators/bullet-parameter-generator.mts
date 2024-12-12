@@ -59,7 +59,7 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
   ${damageToArmor}
   ${damageToHuman}
   {Spreading
-    {RadiusTable {0 0} {${toFixed(effectiveRange)} ${toFixed(bullet.spreading.radiusTable.nearest)}} {${toFixed(aimRange)} ${toFixed(bullet.spreading.radiusTable.farthest)}} {10000 ${toFixed(bullet.spreading.radiusTable.farthest * (bullet.spreading.radiusTable.factor ?? 10))}}} ; 散布
+    {RadiusTable {0 0} {${toFixed(effectiveRange)} ${toFixed(bullet.spreading.radiusTable.nearest)}} {${toFixed(aimRange)} ${toFixed(bullet.spreading.radiusTable.farthest)}} {${toFixed(maxRange)} ${toFixed(bullet.spreading.radiusTable.farthest * (bullet.spreading.radiusTable.factor ?? 10))}}} ; 散布
     {BurstRecoveryTime ${toFixed(bullet.spreading.burstRecoveryTime ?? 1)}} ; 开火后恢复到正常精度的时间
     {BurstAccuracy     ${toFixed(bullet.spreading.burstAccuracy ?? 100)}} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
     {SpreadPower       ${toFixed(bullet.spreading.spreadPower ?? 1)}} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
