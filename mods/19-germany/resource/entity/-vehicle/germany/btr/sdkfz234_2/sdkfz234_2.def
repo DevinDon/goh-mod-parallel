@@ -45,7 +45,7 @@
 
       {Item "ammo ger-mgun api" 2900}
 
-      {Item "nbks grenade" 2}
+      {Item "nbks grenade" 6}
 
       {Item "ammo ger-50l60 apche" 19}
       {Item "ammo ger-50l60 apcr"   5}

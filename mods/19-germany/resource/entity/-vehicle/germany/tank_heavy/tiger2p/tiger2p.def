@@ -54,7 +54,7 @@
       {Item "ammo ger-mgun api" 4500}
       {Item "weapon ger-mg42" filled {user "mgun"}}
 
-      {Item "nbks grenade" 5}
+      {Item "nbks grenade" 6}
 
       {Item "ammo ger-88l71 apcbche" 32}
       {Item "ammo ger-88l71 apcr" 5}

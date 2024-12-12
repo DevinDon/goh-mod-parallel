@@ -60,7 +60,7 @@
       {Item "ammo inf-15mm-chain ap" 600}
       {Item "weapon inf-infantry-heavy-machine-gun" filling "ammo inf-15mm-chain ap" 120 {user "mgun"}}
 
-      {Item "nbks grenade" 5}
+      {Item "nbks grenade" 6}
 
       {Item "ammo ger-88l71 apcbche" 32}
       {Item "ammo ger-88l71 apcr" 5}
