@@ -34,21 +34,27 @@ export type WeaponBulletOptions = {
   name: BulletType;
   /** 最短射击距离 m */
   minRange: number;
-  /** AI 最长射击距离 m，默认为 maxRange 的 90% */
+  /** AI 最长射击距离 m，默认为 (换算后的 `maxRange`) 的 1.95 次根 x 10 */
   aimRange?: number;
-  /** 玩家最长射击距离 m，同时用于指定 farthest 距离 */
+  /**
+   * 极限有效射击距离 m，同时用于指定 farthest 距离，通过限制 `aimRange` 的值来控制 AI 的射击距离
+   *
+   * 轻武器建议设置为现实中的极限有效距离 1000m 以内，如 StG 44 为 400m
+   *
+   * 高射炮、坦克炮建议设置为 2000 ~ 3000m 范围内
+   */
   maxRange: number;
-  /** 有效精准射击距离 m，仅用于指定 nearest 距离 */
-  effectiveRange: number;
+  /** 有效精准射击距离 m，仅用于指定 nearest 距离，默认为 (换算后的 `aimRange`) / 5 */
+  effectiveRange?: number;
   /** 弹种速度 m/s */
   speed: number;
   /** 弹种重力 m/s，默认为 5，曲射模式推荐为 9 */
   gravity?: number;
   /** 穿深，可选，不适用于高爆弹种，会在 1000 m 处衰减为 0 */
   projectile?: {
-    /** 最近距离穿深 100m */
+    /** EffectiveRange 处穿深 */
     nearest: number;
-    /** 最远距离穿深 500m */
+    /** AimRange 处穿深 */
     farthest: number;
   };
   /** 弹种对装甲的击穿伤害，可选 */
@@ -59,11 +65,11 @@ export type WeaponBulletOptions = {
   spreading: {
     /** 散布 */
     radiusTable: {
-      /** 最近距离散布 100m */
+      /** EffectiveRange 处散布 */
       nearest: number;
-      /** 最远距离散布 500m */
+      /** AimRange 处散布 */
       farthest: number;
-      /** 1000m 处散布系数，默认为 5，即 1000m 处的散布为 farthest 的 5 倍 */
+      /** 10000m 处散布系数，默认为 10，即 10000m 处的散布为 farthest 的 10 倍 */
       factor?: number;
     };
     /** 开火后恢复到正常精度的时间 s，默认 1 秒 */

@@ -37,7 +37,7 @@ const options: WeaponOptions = {
     {
       name: 'clip',
       minRange: 0,
-      maxRange: 250,
+      maxRange: 800,
       effectiveRange: 250 / 5,
       speed: 760,
       gravity: 5,

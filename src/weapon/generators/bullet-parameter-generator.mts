@@ -3,6 +3,8 @@ import { setIndent } from '../../utils/set-indent.mjs';
 import { BulletReloadingCursors, isSupportedBulletType, type WeaponBulletOptions } from '../options.mjs';
 import { generateOvermatchTable } from './overmatch-table-generator.mjs';
 
+const toFixed = (value: number) => (Number.isInteger(value) ? value.toFixed(0) : value.toFixed(2));
+
 /** 生成弹种参数 */
 export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
 
@@ -34,22 +36,28 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
     ? `{FalloffStrength ${bullet.falloffStrength}} ; 防空炮配置`
     : '; 无防空炮配置';
 
+  const maxRange = bullet.maxRange;
+  const aimRange = Math.pow(bullet.aimRange ?? maxRange, 1 / 1.9) * 10;
+  const effectiveRange = bullet.effectiveRange !== undefined
+    ? Math.pow(bullet.effectiveRange, 1 / 1.9) * 10 / 5
+    : aimRange / 5;
+
   return `{Parameters "${name}"
   {CursorReloading "${reloading}"} ; 装填图标
-  {MinRange ${bullet.minRange}} ; 最短射击距离 m
-  {AimRange ${bullet.aimRange ?? bullet.maxRange * 0.9}} ; AI 最长射击距离 m
-  {MaxRange ${bullet.maxRange}} ; 玩家最长射击距离 m
-  {Speed ${bullet.speed}} ; 炮弹速度
-  {Gravity ${bullet.gravity ?? 5}} ; 炮弹重力
+  {MinRange ${toFixed(bullet.minRange)}} ; 最短射击距离 m
+  {AimRange ${toFixed(aimRange)}} ; AI 最长射击距离 m
+  {MaxRange ${toFixed(maxRange)}} ; 玩家最长射击距离 m
+  {Speed ${toFixed(bullet.speed)}} ; 炮弹速度
+  {Gravity ${toFixed(bullet.gravity ?? 5)}} ; 炮弹重力
   ${projectileDamageTable}
   ${damageToArmor}
   ${damageToHuman}
   {Spreading
-    {RadiusTable {0 0} {${Math.ceil(bullet.effectiveRange)} ${bullet.spreading.radiusTable.nearest.toFixed(2)}} {${Math.ceil(bullet.maxRange)} ${bullet.spreading.radiusTable.farthest.toFixed(2)}} {1000 ${(bullet.spreading.radiusTable.farthest * (bullet.spreading.radiusTable.factor ?? 5)).toFixed(2)}}} ; 散布
-    {BurstRecoveryTime ${bullet.spreading.burstRecoveryTime ?? 1}} ; 开火后恢复到正常精度的时间
-    {BurstAccuracy     ${bullet.spreading.burstAccuracy ?? 100}} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
-    {SpreadPower       ${bullet.spreading.spreadPower ?? 1}} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
-    {SpreadXYRatio     ${bullet.spreading.spreadXYRatio ?? 0.75}} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
+    {RadiusTable {0 0} {${toFixed(effectiveRange)} ${toFixed(bullet.spreading.radiusTable.nearest)}} {${toFixed(aimRange)} ${toFixed(bullet.spreading.radiusTable.farthest)}} {10000 ${toFixed(bullet.spreading.radiusTable.farthest * (bullet.spreading.radiusTable.factor ?? 10))}}} ; 散布
+    {BurstRecoveryTime ${toFixed(bullet.spreading.burstRecoveryTime ?? 1)}} ; 开火后恢复到正常精度的时间
+    {BurstAccuracy     ${toFixed(bullet.spreading.burstAccuracy ?? 100)}} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
+    {SpreadPower       ${toFixed(bullet.spreading.spreadPower ?? 1)}} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
+    {SpreadXYRatio     ${toFixed(bullet.spreading.spreadXYRatio ?? 0.75)}} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点
   }
   ${overmatchTable}
   ${falloffStrength}

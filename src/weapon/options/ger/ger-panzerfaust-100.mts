@@ -37,7 +37,7 @@ const options: WeaponOptions = {
     {
       name: 'heat',
       minRange: 0,
-      maxRange: 80,
+      maxRange: 100,
       effectiveRange: 80 / 5,
       speed: 60,
       gravity: 3,

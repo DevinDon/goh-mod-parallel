@@ -32,8 +32,7 @@ const options: WeaponOptions = {
     {
       name: 'apcbche',
       minRange: 0,
-      maxRange: 275,
-      effectiveRange: 275 / 4,
+      maxRange: 1850,
       speed: 385,
       gravity: 5,
       projectile: {
@@ -58,8 +57,7 @@ const options: WeaponOptions = {
     {
       name: 'heat',
       minRange: 0,
-      maxRange: 275,
-      effectiveRange: 275 / 4,
+      maxRange: 1850,
       speed: 450,
       gravity: 5,
       projectile: {
@@ -84,8 +82,7 @@ const options: WeaponOptions = {
     {
       name: 'he',
       minRange: 0,
-      maxRange: 275,
-      effectiveRange: 275 / 4,
+      maxRange: 1850,
       speed: 450,
       gravity: 5,
       damageToArmor: 200,
@@ -105,8 +102,7 @@ const options: WeaponOptions = {
     {
       name: 'sm',
       minRange: 0,
-      maxRange: 275,
-      effectiveRange: 275 / 4,
+      maxRange: 1850,
       speed: 520,
       gravity: 5,
       spreading: {
