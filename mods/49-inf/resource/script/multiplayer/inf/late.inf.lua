@@ -16,7 +16,7 @@ Purchases["late.inf"] = {
       {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "soldier-defence-platoon(inf)"},
       -- 卡车
       -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",},          unit = "sdkfz-305-1"},
-      -- {priority = 1.0, type = {"Class1", "Vehicle", "AA",},                           unit = "sdkfz-305-2"},
+      {priority = 1.0, type = {"Class1", "Vehicle", "AA",},                           unit = "sdkfz-305-2"},
       -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Ammo",},     unit = "sdkfz-305-3"},
       -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Fuel",},     unit = "sdkfz-305-4"},
       -- {priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Supply", "Engineer",}, unit = "sdkfz-305-5"},
