@@ -11,11 +11,11 @@ const options: WeaponOptions = {
   name: 'ger-20mm-mg151-l55-x3',
   description: '德国 三联 2cm MG 151 L/55 机炮',
 
-  mass: (mg151l55Options.mass ?? 42.7) * 3,
+  mass: mg151l55Options.mass! * 3,
 
   amout: mg151l55Options.amout * 3,
 
-  rechargeTime: 20,
+  rechargeTime: 25,
   recoveryTime: mg151l55Options.recoveryTime / 3,
 
   burst: {

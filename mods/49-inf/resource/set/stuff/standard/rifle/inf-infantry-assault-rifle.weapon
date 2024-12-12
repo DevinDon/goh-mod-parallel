@@ -7,7 +7,7 @@
   {Tag "-rifle" "smg" "inter_shell" "assaultrifle" "autorifle_sup" "auto_eject"} ; 标签
 
   {Entity "stg44_scope"}
-  {Mass 4.6}
+  {Mass 4.60}
 
   {FireSound "smallarms/s2/d1/GER/StG44/"} ; 开火音效
   {FireSoundclose "smallarms/s2/3p/GER/StG44/"} ; 车内视角开火音效
@@ -33,7 +33,7 @@
   ; 不启用曲射模式
 
   {RechargeTime 5} ; 装填时间（秒）
-  {RecoveryTime 0.120} ; 短射间隔（秒）, 适用于弹链
+  {RecoveryTime 0.12} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
 
   {Burst

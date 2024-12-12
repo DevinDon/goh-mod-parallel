@@ -7,7 +7,7 @@
   ; 无标签
 
   ; 无模型
-  {Mass 42.7}
+  {Mass 128.10}
 
   {FireSound "cannon/s1/d1/Shared/Autocannon_20to30mm/"} ; 开火音效
   {FireSoundclose "cannon/s1/1p/Shared/Autocannon_20to30mm/"} ; 车内视角开火音效
@@ -18,7 +18,7 @@
   {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
   {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
 
-  {Filling "ammo ger-20l55" 450} ; 弹种及弹链内炮弹数量
+  {Filling "ammo ger-20l55" 300} ; 弹种及弹链内炮弹数量
   {Calibre 20} ; 口径
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
@@ -32,8 +32,8 @@
   {DisableRicochet 0} ; 是否禁用跳弹模式
   ; 不启用曲射模式
 
-  {RechargeTime 20} ; 装填时间（秒）
-  {RecoveryTime 0.027} ; 短射间隔（秒）, 适用于弹链
+  {RechargeTime 25} ; 装填时间（秒）
+  {RecoveryTime 0.03} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
 
   {Burst
@@ -51,11 +51,11 @@
     {MaxRange 2000} ; 玩家最长射击距离 m
     {Speed 805} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 56} {500 31} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {100 42} {500 15} {1000 0}} ; 穿深表
     {MinimumDamageModifier 40} ; 弹种对装甲的击穿伤害
     {HealthDamage 400} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {40.76 0.29} {407.62 1.60} {2000 16}} ; 散布
+      {RadiusTable {0 0} {40.76 0.40} {407.62 2.10} {2000 21}} ; 散布
       {BurstRecoveryTime 0.20} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心

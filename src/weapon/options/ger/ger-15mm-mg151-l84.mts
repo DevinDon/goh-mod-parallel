@@ -3,30 +3,30 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-20mm-mg151-l55.weapon`,
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-15mm-mg151-l84.weapon`,
 
-  name: 'ger-20mm-mg151-l55',
-  description: '德国 2cm MG 151 L/55 机炮',
+  name: 'ger-15mm-mg151-l84',
+  description: '德国 1.5cm MG 151 L/55 机炮',
 
   from: 'pattern standard-gun',
 
-  mass: 42.7,
+  mass: 38.1,
 
   fireSound: 'cannon/s1/d1/Shared/Autocannon_20to30mm/',
   fireSoundClose: 'cannon/s1/1p/Shared/Autocannon_20to30mm/',
   reloadSound: 'interior/large/auto_reload_interior',
   cursor: 'ironsights/aa',
 
-  ammo: 'ger-20l55',
-  amout: 100,
-  calibre: 20,
+  ammo: 'ger-15l84',
+  amout: 150,
+  calibre: 15,
   syncedProjectiles: true,
 
   aimingTolerance: 0.1,
   spreadTolerance: 0.1,
 
-  rechargeTime: 10,
-  recoveryTime: 60 / 750,
+  rechargeTime: 8,
+  recoveryTime: 60 / 700,
 
   automatic: true,
 
@@ -47,18 +47,18 @@ const options: WeaponOptions = {
       name: 'aphe',
       minRange: 0,
       maxRange: 2000,
-      speed: 805,
+      speed: 960,
       gravity: 5,
       projectile: {
-        nearest: 42,
-        farthest: 15,
+        nearest: 30,
+        farthest: 8,
       },
-      damageToArmor: 40,
-      damageToHuman: 400,
+      damageToArmor: 30,
+      damageToHuman: 300,
       spreading: {
         radiusTable: {
-          nearest: 0.4,
-          farthest: 2.1,
+          nearest: 0.35,
+          farthest: 1.8,
         },
         burstRecoveryTime: 0.2,
         burstAccuracy: 100,

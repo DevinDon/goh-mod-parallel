@@ -39,14 +39,14 @@
       {Item "ammo inf-10mm-chain ap" 1750}
       {Item "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240 {user "mgun2"}}
 
-      {item "ammo ger-20l55 aphe" 2250}
+      {item "ammo ger-15l84 aphe" 2250}
     }
   }
 
   {Weaponry
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "ger-20mm-mg151-l55-x3" filling "ammo ger-20l55 aphe" 450}
+      {Weapon "ger-15mm-mg151-l84-x3" filling "ammo ger-15l84 aphe" 450}
       {Gunner "gunner"}
       {Charger "charger"}
       {Barrels 3}

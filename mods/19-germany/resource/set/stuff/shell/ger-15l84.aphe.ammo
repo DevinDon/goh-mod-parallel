@@ -1,14 +1,14 @@
 {from "pattern aphe"
 
-  {tag "20to25 zenite size1 auto"}
+  {tag "20to25 zenite auto size1 bullet_fx"}
 
   {inventory
     {weight 10}
     {size 2 2}
     {block 10}
   }
-  {entity "20mm_ger_auto_ap"}
-  {mass 0.3}
+  {entity "15mm_ger_auto_ap"}
+  {mass 0.32}
 
   {view "howitzer_shell_dummy"
     {tail "shell_tracer_20_ap" "tail"}
@@ -29,6 +29,6 @@
     }
   )
 
-  ("set-he-level-1" weight(0.3) filler(0.08))
+  ("set-he-level-1" weight(0.32) filler(0.05))
 
 }

@@ -29,6 +29,11 @@ msgid   "7.92mm StG-44 Magazine"
 msgstr  "7.92mm StG 44 弹匣"
 
 # 炮弹
+# 15mm
+msgctxt "desc/ammo/ger-15l84 aphe"
+msgid   "1.5 cm PzGr. [<c(ff6a00)>APHE</c>]"
+msgstr  "1.5 cm PzGr. [<c(ff6a00)>穿甲高爆弹</c>]"
+
 # 20mm
 msgctxt "desc/ammo/ger-20l55 ap"
 msgid   "2 cm PzGr. [<c(ff6a00)>AP</c>]"

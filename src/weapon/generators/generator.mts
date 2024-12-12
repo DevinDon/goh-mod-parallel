@@ -1,3 +1,4 @@
+import { toFixed } from '../../utils/formatter.mjs';
 import { setIndent } from '../../utils/set-indent.mjs';
 import { type WeaponOptions } from '../options.mjs';
 import { generateBulletParameter } from './bullet-parameter-generator.mjs';
@@ -14,7 +15,7 @@ export const generateWeapon = (options: WeaponOptions) => {
     : '; 无模型';
 
   const massLine = options.mass
-    ? `{Mass ${options.mass}}`
+    ? `{Mass ${toFixed(options.mass)}}`
     : '; 无重量';
 
   const curved = options.curved === true ? '{Aimtype curved} ; 曲射模式' : '; 不启用曲射模式';
@@ -74,7 +75,7 @@ export const generateWeapon = (options: WeaponOptions) => {
   ${curved}
 
   {RechargeTime ${options.rechargeTime}} ; 装填时间（秒）
-  {RecoveryTime ${options.recoveryTime.toFixed(3)}} ; 短射间隔（秒）, 适用于弹链
+  {RecoveryTime ${toFixed(options.recoveryTime)}} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
 
   ${burst}

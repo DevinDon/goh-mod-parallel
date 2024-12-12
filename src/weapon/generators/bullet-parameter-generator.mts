@@ -1,9 +1,8 @@
 import { logger } from '@pipers/logger';
+import { toFixed } from '../../utils/formatter.mjs';
 import { setIndent } from '../../utils/set-indent.mjs';
 import { BulletReloadingCursors, isSupportedBulletType, type WeaponBulletOptions } from '../options.mjs';
 import { generateOvermatchTable } from './overmatch-table-generator.mjs';
-
-const toFixed = (value: number) => (Number.isInteger(value) ? value.toFixed(0) : value.toFixed(2));
 
 /** 生成弹种参数 */
 export const generateBulletParameter = (bullet: WeaponBulletOptions) => {

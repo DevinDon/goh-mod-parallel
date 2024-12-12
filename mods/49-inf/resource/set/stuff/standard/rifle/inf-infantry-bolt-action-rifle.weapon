@@ -7,7 +7,7 @@
   {Tag "bolt_action"} ; 标签
 
   {Entity "k98"}
-  {Mass 3.9}
+  {Mass 3.90}
 
   {FireSound "smallarms/s3/d1/GER/K98k/"} ; 开火音效
   {FireSoundclose "smallarms/s3/3p/GER/K98k/"} ; 车内视角开火音效
@@ -33,7 +33,7 @@
   ; 不启用曲射模式
 
   {RechargeTime 5} ; 装填时间（秒）
-  {RecoveryTime 1.200} ; 短射间隔（秒）, 适用于弹链
+  {RecoveryTime 1.20} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
 
   ; 无连发模式
