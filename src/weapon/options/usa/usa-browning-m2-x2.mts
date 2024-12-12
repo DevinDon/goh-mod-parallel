@@ -50,7 +50,6 @@ const options: WeaponOptions = {
       name: 'api',
       minRange: 0,
       maxRange: 1500,
-      effectiveRange: 225 / 5,
       speed: 894,
       gravity: 5,
       projectile: {
@@ -62,7 +61,7 @@ const options: WeaponOptions = {
       spreading: {
         radiusTable: {
           nearest: 0.8,
-          farthest: 4.2,
+          farthest: 6.2,
         },
         burstRecoveryTime: 0.2,
         burstAccuracy: 100,

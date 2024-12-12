@@ -46,7 +46,7 @@ const options: WeaponOptions = {
     {
       name: 'aphe',
       minRange: 0,
-      maxRange: 2000,
+      maxRange: 1750,
       speed: 960,
       gravity: 5,
       projectile: {
