@@ -1,6 +1,6 @@
 {from "pattern standard-bazooka-ammo"
 
-  {Tag "no_ricochet shell size2 88to105 he fg"}
+  {Tag "no_ricochet he fg"}
 
   {Entity "panzershreck_ammo"}
 
@@ -23,6 +23,6 @@
     }
   )
 
-  ("set-rocket-he-ammo-explosive" weight(3.3) filler(0.7))
+  ("set-rocket-he-ammo-explosive" weight(3.3) filler(1.2))
 
 }
