@@ -206,7 +206,7 @@
 
 )
 
-; 距离是平方，我也不知道为啥，离谱
+; 载具里的视野距离是开方，我也不知道为啥，离谱
 ; args = radius visible shootable
 (define "set-spotting"
   {radius %radius}
