@@ -44,7 +44,7 @@ export type WeaponBulletOptions = {
    * 高射炮、坦克炮建议设置为 2000 ~ 3000m 范围内
    */
   maxRange: number;
-  /** 有效精准射击距离 m，仅用于指定 nearest 距离，默认为 (换算后的 `aimRange`) / 5 */
+  /** 有效精准射击距离 m，仅用于指定 nearest 距离，默认为 (换算后的 `aimRange`) / 10 */
   effectiveRange?: number;
   /** 弹种速度 m/s */
   speed: number;
