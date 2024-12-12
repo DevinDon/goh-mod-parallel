@@ -47,7 +47,7 @@ const options: WeaponOptions = {
 
   bullets: [
     {
-      name: 'api',
+      name: 'ap',
       minRange: 0,
       maxRange: 1750,
       speed: 1150,
