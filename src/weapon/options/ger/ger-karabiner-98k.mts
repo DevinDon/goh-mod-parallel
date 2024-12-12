@@ -51,7 +51,6 @@ const options: WeaponOptions = {
         radiusTable: {
           nearest: 0.2,
           farthest: 0.9,
-          factor: 3.0,
         },
         burstRecoveryTime: 0.1,
         burstAccuracy: 100,

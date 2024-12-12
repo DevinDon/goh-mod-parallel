@@ -55,7 +55,7 @@
     {MinimumDamageModifier 30} ; 弹种对装甲的击穿伤害
     {HealthDamage 300} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {81.52 0.30} {407.62 1.70} {10000 5.95}} ; 散布
+      {RadiusTable {0 0} {40.76 0.30} {203.81 1.70} {2000 17}} ; 散布
       {BurstRecoveryTime 0.10} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -89,7 +89,7 @@
     {MinimumDamageModifier 20} ; 弹种对装甲的击穿伤害
     {HealthDamage 200} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {81.52 0.20} {407.62 1.50} {10000 4.50}} ; 散布
+      {RadiusTable {0 0} {40.76 0.20} {203.81 1.50} {2000 15}} ; 散布
       {BurstRecoveryTime 0.10} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -130,7 +130,7 @@
     {MinimumDamageModifier 60} ; 弹种对装甲的击穿伤害
     {HealthDamage 600} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {81.52 0.40} {407.62 2.50} {10000 10}} ; 散布
+      {RadiusTable {0 0} {40.76 0.40} {203.81 2.50} {2000 25}} ; 散布
       {BurstRecoveryTime 0.10} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心

@@ -45,7 +45,6 @@ const options: WeaponOptions = {
         radiusTable: {
           nearest: 0.31,
           farthest: 1.97,
-          factor: 3.5,
         },
         burstRecoveryTime: 0.888,
         burstAccuracy: 100,
@@ -70,7 +69,6 @@ const options: WeaponOptions = {
         radiusTable: {
           nearest: 0.288,
           farthest: 1.88,
-          factor: 3.0,
         },
         burstRecoveryTime: 0.888,
         burstAccuracy: 100,
@@ -91,7 +89,6 @@ const options: WeaponOptions = {
         radiusTable: {
           nearest: 0.37,
           farthest: 2.98,
-          factor: 4.0,
         },
         burstRecoveryTime: 0.888,
         burstAccuracy: 100,
