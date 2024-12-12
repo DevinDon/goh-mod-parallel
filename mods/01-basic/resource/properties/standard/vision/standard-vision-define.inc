@@ -228,69 +228,69 @@
 )
 
 ; 人员视野定义
-; standard-human-vision 人类裸眼标准视力 100
+; standard-human-vision 人类裸眼标准视力 70
 {"standard-human-vision"
   {uncover  20}
   {h_fov   100} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(100))
+  ("set-spotting" radius(70))
 }
 
-; standard-human-vision-elite 人类裸眼精英视力 120
+; standard-human-vision-elite 人类裸眼精英视力 90
 {"standard-human-vision-elite"
   {uncover  25}
   {h_fov   100} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(120))
+  ("set-spotting" radius(90))
 }
 
-; standard-human-vision-recon 人类裸眼侦查视力 150
+; standard-human-vision-recon 人类裸眼侦查视力 100
 {"standard-human-vision-recon"
   {uncover  30}
   {h_fov   150} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(150))
+  ("set-spotting" radius(100))
 }
 
-; standard-human-vision-sniper 人类裸眼狙击视力 150
+; standard-human-vision-sniper 人类裸眼狙击视力 100
 {"standard-human-vision-sniper"
   {uncover  50}
   {h_fov    90} ; 水平
   {v_fov   120} ; 垂直
-  ("set-spotting" radius(150))
+  ("set-spotting" radius(100))
 }
 
 ; 载具视野定义
-; standard-vehicle-vision-narrow 前方窄视角 80
+; standard-vehicle-vision-narrow 前方窄视角 50
 {"standard-vehicle-vision-narrow"
   {uncover  15}
   {h_fov    30} ; 水平
   {v_fov    30} ; 垂直
-  ("set-spotting" radius(8.94))
+  ("set-spotting" radius(7.07))
 }
 
-; standard-vehicle-vision-medium 前方中视角 100
+; standard-vehicle-vision-medium 前方中视角 70
 {"standard-vehicle-vision-medium"
   {uncover  15}
   {h_fov    60} ; 水平
   {v_fov    90} ; 垂直
-  ("set-spotting" radius(10))
+  ("set-spotting" radius(8.37))
 }
 
-; standard-vehicle-vision-wide 前方宽视角 150
+; standard-vehicle-vision-wide 前方宽视角 90
 {"standard-vehicle-vision-wide"
   {uncover  20}
   {h_fov    120} ; 水平
   {v_fov    180} ; 垂直
-  ("set-spotting" radius(12.25))
+  ("set-spotting" radius(9.49))
 }
 
-; standard-vehicle-vision-around 全景环绕视角 120
+; standard-vehicle-vision-around 全景环绕视角 100
 {"standard-vehicle-vision-around"
   {uncover  25}
   {h_fov   240} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(10.95))
+  ("set-spotting" radius(10))
 }
 
 ; standard-vision-noise-detection 环境噪音检测视角
