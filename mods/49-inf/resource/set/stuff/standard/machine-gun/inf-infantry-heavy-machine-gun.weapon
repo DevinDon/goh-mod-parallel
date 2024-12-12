@@ -6,7 +6,7 @@
 
   {Tag "aa" "gun"} ; 标签
 
-  {Entity "browning_m2"}
+  {Entity "mg34_belt_long"}
   {Mass 30}
 
   {FireSound "smallarms/s4/d1/USA/M2HB/"} ; 开火音效

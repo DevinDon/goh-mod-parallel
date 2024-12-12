@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'inf-infantry-heavy-machine-gun',
   description: '通用重机枪',
 
-  entity: 'browning_m2',
+  entity: 'mg34_belt_long',
   mass: 30,
 
   from: 'pattern standard-machine-gun',
