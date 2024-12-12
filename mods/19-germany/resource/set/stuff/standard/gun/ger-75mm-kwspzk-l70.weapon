@@ -1,5 +1,5 @@
 ; ger-75mm-kwspzk-l70
-; 德国 7.5 cm KwsPz.K L/70 实验性坦克炮
+; 德国 7.5cm KwsPz.K L/70 实验性坦克炮
 {from "pattern standard-gun"
 
   (include "/properties/standard/gun/define.ext")

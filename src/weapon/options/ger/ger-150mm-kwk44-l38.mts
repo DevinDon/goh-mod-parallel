@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-150mm-kwk44-l38.weapon`,
 
   name: 'ger-150mm-kwk44-l38',
-  description: '德国 15 cm KwK 44 L/38 坦克炮',
+  description: '德国 15cm KwK 44 L/38 坦克炮',
 
   from: 'pattern standard-gun',
 

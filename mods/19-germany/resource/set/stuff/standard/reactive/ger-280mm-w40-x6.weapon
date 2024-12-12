@@ -1,5 +1,5 @@
 ; ger-280mm-w40-x6
-; 德国 28 cm Wurfrahmen 40 六联装火箭发射器
+; 德国 28cm Wurfrahmen 40 六联装火箭发射器
 {from "pattern standard-reactive"
 
   (include "/properties/standard/gun/define.ext")

@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/flame-thrower/ger-14mm-flammenwerfer-left.weapon`,
 
   name: 'ger-14mm-flammenwerfer-left',
-  description: '德国 1.4 cm 喷火器 左侧',
+  description: '德国 1.4cm 喷火器 左侧',
 
   from: 'pattern standard-flame-thrower',
 

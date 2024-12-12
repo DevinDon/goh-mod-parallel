@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/reactive/ger-280mm-w40.weapon`,
 
   name: 'ger-280mm-w40',
-  description: '德国 28 cm Wurfrahmen 40 火箭发射器',
+  description: '德国 28cm Wurfrahmen 40 火箭发射器',
 
   from: 'pattern standard-reactive',
 

@@ -1,5 +1,5 @@
 ; ger-150mm-kwk44-l38
-; 德国 15 cm KwK 44 L/38 坦克炮
+; 德国 15cm KwK 44 L/38 坦克炮
 {from "pattern standard-gun"
 
   (include "/properties/standard/gun/define.ext")

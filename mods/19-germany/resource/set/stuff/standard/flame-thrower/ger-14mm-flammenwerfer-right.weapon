@@ -1,5 +1,5 @@
 ; ger-14mm-flammenwerfer-right
-; 德国 1.4 cm 喷火器 右侧
+; 德国 1.4cm 喷火器 右侧
 {from "pattern standard-flame-thrower"
 
   (include "/properties/standard/gun/define.ext")

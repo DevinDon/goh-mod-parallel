@@ -1,5 +1,5 @@
 ; ger-14mm-flammenwerfer-panzer
-; 德国 1.4 cm 喷火器 坦克专用
+; 德国 1.4cm 喷火器 坦克专用
 {from "pattern standard-flame-thrower"
 
   (include "/properties/standard/gun/define.ext")

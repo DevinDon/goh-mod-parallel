@@ -23,8 +23,8 @@ msgid   "<c(B29557)>( I )</c> Sd.Kfz 251/17 Ausf. D mit 2cm KwK 38"
 msgstr  "<c(B29557)>( I )</c> Sd.Kfz 251/17 D 型 加装 2cm KwK 38"
 
 msgctxt "desc/squad/doctrine_sdkfz251d_21"
-msgid   "<c(B29557)>( I )</c> Sd.Kfz 251/21 Ausf. D mit 3 x 2cm MG151"
-msgstr  "<c(B29557)>( I )</c> Sd.Kfz 251/21 D 型 加装三联装 2cm MG151"
+msgid   "<c(B29557)>( I )</c> Sd.Kfz 251/21 Ausf. D mit 3 x 1.5cm MG151"
+msgstr  "<c(B29557)>( I )</c> Sd.Kfz 251/21 D 型 加装三联装 1.5cm MG151"
 
 msgctxt "desc/squad/doctrine_sdkfz251d_22"
 msgid   "<c(B29557)>( II )</c> Sd.Kfz 251/22 Ausf. D mit 7.5cm Pak 40"
