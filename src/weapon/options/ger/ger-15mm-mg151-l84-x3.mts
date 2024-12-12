@@ -6,10 +6,10 @@ const options: WeaponOptions = {
 
   ...mg151l84Options,
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-15mm-mg151-l84.weapon`,
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-15mm-mg151-l84-x3.weapon`,
 
-  name: 'ger-15mm-mg151-l84',
-  description: '德国 1.5cm MG 151 L/55 机炮',
+  name: 'ger-15mm-mg151-l84-x3',
+  description: '德国 1.5cm MG 151 L/55 三联装机炮',
 
   mass: mg151l84Options.mass! * 3,
 

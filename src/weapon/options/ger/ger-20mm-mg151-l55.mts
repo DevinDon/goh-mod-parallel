@@ -5,8 +5,8 @@ const options: WeaponOptions = {
 
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-20mm-mg151-l55.weapon`,
 
-  name: 'ger-20mm-mg151-l55',
-  description: '德国 2cm MG 151 L/55 机炮',
+  name: 'ger-20mm-mg151-l55-x3',
+  description: '德国 2cm MG 151 L/55 三联装机炮',
 
   from: 'pattern standard-gun',
 
