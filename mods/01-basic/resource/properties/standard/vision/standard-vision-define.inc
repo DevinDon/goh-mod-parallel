@@ -236,12 +236,12 @@
   ("set-spotting" radius(100))
 }
 
-; standard-human-vision-elite 人类裸眼精英视力 125
+; standard-human-vision-elite 人类裸眼精英视力 120
 {"standard-human-vision-elite"
   {uncover  25}
   {h_fov   100} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(125))
+  ("set-spotting" radius(120))
 }
 
 ; standard-human-vision-recon 人类裸眼侦查视力 150
@@ -252,45 +252,45 @@
   ("set-spotting" radius(150))
 }
 
-; standard-human-vision-sniper 人类裸眼狙击视力 200
+; standard-human-vision-sniper 人类裸眼狙击视力 150
 {"standard-human-vision-sniper"
   {uncover  50}
   {h_fov    90} ; 水平
   {v_fov   120} ; 垂直
-  ("set-spotting" radius(200))
+  ("set-spotting" radius(150))
 }
 
 ; 载具视野定义
-; standard-vehicle-vision-narrow 前方窄视角 120
+; standard-vehicle-vision-narrow 前方窄视角 80
 {"standard-vehicle-vision-narrow"
   {uncover  15}
   {h_fov    30} ; 水平
   {v_fov    30} ; 垂直
-  ("set-spotting" radius(10.95))
+  ("set-spotting" radius(8.94))
 }
 
-; standard-vehicle-vision-medium 前方中视角 150
+; standard-vehicle-vision-medium 前方中视角 100
 {"standard-vehicle-vision-medium"
   {uncover  15}
   {h_fov    60} ; 水平
   {v_fov    90} ; 垂直
-  ("set-spotting" radius(12.24))
+  ("set-spotting" radius(10))
 }
 
-; standard-vehicle-vision-wide 前方宽视角 180
+; standard-vehicle-vision-wide 前方宽视角 150
 {"standard-vehicle-vision-wide"
   {uncover  20}
   {h_fov    120} ; 水平
   {v_fov    180} ; 垂直
-  ("set-spotting" radius(13.41))
+  ("set-spotting" radius(12.25))
 }
 
-; standard-vehicle-vision-around 全景环绕视角 200
+; standard-vehicle-vision-around 全景环绕视角 120
 {"standard-vehicle-vision-around"
   {uncover  25}
   {h_fov   240} ; 水平
   {v_fov   180} ; 垂直
-  ("set-spotting" radius(14.14))
+  ("set-spotting" radius(10.95))
 }
 
 ; standard-vision-noise-detection 环境噪音检测视角
