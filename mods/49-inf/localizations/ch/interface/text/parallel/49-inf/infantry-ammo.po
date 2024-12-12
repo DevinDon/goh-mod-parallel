@@ -46,6 +46,23 @@ msgctxt "desc/ammo/inf-10mm-chain ap"
 msgid   "10mm Chain AP"
 msgstr  "10mm 弹链 穿甲弹"
 
+# 15mm
+msgctxt "desc/ammo/inf-15mm-clip ap"
+msgid   "15mm Clip AP"
+msgstr  "15mm 弹夹 穿甲弹"
+
+msgctxt "desc/ammo/inf-15mm-magazine ap"
+msgid   "15mm Magazine AP"
+msgstr  "15mm 弹匣 穿甲弹"
+
+msgctxt "desc/ammo/inf-15mm-drum ap"
+msgid   "15mm Drum AP"
+msgstr  "15mm 弹鼓 穿甲弹"
+
+msgctxt "desc/ammo/inf-15mm-chain ap"
+msgid   "15mm Chain AP"
+msgstr  "15mm 弹链 穿甲弹"
+
 # 火箭弹
 msgctxt "desc/ammo/inf-infantry-rocket-launcher-ammo he"
 msgid   "Infantry Rocket Launcher Ammo [<c(ff1200)>HE</c>]"

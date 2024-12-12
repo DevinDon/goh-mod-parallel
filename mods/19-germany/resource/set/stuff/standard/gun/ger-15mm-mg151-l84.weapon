@@ -47,15 +47,15 @@
   {Parameters "aphe"
     {CursorReloading "gun_aphe"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 407.62} ; AI 最长射击距离 m
-    {MaxRange 2000} ; 玩家最长射击距离 m
+    {AimRange 381.92} ; AI 最长射击距离 m
+    {MaxRange 1750} ; 玩家最长射击距离 m
     {Speed 960} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {100 30} {500 8} {1000 0}} ; 穿深表
     {MinimumDamageModifier 30} ; 弹种对装甲的击穿伤害
     {HealthDamage 300} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {40.76 0.35} {407.62 1.80} {2000 18}} ; 散布
+      {RadiusTable {0 0} {38.19 0.35} {381.92 1.80} {1750 18}} ; 散布
       {BurstRecoveryTime 0.20} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心

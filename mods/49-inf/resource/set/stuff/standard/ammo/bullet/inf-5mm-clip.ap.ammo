@@ -15,12 +15,12 @@
   }
 
   {Trace
-    {View "/texture/fx/tracers/line/green/tracer.mtl"
+    {View "/texture/fx/tracers/wave/red/tracer.mtl"
       {ScaleX 1.25}
       {ScaleY 0.20}
-      {Light  1.00}
+      {Light  0.75}
     }
-    {Length 10}
+    {Length 5}
   }
 
   ("api" calibre(5))

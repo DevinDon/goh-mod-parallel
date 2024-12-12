@@ -15,7 +15,7 @@
   }
 
   {Trace
-    {View "/texture/fx/tracers/line/green/tracer.mtl"
+    {View "/texture/fx/tracers/line/red/tracer.mtl"
       {ScaleX 1.25}
       {ScaleY 0.20}
       {Light  1.00}
