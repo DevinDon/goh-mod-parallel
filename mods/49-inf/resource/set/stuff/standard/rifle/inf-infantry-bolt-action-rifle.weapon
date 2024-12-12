@@ -43,16 +43,16 @@
   {Parameters "ap"
     {CursorReloading "gun_ap"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
-    {AimRange 270} ; AI 最长射击距离 m
-    {MaxRange 300} ; 玩家最长射击距离 m
+    {AimRange 290.68} ; AI 最长射击距离 m
+    {MaxRange 1000} ; 玩家最长射击距离 m
     {Speed 1000} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {100 15} {500 3} {1000 0}} ; 穿深表
     {MinimumDamageModifier 10} ; 弹种对装甲的击穿伤害
     {HealthDamage 200} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {50 0.20} {300 5.00} {1000 25.00}} ; 散布
-      {BurstRecoveryTime 0.1} ; 开火后恢复到正常精度的时间
+      {RadiusTable {0 0} {58.14 0.20} {290.68 5} {10000 50}} ; 散布
+      {BurstRecoveryTime 0.10} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.75} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
       {SpreadXYRatio     0.95} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点

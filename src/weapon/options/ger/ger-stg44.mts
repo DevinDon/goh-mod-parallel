@@ -49,7 +49,7 @@ const options: WeaponOptions = {
     {
       name: 'magazine',
       minRange: 0,
-      maxRange: 400,
+      maxRange: 600,
       effectiveRange: 175 / 5,
       speed: 685,
       gravity: 5,

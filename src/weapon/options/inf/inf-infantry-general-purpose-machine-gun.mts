@@ -49,7 +49,7 @@ const options: WeaponOptions = {
     {
       name: 'ap',
       minRange: 0,
-      maxRange: 1000,
+      maxRange: 1250,
       speed: 1000,
       gravity: 5,
       projectile: {

@@ -37,10 +37,16 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
     : '; 无防空炮配置';
 
   const maxRange = bullet.maxRange;
-  const aimRange = Math.pow(bullet.aimRange ?? maxRange, 1 / 1.9) * 10;
-  const effectiveRange = bullet.effectiveRange !== undefined
-    ? Math.pow(bullet.effectiveRange, 1 / 1.9) * 10 / 5
-    : aimRange / 5;
+  const aimRange = Math.min(
+    Math.pow(bullet.aimRange ?? maxRange, 1 / 2.05) * 10,
+    maxRange,
+  );
+  const effectiveRange = Math.min(
+    bullet.effectiveRange !== undefined
+      ? Math.pow(bullet.effectiveRange, 1 / 2.05) * 10 / 5
+      : aimRange / 5,
+    aimRange,
+  );
 
   return `{Parameters "${name}"
   {CursorReloading "${reloading}"} ; 装填图标
