@@ -37,8 +37,8 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo inf-10mm-chain ap" 3250}
-      {Item "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240 {user "mgun"}}
+      {Item "ammo inf-15mm-chain ap" 1200}
+      {Item "weapon inf-infantry-heavy-machine-gun" filling "ammo inf-15mm-chain ap" 120 {user "mgun"}}
 
       {Item "ammo ger-fuel ic" 700}
     }

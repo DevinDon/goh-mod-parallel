@@ -33,7 +33,8 @@
       {Item "nbks grenade" 6}
 
       {Item "ammo inf-10mm-chain ap" 4500}
-      {Item "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240 {user "mgun"}}
+      {Item "ammo inf-15mm-chain ap" 600}
+      {Item "weapon inf-infantry-heavy-machine-gun" filling "ammo inf-15mm-chain ap" 120 {user "mgun"}}
 
       {Item "ammo ger-75l43 apcbche" 49}
       {Item "ammo ger-75l43 apcr" 5}
