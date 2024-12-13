@@ -12,15 +12,15 @@
     "test": "node --test"
   },
   "dependencies": {
-    "@pipers/logger": "https://npm.iinfinity.io/@pipers/logger/0.50.23",
-    "@pipers/toolbox": "https://npm.iinfinity.io/@pipers/toolbox/0.50.23",
+    "@pipers/logger": "https://npm.iinfinity.io/@pipers/logger/0.50.29",
+    "@pipers/toolbox": "https://npm.iinfinity.io/@pipers/toolbox/0.50.29",
     "archiver": "7.0.1",
     "commander": "12.0.0",
     "zx": "7.2.3"
   },
   "devDependencies": {
-    "@pipers/compiler": "https://npm.iinfinity.io/@pipers/compiler/0.50.23",
-    "@pipers/eslint-config": "https://npm.iinfinity.io/@pipers/eslint-config/0.50.23",
+    "@pipers/compiler": "https://npm.iinfinity.io/@pipers/compiler/0.50.29",
+    "@pipers/eslint-config": "https://npm.iinfinity.io/@pipers/eslint-config/0.50.29",
     "@types/archiver": "6.0.2",
     "@types/node": "20.11.20",
     "tslib": "2.6.2",
