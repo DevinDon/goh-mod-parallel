@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ 'shell', 'size7', '150to152', 'arty' ],
   entity: '600mm_ger_he',
   mass: 2170,
-  fill: 666,
+  fill: 200,
   caliber: 600,
   speed: 200,
   view: {
