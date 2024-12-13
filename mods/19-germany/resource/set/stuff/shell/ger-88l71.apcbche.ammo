@@ -1,16 +1,29 @@
 {from "pattern apcbche"
-
-  {tag "shell size2 88to105_he_filler"}
-
-  {inventory {size 8 1}}
-  {entity "88mm_ger_l71_apcbche"}
-  {mass 23.35}
-
+  {tag "shell size2 88to105_he_filler"} ; 标签
+  {entity "88mm_ger_l71_apcbche"} ; 模型
+  {mass 23.35} ; 质量
   {view "howitzer_shell_88-100"
     {tail "shell_tracer_88l_ap" "tail"}
   }
-
-  ("ap_blast" args 0.9)
-  ("he_level_2" weight(23.35) filler(0.183))
-
+  {inventory
+    {weight 13.67}
+    {size 8 1}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 1.62} ; 接触伤害
+    {area 0 0.88} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.88} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.16} ; 破片伤害
+    {area 0 3.24} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.08} ; 冲击波伤害
+    {area 0 8.10} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.088} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

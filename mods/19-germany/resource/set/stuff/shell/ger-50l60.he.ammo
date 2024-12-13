@@ -1,17 +1,29 @@
 {from "pattern he"
-
-  (include "/properties/standard/ammo/he.ext")
-
-  {tag "shell size1 50to57 no_throw"}
-
-  {inventory {size 5 1}}
-  {entity "50mm_ger_l60_he"}
-  {mass 3.1}
-
+  {tag "shell size1 50to57 no_throw"} ; 标签
+  {entity "50mm_ger_l60_he"} ; 模型
+  {mass 3.1} ; 质量
   {view "howitzer_shell_50-75"
     {tail "shell_tracer_37-57_he" "tail"}
   }
-
-  ("set-he-level-1" weight(3.1) filler(0.19))
-
+  {inventory
+    {weight 3.94}
+    {size 5 1}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 1.19} ; 接触伤害
+    {area 0 0.5} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.5} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.12} ; 破片伤害
+    {area 0 2.39} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.06} ; 冲击波伤害
+    {area 0 5.97} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.05} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

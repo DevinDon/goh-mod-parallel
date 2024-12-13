@@ -1,15 +1,29 @@
 {from "pattern he"
-
-  {tag "shell size2 75to76 no_throw"}
-
-  {inventory {size 6 1}}
-  {entity "75mm_ger_l43_he"}
-  {mass 8.71}
-
+  {tag "shell size2 75to76 no_throw"} ; 标签
+  {entity "75mm_ger_l43_he"} ; 模型
+  {mass 8.71} ; 质量
   {view "howitzer_shell_50-75"
     {tail "shell_tracer_75-88_he" "tail"}
   }
-
-  ("he_level_2" weight(5.74) filler(0.619))
-
+  {inventory
+    {weight 7.23}
+    {size 6 1}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 2.43} ; 接触伤害
+    {area 0 0.75} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.75} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.24} ; 破片伤害
+    {area 0 4.87} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.12} ; 冲击波伤害
+    {area 0 12.17} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.075} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

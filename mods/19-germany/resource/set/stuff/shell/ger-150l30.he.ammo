@@ -1,15 +1,29 @@
 {from "pattern he"
-
-  {tag "shell size4 150to152 arty"}
-
-  {inventory {size 8 3}}
-  {entity "150mm_ger_l30_he"}
-  {mass 44.62}
-
+  {tag "shell size4 150to152 arty"} ; 标签
+  {entity "150mm_ger_l30_he"} ; 模型
+  {mass 44.62} ; 质量
   {view "howitzer_shell_105-150"
     {tail "shell_tracer_100-152_he" "tail"}
   }
-
-  ("he_level_4" weight(44.62) filler(8.51))
-
+  {inventory
+    {weight 32.72}
+    {size 8 3}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 9.76} ; 接触伤害
+    {area 0 1.5} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 1.5} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.98} ; 破片伤害
+    {area 0 19.53} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.49} ; 冲击波伤害
+    {area 0 48.82} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.15} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

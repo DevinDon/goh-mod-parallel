@@ -1,14 +1,29 @@
 {from "pattern apcr"
-
-  {tag "shell size2 88to105"}
-  {inventory {size 10 2}}
-  {entity "88mm_ger_l56_apcr"}
-  {mass 25.6}
-
+  {tag "shell size2 88to105"} ; 标签
+  {entity "88mm_ger_l56_apcr"} ; 模型
+  {mass 25.6} ; 质量
   {view "howitzer_shell_88-100"
     {tail "shell_tracer_88_apcr" "tail"}
   }
-
-  ("apcr_blast" args 1.5)
-
+  {inventory
+    {weight 22.63}
+    {size 10 2}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 0.50} ; 接触伤害
+    {area 0 1.05} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 1.05} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.05} ; 破片伤害
+    {area 0 1.00} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.02} ; 冲击波伤害
+    {area 0 2.50} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.105} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

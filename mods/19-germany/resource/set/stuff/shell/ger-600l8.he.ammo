@@ -1,15 +1,29 @@
 {from "pattern he"
-
-  {tag "shell size7 150to152 arty"}
-
-  {inventory {size 12 4} {weight 1000}}
-  {entity "600mm_ger_he"}
-  {mass 2170}
-
+  {tag "shell size7 150to152 arty"} ; 标签
+  {entity "600mm_ger_he"} ; 模型
+  {mass 2170} ; 质量
   {view "600mm_ger_he"
     {tail "shell_tracer_600" "tail"}
   }
-
-  ("he_level_8" weight(2170) filler(666))
-
+  {inventory
+    {weight 1000}
+    {size 12 4}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 37.54} ; 接触伤害
+    {area 0 6} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 6} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 3.75} ; 破片伤害
+    {area 0 75.07} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 1.88} ; 冲击波伤害
+    {area 0 187.68} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.6} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

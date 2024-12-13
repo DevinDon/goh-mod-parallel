@@ -1,21 +1,29 @@
 {from "pattern aphe"
-
-  (include "/properties/standard/ammo/he.ext")
-
-  {tag "20to25 zenite auto size1 bullet_fx"}
-
+  {tag "20to25 zenite auto size1 bullet_fx"} ; 标签
+  {entity "15mm_ger_auto_ap"} ; 模型
+  {mass 0.32} ; 质量
+  {view "howitzer_shell_dummy"
+    {tail "shell_tracer_20_ap" "tail"}
+  }
   {inventory
     {weight 10}
     {size 2 2}
     {block 10}
   }
-  {entity "15mm_ger_auto_ap"}
-  {mass 0.32}
-
-  {view "howitzer_shell_dummy"
-    {tail "shell_tracer_20_ap" "tail"}
+  {damage blastwave
+    {energy 0.42} ; 接触伤害
+    {area 0 0.15} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.15} ; 弹坑效果半径
   }
-
-  ("set-he-level-1" weight(0.32) filler(0.01))
-
+  {damage add blastwave
+    {energy 0.04} ; 破片伤害
+    {area 0 0.83} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.02} ; 冲击波伤害
+    {area 0 2.08} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.015} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

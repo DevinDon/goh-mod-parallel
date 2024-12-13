@@ -1,17 +1,29 @@
 {from "pattern apcbche"
-
-  (include "/properties/standard/ammo/he.ext")
-
-  {tag "shell size2 75to76_he_filler"}
-
-  {inventory {size 4 1}}
-  {entity "75mm_ger_l24_apcbche"}
-  {mass 6.98}
-
+  {tag "shell size2 75to76_he_filler"} ; 标签
+  {entity "75mm_ger_l24_apcbche"} ; 模型
+  {mass 6.98} ; 质量
   {view "howitzer_shell_50-75"
     {tail "shell_tracer_75s_ap" "tail"}
   }
-
-  ("set-he-level-2" weight(6.98) filler(0.095))
-
+  {inventory
+    {weight 5.28}
+    {size 4 1}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 0.95} ; 接触伤害
+    {area 0 0.75} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.75} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.10} ; 破片伤害
+    {area 0 1.90} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.05} ; 冲击波伤害
+    {area 0 4.75} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.075} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

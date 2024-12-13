@@ -1,15 +1,29 @@
 {from "pattern sm"
-
-  {tag "shell 75to76 smoke_size2"}
-
-  {entity "75mm_ger_l24_sm"}
-  {inventory {size 4 1}}
-  {mass 6.16}
-
+  {tag "shell 75to76 smoke_size2"} ; 标签
+  {entity "75mm_ger_l24_sm"} ; 模型
+  {mass 6.16} ; 质量
   {view "howitzer_shell_50-75"
     {tail "shell_tracer_75-88_he_long" "tail"}
   }
-
-  ("smoke_blast" cal(75))
-
+  {inventory
+    {weight 4.96}
+    {size 4 1}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 0.02} ; 接触伤害
+    {area 0 0.75} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.75} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.01} ; 破片伤害
+    {area 0 0.20} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.01} ; 冲击波伤害
+    {area 0 1} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.075} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

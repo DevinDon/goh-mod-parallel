@@ -1,19 +1,29 @@
 {from "pattern he"
-
-  (include "/properties/standard/ammo/he.ext")
-
-  {tag "shell size2 75to76 no_throw"}
-
-  {inventory {size 4 1}}
-  {entity "75mm_ger_l24_he"}
-  {mass 5.71}
-
+  {tag "shell size2 75to76 no_throw"} ; 标签
+  {entity "75mm_ger_l24_he"} ; 模型
+  {mass 5.71} ; 质量
   {view "howitzer_shell_50-75"
     {tail "shell_tracer_75-88_he_long" "tail"}
   }
-
-  ("he_level_2" weight(5.71) filler(1.333))
-
-  ("set-he-level-2" weight(5.71) filler(0.095))
-
+  {inventory
+    {weight 4.78}
+    {size 4 1}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 0.79} ; 接触伤害
+    {area 0 0.75} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.75} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.08} ; 破片伤害
+    {area 0 1.58} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.04} ; 冲击波伤害
+    {area 0 3.96} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.075} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

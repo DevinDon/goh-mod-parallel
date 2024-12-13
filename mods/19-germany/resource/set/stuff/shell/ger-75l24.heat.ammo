@@ -1,15 +1,29 @@
 {from "pattern heat"
-
-  {tag "shell size2 size2_heat_shell heat_low"}
-
-  {inventory {size 4 1}}
-  {entity "75mm_ger_l24_heat"}
-  {mass 6.44}
-
+  {tag "shell size2 size2_heat_shell heat_low"} ; 标签
+  {entity "75mm_ger_l24_heat"} ; 模型
+  {mass 6.44} ; 质量
   {view "howitzer_shell_50-75"
     {tail "shell_tracer_75_heat" "tail"}
   }
-
-  ("he_level_2" weight(6.44) filler(0.1))
-
+  {inventory
+    {weight 5.08}
+    {size 4 1}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 0.82} ; 接触伤害
+    {area 0 0.75} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.75} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.08} ; 破片伤害
+    {area 0 1.63} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.04} ; 冲击波伤害
+    {area 0 4.09} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.075} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

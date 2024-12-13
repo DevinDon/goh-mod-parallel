@@ -1,15 +1,29 @@
 {from "pattern apcr"
-
-  {tag "shell size2 75to76"}
-
-  {inventory {size 6 1}}
-  {entity "75mm_ger_l43_apcr"}
-  {mass 8.61}
-
+  {tag "shell size2 75to76"} ; 标签
+  {entity "75mm_ger_l43_apcr"} ; 模型
+  {mass 8.61} ; 质量
   {view "howitzer_shell_50-75"
     {tail "shell_tracer_75_apcr" "tail"}
   }
-
-  ("apcr_blast" args 0.78)
-
+  {inventory
+    {weight 7.19}
+    {size 6 1}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 0.32} ; 接触伤害
+    {area 0 0.75} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.75} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.03} ; 破片伤害
+    {area 0 0.65} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.02} ; 冲击波伤害
+    {area 0 1.61} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.075} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

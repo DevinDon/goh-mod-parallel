@@ -1,21 +1,29 @@
 {from "pattern he"
-
-  (include "/properties/standard/ammo/he.ext")
-
-  {tag "20to25 no_throw auto size1"}
-
+  {tag "20to25 no_throw auto size1"} ; 标签
+  {entity "20mm_ger_auto_he"} ; 模型
+  {mass 0.303} ; 质量
+  {view "howitzer_shell_dummy"
+    {tail "shell_tracer_20_he" "tail"}
+  }
   {inventory
     {weight 10}
     {size 2 2}
     {block 10}
   }
-  {entity "20mm_ger_auto_he"}
-  {mass 0.303}
-
-  {view "howitzer_shell_dummy"
-    {tail "shell_tracer_20_he" "tail"}
+  {damage blastwave
+    {energy 0.66} ; 接触伤害
+    {area 0 0.2} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.2} ; 弹坑效果半径
   }
-
-  ("set-he-level-1" weight(0.32) filler(0.07))
-
+  {damage add blastwave
+    {energy 0.07} ; 破片伤害
+    {area 0 1.33} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.03} ; 冲击波伤害
+    {area 0 3.32} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.02} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

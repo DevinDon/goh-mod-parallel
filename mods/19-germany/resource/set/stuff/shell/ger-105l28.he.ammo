@@ -1,15 +1,29 @@
 {from "pattern he"
-
-  {tag "shell size3 88to105 arty"}
-
-  {inventory {size 10 2}}
-  {entity "105mm_ger_he"}
-  {mass 15.3}
-
+  {tag "shell size3 88to105 arty"} ; 标签
+  {entity "105mm_ger_he"} ; 模型
+  {mass 15.3} ; 质量
   {view "howitzer_shell_105-150"
     {tail "shell_tracer_100-152_he_long" "tail"}
   }
-
-  ("he_level_3" weight(15.3) filler(2.111))
-
+  {inventory
+    {weight 17.49}
+    {size 10 2}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 4.90} ; 接触伤害
+    {area 0 1.05} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 1.05} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.49} ; 破片伤害
+    {area 0 9.80} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.25} ; 冲击波伤害
+    {area 0 24.50} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.105} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

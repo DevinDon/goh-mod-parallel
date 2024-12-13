@@ -1,16 +1,29 @@
 {from "pattern aphe"
-
-  {tag "shell size3 88to105_he_filler"}
-
-  {inventory {size 10 2}}
-  {entity "105mm_ger_aphe"}
-  {mass 15.19}
-
+  {tag "shell size3 88to105_he_filler"} ; 标签
+  {entity "105mm_ger_aphe"} ; 模型
+  {mass 15.19} ; 质量
   {view "howitzer_shell_105-150"
     {tail "shell_tracer_105_ap" "tail"}
   }
-
-  ("ap_blast" args 1.1)
-  ("he_level_3" weight(15.19) filler(0.205))
-
+  {inventory
+    {weight 17.43}
+    {size 10 2}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 1.44} ; 接触伤害
+    {area 0 1.05} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 1.05} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.14} ; 破片伤害
+    {area 0 2.87} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.07} ; 冲击波伤害
+    {area 0 7.18} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.105} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

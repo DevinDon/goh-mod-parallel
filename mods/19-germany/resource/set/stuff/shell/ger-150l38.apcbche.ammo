@@ -1,17 +1,29 @@
 {from "pattern apcbche"
-
-  {tag "shell size4 150to152"}
-
-  {entity "128mm_ger_apcbche"}
-  {mass 49.2}
-
-  {inventory {size 12 3}}
-
+  {tag "shell size4 150to152"} ; 标签
+  {entity "128mm_ger_apcbche"} ; 模型
+  {mass 49.2} ; 质量
   {view "howitzer_shell_105-150"
     {tail "shell_tracer_128_ap" "tail"}
   }
-
-  ("ap_blast" args 1.5)
-  ("he_level_3" weight(49.2) filler(0.784))
-
+  {inventory
+    {weight 42.09}
+    {size 12 3}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 3.28} ; 接触伤害
+    {area 0 1.5} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 1.5} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.33} ; 破片伤害
+    {area 0 6.55} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.16} ; 冲击波伤害
+    {area 0 16.38} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.15} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

@@ -1,17 +1,29 @@
 {from "pattern apcr"
-
-  {tag "20to25 zenite size1 auto"}
-
+  {tag "20to25 zenite size1 auto"} ; 标签
+  {entity "20mm_ger_auto_apcr"} ; 模型
+  {mass 0.275} ; 质量
+  {view "howitzer_shell_dummy"
+    {tail "shell_tracer_20_apcr" "tail"}
+  }
   {inventory
     {weight 10}
     {size 2 2}
     {block 10}
   }
-  {entity "20mm_ger_auto_apcr"}
-  {mass 0.275}
-
-  {view "howitzer_shell_dummy"
-    {tail "shell_tracer_20_apcr" "tail"}
+  {damage blastwave
+    {energy 0.18} ; 接触伤害
+    {area 0 0.2} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.2} ; 弹坑效果半径
   }
-
+  {damage add blastwave
+    {energy 0.02} ; 破片伤害
+    {area 0 0.36} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.01} ; 冲击波伤害
+    {area 0 1} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.02} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }
