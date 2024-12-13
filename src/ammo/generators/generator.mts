@@ -49,7 +49,7 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
       viewLine,
       inventoryLines,
       blastwave,
-      extra ? ilines(2, ...extra) : '; 无附加内容',
+      (extra && extra.length > 0) ? ilines(2, ...extra) : '; 无附加内容',
     ),
     '}',
   );
