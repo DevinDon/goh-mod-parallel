@@ -1,4 +1,3 @@
-import { toFixed } from '../../utils/formatter.mjs';
 import { iline, ilines } from '../../utils/set-indent.mjs';
 import { type AmmoOptions } from '../options.mjs';
 import { generateBlastwave } from './blastwave-generator.mjs';
@@ -24,9 +23,12 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
 
   const inventoryWidth = inventory?.size?.width ?? Math.min(10, Math.max(1, Math.ceil(caliber / 10)));
   const inventoryHeight = inventory?.size?.height ?? Math.min(10, Math.max(1, Math.ceil(caliber / 50)));
-  const inventoryWeight = inventory?.limit
-    ? Math.ceil(1000 / inventory.limit)
-    : toFixed(Math.pow(Math.max(1, mass) * inventoryWidth * inventoryHeight, 1 / 2));
+  const inventoryWeight = Math.min(
+    1000,
+    inventory?.limit
+      ? Math.ceil(1000 / inventory.limit)
+      : Math.ceil(Math.pow(Math.max(1, mass) * inventoryWidth * inventoryHeight, 1 / 1.2)),
+  );
 
   const inventoryLines = ilines(
     iline(0, '{inventory'),
