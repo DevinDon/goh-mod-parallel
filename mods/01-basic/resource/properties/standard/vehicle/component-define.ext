@@ -211,14 +211,14 @@
     ; Ammo
     {setting "ammo"
       {threshold
-        {blast  {koef (* %ammo 1.00)}}          ; koef = coefficient. Threshold = koef value x volume effective thickness
+        {blast  {koef (* %armor 1.00)}}          ; koef = coefficient. Threshold = koef value x volume effective thickness
         {pierce {koef 1}}
       }
       {volumes "ammo*"}
     }
     {setting "rocket"
       {threshold
-        {blast  {koef (* %ammo 0.25)}} ; koef = coefficient. Threshold = koef value x volume effective thickness
+        {blast  {koef (* %armor 0.25)}} ; koef = coefficient. Threshold = koef value x volume effective thickness
         {pierce {koef 1}}
       }
       {volumes "rocket*"}

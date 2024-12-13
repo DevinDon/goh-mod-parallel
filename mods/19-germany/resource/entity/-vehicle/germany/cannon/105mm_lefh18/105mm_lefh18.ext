@@ -9,7 +9,7 @@
 
 ("set-cannon-durability" body(200) gun(150) wheel(100) shield(300))
 ("set-cannon-thickness"  thickness(8))
-("set-basic-armor"       ammo(10))
+("set-basic-armor"       armor(10))
 
 ("set-gun"    thickness(30) repair(20))
 ("set-body"                 repair(20))

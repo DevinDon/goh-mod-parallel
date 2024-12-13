@@ -8,7 +8,7 @@
 
 
 ("set-moto-durability" body(150) engine(100))
-("set-basic-armor"     ammo(10))
+("set-basic-armor"     armor(10))
 ("set-moto-thickness"  body(2) engine(3))
 
 ("set-body"                 repair(15))
