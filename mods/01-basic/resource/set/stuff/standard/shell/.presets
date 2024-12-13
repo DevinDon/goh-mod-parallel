@@ -1,159 +1,157 @@
-; standard mgun ammo define
-
-; args weight filler
+; args mass fill
 ; calibre <= 50mm
 ; Shell mass < 5 kg
-(define "set-he-level-1"
+(define "set-explosion-level-1"
   {damage blastwave
-    {energy (+ (/ %weight 3) (* 2 (+ %filler 0.05)))}
-    {area (* 0.5 (+ (/ %weight 10) (* 5 (+ %filler 0.25))))    (+ (/ %weight 10) (* 5 (+ %filler 0.25)))}
+    {energy (+ (/ %mass 50) (* 1 (+ %fill 0.2)))}
+    {area (* 0.5 (+ (/ %mass 10) (* 5 (+ %fill 0.25))))    (+ (/ %mass 10) (* 5 (+ %fill 0.25)))}
     {ground_interaction_radius 0.5}
   }
   {damage add blastwave
-    {energy (+ 1.1 (* 0.75 %filler))}
-    {area (+ (* %weight 0.25) (+ 1 (* 5 %filler)))       (+ (* %weight 0.5) (+ 4.5 (* 5 %filler))) }
+    {energy (+ 1.1 (* 0.75 %fill))}
+    {area (+ (* %mass 0.25) (+ 1 (* 5 %fill)))       (+ (* %mass 0.5) (+ 4.5 (* 5 %fill))) }
     {ground_interaction_radius 0}     ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
 )
 
-; args weight filler
+; args mass fill
 ; calibre <= 90mm
 ; Shell mass > 5kg and Fill mass < 1kg
-(define "set-he-level-2"
+(define "set-explosion-level-2"
   {damage blastwave
-    {energy (+ (/ %weight 5) (* 2 (+ %filler 0.25)))}
+    {energy (+ (/ %mass 50) (* 1 (+ %fill 0.5)))}
     {area 0.4 0.5}
     {ground_interaction_radius 0.5}
   }
   {damage add blastwave
-    {energy (+ 0.55 (- 1 (/ %filler %weight)))}
-    {area (+ (* %weight 0.25) (+ 2 (* 3 %filler)))      (+ (* %weight 0.5) (+ 3.5 (* 3 %filler)))}
+    {energy (+ 0.55 (- 1 (/ %fill %mass)))}
+    {area (+ (* %mass 0.25) (+ 2 (* 3 %fill)))      (+ (* %mass 0.5) (+ 3.5 (* 3 %fill)))}
     {ground_interaction_radius 0}     ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
 )
 
-; args weight filler
+; args mass fill
 ; calibre <= 122mm
 ; Shell mass 14 - 35kg and Fill mass 1 - 5kg
-(define "set-he-level-3"
+(define "set-explosion-level-3"
   {damage blastwave
-    {energy (+ (/ %weight 20) (+ 5 (* %filler 1)))}
+    {energy (+ (/ %mass 50) (* 1 (+ %fill 1.0)))}
     {area 0.5 1.00}
     {ground_interaction_radius 1.25}
   }
   {damage add blastwave
-    {energy (+ 2 (+ (/ %weight 20) (* 1 (- 1 (/ %filler %weight)))))}
-    {area (+ (* %weight 0.1) (+ 0 (* 0.1 %filler)))      (+ (* %weight 0.2) (+ 0 (* 0.1 %filler)))}
+    {energy (+ 2 (+ (/ %mass 20) (* 1 (- 1 (/ %fill %mass)))))}
+    {area (+ (* %mass 0.1) (+ 0 (* 0.1 %fill)))      (+ (* %mass 0.2) (+ 0 (* 0.1 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
   {damage add blastwave
-    {energy (+ 0.55 (- 1 (/ %filler %weight)))}
-    {area (+ (* %weight 0.1) (+ 5.5 (* 0.75 %filler)))      (+ (* %weight 0.11) (+ 9 (* 1 %filler)))}
+    {energy (+ 0.55 (- 1 (/ %fill %mass)))}
+    {area (+ (* %mass 0.1) (+ 5.5 (* 0.75 %fill)))      (+ (* %mass 0.11) (+ 9 (* 1 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
 )
 
-; args weight filler
+; args mass fill
 ; calibre <= 150mm
 ; Shell mass > 35kg and Fill mass 5 - 10kg
-(define "set-he-level-4"
+(define "set-explosion-level-4"
   {damage blastwave
-    {energy (+ (/ %weight 20) (+ 6 (* %filler 1)))}
+    {energy (+ (/ %mass 50) (* 1 (+ %fill 2.5)))}
     {area 1.1 2.2}
     {ground_interaction_radius 0.6}
   }
   {damage add blastwave
-    {energy (+ 2 (+ (/ %weight 20) (* 2 (- 1 (/ %filler %weight)))))}
-    {area (+ (* %weight 0.05) (+ 0 (* 0.5 %filler)))      (+ (* %weight 0.1) (+ 0 (* 0.75 %filler)))}
+    {energy (+ 2 (+ (/ %mass 20) (* 2 (- 1 (/ %fill %mass)))))}
+    {area (+ (* %mass 0.05) (+ 0 (* 0.5 %fill)))      (+ (* %mass 0.1) (+ 0 (* 0.75 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
   {damage add blastwave
-    {energy (+ 0.6 (- 1 (/ %filler %weight)))}
-    {area (+ (* %weight 0.1) (+ 5 (* 0.5 %filler)))      (+ (* %weight 0.15) (+ 6 (* 1.2 %filler)))}
+    {energy (+ 0.6 (- 1 (/ %fill %mass)))}
+    {area (+ (* %mass 0.1) (+ 5 (* 0.5 %fill)))      (+ (* %mass 0.15) (+ 6 (* 1.2 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
 )
 
-; args weight filler
+; args mass fill
 ; calibre <= 300mm
 ; Fill mass 10 - 25kg
-(define "set-he-level-5"
+(define "set-explosion-level-5"
   {damage blastwave
-    {energy (+ (/ %weight 25) (+ 10 (* %filler 0.3)))}
+    {energy (+ (/ %mass 50) (* 1 (+ %fill 5.0)))}
     {area 1.5 2.5}
     {ground_interaction_radius 0.8}
   }
   {damage add blastwave
-    {energy (+ 2.75 (+ (/ %weight 20) (* 1.5 (- 1 (/ %filler %weight)))))}
-    {area (+ (* %weight 0.03) (+ 2.25 (* 0.25 %filler)))    (+ (* %weight 0.04) (+ 5 (* 0.3 %filler)))}
+    {energy (+ 2.75 (+ (/ %mass 20) (* 1.5 (- 1 (/ %fill %mass)))))}
+    {area (+ (* %mass 0.03) (+ 2.25 (* 0.25 %fill)))    (+ (* %mass 0.04) (+ 5 (* 0.3 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
   {damage add blastwave
-    {energy (+ 0.6 (- 1 (/ %filler %weight)))}
-    {area (+ (* %weight 0.03) (+ 9 (* 0.25 %filler)))    (+ (* %weight 0.029) (+ 17 (* 0.26 %filler)))}
+    {energy (+ 0.6 (- 1 (/ %fill %mass)))}
+    {area (+ (* %mass 0.03) (+ 9 (* 0.25 %fill)))    (+ (* %mass 0.029) (+ 17 (* 0.26 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
 )
 
-; args weight filler
+; args mass fill
 ; calibre <= 500mm
 ; Fill mass 25 - 100kg
-(define "set-he-level-6"
+(define "set-explosion-level-6"
   {damage blastwave
-    {energy (* %filler 0.75)}
-    {area (+ 2 (/ %filler 100)) (+ 4 (/ %filler 50))}
+    {energy (* %fill 1)}
+    {area (+ 2 (/ %fill 100)) (+ 4 (/ %fill 50))}
     {ground_interaction_radius 0.8}
   }
   {damage add blastwave
-    {energy (+ (* %weight 0.005) (+ 7 (* 0.07 %filler)))}
-    {area (+ (* %weight 0.005) (+ 8 (* 0.055 %filler)))      (+ (* %weight 0.005) (+ 14 (* 0.05 %filler)))}
+    {energy (+ (* %mass 0.005) (+ 7 (* 0.07 %fill)))}
+    {area (+ (* %mass 0.005) (+ 8 (* 0.055 %fill)))      (+ (* %mass 0.005) (+ 14 (* 0.05 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
   {damage add blastwave
-    {energy (+ 0.7 (- 1 (/ %filler %weight)))}
-    {area (+ (* %weight 0.004) (+ 13 (* 0.104 %filler)))    (+ (* %weight 0.004) (+ 22 (* 0.11 %filler)))}
+    {energy (+ 0.7 (- 1 (/ %fill %mass)))}
+    {area (+ (* %mass 0.004) (+ 13 (* 0.104 %fill)))    (+ (* %mass 0.004) (+ 22 (* 0.11 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
 )
 
-; args weight filler
+; args mass fill
 ; calibre <= 800mm
 ; Fill mass 100kg +
-(define "set-he-level-7"
+(define "set-explosion-level-7"
   {damage blastwave
-    {energy (* %filler 0.65)}
-    {area (+ 2 (/ %filler 100)) (+ 4 (/ %filler 50))}
+    {energy (* %fill 1)}
+    {area (+ 2 (/ %fill 100)) (+ 4 (/ %fill 50))}
     {ground_interaction_radius 0.8}
   }
   {damage add blastwave
-    {energy (+ (* %weight 0.005) (+ 4 (* 0.085 %filler)))}
-    {area (+ (* %weight 0.005) (+ 5 (* 0.055 %filler)))      (+ (* %weight 0.005) (+ 14 (* 0.054 %filler)))}
+    {energy (+ (* %mass 0.005) (+ 4 (* 0.085 %fill)))}
+    {area (+ (* %mass 0.005) (+ 5 (* 0.055 %fill)))      (+ (* %mass 0.005) (+ 14 (* 0.054 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
   {damage add blastwave
-    {energy (+ 0.75 (- 1 (/ %filler %weight)))}
-    {area (+ (* %weight 0.005) (+ 11 (* 0.095 %filler)))    (+ (* %weight 0.005) (+ 20 (* 0.1 %filler)))}
+    {energy (+ 0.75 (- 1 (/ %fill %mass)))}
+    {area (+ (* %mass 0.005) (+ 11 (* 0.095 %fill)))    (+ (* %mass 0.005) (+ 20 (* 0.1 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
 )
 
-; args weight filler
+; args mass fill
 ; calibre <= 1000mm
 ; Fill mass 1000kg +
-(define "set-he-level-8"
+(define "set-explosion-level-8"
   {damage blastwave
-    {energy (* %filler 0.45)}
-    {area (+ 4 (/ %filler 100)) (+ 5 (/ %filler 50))}
+    {energy (* %fill 1)}
+    {area (+ 4 (/ %fill 100)) (+ 5 (/ %fill 50))}
     {ground_interaction_radius 0.8}
   }
   {damage add blastwave
-    {energy (+ (* %weight 0.005) (+ 5 (* 0.04 %filler)))}
-    {area (+ (* %weight 0.004) (+ 5 (* 0.025 %filler)))      (+ (* %weight 0.005) (+ 7 (* 0.054 %filler)))}
+    {energy (+ (* %mass 0.005) (+ 5 (* 0.04 %fill)))}
+    {area (+ (* %mass 0.004) (+ 5 (* 0.025 %fill)))      (+ (* %mass 0.005) (+ 7 (* 0.054 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
   {damage add blastwave
-    {energy (+ 0.55 (- 1 (/ %filler %weight)))}
-    {area (+ (* %weight 0.005) (+ 3 (* 0.075 %filler)))    (+ (* %weight 0.005) (+ 17 (* 0.06 %filler)))}
+    {energy (+ 0.55 (- 1 (/ %fill %mass)))}
+    {area (+ (* %mass 0.005) (+ 3 (* 0.075 %fill)))    (+ (* %mass 0.005) (+ 17 (* 0.06 %fill)))}
     {ground_interaction_radius 0}    ; value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
   }
 )

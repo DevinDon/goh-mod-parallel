@@ -1,5 +1,7 @@
 {from "pattern apcbche"
 
+  (include "/properties/standard/ammo/he.ext")
+
   {tag "shell size2 75to76_he_filler"}
 
   {inventory {size 4 1}}
@@ -10,7 +12,6 @@
     {tail "shell_tracer_75s_ap" "tail"}
   }
 
-  ("ap_blast" args 0.78)
-  ("he_level_2" weight(6.98) filler(0.091))
+  ("set-he-level-2" weight(6.98) filler(0.095))
 
 }
