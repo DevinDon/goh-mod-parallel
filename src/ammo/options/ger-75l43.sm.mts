@@ -7,7 +7,7 @@ const options: AmmoOptions = {
   entity: '75mm_ger_l24_sm',
   mass: 6.16,
   caliber: 75,
-  speed: 0,
+  speed: 520,
   view: {
     name: 'howitzer_shell_50-75',
     tail: 'shell_tracer_75-88_he_long',
