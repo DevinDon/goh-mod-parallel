@@ -97,7 +97,7 @@
   doctrine(ascension_inf_tank)
   cd(0)
   ci(30)
-  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:1 mp/inf/late/machine-gunner-1:2 mp/inf/late/machine-gunner-2:2 mp/inf/late/antiarmor-gunner-1:2 mp/inf/late/antiarmor-gunner-2:2)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:1 mp/inf/late/machine-gunner-1:3 mp/inf/late/machine-gunner-2:3 mp/inf/late/antiarmor-gunner-1:1 mp/inf/late/antiarmor-gunner-2:1)
   group(defence-platoon)
   button(inf1)
   tags()
