@@ -4,7 +4,7 @@
 {easy_a
   ("team_a")
   {balancingFactorBonus
-    {cp 0.9}
+    {cp 1.0}
     {mpStart 0.8}
     {mpFinish 1.0}
     {payback 0.8}
@@ -26,7 +26,7 @@
 {hard_a
   ("team_a")
   {balancingFactorBonus
-    {cp 1.2}
+    {cp 1.0}
     {mpStart 1.1}
     {mpFinish 1.1}
     {payback 1.2}
@@ -37,7 +37,7 @@
 {heroic_a
   ("team_a")
   {balancingFactorBonus
-    {cp 2.0}
+    {cp 1.0}
     {mpStart 2.0}
     {mpFinish 2.0}
     {payback 2.0}
@@ -53,7 +53,7 @@
 {easy_b
   ("team_b")
   {balancingFactorBonus
-    {cp 0.7}
+    {cp 1.0}
     {mpStart 1.0}
     {mpFinish 0.8}
     {payback 0.8}
@@ -64,7 +64,7 @@
 {normal_b
   ("team_b")
   {balancingFactorBonus
-    {cp 0.9}
+    {cp 1.0}
     {mpStart 1.0}
     {mpFinish 1.0}
     {payback 1.0}
@@ -75,7 +75,7 @@
 {hard_b
   ("team_b")
   {balancingFactorBonus
-    {cp 1.1}
+    {cp 1.0}
     {mpStart 1.0}
     {mpFinish 1.0}
     {payback 1.1}
@@ -86,7 +86,7 @@
 {heroic_b
   ("team_b")
   {balancingFactorBonus
-    {cp 2.0}
+    {cp 1.0}
     {mpStart 2.0}
     {mpFinish 2.0}
     {payback 1.5}
