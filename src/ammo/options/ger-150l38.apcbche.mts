@@ -8,7 +8,7 @@ const options: AmmoOptions = {
   mass: 49.2,
   fill: 0.784,
   caliber: 150,
-  speed: 0,
+  speed: 975,
   view: {
     name: 'howitzer_shell_105-150',
     tail: 'shell_tracer_128_ap',
