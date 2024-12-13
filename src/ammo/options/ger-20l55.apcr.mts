@@ -7,7 +7,7 @@ const options: AmmoOptions = {
   entity: '20mm_ger_auto_apcr',
   mass: 0.275,
   caliber: 20,
-  speed: 0,
+  speed: 1050,
   view: {
     name: 'howitzer_shell_dummy',
     tail: 'shell_tracer_20_apcr',

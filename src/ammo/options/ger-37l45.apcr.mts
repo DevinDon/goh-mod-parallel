@@ -7,7 +7,7 @@ const options: AmmoOptions = {
   entity: '37mm_ger_apcr',
   mass: 0.95,
   caliber: 37,
-  speed: 0,
+  speed: 1020,
   view: {
     name: 'howitzer_shell_37-50',
     tail: 'shell_tracer_37_apcr',

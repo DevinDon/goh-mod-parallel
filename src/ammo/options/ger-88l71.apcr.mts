@@ -7,7 +7,7 @@ const options: AmmoOptions = {
   entity: '88mm_ger_l56_apcr',
   mass: 17.96,
   caliber: 88,
-  speed: 0,
+  speed: 1130,
   view: {
     name: 'howitzer_shell_88-100',
     tail: 'shell_tracer_88_apcr',

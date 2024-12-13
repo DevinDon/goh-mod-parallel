@@ -8,7 +8,7 @@ const options: AmmoOptions = {
   mass: 2170,
   fill: 666,
   caliber: 600,
-  speed: 0,
+  speed: 200,
   view: {
     name: '600mm_ger_he',
     tail: 'shell_tracer_600',
