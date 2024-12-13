@@ -22,7 +22,7 @@ const options: WeaponOptions = {
 
   ammo: 'inf-infantry-rocket-launcher-ammo he',
   amout: 1,
-  calibre: 100,
+  caliber: 100,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,

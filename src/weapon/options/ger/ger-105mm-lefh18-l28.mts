@@ -17,7 +17,7 @@ const options: WeaponOptions = {
 
   ammo: 'ger-105l28',
   amout: 1,
-  calibre: 105,
+  caliber: 105,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,

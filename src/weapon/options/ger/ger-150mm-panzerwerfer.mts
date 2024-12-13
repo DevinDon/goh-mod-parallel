@@ -20,7 +20,7 @@ const options: WeaponOptions = {
 
   ammo: 'ger-150mm-nebelwerfer he',
   amout: 1,
-  calibre: 150,
+  caliber: 150,
   syncedProjectiles: true,
   curved: true,
 

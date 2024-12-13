@@ -22,7 +22,7 @@ const options: WeaponOptions = {
 
   ammo: 'usa-hmgun api',
   amout: 400,
-  calibre: 12.7,
+  caliber: 12.7,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,

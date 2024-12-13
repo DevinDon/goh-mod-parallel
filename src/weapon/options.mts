@@ -139,7 +139,7 @@ export type WeaponOptions = {
   /** 弹链内炮弹数量 */
   amout: number;
   /** 口径 mm */
-  calibre: number;
+  caliber: number;
   /** 是否生成弹坑 */
   syncedProjectiles: boolean;
 

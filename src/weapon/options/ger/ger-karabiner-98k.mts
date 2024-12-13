@@ -22,7 +22,7 @@ const options: WeaponOptions = {
 
   ammo: 'ger-rifle clip',
   amout: 5,
-  calibre: 7.92,
+  caliber: 7.92,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,

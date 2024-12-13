@@ -20,7 +20,7 @@ const options: WeaponOptions = {
 
   ammo: 'ger-panzershreck heat',
   amout: 1,
-  calibre: 88,
+  caliber: 88,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,

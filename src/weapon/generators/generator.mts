@@ -61,7 +61,7 @@ export const generateWeapon = (options: WeaponOptions) => {
   {CrosshairReloading "${options.crosshairReloading ?? 'crosshair_tank_reload'}"} ; 直接操控模式下的第三人称装填图标
 
   {Filling "ammo ${options.ammo}" ${options.amout}} ; 弹种及弹链内炮弹数量
-  {Calibre ${options.calibre}} ; 口径
+  {Calibre ${options.caliber}} ; 口径
   {SyncedProjectiles ${options.syncedProjectiles === true ? 1 : 0}} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
 

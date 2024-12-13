@@ -22,7 +22,7 @@ const options: WeaponOptions = {
 
   ammo: 'ger-stg44 magazine',
   amout: 30,
-  calibre: 7.92,
+  caliber: 7.92,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,

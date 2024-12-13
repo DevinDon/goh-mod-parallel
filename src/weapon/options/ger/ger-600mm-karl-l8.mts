@@ -17,7 +17,7 @@ const options: WeaponOptions = {
 
   ammo: 'ger-600l8',
   amout: 1,
-  calibre: 600,
+  caliber: 600,
   syncedProjectiles: true,
   curved: true,
 

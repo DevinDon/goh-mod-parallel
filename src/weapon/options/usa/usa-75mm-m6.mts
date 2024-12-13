@@ -17,7 +17,7 @@ const options: WeaponOptions = {
 
   ammo: 'usa-75x350',
   amout: 1,
-  calibre: 75,
+  caliber: 75,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,

@@ -22,7 +22,7 @@ const options: WeaponOptions = {
 
   ammo: 'ger-fuel ic',
   amout: 500,
-  calibre: 14,
+  caliber: 14,
   syncedProjectiles: false,
 
   aimingTolerance: 3,

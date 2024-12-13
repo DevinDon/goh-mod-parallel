@@ -22,7 +22,7 @@ const options: WeaponOptions = {
 
   ammo: 'inf-15mm-chain',
   amout: 90,
-  calibre: 15,
+  caliber: 15,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,

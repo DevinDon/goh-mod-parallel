@@ -17,7 +17,7 @@ const options: WeaponOptions = {
 
   ammo: 'usa-90x600',
   amout: 1,
-  calibre: 90,
+  caliber: 90,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,

@@ -22,7 +22,7 @@ const options: WeaponOptions = {
 
   ammo: 'ger-panzerfaust-100 heat',
   amout: 1,
-  calibre: 149,
+  caliber: 149,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,

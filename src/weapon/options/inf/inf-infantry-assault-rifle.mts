@@ -22,7 +22,7 @@ const options: WeaponOptions = {
 
   ammo: 'inf-5mm-magazine',
   amout: 30,
-  calibre: 5,
+  caliber: 5,
   syncedProjectiles: true,
 
   aimingTolerance: 0.05,
