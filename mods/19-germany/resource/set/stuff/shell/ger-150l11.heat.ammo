@@ -6,7 +6,7 @@
     {tail "shell_tracer_150_heat" "tail"}
   }
   {inventory
-    {weight 24.84}
+    {weight 212}
     {size 8 3}
     {block 1}
   }

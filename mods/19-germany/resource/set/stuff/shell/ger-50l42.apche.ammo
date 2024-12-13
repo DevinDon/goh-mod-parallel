@@ -6,7 +6,7 @@
     {tail "shell_tracer_50s_ap" "tail"}
   }
   {inventory
-    {weight 3.71}
+    {weight 9}
     {size 4 1}
     {block 1}
   }
