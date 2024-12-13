@@ -52,6 +52,7 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
       (extra && extra.length > 0) ? ilines(2, ...extra) : '; 无附加内容',
     ),
     '}',
+    '',
   );
 
 };
