@@ -1,5 +1,7 @@
 {from "pattern apche"
 
+  (include "/properties/standard/ammo/he.ext")
+
   {tag "shell size1 50to57_he_filler"}
 
   {inventory {size 5 1}}
@@ -10,7 +12,6 @@
     {tail "shell_tracer_50l_ap" "tail"}
   }
 
-  ("ap_blast" args 0.4)
-  ("he_level_1" weight(3.49) filler(0.031))
+  ("set-he-level-1" weight(3.49) filler(0.09))
 
 }

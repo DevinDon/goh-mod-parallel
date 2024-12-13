@@ -1,5 +1,7 @@
 {from "pattern heat"
 
+  (include "/properties/standard/ammo/he.ext")
+
   {tag "shell size3 size3_heat_shell steilgr heat_low"}
 
   {inventory {size 4 1}}
@@ -8,6 +10,6 @@
 
   {view "50mm_ger_l60_heat"}
 
-  ("he_level_2" weight(8.6) filler(0.177))
+  ("set-he-level-1" weight(3.05) filler(0.15))
 
 }

@@ -1,5 +1,7 @@
 {from "pattern aphe"
 
+  (include "/properties/standard/ammo/he.ext")
+
   {tag "20to25 zenite auto size1 bullet_fx"}
 
   {inventory
@@ -14,21 +16,6 @@
     {tail "shell_tracer_20_ap" "tail"}
   }
 
-  ; define he_level_1
-  ; Shell mass < 5 kg
-  (define "set-he-level-1" ; "he_small_blast"
-    {damage blastwave
-      {energy (+ (/ %weight 2.5) (+ 1.2 %filler))}
-      {area (* 0.5 (+ (/ %weight 10) (* 5 (+ %filler 0.25))))    (+ (/ %weight 10) (* 5 (+ %filler 0.25)))}
-      {ground_interaction_radius 0.5}
-    }
-    {damage add blastwave
-      {energy (+ 1.2 (* 0.75 %filler))}
-      {area (+ (* %weight 0.25) (+ 1 (* 5 %filler)))       (+ (* %weight 0.5) (+ 4.5 (* 5 %filler))) }
-      {ground_interaction_radius 0}     ;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
-    }
-  )
-
-  ("set-he-level-1" weight(0.32) filler(0.05))
+  ("set-he-level-1" weight(0.32) filler(0.01))
 
 }

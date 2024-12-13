@@ -1,5 +1,7 @@
 {from "pattern he"
 
+  (include "/properties/standard/ammo/he.ext")
+
   {tag "37to40 no_throw size2 auto"}
 
   {inventory
@@ -14,6 +16,6 @@
     {tail "shell_tracer_37_he" "tail"}
   }
 
-  ("he_level_1" weight(0.7) filler(0.04))
+  ("set-he-level-1" weight(1.5) filler(0.14))
 
 }

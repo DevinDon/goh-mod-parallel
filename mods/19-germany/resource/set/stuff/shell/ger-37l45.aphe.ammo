@@ -1,5 +1,7 @@
 {from "pattern aphe"
 
+  (include "/properties/standard/ammo/he.ext")
+
   {tag "shell size1 37to47_he_filler"}
 
   {inventory {size 3 1}}
@@ -12,5 +14,7 @@
 
   ("ap_blast" args 0.27)
   ("he_level_1" weight(1.31) filler(0.027))
+
+  ("set-he-level-1" weight(1.31) filler(0.06))
 
 }
