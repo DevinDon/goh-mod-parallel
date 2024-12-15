@@ -59,7 +59,7 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
 
   /** 动能破片伤害 */
   const kineticFragmentEnergy = kineticContactEnergy > 1
-    ? Math.pow(kineticContactEnergy, 1 / 1.5) / 1.5
+    ? Math.pow(kineticContactEnergy, 1 / 1.5) / 1.25
     : Math.pow(kineticContactEnergy, 1.5);
 
   /** 动能冲击波伤害 */
@@ -72,7 +72,7 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
 
   /** 爆炸破片伤害 */
   const explosiveFragmentEnergy = explosiveContactEnergy > 1
-    ? Math.pow(explosiveContactEnergy, 1 / 1.5) / 1.5
+    ? Math.pow(explosiveContactEnergy, 1 / 1.5) / 1.25
     : Math.pow(explosiveContactEnergy, 1.5);
 
   /** 爆炸冲击波伤害 */
@@ -101,12 +101,12 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
   return ilines(
     '{damage blastwave',
     `  {energy ${toFixed(contactEnergy)}} ; 接触伤害`,
-    `  {area ${toFixed(contactRadius / 3)} ${toFixed(contactRadius)}} ; 有效杀伤半径，极限杀伤半径`,
+    `  {area ${toFixed(contactRadius / 1)} ${toFixed(contactRadius)}} ; 有效杀伤半径，极限杀伤半径`,
     `  {ground_interaction_radius ${toFixed(contactRadius)}} ; 弹坑效果半径`,
     '}',
     '{damage add blastwave',
     `  {energy ${toFixed(fragmentEnergy)}} ; 破片伤害`,
-    `  {area ${toFixed(fragmentRadius / 3)} ${toFixed(fragmentRadius)}} ; 有效杀伤半径，极限杀伤半径`,
+    `  {area ${toFixed(fragmentRadius / 2)} ${toFixed(fragmentRadius)}} ; 有效杀伤半径，极限杀伤半径`,
     '  {ground_interaction_radius 0} ; 弹坑效果半径',
     '}',
     '{damage add blastwave',
