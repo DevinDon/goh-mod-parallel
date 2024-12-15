@@ -1,5 +1,4 @@
 ; crew and passenger
-
 ; set visors
 {Sensor
   ; visor main
@@ -33,7 +32,6 @@
     {Vision "standard-vehicle-vision-around"}
   }
 }
-
 ; set animations
 {Boarder
   ; animation driver
@@ -89,7 +87,6 @@
     }
   }
 }
-
 ; set crews
 ; crew commander
 {Placer
@@ -98,7 +95,7 @@
     ; no bone
     {turnoff {shadow} {sensor}}
     {visor "standard-visor-commander"}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -114,7 +111,7 @@
     ; no bone
     {turnoff {shadow} {sensor}}
     {visor "standard-visor-driver"}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -132,7 +129,7 @@
     ; no bone
     {turnoff {shadow} {sensor}}
     {visor "standard-visor-gunner"}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -148,7 +145,7 @@
     ; no bone
     {turnoff {shadow} {sensor}}
     {visor "standard-visor-driver"}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -164,7 +161,7 @@
     ; no bone
     {turnoff {shadow} {sensor}}
     {visor "standard-visor-none"}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -173,7 +170,6 @@
   {door "emit2"}
   {link "emit2" "charger" {anm "right"} {forward putoff} {reverse puton}}
 }
-
 ; set passengers
 ; passenger passenger01
 {Placer
@@ -181,7 +177,7 @@
     {group "passenger"}
     {linkbone "seat01"}
     ; no turnoff
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -194,7 +190,7 @@
     {group "passenger"}
     {linkbone "seat02"}
     ; no turnoff
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -207,7 +203,7 @@
     {group "passenger"}
     {linkbone "seat03"}
     ; no turnoff
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -220,13 +216,12 @@
     {group "passenger"}
     {linkbone "seat04"}
     ; no turnoff
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
   {door "emit6"}
   {link "emit6" "passenger04" {anm "armor"} {forward putoff} {reverse puton}}
 }
-
 ; set extra
-; no extra
+; 无附加内容

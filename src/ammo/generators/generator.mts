@@ -13,7 +13,7 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
 
   const massLine = `{mass ${mass}} ; 质量`;
 
-  const viewLine = view.tail
+  const viewLines = view.tail
     ? i0lines(
       `{view "${view.name}"`,
       `  {tail "${view.tail}" "tail"}`,
@@ -39,19 +39,21 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
   );
 
   // 计算爆炸冲击波伤害
-  const blastwave = generateBlastwave({ type, caliber, speed, mass, fill });
+  const blastwaveLines = generateBlastwave({ type, caliber, speed, mass, fill });
+
+  const extraLines = extra?.length
+    ? i0lines(...extra)
+    : '; 无附加内容';
 
   return i0lines(
     `{from "pattern ${type}"`,
-    i2lines(
-      tagLine,
-      entityLine,
-      massLine,
-      viewLine,
-      inventoryLines,
-      blastwave,
-      (extra && extra.length > 0) ? i2lines(...extra) : '; 无附加内容',
-    ),
+    `  ${tagLine}`,
+    `  ${entityLine}`,
+    `  ${massLine}`,
+    `  ${i2lines(viewLines)}`,
+    `  ${i2lines(inventoryLines)}`,
+    `  ${i2lines(blastwaveLines)}`,
+    `  ${i2lines(extraLines)}`,
     '}',
     '',
   );

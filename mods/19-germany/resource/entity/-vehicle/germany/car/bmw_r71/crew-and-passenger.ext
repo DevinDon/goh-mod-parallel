@@ -1,5 +1,4 @@
 ; crew and passenger
-
 ; set visors
 {Sensor
   ; visor main
@@ -18,7 +17,6 @@
     {Vision "standard-vision-none"}
   }
 }
-
 ; set animations
 {Boarder
   ; animation driver
@@ -61,7 +59,6 @@
     }
   }
 }
-
 ; set crews
 ; crew driver
 {Placer
@@ -70,7 +67,7 @@
     {linkbone "driver"}
     ; no turnoff
     {visor "standard-visor-none"}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -84,14 +81,13 @@
     {linkbone "gunner"}
     ; no turnoff
     {visor "standard-visor-none"}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
   {door "emit2"}
   {link "emit2" "gunner" {anm "gunner"} {forward putoff} {reverse puton}}
 }
-
 ; set passengers
 ; passenger passenger
 {Placer
@@ -99,13 +95,12 @@
     {group "passenger"}
     {linkbone "seat1"}
     ; no turnoff
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
   {door "emit3"}
   {link "emit3" "passenger" {anm "passenger"} {forward putoff} {reverse puton}}
 }
-
 ; set extra
-; no extra
+; 无附加内容

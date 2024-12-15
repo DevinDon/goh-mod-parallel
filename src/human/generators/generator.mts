@@ -21,66 +21,55 @@ export const generateHuman = ({
     ? `{tags ${tags.map(tag => `"${tag}"`).join(' ')}} ; 标签`
     : '; 无标签';
 
-  const armorsLinesRaw = (armors?.head || armors?.body)
-    ? `{armors ; 防护装置
-  ${armors?.head ? `{head ${armors.head}}` : '; 无防弹头盔'}
-  ${armors?.body ? `{body ${armors.body}}` : '; 无防弹衣'}
-}`
+  const armorsLines = (armors?.head || armors?.body)
+    ? i0lines(
+      '{armors ; 防护装置',
+      `  ${armors?.head ? `{head ${armors.head}}` : '; 无防弹头盔'}`,
+      `  ${armors?.body ? `{body ${armors.body}}` : '; 无防弹衣'}`,
+      '}',
+    )
     : '; 无防护装置';
-  const armorsLines = i0lines(armorsLinesRaw);
 
-  const perksLinesRaw = perks?.length
-    ? perks.map(perk => `("${perk}")`).join('\n')
+  const perksLines = perks?.length
+    ? i0lines(...perks.map(perk => `("${perk}")`))
     : '; 无能力配置';
-  const perksLines = i0lines(perksLinesRaw);
 
-  const veterancyLinesRaw = veterancy?.length
-    ? veterancy.map(item => `("${item}")`).join('\n')
+  const veterancyLines = veterancy?.length
+    ? i0lines(...veterancy.map(item => `("${item}")`))
     : '; 无经验配置';
-  const veterancyLines = i0lines(veterancyLinesRaw);
 
-  const inventoryLinesRaw = inventory?.length
-    ? inventory.join('\n')
+  const inventoryLines = inventory?.length
+    ? i0lines(...inventory)
     : '; 无背包物品配置';
-  const inventoryLines = i0lines(inventoryLinesRaw);
 
-  const extraLinesRaw = extra?.length
-    ? extra.join('\n')
+  const extraLines = extra?.length
+    ? i0lines(...extra)
     : '; 无额外配置';
-  const extraLines = i0lines(extraLinesRaw);
 
   return i0lines(
     '; 人员配置',
     '{breed',
-    i2lines(
-      tagsLine,
-      `{behaviour ${behaviour}} ; 行为类别`,
-      `{skin "${skin}"} ; 外观`,
-      `{portrait "${portrait}"} ; 肖像`,
-      `{icon "${icon}"} ; 图标`,
-      `{icon_priority ${iconPriority}} ; 图标优先级`,
-      `{nationality ${nationality}} ; 国籍`,
-      armorsLines,
-      '{perks ; 能力',
-      i2lines(
-        '(include "ability.inc")',
-        `${perksLines}`,
-      ),
-      '}',
-      '{veterancy ; 体力',
-      i2lines(
-        '(include "ability.inc")',
-        `${veterancyLines}`,
-      ),
-      '}',
-      '{inventory ; 背包',
-      i2lines(
-        `${inventoryLines}`,
-        '{in_hands 0}',
-      ),
-      '}',
-      extraLines,
-    ),
+    `  ${i2lines(tagsLine)}`,
+    `  {behaviour ${behaviour}} ; 行为类别`,
+    `  {skin "${skin}"} ; 外观`,
+    `  {portrait "${portrait}"} ; 肖像`,
+    `  {icon "${icon}"} ; 图标`,
+    `  {icon_priority ${iconPriority}} ; 图标优先级`,
+    `  {nationality ${nationality}} ; 国籍`,
+    `  ${i2lines(armorsLines)}`,
+    '  {perks ; 能力',
+    '    (include "ability.inc")',
+    `    ${i2lines(i2lines(perksLines))}`,
+    '  }',
+    '  {veterancy ; 体力',
+    '    (include "ability.inc")',
+    `    ${i2lines(i2lines(veterancyLines))}`,
+    '  }',
+    '  {inventory ; 背包',
+    `    ${i2lines(i2lines(inventoryLines))}`,
+    '    {in_hands 0}',
+    '  }',
+    `  ${i2lines(extraLines)}`,
     '}',
     '',
   );

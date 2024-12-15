@@ -1,28 +1,21 @@
 ; ger-280mm-w40
 ; 德国 28cm Wurfrahmen 40 火箭发射器
 {from "pattern standard-reactive"
-
   (include "/properties/standard/gun/define.ext")
-
   {Tag "gun"} ; 标签
-
   ; 无模型
   ; 无重量
-
   {FireSound "reactive/nebel_burst/"} ; 开火音效
   {FireSoundclose "reactive/nebel_burst/"} ; 车内视角开火音效
   {ReloadSound "tank/reload_howitzer"} ; 装弹音效
-
   {Cursor "ironsights/tank"} ; 即时战略模式下的瞄准图标
   {CursorReloading "gun_he"} ; 即时战略模式下的装填图标
   {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
   {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
-
   {Filling "ammo ger-280mm-nebelwerfer he" 1} ; 弹种及弹链内炮弹数量
   {Calibre 280} ; 口径
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
-
   {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance 0.5} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
@@ -31,15 +24,11 @@
   {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
   {DisableRicochet 0} ; 是否禁用跳弹模式
   {Aimtype curved} ; 曲射模式
-
   {RechargeTime 30} ; 装填时间（秒）
   {RecoveryTime 1.67} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
-
   ; 无连发模式
-
   ; 非自动武器
-
   {Parameters "he"
     {CursorReloading "gun_he"} ; 装填图标
     {MinRange 25} ; 最短射击距离 m
@@ -60,7 +49,5 @@
     ; 无穿深修正表配置
     ; 无防空炮配置
   }
-
   ; 无额外配置
-
 }

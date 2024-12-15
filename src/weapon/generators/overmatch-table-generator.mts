@@ -1,5 +1,5 @@
 import { logger } from '@pipers/logger';
-import { setIndent } from '../../utils/set-indent.mjs';
+import { i0lines, i2lines } from '../../utils/set-indent.mjs';
 import { ger105mmOvermatchTables } from './overmatch-tables/ger-105mm.mjs';
 import { ger128mmOvermatchTables } from './overmatch-tables/ger-128mm.mjs';
 import { ger20mmOvermatchTables } from './overmatch-tables/ger-20mm.mjs';
@@ -33,11 +33,11 @@ export const generateOvermatchTable = (name: string) => {
     .map(
       ({ range, values }) => `{${range.toString().padEnd(2)} ${values.map(value => value.toFixed(4).slice(0, 6)).join(' ')}}`,
     );
-  const parameters = setIndent(
-    lines.join('\n'),
-    { indent: 2, indentFirstLine: true },
+  return i0lines(
+    `{${table.type}`,
+    `  ${i2lines(...lines)}`,
+    '}',
   );
-  return `{${table.type}\n${parameters}\n}`;
 };
 
 /** 倾斜入射修正表 */

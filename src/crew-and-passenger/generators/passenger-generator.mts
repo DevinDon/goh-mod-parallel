@@ -14,7 +14,7 @@ export const generatePassenger = ({ name, animations, bone, turnoff, extra }: Pa
 
   const extraLines = extra?.length
     ? i0lines(...extra)
-    : '; no extra';
+    : '; 无附加内容';
 
   const animationLines = i0lines(
     ...animations.map(
@@ -28,19 +28,15 @@ export const generatePassenger = ({ name, animations, bone, turnoff, extra }: Pa
   return i0lines(
     `; passenger ${name}`,
     '{Placer',
-    i2lines(
-      `{Place "${name}"`,
-      i2lines(
-        '{group "passenger"}',
-        boneLine,
-        turnoffLine,
-        extraLines,
-      ),
-      '}',
-    ),
+    `  {Place "${name}"`,
+    '    {group "passenger"}',
+    `    ${i2lines(i2lines(boneLine))}`,
+    `    ${i2lines(i2lines(turnoffLine))}`,
+    `    ${i2lines(i2lines(extraLines))}`,
+    '  }',
     '}',
     '{Boarder',
-    i2lines(animationLines),
+    `  ${i2lines(animationLines)}`,
     '}',
   );
 

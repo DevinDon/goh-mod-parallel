@@ -19,11 +19,9 @@ export const generateAnimation = ({ name, forward, reverse }: AnimationOptions) 
   const forwardLines = forward
     ? i0lines(
       '{forward',
-      i2lines(
-        forwardBaseLine,
-        forwardBeginLine,
-        forwardEndLine,
-      ),
+      `  ${forwardBaseLine}`,
+      `  ${forwardBeginLine}`,
+      `  ${forwardEndLine}`,
       '}',
     )
     : '; no forward animation';
@@ -43,11 +41,9 @@ export const generateAnimation = ({ name, forward, reverse }: AnimationOptions) 
   const reverseLines = reverse
     ? i0lines(
       '{reverse',
-      i2lines(
-        reverseBaseLine,
-        reverseBeginLine,
-        reverseEndLine,
-      ),
+      `  ${reverseBaseLine}`,
+      `  ${reverseBeginLine}`,
+      `  ${reverseEndLine}`,
       '}',
     )
     : '; no reverse animation';
@@ -55,10 +51,8 @@ export const generateAnimation = ({ name, forward, reverse }: AnimationOptions) 
   return i0lines(
     `; animation ${name}`,
     `{Anm "${name}"`,
-    i2lines(
-      forwardLines,
-      reverseLines,
-    ),
+    `  ${i2lines(forwardLines)}`,
+    `  ${i2lines(reverseLines)}`,
     '}',
   );
 

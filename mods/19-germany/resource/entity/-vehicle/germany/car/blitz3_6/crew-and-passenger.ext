@@ -1,5 +1,4 @@
 ; crew and passenger
-
 ; set visors
 {Sensor
   ; visor main
@@ -18,7 +17,6 @@
     {Vision "standard-vision-none"}
   }
 }
-
 ; set animations
 {Boarder
   ; animation driver
@@ -61,7 +59,6 @@
     }
   }
 }
-
 ; set crews
 ; crew driver
 {Placer
@@ -70,14 +67,13 @@
     {linkbone "driver"}
     ; no turnoff
     {visor "standard-visor-none"}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
   {door "emit1"}
   {link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
 }
-
 ; set passengers
 ; passenger leader
 {Placer
@@ -85,7 +81,7 @@
     {group "passenger"}
     {linkbone "commander"}
     ; no turnoff
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -98,7 +94,7 @@
     {group "passenger"}
     {linkbone "seat01"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -111,7 +107,7 @@
     {group "passenger"}
     {linkbone "seat02"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -124,7 +120,7 @@
     {group "passenger"}
     {linkbone "seat03"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -137,7 +133,7 @@
     {group "passenger"}
     {linkbone "seat04"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -150,7 +146,7 @@
     {group "passenger"}
     {linkbone "seat05"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -163,7 +159,7 @@
     {group "passenger"}
     {linkbone "seat06"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -176,7 +172,7 @@
     {group "passenger"}
     {linkbone "seat07"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -189,7 +185,7 @@
     {group "passenger"}
     {linkbone "seat08"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -202,7 +198,7 @@
     {group "passenger"}
     {linkbone "seat09"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -215,7 +211,7 @@
     {group "passenger"}
     {linkbone "seat10"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -228,7 +224,7 @@
     {group "passenger"}
     {linkbone "seat11"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -241,13 +237,12 @@
     {group "passenger"}
     {linkbone "seat12"}
     {turnoff {shadow} {sensor}}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
   {door "emit4"}
   {link "emit4" "passenger12" {anm "passenger"} {forward putoff} {reverse puton}}
 }
-
 ; set extra
-; no extra
+; 无附加内容

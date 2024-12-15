@@ -75,7 +75,7 @@ const want = `; crew and passenger
     {linkbone "driver"}
     ; no turnoff
     {visor "standard-visor-none"}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -89,7 +89,7 @@ const want = `; crew and passenger
     {linkbone "gunner"}
     ; no turnoff
     {visor "standard-visor-none"}
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -104,7 +104,7 @@ const want = `; crew and passenger
     {group "passenger"}
     {linkbone "seat1"}
     ; no turnoff
-    ; no extra
+    ; 无附加内容
   }
 }
 {Boarder
@@ -113,7 +113,7 @@ const want = `; crew and passenger
 }
 
 ; set extra
-; no extra
+; 无附加内容
 `;
 
 it('generate crew and passenger', () => {

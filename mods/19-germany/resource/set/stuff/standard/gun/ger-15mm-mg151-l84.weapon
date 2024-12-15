@@ -1,28 +1,21 @@
 ; ger-15mm-mg151-l84
 ; 德国 1.5cm MG 151 L/55 机炮
 {from "pattern standard-gun"
-
   (include "/properties/standard/gun/define.ext")
-
   ; 无标签
-
   ; 无模型
   {Mass 38.10}
-
   {FireSound "cannon/s1/d1/Shared/Autocannon_20to30mm/"} ; 开火音效
   {FireSoundclose "cannon/s1/1p/Shared/Autocannon_20to30mm/"} ; 车内视角开火音效
   {ReloadSound "interior/large/auto_reload_interior"} ; 装弹音效
-
   {Cursor "ironsights/aa"} ; 即时战略模式下的瞄准图标
   {CursorReloading "carbine_reload"} ; 即时战略模式下的装填图标
   {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
   {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
-
   {Filling "ammo ger-15l84" 150} ; 弹种及弹链内炮弹数量
   {Calibre 15} ; 口径
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
-
   {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance 3} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
@@ -31,19 +24,15 @@
   {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
   {DisableRicochet 0} ; 是否禁用跳弹模式
   ; 不启用曲射模式
-
   {RechargeTime 8} ; 装填时间（秒）
   {RecoveryTime 0.09} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
-
   {Burst
     {Short 10 2} ; 远距离短连发，基数 +- 随机数
     {Long  5 1} ; 近距离长连发，基数 +- 随机数
     {RangeKoef 0.45} ; 该系数乘以 AimRange = 分界距离，大于分界距离为远距离，小于分界距离为近距离
   }
-
   {Automatic} ; 自动武器
-
   {Parameters "aphe"
     {CursorReloading "gun_aphe"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
@@ -77,7 +66,5 @@
     }
     ; 无防空炮配置
   }
-
   ; 无额外配置
-
 }

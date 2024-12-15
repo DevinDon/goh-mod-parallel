@@ -1,28 +1,21 @@
 ; ger-karabiner-98k-sniper
 ; 德国 Karabiner 98k 栓动狙击步枪
 {from "pattern standard-sniper"
-
   (include "/properties/standard/gun/define.ext")
-
   {Tag "bolt_action"} ; 标签
-
   {Entity "k98_scope"}
   {Mass 3.90}
-
   {FireSound "smallarms/s3/d1/GER/K98k/"} ; 开火音效
   {FireSoundclose "smallarms/s3/3p/GER/K98k/"} ; 车内视角开火音效
   {ReloadSound "weapon_reload_loose_rifle_cartridges"} ; 装弹音效
-
   {Cursor "ironsights/rifle"} ; 即时战略模式下的瞄准图标
   {CursorReloading "carbine_reload"} ; 即时战略模式下的装填图标
   {Crosshair "crosshair_tank"} ; 直接操控模式下的第三人称瞄准图标
   {CrosshairReloading "crosshair_tank_reload"} ; 直接操控模式下的第三人称装填图标
-
   {Filling "ammo ger-sniper clip" 5} ; 弹种及弹链内炮弹数量
   {Calibre 7.92} ; 口径
   {SyncedProjectiles 1} ; 生成弹坑, 0 为禁止, 1 为允许
   {Preloaded}
-
   {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略
   {UnlimitedRangeTPC 1} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止
   {AimingTolerance 0.1} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火
@@ -31,15 +24,11 @@
   {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
   {DisableRicochet 0} ; 是否禁用跳弹模式
   ; 不启用曲射模式
-
   {RechargeTime 4} ; 装填时间（秒）
   {RecoveryTime 1.20} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
-
   ; 无连发模式
-
   ; 非自动武器
-
   {Parameters "clip"
     {CursorReloading "carbine_reload"} ; 装填图标
     {MinRange 0} ; 最短射击距离 m
@@ -75,7 +64,6 @@
     }
     ; 无防空炮配置
   }
-
   ; 第三人称配置
   {Thirdpersonparams inherit "human default"
     {level 1
@@ -83,7 +71,6 @@
       {distance 35}  ; activation distance
       {delta 20}
       {linkBone "head"}
-
       {zoom}
       {vision_modes_active}
       {vignette_recoil 2.75 1.1} ; speed, scale
@@ -92,7 +79,6 @@
       {blur_strength 10}
       {mouse_speed_factor 0.6}
       {ManualAccuracyZoom}
-
       {camera "human_zoom8"} ; magnification x8
       {scope_vignette "/texture/common/environment/lens_effects/zoom_vignette_scope_ger_k98"}
       {blur_mask "/texture/common/environment/lens_effects/zoom_vignette_scope_01_mask"}
@@ -114,6 +100,4 @@
       {aimer_type "sniper"}
     }
   }
-
-
 }
