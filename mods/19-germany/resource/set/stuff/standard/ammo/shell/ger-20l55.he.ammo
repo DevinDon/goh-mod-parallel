@@ -11,19 +11,19 @@
     {block 10}
   }
   {damage blastwave
-    {energy 0.86} ; 接触伤害
-    {area 0 0.2} ; 衰减影响半径，极限影响半径
-    {ground_interaction_radius 0.2} ; 弹坑效果半径
+    {energy 1.47} ; 接触伤害
+    {area 0.05 0.55} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0.55} ; 弹坑效果半径
   }
   {damage add blastwave
-    {energy 0.48} ; 破片伤害
-    {area 0 2.26} ; 衰减影响半径，极限影响半径
+    {energy 1.28} ; 破片伤害
+    {area 0.43 4.29} ; 衰减影响半径，极限影响半径
     {ground_interaction_radius 0} ; 弹坑效果半径
   }
   {damage add blastwave
-    {energy 0.34} ; 冲击波伤害
-    {area 0 3.81} ; 衰减影响半径，极限影响半径
-    {ground_interaction_radius 0.02} ; 弹坑效果半径
+    {energy 0.60} ; 冲击波伤害
+    {area 0.42 4.18} ; 衰减影响半径，极限影响半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
   }
   ; 无附加内容
 }
