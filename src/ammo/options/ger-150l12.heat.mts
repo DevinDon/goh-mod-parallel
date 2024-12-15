@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ 'shell', 'size4', 'size4_heat_shell', 'heat_high' ],
   entity: '150mm_ger_l30_heat',
   mass: 25.71,
-  fill: 0,
+  fill: 1.755,
   caliber: 150,
   speed: 280,
   view: {

@@ -58,19 +58,19 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
   const kineticContactEnergy = kineticCoefficient * calcKineticContactEnergy(shellHeadMass, speed, caliberInM);
 
   /** 动能破片伤害 */
-  const kineticFragmentEnergy = kineticContactEnergy / 10;
+  const kineticFragmentEnergy = Math.pow(kineticContactEnergy, 1 / 2) / 8.0;
 
   /** 动能冲击波伤害 */
-  const kineticBlastwaveEnergy = kineticContactEnergy / 20;
+  const kineticBlastwaveEnergy = Math.pow(kineticContactEnergy, 1 / 3) / 12.0;
 
   /** 爆炸接触伤害 */
   const explosiveContactEnergy = calcExplosiveContactEnergy(fill);
 
   /** 爆炸破片伤害 */
-  const explosiveFragmentEnergy = explosiveContactEnergy / 10;
+  const explosiveFragmentEnergy = Math.pow(explosiveContactEnergy, 1 / 2) / 2.0;
 
   /** 爆炸冲击波伤害 */
-  const explosiveBlastwaveEnergy = explosiveContactEnergy / 20;
+  const explosiveBlastwaveEnergy = Math.pow(explosiveContactEnergy, 1 / 3) / 3.0;
 
   /** 接触伤害 */
   const contactEnergy = Math.max(0.01, kineticContactEnergy + explosiveContactEnergy);
@@ -78,8 +78,14 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
   /** 破片伤害 */
   const fragmentEnergy = Math.max(0.01, kineticFragmentEnergy + explosiveFragmentEnergy);
 
+  /** 破片衰减影响半径 */
+  const fragmentRadius = Math.pow(fragmentEnergy, 2) * 10;
+
   /** 冲击波伤害 */
   const blastwaveEnergy = Math.max(0.01, kineticBlastwaveEnergy + explosiveBlastwaveEnergy);
+
+  /** 冲击波衰减影响半径 */
+  const blastwaveRadius = Math.pow(blastwaveEnergy, 3) * 100;
 
   return ilines(
     iline(0, '{damage blastwave'),
@@ -89,12 +95,12 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
     iline(0, '}'),
     iline(0, '{damage add blastwave'),
     iline(2, `{energy ${toFixed(fragmentEnergy)}} ; 破片伤害`),
-    iline(2, `{area 0 ${toFixed(fragmentEnergy * 20)}} ; 衰减影响半径，极限影响半径`),
+    iline(2, `{area 0 ${toFixed(fragmentRadius)}} ; 衰减影响半径，极限影响半径`),
     iline(2, '{ground_interaction_radius 0} ; 弹坑效果半径'),
     iline(0, '}'),
     iline(0, '{damage add blastwave'),
     iline(2, `{energy ${toFixed(blastwaveEnergy)}} ; 冲击波伤害`),
-    iline(2, `{area 0 ${toFixed(blastwaveEnergy * 100)}} ; 衰减影响半径，极限影响半径`),
+    iline(2, `{area 0 ${toFixed(blastwaveRadius)}} ; 衰减影响半径，极限影响半径`),
     iline(2, `{ground_interaction_radius ${caliber / 1000}} ; 弹坑效果半径`),
     iline(0, '}'),
   );

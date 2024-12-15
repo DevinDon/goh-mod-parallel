@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ 'shell', 'size1', '50to57', 'no_throw' ],
   entity: '50mm_ger_l60_he',
   mass: 3.1,
-  fill: 0.19,
+  fill: 0.51,
   caliber: 50,
   speed: 550,
   view: {

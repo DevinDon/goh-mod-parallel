@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ '37to40', 'zenite', 'size2', 'auto' ],
   entity: '30mm_ger_auto_apcr',
   mass: 0.5,
-  fill: 0.04,
+  fill: 0.025,
   caliber: 30,
   speed: 860,
   view: {

@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ '20to25', 'no_throw', 'auto', 'size1' ],
   entity: '20mm_ger_auto_he',
   mass: 0.303,
-  fill: 0.07,
+  fill: 0.11,
   caliber: 20,
   speed: 900,
   view: {

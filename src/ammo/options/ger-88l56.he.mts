@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ 'shell', 'size2', '88to105', 'no_throw' ],
   entity: '88mm_ger_l56_he',
   mass: 19.96,
-  fill: 1.112,
+  fill: 1.221,
   caliber: 88,
   speed: 820,
   view: {

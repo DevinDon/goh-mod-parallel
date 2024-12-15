@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ 'shell', 'size1', '50to57_he_filler' ],
   entity: '50mm_ger_l42_apche',
   mass: 3.45,
-  fill: 0.09,
+  fill: 0.059,
   caliber: 50,
   speed: 835,
   view: {

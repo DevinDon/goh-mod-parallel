@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ 'shell', 'size3', '88to105_he_filler' ],
   entity: '105mm_ger_aphe',
   mass: 15.19,
-  fill: 0.205,
+  fill: 0.195,
   caliber: 105,
   speed: 390,
   view: {

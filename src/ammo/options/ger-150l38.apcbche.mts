@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ 'shell', 'size4', '150to152' ],
   entity: '128mm_ger_apcbche',
   mass: 49.2,
-  fill: 0.784,
+  fill: 0.684,
   caliber: 150,
   speed: 975,
   view: {

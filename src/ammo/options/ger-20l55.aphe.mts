@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ '20to25', 'zenite', 'size1', 'auto' ],
   entity: '20mm_ger_auto_ap',
   mass: 0.3,
-  fill: 0.03,
+  fill: 0.01,
   caliber: 20,
   speed: 805,
   view: {

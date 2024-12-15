@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ 'shell', 'size1', '37to47', 'no_throw' ],
   entity: '37mm_ger_he',
   mass: 1.31,
-  fill: 0.14,
+  fill: 0.33,
   caliber: 37,
   speed: 680,
   view: {

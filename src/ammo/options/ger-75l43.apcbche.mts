@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ 'shell', 'size2', '75to76_he_filler' ],
   entity: '75mm_ger_l43_apcbche',
   mass: 11.52,
-  fill: 0.175,
+  fill: 0.0775,
   caliber: 75,
   speed: 690,
   view: {
