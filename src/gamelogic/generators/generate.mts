@@ -1,0 +1,44 @@
+import { logger } from '@pipers/logger';
+import { saveGenerated } from '../../utils/save-generated.mjs';
+import { type GameLogicOptions } from '../options.mjs';
+import { generateGameLogic } from './generator.mjs';
+
+const options: GameLogicOptions = {
+  unitLimits: {
+    officer: 2,
+    flamer: 3,
+    sniper: 5,
+    squad_1: 5,
+    squad_4: 5,
+    signaller: 1,
+    signaller_heavy: 1,
+    limit1: 1,
+    limit1a: 1,
+    limit2: 2,
+    limit2a: 2,
+    limit3: 3,
+    limit3a: 3,
+    limit4: 4,
+    limit5: 5,
+    limit10: 10,
+    sdkfz124limit2: 2,
+    panzer4limit10: 10,
+    panzer5limit3: 3,
+    panzer6limit3: 3,
+    panzer6blimit2: 2,
+    panzer5dacelimit1: 1,
+    panzer6eacelimit1: 1,
+    panzer6bacelimit1: 1,
+  },
+};
+
+/** 生成所有游戏逻辑配置 */
+export const generateAllGameLogic = async () => {
+
+  logger.info('正在生成游戏逻辑配置');
+
+  const generated = generateGameLogic(options);
+
+  await saveGenerated(generated);
+
+};

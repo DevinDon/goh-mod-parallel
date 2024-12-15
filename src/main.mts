@@ -1,6 +1,7 @@
 import { logger } from '@pipers/logger';
 import { generateAllAmmos } from './ammo/generators/generate.mjs';
 import { generateAllCrewAndPassengers } from './crew-and-passenger/generators/generate.mjs';
+import { generateAllGameLogic } from './gamelogic/generators/generate.mjs';
 import { generateAllHumans } from './human/generators/generate.mjs';
 import { pack } from './packager/packager.mjs';
 import { generateAllWeapons } from './weapon/generators/generate.mjs';
@@ -11,6 +12,7 @@ await generateAllCrewAndPassengers();
 await generateAllHumans();
 await generateAllWeapons();
 await generateAllAmmos();
+await generateAllGameLogic();
 
 logger.info('生成配置文件完成');
 

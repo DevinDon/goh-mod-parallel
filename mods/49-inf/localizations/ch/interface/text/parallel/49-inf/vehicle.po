@@ -241,8 +241,20 @@ msgid   "<c(33c0ee)>Medium Tank</c>"
 msgstr  "<c(33c0ee)>中型坦克</c>"
 
 msgctxt "desc/squad/panzer-5-d"
-msgid   "<c(03a9f4)>( I )</c> Pz.Kpfw V Ausf.D"
-msgstr  "<c(03a9f4)>( I )</c> 五号坦克 D 型"
+msgid   "<c(03a9f4)>( I )</c> Pz.Kpfw V Ausf.D ACE"
+msgstr  "<c(03a9f4)>( I )</c> 五号坦克 D 型 实验型"
+
+msgctxt "desc/entity/panzer-5-d-ace"
+msgid   "Pz.Kpfw V Ausf.D"
+msgstr  "五号坦克 D 型"
+
+msgctxt "info/special/panzer-5-d-ace"
+msgid   "<c(33c0ee)>Medium Tank</c>"
+msgstr  "<c(33c0ee)>中型坦克</c>"
+
+msgctxt "desc/squad/panzer-5-d-ace"
+msgid   "<c(03a9f4)>( I )</c> Pz.Kpfw V Ausf.D ACE"
+msgstr  "<c(03a9f4)>( I )</c> 五号坦克 D 型 实验型"
 
 msgctxt "desc/entity/panzer-5-g"
 msgid   "Pz.Kpfw V Ausf.G"

@@ -250,7 +250,7 @@
     {ani_play "mgun_aa" -1.0 resume}
   }
 }
-{"panzer-5-d tank"
+{"panzer-5-d-ace tank"
   ("pz5_sound")
   {on "add_weapon_sound" overload
     ("Cannon_75to76mm_HV")
