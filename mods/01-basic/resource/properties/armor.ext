@@ -95,7 +95,7 @@
     {component "body"
       {health
         {hp %body}
-        {hp_broken (* %body 0.5)}  ;// destroys component and cannot be repaired
+        {hp_broken (* %body 10)}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
     }
@@ -108,7 +108,7 @@
     {component "cabin"
       {health
         {hp %body}
-        {hp_broken (* %body 0.5)}  ;// destroys component and cannot be repaired
+        {hp_broken (* %body 0.8)}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
     }
@@ -234,7 +234,7 @@
     {component "body"
       {health
         {hp %body}
-        {hp_broken (* %body 0.5)}
+        {hp_broken (* %body 10)}
       }
       ("global_damage_mod")
     }
@@ -264,7 +264,7 @@
     {component "body"
       {health
         {hp %body}
-        {hp_broken (* %body 0.5)}
+        {hp_broken (* %body 10)}
       }
       ("global_damage_mod")
     }
@@ -317,14 +317,14 @@
     {component "body"
       {health
         {hp %body}
-        {hp_broken (* %body 0.5)}
+        {hp_broken (* %body 10)}
       }
       ("global_damage_mod")
     }
     {component "cabin"
       {health
         {hp %body}
-        {hp_broken (* %body 0.5)}  ;// destroys component and cannot be repaired
+        {hp_broken (* %body 0.8)}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
     }
@@ -413,7 +413,7 @@
     {component "body"
       {health
         {hp %body}
-        {hp_broken (* %body 0.5)}  ;// destroys component and cannot be repaired
+        {hp_broken (* %body 10)}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
       {armor_damage_modifier 2}
@@ -495,14 +495,14 @@
     {component "body"
       {health
         {hp %body}
-        {hp_broken (* %body 0.5)}  ;// destroys component and cannot be repaired
+        {hp_broken (* %body 10)}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
     }
     {component "cabin"
       {health
         {hp %body}
-        {hp_broken (* %body 0.5)}  ;// destroys component and cannot be repaired
+        {hp_broken (* %body 0.8)}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
     }
