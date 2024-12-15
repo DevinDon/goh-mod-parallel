@@ -1,4 +1,4 @@
-import { setIndent } from '../../utils/set-indent.mjs';
+import { i0lines, i2lines } from '../../utils/set-indent.mjs';
 import { type CrewAndPassengerOptions } from '../options.mjs';
 import { generateAnimation } from './animation-generator.mjs';
 import { generateCrew } from './crew-generator.mjs';
@@ -9,45 +9,47 @@ import { generateVisor } from './visor-generator.mjs';
 export const generateCrewAndPassenger = ({ visors, animations, crews, passengers, extra }: CrewAndPassengerOptions) => {
 
   const visorsText = visors?.length
-    ? visors.map(generateVisor).join('\n')
+    ? i0lines(...visors.map(generateVisor))
     : '; no visors';
 
   const animationsText = animations?.length
-    ? animations.map(generateAnimation).join('\n')
+    ? i0lines(...animations.map(generateAnimation))
     : '; no animations';
 
   const crewsText = crews?.length
-    ? crews.map(generateCrew).join('\n')
+    ? i0lines(...crews.map(generateCrew))
     : '; no crew';
 
   const passengersText = passengers?.length
-    ? passengers.map(generatePassenger).join('\n')
+    ? i0lines(...passengers.map(generatePassenger))
     : '; no passenger';
 
   const extraText = extra?.length
-    ? extra.join('\n')
+    ? i0lines(...extra)
     : '; no extra';
 
-  return `; crew and passenger
-
-; set visors
-{Sensor
-  ${setIndent(visorsText, { indent: 2, indentFirstLine: false })}
-}
-
-; set animations
-{Boarder
-  ${setIndent(animationsText, { indent: 2, indentFirstLine: false })}
-}
-
-; set crews
-${crewsText}
-
-; set passengers
-${passengersText}
-
-; set extra
-${extraText}
-`;
+  return i0lines(
+    '; crew and passenger',
+    '',
+    '; set visors',
+    '{Sensor',
+    i2lines(visorsText),
+    '}',
+    '',
+    '; set animations',
+    '{Boarder',
+    i2lines(animationsText),
+    '}',
+    '',
+    '; set crews',
+    crewsText,
+    '',
+    '; set passengers',
+    passengersText,
+    '',
+    '; set extra',
+    extraText,
+    '',
+  );
 
 };
