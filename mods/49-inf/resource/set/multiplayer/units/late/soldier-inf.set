@@ -47,7 +47,7 @@
 ("set-soldier-squad" name(soldier-antiarmor-squad)   period(late) cd(0)   ci(15)  crew1(antiarmor-gunner-1:2) crew2(antiarmor-gunner-2:2) group(antiarmor-squad) button(inf2) tags())
 ("set-soldier-squad" name(soldier-officer-squad)     period(late) cd(600) ci(120) crew1(officer-1:1)          crew2(officer-2:1)          group(officer-squad)   button(inf2) tags(officer))
 
-; 步兵排
+; 摩托化步兵排 Sd.Kfz 305/1 型卡车 12 人
 ; args = name period doctrine cd ci crews group button tags
 (define "set-soldier-platoon"
   {"%name(inf)"
@@ -55,8 +55,9 @@
       {delay %cd}
       {interval %ci}
     }
-    {content "%crews"}
+    {content "sdkfz-305-1 ( %crews )"}
     {tags "all infantry inf %tags %period"}
+    {cost 50} ; sdkfz-305-1 卡车
     {group "%group"}
     {button "%button"}
     {doctrine %doctrine}
@@ -66,7 +67,7 @@
   }
 )
 
-; 步兵排 12 人
+; 摩托化步兵排 Sd.Kfz 305/1 型卡车 12 人
 ("set-soldier-platoon"
   name(soldier-assault-platoon)
   period(late)
