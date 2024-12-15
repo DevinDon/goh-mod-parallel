@@ -88,12 +88,12 @@ msgstr  "野战指挥小组 2 人 [无尽军团]"
 # 步兵排
 msgctxt "desc/squad/soldier-assault-platoon(inf)"
 msgid   "Assault Platoon 12 Soldiers"
-msgstr  "突击排 12 人"
+msgstr  "摩托化突击排 12 人"
 
 msgctxt "desc/squad/soldier-supply-platoon(inf)"
 msgid   "Supply Platoon 12 Soldiers"
-msgstr  "支援排 12 人"
+msgstr  "摩托化支援排 12 人"
 
 msgctxt "desc/squad/soldier-defence-platoon(inf)"
 msgid   "Defence Platoon 12 Soldiers"
-msgstr  "防御排 12 人"
+msgstr  "摩托化防御排 12 人"
