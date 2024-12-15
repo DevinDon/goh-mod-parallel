@@ -1,5 +1,5 @@
 import { toFixed } from '../../utils/formatter.mjs';
-import { ilines } from '../../utils/set-indent.mjs';
+import { i0lines } from '../../utils/set-indent.mjs';
 import { type AmmoOptions } from '../options.mjs';
 
 export type BlastwaveOptions = Pick<AmmoOptions, 'type' | 'caliber' | 'speed' | 'mass' | 'fill'>;
@@ -98,7 +98,7 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
   /** 冲击波极限杀伤半径 */
   const blastwaveRadius = 2 + Math.pow(blastwaveEnergy, 3) * 10;
 
-  return ilines(
+  return i0lines(
     '{damage blastwave',
     `  {energy ${toFixed(contactEnergy)}} ; 接触伤害`,
     `  {area ${toFixed(contactRadius / 2)} ${toFixed(contactRadius)}} ; 有效杀伤半径，极限杀伤半径`,

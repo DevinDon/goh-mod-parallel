@@ -1,4 +1,4 @@
-import { ilines } from '../../utils/set-indent.mjs';
+import { i0lines, i2lines } from '../../utils/set-indent.mjs';
 import { type AmmoOptions } from '../options.mjs';
 import { generateBlastwave } from './blastwave-generator.mjs';
 
@@ -14,7 +14,7 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
   const massLine = `{mass ${mass}} ; 质量`;
 
   const viewLine = view.tail
-    ? ilines(
+    ? i0lines(
       `{view "${view.name}"`,
       `  {tail "${view.tail}" "tail"}`,
       '}',
@@ -30,7 +30,7 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
       : Math.ceil(Math.pow(Math.max(1, mass) * inventoryWidth * inventoryHeight, 1 / 1.2)),
   );
 
-  const inventoryLines = ilines(
+  const inventoryLines = i0lines(
     '{inventory',
     `  {weight ${inventoryWeight}}`,
     `  {size ${inventoryWidth} ${inventoryHeight}}`,
@@ -41,17 +41,16 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
   // 计算爆炸冲击波伤害
   const blastwave = generateBlastwave({ type, caliber, speed, mass, fill });
 
-  return ilines(
+  return i0lines(
     `{from "pattern ${type}"`,
-    ilines(
-      2,
+    i2lines(
       tagLine,
       entityLine,
       massLine,
       viewLine,
       inventoryLines,
       blastwave,
-      (extra && extra.length > 0) ? ilines(2, ...extra) : '; 无附加内容',
+      (extra && extra.length > 0) ? i2lines(...extra) : '; 无附加内容',
     ),
     '}',
     '',
