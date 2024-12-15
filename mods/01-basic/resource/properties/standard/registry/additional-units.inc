@@ -46,6 +46,11 @@
   {vehicle_view "sdkfz251d_22"}
 }
 
+; 自行火炮 / 自行榴弹炮
+{"sdkfz-124"
+  {vehicle_view "wespe"}
+}
+
 ; 坦克
 {"panzer-4-h"
   {vehicle_view "panzer4j"}

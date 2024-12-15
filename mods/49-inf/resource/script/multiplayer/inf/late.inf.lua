@@ -31,6 +31,8 @@ Purchases["late.inf"] = {
       {priority = 1.0, type = {"Class3", "Armored", "AA",},              unit = "sdkfz-251-17"},
       {priority = 1.0, type = {"Class3", "Armored", "AA",},              unit = "sdkfz-251-21"},
       -- {priority = 1.0, type = {"Class3", "Armored", "AT",},              unit = "sdkfz-251-22"},
+      -- 自行火炮 / 自行榴弹炮
+      {priority = 1.0, type = {"Class2", "Tank", "Light", "Artillery",}, unit = "sdkfz-124"},
       -- 坦克
       {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-4-h"},
       {priority = 1.0, type = {"Class2", "Tank", "Medium",}, unit = "panzer-4-j"},

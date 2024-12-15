@@ -20,6 +20,9 @@
 {"sdkfz-251-21"      inherit "vehicle custom.armored-car.sdkfz251.21"}
 {"sdkfz-251-22"      inherit "vehicle custom.armored-car.sdkfz251.22"}
 
+; 自行火炮 / 自行榴弹炮
+{"sdkfz-124" inherit "vehicle custom.spg"}
+
 ; 坦克
 {"panzer-4-h" inherit "vehicle custom.tank.panzer4-h"}
 {"panzer-4-j" inherit "vehicle custom.tank.panzer4-h"}

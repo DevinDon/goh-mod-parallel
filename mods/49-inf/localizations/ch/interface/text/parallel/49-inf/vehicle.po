@@ -182,6 +182,19 @@ msgctxt "desc/squad/sdkfz-251-22"
 msgid   "<c(03a9f4)>( I )</c> Sd.Kfz 251/22 mit 8.8cm Pak 40"
 msgstr  "<c(03a9f4)>( I )</c> Sd.Kfz 251/22 加装 8.8cm Pak 40"
 
+# 自行火炮 / 自行榴弹炮
+msgctxt "desc/entity/sdkfz-124"
+msgid   "Sd.Kfz 124 Wespe"
+msgstr  "Sd.Kfz 124 黄蜂"
+
+msgctxt "info/special/sdkfz-124"
+msgid   "<c(33c0ee)>Self-propelled Gun</c>"
+msgstr  "<c(33c0ee)>自行火炮</c>"
+
+msgctxt "desc/squad/sdkfz-124"
+msgid   "<c(03a9f4)>( I )</c> Sd.Kfz 124 Wespe"
+msgstr  "<c(03a9f4)>( I )</c> Sd.Kfz 124 黄蜂"
+
 # 坦克
 msgctxt "desc/entity/panzer-4-h"
 msgid   "Pz.Kpfw IV Ausf.H"
