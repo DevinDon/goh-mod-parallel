@@ -25,7 +25,7 @@ const options: WeaponOptions = {
   curved: true,
 
   aimingTolerance: 0.5,
-  spreadTolerance: 0.5,
+  spreadTolerance: 0.2,
 
   rechargeTime: 30,
   recoveryTime: 60 / 36,

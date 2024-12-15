@@ -25,8 +25,8 @@ const options: WeaponOptions = {
   caliber: 12.7,
   syncedProjectiles: true,
 
-  aimingTolerance: 0.05,
-  spreadTolerance: 0.1,
+  aimingTolerance: 3,
+  spreadTolerance: 0.5,
 
   rechargeTime: 18,
   recoveryTime: 60 / 1200,

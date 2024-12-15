@@ -21,7 +21,7 @@ const options: WeaponOptions = {
   syncedProjectiles: true,
 
   aimingTolerance: 3,
-  spreadTolerance: 0.1,
+  spreadTolerance: 0.5,
 
   rechargeTime: 2,
   recoveryTime: 60 / 220,
