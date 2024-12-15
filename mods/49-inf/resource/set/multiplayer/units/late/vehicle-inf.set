@@ -20,7 +20,7 @@
 
 ; 卡车
 {"sdkfz-305-1"
-  ("set-standard-vehicle" vehicle(sdkfz-305-1) cost(50)  cd(0)  ci(30) cw(2) cp(0) tags(vehicle)        period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
+  ("set-standard-vehicle" vehicle(sdkfz-305-1) cost(30)  cd(0)  ci(30) cw(2) cp(0) tags(vehicle)        period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
 }
 {"sdkfz-305-2"
   ("set-standard-vehicle" vehicle(sdkfz-305-2) cost(150) cd(90) ci(60) cw(2) cp(0) tags(vehicle)        period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz305) button(vehicles))

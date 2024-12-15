@@ -33,7 +33,7 @@
     {tags "all infantry inf %tags %period"}
     {group "%group"}
     {button "%button"}
-    {level 1}
+    {level 2}
     {squad_cost_factor 1}
   }
 )
@@ -57,48 +57,50 @@
     }
     {content "sdkfz-305-1 ( %crews )"}
     {tags "all infantry inf %tags %period"}
-    {cost 50} ; sdkfz-305-1 卡车
+    {cost 30} ; sdkfz-305-1 卡车
     {group "%group"}
     {button "%button"}
     {doctrine %doctrine}
-    {level 1}
+    {level 2}
     {squad_cost_factor 1}
     {round_multiple 1}
   }
 )
 
-; 摩托化步兵排 Sd.Kfz 305/1 型卡车 12 人
+; 摩托化突击排 12 人
 ("set-soldier-platoon"
   name(soldier-assault-platoon)
   period(late)
   doctrine(ascension_inf_tank)
   cd(0)
   ci(30)
-  crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:5 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:1 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:1 mp/inf/late/antiarmor-gunner-2:1)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:6 mp/inf/late/medic-1:1 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:1 mp/inf/late/antiarmor-gunner-2:1)
   group(assault-platoon)
   button(inf1)
   tags()
 )
 
+; 摩托化支援排 12 人
 ("set-soldier-platoon"
   name(soldier-supply-platoon)
   period(late)
   doctrine(ascension_inf_tank)
   cd(0)
   ci(30)
-  crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:3 mp/inf/late/engineer-1:2 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:1 mp/inf/late/antiarmor-gunner-1:2 mp/inf/late/antiarmor-gunner-2:2)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:3 mp/inf/late/antiarmor-gunner-2:3)
   group(supply-platoon)
   button(inf1)
   tags()
 )
 
+; 摩托化防御排 12 人
 ("set-soldier-platoon"
   name(soldier-defence-platoon)
   period(late)
   doctrine(ascension_inf_tank)
   cd(0)
   ci(30)
-  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:1 mp/inf/late/machine-gunner-1:3 mp/inf/late/machine-gunner-2:3 mp/inf/late/antiarmor-gunner-1:1 mp/inf/late/antiarmor-gunner-2:1)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:2 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:2 mp/inf/late/machine-gunner-2:2 mp/inf/late/antiarmor-gunner-1:1 mp/inf/late/antiarmor-gunner-2:1)
   group(defence-platoon)
   button(inf1)
   tags()
