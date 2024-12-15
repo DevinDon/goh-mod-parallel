@@ -34,6 +34,7 @@ const options: HumanOptions = {
     '{Item "m24_smoke grenade" 2} ; 烟雾弹',
     '{Item "bandage_ger" 5} ; 绷带',
     '{Item "weapon inf-infantry-disposable-heat-rocket-launcher" filled} ; 一次性破甲火箭筒',
+    '{Item "weapon inf-infantry-disposable-heat-rocket-launcher" filled} ; 一次性破甲火箭筒',
   ],
 
 };

@@ -38,6 +38,7 @@ const options: HumanOptions = {
     '{Item "wirecutters"} ; 剪线钳',
     '{Item "pickaxe"} ; 堑壕镐',
     '{Item "shovel_ger"} ; 工兵铲',
+    '{Item "repair_kit" 1} ; 修理工具包',
   ],
 
 };
