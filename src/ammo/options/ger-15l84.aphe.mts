@@ -1,7 +1,7 @@
 import { type AmmoOptions } from '../options.mjs';
 
 const options: AmmoOptions = {
-  destination: 'mods/19-germany/resource/set/stuff/shell/ger-15l84.aphe.ammo',
+  destination: 'mods/19-germany/resource/set/stuff/standard/ammo/shell/ger-15l84.aphe.ammo',
   type: 'aphe',
   tags: [ '20to25', 'zenite', 'auto', 'size1', 'bullet_fx' ],
   entity: '15mm_ger_auto_ap',

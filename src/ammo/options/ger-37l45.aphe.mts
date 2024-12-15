@@ -1,7 +1,7 @@
 import { type AmmoOptions } from '../options.mjs';
 
 const options: AmmoOptions = {
-  destination: 'mods/19-germany/resource/set/stuff/shell/ger-37l45.aphe.ammo',
+  destination: 'mods/19-germany/resource/set/stuff/standard/ammo/shell/ger-37l45.aphe.ammo',
   type: 'aphe',
   tags: [ 'shell', 'size1', '37to47_he_filler' ],
   entity: '37mm_ger_aphe',

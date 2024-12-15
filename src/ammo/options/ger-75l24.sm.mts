@@ -1,7 +1,7 @@
 import { type AmmoOptions } from '../options.mjs';
 
 const options: AmmoOptions = {
-  destination: 'mods/19-germany/resource/set/stuff/shell/ger-75l24.sm.ammo',
+  destination: 'mods/19-germany/resource/set/stuff/standard/ammo/shell/ger-75l24.sm.ammo',
   type: 'sm',
   tags: [ 'shell', '75to76', 'smoke_size2' ],
   entity: '75mm_ger_l24_sm',

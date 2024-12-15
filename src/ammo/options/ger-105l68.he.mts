@@ -1,7 +1,7 @@
 import { type AmmoOptions } from '../options.mjs';
 
 const options: AmmoOptions = {
-  destination: 'mods/19-germany/resource/set/stuff/shell/ger-105l68.he.ammo',
+  destination: 'mods/19-germany/resource/set/stuff/standard/ammo/shell/ger-105l68.he.ammo',
   type: 'he',
   tags: [ 'shell', 'size3', '88to105' ],
   entity: '88mm_ger_l56_he',

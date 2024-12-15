@@ -1,7 +1,7 @@
 import { type AmmoOptions } from '../options.mjs';
 
 const options: AmmoOptions = {
-  destination: 'mods/19-germany/resource/set/stuff/shell/ger-88l71.apcbche.ammo',
+  destination: 'mods/19-germany/resource/set/stuff/standard/ammo/shell/ger-88l71.apcbche.ammo',
   type: 'apcbche',
   tags: [ 'shell', 'size2', '88to105_he_filler' ],
   entity: '88mm_ger_l71_apcbche',

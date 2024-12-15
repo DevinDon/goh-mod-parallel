@@ -1,7 +1,7 @@
 import { type AmmoOptions } from '../options.mjs';
 
 const options: AmmoOptions = {
-  destination: 'mods/19-germany/resource/set/stuff/shell/ger-50l42.apcr.ammo',
+  destination: 'mods/19-germany/resource/set/stuff/standard/ammo/shell/ger-50l42.apcr.ammo',
   type: 'apcr',
   tags: [ 'shell', 'size1', '50to57' ],
   entity: '50mm_ger_l42_apcr',

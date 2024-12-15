@@ -1,7 +1,7 @@
 import { type AmmoOptions } from '../options.mjs';
 
 const options: AmmoOptions = {
-  destination: 'mods/19-germany/resource/set/stuff/shell/ger-30l38.he.ammo',
+  destination: 'mods/19-germany/resource/set/stuff/standard/ammo/shell/ger-30l38.he.ammo',
   type: 'he',
   tags: [ '37to40', 'no_throw', 'size2', 'auto', 'zenite' ],
   entity: '30mm_ger_auto_he',
