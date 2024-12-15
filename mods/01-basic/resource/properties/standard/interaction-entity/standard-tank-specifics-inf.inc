@@ -1,4 +1,50 @@
 ; 卡车
+{"sdkfz-305-1"
+  ("opel_sound")
+  ("animation_sound" args "open_left")
+  ("animation_sound" args "open_right")
+  ("animation_sound" args "open_rear")
+  ("animation_sound" args "close_rear")
+}
+{"sdkfz-305-2"
+  {on "add_weapon_sound" overload
+    ("Autocannon_s1")
+  }
+  ("opel_sound")
+  ("animation_sound" args "open_left")
+  ("animation_sound" args "open_right")
+  ("animation_sound" args "open_rear")
+  ("animation_sound" args "close_rear")
+  {on fire "gun"
+    {ani_play "recoil"}
+    {view start "flashbarrel1"}
+    {view start "flashbarrel1smoke"}
+    {call "spawn_shell"}
+  }
+  {on "cut_parts" overload
+    ("cut_part" args "part3" 1)
+    ("cut_part" args "part4" 1)
+    {inherited}
+  }
+}
+{"sdkfz-305-3"
+  ("opel_sound")
+  ("animation_sound" args "open_left")
+  ("animation_sound" args "open_right")
+}
+{"sdkfz-305-4"
+  ("opel_sound")
+  ("animation_sound" args "open_left")
+  ("animation_sound" args "open_right")
+}
+{"sdkfz-305-5"
+  ("opel_sound")
+  ("animation_sound" args "open_left")
+  ("animation_sound" args "open_right")
+  ("animation_sound" args "open_rear")
+  ("animation_sound" args "close_rear")
+  ("animation_sound" args "open_radio")
+}
 
 ; 轮式装甲车
 {"sdkfz-234-1 tank"
@@ -125,6 +171,30 @@
   }
 }
 
+; 自行火炮 / 自行榴弹炮
+{"sdkfz-124 tank"
+  {on "add_weapon_sound" overload
+    ("Cannon_105to130mm_LV")
+    ("Cannon_Breech")
+  }
+  {on "add_movement_sound" overload
+    {link_sound "engine_start"    "vehicle/engine/pz4/start"}
+    {link_sound "engine_stop"    "vehicle/engine/pz4/stop"}
+    {link_sound "engine_idle"    "vehicle/engine/pz4/idle"}
+    {link_sound "engine_full"    "vehicle/engine/pz4/full"}
+    {link_sound "exhaust"      "vehicle/engine/pz4/exhaust"}
+    {link_sound "move"        "vehicle/tracks/pz4"}
+    {link_sound "rotate_turret"    "vehicle/turret/cannon/big"}
+    {link_sound "rotate_gun"    "vehicle/turret/cannon/big"}
+  }
+  {on "spawn_shell_delay" overload
+    ("shell_eject_delay" args 2 0.3)
+  }
+  {on "reload_delay" overload
+    ("reload_time" args 8)    ;// weapon reload time
+  }
+}
+
 ; 坦克
 {"panzer-4-h tank"
   ("pz4_sound")
@@ -246,7 +316,6 @@
     {ani_play "open" -1.0 resume}
   }
 }
-
 
 {"panzer-6-b-h tank"
   ("pz6b_sound")
