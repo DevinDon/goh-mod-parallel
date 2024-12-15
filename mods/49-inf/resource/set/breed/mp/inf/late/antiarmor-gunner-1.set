@@ -1,41 +1,32 @@
 ; 人员配置
 {breed
-
   {tags "soldier_pzscheck"} ; 标签
-
   {behaviour soldier} ; 行为类别
   {skin "ger_heer_43_at_rkt"} ; 外观
   {portrait "ger_regular"} ; 肖像
   {icon "bazooka"} ; 图标
   {icon_priority 0} ; 图标优先级
   {nationality inf} ; 国籍
-
   {armors ; 防护装置
     {head ger_m42_helmet_splinter}
     ; 无防弹衣
   }
-
   {perks ; 能力
     (include "ability.inc")
     ("rifle_skill_rank_4")
     ("tier4_defense")
     ("at_rank_6")
   }
-
   {veterancy ; 体力
     (include "ability.inc")
     ("veterancy_lvl_0")
   }
-
   {inventory ; 背包
     {Item "weapon inf-infantry-rocket-launcher" filling "ammo inf-infantry-rocket-launcher-ammo heat" 1} ; 多用途火箭筒
     {Item "ammo inf-infantry-rocket-launcher-ammo he" 4} ; 步兵火箭筒高爆弹药
     {Item "ammo inf-infantry-rocket-launcher-ammo heat" 4} ; 步兵火箭筒破甲弹药
     {Item "bandage_ger" 5} ; 绷带
-
     {in_hands 0}
   }
-
   ; 无额外配置
-
 }

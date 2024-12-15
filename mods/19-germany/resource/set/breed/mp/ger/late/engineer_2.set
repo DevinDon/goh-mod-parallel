@@ -1,32 +1,26 @@
 ; 人员配置
 {breed
-
   {tags "soldier"} ; 标签
-
   {behaviour soldier} ; 行为类别
   {skin "ger_heer_43_engi_smg_1"} ; 外观
   {portrait "ger_engineer"} ; 肖像
   {icon "tech"} ; 图标
   {icon_priority 0} ; 图标优先级
   {nationality ger} ; 国籍
-
   {armors ; 防护装置
     {head ger_m40_helmet_goggles}
     ; 无防弹衣
   }
-
   {perks ; 能力
     (include "ability.inc")
     ("rifle_skill_rank_4")
     ("tier4_defense")
     ("engineer")
   }
-
   {veterancy ; 体力
     (include "ability.inc")
     ("veterancy_lvl_0")
   }
-
   {inventory ; 背包
     {Item "weapon ger-karabiner-98k" filled} ; Karabiner 98k
     {Item "ammo ger-rifle clip" 95} ; Karabiner 98k 弹夹
@@ -38,10 +32,7 @@
     {Item "wirecutters"} ; 剪线钳
     {Item "pickaxe"} ; 堑壕镐
     {Item "shovel_ger"} ; 工兵铲
-
     {in_hands 0}
   }
-
   ; 无额外配置
-
 }

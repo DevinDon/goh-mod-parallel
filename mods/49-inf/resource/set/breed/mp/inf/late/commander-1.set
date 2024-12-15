@@ -1,42 +1,33 @@
 ; 人员配置
 {breed
-
   {tags "soldier"} ; 标签
-
   {behaviour soldier} ; 行为类别
   {skin "ger_heer_43_co_1_leutnant"} ; 外观
   {portrait "ger_officer"} ; 肖像
   {icon "smg"} ; 图标
   {icon_priority 0} ; 图标优先级
   {nationality inf} ; 国籍
-
   {armors ; 防护装置
     {head ger_officer_cap}
     ; 无防弹衣
   }
-
   {perks ; 能力
     (include "ability.inc")
     ("rifle_skill_rank_4")
     ("tier4_standard")
     ("binocular_vision")
   }
-
   {veterancy ; 体力
     (include "ability.inc")
     ("veterancy_lvl_0")
   }
-
   {inventory ; 背包
     {Item "weapon inf-infantry-bolt-action-rifle" filling "ammo inf-10mm-clip ap" 5} ; 栓动步枪
     {Item "ammo inf-10mm-clip ap" 50} ; 栓动步枪弹夹
     {Item "m24_smoke grenade" 2} ; 烟雾弹
     {Item "bandage_ger" 5} ; 绷带
     {Item "binocular"} ; 望远镜
-
     {in_hands 0}
   }
-
   ; 无额外配置
-
 }

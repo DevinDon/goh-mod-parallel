@@ -1,32 +1,26 @@
 ; 人员配置
 {breed
-
   {tags "soldier"} ; 标签
-
   {behaviour soldier} ; 行为类别
   {skin "ger_heer_43_engi_rfl_1"} ; 外观
   {portrait "ger_engineer"} ; 肖像
   {icon "tech"} ; 图标
   {icon_priority 0} ; 图标优先级
   {nationality inf} ; 国籍
-
   {armors ; 防护装置
     {head ger_m40_helmet_goggles}
     ; 无防弹衣
   }
-
   {perks ; 能力
     (include "ability.inc")
     ("rifle_skill_rank_4")
     ("tier4_defense")
     ("engineer")
   }
-
   {veterancy ; 体力
     (include "ability.inc")
     ("veterancy_lvl_0")
   }
-
   {inventory ; 背包
     {Item "weapon inf-infantry-assault-rifle" filling "ammo inf-5mm-magazine ap" 30} ; 突击步枪
     {Item "ammo inf-5mm-magazine ap" 120} ; 突击步枪弹匣
@@ -39,10 +33,7 @@
     {Item "pickaxe"} ; 堑壕镐
     {Item "shovel_ger"} ; 工兵铲
     {Item "repair_kit" 1} ; 修理工具包
-
     {in_hands 0}
   }
-
   ; 无额外配置
-
 }
