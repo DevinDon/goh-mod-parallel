@@ -1,4 +1,4 @@
-import { iline, ilines } from '../../utils/set-indent.mjs';
+import { ilines } from '../../utils/set-indent.mjs';
 import { type AmmoOptions } from '../options.mjs';
 import { generateBlastwave } from './blastwave-generator.mjs';
 
@@ -15,11 +15,11 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
 
   const viewLine = view.tail
     ? ilines(
-      iline(0, `{view "${view.name}"`),
-      iline(2, `{tail "${view.tail}" "tail"}`),
-      iline(0, '}'),
+      `{view "${view.name}"`,
+      `  {tail "${view.tail}" "tail"}`,
+      '}',
     )
-    : iline(0, `{view "${view.name}"}`);
+    : `{view "${view.name}"`;
 
   const inventoryWidth = inventory?.size?.width ?? Math.min(10, Math.max(1, Math.ceil(caliber / 10)));
   const inventoryHeight = inventory?.size?.height ?? Math.min(10, Math.max(1, Math.ceil(caliber / 50)));
@@ -31,11 +31,11 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
   );
 
   const inventoryLines = ilines(
-    iline(0, '{inventory'),
-    iline(2, `{weight ${inventoryWeight}}`),
-    iline(2, `{size ${inventoryWidth} ${inventoryHeight}}`),
-    iline(2, `{block ${inventory?.block ?? 1}}`),
-    iline(0, '}'),
+    '{inventory',
+    `  {weight ${inventoryWeight}}`,
+    `  {size ${inventoryWidth} ${inventoryHeight}}`,
+    `  {block ${inventory?.block ?? 1}}`,
+    '}',
   );
 
   // 计算爆炸冲击波伤害

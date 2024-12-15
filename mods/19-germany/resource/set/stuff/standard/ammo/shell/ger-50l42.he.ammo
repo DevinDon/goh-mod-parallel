@@ -12,17 +12,17 @@
   }
   {damage blastwave
     {energy 4.15} ; 接触伤害
-    {area 0.76 1.51} ; 有效杀伤半径，极限杀伤半径
+    {area 0.50 1.51} ; 有效杀伤半径，极限杀伤半径
     {ground_interaction_radius 1.51} ; 弹坑效果半径
   }
   {damage add blastwave
-    {energy 2.58} ; 破片伤害
-    {area 3.82 7.64} ; 有效杀伤半径，极限杀伤半径
+    {energy 1.72} ; 破片伤害
+    {area 1.32 3.95} ; 有效杀伤半径，极限杀伤半径
     {ground_interaction_radius 0} ; 弹坑效果半径
   }
   {damage add blastwave
-    {energy 1.02} ; 冲击波伤害
-    {area 3.62 7.25} ; 有效杀伤半径，极限杀伤半径
+    {energy 0.68} ; 冲击波伤害
+    {area 1.70 5.11} ; 有效杀伤半径，极限杀伤半径
     {ground_interaction_radius 0} ; 弹坑效果半径
   }
   ; 无附加内容

@@ -1,5 +1,5 @@
 import { toFixed } from '../../utils/formatter.mjs';
-import { iline, ilines } from '../../utils/set-indent.mjs';
+import { ilines } from '../../utils/set-indent.mjs';
 import { type AmmoOptions } from '../options.mjs';
 
 export type BlastwaveOptions = Pick<AmmoOptions, 'type' | 'caliber' | 'speed' | 'mass' | 'fill'>;
@@ -59,12 +59,12 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
 
   /** 动能破片伤害 */
   const kineticFragmentEnergy = kineticContactEnergy > 1
-    ? Math.pow(kineticContactEnergy, 1 / 1.5) / 1
+    ? Math.pow(kineticContactEnergy, 1 / 1.5) / 1.5
     : Math.pow(kineticContactEnergy, 1.5);
 
   /** 动能冲击波伤害 */
   const kineticBlastwaveEnergy = kineticContactEnergy > 1
-    ? Math.pow(kineticContactEnergy, 1 / 2) / 2
+    ? Math.pow(kineticContactEnergy, 1 / 2) / 3
     : Math.pow(kineticContactEnergy, 2);
 
   /** 爆炸接触伤害 */
@@ -72,12 +72,12 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
 
   /** 爆炸破片伤害 */
   const explosiveFragmentEnergy = explosiveContactEnergy > 1
-    ? Math.pow(explosiveContactEnergy, 1 / 1.5) / 1
+    ? Math.pow(explosiveContactEnergy, 1 / 1.5) / 1.5
     : Math.pow(explosiveContactEnergy, 1.5);
 
   /** 爆炸冲击波伤害 */
   const explosiveBlastwaveEnergy = explosiveContactEnergy > 1
-    ? Math.pow(explosiveContactEnergy, 1 / 2) / 2
+    ? Math.pow(explosiveContactEnergy, 1 / 2) / 3
     : Math.pow(explosiveContactEnergy, 2);
 
   /** 接触伤害 */
@@ -96,24 +96,24 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
   const blastwaveEnergy = Math.max(0.01, kineticBlastwaveEnergy + explosiveBlastwaveEnergy);
 
   /** 冲击波极限杀伤半径 */
-  const blastwaveRadius = 2 + Math.pow(blastwaveEnergy, 3) * 5;
+  const blastwaveRadius = 2 + Math.pow(blastwaveEnergy, 3) * 10;
 
   return ilines(
-    iline(0, '{damage blastwave'),
-    iline(2, `{energy ${toFixed(contactEnergy)}} ; 接触伤害`),
-    iline(2, `{area ${toFixed(contactRadius / 2)} ${toFixed(contactRadius)}} ; 有效杀伤半径，极限杀伤半径`),
-    iline(2, `{ground_interaction_radius ${toFixed(contactRadius)}} ; 弹坑效果半径`),
-    iline(0, '}'),
-    iline(0, '{damage add blastwave'),
-    iline(2, `{energy ${toFixed(fragmentEnergy)}} ; 破片伤害`),
-    iline(2, `{area ${toFixed(fragmentRadius / 2)} ${toFixed(fragmentRadius)}} ; 有效杀伤半径，极限杀伤半径`),
-    iline(2, '{ground_interaction_radius 0} ; 弹坑效果半径'),
-    iline(0, '}'),
-    iline(0, '{damage add blastwave'),
-    iline(2, `{energy ${toFixed(blastwaveEnergy)}} ; 冲击波伤害`),
-    iline(2, `{area ${toFixed(blastwaveRadius / 2)} ${toFixed(blastwaveRadius)}} ; 有效杀伤半径，极限杀伤半径`),
-    iline(2, '{ground_interaction_radius 0} ; 弹坑效果半径'),
-    iline(0, '}'),
+    '{damage blastwave',
+    `  {energy ${toFixed(contactEnergy)}} ; 接触伤害`,
+    `  {area ${toFixed(contactRadius / 3)} ${toFixed(contactRadius)}} ; 有效杀伤半径，极限杀伤半径`,
+    `  {ground_interaction_radius ${toFixed(contactRadius)}} ; 弹坑效果半径`,
+    '}',
+    '{damage add blastwave',
+    `  {energy ${toFixed(fragmentEnergy)}} ; 破片伤害`,
+    `  {area ${toFixed(fragmentRadius / 3)} ${toFixed(fragmentRadius)}} ; 有效杀伤半径，极限杀伤半径`,
+    '  {ground_interaction_radius 0} ; 弹坑效果半径',
+    '}',
+    '{damage add blastwave',
+    `  {energy ${toFixed(blastwaveEnergy)}} ; 冲击波伤害`,
+    `  {area ${toFixed(blastwaveRadius / 3)} ${toFixed(blastwaveRadius)}} ; 有效杀伤半径，极限杀伤半径`,
+    '  {ground_interaction_radius 0} ; 弹坑效果半径',
+    '}',
   );
 
 };
