@@ -83,35 +83,35 @@ export const generateBlastwave = ({ type, caliber, speed, mass, fill = 0 }: Blas
   /** 接触伤害 */
   const contactEnergy = Math.max(0.01, kineticContactEnergy + explosiveContactEnergy);
 
-  /** 接触伤害衰减影响半径 */
-  const contactRadius = 0.1 + Math.pow(caliber, 1 / 2) / 10;
+  /** 接触伤害极限杀伤半径 */
+  const contactRadius = 0.1 + Math.pow(caliber, 1 / 2) / 5;
 
   /** 破片伤害 */
   const fragmentEnergy = Math.max(0.01, kineticFragmentEnergy + explosiveFragmentEnergy);
 
-  /** 破片衰减影响半径 */
-  const fragmentRadius = 1 + Math.pow(fragmentEnergy, 2) * 2;
+  /** 破片极限杀伤半径 */
+  const fragmentRadius = 1 + Math.pow(fragmentEnergy, 2) * 1;
 
   /** 冲击波伤害 */
   const blastwaveEnergy = Math.max(0.01, kineticBlastwaveEnergy + explosiveBlastwaveEnergy);
 
-  /** 冲击波衰减影响半径 */
-  const blastwaveRadius = 2 + Math.pow(blastwaveEnergy, 3) * 10;
+  /** 冲击波极限杀伤半径 */
+  const blastwaveRadius = 2 + Math.pow(blastwaveEnergy, 3) * 5;
 
   return ilines(
     iline(0, '{damage blastwave'),
     iline(2, `{energy ${toFixed(contactEnergy)}} ; 接触伤害`),
-    iline(2, `{area ${toFixed(contactRadius / 10)} ${toFixed(contactRadius)}} ; 衰减影响半径，极限影响半径`),
+    iline(2, `{area ${toFixed(contactRadius / 2)} ${toFixed(contactRadius)}} ; 有效杀伤半径，极限杀伤半径`),
     iline(2, `{ground_interaction_radius ${toFixed(contactRadius)}} ; 弹坑效果半径`),
     iline(0, '}'),
     iline(0, '{damage add blastwave'),
     iline(2, `{energy ${toFixed(fragmentEnergy)}} ; 破片伤害`),
-    iline(2, `{area ${toFixed(fragmentRadius / 10)} ${toFixed(fragmentRadius)}} ; 衰减影响半径，极限影响半径`),
+    iline(2, `{area ${toFixed(fragmentRadius / 2)} ${toFixed(fragmentRadius)}} ; 有效杀伤半径，极限杀伤半径`),
     iline(2, '{ground_interaction_radius 0} ; 弹坑效果半径'),
     iline(0, '}'),
     iline(0, '{damage add blastwave'),
     iline(2, `{energy ${toFixed(blastwaveEnergy)}} ; 冲击波伤害`),
-    iline(2, `{area ${toFixed(blastwaveRadius / 10)} ${toFixed(blastwaveRadius)}} ; 衰减影响半径，极限影响半径`),
+    iline(2, `{area ${toFixed(blastwaveRadius / 2)} ${toFixed(blastwaveRadius)}} ; 有效杀伤半径，极限杀伤半径`),
     iline(2, '{ground_interaction_radius 0} ; 弹坑效果半径'),
     iline(0, '}'),
   );
