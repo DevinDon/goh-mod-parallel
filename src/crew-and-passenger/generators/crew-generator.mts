@@ -1,4 +1,4 @@
-import { setIndent } from '../../utils/set-indent.mjs';
+import { i0lines, i2lines } from '../../utils/set-indent.mjs';
 import { type CrewOptions } from '../options.mjs';
 
 /** 生成乘员配置 */
@@ -17,34 +17,36 @@ export const generateCrew = ({ name, animations, bone, visor, turnoff, extra }: 
     : '; no turnoff';
 
   const extraLines = extra?.length
-    ? setIndent(extra.join('\n'), { indent: 4, indentFirstLine: false })
+    ? i0lines(...extra)
     : '; no extra';
 
-  const animationLines = setIndent(
-    animations
-      .map(
-        ({ door, animation }) => [
-          `{door "${door}"}`,
-          `{link "${door}" "${name}" {anm "${animation}"} {forward putoff} {reverse puton}}`,
-        ],
-      )
-      .flat()
-      .join('\n'),
-    { indent: 2, indentFirstLine: false },
+  const animationLines = i0lines(
+    ...animations.map(
+      ({ door, animation }) => i0lines(
+        `{door "${door}"}`,
+        `{link "${door}" "${name}" {anm "${animation}"} {forward putoff} {reverse puton}}`,
+      ),
+    ),
   );
 
-  return `; crew ${name}
-{Placer
-  {Place "${name}"
-    {group "crew"}
-    ${boneLine}
-    ${turnoffLine}
-    ${visorLine}
-    ${extraLines}
-  }
-}
-{Boarder
-  ${animationLines}
-}`;
+  return i0lines(
+    `; crew ${name}`,
+    '{Placer',
+    i2lines(
+      `{Place "${name}"`,
+      i2lines(
+        '{group "crew"}',
+        `${boneLine}`,
+        `${turnoffLine}`,
+        `${visorLine}`,
+        `${extraLines}`,
+      ),
+      '}',
+    ),
+    '}',
+    '{Boarder',
+    i2lines(animationLines),
+    '}',
+  );
 
 };

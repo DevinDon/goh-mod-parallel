@@ -22,6 +22,9 @@ export const setIndent = (input: string, { indent, indentFirstLine }: SetIndentO
 /** 设置单行缩进 indent */
 export const iline = (indent: number, line: string) => `${' '.repeat(indent)}${line}`;
 
+/** 设置两个空格缩进 */
+export const i2line = (line: string) => `  ${line}`;
+
 /** 合并多行并保留缩进，再设置整体缩进 */
 export const ilines = (indent: number | string, ...lines: string[]) => (
   typeof indent === 'number'
@@ -35,3 +38,9 @@ export const ilines = (indent: number | string, ...lines: string[]) => (
       .join('\n')
     : [ indent, ...lines ].join('\n')
 );
+
+/** 仅合并多行，不设置缩进 */
+export const i0lines = (...lines: string[]) => lines.join('\n');
+
+/** 合并多行，设置两个空格缩进 */
+export const i2lines = (...lines: string[]) => ilines(2, ...lines);

@@ -1,3 +1,4 @@
+import { i0lines, i2lines } from '../../utils/set-indent.mjs';
 import { type AnimationOptions } from '../options.mjs';
 
 /** 生成动画配置 */
@@ -16,11 +17,15 @@ export const generateAnimation = ({ name, forward, reverse }: AnimationOptions) 
     : '; no forward animation end';
 
   const forwardLines = forward
-    ? `{forward
-    ${forwardBaseLine}
-    ${forwardBeginLine}
-    ${forwardEndLine}
-  }`
+    ? i0lines(
+      '{forward',
+      i2lines(
+        forwardBaseLine,
+        forwardBeginLine,
+        forwardEndLine,
+      ),
+      '}',
+    )
     : '; no forward animation';
 
   const reverseBaseLine = reverse?.base
@@ -36,17 +41,25 @@ export const generateAnimation = ({ name, forward, reverse }: AnimationOptions) 
     : '; no reverse animation end';
 
   const reverseLines = reverse
-    ? `{reverse
-    ${reverseBaseLine}
-    ${reverseBeginLine}
-    ${reverseEndLine}
-  }`
+    ? i0lines(
+      '{reverse',
+      i2lines(
+        reverseBaseLine,
+        reverseBeginLine,
+        reverseEndLine,
+      ),
+      '}',
+    )
     : '; no reverse animation';
 
-  return `; animation ${name}
-{Anm "${name}"
-  ${forwardLines}
-  ${reverseLines}
-}`;
+  return i0lines(
+    `; animation ${name}`,
+    `{Anm "${name}"`,
+    i2lines(
+      forwardLines,
+      reverseLines,
+    ),
+    '}',
+  );
 
 };
