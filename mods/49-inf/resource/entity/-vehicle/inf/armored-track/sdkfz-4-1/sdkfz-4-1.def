@@ -45,6 +45,8 @@
         {DisorderTime    1.25} ; s
         {OrderTime       9.55} ; s
       }
+      {basic}
+      {ai_in_manual}
     }
     {Place "mgun"
       {Type "main"}
