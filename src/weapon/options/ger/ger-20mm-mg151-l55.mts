@@ -26,7 +26,7 @@ const options: WeaponOptions = {
   spreadTolerance: 0.5,
 
   rechargeTime: 10,
-  recoveryTime: 60 / 750,
+  recoveryTime: 60 / 700,
 
   automatic: true,
 
@@ -49,10 +49,7 @@ const options: WeaponOptions = {
       maxRange: 2000,
       speed: 805,
       gravity: 5,
-      projectile: {
-        nearest: 42,
-        farthest: 15,
-      },
+      projectile: [ 27, 24, 14, 7, 2 ],
       damageToArmor: 40,
       damageToHuman: 400,
       spreading: {

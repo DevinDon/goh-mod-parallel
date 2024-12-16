@@ -1,32 +1,20 @@
 import { ProjectModConfigDir } from '../../../utils/constants.mjs';
 import { type WeaponOptions } from '../../options.mjs';
+import { default as ger20mmFlak38L112 } from './ger-20mm-flak38-l112.mjs';
 
 const options: WeaponOptions = {
+
+  ...ger20mmFlak38L112,
 
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-20mm-flak38-l112-x4.weapon`,
 
   name: 'ger-20mm-flak38-l112-x4',
   description: '德国 2cm FlaK 30 L/112 四联防空炮，适用于旋风自行防空炮',
 
-  from: 'pattern standard-gun',
-
-  fireSound: 'cannon/s1/d1/Shared/Autocannon_20to30mm/',
-  fireSoundClose: 'cannon/s1/3p/Shared/Autocannon_20to30mm/',
-  reloadSound: 'tank/reload_small',
-  cursor: 'ironsights/aa',
-
-  ammo: 'ger-20l55',
-  amout: 80,
-  caliber: 20,
-  syncedProjectiles: true,
-
-  aimingTolerance: 3,
-  spreadTolerance: 0.5,
+  amout: ger20mmFlak38L112.amout * 4,
 
   rechargeTime: 7,
-  recoveryTime: 60 / 1680,
-
-  automatic: true,
+  recoveryTime: ger20mmFlak38L112.recoveryTime / 4,
 
   burst: {
     'short': {
@@ -39,76 +27,6 @@ const options: WeaponOptions = {
     },
     rangeKoef: 0.45,
   },
-
-  bullets: [
-    {
-      name: 'ap',
-      minRange: 0,
-      maxRange: 2300,
-      speed: 760,
-      gravity: 5,
-      projectile: {
-        nearest: 45,
-        farthest: 11,
-      },
-      damageToArmor: 30,
-      damageToHuman: 300,
-      spreading: {
-        radiusTable: {
-          nearest: 0.3,
-          farthest: 1.7,
-        },
-        burstRecoveryTime: 0.2,
-        burstAccuracy: 100,
-        spreadPower: 1.25,
-        spreadXYRatio: 0.75,
-      },
-      overmatch: 'ger-20mm-ap',
-    },
-    {
-      name: 'apcr',
-      minRange: 0,
-      maxRange: 2300,
-      speed: 1050,
-      gravity: 5,
-      projectile: {
-        nearest: 63,
-        farthest: 1,
-      },
-      damageToArmor: 20,
-      damageToHuman: 200,
-      spreading: {
-        radiusTable: {
-          nearest: 0.2,
-          farthest: 1.5,
-        },
-        burstRecoveryTime: 0.2,
-        burstAccuracy: 100,
-        spreadPower: 1.25,
-        spreadXYRatio: 0.75,
-      },
-      overmatch: 'ger-20mm-apcr',
-    },
-    {
-      name: 'he',
-      minRange: 0,
-      maxRange: 2300,
-      speed: 900,
-      gravity: 5,
-      damageToArmor: 60,
-      damageToHuman: 600,
-      spreading: {
-        radiusTable: {
-          nearest: 0.4,
-          farthest: 2.5,
-        },
-        burstRecoveryTime: 0.2,
-        burstAccuracy: 100,
-        spreadPower: 1.00,
-        spreadXYRatio: 1.25,
-      },
-    },
-  ],
 
 };
 
