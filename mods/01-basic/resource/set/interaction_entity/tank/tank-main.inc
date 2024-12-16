@@ -755,6 +755,10 @@
       {tags remove "mantlet_brake"}
       {call "update_mantlet"}
     else component "cut_part"
+      ("repair_shield_part" args "fenderr")
+      ("repair_shield_part" args "fenderl")
+      ("repair_shield_part" args "fenderr2")
+      ("repair_shield_part" args "fenderl2")
       ("repair_shield_part" args "shieldr1")
       ("repair_shield_part" args "shieldr2")
       ("repair_shield_part" args "shieldr3")
