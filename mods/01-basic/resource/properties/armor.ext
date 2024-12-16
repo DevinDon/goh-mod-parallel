@@ -195,7 +195,6 @@
     {component tag "cut_part"
       {health
         {hp 100}
-        {hp_broken 1}  ;// destroys component and cannot be repaired
       }
       ("global_damage_mod")
     }
