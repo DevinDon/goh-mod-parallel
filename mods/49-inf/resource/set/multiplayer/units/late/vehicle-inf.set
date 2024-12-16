@@ -21,37 +21,37 @@
 )
 
 ; 卡车
-("set-standard-vehicle" vehicle(sdkfz-305-1) cost(30)  cd(0)  ci(30) cw(2) cp(0) tags(vehicle)        period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-305-2) cost(100) cd(90) ci(60) cw(2) cp(0) tags(vehicle)        period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz305) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-305-3) cost(100) cd(60) ci(30) cw(2) cp(0) tags(vehicle supply) period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-305-4) cost(100) cd(60) ci(30) cw(2) cp(0) tags(vehicle supply) period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-305-5) cost(100) cd(60) ci(30) cw(2) cp(0) tags(vehicle supply) period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-305-1) cost(30)  cd(0)  ci(30) cw(2) cp(0) tags(vehicle infsdkfz3051limit5)             period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-305-2) cost(100) cd(90) ci(60) cw(2) cp(0) tags(vehicle infsdkfz3052limit5)             period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz305) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-305-3) cost(100) cd(60) ci(30) cw(2) cp(0) tags(vehicle supply infsdkfz305supplylimit5) period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-305-4) cost(100) cd(60) ci(30) cw(2) cp(0) tags(vehicle supply infsdkfz305supplylimit5) period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-305-5) cost(100) cd(60) ci(30) cw(2) cp(0) tags(vehicle supply infsdkfz305supplylimit5) period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
 
 ; 轮式装甲车
-("set-standard-vehicle" vehicle(sdkfz-234-1) cost(175) cd(120) ci(60)  cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz234) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-234-2) cost(225) cd(150) ci(90)  cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz234) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-234-3) cost(250) cd(150) ci(90)  cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz234) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-234-4) cost(350) cd(240) ci(120) cw(4) cp(0) tags(vehicle) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz234) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-234-1) cost(175) cd(120) ci(60)  cw(4) cp(0) tags(vehicle infsdkfz2341limit5) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz234) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-234-2) cost(225) cd(150) ci(90)  cw(4) cp(0) tags(vehicle infsdkfz2342limit2) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz234) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-234-3) cost(250) cd(150) ci(90)  cw(4) cp(0) tags(vehicle infsdkfz2343limit2) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz234) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-234-4) cost(350) cd(240) ci(120) cw(4) cp(0) tags(vehicle infsdkfz2344limit2) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz234) button(vehicles))
 
 ; 履带式装甲车
-("set-standard-vehicle" vehicle(sdkfz-251-1)  cost(150) cd(90)  ci(30)  cw(3) cp(0) tags(vehicle)                  period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz251) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-251-16) cost(200) cd(90)  ci(60)  cw(3) cp(0) tags(vehicle sdkfz25116limit2) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(sdkfz251) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-251-17) cost(250) cd(120) ci(90)  cw(3) cp(0) tags(vehicle)                  period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz251) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-251-21) cost(350) cd(150) ci(120) cw(3) cp(0) tags(vehicle)                  period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz251) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-251-22) cost(500) cd(300) ci(180) cw(3) cp(0) tags(vehicle)                  period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz251) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-251-1)  cost(150) cd(90)  ci(30)  cw(4) cp(0) tags(vehicle infsdkfz2511limit5)  period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz251) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-251-16) cost(200) cd(90)  ci(60)  cw(4) cp(0) tags(vehicle infsdkfz25116limit2) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(sdkfz251) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-251-17) cost(250) cd(120) ci(90)  cw(4) cp(0) tags(vehicle infsdkfz25117limit5) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz251) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-251-21) cost(275) cd(150) ci(120) cw(4) cp(0) tags(vehicle infsdkfz25121limit2) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz251) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-251-22) cost(375) cd(240) ci(120) cw(4) cp(0) tags(vehicle infsdkfz25122limit2) period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz251) button(vehicles))
 
 ; 自行火炮 / 自行榴弹炮
-("set-standard-vehicle" vehicle(sdkfz-124) cost(400)  cd(180) ci(600) cw(5) cp(0) tags(light sdkfz124limit2) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(sdkfz124) button(tanks))
+("set-standard-vehicle" vehicle(sdkfz-124) cost(400)  cd(180) ci(600) cw(5) cp(0) tags(light infsdkfz124limit2) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(sdkfz124) button(tanks))
 
 ; 坦克
-("set-standard-vehicle" vehicle(panzer-4-h)   cost(700)  cd(300) ci(180) cw(5) cp(0) tags(medium panzer4limit10) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer4)  button(tanks))
-("set-standard-vehicle" vehicle(panzer-4-j)   cost(550)  cd(360) ci(90)  cw(5) cp(0) tags(medium panzer4limit10) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer4)  button(tanks))
-("set-standard-vehicle" vehicle(panzer-5-a)   cost(1500) cd(750) ci(420) cw(7) cp(0) tags(medium panzer5limit3)  period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer5)  button(tanks))
-("set-standard-vehicle" vehicle(panzer-5-g)   cost(1300) cd(850) ci(210) cw(7) cp(0) tags(medium panzer5limit3)  period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer5)  button(tanks))
-("set-standard-vehicle" vehicle(panzer-6-e)   cost(1400) cd(600) ci(360) cw(9) cp(0) tags(heavy  panzer6limit3)  period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer6)  button(tanks))
-("set-standard-vehicle" vehicle(panzer-6-h)   cost(1150) cd(700) ci(180) cw(9) cp(0) tags(heavy  panzer6limit3)  period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer6)  button(tanks))
-("set-standard-vehicle" vehicle(panzer-6-b-h) cost(2000) cd(900) ci(480) cw(9) cp(0) tags(heavy  panzer6blimit2) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer6b) button(tanks))
-("set-standard-vehicle" vehicle(panzer-6-b-p) cost(1700) cd(900) ci(240) cw(9) cp(0) tags(heavy  panzer6blimit2) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer6b) button(tanks))
+("set-standard-vehicle" vehicle(panzer-4-h)   cost(700)  cd(300) ci(180) cw(5) cp(0) tags(medium infpanzer4limit10) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer4)  button(tanks))
+("set-standard-vehicle" vehicle(panzer-4-j)   cost(550)  cd(360) ci(90)  cw(5) cp(0) tags(medium infpanzer4limit10) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer4)  button(tanks))
+("set-standard-vehicle" vehicle(panzer-5-a)   cost(1500) cd(750) ci(420) cw(7) cp(0) tags(medium infpanzer5limit3)  period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer5)  button(tanks))
+("set-standard-vehicle" vehicle(panzer-5-g)   cost(1300) cd(850) ci(210) cw(7) cp(0) tags(medium infpanzer5limit3)  period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer5)  button(tanks))
+("set-standard-vehicle" vehicle(panzer-6-e)   cost(1400) cd(600) ci(360) cw(9) cp(0) tags(heavy  infpanzer6limit3)  period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer6)  button(tanks))
+("set-standard-vehicle" vehicle(panzer-6-h)   cost(1150) cd(700) ci(180) cw(9) cp(0) tags(heavy  infpanzer6limit3)  period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer6)  button(tanks))
+("set-standard-vehicle" vehicle(panzer-6-b-h) cost(2000) cd(900) ci(480) cw(9) cp(0) tags(heavy  infpanzer6blimit2) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer6b) button(tanks))
+("set-standard-vehicle" vehicle(panzer-6-b-p) cost(1700) cd(900) ci(240) cw(9) cp(0) tags(heavy  infpanzer6blimit2) period(late) crew1(engineer-1:1) crew2(engineer-1:4) group(panzer6b) button(tanks))
 
 ; 学说载具
 ; define from squad_vehicle2_doctrine
@@ -104,23 +104,23 @@
 {"panzer-5-d"
   ("set-standard-doctrine-vehicle" vehicle(panzer-5-d) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
   ("set-standard-doctrine-level-2" doctrine(ascension_inf_tank) cost(100))
-  {tags "panzer5dlimit1"}
+  {tags "infpanzer5dlimit1"}
 }
 
 {"panzer-5-f"
   ("set-standard-doctrine-vehicle" vehicle(panzer-5-f) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
   ("set-standard-doctrine-level-2" doctrine(ascension_inf_tank) cost(100))
-  {tags "panzer5flimit1"}
+  {tags "infpanzer5flimit1"}
 }
 
 {"panzer-6-e-ace"
   ("set-standard-doctrine-vehicle" vehicle(panzer-6-e-ace) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
   ("set-standard-doctrine-level-2" doctrine(ascension_inf_tank) cost(100))
-  {tags "panzer6eacelimit1"}
+  {tags "infpanzer6eacelimit1"}
 }
 
 {"panzer-6-b-h-ace"
   ("set-standard-doctrine-vehicle" vehicle(panzer-6-b-h-ace) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
   ("set-standard-doctrine-level-3" doctrine(ascension_inf_tank) cost(200))
-  {tags "panzer6bacelimit1"}
+  {tags "infpanzer6bacelimit1"}
 }

@@ -38,19 +38,15 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo inf-10mm-chain ap" 1900}
-      ; {Item "ammo inf-15mm-chain ap" 600}
-      ; {Item "weapon inf-infantry-heavy-machine-gun" filling "ammo inf-15mm-chain ap" 120 {user "mgun2"}}
-
-      {Item "ammo ger-88l56 apcbche" 15}
-      {Item "ammo ger-88l56 he" 15}
+      {Item "ammo ger-75l43 apcbche" 16}
+      {Item "ammo ger-75l43 he" 8}
     }
   }
 
   {Weaponry
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-88mm-kwk36-l56" filling "ammo ger-88l56 apcbche" 1}
+      {Weapon "weapon ger-75mm-pak40-l46" filling "ammo ger-75l43 apcbche" 1}
       {Gunner "gunner"}
       {Charger "charger"}
       {AccuracyByMotion
@@ -62,50 +58,23 @@
         {OrderTime        2.25} ; s
       }
     }
-    ; {Place "mgun2"
-    ;   {type "rear"}
-    ;   {Gunner "gunner4"}
-    ;   {Charger "gunner4"}
-    ;   {LinkBone "mgun2"}
-    ;   {LinkAnimation "off"}
-    ;   {basic}
-    ;   {ai_in_manual}
-    ;   {AccuracyByMotion
-    ;     {MaxLinearSpeed   8.00} ; km/h
-    ;     {ByLinearSpeed    0.40} ; km/h
-    ;     {MaxAngularSpeed 30.00} ; deg/s
-    ;     {ByAngularSpeed   0.50} ; deg/s
-    ;     {DisorderTime     0.60} ; s
-    ;     {OrderTime        1.00} ; s
-    ;   }
-    ; }
   }
 
-  {Mass 7810}
+  {Mass 9900}
   {Chassis "wheel"
     ("set-tank-trace" fx("tracks_sm2") step(0.2) length(0.49) boneleft("FXtraceL3") boneright("FXtraceR3"))
     ("set-car-trace" fx("tracewheel03a") step(0.09) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-armored-car" speed(53) power(100) mass(7810) performance(1.53))
-    ("set-fuel-bag" volume(160) power(100) mass(7810))
+    ("set-maneuverability-of-armored-car" speed(52) power(100) mass(9900) performance(1.53))
+    ("set-fuel-bag" volume(160) power(100) mass(9900))
   }
 
   {Bone "gun_rot"
-    {limits -3 22}
-    {speed2 8}
+    {limits -6 22}
+    {speed2 4}
   }
   {Bone "turret"
-    ; {limits -20 20}
-    {limits -35 35}
-    {speed2 6}
+    {limits -22 22}
+    {speed2 14}
   }
-
-  ; {Bone "mgun_a2_rot1" ; 机枪射界
-  ;   {speed2 60}
-  ;   {limits -20 45} ; 右左
-  ; }
-  ; {Bone "mgun_a2_rot2" ; 机枪俯仰角
-  ;   {speed2 60}
-  ;   {limits -90 0} ; 俯仰角不是从 0 开始的，需要 + 75 度
-  ; }
 
 }

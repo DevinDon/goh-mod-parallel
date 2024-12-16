@@ -36,9 +36,6 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo inf-15mm-chain ap" 600}
-      {Item "weapon inf-infantry-heavy-machine-gun" filling "ammo inf-15mm-chain ap" 120 {user "mgun2"}}
-
       {item "ammo ger-15l84 aphe" 2250}
     }
   }
@@ -59,48 +56,22 @@
         {OrderTime        1.25} ; s
       }
     }
-    {Place "mgun2"
-      {type "rear"}
-      {Gunner "charger"}
-      {Charger "charger"}
-      {LinkBone "mgun2"}
-      {LinkAnimation "off"}
-      {basic}
-      {ai_in_manual}
-      {AccuracyByMotion
-        {MaxLinearSpeed   8.00} ; km/h
-        {ByLinearSpeed    0.40} ; km/h
-        {MaxAngularSpeed 30.00} ; deg/s
-        {ByAngularSpeed   0.50} ; deg/s
-        {DisorderTime     0.60} ; s
-        {OrderTime        1.00} ; s
-      }
-    }
   }
 
-  {Mass 8790} ; 7810 + 350 + 630
+  {Mass 8000}
   {Chassis "wheel"
     ("set-tank-trace" fx("tracks_sm2") step(0.2) length(0.49) boneleft("FXtraceL3") boneright("FXtraceR3"))
     ("set-car-trace" fx("tracewheel03a") step(0.09) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-armored-car" speed(53) power(100) mass(8790) performance(1.471))
-    ("set-fuel-bag" volume(160) power(100) mass(8790))
+    ("set-maneuverability-of-armored-car" speed(52) power(100) mass(8000) performance(1.53))
+    ("set-fuel-bag" volume(160) power(100) mass(8000))
   }
 
   {Bone "gun_rot"
     {limits -5 49}
-    {speed2 20}
+    {speed2 60}
   }
   {Bone "turret"
-    {speed2 25}
-  }
-
-  {Bone "mgun_a2_rot1" ; 机枪射界
     {speed2 60}
-    {limits -20 45} ; 右左
-  }
-  {Bone "mgun_a2_rot2" ; 机枪俯仰角
-    {speed2 60}
-    {limits -90 0} ; 俯仰角不是从 0 开始的，需要 + 75 度
   }
 
 }

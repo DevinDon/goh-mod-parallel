@@ -56,13 +56,13 @@
       {interval %ci}
     }
     {content "sdkfz-305-1 ( %crews )"}
-    {tags "all infantry inf %tags %period"}
+    {tags "all infantry inf infinfantrylimit10 %tags %period"}
     {cost 30} ; sdkfz-305-1 卡车
     {group "%group"}
     {button "%button"}
     {doctrine %doctrine}
     {level 2}
-    {squad_cost_factor 1}
+    {squad_cost_factor 0.75}
     {round_multiple 1}
   }
 )
