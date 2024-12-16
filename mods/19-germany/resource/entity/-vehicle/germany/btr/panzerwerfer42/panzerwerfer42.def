@@ -18,14 +18,14 @@
   {Extender "inventory"
     {Weapon "mgun" {mask "mountable"}}
     {Box
-      {Size 12 10}
+      {Size 12 12}
       {Weight 1000}
       {Item "repair_kit" 10}
 
       {Item "ammo ger-mgun api" 1500}
       {Item "weapon ger-mg42" filled {user "mgun"}}
 
-      {Item "ammo ger-150mm-nebelwerfer-rocket he" 20}
+      {Item "ammo ger-150mm-nebelwerfer-rocket he" 10}
     }
   }
 
@@ -47,7 +47,7 @@
       }
     }
     {Place "mgun"
-      {Type "aa"}
+      {Type "main"}
       {Gunner "commander"}
       {Charger "commander"}
       {LinkBone "mgun"}
