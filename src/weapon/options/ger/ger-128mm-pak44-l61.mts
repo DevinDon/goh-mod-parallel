@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-128mm-pak44-l61.weapon`,
 
   name: 'ger-128mm-pak44-l61',
-  description: '德国 12.8cm PaK 44 L/61 反坦克炮',
+  description: '德国 12.8cm PaK 44 L/61 反坦克炮，适用于猎虎坦克歼击车',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2800,
       speed: 920,
       gravity: 5,
-      projectile: {
-        nearest: 267,
-        farthest: 208,
-      },
+      projectile: [ 272, 269, 257, 242, 215 ],
       damageToArmor: 490,
       damageToHuman: 4900,
       spreading: {
