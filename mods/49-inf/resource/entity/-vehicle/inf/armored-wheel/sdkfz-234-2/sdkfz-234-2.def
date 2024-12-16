@@ -47,9 +47,9 @@
 
       {Item "nbks grenade" 6}
 
-      {Item "ammo ger-50l60 apche" 19}
+      {Item "ammo ger-50l60 apche" 39}
       {Item "ammo ger-50l60 apcr"   5}
-      {Item "ammo ger-50l60 he"    29}
+      {Item "ammo ger-50l60 he"     9}
     }
   }
 
