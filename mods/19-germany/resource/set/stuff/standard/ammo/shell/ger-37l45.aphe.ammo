@@ -1,4 +1,4 @@
-{from "pattern aphe"
+{from "pattern standard-aphe"
   {tag "shell size1 37to47_he_filler"} ; 标签
   {entity "37mm_ger_aphe"} ; 模型
   {mass 1.31} ; 质量

@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-600mm-karl-l8',
   description: '德国 60cm L/8 卡尔臼炮',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'gun/gun_203_210',
   fireSoundClose: 'gun/gun_203_210',

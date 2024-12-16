@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-50mm-kwk38-l42',
   description: '德国 5cm KwK 38 L/42 坦克炮，适用于三号 F 型',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s2/d1/Shared/Cannon_50to57mm_HV/',
   fireSoundClose: 'cannon/s1/1p/Shared/Cannon/',

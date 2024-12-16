@@ -3,12 +3,12 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/reactive/ger-150mm-panzerwerfer.weapon`,
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/rocket-launcher/ger-150mm-panzerwerfer.weapon`,
 
   name: 'ger-150mm-panzerwerfer',
   description: '德国 15cm 火箭发射器',
 
-  from: 'pattern standard-reactive',
+  type: 'rocket-launcher',
 
   tags: [ 'gun' ],
 
@@ -18,7 +18,7 @@ const options: WeaponOptions = {
   cursor: 'ironsights/tank',
   cursorReloading: 'gun_he',
 
-  ammo: 'ger-150mm-nebelwerfer he',
+  ammo: 'ger-150mm-nebelwerfer-rocket he',
   amout: 1,
   caliber: 150,
   syncedProjectiles: true,

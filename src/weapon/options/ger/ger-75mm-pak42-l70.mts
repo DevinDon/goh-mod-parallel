@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-75mm-pak42-l70',
   description: '德国 7.5cm Pak 42 L/70 反坦克炮，适用于四号坦克歼击车 70A / 四号坦克歼击车 70V',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s3/d1/Shared/Cannon_75to76mm/',
   fireSoundClose: 'cannon/s3/3p/Shared/Cannon_75to76mm/',

@@ -1,4 +1,4 @@
-{from "pattern he"
+{from "pattern standard-he"
   {tag "shell size3 88to105"} ; 标签
   {entity "88mm_ger_l56_he"} ; 模型
   {mass 28.5} ; 质量

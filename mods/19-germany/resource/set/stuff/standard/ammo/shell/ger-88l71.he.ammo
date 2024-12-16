@@ -1,4 +1,4 @@
-{from "pattern he"
+{from "pattern standard-he"
   {tag "shell size2 88to105 no_throw"} ; 标签
   {entity "88mm_ger_l71_he"} ; 模型
   {mass 22.47} ; 质量

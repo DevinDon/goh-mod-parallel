@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-88mm-pak43-l71',
   description: '德国 8.8cm PaK 43 L/71 反坦克炮，适用于猎豹坦克歼击车 G1 型',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s4/d1/Shared/Cannon_85to100mm_HV/',
   fireSoundClose: 'cannon/s4/3p/Shared/Cannon_85to100mm_HV/',

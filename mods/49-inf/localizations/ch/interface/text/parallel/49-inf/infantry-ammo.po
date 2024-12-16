@@ -64,10 +64,10 @@ msgid   "15mm Chain AP"
 msgstr  "15mm 弹链 穿甲弹"
 
 # 火箭弹
-msgctxt "desc/ammo/inf-infantry-rocket-launcher-ammo he"
+msgctxt "desc/ammo/inf-infantry-rocket he"
 msgid   "Infantry Rocket Launcher Ammo [<c(ff1200)>HE</c>]"
 msgstr  "步兵火箭筒弹药 [<c(ff1200)>高爆弹</c>]"
 
-msgctxt "desc/ammo/inf-infantry-rocket-launcher-ammo heat"
+msgctxt "desc/ammo/inf-infantry-rocket heat"
 msgid   "Infantry Rocket Launcher Ammo [<c(c9a6ff)>HEAT</c>]"
 msgstr  "步兵火箭筒弹药 [<c(c9a6ff)>破甲弹</c>]"

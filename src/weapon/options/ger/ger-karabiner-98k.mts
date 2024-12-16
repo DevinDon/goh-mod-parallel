@@ -11,7 +11,7 @@ const options: WeaponOptions = {
   entity: 'k98',
   mass: 3.9,
 
-  from: 'pattern standard-rifle',
+  type: 'rifle',
 
   tags: [ 'bolt_action' ],
 

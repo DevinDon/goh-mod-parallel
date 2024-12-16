@@ -1,4 +1,4 @@
-{from "pattern he"
+{from "pattern standard-he"
   {tag "37to40 no_throw size2 auto"} ; 标签
   {entity "37mm_ger_auto_he"} ; 模型
   {mass 1.5} ; 质量

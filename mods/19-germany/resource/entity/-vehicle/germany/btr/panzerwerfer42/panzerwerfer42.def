@@ -25,14 +25,14 @@
       {Item "ammo ger-mgun api" 1500}
       {Item "weapon ger-mg42" filled {user "mgun"}}
 
-      {Item "ammo ger-150mm-nebelwerfer he" 20}
+      {Item "ammo ger-150mm-nebelwerfer-rocket he" 20}
     }
   }
 
   {Weaponry
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-150mm-panzerwerfer-x10" filling "ammo ger-150mm-nebelwerfer he" 10}
+      {Weapon "weapon ger-150mm-panzerwerfer-x10" filling "ammo ger-150mm-nebelwerfer-rocket he" 10}
       {Barrels 10}
       {Gunner "gunner"}
       {Charger "charger"}

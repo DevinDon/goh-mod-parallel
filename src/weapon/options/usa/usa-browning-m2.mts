@@ -11,7 +11,7 @@ const options: WeaponOptions = {
   entity: 'browning_m2',
   mass: 38,
 
-  from: 'pattern standard-machine-gun',
+  type: 'machine-gun',
 
   tags: [ 'aa', 'gun' ],
 

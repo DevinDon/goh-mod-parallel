@@ -99,8 +99,8 @@ export type WeaponOptions = {
   /** 武器描述，用于备注 */
   description: string;
 
-  /** 继承自哪个武器或模板，默认为 `pattern gun` */
-  from?: string;
+  /** 武器类型 */
+  type: 'gun' | 'rocket-launcher' | 'portable-rocket-launcher' | 'flame-thrower' | 'sniper' | 'machine-gun' | 'rifle';
 
   /** 标签，可选 */
   tags?: string[];

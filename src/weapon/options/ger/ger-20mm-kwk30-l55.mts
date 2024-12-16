@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-20mm-kwk30-l55',
   description: '德国 2cm KwK 30 L/55 坦克炮，适用于 Sd.kfz 231',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s1/d1/Shared/Autocannon_20to30mm/',
   fireSoundClose: 'cannon/s1/1p/Shared/Autocannon_20to30mm/',

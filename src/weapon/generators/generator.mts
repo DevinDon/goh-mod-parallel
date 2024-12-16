@@ -44,7 +44,7 @@ export const generateWeapon = (options: WeaponOptions) => {
   return i0lines(
     `; ${options.name}`,
     `; ${options.description}`,
-    `{from "${options.from ?? 'pattern gun'}"`,
+    `{from "pattern standard-${options.type}"`,
     '  (include "/properties/standard/gun/define.ext")',
     `  ${tagsLine}`,
     `  ${entityLine}`,

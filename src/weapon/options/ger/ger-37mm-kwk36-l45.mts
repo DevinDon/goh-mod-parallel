@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-37mm-kwk36-l45',
   description: '德国 3.7cm KwK 36 L/45 坦克炮，适用于山猫',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s1/d1/Shared/Cannon_37to40mm/',
   fireSoundClose: 'cannon/s1/1p/Shared/Cannon/',

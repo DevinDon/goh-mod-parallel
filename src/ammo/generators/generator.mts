@@ -46,7 +46,7 @@ export const generateAmmo = ({ type, tags, entity, mass, fill, caliber, speed, v
     : '; 无附加内容';
 
   return i0lines(
-    `{from "pattern ${type}"`,
+    `{from "pattern standard-${type}"`,
     `  ${tagLine}`,
     `  ${entityLine}`,
     `  ${massLine}`,

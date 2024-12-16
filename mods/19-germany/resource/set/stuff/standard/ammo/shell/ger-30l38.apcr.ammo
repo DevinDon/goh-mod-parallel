@@ -1,4 +1,4 @@
-{from "pattern apcr"
+{from "pattern standard-apcr"
   {tag "37to40 zenite size2 auto"} ; 标签
   {entity "30mm_ger_auto_apcr"} ; 模型
   {mass 0.335} ; 质量

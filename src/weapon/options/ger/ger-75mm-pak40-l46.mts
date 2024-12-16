@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-75mm-pak40-l46',
   description: '德国 7.5cm PaK 40 L/46 反坦克炮，适用于 Sd.Kfz 234/4 轮式装甲车',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s3/d1/Shared/Cannon_75to76mm/',
   fireSoundClose: 'cannon/s3/3p/Shared/Cannon_75to76mm/',

@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-30mm-mk108-l19',
   description: '德国 3cm MK 108 L/19 防空炮',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   entity: 'mg42_belt',
   mass: 11.57,

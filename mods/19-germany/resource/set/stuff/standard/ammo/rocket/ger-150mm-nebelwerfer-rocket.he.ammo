@@ -1,0 +1,29 @@
+{from "pattern standard-he-rocket"
+  {tag "big bomb mortar he fg itemin2hands arty"} ; 标签
+  {entity "150mm_nebelwerfer"} ; 模型
+  {mass 31.75} ; 质量
+  {view "150mm_nebelwerfer"
+    {tail "rocket_smoke_nebel" "tail"}
+  }
+  {inventory
+    {weight 304}
+    {size 10 3}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 10.21} ; 接触伤害
+    {area 1.27 2.55} ; 有效杀伤半径，极限杀伤半径
+    {ground_interaction_radius 2.55} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 3.76} ; 破片伤害
+    {area 3.03 15.15} ; 有效杀伤半径，极限杀伤半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 1.06} ; 冲击波伤害
+    {area 2.81 14.05} ; 有效杀伤半径，极限杀伤半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  ; 无附加内容
+}

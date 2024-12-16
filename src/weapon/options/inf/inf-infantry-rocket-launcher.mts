@@ -3,7 +3,7 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/bazooka/inf-infantry-rocket-launcher.weapon`,
+  destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/rocket-launcher/inf-infantry-rocket-launcher.weapon`,
 
   name: 'inf-infantry-rocket-launcher',
   description: '多用途火箭筒',
@@ -11,14 +11,14 @@ const options: WeaponOptions = {
   entity: 'panzershreck_54',
   mass: 11,
 
-  from: 'pattern standard-bazooka',
+  type: 'portable-rocket-launcher',
 
   fireSound: 'reactive/d1/Shared/Rocket_Launcher/',
   fireSoundClose: 'reactive/d1/Shared/Rocket_Launcher/',
   reloadSound: 'panzershreck',
   cursor: 'ironsights/rifle',
 
-  ammo: 'inf-infantry-rocket-launcher-ammo',
+  ammo: 'inf-infantry-rocket',
   amout: 1,
   caliber: 100,
   syncedProjectiles: true,

@@ -1,4 +1,4 @@
-{from "pattern he"
+{from "pattern standard-he"
   {tag "shell size7 150to152 arty"} ; 标签
   {entity "600mm_ger_he"} ; 模型
   {mass 1250} ; 质量

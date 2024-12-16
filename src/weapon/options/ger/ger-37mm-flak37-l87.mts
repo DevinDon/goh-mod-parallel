@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-37mm-flak37-l87',
   description: '德国 3.7cm FlaK 37 L/87 防空炮',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s1/d1/Shared/Autocannon_37to40mm/',
   fireSoundClose: 'cannon/s1/1p/Shared/Autocannon_37to40mm/',

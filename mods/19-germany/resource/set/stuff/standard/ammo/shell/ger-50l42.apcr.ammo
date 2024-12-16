@@ -1,4 +1,4 @@
-{from "pattern apcr"
+{from "pattern standard-apcr"
   {tag "shell size1 50to57"} ; 标签
   {entity "50mm_ger_l42_apcr"} ; 模型
   {mass 2.65} ; 质量

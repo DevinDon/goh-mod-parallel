@@ -1,4 +1,4 @@
-{from "pattern heat"
+{from "pattern standard-heat"
   {tag "shell size2 size2_heat_shell heat_low"} ; 标签
   {entity "75mm_ger_l24_heat"} ; 模型
   {mass 6.44} ; 质量

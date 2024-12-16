@@ -1,4 +1,4 @@
-{from "pattern he"
+{from "pattern standard-he"
   {tag "37to40 no_throw size2 auto zenite"} ; 标签
   {entity "30mm_ger_auto_he"} ; 模型
   {mass 0.55} ; 质量

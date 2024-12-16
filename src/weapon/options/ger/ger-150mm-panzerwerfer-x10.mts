@@ -1,4 +1,5 @@
 import { ProjectModConfigDir } from '../../../utils/constants.mjs';
+import { i0lines } from '../../../utils/set-indent.mjs';
 import { type WeaponOptions } from '../../options.mjs';
 import { default as ger150mmPanzerwerfer } from './ger-150mm-panzerwerfer.mjs';
 
@@ -6,7 +7,7 @@ const options: WeaponOptions = {
 
   ...ger150mmPanzerwerfer,
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/reactive/ger-150mm-panzerwerfer-x10.weapon`,
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/rocket-launcher/ger-150mm-panzerwerfer-x10.weapon`,
 
   name: 'ger-150mm-panzerwerfer-x10',
   description: '德国 15cm 十联装火箭发射器，适用于 42 型火箭发射车',
@@ -17,10 +18,12 @@ const options: WeaponOptions = {
   recoveryTime: ger150mmPanzerwerfer.recoveryTime / 10,
 
   extra: [
-    `{Burst
-  {min 10}
-  {noaiming}
-}`,
+    i0lines(
+      '{Burst',
+      '  {min 10}',
+      '  {noaiming}',
+      '}',
+    ),
   ],
 
 };

@@ -1,4 +1,4 @@
-{from "pattern he"
+{from "pattern standard-he"
   {tag "20to25 no_throw auto size1"} ; 标签
   {entity "20mm_ger_auto_he"} ; 模型
   {mass 0.303} ; 质量

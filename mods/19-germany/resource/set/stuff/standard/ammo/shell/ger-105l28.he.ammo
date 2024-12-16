@@ -1,4 +1,4 @@
-{from "pattern he"
+{from "pattern standard-he"
   {tag "shell size3 88to105 arty"} ; 标签
   {entity "105mm_ger_he"} ; 模型
   {mass 15.3} ; 质量

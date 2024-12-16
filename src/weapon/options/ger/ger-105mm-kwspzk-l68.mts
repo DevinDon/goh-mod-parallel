@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-105mm-kwspzk-l68',
   description: '德国 10.5cm KwsPz.K L/68 实验性坦克炮，适用于六号坦克 B 型亨舍尔炮塔 10.5cm KwsPz.K L/68 实验性坦克炮',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s4/d1/Shared/Cannon_85to100mm_HV/',
   fireSoundClose: 'cannon/s2/1p/Shared/',

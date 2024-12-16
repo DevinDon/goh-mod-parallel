@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-150mm-sfh18-l30',
   description: '德国 15cm sFH 18 L/30 榴弹炮，适用于胡蜂自行火炮',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s5/d1/Shared/Cannon_150to210mm/',
   fireSoundClose: 'cannon/s5/3p/Shared/Cannon_150to210mm/',

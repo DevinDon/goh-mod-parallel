@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'usa-37mm-m6',
   description: '美国 37mm M6 坦克炮，适用于 M8 灰狗轮式装甲车',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'gun/gun_37_57',
   fireSoundClose: 'gun/gun_interior/size2',

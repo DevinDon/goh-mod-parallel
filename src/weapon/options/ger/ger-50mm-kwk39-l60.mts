@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-50mm-kwk39-l60',
   description: '德国 5cm KwK 39 L/60 坦克炮，适用于三号 M 型 / Sd.Kfz 234/2 轮式装甲车',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s2/d1/Shared/Cannon_50to57mm_HV/',
   fireSoundClose: 'cannon/s1/1p/Shared/Cannon/',

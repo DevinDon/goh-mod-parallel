@@ -1,4 +1,4 @@
-{from "pattern ap"
+{from "pattern standard-ap"
   {tag "37to40 zenite size2 auto"} ; 标签
   {entity "37mm_ger_auto_ap"} ; 模型
   {mass 1.57} ; 质量

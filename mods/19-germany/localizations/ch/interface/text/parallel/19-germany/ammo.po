@@ -264,12 +264,12 @@ msgctxt "desc/ammo/ger-150l38 he"
 msgid   "15cm Gr.103 [<c(ff1200)>HE</c>]"
 msgstr  "15cm Gr.103 [<c(ff1200)>高爆弹</c>]"
 
-msgctxt "desc/ammo/ger-150mm-nebelwerfer he"
+msgctxt "desc/ammo/ger-150mm-nebelwerfer-rocket he"
 msgid   "15cm Wurfgranate 41 [<c(ff1200)>HE</c>]"
 msgstr  "15cm Wurfgranate 41 火箭弹 [<c(ff1200)>高爆弹</c>]"
 
 # 280mm
-msgctxt "desc/ammo/ger-280mm-nebelwerfer he"
+msgctxt "desc/ammo/ger-280mm-nebelwerfer-rocket he"
 msgid   "28cm Wurfgranate [<c(ff1200)>HE</c>]"
 msgstr  "28cm Wurfgranate 火箭弹 [<c(ff1200)>高爆弹</c>]"
 

@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-14mm-flammenwerfer-right',
   description: '德国 1.4cm 喷火器 右侧',
 
-  from: 'pattern standard-flame-thrower',
+  type: 'flame-thrower',
 
   tags: [ 'gun' ],
 

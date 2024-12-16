@@ -1,5 +1,0 @@
-{from "pattern shell"
-  {tag "he fg all_he"}
-  {detonationThickness 0.5}
-  {possibleDamageRadius 0.1}
-}

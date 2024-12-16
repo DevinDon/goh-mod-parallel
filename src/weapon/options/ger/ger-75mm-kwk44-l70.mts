@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-75mm-kwk44-l70',
   description: '德国 7.5cm KwK 44 L/70 坦克炮，适用于五号 F 型',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s3/d1/Shared/Cannon_75to76mm/',
   fireSoundClose: 'cannon/s3/3p/Shared/Cannon_75to76mm/',

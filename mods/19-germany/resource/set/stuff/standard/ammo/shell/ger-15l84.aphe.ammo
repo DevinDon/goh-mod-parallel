@@ -1,4 +1,4 @@
-{from "pattern aphe"
+{from "pattern standard-aphe"
   {tag "20to25 zenite auto size1 bullet_fx"} ; 标签
   {entity "15mm_ger_auto_ap"} ; 模型
   {mass 0.32} ; 质量

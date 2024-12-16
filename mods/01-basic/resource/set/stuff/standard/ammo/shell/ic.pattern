@@ -1,4 +1,0 @@
-{from "pattern shell"
-  {tag "ic fg"}
-  {detonationThickness 0.5}
-}

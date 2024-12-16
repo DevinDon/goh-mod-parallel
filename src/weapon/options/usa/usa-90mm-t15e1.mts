@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'usa-90mm-t15e1',
   description: '美国 90mm T15E1 坦克炮，适用于 T26E4 超级潘兴重型坦克',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

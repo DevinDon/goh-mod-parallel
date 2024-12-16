@@ -1,4 +1,0 @@
-{from "pattern shell"
-  {tag "wp fg no_throw"}
-  {detonationThickness 0.5}
-}

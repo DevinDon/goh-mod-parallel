@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-75mm-stuk40-l48',
   description: '德国 7.5cm StuK 40 L/48 突击坦克炮，适用于三号突击炮 G 型',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s3/d1/Shared/Cannon_75to76mm/',
   fireSoundClose: 'cannon/s2/1p/Shared/',

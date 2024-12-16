@@ -1,4 +1,4 @@
-{from "pattern heat"
+{from "pattern standard-heat"
   {tag "shell size3 size3_heat_shell heat_medium"} ; 标签
   {entity "105mm_ger_heat"} ; 模型
   {mass 13.37} ; 质量

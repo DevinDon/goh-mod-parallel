@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'usa-76mm-m1a1',
   description: '美国 76mm M1A1 坦克炮，适用于 M18 地狱猫坦克歼击车',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

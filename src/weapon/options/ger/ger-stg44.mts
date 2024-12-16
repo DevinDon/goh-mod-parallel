@@ -11,7 +11,7 @@ const options: WeaponOptions = {
   entity: 'stg44_scope',
   mass: 4.6,
 
-  from: 'pattern standard-rifle',
+  type: 'rifle',
 
   tags: [ '-rifle', 'smg', 'inter_shell', 'assaultrifle', 'autorifle_sup', 'auto_eject' ],
 

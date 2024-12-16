@@ -268,8 +268,8 @@
   {Item "inf-15mm-magazine"                 "ap"   "ammo"  30 {Value   6}}
   {Item "inf-15mm-drum"                     "ap"   "ammo"  60 {Value  30}}
   {Item "inf-15mm-chain"                    "ap"   "ammo"  90 {Value  45}}
-  {Item "inf-infantry-rocket-launcher-ammo" "he"   "ammo"   1 {Value  10}}
-  {Item "inf-infantry-rocket-launcher-ammo" "heat" "ammo"   1 {Value  10}}
+  {Item "inf-infantry-rocket" "he"   "ammo"   1 {Value  10}}
+  {Item "inf-infantry-rocket" "heat" "ammo"   1 {Value  10}}
 
   ; custom
   ; usa
@@ -358,8 +358,8 @@
   {Item "ger-150l38" "heat"        "ammo"   1 {Value 15}}
   {Item "ger-150l38" "he"          "ammo"   1 {Value 15}}
   {Item "ger-155l52" "he"          "ammo"   1 {Value 20}}
-  {Item "ger-150mm-nebelwerfer" "he" "ammo" 1 {Value 15}}
-  {Item "ger-280mm-nebelwerfer" "he" "ammo" 1 {Value 38}}
+  {Item "ger-150mm-nebelwerfer-rocket" "he" "ammo" 1 {Value 15}}
+  {Item "ger-280mm-nebelwerfer-rocket" "he" "ammo" 1 {Value 38}}
   {Item "ger-380mm-rw61-l5"        "ammo"   1 {Value 38}}
   {Item "ger-600l8"  "he"          "ammo"   1 {Value 60}}
 )

@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'usa-90mm-m3',
   description: '美国 90mm M3 坦克炮，适用于 M36 杰克逊坦克歼击车',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

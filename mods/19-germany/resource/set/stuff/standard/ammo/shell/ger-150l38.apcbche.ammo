@@ -1,4 +1,4 @@
-{from "pattern apcbche"
+{from "pattern standard-apcbche"
   {tag "shell size4 150to152"} ; 标签
   {entity "128mm_ger_apcbche"} ; 模型
   {mass 49.2} ; 质量

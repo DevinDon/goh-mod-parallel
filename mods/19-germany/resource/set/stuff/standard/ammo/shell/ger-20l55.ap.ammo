@@ -1,4 +1,4 @@
-{from "pattern ap"
+{from "pattern standard-ap"
   {tag "20to25 zenite size1 auto"} ; 标签
   {entity "20mm_ger_auto_ap"} ; 模型
   {mass 0.32} ; 质量

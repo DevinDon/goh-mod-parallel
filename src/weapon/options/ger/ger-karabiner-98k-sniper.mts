@@ -11,7 +11,7 @@ const options: WeaponOptions = {
   entity: 'k98_scope',
   mass: 3.9,
 
-  from: 'pattern standard-sniper',
+  type: 'sniper',
 
   tags: [ 'bolt_action' ],
 

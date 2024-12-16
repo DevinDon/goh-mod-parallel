@@ -11,7 +11,7 @@ const options: WeaponOptions = {
   entity: 'mg34_belt_long',
   mass: 30,
 
-  from: 'pattern standard-machine-gun',
+  type: 'machine-gun',
 
   tags: [ 'aa', 'gun' ],
 

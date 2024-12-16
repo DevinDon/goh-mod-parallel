@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-88mm-kwk36-l56',
   description: '德国 8.8cm KwK 36 L/56 坦克炮，适用于六号坦克 E 型 / 六号坦克 H 型',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s4/d1/Shared/Cannon_85to100mm/',
   fireSoundClose: 'cannon/s2/1p/Shared/',

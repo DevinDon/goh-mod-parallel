@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-150mm-stuh43-l12',
   description: '德国 15cm StuH 43 L/11 突击步兵炮',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s5/d1/Shared/Cannon_150to210mm/',
   fireSoundClose: 'cannon/s3/1p/Shared/',

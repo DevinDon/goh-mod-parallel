@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'usa-75mm-m2-how',
   description: '美国 75mm M2 坦克榴弹炮，适用于 M8 自行榴弹炮',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'gun/gun_75_105_short',
   fireSoundClose: 'gun/gun_interior/size3',

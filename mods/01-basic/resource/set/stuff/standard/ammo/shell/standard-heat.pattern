@@ -1,0 +1,4 @@
+{from "pattern standard-shell"
+  {tag "heat heat_shell pierce fg no_throw"}
+  {cumulative 3}
+}

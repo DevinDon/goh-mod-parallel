@@ -1,0 +1,29 @@
+{from "pattern standard-he-rocket"
+  {tag "no_ricochet he fg"} ; 标签
+  {entity "panzershreck_ammo"} ; 模型
+  {mass 3.3} ; 质量
+  {view "panzershreck_ammo"
+    {tail "bazooka_tail_rpzb" "tail"}
+  }
+  {inventory
+    {weight 33}
+    {size 10 2}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 6.72} ; 接触伤害
+    {area 1.05 2.10} ; 有效杀伤半径，极限杀伤半径
+    {ground_interaction_radius 2.10} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 2.85} ; 破片伤害
+    {area 1.82 9.10} ; 有效杀伤半径，极限杀伤半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.86} ; 冲击波伤害
+    {area 1.69 8.44} ; 有效杀伤半径，极限杀伤半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  ; 无附加内容
+}

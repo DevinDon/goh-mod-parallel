@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-88mm-kwk43-l71',
   description: '德国 8.8cm KwK 43 L/71 坦克炮，适用于六号坦克 B 型亨舍尔炮塔 / 六号坦克 B 型保时捷炮塔',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s4/d1/Shared/Cannon_85to100mm_HV/',
   fireSoundClose: 'cannon/s2/1p/Shared/',

@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-128mm-kwk44-l61',
   description: '德国 12.8cm KwK 44 L/61 坦克炮',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s4/d1/Shared/Cannon_105to130mm/',
   fireSoundClose: 'cannon/s4/3p/Shared/Cannon_105to130mm/',

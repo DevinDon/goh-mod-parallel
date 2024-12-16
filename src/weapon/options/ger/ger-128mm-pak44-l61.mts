@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-128mm-pak44-l61',
   description: '德国 12.8cm PaK 44 L/61 反坦克炮，适用于猎虎坦克歼击车',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s4/d1/Shared/Cannon_105to130mm/',
   fireSoundClose: 'cannon/s4/3p/Shared/Cannon_105to130mm/',

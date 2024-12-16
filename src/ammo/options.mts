@@ -17,6 +17,8 @@ export const ShellType = [
   'sap',
   'sm',
   'wp',
+  'he-rocket',
+  'heat-rocket',
 ] as const;
 
 export type ShellType = typeof ShellType[number];

@@ -30,8 +30,8 @@ const options: HumanOptions = {
   inventory: [
     '{Item "weapon inf-infantry-bolt-action-rifle" filling "ammo inf-10mm-clip ap" 5} ; 栓动步枪',
     '{Item "ammo inf-10mm-clip ap" 50} ; 栓动步枪弹夹',
-    '{Item "ammo inf-infantry-rocket-launcher-ammo he" 2} ; 步兵火箭筒高爆弹药',
-    '{Item "ammo inf-infantry-rocket-launcher-ammo heat" 6} ; 步兵火箭筒破甲弹药',
+    '{Item "ammo inf-infantry-rocket he" 2} ; 步兵火箭筒高爆弹药',
+    '{Item "ammo inf-infantry-rocket heat" 6} ; 步兵火箭筒破甲弹药',
     '{Item "m24_smoke grenade" 2} ; 烟雾弹',
     '{Item "bandage_ger" 5} ; 绷带',
     '{Item "weapon inf-infantry-disposable-heat-rocket-launcher" filled} ; 一次性破甲火箭筒',

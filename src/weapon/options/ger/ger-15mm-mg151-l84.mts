@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-15mm-mg151-l84',
   description: '德国 1.5cm MG 151 L/55 机炮',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   mass: 38.1,
 

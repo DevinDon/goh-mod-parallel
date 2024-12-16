@@ -3,7 +3,7 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/bazooka/ger-panzershreck-54.weapon`,
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/rocket-launcher/ger-panzershreck-54.weapon`,
 
   name: 'ger-panzershreck-54',
   description: '德国 PanzerShreck 54 "坦克杀手" 反坦克火箭筒',
@@ -11,14 +11,14 @@ const options: WeaponOptions = {
   entity: 'panzershreck_54',
   mass: 11,
 
-  from: 'pattern standard-bazooka',
+  type: 'portable-rocket-launcher',
 
   fireSound: 'reactive/d1/Shared/Rocket_Launcher/',
   fireSoundClose: 'reactive/d1/Shared/Rocket_Launcher/',
   reloadSound: 'panzershreck',
   cursor: 'ironsights/rifle',
 
-  ammo: 'ger-panzershreck heat',
+  ammo: 'ger-panzershreck-54-rocket heat',
   amout: 1,
   caliber: 88,
   syncedProjectiles: true,

@@ -1,4 +1,4 @@
-{from "pattern he"
+{from "pattern standard-he"
   {tag "shell size1 50to57 no_throw"} ; 标签
   {entity "50mm_ger_l42_he"} ; 模型
   {mass 3.05} ; 质量

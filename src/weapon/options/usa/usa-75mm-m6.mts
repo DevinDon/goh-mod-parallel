@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'usa-75mm-m6',
   description: '美国 75mm M6 坦克炮，适用于 M24 霞飞轻型坦克 / M4A3 谢尔曼管风琴中型坦克',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'gun/gun_75_105',
   fireSoundClose: 'gun/gun_interior/size3',

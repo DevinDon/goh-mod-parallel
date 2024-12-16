@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-105mm-lefh18-l28',
   description: '德国 10.5cm leFH 18 L/28 榴弹炮，适用于 Sd.Kfz 124 黄蜂自行火炮',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s4/d1/Shared/Cannon_105to130mm_LV/',
   fireSoundClose: 'cannon/s4/3p/Shared/Cannon_105to130mm_LV/',

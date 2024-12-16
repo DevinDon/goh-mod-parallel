@@ -1,4 +1,4 @@
-{from "pattern he"
+{from "pattern standard-he"
   {tag "shell size4 150to152"} ; 标签
   {entity "150mm_ger_l30_he"} ; 模型
   {mass 44.62} ; 质量

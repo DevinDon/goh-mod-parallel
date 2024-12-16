@@ -1,4 +1,4 @@
-{from "pattern apcbche"
+{from "pattern standard-apcbche"
   {tag "shell size2 88to105_he_filler"} ; 标签
   {entity "88mm_ger_l71_apcbche"} ; 模型
   {mass 23.35} ; 质量

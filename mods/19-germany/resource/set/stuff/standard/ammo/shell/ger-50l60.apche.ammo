@@ -1,4 +1,4 @@
-{from "pattern apche"
+{from "pattern standard-apche"
   {tag "shell size1 50to57_he_filler"} ; 标签
   {entity "50mm_ger_l60_apche"} ; 模型
   {mass 3.49} ; 质量

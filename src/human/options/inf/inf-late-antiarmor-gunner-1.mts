@@ -28,9 +28,9 @@ const options: HumanOptions = {
   ],
 
   inventory: [
-    '{Item "weapon inf-infantry-rocket-launcher" filling "ammo inf-infantry-rocket-launcher-ammo heat" 1} ; 多用途火箭筒',
-    '{Item "ammo inf-infantry-rocket-launcher-ammo he" 4} ; 步兵火箭筒高爆弹药',
-    '{Item "ammo inf-infantry-rocket-launcher-ammo heat" 4} ; 步兵火箭筒破甲弹药',
+    '{Item "weapon inf-infantry-rocket-launcher" filling "ammo inf-infantry-rocket heat" 1} ; 多用途火箭筒',
+    '{Item "ammo inf-infantry-rocket he" 4} ; 步兵火箭筒高爆弹药',
+    '{Item "ammo inf-infantry-rocket heat" 4} ; 步兵火箭筒破甲弹药',
     '{Item "bandage_ger" 5} ; 绷带',
   ],
 

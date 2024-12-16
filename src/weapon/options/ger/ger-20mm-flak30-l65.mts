@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'ger-20mm-flak30-l65',
   description: '德国 2cm FlaK 30 L/65 防空炮，适用于欧宝闪电',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s1/d1/Shared/Autocannon_20to30mm/',
   fireSoundClose: 'cannon/s1/3p/Shared/Autocannon_20to30mm/',

@@ -9,7 +9,7 @@ const options: WeaponOptions = {
   name: 'ger-75mm-kwk37-l24',
   description: '德国 7.5cm KwK 37 L/24 坦克炮，适用于三号 N 型 / Sd.Kfz 234/3 轮式装甲车',
 
-  from: 'pattern standard-gun',
+  type: 'gun',
 
   fireSound: 'cannon/s3/d1/Shared/Cannon_75to76mm_LV/',
   fireSoundClose: 'cannon/s2/1p/Shared/',

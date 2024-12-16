@@ -3,12 +3,12 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/reactive/ger-280mm-w40.weapon`,
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/rocket-launcher/ger-280mm-w40.weapon`,
 
   name: 'ger-280mm-w40',
   description: '德国 28cm Wurfrahmen 40 火箭发射器',
 
-  from: 'pattern standard-reactive',
+  type: 'rocket-launcher',
 
   tags: [ 'gun' ],
 
@@ -18,7 +18,7 @@ const options: WeaponOptions = {
   cursor: 'ironsights/tank',
   cursorReloading: 'gun_he',
 
-  ammo: 'ger-280mm-nebelwerfer he',
+  ammo: 'ger-280mm-nebelwerfer-rocket he',
   amout: 1,
   caliber: 280,
   syncedProjectiles: true,
@@ -28,7 +28,7 @@ const options: WeaponOptions = {
   spreadTolerance: 0.2,
 
   rechargeTime: 30,
-  recoveryTime: 60 / 36,
+  recoveryTime: 60 / 6,
 
   automatic: false,
 

@@ -8,7 +8,7 @@ const options: WeaponOptions = {
   name: 'inf-infantry-general-purpose-machine-gun',
   description: '通用机枪',
 
-  from: 'pattern standard-machine-gun',
+  type: 'machine-gun',
 
   entity: 'mg42_belt',
   mass: 11.57,
