@@ -65,6 +65,8 @@
       {Weapon "weapon ger-75mm-kwk44-l70" filling "ammo ger-75l70 apcbche" 1}
       {Gunner "gunner"}
       {Charger "charger"}
+      {basic}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed  7.00} ; km/h
         {ByLinearSpeed   0.25} ; km/h
@@ -81,6 +83,7 @@
       {Gunner "gunner"}
       {Charger "charger"}
       {basic}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
         {ByLinearSpeed    0.40} ; km/h

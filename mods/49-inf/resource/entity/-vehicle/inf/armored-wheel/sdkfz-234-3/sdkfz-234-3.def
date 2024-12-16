@@ -52,6 +52,9 @@
       {Weapon "weapon ger-75mm-k51-l24" filling "ammo ger-75l24 heat" 1}
       {Gunner "gunner"}
       {Charger "charger"}
+      {Rotate}
+      {basic}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed  7.00} ; km/h
         {ByLinearSpeed   0.25} ; km/h
@@ -68,6 +71,7 @@
       {LinkBone "mgun"}
       {LinkAnimation "off"}
       {basic}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed   8.00} ; km/h
         {ByLinearSpeed    0.40} ; km/h

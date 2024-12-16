@@ -55,6 +55,8 @@
       {Weapon "weapon ger-20mm-kwk38-l55" filling "ammo ger-20l55 ap" 10}
       {Gunner "gunner"}
       {Charger "charger"}
+      {basic}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed  10.00} ; km/h
         {ByLinearSpeed    0.25} ; km/h

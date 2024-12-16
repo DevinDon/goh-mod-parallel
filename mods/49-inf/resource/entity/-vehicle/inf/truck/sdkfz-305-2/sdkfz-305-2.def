@@ -36,9 +36,10 @@
   }
 
   {Weaponry
-    ; {RestoreIKTime 5}
     {Place "gun"
       {Weapon "weapon ger-20mm-flak30-l65" filling "ammo ger-20l55 he" 20}
+      {basic}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed  10.00} ; km/h
         {ByLinearSpeed    0.25} ; km/h

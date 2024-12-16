@@ -37,6 +37,8 @@
       {Gunner "gunner"}
       {Charger "charger"}
       {StationaryFiring}
+      {basic}
+      {ai_in_manual}
       {AccuracyByMotion
         {MaxLinearSpeed  7.00} ; km/h
         {ByLinearSpeed   0.25} ; km/h
@@ -45,8 +47,6 @@
         {DisorderTime    1.25} ; s
         {OrderTime       9.55} ; s
       }
-      {basic}
-      {ai_in_manual}
     }
     {Place "mgun"
       {Type "main"}
