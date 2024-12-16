@@ -15,15 +15,15 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
 
   const reloading = BulletReloadingCursors[name] ?? 'carbine_reload';
 
-  const projectileDamageTableLines = bullet.projectile
+  const projectileDamageTableLine = bullet.projectile
     ? `{ProjectileDamageTable {100 ${bullet.projectile.nearest}} {500 ${bullet.projectile.farthest}} {1000 ${name === 'heat' ? bullet.projectile.nearest : 0}}} ; 穿深表`
     : '; 无穿深表配置';
 
-  const damageToArmorLines = bullet.damageToArmor
+  const damageToArmorLine = bullet.damageToArmor
     ? `{MinimumDamageModifier ${bullet.damageToArmor}} ; 弹种对装甲的击穿伤害`
     : '; 无装甲伤害配置';
 
-  const damageToHumanLines = bullet.damageToHuman
+  const damageToHumanLine = bullet.damageToHuman
     ? `{HealthDamage ${bullet.damageToHuman}} ; 弹种对人员的击穿伤害`
     : '; 无人员伤害配置';
 
@@ -31,7 +31,7 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
     ? i0lines(generateOvermatchTable(bullet.overmatch))
     : '; 无穿深修正表配置';
 
-  const falloffStrengthLines = typeof bullet.falloffStrength === 'number'
+  const falloffStrengthLine = typeof bullet.falloffStrength === 'number'
     ? `{FalloffStrength ${bullet.falloffStrength}} ; 防空炮配置`
     : '; 无防空炮配置';
 
@@ -55,9 +55,9 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
     `  {MaxRange ${toFixed(maxRange)}} ; 玩家最长射击距离 m`,
     `  {Speed ${toFixed(bullet.speed)}} ; 炮弹速度`,
     `  {Gravity ${toFixed(bullet.gravity ?? 5)}} ; 炮弹重力`,
-    `  ${i2lines(projectileDamageTableLines)}`,
-    `  ${i2lines(damageToArmorLines)}`,
-    `  ${i2lines(damageToHumanLines)}`,
+    `  ${projectileDamageTableLine}`,
+    `  ${damageToArmorLine}`,
+    `  ${damageToHumanLine}`,
     '  {Spreading',
     `    {RadiusTable {0 0} {${toFixed(effectiveRange)} ${toFixed(bullet.spreading.radiusTable.nearest)}} {${toFixed(aimRange)} ${toFixed(bullet.spreading.radiusTable.farthest)}} {${toFixed(maxRange)} ${toFixed(bullet.spreading.radiusTable.farthest * (bullet.spreading.radiusTable.factor ?? 10))}}} ; 散布`,
     `    {BurstRecoveryTime ${toFixed(bullet.spreading.burstRecoveryTime ?? 1)}} ; 开火后恢复到正常精度的时间`,
@@ -66,7 +66,7 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
     `    {SpreadXYRatio     ${toFixed(bullet.spreading.spreadXYRatio ?? 0.75)}} ; 默认值为 0.75 炮弹落点的横纵向比例, 小于 1 时更偏向于纵向落点, 大于 1 时更偏向于横向落点`,
     '  }',
     `  ${i2lines(overmatchTableLines)}`,
-    `  ${i2lines(falloffStrengthLines)}`,
+    `  ${falloffStrengthLine}`,
     '}',
   );
 
