@@ -22,6 +22,7 @@ const options: GameLogicOptions = {
     limit5: 5,
     limit10: 10,
     sdkfz124limit2: 2,
+    sdkfz25116limit2: 2,
     panzer4limit10: 10,
     panzer5limit3: 3,
     panzer6limit3: 3,
