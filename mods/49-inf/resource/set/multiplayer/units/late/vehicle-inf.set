@@ -75,6 +75,7 @@
   {doctrine %doctrine}
   {cost %cost}
   {score (* %cost 0.05)}
+  {level 8}
 )
 
 ; args = doctrine cost
@@ -87,6 +88,7 @@
   {doctrine %doctrine}
   {cost %cost}
   {score (* %cost 0.05)}
+  {level 8}
 )
 
 ; args = doctrine cost
@@ -99,6 +101,7 @@
   {doctrine %doctrine}
   {cost %cost}
   {score (* %cost 0.05)}
+  {level 8}
 )
 
 {"panzer-5-d"
