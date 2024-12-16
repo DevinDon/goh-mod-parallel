@@ -77,24 +77,6 @@
         {OrderTime        1.00} ; s
       }
     }
-    {Place "mgun2"
-      {Type "rear"}
-      {Weapon "weapon ger-mg42" filled}
-      {Gunner "commander"}
-      {Charger "commander"}
-      {LinkBone "mgun2"}
-      {LinkAnimation "off"}
-      {basic}
-      {ai_in_manual}
-      {AccuracyByMotion
-        {MaxLinearSpeed   8.00} ; km/h
-        {ByLinearSpeed    0.40} ; km/h
-        {MaxAngularSpeed 30.00} ; deg/s
-        {ByAngularSpeed   0.50} ; deg/s
-        {DisorderTime     0.60} ; s
-        {OrderTime        1.00} ; s
-      }
-    }
   }
 
   {Mass 11500}
@@ -112,14 +94,6 @@
   {Bone "turret"
     {limits -25 25}
     {speed2 10}
-  }
-  {Bone "mgun_a2_rot1" ; 机枪射界
-    {speed2 60}
-    {limits -20 45} ; 右左
-  }
-  {Bone "mgun_a2_rot2" ; 机枪俯仰角
-    {speed2 60}
-    {limits -60 0} ; 俯仰角不是从 0 开始的，需要 + 50 度
   }
 
 }

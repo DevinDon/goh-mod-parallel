@@ -80,16 +80,16 @@
   {Chassis "wheel"
     ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
-    ("set-maneuverability-of-armored-car" speed(80) power(220) mass(11500) performance(1.45))
-    ("set-fuel-bag" volume(360) power(220) mass(11500))
+    ("set-maneuverability-of-armored-car" speed(90) power(210) mass(11500) performance(1.32))
+    ("set-fuel-bag" volume(360) power(210) mass(11500))
   }
 
-  {Bone "gun_rot"
-    {limits -4 70}
-    {speed2 20}
+  {Bone "gun_rot" ; 主炮俯仰角
+    {limits -4 70} ; 下上
+    {speed2 40}
   }
-  {Bone "turret"
-    {speed2 25}
+  {Bone "turret" ; 炮塔射界
+    {speed2 40}
   }
 
 }

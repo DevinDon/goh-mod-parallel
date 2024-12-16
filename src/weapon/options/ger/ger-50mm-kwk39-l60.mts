@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-50mm-kwk39-l60.weapon`,
 
   name: 'ger-50mm-kwk39-l60',
-  description: '德国 5cm KwK 39 L/60 坦克炮，适用于三号 M 型',
+  description: '德国 5cm KwK 39 L/60 坦克炮，适用于三号 M 型 / Sd.Kfz 234/2 轮式装甲车',
 
   from: 'pattern standard-gun',
 

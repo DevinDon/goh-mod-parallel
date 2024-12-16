@@ -76,28 +76,29 @@
     }
   }
 
-  {Mass 12000}
+  {Mass 11700}
   {Chassis "wheel"
     ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlf") wheelright("wrf") boneleft("FXtraceL1") boneright("FXtraceR1"))
     ("set-car-trace" fx("tracewheel03") step(0.08) wheelleft("wlr") wheelright("wrr") boneleft("FXtraceL2") boneright("FXtraceR2"))
-    ("set-maneuverability-of-armored-car" speed(80) power(220) mass(12000) performance(1.43))
-    ("set-fuel-bag" volume(360) power(220) mass(12000))
+    ("set-maneuverability-of-armored-car" speed(90) power(210) mass(11700) performance(1.32))
+    ("set-fuel-bag" volume(360) power(210) mass(11700))
   }
 
   {Bone "gun_rot" ; 主炮俯仰角
-    {speed2 6}
-    {limits -5 22}
+    {limits -5 22} ; 下上
+    {speed2 4}
   }
   {Bone "turret" ; 炮塔射界
-    {speed2 8}
     {limits -20 20} ; 右左
-  }
-  {Bone "mgun_a_rot1" ; 机枪射界
-    {speed2 60}
-    {limits -35 20} ; 右左
+    {speed2 14}
   }
   {Bone "mgun_a_rot2" ; 机枪俯仰角
-    {speed2 60}
+    {limits -20 20} ; 下上
+    {speed2 20}
+  }
+  {Bone "mgun_a_rot1" ; 机枪射界
+    {limits -45 45} ; 右左
+    {speed2 30}
   }
 
 }
