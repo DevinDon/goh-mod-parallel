@@ -29,7 +29,7 @@
 
 {"panzer-5-a" inherit "vehicle custom.tank"}
 {"panzer-5-d" inherit "vehicle custom.tank"}
-{"panzer-5-d-ace" inherit "vehicle custom.tank"}
+{"panzer-5-f" inherit "vehicle custom.tank"}
 {"panzer-5-g" inherit "vehicle custom.tank"}
 
 {"panzer-6-e"     inherit "vehicle custom.tank.tiger-e"}

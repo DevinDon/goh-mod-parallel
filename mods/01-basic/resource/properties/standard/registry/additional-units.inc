@@ -65,7 +65,7 @@
 {"panzer-5-d"
   {vehicle_view "panzer5"}
 }
-{"panzer-5-d-ace"
+{"panzer-5-f"
   {vehicle_view "panzer5"}
 }
 {"panzer-5-g"
