@@ -47,16 +47,13 @@ const options: WeaponOptions = {
       maxRange: 2400,
       speed: 770,
       gravity: 5,
-      projectile: {
-        nearest: 53,
-        farthest: 22,
-      },
+      projectile: [ 49, 46, 33, 22, 10 ],
       damageToArmor: 55,
       damageToHuman: 550,
       spreading: {
         radiusTable: {
-          nearest: 0.33,
-          farthest: 1.9,
+          nearest: 0.32,
+          farthest: 1.8,
         },
         burstRecoveryTime: 0.37,
         burstAccuracy: 100,
@@ -75,8 +72,8 @@ const options: WeaponOptions = {
       damageToHuman: 1100,
       spreading: {
         radiusTable: {
-          nearest: 0.4,
-          farthest: 2.5,
+          nearest: 0.38,
+          farthest: 2.4,
         },
         burstRecoveryTime: 0.37,
         burstAccuracy: 100,

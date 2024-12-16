@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2200,
       speed: 835,
       gravity: 5,
-      projectile: {
-        nearest: 89,
-        farthest: 38,
-      },
+      projectile: [ 80, 76, 62, 48, 29 ],
       damageToArmor: 110,
       damageToHuman: 110 * 10,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2200,
       speed: 1150,
       gravity: 5,
-      projectile: {
-        nearest: 139,
-        farthest: 32,
-      },
+      projectile: [ 116, 107, 74, 47, 19 ],
       damageToArmor: 75,
       damageToHuman: 750,
       spreading: {

@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-75mm-kwk40-l43.weapon`,
 
   name: 'ger-75mm-kwk40-l43',
-  description: '德国 7.5cm KwK 40 L/43 坦克炮',
+  description: '德国 7.5cm KwK 40 L/43 坦克炮，适用于四号 F2 型 / 四号 G 型',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2500,
       speed: 690,
       gravity: 5,
-      projectile: {
-        nearest: 117,
-        farthest: 72,
-      },
+      projectile: [ 137, 135, 123, 110, 87 ],
       damageToArmor: 150,
       damageToHuman: 1500,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2500,
       speed: 855,
       gravity: 5,
-      projectile: {
-        nearest: 150,
-        farthest: 69,
-      },
+      projectile: [ 163, 159, 143, 126, 96 ],
       damageToArmor: 110,
       damageToHuman: 1100,
       spreading: {
@@ -83,10 +77,7 @@ const options: WeaponOptions = {
       maxRange: 2500,
       speed: 400,
       gravity: 5,
-      projectile: {
-        nearest: 115,
-        farthest: 115,
-      },
+      projectile: 80,
       damageToArmor: 130,
       damageToHuman: 1300,
       spreading: {

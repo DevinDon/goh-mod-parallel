@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-75mm-kwk42-l70.weapon`,
 
   name: 'ger-75mm-kwk42-l70',
-  description: '德国 7.5cm KwK 42 L/70 坦克炮',
+  description: '德国 7.5cm KwK 42 L/70 坦克炮，适用于五号 A 型 / 五号 D 型 / 五号 G 型',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2750,
       speed: 935,
       gravity: 5,
-      projectile: {
-        nearest: 185,
-        farthest: 116,
-      },
+      projectile: [ 192, 188, 173, 156, 126 ],
       damageToArmor: 175,
       damageToHuman: 1750,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2750,
       speed: 1130,
       gravity: 5,
-      projectile: {
-        nearest: 265,
-        farthest: 145,
-      },
+      projectile: [ 228, 224, 204, 182, 145 ],
       damageToArmor: 130,
       damageToHuman: 1300,
       spreading: {
