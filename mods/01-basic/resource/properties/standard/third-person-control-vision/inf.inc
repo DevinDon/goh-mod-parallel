@@ -14,11 +14,12 @@
 {"sdkfz-234-4" inherit "vehicle custom.armored-car.sdkfz234-4"}
 
 ; 履带式装甲车
-{"sdkfz-251-1"       inherit "vehicle custom.armored-car.sdkfz251"}
-{"sdkfz-251-16"      inherit "vehicle custom.armored-car.sdkfz251"}
-{"sdkfz-251-17"      inherit "vehicle custom.armored-car.sdkfz251.17"}
-{"sdkfz-251-21"      inherit "vehicle custom.armored-car.sdkfz251.21"}
-{"sdkfz-251-22"      inherit "vehicle custom.armored-car.sdkfz251.22"}
+{"sdkfz-4-1"    inherit "vehicle artillery.common"}
+{"sdkfz-251-1"  inherit "vehicle custom.armored-car.sdkfz251"}
+{"sdkfz-251-16" inherit "vehicle custom.armored-car.sdkfz251"}
+{"sdkfz-251-17" inherit "vehicle custom.armored-car.sdkfz251.17"}
+{"sdkfz-251-21" inherit "vehicle custom.armored-car.sdkfz251.21"}
+{"sdkfz-251-22" inherit "vehicle custom.armored-car.sdkfz251.22"}
 
 ; 自行火炮 / 自行榴弹炮
 {"sdkfz-124" inherit "vehicle custom.spg"}

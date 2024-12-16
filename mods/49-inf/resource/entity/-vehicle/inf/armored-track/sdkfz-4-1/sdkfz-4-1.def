@@ -3,9 +3,9 @@
   (include "/properties/standard/vehicle/armored-car-config.ext")
   (include "/properties/selection/vehicle.inc" scale(1.1))
 
-  {Extension "panzerwerfer42.mdl"}
-  (include   "panzerwerfer42.ext")
-  (include   "crew-and-passenger.ext")
+  {Extension "/entity/-vehicle/germany/btr/panzerwerfer42/panzerwerfer42.mdl"}
+  (include   "/entity/-vehicle/germany/btr/panzerwerfer42/panzerwerfer42.ext")
+  (include   "/entity/-vehicle/germany/btr/panzerwerfer42/crew-and-passenger.ext")
 
   {Props "tank" "halftrack" "hatch" "wheeled" "turret" "with_gun" "rocket" "nebelwerfer" "multi_board" "vision_lev06" "tractor" "tractor_heavy" "detect_spg" "artillery_minimap_medium" "c_rok_lite" "captor"}
 
@@ -22,8 +22,8 @@
       {Weight 1000}
       {Item "repair_kit" 10}
 
-      {Item "ammo ger-mgun api" 1500}
-      {Item "weapon ger-mg42" filled {user "mgun"}}
+      {Item "ammo inf-15mm-chain ap" 600}
+      {Item "weapon inf-infantry-heavy-machine-gun" filling "ammo inf-15mm-chain ap" 120 {user "mgun"}}
 
       {Item "ammo ger-150mm-nebelwerfer he" 20}
     }

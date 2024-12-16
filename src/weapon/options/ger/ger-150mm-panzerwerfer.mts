@@ -28,7 +28,7 @@ const options: WeaponOptions = {
   spreadTolerance: 0.2,
 
   rechargeTime: 9,
-  recoveryTime: 60 / 30,
+  recoveryTime: 60 / 10,
 
   automatic: false,
 
@@ -43,13 +43,13 @@ const options: WeaponOptions = {
       damageToHuman: 10000,
       spreading: {
         radiusTable: {
-          nearest: 5.112,
-          farthest: 25.345,
+          nearest: 2.112,
+          farthest: 10.345,
         },
         burstRecoveryTime: 5.50,
         burstAccuracy: 100,
-        spreadPower: 1.66,
-        spreadXYRatio: 1.05,
+        spreadPower: 1.25,
+        spreadXYRatio: 1.15,
       },
     },
   ],

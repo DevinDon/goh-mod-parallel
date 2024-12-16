@@ -122,6 +122,18 @@ msgid   "<c(03a9f4)>( I )</c> Sd.Kfz 234/4 mit 7.5cm PaK 40"
 msgstr  "<c(03a9f4)>( I )</c> Sd.Kfz 234/4 加装 7.5cm PaK 40"
 
 # 履带式装甲车
+msgctxt "desc/entity/sdkfz-4-1"
+msgid   "Sd.Kfz 4/1 mit 15cm Panzerwerfer x 10"
+msgstr  "Sd.Kfz 4/1 加装 15cm Panzerwerfer x 10"
+
+msgctxt "info/special/sdkfz-4-1"
+msgid   "<c(33c0ee)>Armored Wheel</c>"
+msgstr  "<c(33c0ee)>轮式装甲车</c>"
+
+msgctxt "desc/squad/sdkfz-4-1"
+msgid   "<c(03a9f4)>( I )</c> Sd.Kfz 4/1 mit 15cm Panzerwerfer x 10"
+msgstr  "<c(03a9f4)>( I )</c> Sd.Kfz 4/1 加装 15cm Panzerwerfer x 10"
+
 msgctxt "desc/entity/sdkfz-251-1"
 msgid   "Sd.Kfz 251/1 Transportation"
 msgstr  "Sd.Kfz 251/1 装甲运兵车"

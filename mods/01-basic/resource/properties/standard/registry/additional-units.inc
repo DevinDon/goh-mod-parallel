@@ -30,6 +30,9 @@
 }
 
 ; 履带式装甲车
+{"sdkfz-4-1"
+  {vehicle_view "panzerwerfer42"}
+}
 {"sdkfz-251-1"
   {vehicle_view "sdkfz251d_1"}
 }

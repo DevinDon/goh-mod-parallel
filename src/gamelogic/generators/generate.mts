@@ -34,6 +34,8 @@ const options: GameLogicOptions = {
     infsdkfz2342limit2: 2,
     infsdkfz2343limit2: 2,
     infsdkfz2344limit2: 2,
+    // 4 系列
+    infsdkfz41limit1: 1,
     // 251 系列
     infsdkfz2511limit5: 5,
     infsdkfz25116limit2: 2,

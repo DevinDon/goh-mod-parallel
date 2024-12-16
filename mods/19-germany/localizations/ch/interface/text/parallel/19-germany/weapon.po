@@ -212,11 +212,11 @@ msgstr  "60cm 卡尔臼炮 L/8.4"
 # 火箭炮
 msgctxt "desc/weapon/ger-150mm-panzerwerfer"
 msgid   "15cm Panzerwerfer"
-msgstr  "15cm Panzerwerfer 自行火箭炮"
+msgstr  "15cm Panzerwerfer 火箭发射器"
 
 msgctxt "desc/weapon/ger-150mm-panzerwerfer-x10"
 msgid   "15cm Panzerwerfer x 10"
-msgstr  "15cm Panzerwerfer 十联装自行火箭炮"
+msgstr  "15cm Panzerwerfer 十联装火箭发射器"
 
 msgctxt "desc/weapon/ger-280mm-w40"
 msgid   "28cm Wurfrahmen 40"
