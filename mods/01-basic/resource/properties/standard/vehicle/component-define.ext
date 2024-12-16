@@ -438,7 +438,7 @@
   {component %name
     {RepairTime 5}
     {tags "shield"}
-    {RepairOrder 11}
+    {RepairOrder 12}
   }
 )
 
@@ -454,7 +454,7 @@
   {component %name
     {RepairTime 5}
     {tags "shield"}
-    {RepairOrder 11}
+    {RepairOrder 12}
   }
 )
 
@@ -542,7 +542,7 @@
   {component %name
     {RepairTime 1}
     {tags "cut_part" "shield"}
-    {RepairOrder 11}
+    {RepairOrder 12}
   }
 )
 
@@ -557,7 +557,7 @@
   {component %type
     {RepairTime 5}
     {tags "shield"}
-    {RepairOrder 11}
+    {RepairOrder 12}
   }
 )
 
