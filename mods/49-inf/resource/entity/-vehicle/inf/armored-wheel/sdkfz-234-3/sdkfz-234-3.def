@@ -40,7 +40,7 @@
       {Item "ammo inf-15mm-chain ap" 600}
       {Item "weapon inf-infantry-heavy-machine-gun" filling "ammo inf-15mm-chain ap" 120 {user "mgun"}}
 
-      {Item "ammo ger-75l24 heat"  9}
+      {Item "ammo ger-75l24 heat" 19}
       {Item "ammo ger-75l24 he"   19}
       {Item "ammo ger-75l24 sm"    9}
     }
