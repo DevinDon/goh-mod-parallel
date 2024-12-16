@@ -3,7 +3,7 @@ import { type AmmoOptions } from '../../../options.mjs';
 const options: AmmoOptions = {
   destination: 'mods/19-germany/resource/set/stuff/standard/ammo/rocket/ger-280mm-nebelwerfer-rocket.he.ammo',
   type: 'he-rocket',
-  tags: [ 'big', 'bomb', 'mortar', 'he', 'fg', 'itemin2hands', 'arty' ],
+  tags: [ 'big', 'bomb', 'mortar', 'he', 'fg', 'itemin2hands', 'shell', 'size4', '150to152', 'arty' ],
   entity: '280mm_nebelwerfer',
   mass: 82,
   fill: 50,

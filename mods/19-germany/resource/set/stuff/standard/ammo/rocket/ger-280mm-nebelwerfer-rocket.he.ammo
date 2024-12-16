@@ -1,5 +1,5 @@
 {from "pattern standard-he-rocket"
-  {tag "big bomb mortar he fg itemin2hands arty"} ; 标签
+  {tag "big bomb mortar he fg itemin2hands shell size4 150to152 arty"} ; 标签
   {entity "280mm_nebelwerfer"} ; 模型
   {mass 82} ; 质量
   {view "280mm_nebelwerfer"
