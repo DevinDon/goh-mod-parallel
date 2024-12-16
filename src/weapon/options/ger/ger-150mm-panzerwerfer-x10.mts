@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/reactive/ger-150mm-panzerwerfer-x10.weapon`,
 
   name: 'ger-150mm-panzerwerfer-x10',
-  description: '德国 15cm 十联装火箭发射器',
+  description: '德国 15cm 十联装火箭发射器，适用于 42 型火箭发射车',
 
   from: 'pattern standard-reactive',
 

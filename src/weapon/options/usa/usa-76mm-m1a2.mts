@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/39-usa/resource/set/stuff/standard/gun/usa-76mm-m1a2.weapon`,
 
   name: 'usa-76mm-m1a2',
-  description: '美国 76mm M1A2 坦克炮',
+  description: '美国 76mm M1A2 坦克炮，适用于 M18 地狱猫坦克歼击车',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2400,
       speed: 792,
       gravity: 5,
-      projectile: {
-        nearest: 125,
-        farthest: 90,
-      },
+      projectile: [ 149, 146, 133, 119, 95 ],
       damageToArmor: 165,
       damageToHuman: 1650,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2400,
       speed: 1036,
       gravity: 5,
-      projectile: {
-        nearest: 239,
-        farthest: 124,
-      },
+      projectile: [ 190, 186, 167, 146, 112 ],
       damageToArmor: 130,
       damageToHuman: 1300,
       spreading: {

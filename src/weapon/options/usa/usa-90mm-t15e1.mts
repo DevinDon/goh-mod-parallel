@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/39-usa/resource/set/stuff/standard/gun/usa-90mm-t15e1.weapon`,
 
   name: 'usa-90mm-t15e1',
-  description: '美国 90mm T15E1 坦克炮',
+  description: '美国 90mm T15E1 坦克炮，适用于 T26E4 超级潘兴重型坦克',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2700,
       speed: 975,
       gravity: 5,
-      projectile: {
-        nearest: 202,
-        farthest: 171,
-      },
+      projectile: [ 224, 221, 209, 195, 169 ],
       damageToArmor: 300,
       damageToHuman: 3000,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2700,
       speed: 1143,
       gravity: 5,
-      projectile: {
-        nearest: 258,
-        farthest: 185,
-      },
+      projectile: [ 336, 330, 304, 274, 223 ],
       damageToArmor: 225,
       damageToHuman: 2250,
       spreading: {

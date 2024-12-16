@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/39-usa/resource/set/stuff/standard/gun/usa-90mm-m3.weapon`,
 
   name: 'usa-90mm-m3',
-  description: '美国 90mm M3 坦克炮',
+  description: '美国 90mm M3 坦克炮，适用于 M36 杰克逊坦克歼击车',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2700,
       speed: 823,
       gravity: 5,
-      projectile: {
-        nearest: 188,
-        farthest: 96,
-      },
+      projectile: [ 162, 160, 148, 135, 113 ],
       damageToArmor: 220,
       damageToHuman: 2200,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2700,
       speed: 853,
       gravity: 5,
-      projectile: {
-        nearest: 164,
-        farthest: 140,
-      },
+      projectile: [ 162, 160, 148, 135, 113 ],
       damageToArmor: 220,
       damageToHuman: 2200,
       spreading: {
@@ -83,10 +77,7 @@ const options: WeaponOptions = {
       maxRange: 2700,
       speed: 853,
       gravity: 5,
-      projectile: {
-        nearest: 169,
-        farthest: 127,
-      },
+      projectile: [ 185, 183, 173, 161, 140 ],
       damageToArmor: 290,
       damageToHuman: 2900,
       spreading: {
@@ -107,10 +98,7 @@ const options: WeaponOptions = {
       maxRange: 2700,
       speed: 1018,
       gravity: 5,
-      projectile: {
-        nearest: 306,
-        farthest: 193,
-      },
+      projectile: [ 287, 281, 259, 234, 191 ],
       damageToArmor: 185,
       damageToHuman: 1850,
       spreading: {

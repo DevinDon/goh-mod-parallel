@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/39-usa/resource/set/stuff/standard/gun/usa-75mm-m2-how.weapon`,
 
   name: 'usa-75mm-m2-how',
-  description: '美国 75mm M2 坦克榴弹炮',
+  description: '美国 75mm M2 坦克榴弹炮，适用于 M8 自行榴弹炮',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2000,
       speed: 305,
       gravity: 5,
-      projectile: {
-        nearest: 91,
-        farthest: 91,
-      },
+      projectile: 89,
       damageToArmor: 115,
       damageToHuman: 1150,
       spreading: {

@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/39-usa/resource/set/stuff/standard/gun/usa-37mm-m6.weapon`,
 
   name: 'usa-37mm-m6',
-  description: '美国 37mm M6 坦克炮',
+  description: '美国 37mm M6 坦克炮，适用于 M8 灰狗轮式装甲车',
 
   from: 'pattern standard-gun',
 
@@ -34,10 +34,7 @@ const options: WeaponOptions = {
       maxRange: 2000,
       speed: 884,
       gravity: 5,
-      projectile: {
-        nearest: 89,
-        farthest: 27,
-      },
+      projectile: [ 79, 76, 65, 54, 37 ],
       damageToArmor: 50,
       damageToHuman: 500,
       spreading: {
@@ -58,10 +55,7 @@ const options: WeaponOptions = {
       maxRange: 2000,
       speed: 619,
       gravity: 5,
-      projectile: {
-        nearest: 78,
-        farthest: 43,
-      },
+      projectile: [ 87, 84, 73, 60, 41 ],
       damageToArmor: 50,
       damageToHuman: 500,
       spreading: {

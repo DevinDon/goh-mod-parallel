@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/39-usa/resource/set/stuff/standard/gun/usa-75mm-m6.weapon`,
 
   name: 'usa-75mm-m6',
-  description: '美国 75mm M6 坦克炮',
+  description: '美国 75mm M6 坦克炮，适用于 M24 霞飞轻型坦克 / M4A3 谢尔曼管风琴中型坦克',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2300,
       speed: 619,
       gravity: 5,
-      projectile: {
-        nearest: 109,
-        farthest: 51,
-      },
+      projectile: [ 91, 88, 78, 67, 49 ],
       damageToArmor: 135,
       damageToHuman: 1350,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2300,
       speed: 619,
       gravity: 5,
-      projectile: {
-        nearest: 88,
-        farthest: 59,
-      },
+      projectile: [ 104, 102, 93, 84, 68 ],
       damageToArmor: 135,
       damageToHuman: 1350,
       spreading: {
@@ -83,10 +77,7 @@ const options: WeaponOptions = {
       maxRange: 2300,
       speed: 619,
       gravity: 5,
-      projectile: {
-        nearest: 88,
-        farthest: 59,
-      },
+      projectile: [ 104, 102, 93, 84, 68 ],
       damageToArmor: 135,
       damageToHuman: 1350,
       spreading: {
