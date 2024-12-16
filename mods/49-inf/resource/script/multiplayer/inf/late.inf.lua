@@ -27,7 +27,7 @@ Purchases["late.inf"] = {
       -- {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-4"},
       -- 履带式装甲车
       -- {priority = 1.0, type = {"Class3", "Armored", "MG", "Transport",}, unit = "sdkfz-251-1"},
-      {priority = 1.0, type = {"Class3", "Armored", "MG",},              unit = "sdkfz-251-16"},
+      -- {priority = 1.0, type = {"Class3", "Armored", "MG",},              unit = "sdkfz-251-16"},
       {priority = 1.0, type = {"Class3", "Armored", "AA",},              unit = "sdkfz-251-17"},
       {priority = 1.0, type = {"Class3", "Armored", "AA",},              unit = "sdkfz-251-21"},
       -- {priority = 1.0, type = {"Class3", "Armored", "AT",},              unit = "sdkfz-251-22"},
