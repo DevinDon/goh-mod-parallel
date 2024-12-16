@@ -436,7 +436,7 @@
     {component %name}
   }
   {component %name
-    {RepairTime 10}
+    {RepairTime 5}
     {tags "shield"}
     {RepairOrder 11}
   }
@@ -452,7 +452,7 @@
     {CastSteel 1}
   }
   {component %name
-    {RepairTime 10}
+    {RepairTime 5}
     {tags "shield"}
     {RepairOrder 11}
   }
@@ -555,7 +555,7 @@
     {component %type}
   }
   {component %type
-    {RepairTime 10}
+    {RepairTime 5}
     {tags "shield"}
     {RepairOrder 11}
   }
@@ -747,7 +747,7 @@
     {component "shield_cover"}
   }
   {component "shield_cover"
-    {RepairTime 10}
+    {RepairTime 5}
     {RepairOrder 12}
   }
 )
