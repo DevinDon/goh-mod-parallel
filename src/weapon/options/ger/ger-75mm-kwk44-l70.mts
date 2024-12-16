@@ -3,10 +3,10 @@ import { type WeaponOptions } from '../../options.mjs';
 
 const options: WeaponOptions = {
 
-  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-75mm-kwspzk-l70.weapon`,
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-75mm-kwk44-l70.weapon`,
 
-  name: 'ger-75mm-kwspzk-l70',
-  description: '德国 7.5cm KwsPz.K L/70 实验性坦克炮',
+  name: 'ger-75mm-kwk44-l70',
+  description: '德国 7.5cm KwK 44 L/70 坦克炮，适用于五号 F 型',
 
   from: 'pattern standard-gun',
 
@@ -33,12 +33,9 @@ const options: WeaponOptions = {
       name: 'apcbche',
       minRange: 0,
       maxRange: 2750,
-      speed: 1075,
+      speed: 935,
       gravity: 5,
-      projectile: {
-        nearest: 187,
-        farthest: 151,
-      },
+      projectile: [ 192, 188, 173, 156, 126 ],
       damageToArmor: 250,
       damageToHuman: 2500,
       spreading: {
@@ -57,12 +54,9 @@ const options: WeaponOptions = {
       name: 'apcr',
       minRange: 0,
       maxRange: 2750,
-      speed: 1571,
+      speed: 1130,
       gravity: 5,
-      projectile: {
-        nearest: 239,
-        farthest: 167,
-      },
+      projectile: [ 228, 224, 204, 182, 145 ],
       damageToArmor: 200,
       damageToHuman: 2000,
       spreading: {
@@ -81,7 +75,7 @@ const options: WeaponOptions = {
       name: 'he',
       minRange: 0,
       maxRange: 2750,
-      speed: 799,
+      speed: 700,
       gravity: 5,
       damageToArmor: 400,
       damageToHuman: 4000,

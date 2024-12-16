@@ -101,8 +101,8 @@
   {score (* %cost 0.05)}
 )
 
-{"panzer-5-d-ace"
-  ("set-standard-doctrine-vehicle" vehicle(panzer-5-d-ace) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
+{"panzer-5-f"
+  ("set-standard-doctrine-vehicle" vehicle(panzer-5-f) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
   ("set-standard-doctrine-level-2" doctrine(ascension_inf_tank) cost(100))
   {tags "panzer5dacelimit1"}
 }
@@ -118,8 +118,3 @@
   ("set-standard-doctrine-level-3" doctrine(ascension_inf_tank) cost(200))
   {tags "panzer6bacelimit1"}
 }
-
-; {"pzh2000"
-;   ("set-standard-doctrine-vehicle" vehicle(pzh2000) period(late) crew1(engineer-1:1) crew2(engineer-1:3))
-;   ("set-standard-doctrine-level-3" doctrine(ascension_inf_tank) cost(200))
-; }
