@@ -256,20 +256,20 @@
 
   ; custom
   ; inf
-  {Item "inf-5mm-clip"                      "ap"   "ammo"   5 {Value   1}}
-  {Item "inf-5mm-magazine"                  "ap"   "ammo"  30 {Value   2}}
-  {Item "inf-5mm-drum"                      "ap"   "ammo" 120 {Value  10}}
-  {Item "inf-5mm-chain"                     "ap"   "ammo" 240 {Value  15}}
-  {Item "inf-10mm-clip"                     "ap"   "ammo"   5 {Value   2}}
-  {Item "inf-10mm-magazine"                 "ap"   "ammo"  30 {Value   4}}
-  {Item "inf-10mm-drum"                     "ap"   "ammo" 120 {Value  20}}
-  {Item "inf-10mm-chain"                    "ap"   "ammo" 240 {Value  30}}
-  {Item "inf-15mm-clip"                     "ap"   "ammo"   5 {Value   3}}
-  {Item "inf-15mm-magazine"                 "ap"   "ammo"  30 {Value   6}}
-  {Item "inf-15mm-drum"                     "ap"   "ammo"  60 {Value  30}}
-  {Item "inf-15mm-chain"                    "ap"   "ammo"  90 {Value  45}}
-  {Item "inf-infantry-rocket" "he"   "ammo"   1 {Value  10}}
-  {Item "inf-infantry-rocket" "heat" "ammo"   1 {Value  10}}
+  {Item "inf-5mm-clip"        "ap"   "ammo"   5 {Value   1}}
+  {Item "inf-5mm-magazine"    "ap"   "ammo"  30 {Value   2}}
+  {Item "inf-5mm-drum"        "ap"   "ammo" 120 {Value  10}}
+  {Item "inf-5mm-chain"       "ap"   "ammo" 240 {Value  15}}
+  {Item "inf-10mm-clip"       "ap"   "ammo"   5 {Value   2}}
+  {Item "inf-10mm-magazine"   "ap"   "ammo"  30 {Value   4}}
+  {Item "inf-10mm-drum"       "ap"   "ammo" 120 {Value  20}}
+  {Item "inf-10mm-chain"      "ap"   "ammo" 240 {Value  30}}
+  {Item "inf-15mm-clip"       "ap"   "ammo"   5 {Value   3}}
+  {Item "inf-15mm-magazine"   "ap"   "ammo"  30 {Value   6}}
+  {Item "inf-15mm-drum"       "ap"   "ammo"  60 {Value  30}}
+  {Item "inf-15mm-chain"      "ap"   "ammo"  90 {Value  45}}
+  {Item "inf-infantry-rocket" "he"   "ammo"   1 {Value  20}}
+  {Item "inf-infantry-rocket" "heat" "ammo"   1 {Value  20}}
 
   ; custom
   ; usa
@@ -303,7 +303,7 @@
   {Item "ger-rifle"  "clip"        "ammo"   5 {Value  1}}
   {Item "ger-sniper" "clip"        "ammo"   5 {Value  2}}
   {Item "ger-stg44"  "magazine"    "ammo"  30 {Value  3}}
-  {Item "ger-panzershreck" "heat"  "ammo"   1 {Value  5}}
+  {Item "ger-panzershreck-rocket" "heat"  "ammo"   1 {Value  5}}
   {Item "ger-15l84"  "aphe"        "ammo"  40 {Value 20}}
   {Item "ger-20l55"  "ap"          "ammo"  20 {Value 20}}
   {Item "ger-20l55"  "aphe"        "ammo"  20 {Value 20}}
