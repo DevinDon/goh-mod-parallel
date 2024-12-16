@@ -16,7 +16,9 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
   const reloading = BulletReloadingCursors[name] ?? 'carbine_reload';
 
   const projectileDamageTableLine = bullet.projectile
-    ? `{ProjectileDamageTable {100 ${bullet.projectile.nearest}} {500 ${bullet.projectile.farthest}} {1000 ${name === 'heat' ? bullet.projectile.nearest : 0}}} ; 穿深表`
+    ? typeof bullet.projectile === 'number'
+      ? `{ProjectileDamageTable {10 ${bullet.projectile}} {100 ${bullet.projectile}} {500 ${bullet.projectile}} {1000 ${bullet.projectile}} {2000 ${bullet.projectile}}} ; 穿深表`
+      : `{ProjectileDamageTable {10 ${bullet.projectile[0]}} {100 ${bullet.projectile[1]}} {500 ${bullet.projectile[2]}} {1000 ${bullet.projectile[3]}} {2000 ${bullet.projectile[4]}}} ; 穿深表`
     : '; 无穿深表配置';
 
   const damageToArmorLine = bullet.damageToArmor

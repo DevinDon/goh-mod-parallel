@@ -50,13 +50,14 @@ export type WeaponBulletOptions = {
   speed: number;
   /** 弹种重力 m/s，默认为 5，曲射模式推荐为 9 */
   gravity?: number;
-  /** 穿深，可选，不适用于高爆弹种，会在 1000 m 处衰减为 0 */
-  projectile?: {
-    /** EffectiveRange 处穿深 */
-    nearest: number;
-    /** AimRange 处穿深 */
-    farthest: number;
-  };
+  /**
+   * 穿深表，可选，不适用于高爆弹种
+   *
+   * 如果为元组，共接受 5 个值，分别为 10m、100m、500m、1000m、2000m 处的穿深
+   *
+   * 如果为数字，则表示所有距离处的穿深均为该值
+   */
+  projectile?: number | [number, number, number, number, number];
   /** 弹种对装甲的击穿伤害，可选 */
   damageToArmor?: number;
   /** 弹种对人员的击穿伤害，可选 */
