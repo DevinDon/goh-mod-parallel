@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-105mm-stuh42-l28.weapon`,
 
   name: 'ger-105mm-stuh42-l28',
-  description: '德国 10.5cm StuH 42 L/28 突击榴弹炮',
+  description: '德国 10.5cm StuH 42 L/28 突击榴弹炮，适用于 42 型突击炮',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2500,
       speed: 496,
       gravity: 5,
-      projectile: {
-        nearest: 115,
-        farthest: 115,
-      },
+      projectile: 115,
       damageToArmor: 355,
       damageToHuman: 3550,
       spreading: {

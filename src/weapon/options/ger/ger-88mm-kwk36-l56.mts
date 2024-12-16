@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-88mm-kwk36-l56.weapon`,
 
   name: 'ger-88mm-kwk36-l56',
-  description: '德国 8.8cm KwK 36 L/56 坦克炮',
+  description: '德国 8.8cm KwK 36 L/56 坦克炮，适用于六号坦克 E 型 / 六号坦克 H 型',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2500,
       speed: 780,
       gravity: 5,
-      projectile: {
-        nearest: 162,
-        farthest: 116,
-      },
+      projectile: [ 165, 162, 151, 139, 117 ],
       damageToArmor: 285,
       damageToHuman: 2850,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2500,
       speed: 930,
       gravity: 5,
-      projectile: {
-        nearest: 219,
-        farthest: 143,
-      },
+      projectile: [ 211, 207, 191, 172, 140 ],
       damageToArmor: 235,
       damageToHuman: 2350,
       spreading: {

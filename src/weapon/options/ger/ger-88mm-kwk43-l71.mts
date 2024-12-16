@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-88mm-kwk43-l71.weapon`,
 
   name: 'ger-88mm-kwk43-l71',
-  description: '德国 8.8cm KwK 43 L/71 坦克炮',
+  description: '德国 8.8cm KwK 43 L/71 坦克炮，适用于六号坦克 B 型亨舍尔炮塔 / 六号坦克 B 型保时捷炮塔',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2700,
       speed: 1000,
       gravity: 5,
-      projectile: {
-        nearest: 232,
-        farthest: 176,
-      },
+      projectile: [ 237, 234, 222, 207, 180 ],
       damageToArmor: 300,
       damageToHuman: 3000,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2700,
       speed: 1130,
       gravity: 5,
-      projectile: {
-        nearest: 304,
-        farthest: 213,
-      },
+      projectile: [ 279, 273, 252, 227, 185 ],
       damageToArmor: 260,
       damageToHuman: 2600,
       spreading: {

@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-75mm-pak39-l48.weapon`,
 
   name: 'ger-75mm-pak39-l48',
-  description: '德国 7.5cm PaK 39 L/48 反坦克炮',
+  description: '德国 7.5cm PaK 39 L/48 反坦克炮，适用于四号坦克歼击车',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2400,
       speed: 750,
       gravity: 5,
-      projectile: {
-        nearest: 135,
-        farthest: 86,
-      },
+      projectile: [ 145, 143, 130, 116, 93 ],
       damageToArmor: 150,
       damageToHuman: 1500,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2400,
       speed: 930,
       gravity: 5,
-      projectile: {
-        nearest: 176,
-        farthest: 92,
-      },
+      projectile: [ 182, 177, 159, 140, 107 ],
       damageToArmor: 110,
       damageToHuman: 1100,
       spreading: {
@@ -83,10 +77,7 @@ const options: WeaponOptions = {
       maxRange: 2400,
       speed: 400,
       gravity: 5,
-      projectile: {
-        nearest: 115,
-        farthest: 115,
-      },
+      projectile: 80,
       damageToArmor: 130,
       damageToHuman: 1300,
       spreading: {

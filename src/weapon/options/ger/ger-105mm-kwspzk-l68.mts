@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-105mm-kwspzk-l68.weapon`,
 
   name: 'ger-105mm-kwspzk-l68',
-  description: '德国 10.5cm KwsPz.K L/68 实验性坦克炮',
+  description: '德国 10.5cm KwsPz.K L/68 实验性坦克炮，适用于六号坦克 B 型亨舍尔炮塔 10.5cm KwsPz.K L/68 实验性坦克炮',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2850,
       speed: 1000,
       gravity: 5,
-      projectile: {
-        nearest: 225,
-        farthest: 171,
-      },
+      projectile: [ 251, 248, 234, 219, 191 ],
       damageToArmor: 420,
       damageToHuman: 4200,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2850,
       speed: 1130,
       gravity: 5,
-      projectile: {
-        nearest: 285,
-        farthest: 201,
-      },
+      projectile: [ 304, 298, 274, 248, 201 ],
       damageToArmor: 375,
       damageToHuman: 3750,
       spreading: {

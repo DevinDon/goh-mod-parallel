@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-75mm-pak42-l70.weapon`,
 
   name: 'ger-75mm-pak42-l70',
-  description: '德国 7.5cm Pak 42 L/70 反坦克炮，适用于 E-25 轻型坦克歼击车',
+  description: '德国 7.5cm Pak 42 L/70 反坦克炮，适用于四号坦克歼击车 70A / 四号坦克歼击车 70V',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2750,
       speed: 935,
       gravity: 5,
-      projectile: {
-        nearest: 185,
-        farthest: 116,
-      },
+      projectile: [ 192, 188, 173, 156, 126 ],
       damageToArmor: 175,
       damageToHuman: 1750,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2750,
       speed: 1130,
       gravity: 5,
-      projectile: {
-        nearest: 265,
-        farthest: 145,
-      },
+      projectile: [ 228, 224, 204, 182, 145 ],
       damageToArmor: 130,
       damageToHuman: 1300,
       spreading: {

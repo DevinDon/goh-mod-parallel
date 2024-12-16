@@ -6,7 +6,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-105mm-lefh18-l28.weapon`,
 
   name: 'ger-105mm-lefh18-l28',
-  description: '德国 10.5cm leFH 18 L/28 榴弹炮',
+  description: '德国 10.5cm leFH 18 L/28 榴弹炮，适用于 Sd.Kfz 124 黄蜂自行火炮',
 
   from: 'pattern standard-gun',
 
@@ -35,10 +35,7 @@ const options: WeaponOptions = {
       maxRange: 2500,
       speed: 390,
       gravity: 5,
-      projectile: {
-        nearest: 73,
-        farthest: 53,
-      },
+      projectile: [ 73, 60, 44, 31, 10 ],
       damageToArmor: 410,
       damageToHuman: 4100,
       spreading: {
@@ -59,10 +56,7 @@ const options: WeaponOptions = {
       maxRange: 2500,
       speed: 496,
       gravity: 5,
-      projectile: {
-        nearest: 104,
-        farthest: 104,
-      },
+      projectile: 115,
       damageToArmor: 355,
       damageToHuman: 3550,
       spreading: {

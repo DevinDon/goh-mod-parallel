@@ -7,7 +7,7 @@ const options: WeaponOptions = {
   destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-75mm-kwk37-l24.weapon`,
 
   name: 'ger-75mm-kwk37-l24',
-  description: '德国 7.5cm KwK 37 L/24 坦克炮，适用于三号 N 型',
+  description: '德国 7.5cm KwK 37 L/24 坦克炮，适用于三号 N 型 / Sd.Kfz 234/3 轮式装甲车',
 
   from: 'pattern standard-gun',
 
