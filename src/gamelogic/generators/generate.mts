@@ -43,7 +43,7 @@ const options: GameLogicOptions = {
     // 自行火炮 / 自行榴弹炮
     infsdkfz124limit2: 2,
     // 坦克
-    infpanzer4limit10: 10,
+    infpanzer4limit8: 8,
     infpanzer5limit3: 3,
     infpanzer6limit3: 3,
     infpanzer6blimit2: 2,
