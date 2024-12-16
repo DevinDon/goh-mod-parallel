@@ -1,0 +1,7 @@
+;SDL
+{game
+  {maxPlayers 16}
+;  {texMod wood}
+  {mapSelection 1}
+  {landscape desert}
+}

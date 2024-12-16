@@ -1,0 +1,7 @@
+;SDL
+{game
+  {maxPlayers 16}
+  {texMod winter}    ;// tex mod given to units. Winter Map
+  {mapSelection 1}
+  {landscape desert}  ;// winter
+}

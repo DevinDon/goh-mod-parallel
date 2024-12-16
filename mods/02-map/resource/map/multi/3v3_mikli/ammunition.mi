@@ -1,0 +1,3232 @@
+{mission
+  {Entity "ammo_point" 0x802f
+    {Position -495.56 169.61}
+    {xform zl 152.62}
+    {Extender "map_point"
+      {name f1}
+      {zone
+        {radius 0}
+        {zoneId "f1"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 48}
+    {Able "minimap"}
+  }
+  {Entity "ammo_point" 0x8011
+    {Position -2384.93 -858.37}
+    {xform zl -144.13}
+    {Extender "map_point"
+      {name f3}
+      {zone
+        {radius 0}
+        {zoneId "f3"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 17}
+    {Able "minimap"}
+  }
+  {Entity "ammo_point" 0x8013
+    {Position 1586.38 1062.29}
+    {xform zl -104.93}
+    {Extender "map_point"
+      {name f2}
+      {zone
+        {radius 0}
+        {zoneId "f2"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 18}
+    {Able "minimap"}
+  }
+  {Entity "ammo_point" 0x8003
+    {Position -2751.72 -1605.52}
+    {xform zl 58.59}
+    {Extender "map_point"
+      {name f5}
+      {zone
+        {radius 0}
+        {zoneId "f5"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 2}
+    {Able "minimap"}
+  }
+  {Entity "ammo_point" 0x8004
+    {Position 6074.23 3850.37}
+    {xform zl 75.86}
+    {Extender "map_point"
+      {name f4}
+      {zone
+        {radius 0}
+        {zoneId "f4"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 3}
+    {Able "minimap"}
+  }
+  {Entity "flag_point_base" 0xe002
+    {Position -956.91 -3660.8}
+    {xform zl 60.28}
+    {Extender "map_point"
+      {name base_flag_a}
+      {zone
+        {radius 0}
+        {zoneId "base_a"}
+      }
+      {phase 0}
+      {order 0}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Extender "fortification"
+      {level
+        {steps 0}
+        {radius 0}
+        {angle "90"}
+        {elementAngle "180"}
+        {buildTime 60}
+        {entity "flagpoint_ammo"}
+      }
+      {level
+        {steps 2}
+        {radius 13}
+        {angle "0"}
+        {buildTime 60}
+        {entity "sandbag_heap_curved"}
+        {skip "5 6"}
+        {manual
+          {0
+            -0.782 0.622 0
+            -0.622 -0.782 0
+            0 0 1
+            -1705.54 -3637.97 74.549
+          }
+          {1
+            0.321 0.946 0
+            -0.946 0.321 0
+            0 0 0.999
+            -680.607 -3493.95 69
+          }
+          {2
+            -0.013 0.999 0
+            -0.999 -0.013 0
+            0 0 0.999
+            -767.713 -3480.15 69.874
+          }
+          {3
+            0.993 -0.117 0
+            0.117 0.993 0
+            0 0 1
+            -650.851 -3656.3 65
+          }
+          {4
+            0.022 0.999 0
+            -0.999 0.022 0
+            0 0 0.999
+            -604.599 -3624.83 63.979
+          }
+          {7
+            -0.238 0.97 0
+            -0.97 -0.238 0
+            0 0 1
+            -1647.59 -3606.76 75.446
+          }
+        }
+      }
+      {level
+        {steps 6}
+        {radius 25}
+        {angle "45"}
+        {azimuth "8"}
+        {elementAngle "5"}
+        {buildTime 60}
+        {entity "sandbag_structured_straight"}
+        {skip "0 1 2 3 4 13 14 21 22 23"}
+        {manual
+          {5
+            -0.915 -0.402 0
+            0.402 -0.915 0
+            0 0 1
+            -1386 -4228.67 99
+          }
+          {6
+            -0.809 0.587 0
+            -0.587 -0.809 0
+            0 0 1
+            -1543.97 -4196.51 89.397
+          }
+          {7
+            0.17 0.985 0
+            -0.985 0.17 0
+            0 0 1
+            -1426.59 -4193.83 94.861
+          }
+          {8
+            0.032 0.999 0
+            -0.999 0.032 0
+            0 0 1
+            -1495.1 -4180.71 90.911
+          }
+          {9
+            -0.988 0.153 0
+            -0.153 -0.988 0
+            0 0 0.999
+            -1214.18 -3800.13 71.89
+          }
+          {10
+            -0.993 0.116 0
+            -0.116 -0.993 0
+            0 0 1
+            -1225.31 -3868.08 72.528
+          }
+          {11
+            -0.991 0.127 0
+            -0.127 -0.991 0
+            0 0 1
+            -1244.95 -3935.01 75
+          }
+          {12
+            -0.992 0.12 0
+            -0.12 -0.992 0
+            0 0 1
+            -1255.07 -4004.03 76.886
+          }
+          {15
+            0.948 -0.317 0
+            0.317 0.948 0
+            0 0 1
+            -368.51 -4092.74 75
+          }
+          {16
+            0.983 -0.182 0
+            0.182 0.983 0
+            0 0 1
+            -345.214 -4026.99 74
+          }
+          {17
+            0.999 -0.043 0
+            0.043 0.999 0
+            0 0 1
+            -331.296 -3958.64 73.291
+          }
+          {18
+            0.988 -0.15 0
+            0.15 0.988 0
+            0 0 1
+            -567.523 -3776.69 69.66
+          }
+          {19
+            0.992 -0.124 0
+            0.124 0.992 0
+            0 0 1
+            -554.064 -3709.81 67
+          }
+          {20
+            0.996 -0.088 0
+            0.088 0.996 0
+            0 0 1
+            -537.076 -3642.16 64
+          }
+        }
+      }
+      {level
+        {steps 1}
+        {radius 8.5}
+        {buildTime 120}
+        {entity "watch_tower"}
+        {skip "2"}
+        {manual
+          {0
+            -0.489 0.872 0
+            -0.872 -0.489 0
+            0 0 1
+            -2040.41 -4266.28 72
+          }
+          {1
+            -0.589 0.807 0
+            -0.807 -0.589 0
+            0 0 0.999
+            -1639.84 -3707.9 87.632
+          }
+          {3
+            0.194 0.98 0
+            -0.98 0.194 0
+            0 0 1
+            -602.326 -3670.08 65
+          }
+        }
+      }
+      {level
+        {steps 5}
+        {radius 9}
+        {angle "45"}
+        {azimuth "14"}
+        {buildTime 60}
+        {entity "sandbag_framed_straight"}
+        {skip "0 4 8 12 19"}
+        {manual
+          {1
+            -0.972 0.231 0
+            -0.231 -0.972 0
+            0 0 1
+            -1140.67 -3748.46 70.962
+          }
+          {2
+            -0.974 0.223 0
+            -0.223 -0.974 0
+            0 0 1
+            -1131.15 -3708.72 70
+          }
+          {3
+            -0.96 0.277 0
+            -0.277 -0.96 0
+            0 0 0.999
+            -1162.29 -3829.41 73.171
+          }
+          {5
+            -0.313 0.949 0
+            -0.949 -0.313 0
+            0 0 0.999
+            -1640.16 -3608.42 75.971
+          }
+          {6
+            -0.533 0.845 0
+            -0.845 -0.533 0
+            0 0 0.999
+            -1679.84 -3627.14 75.97
+          }
+          {7
+            -0.722 0.691 0
+            -0.691 -0.722 0
+            0 0 1
+            -1713.81 -3654.9 75.424
+          }
+          {9
+            0.258 0.966 0
+            -0.966 0.258 0
+            0 0 1
+            -1012.09 -3707.73 70.565
+          }
+          {10
+            0.263 0.964 0
+            -0.964 0.263 0
+            0 0 0.999
+            -1052.57 -3696.58 70
+          }
+          {11
+            -0.971 0.239 0
+            -0.239 -0.971 0
+            0 0 0.999
+            -1151.12 -3789.15 72.629
+          }
+          {13
+            -0.09 0.995 0
+            -0.995 -0.09 0
+            0 0 1
+            -709.632 -3612.03 65
+          }
+          {14
+            -0.328 0.944 0
+            -0.944 -0.328 0
+            0 0 1
+            -752.52 -3621.28 65.623
+          }
+          {15
+            -0.547 0.837 0
+            -0.837 -0.547 0
+            0 0 1
+            -791.897 -3640.62 66
+          }
+          {16
+            -0.733 0.679 0
+            -0.679 -0.733 0
+            0 0 1
+            -825.425 -3668.92 67.901
+          }
+          {17
+            -0.876 0.482 0
+            -0.482 -0.876 0
+            0 0 1
+            -851.11 -3704.49 69
+          }
+          {18
+            0.232 0.972 0
+            -0.972 0.232 0
+            0 0 1
+            -1093.62 -3686.09 70
+          }
+        }
+      }
+      {level
+        {steps 10}
+        {radius 35}
+        {azimuth "9"}
+        {buildTime 240}
+        {entity "hedgehog2"}
+        {manual
+          {0
+            -0.468 0.881 0
+            -0.881 -0.468 0
+            0 0 1
+            -2208.79 -3639.56 56.312
+          }
+          {1
+            -0.525 0.849 0
+            -0.849 -0.525 0
+            0 0 1
+            -2254.37 -3534.55 55
+          }
+          {2
+            -0.651 0.755 0
+            -0.755 -0.651 0
+            0 0 1
+            -2319.32 -3445.97 52.999
+          }
+          {3
+            0.717 -0.694 0
+            0.694 0.717 0
+            0 0 0.999
+            -155.746 -2355.56 68.976
+          }
+          {4
+            0.816 -0.573 0
+            0.573 0.816 0
+            0 0 0.999
+            -71.031 -2425.48 66.3
+          }
+          {5
+            0.895 -0.438 0
+            0.438 0.895 0
+            0 0 1
+            23.576 -2481.29 55
+          }
+          {6
+            0.953 -0.293 0
+            0.293 0.953 0
+            0 0 1
+            125.744 -2521.61 56
+          }
+          {7
+            -0.926 -0.37 0
+            0.37 -0.926 0
+            0 0 1
+            -291.074 -2187.95 54
+          }
+          {8
+            -0.856 -0.51 0
+            0.51 -0.856 0
+            0 0 1
+            -389.531 -2236.67 53.999
+          }
+          {9
+            -0.578 0.813 0
+            -0.813 -0.578 0
+            0 0 0.999
+            -486.944 -2237.77 51.238
+          }
+          {10
+            -0.699 0.713 0
+            -0.713 -0.699 0
+            0 0 1
+            -557.463 -2153.55 51.999
+          }
+          {11
+            -0.803 0.594 0
+            -0.594 -0.803 0
+            0 0 1
+            -640.279 -2081.4 51.998
+          }
+          {12
+            -0.886 0.462 0
+            -0.462 -0.886 0
+            0 0 1
+            -733.372 -2023.08 51.997
+          }
+          {13
+            -0.825 0.563 0
+            -0.563 -0.825 0
+            0 0 1
+            -818.115 -1969.94 50.998
+          }
+          {14
+            -0.903 0.427 0
+            -0.427 -0.903 0
+            0 0 1
+            -913.433 -1915.36 51
+          }
+          {15
+            -0.957 0.28 0
+            -0.28 -0.957 0
+            0 0 1
+            -1016.11 -1876.35 50.98
+          }
+          {16
+            -0.99 0.127 0
+            -0.127 -0.99 0
+            0 0 0.999
+            -1123.63 -1853.9 50
+          }
+          {17
+            -0.998 -0.029 0
+            0.029 -0.998 0
+            0 0 1
+            -1233.33 -1848.54 48
+          }
+          {18
+            -0.981 -0.185 0
+            0.185 -0.981 0
+            0 0 1
+            -1342.53 -1860.4 48.175
+          }
+          {19
+            -0.939 -0.337 0
+            0.337 -0.939 0
+            0 0 1
+            -1448.53 -1889.19 52.932
+          }
+          {20
+            -0.875 -0.479 0
+            0.479 -0.875 0
+            0 0 1
+            -1548.72 -1934.23 44.107
+          }
+          {21
+            -0.791 -0.611 0
+            0.611 -0.791 0
+            0 0 1
+            -1640.62 -1994.38 38.998
+          }
+          {22
+            -0.685 -0.727 0
+            0.727 -0.685 0
+            0 0 1
+            -1721.99 -2068.16 39
+          }
+          {23
+            -0.563 -0.825 0
+            0.825 -0.563 0
+            0 0 1
+            -1790.81 -2153.77 38.63
+          }
+          {24
+            -0.616 -0.786 0
+            0.786 -0.616 0
+            0 0 1
+            -1848.19 -2226.5 38.077
+          }
+          {25
+            -0.469 -0.881 0
+            0.881 -0.469 0
+            0 0 1
+            -1903.74 -2321.4 39
+          }
+          {26
+            -0.392 -0.918 0
+            0.918 -0.392 0
+            0 0 1
+            -1948.4 -2413.17 41.002
+          }
+          {27
+            -0.433 -0.899 0
+            0.899 -0.433 0
+            0 0 1
+            -1988.06 -2505.39 44.707
+          }
+          {28
+            -0.292 -0.954 0
+            0.954 -0.292 0
+            0 0 1
+            -2018.46 -2601.45 47
+          }
+          {29
+            -0.123 -0.99 0
+            0.99 -0.123 0
+            0 0 1
+            -2048.84 -2697.13 44.411
+          }
+          {30
+            -0.352 -0.932 0
+            0.932 -0.352 0
+            0 0 1
+            -2075.41 -2800.98 42.999
+          }
+          {31
+            -0.054 -0.996 0
+            0.996 -0.054 0
+            0 0 1
+            -2144.55 -2873.97 44.939
+          }
+          {32
+            0.232 -0.97 0
+            0.97 0.232 0
+            0 0 1
+            -2245.41 -2936.29 48.998
+          }
+          {33
+            -0.925 0.372 0
+            -0.372 -0.925 0
+            0 0 0.999
+            386.483 3315.56 61.003
+          }
+          {34
+            0.741 0.669 0
+            -0.669 0.741 0
+            0 0 0.999
+            -2367.92 -3360.96 51
+          }
+          {35
+            0.628 0.776 0
+            -0.776 0.628 0
+            0 0 1
+            -2409.28 -3266.3 46.047
+          }
+          {36
+            -0.189 0.978 0
+            -0.978 -0.189 0
+            0 0 0.999
+            -2071.79 -4050.46 66.997
+          }
+          {37
+            -0.176 0.981 0
+            -0.981 -0.176 0
+            0 0 1
+            -2093.02 -3934.38 63.999
+          }
+          {38
+            -0.328 0.943 0
+            -0.943 -0.328 0
+            0 0 0.999
+            -2120.91 -3828.14 61.356
+          }
+          {39
+            -0.471 0.879 0
+            -0.879 -0.471 0
+            0 0 1
+            -2165.08 -3727.57 57.206
+          }
+        }
+      }
+    }
+    {Player 0}
+    {MID 4}
+  }
+  {Entity "flag_point_base" 0xa000
+    {Position 16.71 3813.56}
+    {xform zl -92.31}
+    {Extender "map_point"
+      {name base_flag_b}
+      {zone
+        {radius 0}
+        {zoneId "base_b"}
+      }
+      {phase 0}
+      {order 0}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Extender "fortification"
+      {level
+        {steps 0}
+        {radius 0}
+        {angle "90"}
+        {elementAngle "180"}
+        {buildTime 60}
+        {entity "flagpoint_ammo"}
+      }
+      {level
+        {steps 2}
+        {radius 13}
+        {angle "0"}
+        {buildTime 60}
+        {entity "sandbag_heap_curved"}
+        {manual
+          {0
+            0.585 -0.81 0
+            0.81 0.585 0
+            0 0 1
+            1654.97 3294.29 45.455
+          }
+          {1
+            0.251 -0.967 0
+            0.967 0.251 0
+            0 0 0.999
+            -237.304 2818.37 59.257
+          }
+          {2
+            0.587 -0.809 0
+            0.809 0.587 0
+            0 0 0.999
+            -163.923 2851.04 68
+          }
+          {3
+            -0.021 0.999 0
+            -0.999 -0.021 0
+            0 0 1
+            239.418 3636.22 52.962
+          }
+          {4
+            0.278 -0.96 0
+            0.96 0.278 0
+            0 0 0.999
+            163.072 3632.68 55.277
+          }
+          {5
+            -0.998 0.044 0
+            -0.044 -0.998 0
+            0 0 0.999
+            320.96 3750.8 50.908
+          }
+          {6
+            0.891 -0.453 0
+            0.453 0.891 0
+            0 0 0.999
+            292.048 3673.2 51
+          }
+          {7
+            -0.129 -0.991 0
+            0.991 -0.129 0
+            0 0 1
+            1586.54 3279.37 48
+          }
+        }
+      }
+      {level
+        {steps 6}
+        {radius 25}
+        {angle "45"}
+        {azimuth "8"}
+        {elementAngle "5"}
+        {buildTime 60}
+        {entity "sandbag_structured_straight"}
+        {skip "0 1 2 10 11 12 13 19 21 22"}
+        {manual
+          {4
+            -0.88 0.474 0
+            -0.474 -0.88 0
+            0 0 0.999
+            -364.472 4017.35 60.623
+          }
+          {5
+            -0.854 0.519 0
+            -0.519 -0.854 0
+            0 0 1
+            -399.473 3963.18 62
+          }
+          {6
+            0.491 0.871 0
+            -0.871 0.491 0
+            0 0 1
+            -282.267 3845.24 63
+          }
+          {7
+            0.542 0.84 0
+            -0.84 0.542 0
+            0 0 1
+            -336.267 3879.51 63
+          }
+          {8
+            0.42 0.907 0
+            -0.907 0.42 0
+            0 0 1
+            -394.205 3918.36 63
+          }
+          {9
+            0.082 -0.996 0
+            0.996 0.082 0
+            0 0 0.999
+            -258.736 2792.8 57.387
+          }
+          {14
+            0.504 -0.863 0
+            0.863 0.504 0
+            0 0 1
+            -195.707 2811.32 64.804
+          }
+          {15
+            -0.921 -0.387 0
+            0.387 -0.921 0
+            0 0 1
+            64.641 3164.65 45.696
+          }
+          {16
+            0.37 -0.928 0
+            0.928 0.37 0
+            0 0 1
+            107.208 3145.19 44.028
+          }
+          {17
+            0.495 -0.868 0
+            0.868 0.495 0
+            0 0 1
+            172.451 3169.87 40.604
+          }
+          {18
+            0.936 0.351 0
+            -0.351 0.936 0
+            0 0 1
+            199.189 3213.52 40.963
+          }
+          {20
+            0.396 0.918 0
+            -0.918 0.396 0
+            0 0 1
+            -225.253 3811.24 63.122
+          }
+          {23
+            0.756 -0.653 0
+            0.653 0.756 0
+            0 0 1
+            -138.19 2848.46 68.484
+          }
+        }
+      }
+      {level
+        {steps 1}
+        {radius 8.5}
+        {buildTime 120}
+        {entity "watch_tower"}
+        {skip "2"}
+        {manual
+          {0
+            0.279 -0.96 0
+            0.96 0.279 0
+            0 0 1
+            1602.92 3349.35 44.618
+          }
+          {1
+            0.381 -0.924 0
+            0.924 0.381 0
+            0 0 1
+            114.952 3227.19 42.068
+          }
+          {3
+            -0.493 -0.869 0
+            0.869 -0.493 0
+            0 0 0.999
+            -322.98 3940.87 64
+          }
+        }
+      }
+      {level
+        {steps 5}
+        {radius 9}
+        {angle "45"}
+        {azimuth "14"}
+        {buildTime 60}
+        {entity "sandbag_framed_straight"}
+        {skip "0 4 8 12"}
+        {manual
+          {1
+            -0.64 -0.767 0
+            0.767 -0.64 0
+            0 0 1
+            508.621 3788.27 44
+          }
+          {2
+            0.763 -0.646 0
+            0.646 0.763 0
+            0 0 1
+            591.429 3800.81 45.987
+          }
+          {3
+            0.086 -0.996 0
+            0.996 0.086 0
+            0 0 0.999
+            551.607 3776.88 44.781
+          }
+          {5
+            0.283 -0.958 0
+            0.958 0.283 0
+            0 0 0.999
+            97.117 3874.86 58
+          }
+          {6
+            0.393 -0.919 0
+            0.919 0.393 0
+            0 0 0.999
+            137.186 3889.48 57.35
+          }
+          {7
+            0.39 -0.92 0
+            0.92 0.39 0
+            0 0 1
+            175.135 3905.6 55.983
+          }
+          {9
+            -0.512 -0.858 0
+            0.858 -0.512 0
+            0 0 1
+            22.14 3690.17 58.967
+          }
+          {10
+            -0.525 -0.85 0
+            0.85 -0.525 0
+            0 0 0.999
+            -14.125 3712.1 59.026
+          }
+          {11
+            -0.507 -0.861 0
+            0.861 -0.507 0
+            0 0 0.999
+            -49.256 3732.92 60.422
+          }
+          {13
+            -0.486 -0.873 0
+            0.873 -0.486 0
+            0 0 1
+            59.266 3668.8 58.039
+          }
+          {14
+            -0.544 -0.838 0
+            0.838 -0.544 0
+            0 0 1
+            94.615 3647.41 56.066
+          }
+          {16
+            0.898 -0.438 0
+            0.438 0.898 0
+            0 0 1
+            225.683 3975.02 54
+          }
+          {17
+            0.897 -0.44 0
+            0.44 0.897 0
+            0 0 1
+            207.266 3937.52 55
+          }
+          {18
+            -0.501 -0.865 0
+            0.865 -0.501 0
+            0 0 1
+            15.994 3900.67 59
+          }
+          {19
+            -0.52 -0.853 0
+            0.853 -0.52 0
+            0 0 1
+            51.656 3879.83 58
+          }
+        }
+      }
+      {level
+        {steps 10}
+        {radius 35}
+        {azimuth "9"}
+        {buildTime 240}
+        {entity "hedgehog2"}
+        {skip "16 18 23 24 25 26 27 28 29 30 31 32 33"}
+        {manual
+          {0
+            -0.916 0.399 0
+            -0.399 -0.916 0
+            0 0 1
+            -1157.11 2430.71 39.048
+          }
+          {1
+            -0.967 0.251 0
+            -0.251 -0.967 0
+            0 0 1
+            -1260.94 2466.55 41.217
+          }
+          {2
+            -0.995 0.096 0
+            -0.096 -0.995 0
+            0 0 1
+            -1369.1 2485.71 38.049
+          }
+          {3
+            0.24 -0.969 0
+            0.969 0.24 0
+            0 0 1
+            -972.687 2369.81 33.857
+          }
+          {4
+            0.992 -0.113 0
+            0.113 0.992 0
+            0 0 1
+            -858.979 2396.99 34
+          }
+          {5
+            0.997 0.043 0
+            -0.043 0.997 0
+            0 0 1
+            -749.203 2393.15 33
+          }
+          {6
+            0.988 -0.143 0
+            0.143 0.988 0
+            0 0 1
+            -630.676 2398.16 34
+          }
+          {7
+            0.998 0.012 0
+            -0.012 0.998 0
+            0 0 1
+            -524.164 2420.22 34
+          }
+          {8
+            0.999 0.007 0
+            -0.007 0.999 0
+            0 0 1
+            -419.266 2429.32 33.782
+          }
+          {9
+            0.83 -0.552 0
+            0.552 0.83 0
+            0 0 1
+            -333.783 2409.24 34.553
+          }
+          {10
+            0.908 -0.417 0
+            0.417 0.908 0
+            0 0 0.999
+            -258.851 2364.86 33.996
+          }
+          {11
+            0.961 -0.269 0
+            0.269 0.961 0
+            0 0 1
+            -155.727 2327.03 33.999
+          }
+          {12
+            -0.864 0.499 0
+            -0.499 -0.864 0
+            0 0 0.999
+            691.863 1939.76 47
+          }
+          {13
+            -0.808 0.586 0
+            -0.586 -0.808 0
+            0 0 1
+            588.706 1981.32 44.997
+          }
+          {14
+            -0.89 0.451 0
+            -0.451 -0.89 0
+            0 0 1
+            494.938 2038.53 42.997
+          }
+          {15
+            -0.95 0.306 0
+            -0.306 -0.95 0
+            0 0 1
+            393.372 2080.36 41.144
+          }
+          {17
+            -0.904 0.423 0
+            -0.423 -0.904 0
+            0 0 0.999
+            -71.117 2285.42 34.999
+          }
+          {19
+            -0.871 0.485 0
+            -0.485 -0.871 0
+            0 0 0.999
+            305.474 2114.16 39.999
+          }
+          {20
+            -0.937 0.343 0
+            -0.343 -0.937 0
+            0 0 1
+            205.654 2160 37.998
+          }
+          {21
+            -0.979 0.192 0
+            -0.192 -0.979 0
+            0 0 0.999
+            99.888 2189.65 37.151
+          }
+          {22
+            -0.997 0.038 0
+            -0.038 -0.997 0
+            0 0 1
+            9.286 2236.02 35.372
+          }
+          {34
+            -0.492 0.87 0
+            -0.87 -0.492 0
+            0 0 0.999
+            -1522.14 2756.44 32
+          }
+          {35
+            -0.622 0.782 0
+            -0.782 -0.622 0
+            0 0 1
+            -1583.54 2847.52 30
+          }
+          {36
+            -0.737 0.675 0
+            -0.675 -0.737 0
+            0 0 1
+            -1658.43 2927.87 30
+          }
+          {37
+            0.443 -0.896 0
+            0.896 0.443 0
+            0 0 1
+            -1487.37 2648.99 37
+          }
+          {38
+            0.577 -0.816 0
+            0.816 0.577 0
+            0 0 1
+            -1431.12 2554.63 39.566
+          }
+          {39
+            -0.842 0.537 0
+            -0.537 -0.842 0
+            0 0 1
+            -1060.17 2379.06 33.719
+          }
+        }
+      }
+    }
+    {Player 0}
+    {MID 5}
+  }
+  {Entity "map_point" 0xc007
+    {Position 4365.14 -6931.91}
+    {xform zl 100}
+    {Extender "map_point"
+      {name a2}
+      {team a}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 2}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 9}
+  }
+  {Entity "map_point" 0x8005
+    {Position -5551.58 6903.61}
+    {xform zl -80}
+    {Extender "map_point"
+      {name b1}
+      {team b}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 1}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 1}
+  }
+  {Entity "map_point" 0x8000
+    {Position 4906.24 -6905.77}
+    {xform zl 100}
+    {Extender "map_point"
+      {name a1}
+      {team a}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 1}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 6}
+  }
+  {Entity "map_point" 0x8001
+    {Position -5025.35 6969.99}
+    {xform zl -80}
+    {Extender "map_point"
+      {name b2}
+      {team b}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 2}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 7}
+  }
+  {Entity "map_point" 0xc000
+    {Position 3874.03 -6942.43}
+    {xform zl 100}
+    {Extender "map_point"
+      {name a3}
+      {team a}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 3}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 20}
+  }
+  {Entity "map_point" 0xc001
+    {Position -4473.34 7076.58}
+    {xform zl -80}
+    {Extender "map_point"
+      {name b3}
+      {team b}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 3}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 21}
+  }
+  {Entity "ammo2" 0x8007
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo2" 0x8008
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo2" 0x8009
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo_point" 0xa001
+    {Position 559.02 483.34}
+    {xform zl -71.61}
+    {Extender "map_point"
+      {name f8}
+      {zone
+        {radius 0}
+        {zoneId "f8"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 8}
+    {Able "minimap"}
+  }
+  {Entity "ammo2" 0xa002
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo_point" 0xa003
+    {Position -4027.41 -2157.12}
+    {xform zl 11.08}
+    {Extender "map_point"
+      {name f7}
+      {zone
+        {radius 0}
+        {zoneId "f7"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 10}
+    {Able "minimap"}
+  }
+  {Entity "ammo2" 0xa004
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo_point" 0xa005
+    {Position -6401.89 -4085.86}
+    {xform zl -109.14}
+    {Extender "map_point"
+      {name f10}
+      {zone
+        {radius 0}
+        {zoneId "f10"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 11}
+    {Able "minimap"}
+  }
+  {Entity "ammo2" 0xa006
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo_point" 0xa007
+    {Position 4174.91 2531.28}
+    {xform zl -18.32}
+    {Extender "map_point"
+      {name f6}
+      {zone
+        {radius 0}
+        {zoneId "f6"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 12}
+    {Able "minimap"}
+  }
+  {Entity "ammo2" 0xa008
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo_point" 0xa009
+    {Position 5135.73 3268.88}
+    {xform zl -4.23}
+    {Extender "map_point"
+      {name f9}
+      {zone
+        {radius 0}
+        {zoneId "f9"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 13}
+    {Able "minimap"}
+  }
+  {Entity "ammo2" 0xa00a
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo2" 0x8006
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo2" 0x800a
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo2" 0xa00b
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo_point" 0xa00c
+    {Position 3010.88 1771.12}
+    {xform zl -10.99}
+    {Extender "map_point"
+      {name f11}
+      {zone
+        {radius 0}
+        {zoneId "f11"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 14}
+    {Able "minimap"}
+  }
+  {Entity "ammo2" 0xa00d
+    {Extender "supply_zone"
+      {enabled}
+      {current 0}
+    }
+  }
+  {Entity "ammo_point" 0xa00e
+    {Position -5326.15 -2906.83}
+    {xform zl 15.97}
+    {Extender "map_point"
+      {name f12}
+      {zone
+        {radius 0}
+        {zoneId "f12"}
+      }
+      {phase 0}
+      {order 0}
+      {show All}
+      {visor MapPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 15}
+    {Able "minimap"}
+  }
+  {Entity "map_point" 0x800e
+    {Position -3907.79 6802.83}
+    {xform zl -90}
+    {Extender "map_point"
+      {name b4}
+      {team b}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 4}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 23}
+  }
+  {Entity "map_point" 0x800f
+    {Position -4601.67 6805.62}
+    {xform zl -90}
+    {Extender "map_point"
+      {name b5}
+      {team b}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 5}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 24}
+  }
+  {Entity "map_point" 0x8010
+    {Position -5230.6 6813.57}
+    {xform zl -90}
+    {Extender "map_point"
+      {name b6}
+      {team b}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 6}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 25}
+  }
+  {Entity "map_point" 0x8012
+    {Position -5877.53 6812.82}
+    {xform zl -90}
+    {Extender "map_point"
+      {name b7}
+      {team b}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 7}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 26}
+  }
+  {Entity "map_point" 0x8014
+    {Position -6506.07 6780.34}
+    {xform zl -90}
+    {Extender "map_point"
+      {name b7}
+      {team b}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 8}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 27}
+  }
+  {Entity "map_point" 0x8015
+    {Position 3513.95 -6965.3}
+    {xform zl 90}
+    {Extender "map_point"
+      {name a4}
+      {team a}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 4}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 28}
+  }
+  {Entity "map_point" 0x8016
+    {Position 3348.39 -6758.97}
+    {xform zl 90}
+    {Extender "map_point"
+      {name a5}
+      {team a}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 5}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 29}
+  }
+  {Entity "map_point" 0x8017
+    {Position 4053.63 -6711.04}
+    {xform zl 90}
+    {Extender "map_point"
+      {name a6}
+      {team a}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 6}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 30}
+  }
+  {Entity "map_point" 0x8018
+    {Position 4598.37 -6704.89}
+    {xform zl 90}
+    {Extender "map_point"
+      {name a7}
+      {team a}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 7}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 31}
+  }
+  {Entity "map_point" 0x8019
+    {Position 5133.27 -6748.62}
+    {xform zl 90}
+    {Extender "map_point"
+      {name a8}
+      {team a}
+      {zone
+        {radius 0}
+        {zoneId ""}
+      }
+      {phase 0}
+      {order 8}
+      {visor SpawnPoint}
+      {allow
+        {enableCapture}
+        {enableRelease}
+      }
+    }
+    {Player 0}
+    {MID 32}
+  }
+  {Link 0x8007 {0x802f "ammo"}}
+  {Link 0x8008 {0x8011 "ammo"}}
+  {Link 0x8009 {0x8013 "ammo"}}
+  {Link 0x8006 {0x8003 "ammo"}}
+  {Link 0x800a {0x8004 "ammo"}}
+  {Link 0xa002 {0xa001 "ammo"}}
+  {Link 0xa004 {0xa003 "ammo"}}
+  {Link 0xa006 {0xa005 "ammo"}}
+  {Link 0xa008 {0xa007 "ammo"}}
+  {Link 0xa00a {0xa009 "ammo"}}
+  {Link 0xa00b {0xa00c "ammo"}}
+  {Link 0xa00d {0xa00e "ammo"}}
+  {Tags "flag" 0x802f}
+  {Tags "flag" 0x8011}
+  {Tags "flag" 0x8013}
+  {Tags "flag" 0x8003}
+  {Tags "flag" 0x8004}
+  {Tags "flag" 0xe002}
+  {Tags "flag" 0xa000}
+  {Tags "flag" 0xa001}
+  {Tags "flag" 0xa003}
+  {Tags "flag" 0xa005}
+  {Tags "flag" 0xa007}
+  {Tags "flag" 0xa009}
+  {Tags "flag" 0xa00c}
+  {Tags "flag" 0xa00e}
+  {Environment "goh/multi/01_finland_summer/var1"}
+  {Helpers
+    (include "../am_events.inc")
+    {zone "poly"
+      {position -1229.23 -3491.98 63}
+      {Name "base_a"}
+      {Point -825.516 -494.4}
+      {Point -565.823 822.588}
+      {Point 845.679 464.1}
+      {Point 545.66 -792.288}
+    }
+    {zone "poly"
+      {position 102.306 3301.39 44}
+      {Name "base_b"}
+      {Point -579.567 -791.534}
+      {Point -493.345 638.009}
+      {Point -263.474 1035.18}
+      {Point 701.35 451.57}
+      {Point 635.037 -1333.22}
+    }
+    {zone "poly"
+      {position -674.01 92.3481 80.375}
+      {Name "f1"}
+      {Point 432.49 664.102}
+      {Point 779.659 -227.828}
+      {Point -535.097 -505.761}
+      {Point -677.052 69.4863}
+    }
+    {zone "poly"
+      {position -6392.55 -3999.58 162.004}
+      {Name "f10"}
+      {Point -454.628 479.778}
+      {Point 494.248 624.101}
+      {Point 413.081 -494.152}
+      {Point -452.701 -609.727}
+    }
+    {zone "poly"
+      {position 3008.63 1763.69 63.4062}
+      {Name "f11"}
+      {Point -785.23 -98.3901}
+      {Point 177.001 669.313}
+      {Point 923.753 186.247}
+      {Point -315.524 -757.169}
+    }
+    {zone "poly"
+      {position -5284.3 -2955.96 155}
+      {Name "f12"}
+      {Point -311.043 -614.547}
+      {Point -615.185 325.301}
+      {Point 309.025 611.416}
+      {Point 617.203 -322.17}
+    }
+    {zone "poly"
+      {position 1606.74 1055.9 40}
+      {Name "f2"}
+      {Point -695.832 -32.3448}
+      {Point 200.447 701.491}
+      {Point 716.669 38.44}
+      {Point -221.285 -707.586}
+    }
+    {zone "poly"
+      {position -2321.19 -889.857 41.956}
+      {Name "f3"}
+      {Point -417.83 225.301}
+      {Point 73.0889 553.669}
+      {Point 507.526 31.2848}
+      {Point 227.256 -511.528}
+      {Point -390.042 -298.726}
+    }
+    {zone "poly"
+      {position 6092.75 3876.15 28}
+      {Name "f4"}
+      {Point -738.514 -11.5341}
+      {Point 250.222 658.743}
+      {Point 790.649 39.2003}
+      {Point -302.356 -686.409}
+    }
+    {zone "poly"
+      {position -2762.96 -1623.81 29}
+      {Name "f5"}
+      {Point 244.763 -520.713}
+      {Point -690.325 -190.263}
+      {Point -220.107 494.91}
+      {Point 665.67 216.066}
+    }
+    {zone "poly"
+      {position 4191.58 2451.81 131.941}
+      {Name "f6"}
+      {Point 448.379 -719.242}
+      {Point -867.713 -75.4307}
+      {Point -423.341 670.61}
+      {Point 842.675 124.063}
+    }
+    {zone "poly"
+      {position -3977.65 -2124.46 59}
+      {Name "f7"}
+      {Point -596.366 403.127}
+      {Point 466.775 546.575}
+      {Point 571.503 -423.046}
+      {Point -441.912 -526.656}
+    }
+    {zone "poly"
+      {position 533.509 488.205 63}
+      {Name "f8"}
+      {Point -556.694 -242.722}
+      {Point -228.2 556.421}
+      {Point 538.019 210.372}
+      {Point 246.875 -524.07}
+    }
+    {zone "poly"
+      {position 5122.63 3285.84 25}
+      {Name "f9"}
+      {Point 400.639 -357.265}
+      {Point -114.619 -523.288}
+      {Point -527.552 -96.0461}
+      {Point -340.171 319.521}
+      {Point 73.4613 511.318}
+      {Point 508.242 145.759}
+    }
+    {zone "poly"
+      {position -4.33472 53.7056 52.3533}
+      {Name "global"}
+      {Point -7479.14 -7521.36}
+      {Point -7534.07 7516.58}
+      {Point 7547.94 7520.93}
+      {Point 7465.27 -7516.15}
+    }
+    {reinforcements
+      {scoreTotal 0}
+      {scoreCurrent 0}
+    }
+    {vars
+      (include "../am_vars.inc")
+    }
+    {mission_options
+      {"any_weather"}
+      {"day_weather"}
+      {"night_weather"}
+    }
+    {triggers
+      (include "../am_triggers.inc")
+      {"environment_any"
+        {condition
+          {terms
+            {"1.event"
+              {id "gamestart"}
+            }
+            {"2.mission_option"
+              {name "any_weather"}
+            }
+          }
+        }
+        {actions
+          {"switch"
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/var1"}
+                {time 1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/var2"}
+                {time 1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/var3"}
+                {time 1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.2}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/var4"}
+                {time 1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.2}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/var5"}
+                {time 1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/varnight1"}
+                {time -1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/varnight2"}
+                {time -1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/varnight3"}
+                {time -1}
+                {apply}
+              }
+            }
+            {"default"}
+          }
+        }
+      }
+      {"environment_day"
+        {condition
+          {terms
+            {"1.event"
+              {id "gamestart"}
+            }
+            {"2.mission_option"
+              {name "day_weather"}
+            }
+          }
+        }
+        {actions
+          {"switch"
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/var1"}
+                {time 1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/var2"}
+                {time 1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/var3"}
+                {time 1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.2}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/var4"}
+                {time 1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.2}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/var5"}
+                {time 1}
+                {apply}
+              }
+            }
+            {"default"}
+          }
+        }
+      }
+      {"environment_night"
+        {condition
+          {terms
+            {"1.event"
+              {id "gamestart"}
+            }
+            {"2.mission_option"
+              {name "night_weather"}
+            }
+          }
+        }
+        {actions
+          {"switch"
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/varnight1"}
+                {time -1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/varnight2"}
+                {time -1}
+                {apply}
+              }
+            }
+            {"case"
+              {condition
+                {type rand}
+                {value 0.4}
+              }
+              {"environment"
+                {name "goh/multi/01_finland_summer/varnight3"}
+                {time -1}
+                {apply}
+              }
+            }
+          }
+        }
+      }
+      {"start"
+        {condition
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"event"
+            {event "gamestart"}
+            {mode set}
+            {delay 0}
+          }
+          {"delay"
+            {time 0.1}
+          }
+          {"event"
+            {event "ambient"}
+            {mode set}
+            {delay 0}
+          }
+        }
+      }
+      {"music_new/action_playlist/action_theme_3"
+        {condition
+          {terms
+            {"1.event"
+              {id "disabled"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {start "/music/action_theme_3.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/action_playlist/action_theme_3"}
+          }
+        }
+      }
+      {"music_new/ambient_selection"
+        {condition
+          {expression "1 & (2|3)"}
+          {terms
+            {"1.event"
+              {id "gamestart"}
+            }
+            {"2.event"
+              {id "ambient"}
+            }
+            {"3.cmp_i"
+              {var "ambient$"}
+              {op ">="}
+              {value 20}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"event"
+            {event "action"}
+            {mode reset}
+            {delay 0}
+          }
+          {"event"
+            {event "ambient"}
+            {mode set}
+            {delay 0}
+          }
+          {"delay"
+            {time 0.1}
+          }
+          {"trigger"
+            {name "music_new/music_fade"}
+            {on}
+          }
+          {"delay"
+            {time 0.1}
+          }
+          {"set_i"
+            {var "action_selection$"}
+            {op "="}
+            {value 0}
+          }
+          {"set_i"
+            {var "ambient$"}
+            {op "="}
+            {value 0}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/action_selection "}
+          }
+          {"delay"
+            {time 0.1}
+          }
+          {"switch"
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "ambient_selection$"}
+                {op "=="}
+                {value 0}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.15}
+                  }
+                  {"set_i"
+                    {var "ambient_selection$"}
+                    {op "="}
+                    {value 1}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.15}
+                  }
+                  {"set_i"
+                    {var "ambient_selection$"}
+                    {op "="}
+                    {value 2}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.3}
+                  }
+                  {"set_i"
+                    {var "ambient_selection$"}
+                    {op "="}
+                    {value 3}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.5}
+                  }
+                  {"set_i"
+                    {var "ambient_selection$"}
+                    {op "="}
+                    {value 4}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 1}
+                  }
+                  {"set_i"
+                    {var "ambient_selection$"}
+                    {op "="}
+                    {value 5}
+                  }
+                }
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "ambient_selection$"}
+                {op "<<"}
+                {value 5}
+              }
+              {"set_i"
+                {var "ambient_selection$"}
+                {op "+"}
+                {value 1}
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "ambient_selection$"}
+                {op ">="}
+                {value 5}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.2}
+                  }
+                  {"set_i"
+                    {var "ambient_selection$"}
+                    {op "="}
+                    {value 1}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.2}
+                  }
+                  {"set_i"
+                    {var "ambient_selection$"}
+                    {op "="}
+                    {value 2}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.3}
+                  }
+                  {"set_i"
+                    {var "ambient_selection$"}
+                    {op "="}
+                    {value 3}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.5}
+                  }
+                  {"set_i"
+                    {var "ambient_selection$"}
+                    {op "="}
+                    {value 4}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 1}
+                  }
+                  {"set_i"
+                    {var "ambient_selection$"}
+                    {op "="}
+                    {value 5}
+                  }
+                }
+              }
+            }
+          }
+          {"switch"
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "ambient_selection$"}
+                {op "=="}
+                {value 1}
+              }
+              {"trigger"
+                {name "music_new/ambient_playlist/ambient_2"}
+                {on}
+              }
+              {"delay"
+                {time 105}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type cmp_i}
+                    {var "ambient_selection$"}
+                    {op "=="}
+                    {value 1}
+                  }
+                  {"trigger"
+                    {name "music_new/ambient_selection"}
+                  }
+                }
+                {"default"}
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "ambient_selection$"}
+                {op "=="}
+                {value 2}
+              }
+              {"trigger"
+                {name "music_new/ambient_playlist/ambient_4"}
+                {on}
+              }
+              {"delay"
+                {time 165}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type cmp_i}
+                    {var "ambient_selection$"}
+                    {op "=="}
+                    {value 2}
+                  }
+                  {"trigger"
+                    {name "music_new/ambient_selection"}
+                  }
+                }
+                {"default"}
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "ambient_selection$"}
+                {op "=="}
+                {value 3}
+              }
+              {"trigger"
+                {name "music_new/ambient_playlist/fin_ambient_lvl1"}
+                {on}
+              }
+              {"delay"
+                {time 155}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type cmp_i}
+                    {var "ambient_selection$"}
+                    {op "=="}
+                    {value 3}
+                  }
+                  {"trigger"
+                    {name "music_new/ambient_selection"}
+                  }
+                }
+                {"default"}
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "ambient_selection$"}
+                {op "=="}
+                {value 4}
+              }
+              {"trigger"
+                {name "music_new/ambient_playlist/fin_ambient_lvl2"}
+                {on}
+              }
+              {"delay"
+                {time 115}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type cmp_i}
+                    {var "ambient_selection$"}
+                    {op "=="}
+                    {value 4}
+                  }
+                  {"trigger"
+                    {name "music_new/ambient_selection"}
+                  }
+                }
+                {"default"}
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "ambient_selection$"}
+                {op "=="}
+                {value 5}
+              }
+              {"trigger"
+                {name "music_new/ambient_playlist/fin_ambient_lvl3"}
+                {on}
+              }
+              {"delay"
+                {time 95}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type cmp_i}
+                    {var "ambient_selection$"}
+                    {op "=="}
+                    {value 5}
+                  }
+                  {"trigger"
+                    {name "music_new/ambient_selection"}
+                  }
+                }
+                {"default"}
+              }
+            }
+            {"default"
+              {"trigger"
+                {name "music_new/ambient_selection"}
+              }
+            }
+          }
+        }
+      }
+      {"music_new/silent_timer"
+        {condition
+          {expression "1 & 2 & !3"}
+          {terms
+            {"1.event"
+              {id "gamestart"}
+            }
+            {"2.event"
+              {id "action"}
+            }
+            {"3.event"
+              {id "ambient"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 4}
+          }
+          {"set_i"
+            {var "ambient$"}
+            {op "+"}
+            {value 4}
+          }
+          {"delay"
+            {time 0.1}
+          }
+          {"trigger"
+            {name "music_new/silent_timer"}
+          }
+        }
+      }
+      {"music_new/ambient_playlist/ambient_2"
+        {condition
+          {terms
+            {"1.event"
+              {id "disabled"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {start "/music/ambient_2.wav"}
+            {stop_all}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/ambient_playlist/ambient_2"}
+          }
+        }
+      }
+      {"music_new/ambient_playlist/ambient_4"
+        {condition
+          {terms
+            {"1.event"
+              {id "disabled"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {start "/music/ambient_4.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/ambient_playlist/ambient_4"}
+          }
+        }
+      }
+      {"music_new/action_selection "
+        {condition
+          {expression "1 & (2|3)"}
+          {terms
+            {"1.event"
+              {id "gamestart"}
+            }
+            {"2.event"
+              {id "action"}
+            }
+            {"3.signal"
+              {zone "global"}
+              {signals "shot injure explosion"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"event"
+            {event "ambient"}
+            {mode reset}
+            {delay 0}
+          }
+          {"event"
+            {event "action"}
+            {mode set}
+            {delay 0}
+          }
+          {"delay"
+            {time 0.1}
+          }
+          {"trigger"
+            {name "music_new/music_fade"}
+            {on}
+          }
+          {"delay"
+            {time 0.1}
+          }
+          {"set_i"
+            {var "ambient_selection$"}
+            {op "="}
+            {value 0}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/ambient_selection"}
+          }
+          {"delay"
+            {time 0.1}
+          }
+          {"switch"
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "action_selection$"}
+                {op "=="}
+                {value 0}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.25}
+                  }
+                  {"set_i"
+                    {var "action_selection$"}
+                    {op "="}
+                    {value 1}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.3}
+                  }
+                  {"set_i"
+                    {var "action_selection$"}
+                    {op "="}
+                    {value 2}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.5}
+                  }
+                  {"set_i"
+                    {var "action_selection$"}
+                    {op "="}
+                    {value 3}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 1}
+                  }
+                  {"set_i"
+                    {var "action_selection$"}
+                    {op "="}
+                    {value 4}
+                  }
+                }
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "action_selection$"}
+                {op "<<"}
+                {value 4}
+              }
+              {"set_i"
+                {var "action_selection$"}
+                {op "+"}
+                {value 1}
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "action_selection$"}
+                {op ">="}
+                {value 4}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.3}
+                  }
+                  {"set_i"
+                    {var "action_selection$"}
+                    {op "="}
+                    {value 1}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.25}
+                  }
+                  {"set_i"
+                    {var "action_selection$"}
+                    {op "="}
+                    {value 2}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 0.5}
+                  }
+                  {"set_i"
+                    {var "action_selection$"}
+                    {op "="}
+                    {value 3}
+                  }
+                }
+                {"case"
+                  {condition
+                    {type rand}
+                    {value 1}
+                  }
+                  {"set_i"
+                    {var "action_selection$"}
+                    {op "="}
+                    {value 4}
+                  }
+                }
+              }
+            }
+          }
+          {"switch"
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "action_selection$"}
+                {op "=="}
+                {value 1}
+              }
+              {"trigger"
+                {name "music_new/action_playlist/action_theme_3"}
+                {on}
+              }
+              {"delay"
+                {time 170}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type cmp_i}
+                    {var "action_selection$"}
+                    {op "=="}
+                    {value 1}
+                  }
+                  {"trigger"
+                    {name "music_new/action_selection "}
+                  }
+                }
+                {"default"}
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "action_selection$"}
+                {op "=="}
+                {value 2}
+              }
+              {"trigger"
+                {name "music_new/action_playlist/fin_battle_lvl1"}
+                {on}
+              }
+              {"delay"
+                {time 180}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type cmp_i}
+                    {var "action_selection$"}
+                    {op "=="}
+                    {value 2}
+                  }
+                  {"trigger"
+                    {name "music_new/action_selection "}
+                  }
+                }
+                {"default"}
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "action_selection$"}
+                {op "=="}
+                {value 3}
+              }
+              {"trigger"
+                {name "music_new/action_playlist/fin_battle_lvl2"}
+                {on}
+              }
+              {"delay"
+                {time 95}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type cmp_i}
+                    {var "action_selection$"}
+                    {op "=="}
+                    {value 3}
+                  }
+                  {"trigger"
+                    {name "music_new/action_selection "}
+                  }
+                }
+                {"default"}
+              }
+            }
+            {"case"
+              {condition
+                {type cmp_i}
+                {var "action_selection$"}
+                {op "=="}
+                {value 4}
+              }
+              {"trigger"
+                {name "music_new/action_playlist/fin_battle_lvl3"}
+                {on}
+              }
+              {"delay"
+                {time 300}
+              }
+              {"switch"
+                {"case"
+                  {condition
+                    {type cmp_i}
+                    {var "action_selection$"}
+                    {op "=="}
+                    {value 4}
+                  }
+                  {"trigger"
+                    {name "music_new/action_selection "}
+                  }
+                }
+              }
+            }
+            {"default"
+              {"trigger"
+                {name "music_new/action_selection "}
+              }
+            }
+          }
+        }
+      }
+      {"music_new/music_fade"
+        {condition
+          {terms
+            {"1.event"
+              {id "disabled"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {stop "/music/action_theme_3.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 0.01}
+          }
+          {"music"
+            {stop "/music/fin_battle_lvl1.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 0.01}
+          }
+          {"music"
+            {stop "/music/fin_battle_lvl2.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 0.01}
+          }
+          {"music"
+            {stop "/music/fin_battle_lvl3.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {stop "/music/ambient_2.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 0.01}
+          }
+          {"music"
+            {stop "/music/ambient_4.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 0.01}
+          }
+          {"music"
+            {stop "/music/fin_ambient_lvl1.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 0.01}
+          }
+          {"music"
+            {stop "/music/fin_ambient_lvl2.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 0.01}
+          }
+          {"music"
+            {stop "/music/fin_ambient_lvl3.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 0.01}
+          }
+          {"trigger"
+            {name "music_new/music_fade"}
+          }
+        }
+      }
+      {"music_new/silent_timer_reset"
+        {condition
+          {expression "1 & 2 & !3 & 4 & !5"}
+          {terms
+            {"1.event"
+              {id "gamestart"}
+            }
+            {"2.event"
+              {id "action"}
+            }
+            {"3.event"
+              {id "ambient"}
+            }
+            {"4.signal"
+              {zone "global"}
+              {signals "shot injure explosion"}
+            }
+            {"5.cmp_i"
+              {var "ambient$"}
+              {op "=="}
+              {value 0}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"set_i"
+            {var "ambient$"}
+            {op "="}
+            {value 0}
+          }
+          {"delay"
+            {time 4}
+          }
+          {"trigger"
+            {name "music_new/silent_timer_reset"}
+          }
+        }
+      }
+      {"music_new/action_playlist/fin_battle_lvl1"
+        {condition
+          {terms
+            {"1.event"
+              {id "disabled"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {start "/music/fin_battle_lvl1.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/action_playlist/fin_battle_lvl1"}
+          }
+        }
+      }
+      {"music_new/action_playlist/fin_battle_lvl2"
+        {condition
+          {terms
+            {"1.event"
+              {id "disabled"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {start "/music/fin_battle_lvl2.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/action_playlist/fin_battle_lvl2"}
+          }
+        }
+      }
+      {"music_new/action_playlist/fin_battle_lvl3"
+        {condition
+          {terms
+            {"1.event"
+              {id "disabled"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {start "/music/fin_battle_lvl3.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/action_playlist/fin_battle_lvl3"}
+          }
+        }
+      }
+      {"music_new/ambient_playlist/fin_ambient_lvl1"
+        {condition
+          {terms
+            {"1.event"
+              {id "disabled"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {start "/music/fin_ambient_lvl1.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/ambient_playlist/fin_ambient_lvl1"}
+          }
+        }
+      }
+      {"music_new/ambient_playlist/fin_ambient_lvl2"
+        {condition
+          {terms
+            {"1.event"
+              {id "disabled"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {start "/music/fin_ambient_lvl2.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/ambient_playlist/fin_ambient_lvl2"}
+          }
+        }
+      }
+      {"music_new/ambient_playlist/fin_ambient_lvl3"
+        {condition
+          {terms
+            {"1.event"
+              {id "disabled"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 0.1}
+          }
+          {"music"
+            {start "/music/fin_ambient_lvl3.wav"}
+            {volume game}
+            {fade 5}
+          }
+          {"delay"
+            {time 1}
+          }
+          {"trigger"
+            {name "music_new/ambient_playlist/fin_ambient_lvl3"}
+          }
+        }
+      }
+      {"drumsound"
+        {condition
+          {terms
+            {"1.event"
+              {id "gamestart"}
+            }
+          }
+        }
+        {actions
+          {"sound"
+            {name "gui/matchmaking"}
+          }
+        }
+      }
+      {"notifications"
+        {condition
+          {terms
+            {"1.event"
+              {id "gamestart"}
+            }
+          }
+        }
+        {actions
+          {"delay"
+            {time 300}
+          }
+          {"sound"
+            {name "gui/level_up"}
+          }
+          {"delay"
+            {time 600}
+          }
+          {"sound"
+            {name "gui/level_up"}
+          }
+          {"delay"
+            {time 600}
+          }
+          {"sound"
+            {name "gui/level_up"}
+          }
+        }
+      }
+    }
+  }
+  {Players
+    {count 17}
+    {diplomacy
+      1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+    }
+  }
+  {Fog 0}
+  {EntityManager {Enabled}
+    {CountScale "x0.5"}
+  }
+}
