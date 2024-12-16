@@ -1,5 +1,5 @@
 ; ger-75mm-pak42-l70
-; 德国 7.5cm Pak 42 L/70 反坦克炮，适用于 E-25 轻型坦克歼击车
+; 德国 7.5cm Pak 42 L/70 反坦克炮，适用于四号坦克歼击车 70A / 四号坦克歼击车 70V
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2750} ; 玩家最长射击距离 m
     {Speed 935} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 185} {500 116} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 192} {100 188} {500 173} {1000 156} {2000 126}} ; 穿深表
     {MinimumDamageModifier 175} ; 弹种对装甲的击穿伤害
     {HealthDamage 1750} ; 弹种对人员的击穿伤害
     {Spreading
@@ -71,7 +71,7 @@
     {MaxRange 2750} ; 玩家最长射击距离 m
     {Speed 1130} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 265} {500 145} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 228} {100 224} {500 204} {1000 182} {2000 145}} ; 穿深表
     {MinimumDamageModifier 130} ; 弹种对装甲的击穿伤害
     {HealthDamage 1300} ; 弹种对人员的击穿伤害
     {Spreading

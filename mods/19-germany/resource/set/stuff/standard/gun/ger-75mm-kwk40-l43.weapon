@@ -1,5 +1,5 @@
 ; ger-75mm-kwk40-l43
-; 德国 7.5cm KwK 40 L/43 坦克炮
+; 德国 7.5cm KwK 40 L/43 坦克炮，适用于四号 F2 型 / 四号 G 型
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2500} ; 玩家最长射击距离 m
     {Speed 690} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 117} {500 72} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 137} {100 135} {500 123} {1000 110} {2000 87}} ; 穿深表
     {MinimumDamageModifier 150} ; 弹种对装甲的击穿伤害
     {HealthDamage 1500} ; 弹种对人员的击穿伤害
     {Spreading
@@ -71,7 +71,7 @@
     {MaxRange 2500} ; 玩家最长射击距离 m
     {Speed 855} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 150} {500 69} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 163} {100 159} {500 143} {1000 126} {2000 96}} ; 穿深表
     {MinimumDamageModifier 110} ; 弹种对装甲的击穿伤害
     {HealthDamage 1100} ; 弹种对人员的击穿伤害
     {Spreading
@@ -105,7 +105,7 @@
     {MaxRange 2500} ; 玩家最长射击距离 m
     {Speed 400} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 115} {500 115} {1000 115}} ; 穿深表
+    {ProjectileDamageTable {0 80} {2000 80}} ; 穿深表
     {MinimumDamageModifier 130} ; 弹种对装甲的击穿伤害
     {HealthDamage 1300} ; 弹种对人员的击穿伤害
     {Spreading

@@ -1,5 +1,5 @@
 ; ger-75mm-pak40-l46
-; 德国 7.5cm PaK 40 L/46 反坦克炮
+; 德国 7.5cm PaK 40 L/46 反坦克炮，适用于 Sd.Kfz 234/4 轮式装甲车
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2400} ; 玩家最长射击距离 m
     {Speed 792} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 146} {500 93} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 151} {100 148} {500 135} {1000 121} {2000 96}} ; 穿深表
     {MinimumDamageModifier 150} ; 弹种对装甲的击穿伤害
     {HealthDamage 1500} ; 弹种对人员的击穿伤害
     {Spreading
@@ -71,7 +71,7 @@
     {MaxRange 2400} ; 玩家最长射击距离 m
     {Speed 990} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 195} {500 102} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 182} {100 177} {500 159} {1000 140} {2000 107}} ; 穿深表
     {MinimumDamageModifier 110} ; 弹种对装甲的击穿伤害
     {HealthDamage 1100} ; 弹种对人员的击穿伤害
     {Spreading
@@ -105,7 +105,7 @@
     {MaxRange 2400} ; 玩家最长射击距离 m
     {Speed 450} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 115} {500 115} {1000 115}} ; 穿深表
+    {ProjectileDamageTable {0 80} {2000 80}} ; 穿深表
     {MinimumDamageModifier 130} ; 弹种对装甲的击穿伤害
     {HealthDamage 1300} ; 弹种对人员的击穿伤害
     {Spreading

@@ -1,5 +1,5 @@
 ; ger-105mm-stuh42-l28
-; 德国 10.5cm StuH 42 L/28 突击榴弹炮
+; 德国 10.5cm StuH 42 L/28 突击榴弹炮，适用于 42 型突击炮
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2500} ; 玩家最长射击距离 m
     {Speed 496} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 115} {500 115} {1000 115}} ; 穿深表
+    {ProjectileDamageTable {0 115} {2000 115}} ; 穿深表
     {MinimumDamageModifier 355} ; 弹种对装甲的击穿伤害
     {HealthDamage 3550} ; 弹种对人员的击穿伤害
     {Spreading

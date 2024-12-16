@@ -1,5 +1,5 @@
 ; usa-37mm-m6
-; 美国 37mm M6 坦克炮
+; 美国 37mm M6 坦克炮，适用于 M8 灰狗轮式装甲车
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2000} ; 玩家最长射击距离 m
     {Speed 884} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 89} {500 27} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 79} {100 76} {500 65} {1000 54} {2000 37}} ; 穿深表
     {MinimumDamageModifier 50} ; 弹种对装甲的击穿伤害
     {HealthDamage 500} ; 弹种对人员的击穿伤害
     {Spreading
@@ -70,7 +70,7 @@
     {MaxRange 2000} ; 玩家最长射击距离 m
     {Speed 619} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 78} {500 43} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 87} {100 84} {500 73} {1000 60} {2000 41}} ; 穿深表
     {MinimumDamageModifier 50} ; 弹种对装甲的击穿伤害
     {HealthDamage 500} ; 弹种对人员的击穿伤害
     {Spreading

@@ -1,5 +1,5 @@
 ; usa-90mm-t15e1
-; 美国 90mm T15E1 坦克炮
+; 美国 90mm T15E1 坦克炮，适用于 T26E4 超级潘兴重型坦克
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2700} ; 玩家最长射击距离 m
     {Speed 975} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 202} {500 171} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 224} {100 221} {500 209} {1000 195} {2000 169}} ; 穿深表
     {MinimumDamageModifier 300} ; 弹种对装甲的击穿伤害
     {HealthDamage 3000} ; 弹种对人员的击穿伤害
     {Spreading
@@ -72,7 +72,7 @@
     {MaxRange 2700} ; 玩家最长射击距离 m
     {Speed 1143} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 258} {500 185} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 336} {100 330} {500 304} {1000 274} {2000 223}} ; 穿深表
     {MinimumDamageModifier 225} ; 弹种对装甲的击穿伤害
     {HealthDamage 2250} ; 弹种对人员的击穿伤害
     {Spreading

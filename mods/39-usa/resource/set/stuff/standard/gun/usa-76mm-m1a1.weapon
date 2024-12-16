@@ -1,5 +1,5 @@
 ; usa-76mm-m1a1
-; 美国 76mm M1A1 坦克炮
+; 美国 76mm M1A1 坦克炮，适用于 M18 地狱猫坦克歼击车
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2300} ; 玩家最长射击距离 m
     {Speed 792} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 125} {500 86} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 149} {100 146} {500 133} {1000 119} {2000 95}} ; 穿深表
     {MinimumDamageModifier 165} ; 弹种对装甲的击穿伤害
     {HealthDamage 1650} ; 弹种对人员的击穿伤害
     {Spreading
@@ -71,7 +71,7 @@
     {MaxRange 2300} ; 玩家最长射击距离 m
     {Speed 1036} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 239} {500 124} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 190} {100 186} {500 167} {1000 146} {2000 112}} ; 穿深表
     {MinimumDamageModifier 130} ; 弹种对装甲的击穿伤害
     {HealthDamage 1300} ; 弹种对人员的击穿伤害
     {Spreading

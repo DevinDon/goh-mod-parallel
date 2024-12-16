@@ -17,7 +17,7 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
 
   const projectileDamageTableLine = bullet.projectile
     ? typeof bullet.projectile === 'number'
-      ? `{ProjectileDamageTable {10 ${bullet.projectile}} {100 ${bullet.projectile}} {500 ${bullet.projectile}} {1000 ${bullet.projectile}} {2000 ${bullet.projectile}}} ; 穿深表`
+      ? `{ProjectileDamageTable {0 ${bullet.projectile}} {2000 ${bullet.projectile}}} ; 穿深表`
       : `{ProjectileDamageTable {10 ${bullet.projectile[0]}} {100 ${bullet.projectile[1]}} {500 ${bullet.projectile[2]}} {1000 ${bullet.projectile[3]}} {2000 ${bullet.projectile[4]}}} ; 穿深表`
     : '; 无穿深表配置';
 

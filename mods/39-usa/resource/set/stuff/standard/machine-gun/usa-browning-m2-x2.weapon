@@ -4,7 +4,7 @@
   (include "/properties/standard/gun/define.ext")
   {Tag "aa" "gun"} ; 标签
   {Entity "browning_m2"}
-  {Mass 38}
+  {Mass 76}
   {FireSound "smallarms/s4/d1/USA/M2HB/"} ; 开火音效
   {FireSoundclose "smallarms/s4/d1/USA/M2HB/"} ; 车内视角开火音效
   {ReloadSound "dt"} ; 装弹音效
@@ -40,11 +40,11 @@
     {MaxRange 1500} ; 玩家最长射击距离 m
     {Speed 894} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 30} {500 9} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 31} {100 29} {500 21} {1000 14} {2000 6}} ; 穿深表
     {MinimumDamageModifier 12} ; 弹种对装甲的击穿伤害
     {HealthDamage 175} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {35.43 0.80} {354.25 6.20} {1500 62}} ; 散布
+      {RadiusTable {0 0} {35.43 0.80} {354.25 5.20} {1500 52}} ; 散布
       {BurstRecoveryTime 0.20} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心

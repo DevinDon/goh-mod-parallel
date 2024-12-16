@@ -1,5 +1,5 @@
 ; ger-88mm-pak43-l71
-; 德国 8.8cm PaK 43 L/71 反坦克炮
+; 德国 8.8cm PaK 43 L/71 反坦克炮，适用于猎豹坦克歼击车 G1 型
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2700} ; 玩家最长射击距离 m
     {Speed 1000} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 232} {500 176} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 237} {100 234} {500 222} {1000 207} {2000 180}} ; 穿深表
     {MinimumDamageModifier 300} ; 弹种对装甲的击穿伤害
     {HealthDamage 3000} ; 弹种对人员的击穿伤害
     {Spreading
@@ -72,7 +72,7 @@
     {MaxRange 2700} ; 玩家最长射击距离 m
     {Speed 1130} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 304} {500 213} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 279} {100 273} {500 252} {1000 227} {2000 185}} ; 穿深表
     {MinimumDamageModifier 260} ; 弹种对装甲的击穿伤害
     {HealthDamage 2600} ; 弹种对人员的击穿伤害
     {Spreading

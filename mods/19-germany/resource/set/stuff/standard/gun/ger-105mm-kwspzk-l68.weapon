@@ -1,5 +1,5 @@
 ; ger-105mm-kwspzk-l68
-; 德国 10.5cm KwsPz.K L/68 实验性坦克炮
+; 德国 10.5cm KwsPz.K L/68 实验性坦克炮，适用于六号坦克 B 型亨舍尔炮塔 10.5cm KwsPz.K L/68 实验性坦克炮
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2850} ; 玩家最长射击距离 m
     {Speed 1000} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 225} {500 171} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 251} {100 248} {500 234} {1000 219} {2000 191}} ; 穿深表
     {MinimumDamageModifier 420} ; 弹种对装甲的击穿伤害
     {HealthDamage 4200} ; 弹种对人员的击穿伤害
     {Spreading
@@ -72,7 +72,7 @@
     {MaxRange 2850} ; 玩家最长射击距离 m
     {Speed 1130} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 285} {500 201} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 304} {100 298} {500 274} {1000 248} {2000 201}} ; 穿深表
     {MinimumDamageModifier 375} ; 弹种对装甲的击穿伤害
     {HealthDamage 3750} ; 弹种对人员的击穿伤害
     {Spreading

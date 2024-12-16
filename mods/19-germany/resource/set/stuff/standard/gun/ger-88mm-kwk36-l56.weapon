@@ -1,5 +1,5 @@
 ; ger-88mm-kwk36-l56
-; 德国 8.8cm KwK 36 L/56 坦克炮
+; 德国 8.8cm KwK 36 L/56 坦克炮，适用于六号坦克 E 型 / 六号坦克 H 型
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2500} ; 玩家最长射击距离 m
     {Speed 780} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 162} {500 116} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 165} {100 162} {500 151} {1000 139} {2000 117}} ; 穿深表
     {MinimumDamageModifier 285} ; 弹种对装甲的击穿伤害
     {HealthDamage 2850} ; 弹种对人员的击穿伤害
     {Spreading
@@ -72,7 +72,7 @@
     {MaxRange 2500} ; 玩家最长射击距离 m
     {Speed 930} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 219} {500 143} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 211} {100 207} {500 191} {1000 172} {2000 140}} ; 穿深表
     {MinimumDamageModifier 235} ; 弹种对装甲的击穿伤害
     {HealthDamage 2350} ; 弹种对人员的击穿伤害
     {Spreading

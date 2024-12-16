@@ -1,5 +1,5 @@
 ; usa-75mm-m2-how
-; 美国 75mm M2 坦克榴弹炮
+; 美国 75mm M2 坦克榴弹炮，适用于 M8 自行榴弹炮
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2000} ; 玩家最长射击距离 m
     {Speed 305} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 91} {500 91} {1000 91}} ; 穿深表
+    {ProjectileDamageTable {0 89} {2000 89}} ; 穿深表
     {MinimumDamageModifier 115} ; 弹种对装甲的击穿伤害
     {HealthDamage 1150} ; 弹种对人员的击穿伤害
     {Spreading

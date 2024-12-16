@@ -1,5 +1,5 @@
 ; ger-150mm-sfh18-l30
-; 德国 15cm sFH 18 L/30 榴弹炮
+; 德国 15cm sFH 18 L/30 榴弹炮，适用于胡蜂自行火炮
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2500} ; 玩家最长射击距离 m
     {Speed 460} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 185} {500 185} {1000 185}} ; 穿深表
+    {ProjectileDamageTable {0 185} {2000 185}} ; 穿深表
     {MinimumDamageModifier 600} ; 弹种对装甲的击穿伤害
     {HealthDamage 6000} ; 弹种对人员的击穿伤害
     {Spreading

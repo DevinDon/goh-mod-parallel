@@ -36,7 +36,7 @@
     {MaxRange 2200} ; 玩家最长射击距离 m
     {Speed 740} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 52} {500 18} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 47} {100 44} {500 31} {1000 21} {2000 9}} ; 穿深表
     {MinimumDamageModifier 60} ; 弹种对装甲的击穿伤害
     {HealthDamage 600} ; 弹种对人员的击穿伤害
     {Spreading
@@ -70,7 +70,7 @@
     {MaxRange 2200} ; 玩家最长射击距离 m
     {Speed 1020} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 90} {500 5} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 86} {100 77} {500 47} {1000 26} {2000 8}} ; 穿深表
     {MinimumDamageModifier 45} ; 弹种对装甲的击穿伤害
     {HealthDamage 450} ; 弹种对人员的击穿伤害
     {Spreading

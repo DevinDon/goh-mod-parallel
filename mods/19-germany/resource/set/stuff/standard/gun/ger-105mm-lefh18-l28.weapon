@@ -1,5 +1,5 @@
 ; ger-105mm-lefh18-l28
-; 德国 10.5cm leFH 18 L/28 榴弹炮
+; 德国 10.5cm leFH 18 L/28 榴弹炮，适用于 Sd.Kfz 124 黄蜂自行火炮
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2500} ; 玩家最长射击距离 m
     {Speed 390} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 73} {500 53} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 73} {100 60} {500 44} {1000 31} {2000 10}} ; 穿深表
     {MinimumDamageModifier 410} ; 弹种对装甲的击穿伤害
     {HealthDamage 4100} ; 弹种对人员的击穿伤害
     {Spreading
@@ -71,7 +71,7 @@
     {MaxRange 2500} ; 玩家最长射击距离 m
     {Speed 496} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 104} {500 104} {1000 104}} ; 穿深表
+    {ProjectileDamageTable {0 115} {2000 115}} ; 穿深表
     {MinimumDamageModifier 355} ; 弹种对装甲的击穿伤害
     {HealthDamage 3550} ; 弹种对人员的击穿伤害
     {Spreading

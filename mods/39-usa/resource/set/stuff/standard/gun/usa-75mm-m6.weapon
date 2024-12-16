@@ -1,5 +1,5 @@
 ; usa-75mm-m6
-; 美国 75mm M6 坦克炮
+; 美国 75mm M6 坦克炮，适用于 M24 霞飞轻型坦克 / M4A3 谢尔曼管风琴中型坦克
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2300} ; 玩家最长射击距离 m
     {Speed 619} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 109} {500 51} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 91} {100 88} {500 78} {1000 67} {2000 49}} ; 穿深表
     {MinimumDamageModifier 135} ; 弹种对装甲的击穿伤害
     {HealthDamage 1350} ; 弹种对人员的击穿伤害
     {Spreading
@@ -71,7 +71,7 @@
     {MaxRange 2300} ; 玩家最长射击距离 m
     {Speed 619} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 88} {500 59} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 104} {100 102} {500 93} {1000 84} {2000 68}} ; 穿深表
     {MinimumDamageModifier 135} ; 弹种对装甲的击穿伤害
     {HealthDamage 1350} ; 弹种对人员的击穿伤害
     {Spreading
@@ -106,7 +106,7 @@
     {MaxRange 2300} ; 玩家最长射击距离 m
     {Speed 619} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 88} {500 59} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 104} {100 102} {500 93} {1000 84} {2000 68}} ; 穿深表
     {MinimumDamageModifier 135} ; 弹种对装甲的击穿伤害
     {HealthDamage 1350} ; 弹种对人员的击穿伤害
     {Spreading

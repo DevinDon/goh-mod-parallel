@@ -1,5 +1,5 @@
 ; ger-50mm-kwk39-l60
-; 德国 5cm KwK 39 L/60 坦克炮，适用于三号 M 型
+; 德国 5cm KwK 39 L/60 坦克炮，适用于三号 M 型 / Sd.Kfz 234/2 轮式装甲车
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2300} ; 玩家最长射击距离 m
     {Speed 835} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 97} {500 38} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 106} {100 101} {500 83} {1000 65} {2000 39}} ; 穿深表
     {MinimumDamageModifier 110} ; 弹种对装甲的击穿伤害
     {HealthDamage 1100} ; 弹种对人员的击穿伤害
     {Spreading
@@ -69,7 +69,7 @@
     {MaxRange 2300} ; 玩家最长射击距离 m
     {Speed 1150} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 150} {500 32} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 137} {100 126} {500 88} {1000 56} {2000 23}} ; 穿深表
     {MinimumDamageModifier 75} ; 弹种对装甲的击穿伤害
     {HealthDamage 750} ; 弹种对人员的击穿伤害
     {Spreading

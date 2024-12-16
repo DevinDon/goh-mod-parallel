@@ -1,5 +1,5 @@
 ; usa-90mm-m3
-; 美国 90mm M3 坦克炮
+; 美国 90mm M3 坦克炮，适用于 M36 杰克逊坦克歼击车
 {from "pattern standard-gun"
   (include "/properties/standard/gun/define.ext")
   ; 无标签
@@ -36,7 +36,7 @@
     {MaxRange 2700} ; 玩家最长射击距离 m
     {Speed 823} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 188} {500 96} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 162} {100 160} {500 148} {1000 135} {2000 113}} ; 穿深表
     {MinimumDamageModifier 220} ; 弹种对装甲的击穿伤害
     {HealthDamage 2200} ; 弹种对人员的击穿伤害
     {Spreading
@@ -70,7 +70,7 @@
     {MaxRange 2700} ; 玩家最长射击距离 m
     {Speed 853} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 164} {500 140} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 162} {100 160} {500 148} {1000 135} {2000 113}} ; 穿深表
     {MinimumDamageModifier 220} ; 弹种对装甲的击穿伤害
     {HealthDamage 2200} ; 弹种对人员的击穿伤害
     {Spreading
@@ -102,7 +102,7 @@
     {MaxRange 2700} ; 玩家最长射击距离 m
     {Speed 853} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 169} {500 127} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 185} {100 183} {500 173} {1000 161} {2000 140}} ; 穿深表
     {MinimumDamageModifier 290} ; 弹种对装甲的击穿伤害
     {HealthDamage 2900} ; 弹种对人员的击穿伤害
     {Spreading
@@ -138,7 +138,7 @@
     {MaxRange 2700} ; 玩家最长射击距离 m
     {Speed 1018} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 306} {500 193} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 287} {100 281} {500 259} {1000 234} {2000 191}} ; 穿深表
     {MinimumDamageModifier 185} ; 弹种对装甲的击穿伤害
     {HealthDamage 1850} ; 弹种对人员的击穿伤害
     {Spreading

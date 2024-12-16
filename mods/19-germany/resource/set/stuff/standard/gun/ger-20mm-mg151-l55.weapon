@@ -25,7 +25,7 @@
   {DisableRicochet 0} ; 是否禁用跳弹模式
   ; 不启用曲射模式
   {RechargeTime 10} ; 装填时间（秒）
-  {RecoveryTime 0.08} ; 短射间隔（秒）, 适用于弹链
+  {RecoveryTime 0.09} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
   {Burst
     {Short 10 2} ; 远距离短连发，基数 +- 随机数
@@ -40,7 +40,7 @@
     {MaxRange 2000} ; 玩家最长射击距离 m
     {Speed 805} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
-    {ProjectileDamageTable {100 42} {500 15} {1000 0}} ; 穿深表
+    {ProjectileDamageTable {10 27} {100 24} {500 14} {1000 7} {2000 2}} ; 穿深表
     {MinimumDamageModifier 40} ; 弹种对装甲的击穿伤害
     {HealthDamage 400} ; 弹种对人员的击穿伤害
     {Spreading
