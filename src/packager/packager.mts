@@ -15,7 +15,6 @@ export const pack = async () => {
     '19-germany',
     '29-ussr',
     '39-usa',
-    '40-inf-spg',
     '49-inf',
   ];
 
