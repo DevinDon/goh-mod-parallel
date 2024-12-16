@@ -11,5 +11,3 @@ export const replaceTabToSpace = async (dir: string) => {
     await writeFile(path, newContent);
   }
 };
-
-await replaceTabToSpace('mods/02-map/resource/map');
