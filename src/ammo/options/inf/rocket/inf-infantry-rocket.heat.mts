@@ -6,9 +6,14 @@ const options: AmmoOptions = {
   tags: [ 'heat' ],
   entity: 'panzershreck_ammo',
   mass: 3.3,
-  fill: 0.5,
+  fill: 0.3,
   caliber: 100,
   speed: 150,
+  inventory: {
+    limit: 10,
+    size: { width: 2, height: 1 },
+    block: 1,
+  },
   view: {
     name: 'panzershreck_ammo',
     tail: 'bazooka_tail_rpzb',

@@ -1,11 +1,29 @@
 {from "pattern standard-heat-rocket"
-
-  {Entity "panzershreck_ammo"}
-
-  {Mass 3.3}
-
+  {tag "heat"} ; 标签
+  {entity "panzershreck_ammo"} ; 模型
+  {mass 2.6} ; 质量
   {view "panzershreck_ammo"
     {tail "bazooka_tail_rpzb" "tail"}
   }
-
+  {inventory
+    {weight 100}
+    {size 2 1}
+    {block 1}
+  }
+  {damage blastwave
+    {energy 2.79} ; 接触伤害
+    {area 1.05 2.10} ; 有效杀伤半径，极限杀伤半径
+    {ground_interaction_radius 2.10} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 1.58} ; 破片伤害
+    {area 0.70 3.51} ; 有效杀伤半径，极限杀伤半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  {damage add blastwave
+    {energy 0.56} ; 冲击波伤害
+    {area 0.74 3.72} ; 有效杀伤半径，极限杀伤半径
+    {ground_interaction_radius 0} ; 弹坑效果半径
+  }
+  ; 无附加内容
 }

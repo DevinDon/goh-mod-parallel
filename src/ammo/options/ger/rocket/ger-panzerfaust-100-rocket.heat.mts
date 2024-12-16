@@ -1,12 +1,12 @@
 import { type AmmoOptions } from '../../../options.mjs';
 
 const options: AmmoOptions = {
-  destination: 'mods/49-inf/resource/set/stuff/standard/ammo/rocket/inf-infantry-rocket.he.ammo',
-  type: 'he-rocket',
-  tags: [ 'no_ricochet', 'he', 'fg' ],
-  entity: 'panzershreck_ammo',
-  mass: 3.3,
-  fill: 0.8,
+  destination: 'mods/19-germany/resource/set/stuff/standard/ammo/rocket/ger-panzerfaust-100-rocket.heat.ammo',
+  type: 'heat-rocket',
+  tags: [ 'heat' ],
+  entity: 'panzerfaust_100_ammo',
+  mass: 2.6,
+  fill: 0.3,
   caliber: 100,
   speed: 150,
   inventory: {
@@ -15,7 +15,7 @@ const options: AmmoOptions = {
     block: 1,
   },
   view: {
-    name: 'panzershreck_ammo',
+    name: 'panzerfaust_100_ammo',
     tail: 'bazooka_tail_rpzb',
   },
 };
