@@ -67,7 +67,7 @@
     {StopTime                           (/ (+ 1.25 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
     {BrakeTime                          (/ (+ 0.45 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
     {Gears                                                                 0.2 1.0} ; Gearing affects acceleration curve.
-    {RearGears                                                (* %performance 0.5)} ; Reverse max speed.
+    {RearGears                                                (* %performance 0.3)} ; Reverse max speed.
     {GearSwitchDelay                                          (/ 0.3 %performance)} ; Time to switch between forward and reverse.
     {SplineRadius                                                             0.45} ; limit turning radius on the splines (path planner parameter), meters
     {MaxSlope                                                                   75} ; Maximum slope to drive up hill
@@ -93,7 +93,7 @@
     {StopTime                           (/ (+ 1.15 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
     {BrakeTime                          (/ (+ 0.41 (* %mass 0.0003)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
     {Gears                                                             0.5 0.8 1.0} ; Gearing affects acceleration curve.
-    {RearGears                                                (* %performance 0.3)} ; Reverse max speed.
+    {RearGears                                               (* %performance 0.25)} ; Reverse max speed.
     {GearSwitchDelay                                          (/ 0.5 %performance)} ; Time to switch between forward and reverse.
     {SplineRadius                                                             0.75} ; limit turning radius on the splines (path planner parameter), meters
     {MaxSlope                                                                   75} ; Maximum slope to drive up hill
@@ -120,7 +120,7 @@
     {StopTime                       (/ (+ 2.05 (* (/ %mass 1000) 0.04)) %performance)} ; Time to come to a complete stop from max speed with out applying brakes. "Coasting".
     {BrakeTime                      (/ (+ 0.75 (* (/ %mass 1000) 0.04)) %performance)} ; Time to come to a complete stop from max speed with brakes applied.
     {Gears                                                                0.5 0.8 1.0} ; Gearing affects acceleration curve.
-    {RearGears                                                   (* %performance 0.3)} ; Reverse max speed.
+    {RearGears                                                  (* %performance 0.15)} ; Reverse max speed.
     {GearSwitchDelay                                             (/ 0.3 %performance)} ; Time to switch between forward and reverse.
     {MaxSlope                                                                      75} ; Maximum slope to drive up hill
     {FallSlope                                                                     75} ; Maximum slope before physics kick in

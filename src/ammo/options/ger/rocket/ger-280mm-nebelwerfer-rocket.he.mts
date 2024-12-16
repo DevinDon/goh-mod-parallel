@@ -9,6 +9,9 @@ const options: AmmoOptions = {
   fill: 50,
   caliber: 280,
   speed: 230,
+  inventory: {
+    limit: 10,
+  },
   view: {
     name: '280mm_nebelwerfer',
     tail: 'rocket_smoke_nebel',
