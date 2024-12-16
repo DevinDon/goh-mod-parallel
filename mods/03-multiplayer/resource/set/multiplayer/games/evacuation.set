@@ -12,22 +12,22 @@
     {options      gameDuration waveTime enableSpectators preparationTime enableHardcore}
     {optionsAdvanced  friendlyFire randomSpawnPoints fogOfWar showPiercing showDamageReports}
     {optionsRanked    }
-    {fogOfWar      fog_realistic}
-    {difficulty      multiplayer}
-    {gameDuration    "60 min"}  ; min
-    {impregnableTimeout  5}      ; sec
-    {floraRespawn    0}
+    {fogOfWar           fog_realistic}
+    {difficulty           multiplayer}
+    {gameDuration            "60 min"} ; min
+    {impregnableTimeout             5} ; sec
+    {floraRespawn                   0}
 
-    {preparationTime  0}      ; default time in seconds game is in "paused state" before game starts
-    {preparationTimeMin  0}
+    {preparationTime      0}      ; default time in seconds game is in "paused state" before game starts
+    {preparationTimeMin   0}
     {preparationTimeMax  60}
 
-    {firstWaveTime    180}    ; default time in seconds before 1st attack wave starts
-    {firstWaveTimeMin  0}
-    {firstWaveTimeMax  900}
+    {firstWaveTime      0}    ; default time in seconds before 1st attack wave starts
+    {firstWaveTimeMin   0}
+    {firstWaveTimeMax 900}
 
-    {waveTime      300}    ; default time in seconds between each attack wave after 1st wave
-    {waveTimeMin    120}
+    {waveTime       180}    ; default time in seconds between each attack wave after 1st wave
+    {waveTimeMin     60}
     {waveTimeMax    600}
 
     {friendlyFire}

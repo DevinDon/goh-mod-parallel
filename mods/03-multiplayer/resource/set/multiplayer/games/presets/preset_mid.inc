@@ -43,7 +43,7 @@
     {unitMode "mid"}
     {specMode "all_normal"}
     {apply "only_roster_mid"}
-    ("standard_all" start(200) finish(20000) doctrine(1000) cp(0:200,10000:200,20000:200))
+    ("standard_all" start(200) finish(20000) doctrine(1000) cp(0:100,10000:100,20000:100))
     {ranked}
   }
 ;------------------------------------------------------------------------------------------------------------
