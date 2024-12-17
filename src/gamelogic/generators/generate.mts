@@ -23,8 +23,10 @@ const options: GameLogicOptions = {
     limit5: 5,
     limit10: 10,
     // inf 阵营新增
+    // 步兵排
+    infinfantrylimit20: 20,
     // 摩托化步兵排
-    infinfantrylimit10: 10,
+    infinfantrymotorizedlimit10: 10,
     // 305 系列
     infsdkfz3051limit5: 5,
     infsdkfz3052limit5: 5,

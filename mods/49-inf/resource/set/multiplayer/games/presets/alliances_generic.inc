@@ -13,5 +13,5 @@
 {"Ascension"
   {title "mp/alliance/ascension"}
   {armies "inf"}
-  {icon "/interface/pages/multi/ascension/flag"}
+  {icon "/interface/pages/multi/flag_ascension"}
 }

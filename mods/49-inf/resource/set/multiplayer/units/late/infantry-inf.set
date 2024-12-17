@@ -56,7 +56,7 @@
       {interval %ci}
     }
     {content "%crews"}
-    {tags "all infantry inf infinfantrylimit10 %tags %period"}
+    {tags "all infantry inf %tags %period"}
     {group "%group"}
     {button "%button"}
     {level 1}
@@ -74,7 +74,7 @@
   crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:7 mp/inf/late/medic-1:1 mp/inf/late/machine-gunner-1:2 mp/inf/late/antiarmor-gunner-1:1)
   group(assault-platoon)
   button(inf1)
-  tags()
+  tags(infinfantrylimit20)
 )
 ; 支援排 12 人
 ("set-platoon"
@@ -85,7 +85,7 @@
   crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:3 mp/inf/late/antiarmor-gunner-2:3)
   group(supply-platoon)
   button(inf1)
-  tags()
+  tags(infinfantrylimit20)
 )
 ; 防御排 12 人
 ("set-platoon"
@@ -96,7 +96,7 @@
   crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:2 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
   group(defence-platoon)
   button(inf1)
-  tags()
+  tags(infinfantrylimit20)
 )
 
 ; 无尽重装军团
@@ -109,7 +109,7 @@
       {interval %ci}
     }
     {content "sdkfz-305-1 ( %crews )"}
-    {tags "all infantry inf infinfantrylimit10 %tags %period"}
+    {tags "all infantry inf %tags %period"}
     {cost 30} ; sdkfz-305-1 卡车
     {group "%group"}
     {button "%button"}
@@ -129,7 +129,7 @@
   crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:7 mp/inf/late/medic-1:1 mp/inf/late/machine-gunner-1:2 mp/inf/late/antiarmor-gunner-1:1)
   group(assault-platoon)
   button(inf1)
-  tags()
+  tags(infinfantrymotorizedlimit10)
   doctrine(ascension_inf_heavy_armored)
 )
 ; 摩托化支援排 12 人
@@ -141,7 +141,7 @@
   crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:3 mp/inf/late/antiarmor-gunner-2:3)
   group(supply-platoon)
   button(inf1)
-  tags()
+  tags(infinfantrymotorizedlimit10)
   doctrine(ascension_inf_heavy_armored)
 )
 ; 摩托化防御排 12 人
@@ -153,6 +153,6 @@
   crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:2 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
   group(defence-platoon)
   button(inf1)
-  tags()
+  tags(infinfantrymotorizedlimit10)
   doctrine(ascension_inf_heavy_armored)
 )

@@ -11,9 +11,9 @@ Purchases["late.inf"] = {
       {priority = 1.0, type = {"Class3", "Infantry", "Team",}, unit = "antiarmor-squad(inf)"},
       {priority = 2.0, type = {"Class3", "Infantry", "Team",}, unit = "officer-squad(inf)"},
       -- 排
-      {priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "assault-platoon(inf)"},
-      {priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "supply-platoon(inf)"},
-      {priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "defence-platoon(inf)"},
+      {priority = 0.5, type = {"Class1", "Infantry", "Squad",}, unit = "assault-platoon(inf)"},
+      {priority = 0.5, type = {"Class1", "Infantry", "Squad",}, unit = "supply-platoon(inf)"},
+      {priority = 0.5, type = {"Class1", "Infantry", "Squad",}, unit = "defence-platoon(inf)"},
       {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "motorized-assault-platoon(inf)"},
       {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "motorized-supply-platoon(inf)"},
       {priority = 2.0, type = {"Class1", "Infantry", "Squad",}, unit = "motorized-defence-platoon(inf)"},
