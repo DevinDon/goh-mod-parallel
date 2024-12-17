@@ -107,24 +107,24 @@
 
 {"panzer-5-d"
   ("set-standard-doctrine-vehicle" vehicle(panzer-5-d) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
-  ("set-standard-doctrine-level-2" doctrine(ascension_inf_tank) cost(100))
+  ("set-standard-doctrine-level-2" doctrine(ascension_inf_heavy_armored) cost(100))
   {tags "infpanzer5dlimit1"}
 }
 
 {"panzer-5-f"
   ("set-standard-doctrine-vehicle" vehicle(panzer-5-f) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
-  ("set-standard-doctrine-level-2" doctrine(ascension_inf_tank) cost(100))
+  ("set-standard-doctrine-level-2" doctrine(ascension_inf_heavy_armored) cost(100))
   {tags "infpanzer5flimit1"}
 }
 
 {"panzer-6-e-ace"
   ("set-standard-doctrine-vehicle" vehicle(panzer-6-e-ace) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
-  ("set-standard-doctrine-level-2" doctrine(ascension_inf_tank) cost(100))
+  ("set-standard-doctrine-level-2" doctrine(ascension_inf_heavy_armored) cost(100))
   {tags "infpanzer6eacelimit1"}
 }
 
 {"panzer-6-b-h-ace"
   ("set-standard-doctrine-vehicle" vehicle(panzer-6-b-h-ace) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
-  ("set-standard-doctrine-level-3" doctrine(ascension_inf_tank) cost(200))
+  ("set-standard-doctrine-level-3" doctrine(ascension_inf_heavy_armored) cost(200))
   {tags "infpanzer6bacelimit1"}
 }

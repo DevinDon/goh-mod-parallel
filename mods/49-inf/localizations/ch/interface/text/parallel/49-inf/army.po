@@ -22,10 +22,10 @@ msgid   "IInfinity"
 msgstr  "无尽"
 
 # 增援类型
-msgctxt "mp/lobby/doctrine/ascension_inf_tank"
+msgctxt "mp/lobby/doctrine/ascension_inf_heavy_armored"
 msgid   "IInfinity Heavy Armored <c(33c0ee)>[IInfinity Heavy Armored]</c>"
 msgstr  "无尽重装军团 <c(33c0ee)>[无尽重装军团]</c>"
 
-msgctxt "mp/lobby/doctrine/ascension_inf_tank#hint"
+msgctxt "mp/lobby/doctrine/ascension_inf_heavy_armored#hint"
 msgid   "IInfinity Heavy Armored <c(33c0ee)>[IInfinity Heavy Armored]</c>"
 msgstr  "无尽重装军团 <c(33c0ee)>[无尽重装军团]</c>"
