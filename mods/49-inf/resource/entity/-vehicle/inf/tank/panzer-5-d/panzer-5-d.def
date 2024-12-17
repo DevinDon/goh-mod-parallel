@@ -44,7 +44,7 @@
 
   {Extender "smokescreen"
     {cooldown 5}
-    {item_tags "grenade nbks"}
+    {itemTags "grenade nbks"}
   }
 
   {Extender "inventory"

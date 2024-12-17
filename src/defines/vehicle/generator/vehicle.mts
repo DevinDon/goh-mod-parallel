@@ -140,7 +140,7 @@ export const generateVehicle = (options: VehicleOptions) => {
     ? i0lines(
       '{Extender "smokescreen"',
       `  {cooldown ${smokescreen.cooldown}}`,
-      `  {item_tags "${smokescreen.itemTags}"}`,
+      `  {itemTags "${smokescreen.itemTags}"}`,
       '}',
     )
     : '; 无额外 Smokescreen';
