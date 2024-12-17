@@ -1,7 +1,6 @@
 import { i0lines } from '../../../../utils/formatter.mjs';
-import { type PresetLevel } from '../shared.mjs';
 
-export const TankDurabilityPresets: Record<PresetLevel, SetTankDurabilityOptions> = {
+export const TankDurabilityPresets = {
   Level01: {
     $options: 'tank',
     body: 200,

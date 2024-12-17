@@ -1,5 +1,8 @@
+import { generateCrewAndPassenger } from '../../../crew-and-passenger/generators/generator.mjs';
+import { type CrewAndPassengerOptions } from '../../../crew-and-passenger/options.mjs';
 import { i0lines, i2lines } from '../../../utils/formatter.mjs';
 import { type VehicleType } from '../template/generator.mjs';
+import { generateArmor, type ArmorOptions } from './armor.mjs';
 import { generateInventory, type InventoryOptions } from './inventory.mjs';
 import { generateMobility, type MobilityOptions } from './mobility.mjs';
 import { generateWeaponry, type WeaponryOptions } from './weaponry.mjs';
@@ -42,8 +45,10 @@ export type VehicleOptions = {
   };
   /** 模型文件，后缀名 .mdl */
   extension: string;
-  // /** 装甲配置 */
-  // armor: ArmorOptions;
+  /** 装甲配置 */
+  armor: ArmorOptions;
+  /** 成员配置 */
+  crewsAndPassengers: CrewAndPassengerOptions;
   /** 载具 ID，如 panzer4 */
   patherid: string;
   /** 载具类型，如 */
@@ -79,6 +84,8 @@ export const generateVehicle = (options: VehicleOptions) => {
     type,
     selection,
     extension,
+    armor,
+    crewsAndPassengers,
     patherid,
     collider,
     targetClasses,
@@ -103,6 +110,10 @@ export const generateVehicle = (options: VehicleOptions) => {
         : selection.type === 'cannon'
           ? `(include "/properties/selection/cannon.inc" scale(${selection.scale}))`
           : `(include "/properties/selection/vehicle.inc" scale(${selection.scale}))`;
+
+  const armorLines = generateArmor(armor);
+
+  const crewsAndPassengersLines = generateCrewAndPassenger(crewsAndPassengers);
 
   const detailLines = details === 'random'
     ? i0lines(
@@ -153,6 +164,10 @@ export const generateVehicle = (options: VehicleOptions) => {
     `  ${selectionLines}`,
     '',
     `  {Extension "${extension}"}`,
+    '',
+    `  ${i2lines(armorLines)}`,
+    '',
+    `  ${i2lines(crewsAndPassengersLines)}`,
     '',
     `  {PatherID "${patherid}"}`,
     `  {Collider "${collider}"}`,

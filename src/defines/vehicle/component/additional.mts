@@ -1,5 +1,14 @@
 import { i0lines } from '../../../utils/formatter.mjs';
 
+export type AdditionalOptions = {
+  woods?: string[];
+  woodShields?: number[];
+  holes?: number[];
+  glasss?: string[];
+  lamps?: string[];
+  sandbags?: number[];
+};
+
 export const setWood = (name: string) => (
   i0lines(
     `{volume "${name}"`,

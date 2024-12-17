@@ -1,5 +1,8 @@
 import { logger } from '@pipers/logger';
 import { saveGenerated, type GeneratedOptions } from '../../../utils/save-generated.mjs';
+import { TankDurabilityPresets } from '../component/durability/tank.mjs';
+import { PartPresets } from '../component/part/presets.mjs';
+import { default as crewsAndPassengersOptions } from '../../../crew-and-passenger/options/panzer5d.mjs';
 import { generateVehicle, type VehicleOptions } from './vehicle.mjs';
 import { AccuracyByMotionPresets } from './weaponry.mjs';
 
@@ -22,6 +25,55 @@ export const generateAllVehicles = async () => {
         scale: 1.2,
       },
       extension: '/entity/-vehicle/germany/tank_medium/panzer5d/panzer5d.mdl',
+      armor: {
+        durability: TankDurabilityPresets.Level07,
+        parts: PartPresets.Level07,
+        shields: [
+          { $options: 'shield', name: 'detail6', thickness: 30, tear: true },
+          { $options: 'shield', name: 'detail7', thickness: 30, tear: true },
+          { $options: 'shield', name: 'detail8', thickness: 30, tear: true },
+          { $options: 'shield', name: 'fenderl', thickness: 9, tear: true },
+          { $options: 'shield', name: 'fenderl2', thickness: 9, tear: true },
+          { $options: 'shield', name: 'fenderl3', thickness: 9, tear: true },
+          { $options: 'shield', name: 'fenderl4', thickness: 9, tear: true },
+          { $options: 'shield', name: 'fenderl5', thickness: 9, tear: true },
+          { $options: 'shield', name: 'fenderl6', thickness: 9, tear: true },
+          { $options: 'shield', name: 'fenderl7', thickness: 9, tear: true },
+          { $options: 'shield', name: 'fenderl8', thickness: 9, tear: true },
+          { $options: 'shield', name: 'fenderr', thickness: 9, tear: true },
+          { $options: 'shield', name: 'fenderr2', thickness: 9, tear: true },
+          { $options: 'shield', name: 'shieldr3', thickness: 9, tear: true },
+          { $options: 'shield', name: 'shieldr4', thickness: 9, tear: true },
+          { $options: 'shield', name: 'shieldr5', thickness: 9, tear: true },
+          { $options: 'shield', name: 'shieldr6', thickness: 9, tear: true },
+          { $options: 'shield', name: 'shieldr7', thickness: 9, tear: true },
+          { $options: 'shield', name: 'shieldr8', thickness: 9, tear: true },
+        ],
+        internals: [
+          { type: 'ammo', name: 'ammo1', repair: 3 },
+          { type: 'ammo', name: 'ammo2', repair: 3 },
+          { type: 'ammo', name: 'ammo3', repair: 3 },
+          { type: 'ammo', name: 'ammo4', repair: 3 },
+          { type: 'fuel', name: 'fuel1', repair: 3 },
+          { type: 'fuel', name: 'fuel2', repair: 3 },
+          { type: 'fuel', name: 'fuel3', repair: 3 },
+          { type: 'fuel', name: 'fuel4', repair: 3 },
+          { type: 'transmission', name: 'transmission', repair: 20 },
+        ],
+        volumes: [
+          { name: 'body1', thickness: { base: 40, front: 80, top: 80, rear: 16, bottom: 30 }, hardness: 1.25 },
+          { name: 'body2', thickness: { base: 40, front: 100, top: 16, rear: 16, bottom: 16 }, hardness: 1.25, able: { holed: true } },
+          { name: 'engine1', thickness: { base: 40, front: 16, top: 16, bottom: 16 }, hardness: 1.25 },
+          { name: 'engine2', thickness: { base: 40, front: 16, top: 16, bottom: 16 }, hardness: 1.25 },
+          { name: 'turret', thickness: { base: 45, front: 100, top: 17 }, hardness: 1.25 },
+          { name: 'turret2', thickness: { base: 45, front: 100, top: 17, bottom: 100 }, hardness: 1.25 },
+          { name: 'mantlet', thickness: { base: 100 }, component: 'turret', tags: [ 'turret' ], hardness: 1.25 },
+          { name: 'mantlet2', thickness: { base: 100 }, component: 'gun', tags: [ 'gun' ], hardness: 1.25 },
+          { name: 'cupola', thickness: { base: 80, top: 16 }, hardness: 1.25 },
+          { name: 'cupola2', thickness: { base: 80, top: 16, bottom: 100 }, hardness: 1.25 },
+        ],
+      },
+      crewsAndPassengers: crewsAndPassengersOptions,
       patherid: 'panzer5',
       collider: 'tank.heavy',
       targetClasses: [ 'tank_heavy' ],

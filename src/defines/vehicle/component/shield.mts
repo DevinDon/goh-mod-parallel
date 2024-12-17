@@ -1,127 +1,35 @@
 import { i0lines } from '../../../utils/formatter.mjs';
 
-export type SetBulletproofShieldOptions = {
-  name: string;
-  thickness: number;
-  repair: number;
-};
-
-/** 设置防弹挡板 */
-export const setBulletproofShield = (options: SetBulletproofShieldOptions) => {
-
-  const { name, thickness, repair } = options;
-
-  return i0lines(
-    `{volume "${name}"`,
-    `  {thickness ${thickness}}`,
-    '  {tags "shield"}',
-    `  {component "${name}"}`,
-    '}',
-    `{component "${name}"`,
-    `  {RepairTime ${repair}}`,
-    '  {tags "shield"}',
-    '  {RepairOrder 11}',
-    '}',
-  );
-
-};
-
 export type SetShieldOptions = {
+  $options: 'shield';
+  /** 挡板名称，对应模型 */
   name: string;
+  /** 挡板组件名称 */
+  component?: string;
+  /** 挡板厚度 */
   thickness: number;
+  /** 是否可以被击毁 */
+  tear?: boolean;
 };
 
-/** 设置挡板 */
+/** 设置挡板，可设置是否可以被击毁 */
 export const setShield = (options: SetShieldOptions) => {
 
-  const { name, thickness } = options;
+  const { name, component = name, thickness, tear = false } = options;
+
+  const tearLine = tear === true
+    ? '{tags "cut_part" "shield"}'
+    : '{tags "shield"}';
 
   return i0lines(
     `{volume "${name}"`,
     `  {thickness ${thickness}}`,
-    '  {tags "shield"}',
-    `  {component "${name}"}`,
+    `  ${tearLine}`,
+    `  {component "${component}"}`,
     '}',
-    `{component "${name}"`,
+    `{component "${component}"`,
     '  {RepairTime 5}',
-    '  {tags "shield"}',
-    '  {RepairOrder 12}',
-    '}',
-  );
-
-};
-
-export type SetTrackShieldOptions = {
-  name: string;
-  thickness: number;
-};
-
-/** 设置履带挡板 */
-export const setTrackShield = (options: SetTrackShieldOptions) => {
-
-  const { name, thickness } = options;
-
-  return i0lines(
-    `{volume "${name}"`,
-    `  {thickness ${thickness}}`,
-    '  {tags "shield"}',
-    `  {component "${name}"}`,
-    '  {CastSteel 1}',
-    '}',
-    `{component "${name}"`,
-    '  {RepairTime 5}',
-    '  {tags "shield"}',
-    '  {RepairOrder 12}',
-    '}',
-  );
-
-};
-
-export type SetTearShieldOptions = {
-  name: string;
-  thickness: number;
-};
-
-/** 设置可击毁挡板 */
-export const setTearShield = (options: SetTearShieldOptions) => {
-
-  const { name, thickness } = options;
-
-  return i0lines(
-    `{volume "${name}"`,
-    `  {thickness ${thickness}}`,
-    '  {tags "cut_part" "shield"}',
-    `  {component "${name}"}`,
-    '}',
-    `{component "${name}"`,
-    '  {RepairTime 1}',
-    '  {tags "cut_part" "shield"}',
-    '  {RepairOrder 12}',
-    '}',
-  );
-
-};
-
-export type SetGroupShieldOptions = {
-  name: string;
-  thickness: number;
-  type: string;
-};
-
-/** 设置挡板组 */
-export const setGroupShield = (options: SetGroupShieldOptions) => {
-
-  const { name, thickness, type } = options;
-
-  return i0lines(
-    `{volume "${name}"`,
-    `  {thickness ${thickness}}`,
-    '  {tags "shield"}',
-    `  {component "${type}"}`,
-    '}',
-    `{component "${type}"`,
-    '  {RepairTime 5}',
-    '  {tags "shield"}',
+    `  ${tearLine}`,
     '  {RepairOrder 12}',
     '}',
   );
@@ -129,7 +37,10 @@ export const setGroupShield = (options: SetGroupShieldOptions) => {
 };
 
 export type SetGunShieldOptions = {
+  $options: 'gun-shield';
+  /** 挡板名称，对应模型 */
   name: string;
+  /** 挡板厚度 */
   thickness: number;
 };
 
@@ -145,6 +56,10 @@ export const setGunShield = (options: SetGunShieldOptions) => {
     '}',
   );
 
+};
+
+export type SetCoverShieldOptions = {
+  $options: 'cover-shield';
 };
 
 /** 设置挡板覆盖 */

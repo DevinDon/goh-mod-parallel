@@ -29,20 +29,20 @@ export const generateCrewAndPassenger = ({ visors, animations, crews, passengers
     : '; 无附加内容';
 
   return i0lines(
-    '; crew and passenger',
-    '; set visors',
+    '; 乘员及乘客',
+    '; 视角',
     '{Sensor',
     `  ${i2lines(visorsLines)}`,
     '}',
-    '; set animations',
+    '; 动画',
     '{Boarder',
     `  ${i2lines(animationsLines)}`,
     '}',
-    '; set crews',
+    '; 乘员',
     crewsLines,
-    '; set passengers',
+    '; 乘客',
     passengersLines,
-    '; set extra',
+    '; 附加内容',
     extraLines,
     '',
   );

@@ -1,8 +1,11 @@
 import { i0lines } from '../../../utils/formatter.mjs';
 
 export type SetInternalComponentOptions = {
+  /** 组件名称 */
   name: string;
-  type: string;
+  /** 组件类型 */
+  type: 'ammo' | 'fuel' | 'transmission';
+  /** 维修时间 */
   repair: number;
 };
 
