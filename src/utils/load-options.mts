@@ -6,11 +6,12 @@ import { listPathsDeep } from '@pipers/toolbox/node/filesystem';
 import { type AmmoOptions } from '../ammo/options.mjs';
 import { type CrewAndPassengerOptions } from '../crew-and-passenger/options.mjs';
 import { type HumanOptions } from '../human/options.mjs';
+import { type VehicleOptions } from '../vehicle/generator/vehicle.mjs';
 import { type WeaponOptions } from '../weapon/options.mjs';
 import { DistDir } from './constants.mjs';
 
 /** 允许的配置文件类型 */
-type AllowedOptions = WeaponOptions | CrewAndPassengerOptions | HumanOptions | AmmoOptions;
+type AllowedOptions = WeaponOptions | CrewAndPassengerOptions | HumanOptions | AmmoOptions | VehicleOptions;
 
 /** 加载指定目录下的所有配置文件，该目录路径相对于 `main.mjs` 所在的 `dist` 目录 */
 export const loadOptions = async <T extends AllowedOptions>(dir: string): Promise<T[]> => {
