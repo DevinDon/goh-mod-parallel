@@ -1,17 +1,1613 @@
 {game_entity
 
-  (include "/properties/standard/vehicle/tank-config.ext")
+  ; 载具编号 panzer-5-d
+  ; 载具名称 五号坦克 D 型
+  ; 载具类别 tank
+  ; 载具阵营 ascension
+  ; 载具国家 inf
+
+  (include "/properties/standard/vehicle/template/medium-tank.ext")
   (include "/properties/selection/vehicle.inc" scale(1.2))
 
   {Extension "/entity/-vehicle/germany/tank_medium/panzer5d/panzer5d.mdl"}
-  (include   "/entity/-vehicle/germany/tank_medium/panzer5d/panzer5d.ext")
-  (include   "/entity/-vehicle/germany/tank_medium/panzer5d/crew-and-passenger.ext")
 
-  {Props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nwg" "detect_tank_heavy"}
+  ; 耐久
+  {perks
+    {component "body"
+      {health
+        {hp 700}
+        {hp_broken 7000}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "bodyback"
+      {health
+        {hp 700}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "cabin"
+      {health
+        {hp 700}
+        {hp_broken 560}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "engine"
+      {health
+        {hp 225}
+        {hp_broken 225}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "mantlet"
+      {health
+        {hp 225}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "turret"
+      {health
+        {hp 450}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "aux_turret1"
+      {health
+        {hp 450}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "aux_turret2"
+      {health
+        {hp 450}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "gun"
+      {health
+        {hp 300}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "trackleft"
+      {health
+        {hp 300}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "trackright"
+      {health
+        {hp 300}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component "shield_cover"
+      {health
+        {hp 150}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component tag "wheel"
+      {health
+        {hp 75}
+      }
+      {armor_damage_modifier 5}
+    }
+    {component tag "glass"
+      {health
+        {hp 75}
+        {hp_broken 75}
+      }
+    }
+    {component tag "lamp"
+      {health
+        {hp 75}
+        {hp_broken 75}
+      }
+    }
+    {component tag "shield"
+      {health
+        {hp 150}
+        {hp_broken 150}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component tag "cut_part"
+      {health
+        {hp 150}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component tag "fuel"
+      {health
+        {hp 150}
+        {hp_broken 150}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component tag "ammo"
+      {health
+        {hp 150}
+        {hp_broken 150}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component tag "rocket"
+      {health
+        {hp 100}
+        {hp_broken 100}
+      }
+      {armor_damage_modifier 0.1}
+    }
+    {component tag "transmission"
+      {health
+        {hp 225}
+      }
+      {armor_damage_modifier 0.1}
+    }
+  }
+  ; 各部分组件设置，维修时间以及装甲厚度等
+  {volume "turret"
+    {component "turret"}
+    {tags "turret"}
+  }
+  {volume "turret1"
+    {component "turret"}
+    {tags "turret"}
+  }
+  {volume "turret2"
+    {component "turret"}
+    {tags "turret"}
+  }
+  {volume "turret3"
+    {component "turret"}
+    {tags "turret"}
+  }
+  {volume "turret4"
+    {component "turret"}
+    {tags "turret"}
+  }
+  {volume "turret5"
+    {component "turret"}
+    {tags "turret"}
+  }
+  {component "turret"
+    {RepairTime 35}
+    {RepairOrder 2}
+  }
+  {volume "mantlet"
+    {component "mantlet"}
+    {tags "mantlet"}
+  }
+  {volume "mantlet1"
+    {component "mantlet"}
+    {tags "mantlet"}
+  }
+  {volume "mantlet2"
+    {component "mantlet"}
+    {tags "mantlet"}
+  }
+  {volume "mantlet3"
+    {component "mantlet"}
+    {tags "mantlet"}
+  }
+  {volume "mantlet4"
+    {component "mantlet"}
+    {tags "mantlet"}
+  }
+  {volume "mantlet5"
+    {component "mantlet"}
+    {tags "mantlet"}
+  }
+  {component "mantlet"
+    {RepairTime 35}
+    {RepairOrder 3}
+  }
+  {volume "gun"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "gun1"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "gun2"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "gun3"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "gun4"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "gun5"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel1"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel2"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel3"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel4"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel5"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel6"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel7"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel8"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel9"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "barrel10"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 35}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "breach"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 2}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {volume "breech"
+    {component "gun"}
+    {tags "no_target" "gun"}
+    {thickness 2}
+    {able {Contact 0} {Visible 0} {Obstacle 0} {nolook 1}}
+  }
+  {component "gun"
+    {RepairTime 35}
+    {RepairOrder 1}
+  }
+  {volume "body"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body1"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body2"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body3"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body4"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body5"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body6"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body7"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body8"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body9"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body10"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body11"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body12"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body13"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body14"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body15"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body16"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body17"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body18"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body19"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "body20"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "standc"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "standl"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "standl1"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "standl2"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "standr"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "standr1"
+    {component "body"}
+    {tags "body"}
+  }
+  {volume "standr2"
+    {component "body"}
+    {tags "body"}
+  }
+  {component "body"
+    {RepairTime 35}
+    {RepairOrder 0}
+  }
+  {volume "engine"
+    {component "engine"}
+    {tags "engine"}
+  }
+  {volume "engine1"
+    {component "engine"}
+    {tags "engine"}
+  }
+  {volume "engine2"
+    {component "engine"}
+    {tags "engine"}
+  }
+  {volume "engine3"
+    {component "engine"}
+    {tags "engine"}
+  }
+  {volume "engine4"
+    {component "engine"}
+    {tags "engine"}
+  }
+  {volume "engine5"
+    {component "engine"}
+    {tags "engine"}
+  }
+  {component "engine"
+    {RepairTime 35}
+    {RepairOrder 3}
+  }
+  {volume "trackleft"
+    {thickness 35}
+    {tags "mover" "track"}
+    {able {NoWoundDecal} {holed} {contact_ground 0}}
+  }
+  {volume "trackright"
+    {thickness 35}
+    {tags "mover" "track"}
+    {able {NoWoundDecal} {holed} {contact_ground 0}}
+  }
+  {volume "trackleft1"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft2"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft3"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft4"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft5"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft6"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft7"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft8"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft9"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft10"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft11"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft12"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft13"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft14"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft15"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft16"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft17"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackleft18"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackleft"}
+  }
+  {volume "trackright1"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright2"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright3"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright4"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright5"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright6"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright7"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright8"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright9"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright10"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright11"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright12"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright13"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright14"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright15"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright16"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright17"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {volume "trackright18"
+    {tags "mover" "track"}
+    {thickness 35}
+    {component "trackright"}
+  }
+  {component "trackleft"
+    {RepairTime 35}
+    {tags "mover" "track"}
+    {RepairOrder 4}
+  }
+  {component "trackright"
+    {RepairTime 35}
+    {tags "mover" "track"}
+    {RepairOrder 4}
+  }
+  {armor
+    ; Common
+    {setting "body"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "body*"}
+    }
+    {setting "turret"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "turret*"}
+    }
+    {setting "aux_turret1"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "aux_turret1*"}
+    }
+    {setting "aux_turret2"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "aux_turret2*"}
+    }
+    {setting "aux_turret3"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "aux_turret3*"}
+    }
+    {setting "aux_turret4"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "aux_turret4*"}
+    }
+    {setting "gun"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "gun*"}
+    }
+    {setting "barrel"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "barrel*"}
+    }
+    {setting "mantlet"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "mantlet*"}
+    }
+    {setting "cupola"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "cupola*"}
+    }
+    {setting "hatch"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "hatch*"}
+    }
+    {setting "engine"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "engine*"}
+    }
+    {setting "track"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "track*"}
+    }
+    {setting "wheel"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "wheel*"}
+    }
+    {setting "transmission"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "transmission*"}
+    }
+    {setting "fuel"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "fuel*"}
+    }
+    {setting "breach"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "breach*"}
+    }
+    {setting "breech"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "breech*"}
+    }
+    {setting "shield"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "shield*"}
+    }
+    {setting "tshield"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "tshield*"}
+    }
+    {setting "armor"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "armor*"}
+    }
+    {setting "glass"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "glass*"}
+    }
+    {setting "window"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "window*"}
+    }
+    {setting "lamp"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "lamp*"}
+    }
+    {setting "sandbag"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "sandbag*"}
+    }
+    {setting "detail"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "detail*"}
+    }
+    {setting "grill"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "grill*"}
+    }
+    {setting "roller"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "roller*"}
+    }
+    {setting "swingarm"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "swingarm*"}
+    }
+    ; Car
+    {setting "cabin"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "cabin*"}
+    }
+    {setting "bodyback"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "bodyback*"}
+    }
+    {setting "door"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "door*"}
+    }
+    ; Cannon
+    {setting "stand"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "stand*"}
+    }
+    {setting "box"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "box*"}
+    }
+    {setting "magazine"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "magazine*"}
+    }
+    ; Airborne
+    {setting "stabilizer"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "stabilizer*"}
+    }
+    {setting "wingl"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "wingl*"}
+    }
+    {setting "wingr"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "wingr*"}
+    }
+    {setting "blade"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "blade*"}
+    }
+    {setting "spin"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "spin*"}
+    }
+    {setting "canopy"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "canopy*"}
+    }
+    {setting "elevator"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "elevator*"}
+    }
+    {setting "rudder"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "rudder*"}
+    }
+    {setting "aileron"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "aileron*"}
+    }
+    {setting "gear_"
+      {threshold
+        {blast {koef 0.5}}
+        {pierce {koef 0.8}}
+      }
+      {volumes "gear_*"}
+    }
+    ; Ammo
+    {setting "ammo"
+      {threshold
+        {blast  {koef (* 35 1.00)}}          ; koef = coefficient. Threshold = koef value x volume effective thickness
+        {pierce {koef 1}}
+      }
+      {volumes "ammo*"}
+    }
+    {setting "rocket"
+      {threshold
+        {blast  {koef (* 35 0.25)}} ; koef = coefficient. Threshold = koef value x volume effective thickness
+        {pierce {koef 1}}
+      }
+      {volumes "rocket*"}
+    }
+  }
+  ; 挡板
+  {volume "detail6"
+    {thickness 30}
+    {tags "cut_part" "shield"}
+    {component "detail6"}
+  }
+  {component "detail6"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "detail7"
+    {thickness 30}
+    {tags "cut_part" "shield"}
+    {component "detail7"}
+  }
+  {component "detail7"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "detail8"
+    {thickness 30}
+    {tags "cut_part" "shield"}
+    {component "detail8"}
+  }
+  {component "detail8"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "fenderl"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "fenderl"}
+  }
+  {component "fenderl"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "fenderl2"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "fenderl2"}
+  }
+  {component "fenderl2"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "fenderl3"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "fenderl3"}
+  }
+  {component "fenderl3"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "fenderl4"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "fenderl4"}
+  }
+  {component "fenderl4"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "fenderl5"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "fenderl5"}
+  }
+  {component "fenderl5"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "fenderl6"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "fenderl6"}
+  }
+  {component "fenderl6"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "fenderl7"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "fenderl7"}
+  }
+  {component "fenderl7"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "fenderl8"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "fenderl8"}
+  }
+  {component "fenderl8"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "fenderr"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "fenderr"}
+  }
+  {component "fenderr"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "fenderr2"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "fenderr2"}
+  }
+  {component "fenderr2"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "shieldr3"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "shieldr3"}
+  }
+  {component "shieldr3"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "shieldr4"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "shieldr4"}
+  }
+  {component "shieldr4"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "shieldr5"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "shieldr5"}
+  }
+  {component "shieldr5"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "shieldr6"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "shieldr6"}
+  }
+  {component "shieldr6"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "shieldr7"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "shieldr7"}
+  }
+  {component "shieldr7"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  {volume "shieldr8"
+    {thickness 9}
+    {tags "cut_part" "shield"}
+    {component "shieldr8"}
+  }
+  {component "shieldr8"
+    {RepairTime 5}
+    {tags "cut_part" "shield"}
+    {RepairOrder 12}
+  }
+  ; 内部组件
+  {volume "ammo1"
+    {tags "ammo" "no_target"}
+    {able {Contact 0} {NoWoundDecal}}
+    {thickness 2}
+    {component "ammo1"}
+  }
+  {component "ammo1"
+    {RepairTime 3}
+    {tags "ammo"}
+    {RepairOrder 5}
+  }
+  {volume "ammo2"
+    {tags "ammo" "no_target"}
+    {able {Contact 0} {NoWoundDecal}}
+    {thickness 2}
+    {component "ammo2"}
+  }
+  {component "ammo2"
+    {RepairTime 3}
+    {tags "ammo"}
+    {RepairOrder 5}
+  }
+  {volume "ammo3"
+    {tags "ammo" "no_target"}
+    {able {Contact 0} {NoWoundDecal}}
+    {thickness 2}
+    {component "ammo3"}
+  }
+  {component "ammo3"
+    {RepairTime 3}
+    {tags "ammo"}
+    {RepairOrder 5}
+  }
+  {volume "ammo4"
+    {tags "ammo" "no_target"}
+    {able {Contact 0} {NoWoundDecal}}
+    {thickness 2}
+    {component "ammo4"}
+  }
+  {component "ammo4"
+    {RepairTime 3}
+    {tags "ammo"}
+    {RepairOrder 5}
+  }
+  {volume "fuel1"
+    {tags "fuel" "no_target"}
+    {able {Contact 0} {NoWoundDecal}}
+    {thickness 2}
+    {component "fuel1"}
+  }
+  {component "fuel1"
+    {RepairTime 3}
+    {tags "fuel"}
+    {RepairOrder 5}
+  }
+  {volume "fuel2"
+    {tags "fuel" "no_target"}
+    {able {Contact 0} {NoWoundDecal}}
+    {thickness 2}
+    {component "fuel2"}
+  }
+  {component "fuel2"
+    {RepairTime 3}
+    {tags "fuel"}
+    {RepairOrder 5}
+  }
+  {volume "fuel3"
+    {tags "fuel" "no_target"}
+    {able {Contact 0} {NoWoundDecal}}
+    {thickness 2}
+    {component "fuel3"}
+  }
+  {component "fuel3"
+    {RepairTime 3}
+    {tags "fuel"}
+    {RepairOrder 5}
+  }
+  {volume "fuel4"
+    {tags "fuel" "no_target"}
+    {able {Contact 0} {NoWoundDecal}}
+    {thickness 2}
+    {component "fuel4"}
+  }
+  {component "fuel4"
+    {RepairTime 3}
+    {tags "fuel"}
+    {RepairOrder 5}
+  }
+  {volume "transmission"
+    {tags "transmission" "no_target"}
+    {able {Contact 0} {NoWoundDecal}}
+    {thickness 2}
+    {component "transmission"}
+  }
+  {component "transmission"
+    {RepairTime 20}
+    {tags "transmission"}
+    {RepairOrder 5}
+  }
+  ; 外部装饰
+  ; 外部装甲
+  {volume "body1"
+    {thickness 40
+      {front 80}
+      {top 80}
+      {rear 16}
+      {bottom 30}
+    }
+    {CastSteel 1.25}
+  }
+  {volume "body2"
+    {thickness 40
+      {front 100}
+      {top 16}
+      {rear 16}
+      {bottom 16}
+    }
+    {CastSteel 1.25}
+    {able {holed}}
+  }
+  {volume "engine1"
+    {thickness 40
+      {front 16}
+      {top 16}
+      {bottom 16}
+    }
+    {CastSteel 1.25}
+  }
+  {volume "engine2"
+    {thickness 40
+      {front 16}
+      {top 16}
+      {bottom 16}
+    }
+    {CastSteel 1.25}
+  }
+  {volume "turret"
+    {thickness 45
+      {front 100}
+      {top 17}
+    }
+    {CastSteel 1.25}
+  }
+  {volume "turret2"
+    {thickness 45
+      {front 100}
+      {top 17}
+      {bottom 100}
+    }
+    {CastSteel 1.25}
+  }
+  {volume "mantlet"
+    {thickness 100
+    }
+    {CastSteel 1.25}
+    {component "turret"}
+    {tags "turret"}
+  }
+  {volume "mantlet2"
+    {thickness 100
+    }
+    {CastSteel 1.25}
+    {component "gun"}
+    {tags "gun"}
+  }
+  {volume "cupola"
+    {thickness 80
+      {top 16}
+    }
+    {CastSteel 1.25}
+  }
+  {volume "cupola2"
+    {thickness 80
+      {top 16}
+      {bottom 100}
+    }
+    {CastSteel 1.25}
+  }
 
-  {PatherId "panzer5"}
-  {Targetclass "tank_heavy"}
+  ; 乘员及乘客
+  ; 视角
+  {Sensor
+    ; visor main
+    {Visor "main"
+      {Bone "foresight1"}
+      {Vision "standard-vision-none"}
+    }
+    ; visor around
+    {Visor "around"
+      {Bone "visor1"}
+      {Vision "standard-vision-none"}
+    }
+    ; visor driver
+    {Visor "driver"
+      {Bone "visor2"}
+      {Vision "standard-vision-none"}
+    }
+    ; visor standard-visor-driver
+    {Visor "standard-visor-driver"
+      {Bone "visor2"}
+      {Vision "standard-vehicle-vision-narrow"}
+    }
+    ; visor standard-visor-gunner
+    {Visor "standard-visor-gunner"
+      {Bone "foresight1"}
+      {Vision "standard-vehicle-vision-narrow"}
+    }
+    ; visor standard-visor-commander
+    {Visor "standard-visor-commander"
+      {Bone "visor1"}
+      {Vision "standard-vehicle-vision-around"}
+    }
+  }
+  ; 动画
+  {Boarder
+    ; animation driver
+    {Anm "driver"
+      {forward
+        {base "open_driver" 1}
+        {begin "board_pz4_driver" 1}
+        {end "pose_mgun_pz6" 1}
+      }
+      {reverse
+        {base "open_driver" -1}
+        ; no reverse animation begin
+        {end "board_pz4_driver" -1}
+      }
+    }
+    ; animation left
+    {Anm "left"
+      {forward
+        ; no forward animation base
+        {begin "board_cromwell" 1}
+        {end "pose_mgun_pz6" 1}
+      }
+      {reverse
+        ; no reverse animation base
+        ; no reverse animation begin
+        {end "board_cromwell" -1}
+      }
+    }
+    ; animation right
+    {Anm "right"
+      {forward
+        ; no forward animation base
+        {begin "board_cromwell" 1}
+        {end "pose_mgun_pz6" 1}
+      }
+      {reverse
+        ; no reverse animation base
+        ; no reverse animation begin
+        {end "board_cromwell" -1}
+      }
+    }
+    ; animation armor
+    {Anm "armor"
+      {forward
+        ; no forward animation base
+        {begin "board_HighArmor" 1}
+        {end "pose_seat_armor_1" 1}
+      }
+      {reverse
+        ; no reverse animation base
+        ; no reverse animation begin
+        {end "emit_tank_1" 1}
+      }
+    }
+  }
+  ; 乘员
+  ; crew commander
+  {Placer
+    {Place "commander"
+      {group "crew"}
+      ; no bone
+      {turnoff {shadow} {sensor}}
+      {visor "standard-visor-commander"}
+      ; 无附加内容
+    }
+  }
+  {Boarder
+    {door "emit1"}
+    {link "emit1" "commander" {anm "left"} {forward putoff} {reverse puton}}
+    {door "emit2"}
+    {link "emit2" "commander" {anm "right"} {forward putoff} {reverse puton}}
+  }
+  ; crew driver
+  {Placer
+    {Place "driver"
+      {group "crew"}
+      ; no bone
+      {turnoff {shadow} {sensor}}
+      {visor "standard-visor-driver"}
+      ; 无附加内容
+    }
+  }
+  {Boarder
+    {door "emit0"}
+    {link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+    {door "emit1"}
+    {link "emit1" "driver" {anm "left"} {forward putoff} {reverse puton}}
+    {door "emit2"}
+    {link "emit2" "driver" {anm "right"} {forward putoff} {reverse puton}}
+  }
+  ; crew gunner
+  {Placer
+    {Place "gunner"
+      {group "crew"}
+      ; no bone
+      {turnoff {shadow} {sensor}}
+      {visor "standard-visor-gunner"}
+      ; 无附加内容
+    }
+  }
+  {Boarder
+    {door "emit1"}
+    {link "emit1" "gunner" {anm "left"} {forward putoff} {reverse puton}}
+    {door "emit2"}
+    {link "emit2" "gunner" {anm "right"} {forward putoff} {reverse puton}}
+  }
+  ; crew gunner3
+  {Placer
+    {Place "gunner3"
+      {group "crew"}
+      ; no bone
+      {turnoff {shadow} {sensor}}
+      {visor "standard-visor-driver"}
+      ; 无附加内容
+    }
+  }
+  {Boarder
+    {door "emit1"}
+    {link "emit1" "gunner3" {anm "left"} {forward putoff} {reverse puton}}
+    {door "emit2"}
+    {link "emit2" "gunner3" {anm "right"} {forward putoff} {reverse puton}}
+  }
+  ; crew charger
+  {Placer
+    {Place "charger"
+      {group "crew"}
+      ; no bone
+      {turnoff {shadow} {sensor}}
+      {visor "standard-visor-none"}
+      ; 无附加内容
+    }
+  }
+  {Boarder
+    {door "emit1"}
+    {link "emit1" "charger" {anm "left"} {forward putoff} {reverse puton}}
+    {door "emit2"}
+    {link "emit2" "charger" {anm "right"} {forward putoff} {reverse puton}}
+  }
+  ; 乘客
+  ; passenger passenger01
+  {Placer
+    {Place "passenger01"
+      {group "passenger"}
+      {linkbone "seat01"}
+      ; no turnoff
+      ; 无附加内容
+    }
+  }
+  {Boarder
+    {door "emit3"}
+    {link "emit3" "passenger01" {anm "armor"} {forward putoff} {reverse puton}}
+  }
+  ; passenger passenger02
+  {Placer
+    {Place "passenger02"
+      {group "passenger"}
+      {linkbone "seat02"}
+      ; no turnoff
+      ; 无附加内容
+    }
+  }
+  {Boarder
+    {door "emit4"}
+    {link "emit4" "passenger02" {anm "armor"} {forward putoff} {reverse puton}}
+  }
+  ; passenger passenger03
+  {Placer
+    {Place "passenger03"
+      {group "passenger"}
+      {linkbone "seat03"}
+      ; no turnoff
+      ; 无附加内容
+    }
+  }
+  {Boarder
+    {door "emit5"}
+    {link "emit5" "passenger03" {anm "armor"} {forward putoff} {reverse puton}}
+  }
+  ; passenger passenger04
+  {Placer
+    {Place "passenger04"
+      {group "passenger"}
+      {linkbone "seat04"}
+      ; no turnoff
+      ; 无附加内容
+    }
+  }
+  {Boarder
+    {door "emit6"}
+    {link "emit6" "passenger04" {anm "armor"} {forward putoff} {reverse puton}}
+  }
+  ; 附加内容
+  ; 无附加内容
+
+
+  {PatherID "panzer5"}
+  {Collider "tank.heavy"}
+  {TargetClass "tank_heavy"}
   {TargetSelector "tank_heavy"}
+  {Props "medium vision_lev04 muzzle_85mm_93mm_sides shield smoke nwg detect_tank_heavy"}
+  {able "emit_passengers_on_enemy"}
 
   {Extender "detail"
     {random 0}
@@ -31,9 +1627,7 @@
     {detail14}
   }
 
-  {Extender "enumerator"
-    {digit_folder "ger"}
-  }
+  ; 无额外 Enumerator
 
   {Extender "shield" {on}}
 
@@ -44,14 +1638,11 @@
 
   {Extender "inventory"
     {Box
-      {Size 14 10}
+      {Size 12 10}
       {Weight 1000}
       {Item "repair_kit" 10}
-
       {Item "ammo inf-10mm-chain ap" 4500}
-
       {Item "nbks grenade" 6}
-
       {Item "ammo ger-75l70 apcbche" 39}
       {Item "ammo ger-75l70 apcr" 5}
       {Item "ammo ger-75l70 he" 29}
@@ -59,72 +1650,130 @@
   }
 
   {Weaponry
-    {RestoreIKTime 2}
     {Place "gun"
+
       {RestoreIKAfterAim}
+
       {Weapon "weapon ger-75mm-kwk42-l70" filling "ammo ger-75l70 apcbche" 1}
+
       {Gunner "gunner"}
       {Charger "charger"}
+
+
       {basic}
       {ai_in_manual}
       {AccuracyByMotion
-        {MaxLinearSpeed  7.00} ; km/h
-        {ByLinearSpeed   0.25} ; km/h
-        {MaxAngularSpeed 3.00} ; deg/s
-        {ByAngularSpeed  0.35} ; deg/s
-        {DisorderTime    0.15} ; s
-        {OrderTime       2.00} ; s
+        {MaxLinearSpeed 7}
+        {ByLinearSpeed 0.25}
+        {MaxAngularSpeed 3}
+        {ByAngularSpeed 0.35}
+        {DisorderTime 0.25}
+        {OrderTime 2}
       }
     }
     {Place "mgun2"
       {Type "coaxial"}
+
+
       {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240}
       {Foresight "foresight5"}
       {Gunner "gunner"}
       {Charger "charger"}
+
+
       {basic}
       {ai_in_manual}
       {AccuracyByMotion
-        {MaxLinearSpeed   8.00} ; km/h
-        {ByLinearSpeed    0.40} ; km/h
-        {MaxAngularSpeed 30.00} ; deg/s
-        {ByAngularSpeed   0.50} ; deg/s
-        {DisorderTime     0.60} ; s
-        {OrderTime        1.00} ; s
+        {MaxLinearSpeed 8}
+        {ByLinearSpeed 0.4}
+        {MaxAngularSpeed 30}
+        {ByAngularSpeed 0.5}
+        {DisorderTime 0.6}
+        {OrderTime 0.75}
       }
     }
     {Place "mgun1"
       {Type "hull"}
+
+
       {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240}
       {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}
+
+
       {basic}
       {ai_in_manual}
       {AccuracyByMotion
-        {MaxLinearSpeed   8.00} ; km/h
-        {ByLinearSpeed    0.40} ; km/h
-        {MaxAngularSpeed 30.00} ; deg/s
-        {ByAngularSpeed   0.50} ; deg/s
-        {DisorderTime     0.60} ; s
-        {OrderTime        1.00} ; s
+        {MaxLinearSpeed 8}
+        {ByLinearSpeed 0.4}
+        {MaxAngularSpeed 30}
+        {ByAngularSpeed 0.5}
+        {DisorderTime 0.6}
+        {OrderTime 0.75}
       }
     }
   }
-
-  {Mass 45300}
-  {Chassis "track"
-    ("set-tank-trace" fx("tracks_big") step(0.47) length(0.94) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(55) power(650) mass(45300) performance(1.41))
-    ("set-fuel-bag" volume(700) power(650) mass(45300))
-  }
-
   {Bone "gun_rot"
     {limits -8 20}
     {speed2 4}
   }
   {Bone "turret"
+
     {speed2 6}
   }
+
+  {Mass 45300}
+  {Chassis "track"
+    {Track "left"
+      {Tracer
+        {View "tracks_big"}
+        {Bone "FXtraceL1"}
+        {Step 0.47}
+      }
+      {TextureScroller
+        {Bone "TrackL"}
+        {Length 0.94}
+      }
+    }
+    {Track "right"
+      {Tracer
+        {View "tracks_big"}
+        {Bone "FXtraceR1"}
+        {Step 0.47}
+      }
+      {TextureScroller
+        {Bone "TrackR"}
+        {Length 0.94}
+      }
+    }
+    {Locomotion
+      {Slow              10}
+      {Normal            55}
+      {Fast              55}
+      {MaxSpeed          55}
+      {MaxSpeedAtMaxTurn 27.50}
+      {TurnTime          13.30}
+      {TurnStart         1.61}
+      {TurnStop          1.61}
+      {TurnRadius        6}
+      {StartTime         10.91}
+      {StopTime          5.19}
+      {BrakeTime         2.60}
+      {Gears             0.5 1.0}
+      {RearGears         0.07}
+      {GearSwitchDelay   0.30}
+      {SplineRadius      0.45}
+      {MaxSlope          75}
+      {FallSlope         75}
+    }
+    {FuelBag
+      {Volume            700}
+      {Rate              28.27}
+      {Remain            700}
+      {Fuel              "fuel"}
+    }
+  }
+  ; 在射击时可以移动
 
 }

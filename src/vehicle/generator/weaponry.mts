@@ -107,7 +107,7 @@ export const generateWeaponry = (options: WeaponryOptions) => {
       `  ${weapon.restoreIKAfterAim === true ? '{RestoreIKAfterAim}' : ''}`,
       `  ${weapon.rotate === true ? '{Rotate}' : ''}`,
       `  {Weapon "${weapon.weapon}" filling "${weapon.filling}" ${weapon.amount}}`,
-      `  ${weapon.foresight ? `{foresight "${weapon.foresight}"}` : ''}`,
+      `  ${weapon.foresight ? `{Foresight "${weapon.foresight}"}` : ''}`,
       `  {Gunner "${weapon.gunner}"}`,
       `  {Charger "${weapon.charger}"}`,
       `  ${weapon.linkBone ? `{LinkBone "${weapon.linkBone}"}` : ''}`,
