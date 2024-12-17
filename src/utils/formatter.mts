@@ -11,3 +11,11 @@ export const i2lines = (...lines: string[]) => {
     ? i0lines(first, ...rest.map(line => `  ${line}`.trimEnd()))
     : first;
 };
+
+/** 合并多行，设置四个空格缩进，首行除外 */
+export const i4lines = (...lines: string[]) => {
+  const [ first, ...rest ] = lines.flatMap(line => line.split('\n'));
+  return rest.length > 0
+    ? i0lines(first, ...rest.map(line => `    ${line}`.trimEnd()))
+    : first;
+};

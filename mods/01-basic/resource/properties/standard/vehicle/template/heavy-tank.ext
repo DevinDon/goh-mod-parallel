@@ -1,0 +1,306 @@
+; standard heavy-tank options
+actor
+
+{PatherID "tank"}
+{props "steel" "vehicle" "obstacle_ignore_height" "emit_on_sink" "tank" "hatch" "engine" "with_gun" "turret" "detect_tank_medium"}
+{able "emit_passangers_on_enemy" "repaired" "minimap" "ally_crew" "talk"}
+{targetClass "tank_heavy" "ap fg bullet"}
+{targetSelector "tank_heavy"}
+{obstacleID "tank"}
+{Simulation {able 1}}
+{lodclass "vehicle"}
+{collider "tank.heavy"}
+{NoGroupMesh 1}
+
+{brain "vehicle"
+  {state "vehicle"}
+  {const "crush/min_danger_zone_time"   1}
+  {const "crush/min_danger_zone_length" 1}
+}
+
+{RimLight}
+
+{volume "select"
+  {able clear {select} {touch}}
+  {density 0}
+}
+{volume "ram"
+  {able clear}
+  {density 0}
+}
+{volume "breach" {able {NoWoundDecal}}}
+{volume "breech" {able {NoWoundDecal}}}
+
+{extender "talk"
+  {talker "tank"}
+}
+
+{perks {blastwave_modifier 6}}
+
+{Skeleton
+  {Bone "hearing"
+    {Position 0 0 40}
+  }
+  {Bone "radar"
+    {Position 0 0 40}
+  }
+}
+{hearingBias 5.0}
+{Sensor
+  {RecognizeTime 1} ; 单位秒，敌军单位识别时间
+  {InformRange 750 750} ; 单位米，向友军单位通告敌军位置的通信距离，第一个参数用于向电脑通告的距离，第二个参数用于向玩家通告的距离
+  ; 必备配置
+  {Visor "standard-visor-hearing"
+    {Bone "hearing"}
+    {Vision "standard-vision-noise-detection"}
+  }
+  {Visor "standard-visor-radar"
+    {Bone "radar"}
+    {Vision "standard-vision-none"}
+  }
+  {Visor "standard-visor-none"
+    {Vision "standard-vision-none"}
+  }
+}
+
+{volume "shieldw"
+  {material "wood"}
+  {tags "wood"}
+}
+{volume "shieldw1"
+  {material "wood"}
+  {tags "wood"}
+}
+{volume "shieldw2"
+  {material "wood"}
+  {tags "wood"}
+}
+{volume "shieldw3"
+  {material "wood"}
+  {tags "wood"}
+}
+{volume "shieldw4"
+  {material "wood"}
+  {tags "wood"}
+}
+{volume "shieldw5"
+  {material "wood"}
+  {tags "wood"}
+}
+{volume "shieldw6"
+  {material "wood"}
+  {tags "wood"}
+}
+
+{volume "hole"
+  {able clear {hole}}
+}
+{volume "hole1"
+  {able clear {hole}}
+}
+{volume "hole2"
+  {able clear {hole}}
+}
+{volume "hole3"
+  {able clear {hole}}
+}
+{volume "hole4"
+  {able clear {hole}}
+}
+{volume "hole5"
+  {able clear {hole}}
+}
+{volume "hole6"
+  {able clear {hole}}
+}
+{volume "hole7"
+  {able clear {hole}}
+}
+{volume "hole8"
+  {able clear {hole}}
+}
+{volume "hole9"
+  {able clear {hole}}
+}
+{volume "hole10"
+  {able clear {hole}}
+}
+{volume "hole11"
+  {able clear {hole}}
+}
+{volume "hole12"
+  {able clear {hole}}
+}
+{volume "hole13"
+  {able clear {hole}}
+}
+{volume "hole14"
+  {able clear {hole}}
+}
+{volume "hole15"
+  {able clear {hole}}
+}
+{volume "hole16"
+  {able clear {hole}}
+}
+{volume "hole17"
+  {able clear {hole}}
+}
+{volume "hole18"
+  {able clear {hole}}
+}
+{volume "hole19"
+  {able clear {hole}}
+}
+{volume "hole20"
+  {able clear {hole}}
+}
+{volume "hole21"
+  {able clear {hole}}
+}
+{volume "hole22"
+  {able clear {hole}}
+}
+{volume "hole23"
+  {able clear {hole}}
+}
+{volume "hole24"
+  {able clear {hole}}
+}
+{volume "hole25"
+  {able clear {hole}}
+}
+
+{volume "sandbag"
+  {thickness 10}
+  {material "sand"}
+  {able {NoWoundDecal}}
+}
+{volume "sandbag1"
+  {thickness 10}
+  {material "sand"}
+  {able {NoWoundDecal}}
+}
+{volume "sandbag2"
+  {thickness 10}
+  {material "sand"}
+  {able {NoWoundDecal}}
+}
+{volume "sandbag3"
+  {thickness 10}
+  {material "sand"}
+  {able {NoWoundDecal}}
+}
+{volume "sandbag4"
+  {thickness 10}
+  {material "sand"}
+  {able {NoWoundDecal}}
+}
+{volume "sandbag5"
+  {thickness 10}
+  {material "sand"}
+  {able {NoWoundDecal}}
+}
+
+{volume "armor_plate"
+  {tags "armor"}
+}
+{volume "armor_engine"
+  {tags "armor"}
+}
+{volume "armor_visor1"
+  {tags "armor"}
+}
+{volume "armor_visor2"
+  {tags "armor"}
+}
+{volume "armor_visor3"
+  {tags "armor"}
+}
+{volume "armor"
+  {tags "armor"}
+}
+{volume "armor1"
+  {tags "armor"}
+}
+{volume "armorL1"
+  {tags "armor"}
+}
+{volume "armorR1"
+  {tags "armor"}
+}
+{volume "armor2"
+  {tags "armor"}
+}
+{volume "armorL2"
+  {tags "armor"}
+}
+{volume "armorR2"
+  {tags "armor"}
+}
+{volume "armor3"
+  {tags "armor"}
+}
+{volume "armorL3"
+  {tags "armor"}
+}
+{volume "armorR3"
+  {tags "armor"}
+}
+{volume "armor4"
+  {tags "armor"}
+}
+{volume "armor5"
+  {tags "armor"}
+}
+{volume "armor6"
+  {tags "armor"}
+}
+{volume "armor7"
+  {tags "armor"}
+}
+{volume "armor8"
+  {tags "armor"}
+}
+{volume "armor9"
+  {tags "armor"}
+}
+{volume "armor10"
+  {tags "armor"}
+}
+{volume "armor11"
+  {tags "armor"}
+}
+{volume "armor12"
+  {tags "armor"}
+}
+{volume "armor13"
+  {tags "armor"}
+}
+{volume "armor14"
+  {tags "armor"}
+}
+{volume "armor_mg_port"
+  {tags "armor"}
+}
+{volume "armor_driver"
+  {tags "armor"}
+}
+{volume "armor_mantlet"
+  {tags "armor"}
+}
+{volume "armor_hull"
+  {tags "armor"}
+}
+{volume "armor_front1"
+  {tags "armor"}
+}
+{volume "armor_front2"
+  {tags "armor"}
+}
+{volume "armor_front3"
+  {tags "armor"}
+}
+{volume "armor_front4"
+  {tags "armor"}
+}
