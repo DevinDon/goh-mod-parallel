@@ -13,8 +13,8 @@ export const generateAllVehicles = async () => {
   const options: VehicleOptions[] = [
     {
       metadata: {
-        id: 'sdkfz-171',
-        name: '五号坦克 A 型',
+        id: 'panzer-5-d',
+        name: '五号坦克 D 型',
         category: 'tank',
         faction: 'ascension',
         country: 'inf',
