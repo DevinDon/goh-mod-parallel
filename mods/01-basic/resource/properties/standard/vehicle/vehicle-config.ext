@@ -2,9 +2,7 @@
 
 (include "additional-define.ext")
 (include "component-define.ext")
-(include "crew-define.ext")
 (include "maneuverability-define.ext")
-(include "seat-define.ext")
 (include "trace-define.ext")
 
 {PatherID  "vehicle.large"}
