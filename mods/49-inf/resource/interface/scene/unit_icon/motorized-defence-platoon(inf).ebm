@@ -1,0 +1,6 @@
+{bitmap
+  {frame "ascension/inf/defence.00.tga"}
+  {frame "ascension/inf/defence.01.tga"}
+  {frame "ascension/inf/defence.02.tga"}
+  {frame "ascension/inf/defence.03.tga"}
+}

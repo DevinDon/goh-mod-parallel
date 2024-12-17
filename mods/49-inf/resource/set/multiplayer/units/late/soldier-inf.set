@@ -23,7 +23,7 @@
 
 ; 步兵班
 ; args = name cd ci crew1 crew2 period tags group button
-(define "set-soldier-squad"
+(define "set-squad"
   {"%name(inf)"
     {charge
       {delay %cd}
@@ -39,17 +39,70 @@
 )
 
 ; 步兵班 2 至 4 人
-("set-soldier-squad" name(soldier-assault-squad)     period(late) cd(0)   ci(15)  crew1(assault-1:2)          crew2(assault-1:1)          group(assault-squad)   button(inf2) tags())
-("set-soldier-squad" name(soldier-engineer-squad)    period(late) cd(0)   ci(15)  crew1(engineer-1:2)         crew2(engineer-1:1)         group(engineer-squad)  button(inf2) tags(engineer))
-("set-soldier-squad" name(soldier-medic-squad)       period(late) cd(0)   ci(15)  crew1(medic-1:2)            crew2(medic-1:1)            group(medic-squad)     button(inf2) tags())
-("set-soldier-squad" name(soldier-sniper-squad)      period(late) cd(0)   ci(15)  crew1(sniper-1:2)           crew2(sniper-1:1)           group(sniper-squad)    button(inf2) tags(sniper))
-("set-soldier-squad" name(soldier-machine-gun-squad) period(late) cd(0)   ci(15)  crew1(machine-gunner-1:2)   crew2(machine-gunner-2:2)   group(machine-squad)   button(inf2) tags())
-("set-soldier-squad" name(soldier-antiarmor-squad)   period(late) cd(0)   ci(15)  crew1(antiarmor-gunner-1:2) crew2(antiarmor-gunner-2:2) group(antiarmor-squad) button(inf2) tags())
-("set-soldier-squad" name(soldier-officer-squad)     period(late) cd(600) ci(120) crew1(officer-1:1)          crew2(officer-2:1)          group(officer-squad)   button(inf2) tags(officer))
+("set-squad" name(assault-squad)     period(late) cd(0)   ci(15)  crew1(assault-1:2)          crew2(assault-1:1)          group(assault-squad)   button(inf2) tags())
+("set-squad" name(engineer-squad)    period(late) cd(0)   ci(15)  crew1(engineer-1:2)         crew2(engineer-1:1)         group(engineer-squad)  button(inf2) tags(engineer))
+("set-squad" name(medic-squad)       period(late) cd(0)   ci(15)  crew1(medic-1:2)            crew2(medic-1:1)            group(medic-squad)     button(inf2) tags())
+("set-squad" name(sniper-squad)      period(late) cd(0)   ci(15)  crew1(sniper-1:2)           crew2(sniper-1:1)           group(sniper-squad)    button(inf2) tags(sniper))
+("set-squad" name(machine-gun-squad) period(late) cd(0)   ci(15)  crew1(machine-gunner-1:2)   crew2(machine-gunner-2:2)   group(machine-squad)   button(inf2) tags())
+("set-squad" name(antiarmor-squad)   period(late) cd(0)   ci(15)  crew1(antiarmor-gunner-1:2) crew2(antiarmor-gunner-2:2) group(antiarmor-squad) button(inf2) tags())
+("set-squad" name(officer-squad)     period(late) cd(600) ci(120) crew1(officer-1:1)          crew2(officer-2:1)          group(officer-squad)   button(inf2) tags(officer))
 
+; 步兵排 12 人
+; args = name period cd ci crews group button tags
+(define "set-platoon"
+  {"%name(inf)"
+    {charge
+      {delay %cd}
+      {interval %ci}
+    }
+    {content "%crews"}
+    {tags "all infantry inf infinfantrylimit10 %tags %period"}
+    {group "%group"}
+    {button "%button"}
+    {level 1}
+    {squad_cost_factor 0.75}
+    {round_multiple 1}
+  }
+)
+
+; 突击排 12 人
+("set-platoon"
+  name(assault-platoon)
+  period(late)
+  cd(0)
+  ci(30)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:7 mp/inf/late/medic-1:1 mp/inf/late/machine-gunner-1:2 mp/inf/late/antiarmor-gunner-1:1)
+  group(assault-platoon)
+  button(inf1)
+  tags()
+)
+; 支援排 12 人
+("set-platoon"
+  name(supply-platoon)
+  period(late)
+  cd(0)
+  ci(30)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:3 mp/inf/late/antiarmor-gunner-2:3)
+  group(supply-platoon)
+  button(inf1)
+  tags()
+)
+; 防御排 12 人
+("set-platoon"
+  name(defence-platoon)
+  period(late)
+  cd(0)
+  ci(30)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:2 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
+  group(defence-platoon)
+  button(inf1)
+  tags()
+)
+
+; 无尽重装军团
 ; 摩托化步兵排 Sd.Kfz 305/1 型卡车 12 人
-; args = name period doctrine cd ci crews group button tags
-(define "set-soldier-platoon"
+; args = name period cd ci crews group button tags doctrine
+(define "set-motorized-platoon"
   {"%name(inf)"
     {charge
       {delay %cd}
@@ -60,48 +113,46 @@
     {cost 30} ; sdkfz-305-1 卡车
     {group "%group"}
     {button "%button"}
-    {doctrine %doctrine}
     {level 2}
     {squad_cost_factor 0.75}
     {round_multiple 1}
+    {doctrine %doctrine}
   }
 )
 
 ; 摩托化突击排 12 人
-("set-soldier-platoon"
-  name(soldier-assault-platoon)
+("set-motorized-platoon"
+  name(motorized-assault-platoon)
   period(late)
-  doctrine(ascension_inf_heavy_armored)
   cd(0)
   ci(30)
   crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:7 mp/inf/late/medic-1:1 mp/inf/late/machine-gunner-1:2 mp/inf/late/antiarmor-gunner-1:1)
   group(assault-platoon)
   button(inf1)
   tags()
-)
-
-; 摩托化支援排 12 人
-("set-soldier-platoon"
-  name(soldier-supply-platoon)
-  period(late)
   doctrine(ascension_inf_heavy_armored)
+)
+; 摩托化支援排 12 人
+("set-motorized-platoon"
+  name(motorized-supply-platoon)
+  period(late)
   cd(0)
   ci(30)
   crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:3 mp/inf/late/antiarmor-gunner-2:3)
   group(supply-platoon)
   button(inf1)
   tags()
-)
-
-; 摩托化防御排 12 人
-("set-soldier-platoon"
-  name(soldier-defence-platoon)
-  period(late)
   doctrine(ascension_inf_heavy_armored)
+)
+; 摩托化防御排 12 人
+("set-motorized-platoon"
+  name(motorized-defence-platoon)
+  period(late)
   cd(0)
   ci(30)
   crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:2 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
   group(defence-platoon)
   button(inf1)
   tags()
+  doctrine(ascension_inf_heavy_armored)
 )

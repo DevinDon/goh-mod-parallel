@@ -57,43 +57,55 @@ msgid   "Officer [INF]"
 msgstr  "参谋长 [无尽军团]"
 
 # 步兵班
-msgctxt "desc/squad/soldier-assault-squad(inf)"
+msgctxt "desc/squad/assault-squad(inf)"
 msgid   "Assault Squad 3 Soldiers"
 msgstr  "突击班 3 人"
 
-msgctxt "desc/squad/soldier-engineer-squad(inf)"
+msgctxt "desc/squad/engineer-squad(inf)"
 msgid   "Engineer Squad 3 Soldiers"
 msgstr  "工程班 3 人"
 
-msgctxt "desc/squad/soldier-medic-squad(inf)"
+msgctxt "desc/squad/medic-squad(inf)"
 msgid   "Medic Squad 3 Soldiers"
 msgstr  "医疗班 3 人"
 
-msgctxt "desc/squad/soldier-sniper-squad(inf)"
+msgctxt "desc/squad/sniper-squad(inf)"
 msgid   "Sniper Squad 3 Soldiers"
 msgstr  "狙击班 2 人"
 
-msgctxt "desc/squad/soldier-machine-gun-squad(inf)"
+msgctxt "desc/squad/machine-gun-squad(inf)"
 msgid   "Machine Gun Squad 4 Soldiers"
 msgstr  "机枪班 4 人"
 
-msgctxt "desc/squad/soldier-antiarmor-squad(inf)"
+msgctxt "desc/squad/antiarmor-squad(inf)"
 msgid   "Anti-Armor Squad 4 Soldiers"
 msgstr  "反装甲班 4 人"
 
-msgctxt "desc/squad/soldier-officer-squad(inf)"
+msgctxt "desc/squad/officer-squad(inf)"
 msgid   "Officers [INF]"
 msgstr  "野战指挥小组 2 人 [无尽军团]"
 
 # 步兵排
-msgctxt "desc/squad/soldier-assault-platoon(inf)"
+msgctxt "desc/squad/assault-platoon(inf)"
 msgid   "Assault Platoon 12 Soldiers"
+msgstr  "突击排 12 人"
+
+msgctxt "desc/squad/supply-platoon(inf)"
+msgid   "Supply Platoon 12 Soldiers"
+msgstr  "支援排 12 人"
+
+msgctxt "desc/squad/defence-platoon(inf)"
+msgid   "Defence Platoon 12 Soldiers"
+msgstr  "防御排 12 人"
+
+msgctxt "desc/squad/motorized-assault-platoon(inf)"
+msgid   "Motorized Assault Platoon 12 Soldiers"
 msgstr  "摩托化突击排 12 人"
 
-msgctxt "desc/squad/soldier-supply-platoon(inf)"
-msgid   "Supply Platoon 12 Soldiers"
+msgctxt "desc/squad/motorized-supply-platoon(inf)"
+msgid   "Motorized Supply Platoon 12 Soldiers"
 msgstr  "摩托化支援排 12 人"
 
-msgctxt "desc/squad/soldier-defence-platoon(inf)"
-msgid   "Defence Platoon 12 Soldiers"
+msgctxt "desc/squad/motorized-defence-platoon(inf)"
+msgid   "Motorized Defence Platoon 12 Soldiers"
 msgstr  "摩托化防御排 12 人"
