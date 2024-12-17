@@ -6,7 +6,7 @@
     {tail "rocket_smoke_nebel" "tail"}
   }
   {inventory
-    {weight 1000}
+    {weight 100}
     {size 10 6}
     {block 1}
   }
