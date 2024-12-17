@@ -42,6 +42,8 @@ export type VehicleOptions = {
   };
   /** 模型文件，后缀名 .mdl */
   extension: string;
+  // /** 装甲配置 */
+  // armor: ArmorOptions;
   /** 载具 ID，如 panzer4 */
   patherid: string;
   /** 载具类型，如 */

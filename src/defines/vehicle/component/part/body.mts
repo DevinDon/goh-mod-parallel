@@ -1,5 +1,5 @@
-import { i0lines } from '../../../utils/formatter.mjs';
-import { setComponent } from './shared.mjs';
+import { i0lines } from '../../../../utils/formatter.mjs';
+import { setComponent } from '../shared.mjs';
 
 /** 设置车体 */
 export const setBody = (repair: number) => (

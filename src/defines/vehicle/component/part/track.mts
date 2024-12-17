@@ -1,4 +1,4 @@
-import { i0lines } from '../../../utils/formatter.mjs';
+import { i0lines } from '../../../../utils/formatter.mjs';
 
 type SetTrackOrWheelOptions = {
   position: string;

@@ -1,6 +1,15 @@
-import { i0lines, i2lines } from '../../../utils/formatter.mjs';
+import { i0lines, i2lines } from '../../../../utils/formatter.mjs';
 
-export const setArmor = (name: string) => (
+export const ArmorPresets = {
+  cannon: 10,
+  moto: 5,
+  car: 10,
+  lightTank: 20,
+  mediumTank: 30,
+  heavyTank: 40,
+} as const;
+
+const setArmor = (name: string) => (
   i2lines(
     `{setting "${name}"`,
     '  {threshold',

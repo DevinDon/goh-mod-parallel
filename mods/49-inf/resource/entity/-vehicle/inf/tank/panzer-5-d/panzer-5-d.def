@@ -1,17 +1,24 @@
 {game_entity
 
-  (include "/properties/standard/vehicle/tank-config.ext")
+  ; 载具编号 sdkfz-171
+  ; 载具名称 五号坦克 A 型
+  ; 载具类别 tank
+  ; 载具阵营 ascension
+  ; 载具国家 inf
+
+  (include "/properties/standard/vehicle/template/medium-tank.ext")
   (include "/properties/selection/vehicle.inc" scale(1.2))
 
   {Extension "/entity/-vehicle/germany/tank_medium/panzer5d/panzer5d.mdl"}
   (include   "/entity/-vehicle/germany/tank_medium/panzer5d/panzer5d.ext")
   (include   "/entity/-vehicle/germany/tank_medium/panzer5d/crew-and-passenger.ext")
 
-  {Props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nwg" "detect_tank_heavy"}
-
-  {PatherId "panzer5"}
-  {Targetclass "tank_heavy"}
+  {PatherID "panzer5"}
+  {Collider "tank.heavy"}
+  {TargetClass "tank_heavy"}
   {TargetSelector "tank_heavy"}
+  {Props "medium vision_lev04 muzzle_85mm_93mm_sides shield smoke nwg detect_tank_heavy"}
+  {able "emit_passengers_on_enemy"}
 
   {Extender "detail"
     {random 0}
@@ -31,27 +38,23 @@
     {detail14}
   }
 
-  {Extender "enumerator"
-    {digit_folder "ger"}
-  }
+  ; 无额外 Enumerator
 
   {Extender "shield" {on}}
 
   {Extender "smokescreen"
     {cooldown 5}
-    {itemTags "grenade nbks"}
+    {item_tags "grenade nbks"}
   }
 
   {Extender "inventory"
+    ; 无可挂载武器
     {Box
-      {Size 14 10}
+      {Size 12 10}
       {Weight 1000}
       {Item "repair_kit" 10}
-
       {Item "ammo inf-10mm-chain ap" 4500}
-
       {Item "nbks grenade" 6}
-
       {Item "ammo ger-75l70 apcbche" 39}
       {Item "ammo ger-75l70 apcr" 5}
       {Item "ammo ger-75l70 he" 29}
@@ -59,64 +62,70 @@
   }
 
   {Weaponry
-    {RestoreIKTime 2}
-    {Place "gun"
+    ; 无恢复 IK 时间
+    {Place gun
+      ; 无武器配置
       {RestoreIKAfterAim}
+      ; 无需旋转车体
       {Weapon "weapon ger-75mm-kwk42-l70" filling "ammo ger-75l70 apcbche" 1}
+      ; 无开火点
       {Gunner "gunner"}
       {Charger "charger"}
+      ; 无链接骨骼
+      ; 无链接动画
       {basic}
       {ai_in_manual}
       {AccuracyByMotion
-        {MaxLinearSpeed  7.00} ; km/h
-        {ByLinearSpeed   0.25} ; km/h
-        {MaxAngularSpeed 3.00} ; deg/s
-        {ByAngularSpeed  0.35} ; deg/s
-        {DisorderTime    0.15} ; s
-        {OrderTime       2.00} ; s
+        {MaxLinearSpeed 7}
+        {ByLinearSpeed 0.25}
+        {MaxAngularSpeed 3}
+        {ByAngularSpeed 0.35}
+        {DisorderTime 0.25}
+        {OrderTime 2}
       }
     }
-    {Place "mgun2"
+    {Place mgun2
       {Type "coaxial"}
+      {RestoreIKAfterAim}
+      ; 无需旋转车体
       {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240}
-      {Foresight "foresight5"}
+      ; 无开火点
       {Gunner "gunner"}
       {Charger "charger"}
+      ; 无链接骨骼
+      ; 无链接动画
       {basic}
       {ai_in_manual}
       {AccuracyByMotion
-        {MaxLinearSpeed   8.00} ; km/h
-        {ByLinearSpeed    0.40} ; km/h
-        {MaxAngularSpeed 30.00} ; deg/s
-        {ByAngularSpeed   0.50} ; deg/s
-        {DisorderTime     0.60} ; s
-        {OrderTime        1.00} ; s
+        {MaxLinearSpeed 8}
+        {ByLinearSpeed 0.4}
+        {MaxAngularSpeed 30}
+        {ByAngularSpeed 0.5}
+        {DisorderTime 0.6}
+        {OrderTime 0.75}
       }
     }
-    {Place "mgun1"
+    {Place mgun1
       {Type "hull"}
+      {RestoreIKAfterAim}
+      ; 无需旋转车体
       {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240}
-      {Foresight "foresight4"}
+      ; 无开火点
       {Gunner "gunner3"}
       {Charger "gunner3"}
+      ; 无链接骨骼
+      ; 无链接动画
       {basic}
       {ai_in_manual}
       {AccuracyByMotion
-        {MaxLinearSpeed   8.00} ; km/h
-        {ByLinearSpeed    0.40} ; km/h
-        {MaxAngularSpeed 30.00} ; deg/s
-        {ByAngularSpeed   0.50} ; deg/s
-        {DisorderTime     0.60} ; s
-        {OrderTime        1.00} ; s
+        {MaxLinearSpeed 8}
+        {ByLinearSpeed 0.4}
+        {MaxAngularSpeed 30}
+        {ByAngularSpeed 0.5}
+        {DisorderTime 0.6}
+        {OrderTime 0.75}
       }
     }
-  }
-
-  {Mass 45300}
-  {Chassis "track"
-    ("set-tank-trace" fx("tracks_big") step(0.47) length(0.94) boneleft("FXtraceL1") boneright("FXtraceR1"))
-    ("set-maneuverability-of-tank" speed(55) power(650) mass(45300) performance(1.41))
-    ("set-fuel-bag" volume(700) power(650) mass(45300))
   }
 
   {Bone "gun_rot"
@@ -124,7 +133,61 @@
     {speed2 4}
   }
   {Bone "turret"
+    ; 无角度限制
     {speed2 6}
   }
+
+  {Mass 45300}
+  {Chassis "track"
+    {Track "left"
+      {Tracer
+        {View "tracks_big"}
+        {Bone "FXtraceL1"}
+        {Step 0.47}
+      }
+      {TextureScroller
+        {Bone "TrackL"}
+        {Length 0.94}
+      }
+    }
+    {Track "right"
+      {Tracer
+        {View "tracks_big"}
+        {Bone "FXtraceR1"}
+        {Step 0.47}
+      }
+      {TextureScroller
+        {Bone "TrackR"}
+        {Length 0.94}
+      }
+    }
+    {Locomotion
+      {Slow              10}
+      {Normal            55}
+      {Fast              55}
+      {MaxSpeed          55}
+      {MaxSpeedAtMaxTurn 38.77}
+      {TurnTime          0.26}
+      {TurnStart         0.81}
+      {TurnStop          0.81}
+      {TurnRadius        8.46}
+      {StartTime         7.74}
+      {StopTime          3.68}
+      {BrakeTime         1.84}
+      {Gears             0.5 1.0}
+      {RearGears         0.07}
+      {GearSwitchDelay   0.21}
+      {SplineRadius      0.45}
+      {MaxSlope          75}
+      {FallSlope         75}
+    }
+    {FuelBag
+      {Volume            700}
+      {Rate              28.27}
+      {Remain            700}
+      {Fuel              "fuel"}
+    }
+  }
+  ; 在射击时可以移动
 
 }
