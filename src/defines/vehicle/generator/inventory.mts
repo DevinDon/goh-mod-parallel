@@ -1,4 +1,4 @@
-import { i0lines, i4lines } from '../../../utils/formatter.mjs';
+import { i0unlines, i4lines } from '../../../utils/formatter.mjs';
 
 /** 物品类型 + 数量，如 `{Item "ammo inf-15mm-chain ap" 600}` */
 export type InventoryItemAmount = {
@@ -48,7 +48,7 @@ export const generateInventory = (options: InventoryOptions) => {
 
   const weaponLine = mountable
     ? `{Weapon "${mountable.user}" {mask "mountable"}}`
-    : '; 无可挂载武器';
+    : '';
   const itemLines = items.map(
     item => {
       if ('user' in item) {
@@ -58,7 +58,7 @@ export const generateInventory = (options: InventoryOptions) => {
     },
   );
 
-  return i0lines(
+  return i0unlines(
     '{Extender "inventory"',
     `  ${weaponLine}`,
     '  {Box',

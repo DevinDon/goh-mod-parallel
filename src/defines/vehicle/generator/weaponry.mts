@@ -1,4 +1,4 @@
-import { i0lines, i2lines } from '../../../utils/formatter.mjs';
+import { i0lines, i0unlines, i2lines } from '../../../utils/formatter.mjs';
 
 /** 运动精度 */
 export type AccuracyByMotion = {
@@ -103,17 +103,17 @@ export const generateWeaponry = (options: WeaponryOptions) => {
   const weaponLines = weapons.map(
     weapon => i0lines(
       `{Place "${weapon.place}"`,
-      `  ${weapon.type ? `{Type "${weapon.type}"}` : '; 无武器配置'}`,
-      `  ${weapon.restoreIKAfterAim === true ? '{RestoreIKAfterAim}' : '; 无恢复 IK 后瞄准'}`,
-      `  ${weapon.rotate === true ? '{Rotate}' : '; 无需旋转车体'}`,
+      `  ${weapon.type ? `{Type "${weapon.type}"}` : ''}`,
+      `  ${weapon.restoreIKAfterAim === true ? '{RestoreIKAfterAim}' : ''}`,
+      `  ${weapon.rotate === true ? '{Rotate}' : ''}`,
       `  {Weapon "${weapon.weapon}" filling "${weapon.filling}" ${weapon.amount}}`,
-      `  ${weapon.foresight ? `{foresight "${weapon.foresight}"}` : '; 无开火点'}`,
+      `  ${weapon.foresight ? `{foresight "${weapon.foresight}"}` : ''}`,
       `  {Gunner "${weapon.gunner}"}`,
       `  {Charger "${weapon.charger}"}`,
-      `  ${weapon.linkBone ? `{LinkBone "${weapon.linkBone}"}` : '; 无链接骨骼'}`,
-      `  ${weapon.linkAnimation ? `{LinkAnimation "${weapon.linkAnimation}"}` : '; 无链接动画'}`,
-      `  ${weapon.basic === true ? '{basic}' : '; 无基本配置'}`,
-      `  ${weapon.aiInManual === true ? '{ai_in_manual}' : '; 无 AI 参与'}`,
+      `  ${weapon.linkBone ? `{LinkBone "${weapon.linkBone}"}` : ''}`,
+      `  ${weapon.linkAnimation ? `{LinkAnimation "${weapon.linkAnimation}"}` : ''}`,
+      `  ${weapon.basic === true ? '{basic}' : ''}`,
+      `  ${weapon.aiInManual === true ? '{ai_in_manual}' : ''}`,
       '  {AccuracyByMotion',
       `    {MaxLinearSpeed ${weapon.accuracyByMotion.maxLinearSpeed}}`,
       `    {ByLinearSpeed ${weapon.accuracyByMotion.byLinearSpeed}}`,
@@ -134,7 +134,7 @@ export const generateWeaponry = (options: WeaponryOptions) => {
           ? 'left' in limit
             ? `{limits ${limit.right} ${limit.left}}`
             : `{limits ${limit.bottom} ${limit.top}}`
-          : '; 无角度限制';
+          : '';
         return i0lines(
           `{Bone "${bone}"`,
           `  ${limitLine}`,
@@ -143,14 +143,13 @@ export const generateWeaponry = (options: WeaponryOptions) => {
         );
       },
     )
-    : [ '; 无武器射界限制' ];
+    : [];
 
-  return i0lines(
+  return i0unlines(
     '{Weaponry',
-    `  ${restoreIKTime ? `{RestoreIKTime ${restoreIKTime}}` : '; 无恢复 IK 时间'}`,
+    `  ${restoreIKTime ? `{RestoreIKTime ${restoreIKTime}}` : ''}`,
     `  ${i2lines(...weaponLines)}`,
     '}',
-    '',
     ...limitsLines,
   );
 
