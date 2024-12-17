@@ -26,6 +26,7 @@ Purchases["late.inf"] = {
       {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-3"},
       {priority = 1.0, type = {"Class2", "Armored", "AT",}, unit = "sdkfz-234-4"},
       -- 履带式装甲车
+      {priority = 1.0, type = {"Class2", "Armored", "Artillery",},       unit = "sdkfz-4-1"},
       -- {priority = 1.0, type = {"Class3", "Armored", "MG", "Transport",}, unit = "sdkfz-251-1"},
       {priority = 1.0, type = {"Class3", "Armored", "MG",},              unit = "sdkfz-251-16"},
       {priority = 1.0, type = {"Class3", "Armored", "AA",},              unit = "sdkfz-251-17"},
@@ -46,8 +47,9 @@ Purchases["late.inf"] = {
       -- 无尽重装军团
       {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Medium",}, unit = "panzer-5-d"},
       {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Medium",}, unit = "panzer-5-f"},
-      {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Heavy",}, unit = "panzer-6-e-ace"},
-      {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Heavy",}, unit = "panzer-6-b-h-ace"},
+      {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Heavy",},  unit = "panzer-6-e-ace"},
+      {priority = 1.0, type = {"Class3", "Doctrine", "Tier2", "Tank", "Heavy",},  unit = "panzer-6-b-h-ace"},
+      -- 无尽远火军团
     },
   },
 }
