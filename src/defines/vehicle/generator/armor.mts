@@ -1,4 +1,4 @@
-import { i0lines } from '../../../utils/formatter.mjs';
+import { i0lines, i2lines } from '../../../utils/formatter.mjs';
 import { setGlass, setHole, setLamp, setSandbag, setWood, setWoodShield, type AdditionalOptions } from '../component/additional.mjs';
 import { setCannonDurability, type SetCannonDurabilityOptions } from '../component/durability/cannon.mjs';
 import { setCarDurability, type SetCarDurabilityOptions } from '../component/durability/car.mjs';
@@ -119,23 +119,27 @@ export const generateArmor = (options: ArmorOptions) => {
       const topLine = volume.thickness.top ? `{top ${volume.thickness.top}}` : '';
       const rearLine = volume.thickness.rear ? `{rear ${volume.thickness.rear}}` : '';
       const bottomLine = volume.thickness.bottom ? `{bottom ${volume.thickness.bottom}}` : '';
+      const thicknessList = [ frontLine, topLine, rearLine, bottomLine ].filter(line => line !== '');
+      const thicknessLines = thicknessList.length
+        ? i0lines(
+          `{thickness ${volume.thickness.base}`,
+          `  ${i2lines(...thicknessList)}`,
+          '}',
+        )
+        : `{thickness ${volume.thickness.base}}`;
       const componentLine = volume.component ? `{component "${volume.component}"}` : '';
       const tagsLine = volume.tags?.length ? `{tags ${volume.tags.map(tag => `"${tag}"`).join(' ')}}` : '';
-      const ableLine = volume.able?.holed ? '{able {holed}}' : '; 无特殊属性';
-      return i0lines(
+      const ableLine = volume.able?.holed ? '{able {holed}}' : '';
+      const lines = [
         `{volume "${volume.name}"`,
-        `  {thickness ${volume.thickness.base}`,
-        `    ${frontLine}`,
-        `    ${topLine}`,
-        `    ${rearLine}`,
-        `    ${bottomLine}`,
-        '  }',
-        `  ${componentLine}`,
-        `  ${tagsLine}`,
+        `  ${i2lines(thicknessLines)}`,
         `  {CastSteel ${volume.hardness ?? 1}}`,
         `  ${ableLine}`,
+        `  ${componentLine}`,
+        `  ${tagsLine}`,
         '}',
-      );
+      ].filter(line => line.trim() !== '');
+      return i0lines(...lines);
     },
   );
 
