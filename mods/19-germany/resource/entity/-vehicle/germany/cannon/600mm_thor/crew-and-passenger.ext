@@ -1,5 +1,5 @@
-; crew and passenger
-; set visors
+; 乘员及乘客
+; 视角
 {Sensor
   ; visor main
   {Visor "main"
@@ -22,7 +22,7 @@
     {Vision "standard-vehicle-vision-around"}
   }
 }
-; set animations
+; 动画
 {Boarder
   ; animation a-gunner
   {Anm "a-gunner"
@@ -285,7 +285,7 @@
     }
   }
 }
-; set crews
+; 乘员
 ; crew gunner
 {Placer
   {Place "gunner"
@@ -466,9 +466,9 @@
   {door "emit3"}
   {link "emit3" "driver05" {anm "b-driver05"} {forward putoff} {reverse puton}}
 }
-; set passengers
+; 乘客
 ; no passenger
-; set extra
+; 附加内容
 {Boarder
   {link "driver01" "gunner"}
   {link "driver02" "gunner2"}

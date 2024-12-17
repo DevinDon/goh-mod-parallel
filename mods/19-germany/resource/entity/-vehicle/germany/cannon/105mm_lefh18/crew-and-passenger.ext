@@ -1,5 +1,5 @@
-; crew and passenger
-; set visors
+; 乘员及乘客
+; 视角
 {Sensor
   ; visor main
   {Visor "main"
@@ -22,7 +22,7 @@
     {Vision "standard-vehicle-vision-around"}
   }
 }
-; set animations
+; 动画
 {Boarder
   ; animation driver01
   {Anm "driver01"
@@ -133,7 +133,7 @@
     ; no reverse animation
   }
 }
-; set crews
+; 乘员
 ; crew commander
 {Placer
   {Place "commander"
@@ -302,9 +302,9 @@
   {door "emit1"}
   {link "emit1" "seat04" {anm "seat04"} {forward putoff} {reverse puton}}
 }
-; set passengers
+; 乘客
 ; no passenger
-; set extra
+; 附加内容
 {Boarder
   {link "seat01" "driver01"}
   {link "seat02" "driver02"}
