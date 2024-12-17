@@ -1,5 +1,5 @@
 import { toFixed } from '../../utils/formatter.mjs';
-import { i0lines } from '../../utils/set-indent.mjs';
+import { i0lines } from '../../utils/formatter.mjs';
 import { type AmmoOptions } from '../options.mjs';
 
 export type BlastwaveOptions = Pick<AmmoOptions, 'type' | 'caliber' | 'speed' | 'mass' | 'fill'>;

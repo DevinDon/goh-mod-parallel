@@ -1,5 +1,5 @@
 import { type GeneratedOptions } from '../../utils/save-generated.mjs';
-import { i0lines } from '../../utils/set-indent.mjs';
+import { i0lines } from '../../utils/formatter.mjs';
 import { type GameLogicOptions } from '../options.mjs';
 
 /** 生成游戏逻辑配置 */

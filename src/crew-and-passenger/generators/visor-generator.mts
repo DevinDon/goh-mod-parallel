@@ -1,4 +1,4 @@
-import { i0lines } from '../../utils/set-indent.mjs';
+import { i0lines } from '../../utils/formatter.mjs';
 import { type VisorOptions } from '../options.mjs';
 
 /** 生成视角配置 */

@@ -1,6 +1,6 @@
 import { logger } from '@pipers/logger';
 import { toFixed } from '../../utils/formatter.mjs';
-import { i0lines, i2lines } from '../../utils/set-indent.mjs';
+import { i0lines, i2lines } from '../../utils/formatter.mjs';
 import { BulletReloadingCursors, isSupportedBulletType, type WeaponBulletOptions } from '../options.mjs';
 import { generateOvermatchTable } from './overmatch-table-generator.mjs';
 

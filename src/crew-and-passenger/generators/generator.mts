@@ -1,4 +1,4 @@
-import { i0lines, i2lines } from '../../utils/set-indent.mjs';
+import { i0lines, i2lines } from '../../utils/formatter.mjs';
 import { type CrewAndPassengerOptions } from '../options.mjs';
 import { generateAnimation } from './animation-generator.mjs';
 import { generateCrew } from './crew-generator.mjs';

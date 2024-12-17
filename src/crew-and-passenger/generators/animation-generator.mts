@@ -1,4 +1,4 @@
-import { i0lines, i2lines } from '../../utils/set-indent.mjs';
+import { i0lines, i2lines } from '../../utils/formatter.mjs';
 import { type AnimationOptions } from '../options.mjs';
 
 /** 生成动画配置 */

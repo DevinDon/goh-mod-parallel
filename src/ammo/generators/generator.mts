@@ -1,4 +1,4 @@
-import { i0lines, i2lines } from '../../utils/set-indent.mjs';
+import { i0lines, i2lines } from '../../utils/formatter.mjs';
 import { type AmmoOptions } from '../options.mjs';
 import { generateBlastwave } from './blastwave-generator.mjs';
 

@@ -1,5 +1,5 @@
 import { ProjectModConfigDir } from '../../../utils/constants.mjs';
-import { i0lines } from '../../../utils/set-indent.mjs';
+import { i0lines } from '../../../utils/formatter.mjs';
 import { type WeaponOptions } from '../../options.mjs';
 import { default as ger280mmW40 } from './ger-280mm-w40.mjs';
 

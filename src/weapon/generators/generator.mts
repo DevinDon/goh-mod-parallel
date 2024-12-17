@@ -1,5 +1,5 @@
 import { toFixed } from '../../utils/formatter.mjs';
-import { i0lines, i2lines } from '../../utils/set-indent.mjs';
+import { i0lines, i2lines } from '../../utils/formatter.mjs';
 import { type WeaponOptions } from '../options.mjs';
 import { generateBulletParameter } from './bullet-parameter-generator.mjs';
 
