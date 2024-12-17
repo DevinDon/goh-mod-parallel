@@ -102,7 +102,7 @@ export const generateWeaponry = (options: WeaponryOptions) => {
 
   const weaponLines = weapons.map(
     weapon => i0lines(
-      `{Place ${weapon.place}`,
+      `{Place "${weapon.place}"`,
       `  ${weapon.type ? `{Type "${weapon.type}"}` : '; 无武器配置'}`,
       `  ${weapon.restoreIKAfterAim === true ? '{RestoreIKAfterAim}' : '; 无恢复 IK 后瞄准'}`,
       `  ${weapon.rotate === true ? '{Rotate}' : '; 无需旋转车体'}`,
