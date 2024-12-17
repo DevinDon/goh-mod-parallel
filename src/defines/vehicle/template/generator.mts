@@ -124,6 +124,8 @@ export const generateTemplate = (options: TemplateOptions) => {
     '}',
     '',
     '{RimLight}',
+    '{boarder}',
+    '{placer {crew}}',
     '',
     '{volume "select"',
     '  {able clear {select} {touch}}',

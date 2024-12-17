@@ -19,6 +19,8 @@ actor
 }
 
 {RimLight}
+{boarder}
+{placer {crew}}
 
 {volume "select"
   {able clear {select} {touch}}

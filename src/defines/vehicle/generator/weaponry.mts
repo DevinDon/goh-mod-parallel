@@ -51,7 +51,7 @@ export type Weapon = {
   /** 武器类型 */
   type?: 'main' | 'coaxial' | 'hull' | 'aa' | 'rear';
   /** 恢复 IK 后瞄准 */
-  restoreIKAfterAim: boolean;
+  restoreIKAfterAim?: boolean;
   /** 是否需要旋转车体 */
   rotate?: boolean;
   /** 武器 */

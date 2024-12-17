@@ -49,7 +49,7 @@ export const setMobilityOfArmoredCar = (options: ArmoredCarMobilityOptions) => {
     `  {MaxSpeedAtMaxTurn ${toFixed(forward / 2 * performance)}}`,
     `  {SteerOn           ${toFixed(performance * 10)}}`,
     `  {SteerOff          ${toFixed(performance * 20)}}`,
-    `  {TurnRadius        ${toFixed(6.0 * performance)}}`,
+    `  {TurnRadius        ${toFixed(8.0 * performance)}}`,
     `  {StartTime         ${toFixed(startTime)}}`,
     `  {StopTime          ${toFixed(stopTime)}}`,
     `  {BrakeTime         ${toFixed(brakeTime)}}`,
