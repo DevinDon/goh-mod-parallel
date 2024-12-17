@@ -23,7 +23,7 @@
 ; 特定军团载具
 ; define from vehicle2
 ; args = vehicle cost cd ci cw cp tags period crew1 crew2 group button doctrine
-(define "set-standard-vehicle"
+(define "set-standard-vehicle-doctrine"
   {"%vehicle"
     {charge
       {delay %cd}
