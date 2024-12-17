@@ -35,5 +35,5 @@
 (include "late/units_usa.set")
 
 ; custom
-(include "late/soldier-inf.set")
+(include "late/infantry-inf.set")
 (include "late/vehicle-inf.set")
