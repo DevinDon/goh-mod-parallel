@@ -4,8 +4,8 @@
 (define "api"
   {damage fire
     {radius (* %calibre 0.010)}
-    {heating (* %calibre 0.030)}
-    {time (* %calibre 0.025)}
+    {heating (* %calibre 0.025)}
+    {time (* %calibre 0.015)}
   }
   {damage blastwave
     {energy (* %calibre 0.020)}
