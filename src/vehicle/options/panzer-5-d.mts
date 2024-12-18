@@ -100,7 +100,7 @@ const options: VehicleOptions = {
     items: [
       { name: 'repair_kit', amount: 10 },
       { name: 'ammo inf-10mm-chain ap', amount: 4500 },
-      { name: 'nbks grenade', amount: 6 },
+      { name: 'nbks grenade', amount: 1 },
       { name: 'ammo ger-75l70 apcbche', amount: 39 },
       { name: 'ammo ger-75l70 apcr', amount: 5 },
       { name: 'ammo ger-75l70 he', amount: 29 },
