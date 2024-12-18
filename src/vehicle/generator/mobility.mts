@@ -1,5 +1,5 @@
 import { JSON } from '@pipers/toolbox/universal/json';
-import { i0lines, i2lines } from '../../utils/formatter.mjs';
+import { i0unlines, i2lines } from '../../utils/formatter.mjs';
 import { setMobilityOfArmoredCar, type ArmoredCarMobilityOptions } from '../mobility/armored-car.mjs';
 import { setMobilityOfCannon, type CannonMobilityOptions } from '../mobility/cannon.mjs';
 import { setMobilityOfCar, type CarMobilityOptions } from '../mobility/car.mjs';
@@ -49,13 +49,13 @@ export const generateMobility = (options: MobilityOptions) => {
             ? setMobilityOfCannon(mobility)
             : `; 未知的配置项: ${JSON.stringify(mobility)}`;
 
-  return i0lines(
+  return i0unlines(
     `{Mass ${mobility.mass}}`,
     `{Chassis "${mobility.$options === 'tank-mobility' ? 'track' : 'wheel'}"`,
     `  ${i2lines(...traceLines)}`,
     `  ${i2lines(mobilityLines)}`,
     '}',
-    disableMoveWhileFiring === true ? '{DisableMoveWhileFiring}' : '; 在射击时可以移动',
+    disableMoveWhileFiring === true ? '{DisableMoveWhileFiring}' : '',
   );
 
 };

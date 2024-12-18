@@ -1651,15 +1651,10 @@
 
   {Weaponry
     {Place "gun"
-
       {RestoreIKAfterAim}
-
       {Weapon "weapon ger-75mm-kwk42-l70" filling "ammo ger-75l70 apcbche" 1}
-
       {Gunner "gunner"}
       {Charger "charger"}
-
-
       {basic}
       {ai_in_manual}
       {AccuracyByMotion
@@ -1673,14 +1668,10 @@
     }
     {Place "mgun2"
       {Type "coaxial"}
-
-
       {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240}
       {Foresight "foresight5"}
       {Gunner "gunner"}
       {Charger "charger"}
-
-
       {basic}
       {ai_in_manual}
       {AccuracyByMotion
@@ -1694,14 +1685,10 @@
     }
     {Place "mgun1"
       {Type "hull"}
-
-
       {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240}
       {Foresight "foresight4"}
       {Gunner "gunner3"}
       {Charger "gunner3"}
-
-
       {basic}
       {ai_in_manual}
       {AccuracyByMotion
@@ -1719,7 +1706,6 @@
     {speed2 4}
   }
   {Bone "turret"
-
     {speed2 6}
   }
 
@@ -1774,6 +1760,5 @@
       {Fuel              "fuel"}
     }
   }
-  ; 在射击时可以移动
 
 }

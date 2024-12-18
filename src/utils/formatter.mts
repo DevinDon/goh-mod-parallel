@@ -5,7 +5,10 @@ export const toFixed = (value: number) => (Number.isInteger(value) ? value.toFix
 export const i0lines = (...lines: string[]) => lines.join('\n');
 
 /** 仅合并多行，不设置缩进，删除空行 */
-export const i0unlines = (...lines: string[]) => lines.filter(line => line.trim() !== '').join('\n');
+export const i0unlines = (...lines: string[]) => lines
+  .flatMap(line => line.split('\n'))
+  .filter(line => line.trim() !== '')
+  .join('\n');
 
 /** 合并多行，设置两个空格缩进，首行除外 */
 export const i2lines = (...lines: string[]) => {

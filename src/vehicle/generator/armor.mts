@@ -122,7 +122,7 @@ export const generateArmor = (options: ArmorOptions) => {
       const componentLine = volume.component ? `{component "${volume.component}"}` : '';
       const tagsLine = volume.tags?.length ? `{tags ${volume.tags.map(tag => `"${tag}"`).join(' ')}}` : '';
       const ableLine = volume.able?.holed ? '{able {holed}}' : '';
-      return i0unlines(
+      return i0lines(
         `{volume "${volume.name}"`,
         `  {thickness ${volume.thickness.base}`,
         `    ${frontLine}`,
@@ -139,7 +139,7 @@ export const generateArmor = (options: ArmorOptions) => {
     },
   );
 
-  return i0lines(
+  return i0unlines(
     '; 耐久',
     durabilityLines,
     '; 各部分组件设置，维修时间以及装甲厚度等',
