@@ -1642,7 +1642,7 @@
       {Weight 1000}
       {Item "repair_kit" 10}
       {Item "ammo inf-10mm-chain ap" 4500}
-      {Item "nbks grenade" 6}
+      {Item "nbks grenade" 1}
       {Item "ammo ger-75l70 apcbche" 39}
       {Item "ammo ger-75l70 apcr" 5}
       {Item "ammo ger-75l70 he" 29}
