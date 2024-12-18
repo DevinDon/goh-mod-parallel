@@ -1,5 +1,4 @@
-import { toFixed } from '../../utils/formatter.mjs';
-import { i0lines, i2lines } from '../../utils/formatter.mjs';
+import { i0lines, i0unlines, i2lines, toFixed } from '../../utils/formatter.mjs';
 import { type WeaponOptions } from '../options.mjs';
 import { generateBulletParameter } from './bullet-parameter-generator.mjs';
 
@@ -34,11 +33,11 @@ export const generateWeapon = (options: WeaponOptions) => {
 
   const bullets = options.bullets.map(generateBulletParameter);
   const bulletsLines = bullets.length > 0
-    ? i0lines(...bullets)
+    ? i0unlines(...bullets)
     : '; 无炮弹模式';
 
   const extraLines = options.extra?.length
-    ? i0lines(...options.extra)
+    ? i0unlines(...options.extra)
     : '; 无额外配置';
 
   return i0lines(
@@ -72,7 +71,7 @@ export const generateWeapon = (options: WeaponOptions) => {
     `  {RecoveryTime ${toFixed(options.recoveryTime)}} ; 短射间隔（秒）, 适用于弹链`,
     '  {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义',
     `  ${i2lines(burstLines)}`,
-    `  ${i2lines(automaticLine)}`,
+    `  ${automaticLine}`,
     `  ${i2lines(bulletsLines)}`,
     `  ${i2lines(extraLines)}`,
     '}',
