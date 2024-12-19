@@ -72,7 +72,7 @@ export const setMotoDurability = (options: SetMotoDurabilityOptions) => {
     '{perks',
     '  {component "body"',
     '    {health',
-    `      {hp ${body}}`,
+    `      {hp ${body * 10}}`,
     `      {hp_broken ${body * 10}}`,
     '    }',
     '    {armor_damage_modifier 2}',

@@ -119,7 +119,7 @@ export const setCannonDurability = (options: SetCannonDurabilityOptions) => {
     '{perks',
     '  {component "body"',
     '    {health',
-    `      {hp ${body}}`,
+    `      {hp ${body * 10}}`,
     `      {hp_broken ${body * 10}}`,
     '    }',
     '    {armor_damage_modifier 0.1}',
