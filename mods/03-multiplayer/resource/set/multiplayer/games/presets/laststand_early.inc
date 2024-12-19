@@ -74,7 +74,7 @@
     {unitMode "early"}
     {specMode "all_normal"}
     {apply "only_roster_early"}
-    ("standard_all" start_a(1000) finish_a(20000) start_b(2000) finish_b(40000) doctrine(1000) cp_a(0:100,2000:100,5000:100) cp_b(0:100,2000:100,10000:100))
+    ("standard_all" start_a(1000) finish_a(20000) start_b(2000) finish_b(40000) doctrine(1000) cp_a(0:50,2000:50,5000:50) cp_b(0:50,2000:50,10000:50))
     {ranked}
   }
 ;------------------------------------------------------------------------------------------------------------
