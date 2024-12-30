@@ -76,9 +76,9 @@
   ("team_b")
   {balancingFactorBonus
     {cp 1.0}
-    {mpStart 1.0}
-    {mpFinish 1.0}
-    {payback 1.1}
+    {mpStart 2.0}
+    {mpFinish 2.0}
+    {payback 2.0}
     {chargeDelay 1.0}  ;// adjusts the inital delay only
     {charge 0.1}    ;// adjusts the interval only
   }
@@ -87,9 +87,9 @@
   ("team_b")
   {balancingFactorBonus
     {cp 1.0}
-    {mpStart 2.0}
-    {mpFinish 2.0}
-    {payback 1.5}
+    {mpStart 10.0}
+    {mpFinish 10.0}
+    {payback 10.0}
     {chargeDelay 1.0}  ;// adjusts the inital delay only
     {charge 0}      ;// adjusts the interval only
   }
