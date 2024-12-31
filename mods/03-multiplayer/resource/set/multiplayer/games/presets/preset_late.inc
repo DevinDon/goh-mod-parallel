@@ -44,7 +44,7 @@
     {unitMode "late"}
     {specMode "all_normal"}
     {apply "only_roster_late"}
-    ("standard_all" start(200) finish(20000) doctrine(1000) cp(0:75,10000:75,20000:75))
+    ("standard_all" start(200) finish(20000) doctrine(1000) cp(0:60,10000:60,20000:60))
     {ranked}
   }
 ;------------------------------------------------------------------------------------------------------------
