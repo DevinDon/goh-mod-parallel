@@ -47,8 +47,6 @@
       }
       {"b"
         {title "mp/settings/team#attackers"}
-        {maxTeamPlayers 0}
-        {aiTeamPlayers 4}
       }
     }
     {alliances
