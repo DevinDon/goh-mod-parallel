@@ -1,4 +1,4 @@
-import { logger } from '@pipers/logger';
+import { logger } from '../../utils/logger.mjs';
 import { saveGenerated, type GeneratedOptions } from '../../utils/save-generated.mjs';
 import { generateTemplate, VehicleType } from './generator.mjs';
 

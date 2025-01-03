@@ -1,8 +1,8 @@
 import { resolve } from 'node:path';
-import { logger } from '@pipers/logger';
 import { saveFile } from '@pipers/toolbox/node/filesystem';
 import { createTaskQueue$ } from '@pipers/toolbox/universal/task-queue';
 import { ProjectRootDir } from './constants.mjs';
+import { logger } from './logger.mjs';
 
 export type GeneratedOptions = {
   /** 要保存到的路径，相对于当前模组的根目录 */

@@ -1,7 +1,6 @@
-import { logger } from '@pipers/logger';
 import { loadOptions } from '../../utils/load-options.mjs';
-import { type GeneratedOptions } from '../../utils/save-generated.mjs';
-import { saveGenerated } from '../../utils/save-generated.mjs';
+import { logger } from '../../utils/logger.mjs';
+import { saveGenerated, type GeneratedOptions } from '../../utils/save-generated.mjs';
 import { type WeaponOptions } from '../options.mjs';
 import { generateWeapon } from './generator.mjs';
 

@@ -1,5 +1,5 @@
-import { logger } from '@pipers/logger';
 import { i0lines, i2lines } from '../../utils/formatter.mjs';
+import { logger } from '../../utils/logger.mjs';
 import { ger105mmOvermatchTables } from './overmatch-tables/ger-105mm.mjs';
 import { ger128mmOvermatchTables } from './overmatch-tables/ger-128mm.mjs';
 import { ger20mmOvermatchTables } from './overmatch-tables/ger-20mm.mjs';

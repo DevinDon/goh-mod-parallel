@@ -1,7 +1,7 @@
 import { dirname } from 'node:path';
-import { logger } from '@pipers/logger';
 import { createWriteStream, ensureDir, ensureFile } from '@pipers/toolbox/node/filesystem';
 import archiver from 'archiver';
+import { logger } from '../../utils/logger.mjs';
 
 const { create } = archiver;
 

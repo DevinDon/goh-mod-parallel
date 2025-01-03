@@ -1,5 +1,5 @@
-import { logger } from '@pipers/logger';
 import { listPathsDeep, readFile, writeFile } from '@pipers/toolbox/node/filesystem';
+import { logger } from './logger.mjs';
 
 /** 将指定目录下的所有文件中的 tab 替换为 2 个空格 */
 export const replaceTabToSpace = async (dir: string) => {

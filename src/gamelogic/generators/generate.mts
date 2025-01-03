@@ -1,4 +1,4 @@
-import { logger } from '@pipers/logger';
+import { logger } from '../../utils/logger.mjs';
 import { saveGenerated } from '../../utils/save-generated.mjs';
 import { type GameLogicOptions } from '../options.mjs';
 import { generateGameLogic } from './generator.mjs';

@@ -1,9 +1,9 @@
 import { resolve } from 'node:path';
-import { logger } from '@pipers/logger';
 import { copy } from '@pipers/toolbox/node/filesystem';
 import { createTaskQueue$ } from '@pipers/toolbox/universal/task-queue';
 import { GameModsRootDir, ProjectModConfigDir } from '../utils/constants.mjs';
 import { archive } from './utils/zip.mjs';
+import { logger } from '../utils/logger.mjs';
 
 /** 打包游戏模组 */
 export const pack = async () => {

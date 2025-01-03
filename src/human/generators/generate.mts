@@ -1,5 +1,5 @@
-import { logger } from '@pipers/logger';
 import { loadOptions } from '../../utils/load-options.mjs';
+import { logger } from '../../utils/logger.mjs';
 import { type GeneratedOptions } from '../../utils/save-generated.mjs';
 import { saveGenerated } from '../../utils/save-generated.mjs';
 import { type HumanOptions } from '../options.mjs';
