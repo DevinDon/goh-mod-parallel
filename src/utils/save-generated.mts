@@ -18,7 +18,7 @@ export const saveGenerated = async (options: GeneratedOptions[]) => {
     ({ destination, content }) => async () => {
       const path = resolve(ProjectRootDir, destination);
       await saveFile(path, content);
-      logger.info(`已保存配置文件到 "${destination}"`);
+      logger.info?.(`已保存配置文件到 "${destination}"`);
     },
   );
 

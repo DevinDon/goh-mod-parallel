@@ -14,7 +14,7 @@ export const generateAllTemplates = async () => {
 
   const generated: GeneratedOptions[] = options.map(
     option => {
-      logger.info(`正在生成载具模板 "${option.destination}"`);
+      logger.info?.(`正在生成载具模板 "${option.destination}"`);
       return {
         destination: option.destination,
         content: generateTemplate(option),

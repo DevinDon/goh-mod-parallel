@@ -10,7 +10,7 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
   const { name } = bullet;
 
   if (!isSupportedBulletType(name)) {
-    logger.warn(`不支持的炮弹类型: "${name}"`);
+    logger.warn?.(`不支持的炮弹类型: "${name}"`);
   }
 
   const reloading = BulletReloadingCursors[name] ?? 'carbine_reload';

@@ -20,7 +20,7 @@ import { usa90mmOvermatchTables } from './overmatch-tables/usa-90mm.mjs';
 export const generateOvermatchTable = (name: string) => {
   const table = overmatchTables[name];
   if (!table) {
-    logger.warn(`未匹配到修正表配置 ${name}`);
+    logger.warn?.(`未匹配到修正表配置 ${name}`);
     return `; 未匹配到修正表配置 ${name}`;
   }
   const lines = table.lines

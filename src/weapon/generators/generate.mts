@@ -12,7 +12,7 @@ export const generateAllWeapons = async () => {
 
   const generated: GeneratedOptions[] = options.map(
     option => {
-      logger.info(`正在生成武器配置 "${option.destination}"`);
+      logger.info?.(`正在生成武器配置 "${option.destination}"`);
       return {
         destination: option.destination,
         content: generateWeapon(option),

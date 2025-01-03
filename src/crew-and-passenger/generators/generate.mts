@@ -12,7 +12,7 @@ export const generateAllCrewAndPassengers = async () => {
 
   const generated: GeneratedOptions[] = options.map(
     option => {
-      logger.info(`正在生成载具乘员及乘客配置 "${option.destination}"`);
+      logger.info?.(`正在生成载具乘员及乘客配置 "${option.destination}"`);
       return {
         destination: option.destination,
         content: generateCrewAndPassenger(option),

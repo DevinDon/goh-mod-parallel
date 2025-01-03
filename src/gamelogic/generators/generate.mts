@@ -61,7 +61,7 @@ const options: GameLogicOptions = {
 /** 生成所有游戏逻辑配置 */
 export const generateAllGameLogic = async () => {
 
-  logger.info('正在生成游戏逻辑配置');
+  logger.info?.('正在生成游戏逻辑配置');
 
   const generated = generateGameLogic(options);
 

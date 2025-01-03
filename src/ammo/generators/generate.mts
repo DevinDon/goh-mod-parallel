@@ -11,7 +11,7 @@ export const generateAllAmmos = async () => {
 
   const generated: GeneratedOptions[] = options.map(
     option => {
-      logger.info(`正在生成弹药配置 "${option.destination}"`);
+      logger.info?.(`正在生成弹药配置 "${option.destination}"`);
       return {
         destination: option.destination,
         content: generateAmmo(option),

@@ -22,11 +22,11 @@ export const archive = async (source: string, target: string) => {
   const promise = new Promise<void>(
     (resolve, reject) => {
       output.once('finish', () => {
-        logger.info(`已压缩目录 "${source}" 到 "${target}"`);
+        logger.info?.(`已压缩目录 "${source}" 到 "${target}"`);
         resolve();
       });
       output.once('error', () => {
-        logger.error(`压缩目录 "${source}" 到 "${target}" 失败`);
+        logger.error?.(`压缩目录 "${source}" 到 "${target}" 失败`);
         reject(new Error(`压缩目录 "${source}" 到 "${target}" 失败`));
       });
     },

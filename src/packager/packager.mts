@@ -41,8 +41,8 @@ export const pack = async () => {
     ),
   ];
 
-  logger.info(`开始打包到目录 "${ModName}"`);
+  logger.info?.(`开始打包到目录 "${ModName}"`);
   await createTaskQueue$(tasks).start();
-  logger.info(`已打包到目录 "${ModName}"`);
+  logger.info?.(`已打包到目录 "${ModName}"`);
 
 };
