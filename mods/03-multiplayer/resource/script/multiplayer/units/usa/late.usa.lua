@@ -18,7 +18,7 @@ Purchases["late.usa"] = {
 					{priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "squad_1st_rifle_late_all_3(usa)"},
 					{priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "squad_ranger_assault_sub_late_all(usa)"},
 					{priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "squad_ranger_assault_late_all(usa)"},
-					{priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "squad_ranger_special_late_all(usa)"},
+					-- {priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "squad_ranger_special_late_all(usa)"},
 					--]]
 
 				-- Defensive Doctrine Squads
@@ -81,7 +81,7 @@ Purchases["late.usa"] = {
 					{priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "squad_10th_mountain_late_off_3(usa)"},
 					{priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "squad_ranger_assault_sub_late_off(usa)"},
 					{priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "squad_ranger_assault_late_off(usa)"},
-					{priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "squad_ranger_special_late_off(usa)"},
+					-- {priority = 1.0, type = {"Class1", "Infantry", "Squad",}, unit = "squad_ranger_special_late_off(usa)"},
 					--]]
 
 			-- Infantry Singles / Teams
