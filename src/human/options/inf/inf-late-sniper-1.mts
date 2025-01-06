@@ -32,7 +32,7 @@ const options: HumanOptions = {
     '{Item "ammo inf-10mm-clip ap" 100} ; 栓动步枪弹夹',
     '{Item "m24_smoke grenade" 2} ; 烟雾弹',
     '{Item "bandage_ger" 5} ; 绷带',
-    '{Item "binocular"} ; 望远镜',
+    // '{Item "binocular"} ; 望远镜',
   ],
 
 };
