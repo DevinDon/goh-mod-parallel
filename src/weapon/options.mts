@@ -148,7 +148,7 @@ export type WeaponOptions = {
   unlimitedRangeTPC?: boolean;
   /** 瞄准偏离目标若干度时, 将限制 AI 将开火，默认 1 度，单发武器建议 0.5 度，压制武器建议 3 度 */
   aimingTolerance?: number;
-  /** 瞄准到多少精度百分比就可以开火，默认 0.7，单发武器建议 0.9，压制武器建议 0.5 或更低 */
+  /** 瞄准到多少精度百分比就可以开火，默认 0.7，单发武器建议 0.8，压制武器建议 0.5 或更低 */
   spreadTolerance?: number;
   /** 归零精度？默认 `[0.95, 0.90, 0.85, 0.80, 0.75]` */
   zeroingAccuracy?: number[];
