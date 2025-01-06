@@ -62,7 +62,7 @@ export const generateWeapon = (options: WeaponOptions) => {
     '  {ProjectileDamageThreshold 1} ; 小于该参数的伤害会被忽略',
     `  {UnlimitedRangeTPC ${(options.unlimitedRangeTPC ?? true) === true ? 1 : 0}} ; 直接操控模式下无视距离开火, 1 为允许, 0 为禁止`,
     `  {AimingTolerance ${options.aimingTolerance ?? 1}} ; 当瞄准偏离目标若干度时, 将限制 AI 将开火`,
-    `  {SpreadTolerance ${(options.spreadTolerance ?? 0.5)}} ; 瞄准到一定精度就可以开火`,
+    `  {SpreadTolerance ${(options.spreadTolerance ?? 0.7)}} ; 瞄准到一定精度就可以开火`,
     `  {ZeroingAccuracy ${(options.zeroingAccuracy ?? [ 0.95, 0.90, 0.85, 0.80, 0.75 ]).join(' ')}} ; 归零精度？不确定`,
     `  {LockFireDistanceTime ${options.lockFireDistanceTime ?? 3}} ; 超出射击距离后允许继续开火的时间`,
     `  {DisableRicochet ${(options.disableRicochet ?? false) === true ? 1 : 0}} ; 是否禁用跳弹模式`,
