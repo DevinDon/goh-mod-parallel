@@ -13,7 +13,7 @@ const options: AmmoOptions = {
     tail: 'shell_tracer_88_apcr',
   },
   inventory: {
-    size: { width: 10, height: 2 },
+    size: { width: 10, height: 1 },
   },
   extra: [],
 };

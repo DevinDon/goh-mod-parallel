@@ -14,7 +14,7 @@ const options: AmmoOptions = {
     tail: 'shell_tracer_105_ap',
   },
   inventory: {
-    size: { width: 10, height: 2 },
+    size: { width: 10, height: 1 },
   },
   extra: [],
 };

@@ -6,8 +6,8 @@
     {tail "shell_tracer_88_apcr" "tail"}
   }
   {inventory
-    {weight 182}
-    {size 10 2}
+    {weight 102}
+    {size 10 1}
     {block 1}
   }
   {damage blastwave
