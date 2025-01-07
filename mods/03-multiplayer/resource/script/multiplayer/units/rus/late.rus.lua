@@ -213,7 +213,7 @@ Purchases["late.rus"] = {
 					-- {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Cannon", "AA", "AT",}, unit = "doctrine_85mm_52k_late"},
 
 					-- {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_152mm_ml20_late"},
-					-- {priority = 1.0, type = {"Class3", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_203mm_b4_late"},
+					{priority = 1.0, type = {"Class3", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_203mm_b4_late"},
 					{priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Medium", "AT",}, unit = "doctrine_su100"},
 					--]]
 
@@ -229,7 +229,7 @@ Purchases["late.rus"] = {
 
 					--{priority = 1.0, type = {"Class", "Doctrine", "Tier3", "Plane", "Airstrike",}, unit = "doctrine_il2_late"},
 					--{priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Vehicle", "Artillery",}, unit = "doctrine_zis6_bm13_16_late"},
-					-- {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_300mm_bm31"},
+					{priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_300mm_bm31"},
 					{priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Heavy", "AT",}, unit = "doctrine_isu122s"},
 					--]]
 
@@ -259,7 +259,7 @@ Purchases["late.rus"] = {
 					{priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Tank", "Medium",}, unit = "doctrine_t3485_44b"},
 
 					{priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Vehicle", "Artillery",}, unit = "doctrine_katyusha_late"},
-					-- {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_280mm_br5_late"},
+					{priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_280mm_br5_late"},
 					{priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Heavy",}, unit = "doctrine_is2b"},
 					--]]
 			--]====]

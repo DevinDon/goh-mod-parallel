@@ -168,7 +168,7 @@ Purchases["late.fin"] = {
 
 					-- {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_107mm_k10_late"},
 					-- {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_155mm_h17_late"},
-					-- {priority = 1.0, type = {"Class3", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_203mm_h17_late"},
+					{priority = 1.0, type = {"Class3", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_203mm_h17_late"},
 					--]]
 
 				--  Irregular Doctrine
@@ -182,7 +182,7 @@ Purchases["late.fin"] = {
 					-- {priority = 1.0, type = {"Class1", "Doctrine", "Tier2", "Cannon", "AT",}, unit = "doctrine_75mm_k44"},
 
 					--{priority = 1.0, type = {"Class", "Doctrine", "Tier3", "Plane", "Airstrike",}, unit = "doctrine_blenheim_late"},
-					-- {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_210mm_nebelwerfer42_fin_late"},
+					{priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_210mm_nebelwerfer42_fin_late"},
 					-- {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_105mm_k34_late"},
 					--]]
 
@@ -197,7 +197,7 @@ Purchases["late.fin"] = {
 					{priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Tank", "Medium",}, unit = "doctrine_pz4j_fin"},
 
 					-- {priority = 1.0, type = {"Class3", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_150mm_sfh18_fin_late"},
-					-- {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_150mm_nebelwerfer41_fin_late"},
+					{priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_150mm_nebelwerfer41_fin_late"},
 					{priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Light", "Artillery",}, unit = "doctrine_pz38h_w40_late"},
 					--]]
 			--]====]

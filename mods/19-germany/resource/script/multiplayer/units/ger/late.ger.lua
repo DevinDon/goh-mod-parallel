@@ -167,7 +167,7 @@ Purchases["late.ger"] = {
         --{priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",}, unit = "kettenkrad"},
         --{priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",}, unit = "sdkfz10"},
         --{priority = 1.0, type = {"Class", "Vehicle", "Unarmed", "Transport",}, unit = "sdkfz7"},
-        {priority = 1.0, type = {"Class3", "Armored", "MG", "Transport",}, unit = "sdkfz251d_1"},
+        -- {priority = 1.0, type = {"Class3", "Armored", "MG", "Transport",}, unit = "sdkfz251d_1"},
         --]]
 
       -- Tanks
@@ -200,10 +200,10 @@ Purchases["late.ger"] = {
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier1", "Armored", "AA",}, unit = "doctrine_sdkfz234"},
 
           --{priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Infantry",}, unit = "doctrine_squad_ger_signaller_late(ger)"},
-          {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Cannon", "Mortar",}, unit = "doctrine_200mm_ldgw40_late"},
+          -- {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Cannon", "Mortar",}, unit = "doctrine_200mm_ldgw40_late"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier2", "Tank", "Medium", "AT",}, unit = "doctrine_jagdpanzer4_l48_late"},
 
-          {priority = 1.0, type = {"Class3", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_105mm_sk18_late"},
+          -- {priority = 1.0, type = {"Class3", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_105mm_sk18_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Armored", "Artillery",}, unit = "doctrine_sdkfz251d_1_stuka"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Medium", "AT",}, unit = "doctrine_jagdpanther"},
           --]]
@@ -211,14 +211,14 @@ Purchases["late.ger"] = {
         --  Defensive Doctrine
           ---[[
           --{priority = 1.0, type = {"Class", "Doctrine", "Tier1", "Vehicle", "Unarmed", "Support", "Engineer",}, unit = "doctrine_kettenkrad_goliath_late"},
-          {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Cannon", "AA",}, unit = "doctrine_37mm_flak37_late"},
-          {priority = 1.0, type = {"Class1", "Doctrine", "Tier1", "Cannon", "Support",}, unit = "doctrine_75mm_legebig18_late"},
+          -- {priority = 1.0, type = {"Class2", "Doctrine", "Tier1", "Cannon", "AA",}, unit = "doctrine_37mm_flak37_late"},
+          -- {priority = 1.0, type = {"Class1", "Doctrine", "Tier1", "Cannon", "Support",}, unit = "doctrine_75mm_legebig18_late"},
 
-          {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Cannon", "Mortar",}, unit = "doctrine_120mm_sgrw42_late"},
-          {priority = 1.0, type = {"Class1", "Doctrine", "Tier2", "Cannon", "AA", "AT",}, unit = "doctrine_88mm_flak36_late"},
+          -- {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Cannon", "Mortar",}, unit = "doctrine_120mm_sgrw42_late"},
+          -- {priority = 1.0, type = {"Class1", "Doctrine", "Tier2", "Cannon", "AA", "AT",}, unit = "doctrine_88mm_flak36_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Tank", "Medium", "AT",}, unit = "doctrine_jagdpanzer4_l48_early"},
 
-          {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_150mm_sfh18"},
+          -- {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_150mm_sfh18"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_150mm_nebelwerfer41_late"},
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier3", "Tank", "Heavy", "AT",}, unit = "doctrine_ferdinand_late"},
           --]]
@@ -230,7 +230,7 @@ Purchases["late.ger"] = {
           {priority = 1.0, type = {"Class1", "Doctrine", "Tier1", "Tank", "Medium",}, unit = "doctrine_panzer3flamm_late"},
 
           --{priority = 1.0, type = {"Class", "Doctrine", "Tier2", "Plane", "Airstrike",}, unit = "doctrine_bf109_late"},
-          {priority = 1.0, type = {"Class1", "Doctrine", "Tier2", "Cannon", "Support",}, unit = "doctrine_150mm_sig33_late"},
+          -- {priority = 1.0, type = {"Class1", "Doctrine", "Tier2", "Cannon", "Support",}, unit = "doctrine_150mm_sig33_late"},
           {priority = 1.0, type = {"Class2", "Doctrine", "Tier2", "Tank", "Medium",}, unit = "doctrine_panzer4j"},
 
           --{priority = 1.0, type = {"Class", "Doctrine", "Tier3", "Plane", "Airstrike",}, unit = "doctrine_bf110_late"},
@@ -264,7 +264,7 @@ Purchases["late.ger"] = {
           {priority = 1.0, type = {"Class3", "Doctrine3", "Tier1", "Armored", "AT",}, unit = "doctrine_sdkfz234_4"},
           {priority = 1.0, type = {"Class2", "Doctrine2", "Tier2", "Tank", "Light", "Artillery",}, unit = "doctrine_grille"},
 
-          {priority = 1.0, type = {"Class2", "Doctrine2", "Tier3", "Cannon", "AT",}, unit = "doctrine_88mm_pak43_late"},
+          -- {priority = 1.0, type = {"Class2", "Doctrine2", "Tier3", "Cannon", "AT",}, unit = "doctrine_88mm_pak43_late"},
           {priority = 1.0, type = {"Class3", "Doctrine3", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_170mm_k18_late"},
           {priority = 1.0, type = {"Class1", "Doctrine2", "Tier3", "Cannon", "Artillery",}, unit = "doctrine_600mm_thor_late"},
           {priority = 1.0, type = {"Class1", "Doctrine1", "Tier3", "Tank", "Heavy", "AT",}, unit = "doctrine_jagdtiger"},
