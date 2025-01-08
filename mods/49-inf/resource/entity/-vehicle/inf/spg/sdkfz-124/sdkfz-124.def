@@ -45,7 +45,7 @@
     {RestoreIKTime 2}
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-105mm-lefh18-l28" filling "ammo ger-105l28 he" 1}
+      {Weapon "weapon inf-105mm-lefh18-l28" filling "ammo ger-105l28 he" 1}
       {Gunner "gunner"}
       {Charger "charger"}
       {Rotate}
