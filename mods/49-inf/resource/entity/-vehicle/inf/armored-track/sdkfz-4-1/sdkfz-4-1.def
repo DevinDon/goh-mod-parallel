@@ -32,7 +32,7 @@
   {Weaponry
     {Place "gun"
       {RestoreIKAfterAim}
-      {Weapon "weapon ger-150mm-panzerwerfer-x10" filling "ammo ger-150mm-nebelwerfer-rocket he" 10}
+      {Weapon "weapon inf-150mm-panzerwerfer-x10" filling "ammo ger-150mm-nebelwerfer-rocket he" 10}
       {Barrels 10}
       {Gunner "gunner"}
       {Charger "charger"}

@@ -6,7 +6,7 @@ const options: AmmoOptions = {
   tags: [ 'big', 'bomb', 'mortar', 'he', 'fg', 'itemin2hands', 'shell', 'size4', '150to152', 'arty' ],
   entity: '150mm_nebelwerfer',
   mass: 31.75,
-  fill: 2.5,
+  fill: 3.5,
   caliber: 150,
   speed: 340,
   inventory: {

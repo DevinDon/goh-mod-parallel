@@ -5,7 +5,7 @@ const options: WeaponOptions = {
 
   destination: `${ProjectModConfigDir}/49-inf/resource/set/stuff/standard/gun/inf-105mm-lefh18-l28.weapon`,
 
-  name: 'ger-105mm-lefh18-l28',
+  name: 'inf-105mm-lefh18-l28',
   description: '德国 10.5cm leFH 18 L/28 榴弹炮，适用于 Sd.Kfz 124 黄蜂自行火炮',
 
   type: 'gun',
@@ -16,7 +16,7 @@ const options: WeaponOptions = {
   cursor: 'ironsights/tank2',
 
   ammo: 'ger-105l28',
-  amout: 10,
+  amout: 1000000,
   caliber: 105,
   syncedProjectiles: true,
 
