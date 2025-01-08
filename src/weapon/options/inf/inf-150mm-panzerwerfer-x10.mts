@@ -15,7 +15,7 @@ const options: WeaponOptions = {
   amout: ger150mmPanzerwerfer.amout * 1000000,
 
   rechargeTime: 120,
-  recoveryTime: ger150mmPanzerwerfer.recoveryTime / 10,
+  recoveryTime: 0.1,
 
   bullets: [
     {
