@@ -17,6 +17,28 @@ const options: WeaponOptions = {
   rechargeTime: 120,
   recoveryTime: ger150mmPanzerwerfer.recoveryTime / 10,
 
+  bullets: [
+    {
+      name: 'he',
+      minRange: 25,
+      maxRange: 2500,
+      speed: 340,
+      gravity: 5,
+      damageToArmor: 1000,
+      damageToHuman: 10000,
+      spreading: {
+        radiusTable: {
+          nearest: 15.512,
+          farthest: 50.345,
+        },
+        burstRecoveryTime: 5.50,
+        burstAccuracy: 100,
+        spreadPower: 1.75,
+        spreadXYRatio: 1.75,
+      },
+    },
+  ],
+
   extra: [
     i0lines(
       '{Burst',

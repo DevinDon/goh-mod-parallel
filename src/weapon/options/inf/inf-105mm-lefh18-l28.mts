@@ -16,7 +16,7 @@ const options: WeaponOptions = {
   cursor: 'ironsights/tank2',
 
   ammo: 'ger-105l28',
-  amout: 1000000,
+  amout: 3,
   caliber: 105,
   syncedProjectiles: true,
 
