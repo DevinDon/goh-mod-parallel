@@ -42,8 +42,8 @@ const options: WeaponOptions = {
       speed: 150,
       gravity: 3,
       projectile: 150,
-      damageToArmor: 100,
-      damageToHuman: 300,
+      damageToArmor: 350,
+      damageToHuman: 500,
       spreading: {
         radiusTable: {
           nearest: 0.2,

@@ -12,7 +12,7 @@ const options: WeaponOptions = {
   name: 'inf-150mm-panzerwerfer-x10',
   description: '德国 15cm 十联装火箭发射器，适用于 42 型火箭发射车',
 
-  amout: ger150mmPanzerwerfer.amout * 1000000,
+  amout: ger150mmPanzerwerfer.amout * 10,
 
   rechargeTime: 120,
   recoveryTime: 0.1,
@@ -42,7 +42,7 @@ const options: WeaponOptions = {
   extra: [
     i0lines(
       '{Burst',
-      '  {min 1000000}',
+      '  {min 10}',
       '  {noaiming}',
       '}',
     ),
