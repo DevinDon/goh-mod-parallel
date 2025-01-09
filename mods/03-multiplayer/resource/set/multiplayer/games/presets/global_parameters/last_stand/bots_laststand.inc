@@ -38,9 +38,9 @@
   ("team_a")
   {balancingFactorBonus
     {cp 1.0}
-    {mpStart 10.0}
-    {mpFinish 10.0}
-    {payback 10.0}
+    {mpStart 100.0}
+    {mpFinish 100.0}
+    {payback 100.0}
     {chargeDelay 1.0}  ;// adjusts the inital delay only
     {charge 1.0}    ;// adjusts the interval only
   }
@@ -87,9 +87,9 @@
   ("team_b")
   {balancingFactorBonus
     {cp 1.0}
-    {mpStart 10.0}
-    {mpFinish 10.0}
-    {payback 10.0}
+    {mpStart 100.0}
+    {mpFinish 100.0}
+    {payback 100.0}
     {chargeDelay 1.0}  ;// adjusts the inital delay only
     {charge 0}      ;// adjusts the interval only
   }
