@@ -74,7 +74,7 @@
   crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:7 mp/inf/late/medic-1:1 mp/inf/late/machine-gunner-1:2 mp/inf/late/antiarmor-gunner-1:1)
   group(assault-platoon)
   button(inf1)
-  tags(infinfantrylimit20)
+  tags()
 )
 ; 支援排 12 人
 ("set-platoon"
@@ -85,7 +85,7 @@
   crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:3 mp/inf/late/antiarmor-gunner-2:3)
   group(supply-platoon)
   button(inf1)
-  tags(infinfantrylimit20)
+  tags()
 )
 ; 防御排 12 人
 ("set-platoon"
@@ -96,7 +96,7 @@
   crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:2 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
   group(defence-platoon)
   button(inf1)
-  tags(infinfantrylimit20)
+  tags()
 )
 
 ; 无尽重装军团
