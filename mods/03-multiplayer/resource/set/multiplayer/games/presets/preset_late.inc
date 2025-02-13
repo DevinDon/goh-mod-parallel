@@ -8,7 +8,7 @@
     (include "global_parameters/unitlimits.inc")
     {chargeFactors
       {value "*=1"}
-      {customize "0;0.25;0.5;0.75;1;1.5;2"}
+      {customize "0;0.5;1;2;5"}
     }
     (include "global_parameters/budget.inc" s(%start) f(%finish) d(%doctrine))
   }
@@ -27,7 +27,7 @@
     (include "global_parameters/unitlimits.inc")
     {chargeFactors
       {value "*=1"}
-      {customize "0;0.25;0.5;0.75;1;1.5;2"}
+      {customize "0;0.5;1;2;5"}
     }
     (include "global_parameters/budget_custom.inc" s(%start) f(%finish) d(%doctrine))
   }

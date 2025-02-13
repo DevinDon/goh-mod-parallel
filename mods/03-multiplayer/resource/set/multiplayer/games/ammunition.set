@@ -21,7 +21,7 @@
     {difficulty      multiplayer}
     {scoreMin      1}
     {scoreMax      10000}
-    {scoreFinal      300}
+    {scoreFinal      200}
     {preparationTimeMin  0}
     {preparationTimeMax  60}
     {preparationTime  0}
@@ -35,7 +35,7 @@
     {randomSpawnPoints}
     ;{useManualCharge none}
     ;{enableManualControlMode dc_mode}
-    {gameDuration "60 min"} ; default value
+    {gameDuration "120 min"} ; default value
   }
   {teamSettings
     {teamsMode normal}
