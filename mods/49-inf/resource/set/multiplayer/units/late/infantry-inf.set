@@ -18,8 +18,8 @@
 {"mp/inf/late/machine-gunner-2"   ("set-soldier" cp(3)    cost(20))}
 {"mp/inf/late/medic-1"            ("set-soldier" cp(3)    cost(20))}
 {"mp/inf/late/sniper-1"           ("set-soldier" cp(3)    cost(50))}
-{"mp/inf/late/officer-1"          ("set-soldier" cp(-900) cost(10))}
-{"mp/inf/late/officer-2"          ("set-soldier" cp(-900) cost(10))}
+{"mp/inf/late/officer-1"          ("set-soldier" cp(-100) cost(10))}
+{"mp/inf/late/officer-2"          ("set-soldier" cp(-100) cost(10))}
 
 ; 步兵班
 ; args = name cd ci crew1 crew2 period tags group button
@@ -45,7 +45,7 @@
 ("set-squad" name(sniper-squad)      period(late) cd(0)   ci(15)  crew1(sniper-1:2)           crew2(sniper-1:1)           group(sniper-squad)    button(inf2) tags(sniper))
 ("set-squad" name(machine-gun-squad) period(late) cd(0)   ci(15)  crew1(machine-gunner-1:2)   crew2(machine-gunner-2:2)   group(machine-squad)   button(inf2) tags())
 ("set-squad" name(antiarmor-squad)   period(late) cd(0)   ci(15)  crew1(antiarmor-gunner-1:2) crew2(antiarmor-gunner-2:2) group(antiarmor-squad) button(inf2) tags())
-("set-squad" name(officer-squad)     period(late) cd(600) ci(120) crew1(officer-1:1)          crew2(officer-2:1)          group(officer-squad)   button(inf2) tags(officer))
+("set-squad" name(officer-squad)     period(late) cd(60)  ci(60)  crew1(officer-1:1)          crew2(officer-2:1)          group(officer-squad)   button(inf2) tags())
 
 ; 步兵排 12 人
 ; args = name period cd ci crews group button tags
