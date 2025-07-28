@@ -27,10 +27,8 @@ export const calcStartTime = (options: StartTimeOptions) => {
 
   /** 功率，单位 J/s */
   const p = power * 745.7;
-  /** 速度，单位 m/s */
-  const v = speed * 1000 / 3600;
   /** 能量，单位 J */
-  const e = 0.5 * mass * v * v;
+  const e = 0.5 * mass * speed * speed;
   /** 做功时间，单位 s */
   const t = e / p / performance;
 
@@ -82,10 +80,8 @@ export const calcStopTime = (options: StopTimeOptions) => {
 
   const { speed, friction, performance = 1 } = options;
 
-  /** 速度，单位 m/s */
-  const v = speed * 1000 / 3600;
   /** 减速时间，单位 s */
-  const t = v / (friction * 9.8) / performance;
+  const t = speed / (friction * 9.8) / performance;
 
   return t;
 
