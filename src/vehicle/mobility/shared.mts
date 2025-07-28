@@ -115,7 +115,7 @@ export const calcTurnTime = (options: TurnTimeOptions) => {
   const { speed, distance, power, mass, performance = 1 } = options;
 
   /** 旋转时间，单位 s */
-  const t = Math.PI * distance / speed / Math.pow(power / mass, 1 / 4) / performance;
+  const t = Math.PI * distance / speed / Math.pow(power / mass, 1 / 5) / performance;
 
   return t;
 

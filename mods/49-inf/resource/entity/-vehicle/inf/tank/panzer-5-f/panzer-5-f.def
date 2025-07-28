@@ -1739,7 +1739,7 @@
       {Fast              46}
       {MaxSpeed          46}
       {MaxSpeedAtMaxTurn 24.15}
-      {TurnTime          23.84}
+      {TurnTime          19.20}
       {TurnStart         0.06}
       {TurnStop          0.18}
       {TurnRadius        5.25}
