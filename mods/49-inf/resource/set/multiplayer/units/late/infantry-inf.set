@@ -13,7 +13,7 @@
 {"mp/inf/late/antiarmor-gunner-2" ("set-soldier" cp(5)    cost(20))}
 {"mp/inf/late/assault-1"          ("set-soldier" cp(5)    cost(20))}
 {"mp/inf/late/commander-1"        ("set-soldier" cp(-5)   cost(50))}
-{"mp/inf/late/engineer-1"         ("set-soldier" cp(10)   cost(20))}
+{"mp/inf/late/engineer-1"         ("set-soldier" cp(5)    cost(50))}
 {"mp/inf/late/machine-gunner-1"   ("set-soldier" cp(5)    cost(30))}
 {"mp/inf/late/machine-gunner-2"   ("set-soldier" cp(5)    cost(20))}
 {"mp/inf/late/medic-1"            ("set-soldier" cp(5)    cost(20))}
@@ -93,7 +93,7 @@
   period(late)
   cd(0)
   ci(30)
-  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:2 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
   group(defence-platoon)
   button(inf1)
   tags()
@@ -150,7 +150,7 @@
   period(late)
   cd(0)
   ci(30)
-  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:2 mp/inf/late/medic-1:1 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
   group(defence-platoon)
   button(inf1)
   tags(infinfantrymotorizedlimit10)
