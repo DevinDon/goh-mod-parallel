@@ -9,15 +9,15 @@
   {score_factor 0.04}
   {cost %cost}
 )
-{"mp/inf/late/antiarmor-gunner-1" ("set-soldier" cp(3)    cost(30))}
-{"mp/inf/late/antiarmor-gunner-2" ("set-soldier" cp(3)    cost(20))}
-{"mp/inf/late/assault-1"          ("set-soldier" cp(3)    cost(20))}
-{"mp/inf/late/commander-1"        ("set-soldier" cp(-3)   cost(50))}
-{"mp/inf/late/engineer-1"         ("set-soldier" cp(3)    cost(20))}
-{"mp/inf/late/machine-gunner-1"   ("set-soldier" cp(3)    cost(30))}
-{"mp/inf/late/machine-gunner-2"   ("set-soldier" cp(3)    cost(20))}
-{"mp/inf/late/medic-1"            ("set-soldier" cp(3)    cost(20))}
-{"mp/inf/late/sniper-1"           ("set-soldier" cp(3)    cost(50))}
+{"mp/inf/late/antiarmor-gunner-1" ("set-soldier" cp(5)    cost(30))}
+{"mp/inf/late/antiarmor-gunner-2" ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/assault-1"          ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/commander-1"        ("set-soldier" cp(-5)   cost(50))}
+{"mp/inf/late/engineer-1"         ("set-soldier" cp(10)   cost(20))}
+{"mp/inf/late/machine-gunner-1"   ("set-soldier" cp(5)    cost(30))}
+{"mp/inf/late/machine-gunner-2"   ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/medic-1"            ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/sniper-1"           ("set-soldier" cp(5)    cost(50))}
 {"mp/inf/late/officer-1"          ("set-soldier" cp(-100) cost(10))}
 {"mp/inf/late/officer-2"          ("set-soldier" cp(-100) cost(10))}
 
