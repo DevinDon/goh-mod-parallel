@@ -1738,17 +1738,17 @@
       {Normal            55}
       {Fast              55}
       {MaxSpeed          55}
-      {MaxSpeedAtMaxTurn 33}
-      {TurnTime          7.07}
+      {MaxSpeedAtMaxTurn 30.25}
+      {TurnTime          22.28}
       {TurnStart         0.05}
-      {TurnStop          0.16}
-      {TurnRadius        6}
-      {StartTime         9.09}
-      {StopTime          4.33}
-      {BrakeTime         2.17}
+      {TurnStop          0.17}
+      {TurnRadius        5.50}
+      {StartTime         9.92}
+      {StopTime          4.72}
+      {BrakeTime         2.36}
       {Gears             0.5 1.0}
       {RearGears         0.07}
-      {GearSwitchDelay   0.25}
+      {GearSwitchDelay   0.27}
       {SplineRadius      0.45}
       {MaxSlope          75}
       {FallSlope         75}

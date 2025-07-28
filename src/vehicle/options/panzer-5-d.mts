@@ -177,7 +177,7 @@ const options: VehicleOptions = {
       reverse: 4,
       power: 650,
       fuel: 700,
-      performance: 1.2,
+      performance: 1.10,
     },
   },
 };

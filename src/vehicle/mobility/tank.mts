@@ -25,7 +25,7 @@ export const setMobilityOfTank = (options: TankMobilityOptions) => {
 
   const turnStartTime = calcStartTime({ mass, speed: toMetersPerSecond(reverse), power, performance });
   const turnStopTime = calcStopTime({ speed: toMetersPerSecond(reverse), friction: Friction.trackStatic, performance });
-  const turnTime = calcTurnTime({ speed: toMetersPerSecond(reverse), distance: 3, performance });
+  const turnTime = calcTurnTime({ speed: toMetersPerSecond(reverse), distance: 3, power, mass, performance });
 
   const startTime = calcStartTime({ mass, speed: toMetersPerSecond(forward), power, performance });
   const stopTime = calcStopTime({ speed: toMetersPerSecond(forward), friction: Friction.track, performance });

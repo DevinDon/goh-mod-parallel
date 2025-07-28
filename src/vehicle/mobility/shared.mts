@@ -93,6 +93,10 @@ export type TurnTimeOptions = {
   speed: number;
   /** 轴距，单位 m */
   distance: number;
+  /** 功率，单位 kW */
+  power: number;
+  /** 重量，单位 kg */
+  mass: number;
   /** 性能系数，取值范围为 [0.5, 2]，数字越大性能越好，1 为标准性能 */
   performance?: number;
 };
@@ -100,17 +104,18 @@ export type TurnTimeOptions = {
 /**
  * 计算双流传动原地旋转一周所用的时间
  *
- * `t = PI * d / v`
+ * `t = PI * d / v / p`
  *
  * d 为轴距，单位 m
  * v 为速度，单位 m/s
+ * p 为功重比系数
  */
 export const calcTurnTime = (options: TurnTimeOptions) => {
 
-  const { speed, distance, performance = 1 } = options;
+  const { speed, distance, power, mass, performance = 1 } = options;
 
   /** 旋转时间，单位 s */
-  const t = Math.PI * distance / speed / performance;
+  const t = Math.PI * distance / speed / Math.pow(power / mass, 1 / 4) / performance;
 
   return t;
 
