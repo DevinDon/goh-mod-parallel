@@ -43,7 +43,7 @@
     {unitMode "mid"}
     {specMode "all_normal"}
     {apply "only_roster_mid"}
-    ("standard_all" start(200) finish(20000) doctrine(1000) cp(0:50,10000:50,20000:50))
+    ("standard_all" start(200) finish(20000) doctrine(1000) cp(0:100,10000:100,20000:100))
     {ranked}
   }
 ;------------------------------------------------------------------------------------------------------------
@@ -60,7 +60,7 @@
     {unitMode "mid"}
     {specMode "cp_100"}
     {apply "only_roster_mid"}
-    ("custom_all" start(200) finish(3300) doctrine(200) cp(0:100,900:150,1500:200))
+    ("custom_all" start(200) finish(3300) doctrine(200) cp(0:100,900:150,1500:100))
   }
   {"c:mid_custom_120"
     {gameMode "custom"}
@@ -95,7 +95,7 @@
     {unitMode "mid"}
     {specMode "cp_200"}
     {apply "only_roster_mid"}
-    ("custom_all" start(200) finish(5800) doctrine(200) cp(0:200,900:250,1500:300))
+    ("custom_all" start(200) finish(5800) doctrine(200) cp(0:100,900:250,1500:300))
   }
   {"c:mid_custom_250"
     {gameMode "custom"}
