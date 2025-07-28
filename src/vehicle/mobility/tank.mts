@@ -1,5 +1,5 @@
 import { i0lines, toFixed } from '../../utils/formatter.mjs';
-import { calcStartTime, calcStopTime, Friction } from './shared.mjs';
+import { calcStartTime, calcStopTime, calcTurnTime, Friction, toMetersPerSecond } from './shared.mjs';
 
 /** 坦克机动性 */
 export type TankMobilityOptions = {
@@ -23,9 +23,13 @@ export const setMobilityOfTank = (options: TankMobilityOptions) => {
 
   const { forward, reverse, power, mass, performance = 1, fuel } = options;
 
-  const startTime = calcStartTime({ mass, speed: forward, power, performance });
-  const stopTime = calcStopTime({ speed: forward, friction: Friction.track, performance });
-  const brakeTime = calcStopTime({ speed: forward, friction: Friction.trackStatic, performance });
+  const turnStartTime = calcStartTime({ mass, speed: toMetersPerSecond(reverse), power, performance });
+  const turnStopTime = calcStopTime({ speed: toMetersPerSecond(reverse), friction: Friction.trackStatic, performance });
+  const turnTime = calcTurnTime({ speed: toMetersPerSecond(forward), distance: 3, performance });
+
+  const startTime = calcStartTime({ mass, speed: toMetersPerSecond(forward), power, performance });
+  const stopTime = calcStopTime({ speed: toMetersPerSecond(forward), friction: Friction.track, performance });
+  const brakeTime = calcStopTime({ speed: toMetersPerSecond(forward), friction: Friction.trackStatic, performance });
 
   return i0lines(
     '{Locomotion',
@@ -34,10 +38,10 @@ export const setMobilityOfTank = (options: TankMobilityOptions) => {
     `  {Fast              ${toFixed(forward)}}`,
     `  {MaxSpeed          ${toFixed(forward)}}`,
     `  {MaxSpeedAtMaxTurn ${toFixed(forward / 2 * performance)}}`,
-    `  {TurnTime          ${toFixed(Math.sqrt(mass) / Math.sqrt(power) / (Math.sqrt(forward) + Math.sqrt(reverse)) * 15 / performance)}}`,
-    `  {TurnStart         ${toFixed(Math.sqrt(brakeTime) / performance)}}`,
-    `  {TurnStop          ${toFixed(Math.sqrt(brakeTime) / performance)}}`,
-    `  {TurnRadius        ${toFixed(6.0 * performance)}}`,
+    `  {TurnTime          ${toFixed(turnTime)}}`,
+    `  {TurnStart         ${toFixed(turnStartTime)}}`,
+    `  {TurnStop          ${toFixed(turnStopTime)}}`,
+    `  {TurnRadius        ${toFixed(5.0 * performance)}}`,
     `  {StartTime         ${toFixed(startTime)}}`,
     `  {StopTime          ${toFixed(stopTime)}}`,
     `  {BrakeTime         ${toFixed(brakeTime)}}`,

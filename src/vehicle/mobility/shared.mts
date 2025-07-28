@@ -1,11 +1,14 @@
 /** 行走装置类型 */
 export type WalkingDeviceType = 'tire' | 'half-track' | 'track';
 
+/** 转换 km/h 为 m/s */
+export const toMetersPerSecond = (kmPerHour: number) => kmPerHour * 1000 / 3600;
+
 /** 加速时间计算选项 */
 export type StartTimeOptions = {
   /** 质量，单位 kg */
   mass: number;
-  /** 速度，单位 km/h */
+  /** 速度，单位 m/s */
   speed: number;
   /** 功率，单位 kW */
   power: number;
@@ -14,7 +17,7 @@ export type StartTimeOptions = {
 };
 
 /**
- * 计算加速时间
+ * 计算前进或倒退所需的加速时间
  *
  * `t = (1/2 * m * v^2 / p) / performance`
  */
@@ -54,7 +57,7 @@ export const Friction = {
 
 /** 减速时间计算选项 */
 export type StopTimeOptions = {
-  /** 速度，单位 km/h */
+  /** 速度，单位 m/s */
   speed: number;
   /**
    * 摩擦系数
@@ -71,7 +74,9 @@ export type StopTimeOptions = {
 /**
  * 计算减速时间
  *
- * `t = (speed / (f * 9.81)) / performance`
+ * 最大速度除以摩擦力加速度
+ *
+ * `t = (v / (f * 9.8)) / performance`
  */
 export const calcStopTime = (options: StopTimeOptions) => {
 
@@ -80,7 +85,36 @@ export const calcStopTime = (options: StopTimeOptions) => {
   /** 速度，单位 m/s */
   const v = speed * 1000 / 3600;
   /** 减速时间，单位 s */
-  const t = v / (friction * 9.81) / performance;
+  const t = v / (friction * 9.8) / performance;
+
+  return t;
+
+};
+
+/** 双流传动原地旋转一周所用的时间计算选项 */
+export type TurnTimeOptions = {
+  /** 速度，单位 m/s */
+  speed: number;
+  /** 轴距，单位 m */
+  distance: number;
+  /** 性能系数，取值范围为 [0.5, 2]，数字越大性能越好，1 为标准性能 */
+  performance?: number;
+};
+
+/**
+ * 计算双流传动原地旋转一周所用的时间
+ *
+ * `t = PI * d / v`
+ *
+ * d 为轴距，单位 m
+ * v 为速度，单位 m/s
+ */
+export const calcTurnTime = (options: TurnTimeOptions) => {
+
+  const { speed, distance, performance = 1 } = options;
+
+  /** 旋转时间，单位 s */
+  const t = Math.PI * distance / speed / performance;
 
   return t;
 
