@@ -1,0 +1,77 @@
+{IconGap 28}
+
+{positions
+  {"officer-squad(inf)" 0 2}
+}
+
+; Tech Tree
+{ tech "defense_level_1"       requires "officer-squad(inf)"    costs 1 position 1 0}
+{ tech "defense_level_2"       requires "defense_level_1"       costs 2 position 2 0}
+{ tech "defense_level_3"       requires "defense_level_2"       costs 3 position 3 0}
+{ tech "reinforcement_stage_2" requires "officer-squad(inf)"    costs 2 position 1 1}
+{ tech "reinforcement_stage_3" requires "reinforcement_stage_2" costs 3 position 2 1}
+{ tech "reinforcement_stage_4" requires "reinforcement_stage_3" costs 4 position 3 1}
+{ tech "reinforcement_stage_5" requires "reinforcement_stage_4" costs 5 position 4 1}
+
+; Off Map Support
+{"conquest_fi156"                 requires "officer-squad(inf)"             costs 1 position 1 3}
+{"conquest_bf109"                 requires "conquest_fi156"                 costs 2 position 2 3}
+{"conquest_bf110"                 requires "conquest_bf109"                 costs 3 position 3 3}
+{"105mm_lefh18_smoke_barrage"     requires "officer-squad(inf)"             costs 1 position 1 4}
+{"80mm_sgrw34_mortar_barrage"     requires "105mm_lefh18_smoke_barrage"     costs 2 position 2 4}
+{"105mm_lefh18_artillery_barrage" requires "80mm_sgrw34_mortar_barrage"     costs 3 position 3 4}
+{"120mm_sgrw42_mortar_barrage"    requires "105mm_lefh18_artillery_barrage" costs 4 position 4 4}
+{"150mm_sfh18_artillery_barrage"  requires "120mm_sgrw42_mortar_barrage"    costs 5 position 5 4}
+
+; Infantry
+{"assault-squad(inf)"             requires ""                     costs 1 position 0 6}
+{"engineer-squad(inf)"            requires ""                     costs 1 position 1 6}
+{"medic-squad(inf)"               requires ""                     costs 1 position 2 6}
+{"sniper-squad(inf)"              requires ""                     costs 1 position 3 6}
+{"machine-gun-squad(inf)"         requires ""                     costs 1 position 4 6}
+{"antiarmor-squad(inf)"           requires ""                     costs 1 position 5 6}
+{"assault-platoon(inf)"           requires "assault-squad(inf) engineer-squad(inf) medic-squad(inf) sniper-squad(inf) machine-gun-squad(inf) antiarmor-squad(inf)" costs 2 position 1 7}
+{"supply-platoon(inf)"            requires "assault-squad(inf) engineer-squad(inf) medic-squad(inf) sniper-squad(inf) machine-gun-squad(inf) antiarmor-squad(inf)" costs 2 position 2 7}
+{"defence-platoon(inf)"           requires "assault-squad(inf) engineer-squad(inf) medic-squad(inf) sniper-squad(inf) machine-gun-squad(inf) antiarmor-squad(inf)" costs 2 position 3 7}
+{"motorized-assault-platoon(inf)" requires "sdkfz-305-1 assault-platoon(inf)" costs 5 position 1 8}
+{"motorized-supply-platoon(inf)"  requires "sdkfz-305-1 supply-platoon(inf)"  costs 5 position 2 8}
+{"motorized-defence-platoon(inf)" requires "sdkfz-305-1 defence-platoon(inf)" costs 5 position 3 8}
+
+; Vehicle - Truck
+{"sdkfz-305-1" requires ""            costs 1 position 0 8}
+{"sdkfz-305-2" requires "sdkfz-305-1" costs 2 position 1 9}
+{"sdkfz-305-3" requires "sdkfz-305-1" costs 2 position 2 9}
+{"sdkfz-305-4" requires "sdkfz-305-1" costs 2 position 3 9}
+{"sdkfz-305-5" requires "sdkfz-305-1" costs 2 position 4 9}
+
+; Vehicle - Armored Track
+{"sdkfz-234-1" requires "sdkfz-305-1" costs 2 position 0 9}
+{"sdkfz-234-2" requires "sdkfz-234-1" costs 2 position 1 10}
+{"sdkfz-234-3" requires "sdkfz-234-1" costs 2 position 2 10}
+{"sdkfz-234-4" requires "sdkfz-234-1" costs 2 position 3 10}
+
+{"sdkfz-251-1"  requires "sdkfz-234-1" costs 2 position 0 10}
+{"sdkfz-251-16" requires "sdkfz-251-1" costs 2 position 1 11}
+{"sdkfz-251-17" requires "sdkfz-251-1" costs 2 position 2 11}
+{"sdkfz-251-21" requires "sdkfz-251-1" costs 2 position 3 11}
+{"sdkfz-251-22" requires "sdkfz-251-1" costs 2 position 4 11}
+
+; Vehicle - Tank
+{"panzer-4-h" requires "sdkfz-251-1" costs 3 position 0 12}
+{"panzer-4-j" requires "panzer-4-h"  costs 3 position 0 13}
+
+{"panzer-5-a" requires "panzer-4-h" costs 5 position 1 12}
+{"panzer-5-d" requires "panzer-5-a" costs 5 position 1 13}
+{"panzer-5-g" requires "panzer-5-d" costs 5 position 1 14}
+{"panzer-5-f" requires "panzer-5-g" costs 5 position 1 15}
+
+{"panzer-6-e"     requires "panzer-5-a" costs 5 position 2 12}
+{"panzer-6-h"     requires "panzer-6-e" costs 5 position 2 13}
+{"panzer-6-e-ace" requires "panzer-6-h" costs 5 position 2 14}
+
+{"panzer-6-b-p"     requires "panzer-6-e"   costs 10 position 3 12}
+{"panzer-6-b-h"     requires "panzer-6-b-p" costs 10 position 3 13}
+{"panzer-6-b-h-ace" requires "panzer-6-b-h" costs 10 position 3 14}
+
+{"sdkfz-4-1" requires ""          costs 2  position 0 16}
+{"sdkfz-124" requires "sdkfz-4-1" costs 10 position 1 16}
