@@ -16,14 +16,14 @@ const options: WeaponOptions = {
   cursor: 'ironsights/tank2',
 
   ammo: 'ger-75l70',
-  amout: 2,
+  amout: 1,
   caliber: 75,
   syncedProjectiles: true,
 
   aimingTolerance: 0.5,
   spreadTolerance: 0.8,
 
-  rechargeTime: 8,
+  rechargeTime: 6,
   recoveryTime: 5,
 
   automatic: false,
