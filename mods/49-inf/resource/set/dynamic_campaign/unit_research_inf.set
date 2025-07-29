@@ -77,4 +77,4 @@
 {"sdkfz-124" requires "sdkfz-4-1" costs 10 position 3 2}
 
 ; End
-{"conquest_blank" requires "" costs 0 position 1 20}
+{"conquest_blank" requires "" costs 0 position 1 16}
