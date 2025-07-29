@@ -38,40 +38,43 @@
 {"motorized-defence-platoon(inf)" requires "sdkfz-305-1 defence-platoon(inf)" costs 5 position 3 8}
 
 ; Vehicle - Truck
-{"sdkfz-305-1" requires ""            costs 1 position 0 8}
+{"sdkfz-305-1" requires ""            costs 1 position 0 9}
 {"sdkfz-305-2" requires "sdkfz-305-1" costs 2 position 1 9}
 {"sdkfz-305-3" requires "sdkfz-305-1" costs 2 position 2 9}
 {"sdkfz-305-4" requires "sdkfz-305-1" costs 2 position 3 9}
 {"sdkfz-305-5" requires "sdkfz-305-1" costs 2 position 4 9}
 
 ; Vehicle - Armored Track
-{"sdkfz-234-1" requires "sdkfz-305-1" costs 2 position 0 9}
+{"sdkfz-234-1" requires "sdkfz-305-1" costs 2 position 0 10}
 {"sdkfz-234-2" requires "sdkfz-234-1" costs 2 position 1 10}
 {"sdkfz-234-3" requires "sdkfz-234-1" costs 2 position 2 10}
 {"sdkfz-234-4" requires "sdkfz-234-1" costs 2 position 3 10}
 
-{"sdkfz-251-1"  requires "sdkfz-234-1" costs 2 position 0 10}
+{"sdkfz-251-1"  requires "sdkfz-234-1" costs 2 position 0 11}
 {"sdkfz-251-16" requires "sdkfz-251-1" costs 2 position 1 11}
 {"sdkfz-251-17" requires "sdkfz-251-1" costs 2 position 2 11}
 {"sdkfz-251-21" requires "sdkfz-251-1" costs 2 position 3 11}
 {"sdkfz-251-22" requires "sdkfz-251-1" costs 2 position 4 11}
 
 ; Vehicle - Tank
-{"panzer-4-h" requires "sdkfz-251-1" costs 3 position 0 12}
-{"panzer-4-j" requires "panzer-4-h"  costs 3 position 0 13}
+{"panzer-4-h" requires "sdkfz-251-1" costs 3 position 0 13}
+{"panzer-4-j" requires "panzer-4-h"  costs 3 position 0 14}
 
-{"panzer-5-a" requires "panzer-4-h" costs 5 position 1 12}
-{"panzer-5-d" requires "panzer-5-a" costs 5 position 1 13}
-{"panzer-5-g" requires "panzer-5-d" costs 5 position 1 14}
-{"panzer-5-f" requires "panzer-5-g" costs 5 position 1 15}
+{"panzer-5-a" requires "panzer-4-h" costs 5 position 1 13}
+{"panzer-5-d" requires "panzer-5-a" costs 5 position 1 14}
+{"panzer-5-g" requires "panzer-5-d" costs 5 position 1 15}
+{"panzer-5-f" requires "panzer-5-g" costs 5 position 1 16}
 
-{"panzer-6-e"     requires "panzer-5-a" costs 5 position 2 12}
-{"panzer-6-h"     requires "panzer-6-e" costs 5 position 2 13}
-{"panzer-6-e-ace" requires "panzer-6-h" costs 5 position 2 14}
+{"panzer-6-e"     requires "panzer-5-a" costs 5 position 2 13}
+{"panzer-6-h"     requires "panzer-6-e" costs 5 position 2 14}
+{"panzer-6-e-ace" requires "panzer-6-h" costs 5 position 2 15}
 
-{"panzer-6-b-p"     requires "panzer-6-e"   costs 10 position 3 12}
-{"panzer-6-b-h"     requires "panzer-6-b-p" costs 10 position 3 13}
-{"panzer-6-b-h-ace" requires "panzer-6-b-h" costs 10 position 3 14}
+{"panzer-6-b-p"     requires "panzer-6-e"   costs 10 position 3 13}
+{"panzer-6-b-h"     requires "panzer-6-b-p" costs 10 position 3 14}
+{"panzer-6-b-h-ace" requires "panzer-6-b-h" costs 10 position 3 15}
 
-{"sdkfz-4-1" requires ""          costs 2  position 0 16}
-{"sdkfz-124" requires "sdkfz-4-1" costs 10 position 1 16}
+{"sdkfz-4-1" requires ""          costs 2  position 2 2}
+{"sdkfz-124" requires "sdkfz-4-1" costs 10 position 3 2}
+
+; End
+{"conquest_blank" requires "" costs 0 position 1 20}
