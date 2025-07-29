@@ -6,15 +6,15 @@ local StartSpawnTime = {
   DefenseMin = 7 * 1000,
   DefenseMax = 9 * 1000,
   -- Bot is attacker
-  AttackMin = 2 * 60 * 1000,
-  AttackMax = 3 * 60 * 1000,
+  AttackMin = 1 * 60 * 1000,
+  AttackMax = 2 * 60 * 1000,
 }
 
 -- Time from last purchase AI will wait before attempting to buy a new unit.
 local SpawnCooldownTime = {
   -- Time between each wave
-  DCGWaveOffMin = 1 * 60000,
-  DCGWaveOffMax = 2 * 60000,
+  DCGWaveOffMin = 1 * 60 * 1000,
+  DCGWaveOffMax = 2 * 60 * 1000,
   -- Time between each spawn
   DCGMin = 3 * 1000,
   DCGMax = 9 * 1000,
@@ -22,15 +22,15 @@ local SpawnCooldownTime = {
 
 -- Number of possible units than can be in a wave attack
 local WaveUnit = {
-  Min = 10,
-  Max = 20,
+  Min = 30,
+  Max = 30,
 }
 
 -- Sets time limit AI will wait for a unit it has chosen to buy if the unit is not yet available
-local UnitSpawnWaitTime = 1 * 60000 -- 60s
+local UnitSpawnWaitTime = 1 * 60 * 1000 -- 60s
 
 -- Time delay for units to get a new move order after spawn move order. Loops.
-local OrderRotationPeriod = 1 * 60000 -- 60s
+local OrderRotationPeriod = 1 * 60 * 1000 -- 60s
 
 local botDefender
 enableWaveCounter = true
