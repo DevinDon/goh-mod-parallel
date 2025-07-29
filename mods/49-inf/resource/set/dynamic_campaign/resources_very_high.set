@@ -6,7 +6,7 @@
   {EmplacementCP 50}        ;// buildable with engineer
   {Bots
     {StartMP  1.00 min 10000 attackerMultiplier 2}
-    {FinishMP  1.00 min 10000 attackerMultiplier 2}
+    {FinishMP 1.00 min 20000 attackerMultiplier 2}
     {CP
       {Base "0:150"} ;// seconds : CP
       {RoundMultiplier "0:0.55 2:0.6 4:0.7 6:0.8 8:0.9 12:1.0"} ;// games played : multiplier for CP
@@ -93,8 +93,8 @@
       }
     }
     {Budget
-      {Start "0:125 4:150 8:200 12:250 16:300 20:350"} ;// games played : starting CP of each match
-      {PointsPerSecond 4} ;// CP income
+      {Start "0:150 4:150 8:150 12:150 16:150 20:150"} ;// games played : starting CP of each match
+      {PointsPerSecond 1} ;// CP income
       {Limit 500} ;// Max CP
     }
   }
