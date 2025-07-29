@@ -3,34 +3,34 @@ require([[/script/multiplayer/modes/utility]])
 -- Time from start of match AI will wait before attempting to buy a unit.
 local StartSpawnTime = {
   -- Bot is defender
-  DefenseMin = 5 * 1000,
-  DefenseMax = 7 * 1000,
+  DefenseMin = 7 * 1000,
+  DefenseMax = 9 * 1000,
   -- Bot is attacker
-  AttackMin = 6 * 60 * 1000,
-  AttackMax = 8 * 60 * 1000,
+  AttackMin = 2 * 60 * 1000,
+  AttackMax = 3 * 60 * 1000,
 }
 
 -- Time from last purchase AI will wait before attempting to buy a new unit.
 local SpawnCooldownTime = {
   -- Time between each wave
-  DCGWaveOffMin = 2 * 60000,
-  DCGWaveOffMax = 2.5 * 60000,
+  DCGWaveOffMin = 1 * 60000,
+  DCGWaveOffMax = 2 * 60000,
   -- Time between each spawn
-  DCGMin = 2 * 1000,
-  DCGMax = 7 * 1000,
+  DCGMin = 3 * 1000,
+  DCGMax = 9 * 1000,
 }
 
 -- Number of possible units than can be in a wave attack
 local WaveUnit = {
-  Min = 7,
-  Max = 10,
+  Min = 10,
+  Max = 20,
 }
 
 -- Sets time limit AI will wait for a unit it has chosen to buy if the unit is not yet available
-local UnitSpawnWaitTime = 1.5 * 60000 -- 1:30min (ms)
+local UnitSpawnWaitTime = 1 * 60000 -- 60s
 
 -- Time delay for units to get a new move order after spawn move order. Loops.
-local OrderRotationPeriod = 2.5 * 60000 -- 2:30 min (ms)
+local OrderRotationPeriod = 1 * 60000 -- 60s
 
 local botDefender
 enableWaveCounter = true
