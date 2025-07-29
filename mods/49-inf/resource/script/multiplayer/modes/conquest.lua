@@ -30,7 +30,7 @@ local WaveUnit = {
 local UnitSpawnWaitTime = 1 * 1000 -- 1s
 
 -- Time delay for units to get a new move order after spawn move order. Loops.
-local OrderRotationPeriod = 1 * 60 * 1000 -- 60s
+local OrderRotationPeriod = 2 * 60 * 1000 -- 120s
 
 local botDefender
 enableWaveCounter = true
