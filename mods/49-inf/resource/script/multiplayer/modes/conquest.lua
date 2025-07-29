@@ -17,13 +17,13 @@ local SpawnCooldownTime = {
   DCGWaveOffMax = 1 * 60 * 1000,
   -- Time between each spawn
   DCGMin = 3 * 1000,
-  DCGMax = 6 * 1000,
+  DCGMax = 5 * 1000,
 }
 
 -- Number of possible units than can be in a wave attack
 local WaveUnit = {
-  Min = 25,
-  Max = 30,
+  Min = 10,
+  Max = 10,
 }
 
 -- Sets time limit AI will wait for a unit it has chosen to buy if the unit is not yet available
