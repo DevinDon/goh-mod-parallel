@@ -28,6 +28,6 @@
   (include "conquest/units_usa.set")
 
   ; custom
-  (include "late/infantry-inf.set")
-  (include "late/vehicle-inf.set")
+  (include "conquest/infantry-inf.set")
+  (include "conquest/vehicle-inf.set")
 }

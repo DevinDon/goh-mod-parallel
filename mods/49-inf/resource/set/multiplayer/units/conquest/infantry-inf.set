@@ -1,0 +1,147 @@
+; 步兵
+; args = %cp %cost
+(define "set-soldier"
+  {tags "conquest conquestonly late inf infantry man lvl1"}
+  {cp %cp}
+  {cw 1.0}
+  {basic}
+  {breed}
+  {score_factor 0.05}
+  {cost %cost}
+  {research_stage 1}
+  {research_stage_max 99}
+)
+{"mp/inf/late/antiarmor-gunner-1" ("set-soldier" cp(5)    cost(30))}
+{"mp/inf/late/antiarmor-gunner-2" ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/assault-1"          ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/commander-1"        ("set-soldier" cp(-5)   cost(50))}
+{"mp/inf/late/engineer-1"         ("set-soldier" cp(5)    cost(50))}
+{"mp/inf/late/machine-gunner-1"   ("set-soldier" cp(5)    cost(30))}
+{"mp/inf/late/machine-gunner-2"   ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/medic-1"            ("set-soldier" cp(5)    cost(20))}
+{"mp/inf/late/sniper-1"           ("set-soldier" cp(5)    cost(50))}
+{"mp/inf/late/officer-1"          ("set-soldier" cp(-100) cost(10))}
+{"mp/inf/late/officer-2"          ("set-soldier" cp(-100) cost(10))}
+
+; 步兵班
+; args = name cd ci crew1 crew2 period tags group button
+(define "set-squad"
+  {"%name(inf)"
+    {charge
+      {delay %cd}
+      {interval %ci}
+    }
+    {content "mp/inf/%period/%crew1 mp/inf/%period/%crew2"}
+    {tags "conquest conquestonly all infantry inf %tags %period"}
+    {group "%group"}
+    {button "%button"}
+    {squad_cost_factor 1}
+    {research_stage 1}
+    {research_stage_max 99}
+  }
+)
+
+; 步兵班 2 至 4 人
+("set-squad" name(assault-squad)     period(late) cd(0)   ci(15)  crew1(assault-1:2)          crew2(assault-1:1)          group(assault-squad)   button(inf2) tags())
+("set-squad" name(engineer-squad)    period(late) cd(0)   ci(15)  crew1(engineer-1:2)         crew2(engineer-1:1)         group(engineer-squad)  button(inf2) tags(engineer))
+("set-squad" name(medic-squad)       period(late) cd(0)   ci(15)  crew1(medic-1:2)            crew2(medic-1:1)            group(medic-squad)     button(inf2) tags())
+("set-squad" name(sniper-squad)      period(late) cd(0)   ci(15)  crew1(sniper-1:2)           crew2(sniper-1:1)           group(sniper-squad)    button(inf2) tags(sniper))
+("set-squad" name(machine-gun-squad) period(late) cd(0)   ci(15)  crew1(machine-gunner-1:2)   crew2(machine-gunner-2:2)   group(machine-squad)   button(inf2) tags())
+("set-squad" name(antiarmor-squad)   period(late) cd(0)   ci(15)  crew1(antiarmor-gunner-1:2) crew2(antiarmor-gunner-2:2) group(antiarmor-squad) button(inf2) tags())
+("set-squad" name(officer-squad)     period(late) cd(60)  ci(60)  crew1(officer-1:1)          crew2(officer-2:1)          group(officer-squad)   button(inf2) tags())
+
+; 步兵排 12 人
+; args = name period cd ci crews group button tags
+(define "set-platoon"
+  {"%name(inf)"
+    {charge
+      {delay 0}
+      {interval 0}
+    }
+    {content "%crews"}
+    {tags "conquest conquestonly all infantry inf %tags %period"}
+    {group "%group"}
+    {button "%button"}
+    {squad_cost_factor 0.75}
+    {round_multiple 1}
+    {research_stage 1}
+    {research_stage_max 99}
+  }
+)
+
+; 突击排 12 人
+("set-platoon"
+  name(assault-platoon)
+  period(late)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:7 mp/inf/late/medic-1:1 mp/inf/late/machine-gunner-1:2 mp/inf/late/antiarmor-gunner-1:1)
+  group(assault-platoon)
+  button(inf1)
+  tags()
+)
+; 支援排 12 人
+("set-platoon"
+  name(supply-platoon)
+  period(late)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:3 mp/inf/late/antiarmor-gunner-2:3)
+  group(supply-platoon)
+  button(inf1)
+  tags()
+)
+; 防御排 12 人
+("set-platoon"
+  name(defence-platoon)
+  period(late)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
+  group(defence-platoon)
+  button(inf1)
+  tags()
+)
+
+; 无尽重装军团
+; 摩托化步兵排 Sd.Kfz 305/1 型卡车 12 人
+; args = name period crews group button tags doctrine
+(define "set-motorized-platoon"
+  {"%name(inf)"
+    {charge
+      {delay 0}
+      {interval 0}
+    }
+    {content "sdkfz-305-1 ( %crews )"}
+    {tags "conquest conquestonly all infantry inf %tags %period"}
+    {cost 30} ; sdkfz-305-1 卡车
+    {group "%group"}
+    {button "%button"}
+    {squad_cost_factor 0.75}
+    {round_multiple 1}
+    {research_stage 1}
+    {research_stage_max 99}
+  }
+)
+
+; 摩托化突击排 12 人
+("set-motorized-platoon"
+  name(motorized-assault-platoon)
+  period(late)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/assault-1:7 mp/inf/late/medic-1:1 mp/inf/late/machine-gunner-1:2 mp/inf/late/antiarmor-gunner-1:1)
+  group(assault-platoon)
+  button(inf1)
+  tags(infinfantrymotorizedlimit10)
+)
+; 摩托化支援排 12 人
+("set-motorized-platoon"
+  name(motorized-supply-platoon)
+  period(late)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/machine-gunner-1:1 mp/inf/late/machine-gunner-2:1 mp/inf/late/antiarmor-gunner-1:3 mp/inf/late/antiarmor-gunner-2:3)
+  group(supply-platoon)
+  button(inf1)
+  tags(infinfantrymotorizedlimit10)
+)
+; 摩托化防御排 12 人
+("set-motorized-platoon"
+  name(motorized-defence-platoon)
+  period(late)
+  crews(mp/inf/late/commander-1:1 mp/inf/late/engineer-1:1 mp/inf/late/medic-1:2 mp/inf/late/sniper-1:2 mp/inf/late/machine-gunner-1:4 mp/inf/late/antiarmor-gunner-1:2)
+  group(defence-platoon)
+  button(inf1)
+  tags(infinfantrymotorizedlimit10)
+)
