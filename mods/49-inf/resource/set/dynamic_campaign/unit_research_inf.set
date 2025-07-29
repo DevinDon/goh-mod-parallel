@@ -13,16 +13,6 @@
 { tech "reinforcement_stage_4" requires "reinforcement_stage_3" costs 4 position 3 1}
 { tech "reinforcement_stage_5" requires "reinforcement_stage_4" costs 5 position 4 1}
 
-; Off Map Support
-{"conquest_fi156"                 requires "officer-squad(inf)"             costs 1 position 1 3}
-{"conquest_bf109"                 requires "conquest_fi156"                 costs 2 position 2 3}
-{"conquest_bf110"                 requires "conquest_bf109"                 costs 3 position 3 3}
-{"105mm_lefh18_smoke_barrage"     requires "officer-squad(inf)"             costs 1 position 1 4}
-{"80mm_sgrw34_mortar_barrage"     requires "105mm_lefh18_smoke_barrage"     costs 2 position 2 4}
-{"105mm_lefh18_artillery_barrage" requires "80mm_sgrw34_mortar_barrage"     costs 3 position 3 4}
-{"120mm_sgrw42_mortar_barrage"    requires "105mm_lefh18_artillery_barrage" costs 4 position 4 4}
-{"150mm_sfh18_artillery_barrage"  requires "120mm_sgrw42_mortar_barrage"    costs 5 position 5 4}
-
 ; Infantry
 {"assault-squad(inf)"             requires ""                     costs 1 position 0 6}
 {"engineer-squad(inf)"            requires ""                     costs 1 position 1 6}
