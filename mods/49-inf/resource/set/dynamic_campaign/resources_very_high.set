@@ -94,7 +94,7 @@
     }
     {Budget
       {Start "0:125 4:150 8:200 12:250 16:300 20:350"} ;// games played : starting CP of each match
-      {PointsPerSecond 2} ;// CP income
+      {PointsPerSecond 4} ;// CP income
       {Limit 500} ;// Max CP
     }
   }
