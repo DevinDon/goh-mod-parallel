@@ -38,7 +38,7 @@ export const generateBulletParameter = (bullet: WeaponBulletOptions) => {
 
   const maxRange = bullet.maxRange;
   const aimRange = Math.min(
-    Math.pow(bullet.aimRange ?? maxRange, 1 / 2.05) * 10,
+    bullet.aimRange ?? Math.pow(maxRange, 1 / 2.05) * 10,
     maxRange,
   );
   const effectiveRange = Math.min(
