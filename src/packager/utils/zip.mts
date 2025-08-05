@@ -34,7 +34,7 @@ export const archive = async (source: string, target: string) => {
 
   // 输出到文件
   stream.pipe(output);
-  stream.directory(source, '');
+  stream.directory(source, false);
   stream.finalize();
 
   return promise;
