@@ -10,7 +10,7 @@ export const pack = async () => {
 
   const list: string[] = [
     '01-basic',
-    '02-map',
+    // '02-map',
     '03-multiplayer',
     '19-germany',
     '29-ussr',
