@@ -21,7 +21,7 @@ const options: WeaponOptions = {
   cursor: 'ironsights/mg',
 
   ammo: 'inf-10mm-chain',
-  amout: 240,
+  amout: 600,
   caliber: 10,
   syncedProjectiles: true,
 
@@ -29,7 +29,7 @@ const options: WeaponOptions = {
   spreadTolerance: 0.5,
 
   rechargeTime: 6,
-  recoveryTime: 60 / 1200,
+  recoveryTime: 60 / 3000,
 
   automatic: true,
 

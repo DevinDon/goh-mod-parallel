@@ -71,7 +71,7 @@
     }
     {Place "mgun2"
       {Type "rear"}
-      {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240}
+      {Weapon "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 600}
       {Gunner "gunner4"}
       {Charger "gunner4"}
       {LinkBone "mgun2"}

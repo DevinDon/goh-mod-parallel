@@ -21,7 +21,7 @@
     ("veterancy_lvl_0")
   }
   {inventory ; 背包
-    {Item "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 240} ; 通用机枪
+    {Item "weapon inf-infantry-general-purpose-machine-gun" filling "ammo inf-10mm-chain ap" 600} ; 通用机枪
     {Item "ammo inf-10mm-chain ap" 480} ; 通用机枪弹链
     {Item "bandage_ger" 5} ; 绷带
     {in_hands 0}
