@@ -41,11 +41,11 @@ const options: WeaponOptions = {
       spreading: {
         radiusTable: {
           nearest: 0.29,
-          farthest: 1.77,
+          farthest: 1.11,
         },
         burstRecoveryTime: 0.88,
         burstAccuracy: 100,
-        spreadPower: 1.50,
+        spreadPower: 1.75,
         spreadXYRatio: 0.75,
       },
       overmatch: 'ger-88mm-apcbc',
@@ -62,11 +62,11 @@ const options: WeaponOptions = {
       spreading: {
         radiusTable: {
           nearest: 0.25,
-          farthest: 1.57,
+          farthest: 0.77,
         },
         burstRecoveryTime: 0.88,
         burstAccuracy: 100,
-        spreadPower: 1.50,
+        spreadPower: 2.25,
         spreadXYRatio: 0.75,
       },
       overmatch: 'ger-88mm-apcr',
@@ -82,7 +82,7 @@ const options: WeaponOptions = {
       spreading: {
         radiusTable: {
           nearest: 0.31,
-          farthest: 2.35,
+          farthest: 1.95,
         },
         burstRecoveryTime: 0.88,
         burstAccuracy: 100,
