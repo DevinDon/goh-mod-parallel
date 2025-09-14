@@ -1,0 +1,97 @@
+import { ProjectModConfigDir } from '../../../utils/constants.mjs';
+import { type WeaponOptions } from '../../options.mjs';
+
+const options: WeaponOptions = {
+
+  destination: `${ProjectModConfigDir}/19-germany/resource/set/stuff/standard/gun/ger-88mm-kwk36-l56-ace.weapon`,
+
+  name: 'ger-88mm-kwk36-l56-ace',
+  description: '德国 8.8cm KwK 36 L/56 坦克炮，适用于六号坦克 E 型王牌虎式',
+
+  type: 'gun',
+
+  fireSound: 'cannon/s4/d1/Shared/Cannon_85to100mm/',
+  fireSoundClose: 'cannon/s2/1p/Shared/',
+  reloadSound: 'tank/1p/medium_long/',
+  cursor: 'ironsights/tank2',
+
+  ammo: 'ger-88l56',
+  amout: 1,
+  caliber: 88,
+  syncedProjectiles: true,
+
+  aimingTolerance: 0.5,
+  spreadTolerance: 0.8,
+
+  rechargeTime: 1,
+  recoveryTime: 1,
+
+  automatic: false,
+
+  bullets: [
+    {
+      name: 'apcbche',
+      minRange: 0,
+      maxRange: 2500,
+      speed: 780,
+      gravity: 5,
+      projectile: [ 165, 162, 151, 139, 117 ],
+      damageToArmor: 285,
+      damageToHuman: 2850,
+      spreading: {
+        radiusTable: {
+          nearest: 0.29,
+          farthest: 1.77,
+        },
+        burstRecoveryTime: 0.88,
+        burstAccuracy: 100,
+        spreadPower: 1.50,
+        spreadXYRatio: 0.75,
+      },
+      overmatch: 'ger-88mm-apcbc',
+    },
+    {
+      name: 'apcr',
+      minRange: 0,
+      maxRange: 2500,
+      speed: 930,
+      gravity: 5,
+      projectile: [ 211, 207, 191, 172, 140 ],
+      damageToArmor: 235,
+      damageToHuman: 2350,
+      spreading: {
+        radiusTable: {
+          nearest: 0.25,
+          farthest: 1.57,
+        },
+        burstRecoveryTime: 0.88,
+        burstAccuracy: 100,
+        spreadPower: 1.50,
+        spreadXYRatio: 0.75,
+      },
+      overmatch: 'ger-88mm-apcr',
+    },
+    {
+      name: 'he',
+      minRange: 0,
+      maxRange: 2500,
+      speed: 820,
+      gravity: 5,
+      damageToArmor: 500,
+      damageToHuman: 5000,
+      spreading: {
+        radiusTable: {
+          nearest: 0.31,
+          farthest: 2.35,
+        },
+        burstRecoveryTime: 0.88,
+        burstAccuracy: 100,
+        spreadPower: 1.25,
+        spreadXYRatio: 0.75,
+      },
+    },
+  ],
+
+};
+
+export default options;
