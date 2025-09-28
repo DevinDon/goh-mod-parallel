@@ -9,6 +9,7 @@
       (include "global_parameters/unitlimits.inc")
       {chargeFactors
         {value "*=1.00"}
+        {customize "0;0.5;1;2;3;4;5"}
       }
       {balancingFactorBonus  ;// only affects players on team A users (not bots)
         {chargeDelay 1}    ;// adjusts the inital delay only
@@ -24,6 +25,7 @@
       (include "global_parameters/unitlimits.inc")
       {chargeFactors
         {value "*=1.00"}
+        {customize "0;0.5;1;2;3;4;5"}
       }
       (include "global_parameters/last_stand/budget_attacker.inc" s(%start_b) f(%finish_b) d(%doctrine))
     }
