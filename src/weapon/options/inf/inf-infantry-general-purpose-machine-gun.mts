@@ -35,12 +35,12 @@ const options: WeaponOptions = {
 
   burst: {
     'short': {
-      standard: 7,
+      standard: 10,
       random: 2,
     },
     'long': {
-      standard: 12,
-      random: 3,
+      standard: 30,
+      random: 5,
     },
     rangeKoef: 0.5,
   },
