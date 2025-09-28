@@ -14,8 +14,8 @@
     {optionsRanked    }
     {fogOfWar           fog_realistic}
     {difficulty           multiplayer}
-    {gameDuration            "60 min"} ; min
-    {impregnableTimeout             5} ; sec
+    {gameDuration            "120 min"} ; min
+    {impregnableTimeout             0} ; sec
     {floraRespawn                   0}
 
     {preparationTime      0}      ; default time in seconds game is in "paused state" before game starts
@@ -26,7 +26,7 @@
     {firstWaveTimeMin   0}
     {firstWaveTimeMax 900}
 
-    {waveTime       180}    ; default time in seconds between each attack wave after 1st wave
+    {waveTime       120}    ; default time in seconds between each attack wave after 1st wave
     {waveTimeMin     60}
     {waveTimeMax    600}
 

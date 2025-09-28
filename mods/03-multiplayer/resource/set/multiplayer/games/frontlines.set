@@ -15,7 +15,7 @@
     {fogOfWar      fog_realistic}
     {difficulty      multiplayer}
     {gameDuration       "60 min"} ; min
-    {impregnableTimeout       10} ; sec
+    {impregnableTimeout        0} ; sec
     {floraRespawn              0}
 
     ; in frontlines preparationTime is the time both teams have to prepare and map boundaries separate the teams
