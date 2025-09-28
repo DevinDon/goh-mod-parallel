@@ -8,7 +8,7 @@
       {commandPoints "*=%cp_a"}
       (include "global_parameters/unitlimits.inc")
       {chargeFactors
-        {value "*=0.25"}
+        {value "*=0"}
         {customize "0;0.5;1;2;3;4;5"}
       }
       {balancingFactorBonus  ;// only affects players on team A users (not bots)
