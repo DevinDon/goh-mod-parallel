@@ -45,7 +45,7 @@
 
 ; 卡车
 ("set-standard-vehicle" vehicle(sdkfz-305-1) cost(30)  cd(0)  ci(30) cw(2) cp(0) tags(vehicle infsdkfz3051limit5)              period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
-("set-standard-vehicle" vehicle(sdkfz-305-2) cost(100) cd(90) ci(60) cw(2) cp(0) tags(vehicle infsdkfz3052limit5)              period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz305) button(vehicles))
+("set-standard-vehicle" vehicle(sdkfz-305-2) cost(100) cd(45) ci(45) cw(2) cp(0) tags(vehicle infsdkfz3052limit5)              period(late) crew1(engineer-1:1) crew2(engineer-1:3) group(sdkfz305) button(vehicles))
 ("set-standard-vehicle" vehicle(sdkfz-305-3) cost(100) cd(60) ci(30) cw(2) cp(0) tags(vehicle supply infsdkfz305supplylimit10) period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
 ("set-standard-vehicle" vehicle(sdkfz-305-4) cost(100) cd(60) ci(30) cw(2) cp(0) tags(vehicle supply infsdkfz305supplylimit10) period(late) crew1(engineer-1:1) crew2(engineer-1:0) group(sdkfz305) button(vehicles))
 ("set-standard-vehicle" vehicle(sdkfz-305-5) cost(100) cd(60) ci(30) cw(2) cp(0) tags(vehicle supply infsdkfz305supplylimit10) period(late) crew1(engineer-1:1) crew2(engineer-1:1) group(sdkfz305) button(vehicles))
@@ -131,7 +131,7 @@
 ; 无尽重装军团
 {"panzer-5-d"
   ("set-standard-doctrine-vehicle" vehicle(panzer-5-d) period(late) crew1(engineer-1:1) crew2(engineer-1:4))
-  ("set-standard-doctrine-level-2" doctrine(ascension_inf_heavy_armored) cost(100))
+  ("set-standard-doctrine-level-1" doctrine(ascension_inf_heavy_armored) cost(100))
   {tags "infpanzer5dlimit1"}
 }
 {"panzer-5-f"
