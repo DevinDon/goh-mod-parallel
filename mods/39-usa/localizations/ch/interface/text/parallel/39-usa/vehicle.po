@@ -52,7 +52,7 @@ msgstr  "M36 \"杰克逊\""
 
 msgctxt "desc/entity/m18_hellcat"
 msgid   "M18 GMC 'Black Cat'"
-msgstr  "M18 \"黑猫\""
+msgstr  "M18 \"地狱猫\""
 
 msgctxt "desc/entity/m18_hellcat_late"
 msgid   "M18 GMC 'Hellcat'"

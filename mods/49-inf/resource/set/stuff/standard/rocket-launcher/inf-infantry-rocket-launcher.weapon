@@ -37,8 +37,8 @@
     {Speed 100} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     ; 无穿深表配置
-    {MinimumDamageModifier 400} ; 弹种对装甲的击穿伤害
-    {HealthDamage 1000} ; 弹种对人员的击穿伤害
+    {MinimumDamageModifier 500} ; 弹种对装甲的击穿伤害
+    {HealthDamage 2000} ; 弹种对人员的击穿伤害
     {Spreading
       {RadiusTable {0 0} {7.50 0.30} {75 1.50} {100 15}} ; 散布
       {BurstRecoveryTime 0.50} ; 开火后恢复到正常精度的时间
@@ -57,8 +57,8 @@
     {Speed 100} ; 炮弹速度
     {Gravity 5} ; 炮弹重力
     {ProjectileDamageTable {0 150} {2000 150}} ; 穿深表
-    {MinimumDamageModifier 350} ; 弹种对装甲的击穿伤害
-    {HealthDamage 500} ; 弹种对人员的击穿伤害
+    {MinimumDamageModifier 2000} ; 弹种对装甲的击穿伤害
+    {HealthDamage 1000} ; 弹种对人员的击穿伤害
     {Spreading
       {RadiusTable {0 0} {7.50 0.30} {75 1.50} {100 15}} ; 散布
       {BurstRecoveryTime 0.50} ; 开火后恢复到正常精度的时间

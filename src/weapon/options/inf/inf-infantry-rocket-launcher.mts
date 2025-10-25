@@ -39,8 +39,8 @@ const options: WeaponOptions = {
       maxRange: 100,
       speed: 100,
       gravity: 5,
-      damageToArmor: 400,
-      damageToHuman: 1000,
+      damageToArmor: 500,
+      damageToHuman: 2000,
       spreading: {
         radiusTable: {
           nearest: 0.3,
@@ -60,8 +60,8 @@ const options: WeaponOptions = {
       speed: 100,
       gravity: 5,
       projectile: 150,
-      damageToArmor: 350,
-      damageToHuman: 500,
+      damageToArmor: 2000,
+      damageToHuman: 1000,
       spreading: {
         radiusTable: {
           nearest: 0.3,
