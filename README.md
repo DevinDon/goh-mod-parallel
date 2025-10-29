@@ -14,7 +14,7 @@
 
 运行 `pnpm build` 构建模组，构建产物会自动打包并在 `C:\Program Files (x86)\Steam\steamapps\common\Call to Arms - Gates of Hell\mods\parallel` 目录生成 mod 文件夹。
 
-详细的打包流程见 [src\packager\packager.mts](src\packager\packager.mts) 源文件。
+详细的打包流程见 [src/packager/packager.mts](src/packager/packager.mts) 源文件。
 
 ## 开源许可 / License
 
