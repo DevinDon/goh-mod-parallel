@@ -3,7 +3,7 @@
     {value %period}
   }
   {balancingFactorBonus
-    {cp 1.0}
+    {cp 0.5}
     {mpStart 0.8}
     {mpFinish 0.8}
     {payback 0.8}
@@ -45,7 +45,7 @@
     {value %period}
   }
   {balancingFactorBonus
-    {cp 3.0}
+    {cp 5.0}
     {mpStart 10.0}
     {mpFinish 10.0}
     {payback 10.0}
