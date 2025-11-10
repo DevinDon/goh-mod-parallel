@@ -6,21 +6,21 @@
   {perks
     {component "body"
       {health
-        {hp (* %body 10)}
-        {hp_broken (* %body 10)}  ; destroys component and cannot be repaired
+        {hp (* %body 1)}
+        {hp_broken (* %body 1)}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
     {component "bodyback"
       {health
-        {hp (* %body 10)}
+        {hp (* %body 1)}
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
     {component "cabin"
       {health
-        {hp (* %body 10)}
-        {hp_broken (* %body 10)}  ; destroys component and cannot be repaired
+        {hp (* %body 1)}
+        {hp_broken (* %body 1)}  ; destroys component and cannot be repaired
       }
       {armor_damage_modifier 0.1} ; multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration.
     }
