@@ -24,7 +24,7 @@
   {LockFireDistanceTime 3} ; 超出射击距离后允许继续开火的时间
   {DisableRicochet 0} ; 是否禁用跳弹模式
   ; 不启用曲射模式
-  {RechargeTime 1} ; 装填时间（秒）
+  {RechargeTime 5} ; 装填时间（秒）
   {RecoveryTime 1} ; 短射间隔（秒）, 适用于弹链
   {FiringTimeout 0.35 0.15} ; 电脑在两次射击之间的最小间隔，不确定参数含义
   ; 无连发模式
@@ -40,7 +40,7 @@
     {MinimumDamageModifier 285} ; 弹种对装甲的击穿伤害
     {HealthDamage 2850} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {45.45 0.29} {454.50 1.11} {2500 11.10}} ; 散布
+      {RadiusTable {0 0} {45.45 0.15} {454.50 0.99} {2500 9.90}} ; 散布
       {BurstRecoveryTime 0.88} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.75} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -76,7 +76,7 @@
     {MinimumDamageModifier 235} ; 弹种对装甲的击穿伤害
     {HealthDamage 2350} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {45.45 0.25} {454.50 0.77} {2500 7.70}} ; 散布
+      {RadiusTable {0 0} {45.45 0.09} {454.50 0.51} {2500 5.10}} ; 散布
       {BurstRecoveryTime 0.88} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       2.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心
@@ -116,7 +116,7 @@
     {MinimumDamageModifier 500} ; 弹种对装甲的击穿伤害
     {HealthDamage 5000} ; 弹种对人员的击穿伤害
     {Spreading
-      {RadiusTable {0 0} {45.45 0.31} {454.50 1.95} {2500 19.50}} ; 散布
+      {RadiusTable {0 0} {45.45 0.25} {454.50 1.55} {2500 15.50}} ; 散布
       {BurstRecoveryTime 0.88} ; 开火后恢复到正常精度的时间
       {BurstAccuracy     100} ; 默认值为 100, 连续开火第一发的精度为 100%, 值越低精度越低
       {SpreadPower       1.25} ; 默认值为 1, 大于 1 时炮弹落点会偏向中心, 小于 1 时炮弹落点会远离中心

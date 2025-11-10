@@ -23,7 +23,7 @@ const options: WeaponOptions = {
   aimingTolerance: 0.5,
   spreadTolerance: 0.8,
 
-  rechargeTime: 1,
+  rechargeTime: 5,
   recoveryTime: 1,
 
   automatic: false,
@@ -40,8 +40,8 @@ const options: WeaponOptions = {
       damageToHuman: 2850,
       spreading: {
         radiusTable: {
-          nearest: 0.29,
-          farthest: 1.11,
+          nearest: 0.15,
+          farthest: 0.99,
         },
         burstRecoveryTime: 0.88,
         burstAccuracy: 100,
@@ -61,8 +61,8 @@ const options: WeaponOptions = {
       damageToHuman: 2350,
       spreading: {
         radiusTable: {
-          nearest: 0.25,
-          farthest: 0.77,
+          nearest: 0.09,
+          farthest: 0.51,
         },
         burstRecoveryTime: 0.88,
         burstAccuracy: 100,
@@ -81,8 +81,8 @@ const options: WeaponOptions = {
       damageToHuman: 5000,
       spreading: {
         radiusTable: {
-          nearest: 0.31,
-          farthest: 1.95,
+          nearest: 0.25,
+          farthest: 1.55,
         },
         burstRecoveryTime: 0.88,
         burstAccuracy: 100,
