@@ -16,6 +16,7 @@
   (include "conquest/inf_rus.set")
   (include "conquest/inf_fin.set")
   (include "conquest/inf_usa.set")
+  (include "conquest/inf_eng.set")
 
   ;_________________________________________________________
   ;|            UNIT ROSTERS                               |
@@ -26,6 +27,7 @@
   (include "conquest/units_ger.set")
   (include "conquest/units_fin.set")
   (include "conquest/units_usa.set")
+  (include "conquest/units_eng.set")
 
   ; custom
   (include "conquest/infantry-inf.set")
